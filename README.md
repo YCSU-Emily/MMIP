@@ -121,18 +121,7 @@ The effects of the following conditions are investigated:
 * Different shooting angles
 * Image preprocessing
 
----
 
-Project Structure
-
-text
-MMIP/
-├── quiz1/
-├── quiz2/
-├── quiz3/
-├── quiz4/
-├── requirements.txt
-└── README.md
 
 
 
