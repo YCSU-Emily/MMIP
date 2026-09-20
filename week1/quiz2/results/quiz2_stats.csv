@@ -1,0 +1,4 @@
+Method,Min,Max,Dynamic Range,Mean,Std
+Original,22,252,230,56.274,36.097
+NumPy,0,255,255,158.953,47.36
+OpenCV,0,255,255,158.953,47.36

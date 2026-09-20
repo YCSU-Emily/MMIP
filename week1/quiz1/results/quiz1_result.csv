@@ -1,0 +1,9 @@
+Method,Mean(ms),Std(ms),Median(ms),N
+OpenCV,0.1980,0.0508,0.2199,100
+NumPy (core only),0.5921,0.0216,0.5825,100
+NumPy (with astype),0.7885,0.0209,0.7943,100
+
+Max difference,1
+Mean difference,0.000174
+Different pixels,122
+Different pixels (%),0.0174

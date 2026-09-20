@@ -1,0 +1,3 @@
+Method,Mean (ms),Std (ms),Median (ms),N
+NumPy,85.6553,3.1089,84.6479,100
+OpenCV,2.5771,0.1024,2.5522,100
