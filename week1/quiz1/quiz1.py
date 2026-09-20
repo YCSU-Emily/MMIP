@@ -1,15 +1,3 @@
-# ============================================================
-# Quiz 1：彩色影像轉灰階影像
-#
-# 基礎：把 RGB（OpenCV 讀進來為 BGR）彩色影像轉成灰階
-# 進階：用 NumPy 自行實作灰階轉換，與 OpenCV cv2.cvtColor 比較
-#       重複 N 次取平均，比較 (1) 執行速度 (2) 轉換結果 (3) 兩者差異
-#
-# 執行：python3 quiz1.py            （預設讀 image.jpg）
-#       python3 quiz1.py my_photo.jpg
-# 需求：pip install opencv-python numpy
-# ============================================================
-
 import sys
 import os
 import csv
