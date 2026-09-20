@@ -435,7 +435,7 @@ The matched inliers and final stitching results are shown in:
 * `matches_inliers.jpg`
 * `stitched_cropped.jpg`
 
-> ✏️ **Observation:** Please add comments regarding whether the seam is noticeable, whether there is distortion in distant regions, and whether there are visible differences in brightness or color.
+>  **Observation:** Please add comments regarding whether the seam is noticeable, whether there is distortion in distant regions, and whether there are visible differences in brightness or color.
 
 ## 6. Advanced Task: Testing Different Conditions
 
