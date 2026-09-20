@@ -15,13 +15,6 @@ Environment
 * Pandas
 * Jupyter Notebook
 
-Install dependencies:
-
-bash
-pip install -r requirements.txt
-
-
-
 
 # Quiz 1: Color Image to Grayscale
 
