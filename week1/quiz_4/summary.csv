@@ -1,25 +1,113 @@
-file,preprocess,keypoints1,keypoints2,good_matches,inliers,inlier_ratio,status,reason
-image2_original,None,3225,3133,503,184,0.366,OK,成功拼接
-image2_original,CLAHE,5251,5207,608,212,0.349,OK,成功拼接
-bright_+100,None,3225,1565,60,20,0.333,OK,成功拼接
-bright_+100,CLAHE,5251,3396,68,24,0.353,OK,成功拼接
-bright_+60,None,3225,2762,410,142,0.346,OK,成功拼接
-bright_+60,CLAHE,5251,4899,506,185,0.366,OK,成功拼接
-bright_-100,None,3225,2918,450,150,0.333,OK,成功拼接
-bright_-100,CLAHE,5251,5524,537,194,0.361,OK,成功拼接
-bright_-60,None,3225,3105,498,178,0.357,OK,成功拼接
-bright_-60,CLAHE,5251,5273,592,187,0.316,OK,成功拼接
-overlap_crop20,None,3225,2203,229,109,0.476,OK,成功拼接
-overlap_crop20,CLAHE,5251,3828,298,150,0.503,OK,成功拼接
-overlap_crop40,None,3225,1513,8,7,0.875,OK,成功拼接
-overlap_crop40,CLAHE,5251,2604,9,9,1.0,OK,成功拼接
-overlap_crop60,None,3225,896,1,0,0.0,FAIL,good matches 過少 (<4)
-overlap_crop60,CLAHE,5251,1629,0,0,0.0,FAIL,good matches 過少 (<4)
-rotate_15,None,3225,2532,471,172,0.365,OK,成功拼接
-rotate_15,CLAHE,5251,4428,568,203,0.357,OK,成功拼接
-rotate_30,None,3225,2380,437,165,0.378,OK,成功拼接
-rotate_30,CLAHE,5251,4088,528,238,0.451,OK,成功拼接
-rotate_45,None,3225,2306,401,169,0.421,OK,成功拼接
-rotate_45,CLAHE,5251,3925,471,210,0.446,OK,成功拼接
-rotate_5,None,3225,2740,497,186,0.374,OK,成功拼接
-rotate_5,CLAHE,5251,4672,632,216,0.342,OK,成功拼接
+file,group,param,preprocess,keypoints1,keypoints2,good_matches,inliers,inlier_ratio,reproj_err,status,reason,time_s
+image2_original,original,0,None,3225,3133,686,681,0.993,0.97,OK,成功拼接,0.1
+image2_original,original,0,CLAHE,5251,5207,889,869,0.978,0.99,OK,成功拼接,0.16
+image2_original,original,0,Norm+CLAHE,5158,5310,893,879,0.984,0.99,OK,成功拼接,0.16
+image2_original,original,0,Blur+CLAHE,2921,2869,732,720,0.984,0.9,OK,成功拼接,0.12
+bright_-100,bright,-100,None,3225,2905,633,627,0.991,0.95,OK,成功拼接,0.09
+bright_-100,bright,-100,CLAHE,5251,5511,819,796,0.972,0.93,OK,成功拼接,0.11
+bright_-100,bright,-100,Norm+CLAHE,5158,5719,824,804,0.976,0.93,OK,成功拼接,0.12
+bright_-100,bright,-100,Blur+CLAHE,2921,3076,676,666,0.985,0.89,OK,成功拼接,0.09
+bright_-60,bright,-60,None,3225,3112,681,676,0.993,0.98,OK,成功拼接,0.09
+bright_-60,bright,-60,CLAHE,5251,5159,886,865,0.976,0.97,OK,成功拼接,0.11
+bright_-60,bright,-60,Norm+CLAHE,5158,5321,901,880,0.977,1.0,OK,成功拼接,0.11
+bright_-60,bright,-60,Blur+CLAHE,2921,2868,713,702,0.985,0.9,OK,成功拼接,0.09
+bright_+60,bright,60,None,3225,2781,577,569,0.986,0.99,OK,成功拼接,0.09
+bright_+60,bright,60,CLAHE,5251,4902,793,779,0.982,1.02,OK,成功拼接,0.11
+bright_+60,bright,60,Norm+CLAHE,5158,5028,799,776,0.971,1.02,OK,成功拼接,0.11
+bright_+60,bright,60,Blur+CLAHE,2921,2738,687,679,0.988,0.94,OK,成功拼接,0.09
+bright_+100,bright,100,None,3225,1577,151,125,0.828,0.98,OK,成功拼接,0.08
+bright_+100,bright,100,CLAHE,5251,3424,209,192,0.919,0.98,OK,成功拼接,0.09
+bright_+100,bright,100,Norm+CLAHE,5158,3678,188,164,0.872,1.02,OK,成功拼接,0.1
+bright_+100,bright,100,Blur+CLAHE,2921,1999,211,196,0.929,0.97,OK,成功拼接,0.08
+contrast_0.5,contrast,0.5,None,3225,573,167,154,0.922,0.92,OK,成功拼接,0.08
+contrast_0.5,contrast,0.5,CLAHE,5251,3857,818,801,0.979,0.96,OK,成功拼接,0.11
+contrast_0.5,contrast,0.5,Norm+CLAHE,5158,4958,885,869,0.982,0.99,OK,成功拼接,0.11
+contrast_0.5,contrast,0.5,Blur+CLAHE,2921,1982,599,590,0.985,0.92,OK,成功拼接,0.08
+contrast_0.3,contrast,0.3,None,3225,17,72,39,0.542,0.57,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.04
+contrast_0.3,contrast,0.3,CLAHE,5251,2131,562,540,0.961,0.98,OK,成功拼接,0.09
+contrast_0.3,contrast,0.3,Norm+CLAHE,5158,4817,881,860,0.976,0.97,OK,成功拼接,0.11
+contrast_0.3,contrast,0.3,Blur+CLAHE,2921,951,308,295,0.958,0.94,OK,成功拼接,0.08
+rotate_5,rotate,5,None,3225,2727,649,639,0.985,0.96,OK,成功拼接,0.09
+rotate_5,rotate,5,CLAHE,5251,4669,880,866,0.984,0.98,OK,成功拼接,0.11
+rotate_5,rotate,5,Norm+CLAHE,5158,4769,900,875,0.972,0.98,OK,成功拼接,0.11
+rotate_5,rotate,5,Blur+CLAHE,2921,2526,730,717,0.982,0.97,OK,成功拼接,0.08
+rotate_15,rotate,15,None,3225,2521,594,588,0.99,0.91,OK,成功拼接,0.09
+rotate_15,rotate,15,CLAHE,5251,4372,810,795,0.981,0.92,OK,成功拼接,0.11
+rotate_15,rotate,15,Norm+CLAHE,5158,4230,814,791,0.972,0.92,OK,成功拼接,0.1
+rotate_15,rotate,15,Blur+CLAHE,2921,2482,651,640,0.983,0.86,OK,成功拼接,0.08
+rotate_30,rotate,30,None,3225,2386,536,522,0.974,0.9,OK,成功拼接,0.11
+rotate_30,rotate,30,CLAHE,5251,4085,734,714,0.973,0.92,OK,成功拼接,0.11
+rotate_30,rotate,30,Norm+CLAHE,5158,3727,732,714,0.975,0.9,OK,成功拼接,0.11
+rotate_30,rotate,30,Blur+CLAHE,2921,2263,576,568,0.986,0.85,OK,成功拼接,0.1
+rotate_45,rotate,45,None,3225,2300,506,497,0.982,0.9,OK,成功拼接,0.11
+rotate_45,rotate,45,CLAHE,5251,3883,687,661,0.962,0.91,OK,成功拼接,0.12
+rotate_45,rotate,45,Norm+CLAHE,5158,3421,670,644,0.961,0.92,OK,成功拼接,0.12
+rotate_45,rotate,45,Blur+CLAHE,2921,2113,525,516,0.983,0.87,OK,成功拼接,0.1
+rotate_60,rotate,60,None,3225,2161,446,434,0.973,0.93,OK,成功拼接,0.11
+rotate_60,rotate,60,CLAHE,5251,3768,608,590,0.97,0.93,OK,成功拼接,0.12
+rotate_60,rotate,60,Norm+CLAHE,5158,3329,596,573,0.961,0.92,OK,成功拼接,0.11
+rotate_60,rotate,60,Blur+CLAHE,2921,2065,476,469,0.985,0.86,OK,成功拼接,0.1
+rotate_90,rotate,90,None,3225,3122,678,675,0.996,0.95,OK,成功拼接,0.09
+rotate_90,rotate,90,CLAHE,5251,5204,894,874,0.978,0.96,OK,成功拼接,0.11
+rotate_90,rotate,90,Norm+CLAHE,5158,5294,884,867,0.981,0.97,OK,成功拼接,0.11
+rotate_90,rotate,90,Blur+CLAHE,2921,2877,738,727,0.985,0.91,OK,成功拼接,0.08
+persp_10,persp,10,None,3225,2764,636,626,0.984,0.99,OK,成功拼接,0.1
+persp_10,persp,10,CLAHE,5251,4725,818,805,0.984,1.0,OK,成功拼接,0.13
+persp_10,persp,10,Norm+CLAHE,5158,4779,837,820,0.98,1.01,OK,成功拼接,0.12
+persp_10,persp,10,Blur+CLAHE,2921,2614,667,655,0.982,0.96,OK,成功拼接,0.09
+persp_20,persp,20,None,3225,2729,606,594,0.98,1.03,OK,成功拼接,0.12
+persp_20,persp,20,CLAHE,5251,4617,770,751,0.975,1.04,OK,成功拼接,0.13
+persp_20,persp,20,Norm+CLAHE,5158,4473,770,750,0.974,1.04,OK,成功拼接,0.13
+persp_20,persp,20,Blur+CLAHE,2921,2525,607,596,0.982,1.05,OK,成功拼接,0.12
+persp_30,persp,30,None,3225,2656,472,459,0.972,1.09,OK,成功拼接,0.18
+persp_30,persp,30,CLAHE,5251,4272,549,520,0.947,1.06,OK,成功拼接,0.18
+persp_30,persp,30,Norm+CLAHE,5158,4030,581,556,0.957,1.06,OK,成功拼接,0.18
+persp_30,persp,30,Blur+CLAHE,2921,2458,471,461,0.979,1.03,OK,成功拼接,0.17
+persp_40,persp,40,None,3225,2485,326,311,0.954,1.04,OK,成功拼接,0.51
+persp_40,persp,40,CLAHE,5251,3912,363,340,0.937,1.06,OK,成功拼接,0.45
+persp_40,persp,40,Norm+CLAHE,5158,3598,361,346,0.958,1.05,OK,成功拼接,0.39
+persp_40,persp,40,Blur+CLAHE,2921,2244,300,291,0.97,1.1,OK,成功拼接,0.37
+overlap_crop20,overlap,20,None,3225,2203,320,312,0.975,0.78,OK,成功拼接,0.08
+overlap_crop20,overlap,20,CLAHE,5251,3818,441,421,0.955,0.79,OK,成功拼接,0.09
+overlap_crop20,overlap,20,Norm+CLAHE,5158,3891,449,425,0.947,0.79,OK,成功拼接,0.09
+overlap_crop20,overlap,20,Blur+CLAHE,2921,2082,374,365,0.976,0.73,OK,成功拼接,0.07
+overlap_crop40,overlap,40,None,3225,1515,27,11,0.407,1.32,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop40,overlap,40,CLAHE,5251,2623,33,16,0.485,0.71,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.04
+overlap_crop40,overlap,40,Norm+CLAHE,5158,2652,35,15,0.429,0.79,OK,成功拼接,0.05
+overlap_crop40,overlap,40,Blur+CLAHE,2921,1454,22,10,0.455,1.91,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop50,overlap,50,None,3225,1175,16,5,0.312,0.7,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop50,overlap,50,CLAHE,5251,2084,23,5,0.217,1.23,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.05
+overlap_crop50,overlap,50,Norm+CLAHE,5158,2136,18,2,0.111,1.77,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.04
+overlap_crop50,overlap,50,Blur+CLAHE,2921,1159,12,4,0.333,0.0,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop60,overlap,60,None,3225,892,15,5,0.333,0.8,WARN,臨界：inliers<15 或比例<0.3，結果可能不可靠,0.03
+overlap_crop60,overlap,60,CLAHE,5251,1575,23,5,0.217,0.95,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.05
+overlap_crop60,overlap,60,Norm+CLAHE,5158,1624,24,5,0.208,0.55,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.04
+overlap_crop60,overlap,60,Blur+CLAHE,2921,885,16,2,0.125,1.37,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.02
+overlap_crop70,overlap,70,None,3225,577,18,5,0.278,0.31,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.02
+overlap_crop70,overlap,70,CLAHE,5251,1094,20,5,0.25,0.73,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop70,overlap,70,Norm+CLAHE,5158,1128,20,5,0.25,0.67,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.03
+overlap_crop70,overlap,70,Blur+CLAHE,2921,562,16,5,0.312,0.68,FAIL,Homography 不合理：轉換後外框非凸四邊形（H 扭曲）,0.02
+noise_10,noise,10,None,3225,3191,603,596,0.988,0.98,OK,成功拼接,0.09
+noise_10,noise,10,CLAHE,5251,4669,716,700,0.978,0.98,OK,成功拼接,0.1
+noise_10,noise,10,Norm+CLAHE,5158,4734,722,702,0.972,1.01,OK,成功拼接,0.11
+noise_10,noise,10,Blur+CLAHE,2921,3081,744,732,0.984,0.96,OK,成功拼接,0.09
+noise_25,noise,25,None,3225,2816,312,302,0.968,1.17,OK,成功拼接,0.09
+noise_25,noise,25,CLAHE,5251,3940,366,352,0.962,1.14,OK,成功拼接,0.1
+noise_25,noise,25,Norm+CLAHE,5158,4002,377,359,0.952,1.13,OK,成功拼接,0.1
+noise_25,noise,25,Blur+CLAHE,2921,6306,495,490,0.99,1.07,OK,成功拼接,0.1
+noise_40,noise,40,None,3225,2647,199,187,0.94,1.26,OK,成功拼接,0.09
+noise_40,noise,40,CLAHE,5251,3528,227,210,0.925,1.22,OK,成功拼接,0.1
+noise_40,noise,40,Norm+CLAHE,5158,3580,241,219,0.909,1.27,OK,成功拼接,0.1
+noise_40,noise,40,Blur+CLAHE,2921,13396,308,302,0.981,1.13,OK,成功拼接,0.13
+blur_5,blur,5,None,3225,1584,438,430,0.982,0.95,OK,成功拼接,0.08
+blur_5,blur,5,CLAHE,5251,3159,649,622,0.958,0.97,OK,成功拼接,0.09
+blur_5,blur,5,Norm+CLAHE,5158,3365,665,638,0.959,0.98,OK,成功拼接,0.1
+blur_5,blur,5,Blur+CLAHE,2921,1963,571,556,0.974,0.98,OK,成功拼接,0.08
+blur_11,blur,11,None,3225,618,151,140,0.927,1.16,OK,成功拼接,0.08
+blur_11,blur,11,CLAHE,5251,1370,209,179,0.856,1.09,OK,成功拼接,0.08
+blur_11,blur,11,Norm+CLAHE,5158,1421,221,187,0.846,1.1,OK,成功拼接,0.08
+blur_11,blur,11,Blur+CLAHE,2921,1100,240,222,0.925,1.11,OK,成功拼接,0.08
+blur_21,blur,21,None,3225,232,61,43,0.705,1.17,OK,成功拼接,0.07
+blur_21,blur,21,CLAHE,5251,518,85,57,0.671,1.35,OK,成功拼接,0.07
+blur_21,blur,21,Norm+CLAHE,5158,537,92,59,0.641,1.22,OK,成功拼接,0.08
+blur_21,blur,21,Blur+CLAHE,2921,476,74,59,0.797,1.46,OK,成功拼接,0.07

@@ -1,0 +1,7 @@
+file,status,reason
+test0,OK,canny/approx，輸出 793x725
+test1,OK,otsu/approx，輸出 545x844
+test2,OK,canny/approx，輸出 348x863
+test3,OK,canny_low/approx，輸出 861x497
+test4,OK,canny/approx，輸出 485x853
+test5,OK,otsu/approx，輸出 539x840
