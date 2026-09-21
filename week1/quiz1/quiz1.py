@@ -6,17 +6,14 @@ import time
 import cv2
 import numpy as np
 
-# ------------------------------------------------------------
-# Config
-# ------------------------------------------------------------
+
 IMG_PATH = sys.argv[1] if len(sys.argv) > 1 else "image.jpg"
 N = 100                       # 計時重複次數
 RESULTS_DIR = "results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
-# ------------------------------------------------------------
-# 1. 讀取影像（OpenCV 讀進來的通道順序是 B, G, R）
-# ------------------------------------------------------------
+
+# 1. 讀取影像
 img = cv2.imread(IMG_PATH)
 if img is None:
     raise FileNotFoundError(f"找不到或無法讀取影像：{IMG_PATH}")
@@ -28,22 +25,20 @@ print("檔案 :", IMG_PATH)
 print("形狀 :", img.shape, " dtype:", img.dtype)
 cv2.imwrite(f"{RESULTS_DIR}/original.jpg", img)
 
-# ------------------------------------------------------------
+
 # 2. OpenCV 灰階轉換
-# ------------------------------------------------------------
+
 gray_cv = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imwrite(f"{RESULTS_DIR}/gray_opencv.png", gray_cv)
 
-# ------------------------------------------------------------
+
 # 3. NumPy 自行實作
-#    Gray = 0.299 R + 0.587 G + 0.114 B（ITU-R BT.601 亮度公式）
-#    因為 img 是 BGR，權重順序要寫成 [B, G, R]
-# ------------------------------------------------------------
+
 weights = np.array([0.114, 0.587, 0.299], dtype=np.float32)
 
 
 def gray_numpy(bgr_image):
-    """NumPy 向量化灰階轉換：加權 → 四捨五入 → uint8"""
+    """NumPy 向量化灰階轉換"""
     return np.round(bgr_image.astype(np.float32) @ weights).astype(np.uint8)
 
 
@@ -55,9 +50,9 @@ def gray_numpy_core(bgr_float):
 gray_np = gray_numpy(img)
 cv2.imwrite(f"{RESULTS_DIR}/gray_numpy.png", gray_np)
 
-# ------------------------------------------------------------
+
 # 4. 比較轉換結果
-# ------------------------------------------------------------
+
 diff = np.abs(gray_np.astype(np.int16) - gray_cv.astype(np.int16))
 n_diff = int(np.count_nonzero(diff))
 
@@ -73,9 +68,8 @@ for v in range(int(diff.max()) + 1):
 # 差異圖放大 100 倍以便觀察（差 1 → 亮度 100）
 cv2.imwrite(f"{RESULTS_DIR}/diff_x100.png", np.clip(diff * 100, 0, 255).astype(np.uint8))
 
-# ------------------------------------------------------------
 # 5. 計時（含 warm-up，逐次計時以取得標準差）
-# ------------------------------------------------------------
+
 def benchmark(fn, n=N):
     for _ in range(5):                      # warm-up
         fn()
@@ -104,9 +98,7 @@ print(f"{'NumPy（含 astype）':<19}{full_mean:>12.4f}{full_std:>14.4f}{full_me
 print(f"\nNumPy(含 astype) / OpenCV = {full_mean / cv_mean:.1f}x")
 print(f"NumPy(僅運算)    / OpenCV = {core_mean / cv_mean:.1f}x")
 
-# ------------------------------------------------------------
 # 6. 輸出 CSV
-# ------------------------------------------------------------
 with open(f"{RESULTS_DIR}/quiz1_result.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["Method", "Mean(ms)", "Std(ms)", "Median(ms)", "N"])
