@@ -9,9 +9,7 @@ matplotlib.use("Agg")                  # 伺服器（無螢幕）也能存圖
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# ------------------------------------------------------------
-# Config
-# ------------------------------------------------------------
+
 FILENAME = sys.argv[1] if len(sys.argv) > 1 else "images/dark.jpg"
 N = 100
 OUT = "results"
