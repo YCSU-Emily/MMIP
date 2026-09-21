@@ -6,8 +6,8 @@ import csv
 import json
 import math
 
-IMAGES_DIR = "images"            # 放你自己的真實照片（例如 test1.jpg）
-TEST_DIR = "test_images"         # 程式自動生成的測試影像
+IMAGES_DIR = "images"            
+TEST_DIR = "test_images"        
 RESULTS_DIR = "results"
 REAL_RESULTS_DIR = os.path.join(RESULTS_DIR, "real")
 
@@ -21,12 +21,11 @@ for d in (IMAGES_DIR, TEST_DIR, RESULTS_DIR, REAL_RESULTS_DIR):
     os.makedirs(d, exist_ok=True)
 
 
-# ============================================================
+
 # 一、核心演算法
-# ============================================================
 
 def order_points(pts):
-    """把四個點排成 左上、右上、右下、左下（依質心角度排序，比 sum/diff 法在旋轉時更穩）"""
+    """把四個點排成 左上、右上、右下、左下"""
     pts = np.asarray(pts, dtype=np.float32).reshape(4, 2)
     c = pts.mean(axis=0)
     ang = np.arctan2(pts[:, 1] - c[1], pts[:, 0] - c[0])
@@ -36,7 +35,7 @@ def order_points(pts):
 
 
 def perspective_transform(image, points):
-    """依四個角點做 Perspective Transformation，回傳 (正視影像, 排序後角點)"""
+    """依四個角點做 Perspective Transformation，回傳 """
     rect = order_points(points)
     tl, tr, br, bl = rect
 
@@ -73,24 +72,19 @@ def _binary_maps(gray):
 
 
 def _quad_from_contour(contour):
-    """輪廓 → 凸包 → 逐步放寬 epsilon 近似成四邊形；找不到就回傳 None"""
     hull = cv2.convexHull(contour)
     peri = cv2.arcLength(hull, True)
     for eps in (0.01, 0.015, 0.02, 0.03, 0.04, 0.06, 0.08):
         approx = cv2.approxPolyDP(hull, eps * peri, True)
         if len(approx) == 4 and cv2.isContourConvex(approx):
             return approx.reshape(4, 2).astype(np.float32), "approx"
-    # 最後手段：最小外接矩形（對梯形不精確，所以分數會被打折）
+    # 最小外接矩形（對梯形不精確，所以分數會被打折）
     box = cv2.boxPoints(cv2.minAreaRect(hull))
     return box.astype(np.float32), "minAreaRect"
 
 
 def detect_quadrilateral(image, min_area_ratio=0.03, max_area_ratio=0.95, top_n=8):
-    """
-    多策略文件偵測。回傳 dict：
-      quad(4x2 or None), method, score, area_ratio, touches_border, debug_map, checked
-    評分 = 面積比例 × 貼合度(凸包面積/四邊形面積) × 方法係數
-    """
+    """多策略文件偵測。回傳 dict："""
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     h, w = gray.shape
     img_area = float(h * w)
@@ -147,9 +141,7 @@ def correct_image(image):
     return result, det
 
 
-# ============================================================
-# 二、基礎題：單張影像
-# ============================================================
+# 二、單張影像
 
 def draw_overlay(image, quad, color=(0, 255, 0)):
     vis = image.copy()
@@ -191,9 +183,8 @@ def basic_task(fallback_image=None):
     print(f"已儲存 {RESULTS_DIR}/basic_original.jpg / basic_contour.jpg / basic_corrected.jpg")
 
 
-# ============================================================
+
 # 三、自動生成測試影像（模擬不同拍攝條件）
-# ============================================================
 
 CW, CH = 1000, 1000
 FOCAL, DIST = 900.0, 1300.0
@@ -201,7 +192,7 @@ DARK_BG = (35, 30, 28)
 
 
 def make_document(w=800, h=1100, seed=7):
-    """程式生成一張「假文件」：標題、文字行、表格、圖片區、方塊圖案"""
+
     rng = np.random.default_rng(seed)
     doc = np.full((h, w, 3), 245, np.uint8)
     cv2.rectangle(doc, (0, 0), (w - 1, h - 1), (170, 170, 170), 4)
@@ -228,13 +219,13 @@ def make_document(w=800, h=1100, seed=7):
             cv2.putText(doc, str(int(rng.integers(10, 999))), (75 + c * 165, ty + 32 + r * 45),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.8, (40, 40, 40), 2)
 
-    # 圖片區（漸層 + 圓）
+    # 圖片區（
     grad = np.tile(np.linspace(60, 200, 300, dtype=np.uint8), (200, 1))
     pic = cv2.merge([grad, grad[:, ::-1], np.full_like(grad, 120)])
     cv2.circle(pic, (150, 100), 60, (30, 160, 230), -1)
     doc[880:1080, 60:360] = pic
 
-    # 方塊圖案（QR 風）
+    # 方塊圖案
     for i in range(10):
         for j in range(10):
             if rng.random() > 0.5:
@@ -293,7 +284,7 @@ def project_corners(w, h, ay=0.0, ax=0.0, roll=0.0, scale=1.0, shift=(0, 0)):
         px, py = (px * math.cos(tr) - py * math.sin(tr), px * math.sin(tr) + py * math.cos(tr))
         pts.append((px, py))
     pts = np.float32(pts)
-    # 自動置中並縮放到畫面內（避免文件被畫布截斷而干擾角度分析），再套用 scale / shift
+    # 自動置中並縮放到畫面內，再套用 scale / shift
     pts -= (pts.max(axis=0) + pts.min(axis=0)) / 2.0
     extent = (pts.max(axis=0) - pts.min(axis=0)).max()
     fit = min(1.0, 0.85 * min(CW, CH) / extent)
@@ -382,12 +373,10 @@ def generate_test_images(doc):
     return items
 
 
-# ============================================================
 # 四、評估
-# ============================================================
 
 def similarity_to_flat(result, flat):
-    """校正結果與正視文件的相似度（灰階正規化相關；容許 90° 倍數旋轉）"""
+    """校正結果與正視文件的相似度"""
     size = (160, 220)
     f = cv2.GaussianBlur(cv2.cvtColor(cv2.resize(flat, size), cv2.COLOR_BGR2GRAY), (5, 5), 0)
     best = -1.0
@@ -406,7 +395,7 @@ def evaluate(item, flat):
            "status": "FAIL", "reason": ""}
 
     if result is None:
-        row["reason"] = "找不到符合條件的四邊形（文件面積過小 <3%、或邊緣/二值化未形成封閉外輪廓）"
+        row["reason"] = "找不到符合條件的四邊形"
         cv2.imwrite(f"{RESULTS_DIR}/{item['name']}_edges.jpg", det["debug_map"])
         return row, None, det
 
@@ -423,9 +412,9 @@ def evaluate(item, flat):
         row["status"], row["reason"] = "WARN", "角點有偏移，校正結果有變形或相似度偏低"
     else:
         row["status"] = "FAIL"
-        row["reason"] = "偵測到錯誤的四邊形（角點嚴重偏離真實文件）"
+        row["reason"] = "偵測到錯誤的四邊形"
     if det["touches_border"]:
-        row["reason"] += "；四邊形貼近影像邊界（文件可能被截斷）"
+        row["reason"] += "；四邊形貼近影像邊界"
 
     cv2.imwrite(f"{RESULTS_DIR}/{item['name']}_corrected.jpg", result)
     vis = draw_overlay(img, det["quad"])
@@ -525,10 +514,7 @@ def batch_test(items, flat):
     print("已輸出 summary.csv、summary.md、results/contact_sheet.jpg")
 
 
-# ============================================================
-# 五、處理你自己拍的真實照片（放在 images/）
-# ============================================================
-
+# 五、處理真實照片
 def process_real_images():
     paths = []
     for ext in ("*.jpg", "*.jpeg", "*.png", "*.JPG", "*.PNG"):
@@ -568,9 +554,7 @@ def process_real_images():
         w.writerows(rows)
 
 
-# ============================================================
 # Main
-# ============================================================
 
 def main():
     doc = make_document()
