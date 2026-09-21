@@ -13,13 +13,13 @@ VARIANTS_DIR = "variants"
 STITCH_DIR = "stitched_variants"
 DEBUG_DIR = "match_debug"
 
-RATIO_THRESH = 0.75       # Lowe ratio test（0.6 太嚴、會讓臨界條件提早失敗；0.75 較常用）
-MIN_MATCHES = 10          # 少於此數量直接判定失敗（Homography 理論最少 4 點，但太不穩）
-RANSAC_THRESH = 5.0       # RANSAC 重投影誤差門檻（px）
+RATIO_THRESH = 0.75       # Lowe ratio test
+MIN_MATCHES = 10          # 少於此數量直接判定失敗
+RANSAC_THRESH = 5.0       # RANSAC 重投影誤差門檻
 OK_MIN_INLIERS = 15       # OK 需要的最少 inliers
 OK_MIN_RATIO = 0.30       # OK 需要的最低 inlier 比例
-MAX_DIM = 1600            # 影像最長邊超過就縮小（加速）
-MAX_CANVAS = 12000        # 拼接畫布單邊上限（避免 Homography 退化時爆記憶體）
+MAX_DIM = 1600            # 影像最長邊超過就縮小
+MAX_CANVAS = 12000        # 拼接畫布單邊上限
 
 PREPROCESSES = ["None", "CLAHE", "Norm+CLAHE", "Blur+CLAHE"]
 
@@ -27,9 +27,8 @@ for d in (VARIANTS_DIR, STITCH_DIR, DEBUG_DIR):
     os.makedirs(d, exist_ok=True)
 
 
-# ============================================================
 # 一、前處理 + SIFT 特徵匹配
-# ============================================================
+
 
 def load_image(path):
     img = cv2.imread(path)
@@ -90,9 +89,7 @@ def match_descriptors(des1, des2):
     return good
 
 
-# ============================================================
 # 二、Homography + 合理性檢查
-# ============================================================
 
 def estimate_homography(kp1, kp2, good):
     """回傳 (H, mask)；失敗回傳 (None, None)。H 把 img1 座標映射到 img2 座標"""
@@ -133,9 +130,7 @@ def reprojection_error(H, kp1, kp2, good, mask):
     return float(np.linalg.norm(proj - dst, axis=1).mean())
 
 
-# ============================================================
 # 三、拼接（Homography warp + 羽化融合）
-# ============================================================
 
 def warp_and_merge(img1, img2, H):
     """把 img1 透視轉換到 img2 座標系，重疊區用距離權重羽化融合。失敗回傳 None"""
@@ -180,13 +175,10 @@ def crop_black(img):
     return img[y:y + h, x:x + w]
 
 
-# ============================================================
-# 四、基礎題
-# ============================================================
 
 def basic_stitch():
     print("=" * 60)
-    print("基礎題：SIFT + Lowe ratio + RANSAC Homography 拼接")
+    print("SIFT + Lowe ratio + RANSAC Homography 拼接")
     print("=" * 60)
 
     img1, img2 = load_image(IMG1_PATH), load_image(IMG2_PATH)
@@ -235,9 +227,7 @@ def basic_stitch():
     return img1, img2
 
 
-# ============================================================
-# 五、進階題 Step 1：生成測試變體
-# ============================================================
+# 五、 Step 1：生成測試變體
 
 def generate_variants(img2):
     """回傳 list[(name, group, param, image)]，同時寫入 variants/"""
@@ -280,9 +270,7 @@ def generate_variants(img2):
     return out
 
 
-# ============================================================
-# 六、進階題 Step 2：批次評估
-# ============================================================
+# 六、 Step 2：批次評估
 
 def evaluate(img1, img2v, mode, name):
     t0 = time.time()
@@ -440,9 +428,7 @@ def batch_test(img1, img2):
     print("\n已輸出 summary.csv、summary.md、stitched_variants/、match_debug/")
 
 
-# ============================================================
 # Main
-# ============================================================
 
 def main():
     result = basic_stitch()
