@@ -3,3 +3,5 @@ week2.zip
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+# Week 3 Wafer dataset
+week3/dataset/wafer/
