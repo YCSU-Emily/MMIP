@@ -1,15 +1,3 @@
-# ============================================================
-# Quiz 2：Histogram Equalization（直方圖均衡化）
-#
-# 基礎：對一張影像做 Histogram Equalization，繪製處理前後的灰階 Histogram 並比較
-# 進階：用 NumPy 自行實作演算法，與 OpenCV cv2.equalizeHist 比較
-#       重複 N 次取平均，比較 (1) 執行速度 (2) 影像增強效果 (3) 兩者差異
-#
-# 執行：python3 quiz2.py                     （預設讀 images/dark.jpg）
-#       python3 quiz2.py images/my_photo.jpg
-# 需求：pip install opencv-python numpy matplotlib pandas
-# ============================================================
-
 import sys
 import os
 import time
@@ -21,9 +9,7 @@ matplotlib.use("Agg")                  # 伺服器（無螢幕）也能存圖
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# ------------------------------------------------------------
-# Config
-# ------------------------------------------------------------
+
 FILENAME = sys.argv[1] if len(sys.argv) > 1 else "images/dark.jpg"
 N = 100
 OUT = "results"
@@ -44,9 +30,8 @@ def hist_plot(ax, image, title):
     ax.set_xlim([0, 256])
 
 
-# ============================================================
 # 1. 讀取影像 → 灰階
-# ============================================================
+
 img = cv2.imread(FILENAME)
 if img is None:
     raise FileNotFoundError(f"找不到或無法讀取影像：{FILENAME}")
@@ -59,10 +44,8 @@ cv2.imwrite(f"{OUT}/original_color.jpg", img)
 cv2.imwrite(f"{OUT}/original_gray.png", gray)
 
 
-# ============================================================
 # 2. NumPy 自行實作 Histogram Equalization
-#    s = round( (CDF(r) - CDF_min) / (N - CDF_min) * 255 )
-# ============================================================
+
 def histogram_equalization_numpy(gray_image):
     hist = np.bincount(gray_image.ravel(), minlength=256)      # Step 1：Histogram
     cdf = hist.cumsum()                                        # Step 2：CDF
@@ -81,43 +64,40 @@ def histogram_equalization_numpy(gray_image):
     return lut[gray_image]                                     # Step 7：查表
 
 
-# ============================================================
 # 3. 執行兩種方法
-# ============================================================
+
 opencv_result = cv2.equalizeHist(gray)
 numpy_result = histogram_equalization_numpy(gray)
 
 cv2.imwrite(f"{OUT}/equalized_opencv.png", opencv_result)
 cv2.imwrite(f"{OUT}/equalized_numpy.png", numpy_result)
 
-# ============================================================
 # 4. 圖表
-# ============================================================
 # 4-1 原始彩色 / 灰階
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
 ax[0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)); ax[0].set_title("Original Color"); ax[0].axis("off")
 ax[1].imshow(gray, cmap="gray", vmin=0, vmax=255); ax[1].set_title("Original Grayscale"); ax[1].axis("off")
 save_fig("01_original.png")
 
-# 4-2 基礎題：處理前後影像（OpenCV）
+# 4-2 處理前後影像（OpenCV）
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
 ax[0].imshow(gray, cmap="gray", vmin=0, vmax=255); ax[0].set_title("Before"); ax[0].axis("off")
 ax[1].imshow(opencv_result, cmap="gray", vmin=0, vmax=255); ax[1].set_title("After (Histogram Equalization)"); ax[1].axis("off")
 save_fig("02_before_after_image.png")
 
-# 4-3 基礎題：處理前後 Histogram
+# 4-3 處理前後 Histogram
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
 hist_plot(ax[0], gray, "Before Histogram")
 hist_plot(ax[1], opencv_result, "After Histogram")
 save_fig("03_before_after_histogram.png")
 
-# 4-4 進階題：Original / NumPy / OpenCV 影像
+# 4-4 Original / NumPy / OpenCV 影像
 fig, ax = plt.subplots(1, 3, figsize=(15, 5))
 for a, im, t in zip(ax, [gray, numpy_result, opencv_result], ["Original", "NumPy", "OpenCV"]):
     a.imshow(im, cmap="gray", vmin=0, vmax=255); a.set_title(t); a.axis("off")
 save_fig("04_compare_images.png")
 
-# 4-5 進階題：三者 Histogram
+# 4-5 三者 Histogram
 fig, ax = plt.subplots(1, 3, figsize=(16, 5))
 for a, im, t in zip(ax, [gray, numpy_result, opencv_result], ["Original", "NumPy", "OpenCV"]):
     hist_plot(a, im, f"{t} Histogram")
@@ -131,9 +111,8 @@ for im, t in zip([gray, opencv_result], ["Original", "After equalization"]):
 ax.set_title("Normalized CDF"); ax.set_xlabel("Gray Level"); ax.set_ylabel("Cumulative Ratio"); ax.legend()
 save_fig("06_cdf.png")
 
-# ============================================================
 # 5. NumPy 與 OpenCV 的差異
-# ============================================================
+
 diff = cv2.absdiff(numpy_result, opencv_result)
 n_diff = int(np.count_nonzero(diff))
 print("\n" + "=" * 60)
@@ -147,9 +126,8 @@ plt.figure(figsize=(8, 6))
 plt.imshow(diff, cmap="gray"); plt.colorbar(); plt.title("Difference: NumPy vs OpenCV"); plt.axis("off")
 save_fig("07_difference.png")
 
-# ============================================================
 # 6. 影像增強效果統計
-# ============================================================
+
 def stats(name, im):
     return {"Method": name, "Min": int(im.min()), "Max": int(im.max()),
             "Dynamic Range": int(im.max()) - int(im.min()),
@@ -168,9 +146,8 @@ plt.bar(stat_table["Method"], stat_table["Std"])
 plt.title("Standard Deviation (contrast) Comparison"); plt.ylabel("Standard Deviation")
 save_fig("08_std_comparison.png")
 
-# ============================================================
 # 7. 執行時間（含 warm-up）
-# ============================================================
+
 def benchmark(fn, n=N):
     for _ in range(5):
         fn()
