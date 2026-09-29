@@ -11,24 +11,19 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# ------------------------------------------------------------------
-# 0. 環境設定
-# ------------------------------------------------------------------
+
 RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 torch.manual_seed(RANDOM_STATE)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"使用裝置: {device}")
 
-# ------------------------------------------------------------------
-# 1. 讀取資料 + 前處理
-# ------------------------------------------------------------------
+
 df = pd.read_csv("./UCI_Credit_Card.csv")
 
-# 移除不具預測力的 ID 欄位
+# 移除不具預測力的ID欄位
 df = df.drop(columns=["ID"])
 
-# 目標欄位: default.payment.next.month (1 = 下期會違約, 0 = 不會)
 TARGET_COL = "default.payment.next.month"
 X = df.drop(columns=[TARGET_COL]).values.astype(np.float32)
 y = df[TARGET_COL].values.astype(np.float32)
@@ -36,17 +31,14 @@ y = df[TARGET_COL].values.astype(np.float32)
 print(f"資料筆數: {X.shape[0]}, 特徵數: {X.shape[1]}")
 print(f"正類 (違約) 比例: {y.mean():.4f}")
 
-# ------------------------------------------------------------------
-# 2. 切分 Training / Validation
-# ------------------------------------------------------------------
+
 X_train, X_val, y_train, y_val = train_test_split(
     X, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y
 )
 print(f"Training: {X_train.shape[0]} 筆, Validation: {X_val.shape[0]} 筆")
 
-# ------------------------------------------------------------------
-# 3. Feature Scaling (StandardScaler，僅用 Training data fit)
-# ------------------------------------------------------------------
+
+#  Feature Scaling
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train).astype(np.float32)
 X_val_scaled = scaler.transform(X_val).astype(np.float32)
@@ -62,8 +54,7 @@ val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False)
 
 INPUT_DIM = X_train_scaled.shape[1]
 
-# ------------------------------------------------------------------
-# 4. 定義 MLP 模型
+#  定義 MLP 模型
 #    baseline: 無 Dropout / 無正則化
 #    improved: 加入 Dropout + (透過 optimizer 的 weight_decay 做 L2) + Early Stopping
 # ------------------------------------------------------------------
@@ -84,9 +75,7 @@ class MLP(nn.Module):
     def forward(self, x):
         return self.net(x).squeeze(-1)
 
-# ------------------------------------------------------------------
-# 5. 訓練函式 (共用於 baseline / improved)
-# ------------------------------------------------------------------
+# 訓練函式 (共用於 baseline / improved)
 def train_model(model, train_loader, val_loader, epochs, lr, weight_decay=0.0,
                  use_early_stopping=False, patience=10):
     model.to(device)
@@ -164,9 +153,7 @@ def evaluate(model, X_val_scaled, y_val, threshold=0.5):
     return proba, y_pred, acc, prec, rec, f1, cm
 
 
-# ==================================================================
-# 6. 訓練 Baseline MLP
-# ==================================================================
+# 訓練 Baseline MLP
 print("\n========== Baseline MLP (無 Dropout / 無正則化) ==========")
 EPOCHS = 80
 LEARNING_RATE = 1e-3
@@ -182,9 +169,7 @@ proba_base, pred_base, acc_b, prec_b, rec_b, f1_b, cm_b = evaluate(baseline_mode
 print(f"\n[Baseline] Accuracy={acc_b:.4f} Precision={prec_b:.4f} Recall={rec_b:.4f} F1={f1_b:.4f}")
 print("Confusion Matrix:\n", cm_b)
 
-# ------------------------------------------------------------------
-# 7. 單筆 Validation Sample 預測展示
-# ------------------------------------------------------------------
+# 單筆 Validation Sample 預測展示
 sample_idx = 0
 sample_x = torch.tensor(X_val_scaled[sample_idx:sample_idx+1]).to(device)
 baseline_model.eval()
@@ -199,9 +184,7 @@ print(f"模型輸出機率 (違約機率): {sample_proba:.4f}")
 print(f"預測類別: {sample_pred}  (threshold=0.5)")
 print(f"實際類別: {sample_true}")
 
-# ==================================================================
-# 8. 訓練 Improved MLP (Dropout + L2 + Early Stopping)
-# ==================================================================
+# 訓練 Improved MLP (Dropout + L2 + Early Stopping)
 print("\n========== Improved MLP (Dropout + L2 + Early Stopping) ==========")
 DROPOUT = 0.2
 WEIGHT_DECAY = 5e-5   # L2 regularization
@@ -235,9 +218,7 @@ print(f"\n[Improved @最佳threshold={best_thr:.2f}] Accuracy={acc_i_best:.4f} "
       f"Precision={prec_i_best:.4f} Recall={rec_i_best:.4f} F1={f1_i_best:.4f}")
 print("Confusion Matrix:\n", cm_i_best)
 
-# ==================================================================
-# 9. 繪圖: Training / Validation Loss (baseline & improved)
-# ==================================================================
+# 繪圖: Training / Validation Loss (baseline & improved)
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 axes[0].plot(range(1, len(base_train_losses)+1), base_train_losses, label="Training Loss")
 axes[0].plot(range(1, len(base_val_losses)+1), base_val_losses, label="Validation Loss")
@@ -255,9 +236,7 @@ plt.tight_layout()
 plt.savefig("./loss_curves.png", dpi=150)
 plt.close()
 
-# ==================================================================
-# 10. Baseline vs Improved 指標比較表
-# ==================================================================
+# Baseline vs Improved 指標比較表
 comparison = pd.DataFrame({
     "Model": ["Baseline MLP (thr=0.5)",
               "Improved MLP (thr=0.5)",
