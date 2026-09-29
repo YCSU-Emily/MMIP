@@ -1,22 +1,3 @@
-"""
-Quiz 3：ROC Curve / AUC 分析
-======================================================
-延續 Quiz 2 的信用卡違約預測資料集與 MLP 模型，
-沿用「完全相同」的 Training/Validation 切分方式與 Feature Scaling。
-
-基礎:
-  - 取得 MLP 對 Validation Set 的預測機率
-  - 繪製 ROC Curve (X 軸 FPR, Y 軸 TPR)，並標示 AUC
-  - 說明 ROC / AUC 的意義
-
-進階:
-  - 使用相同 Training/Validation Set，建立第二個模型 (Logistic Regression)
-  - 取得其預測機率，畫在同一張 ROC 圖上並標示 AUC
-  - 比較兩個模型的區分能力 (discrimination ability)
-
-資料集: UCI_Credit_Card.csv (需與本程式放在同一資料夾)
-"""
-
 import numpy as np
 import pandas as pd
 import torch
@@ -30,17 +11,12 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# ------------------------------------------------------------------
-# 0. 環境設定 (與 Quiz 2 完全一致，確保 Train/Val 切分相同)
-# ------------------------------------------------------------------
 RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 torch.manual_seed(RANDOM_STATE)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# ------------------------------------------------------------------
-# 1. 讀取資料 + 前處理 (與 Quiz 2 相同)
-# ------------------------------------------------------------------
+# 讀取資料 + 前處理 
 df = pd.read_csv("./UCI_Credit_Card.csv")
 df = df.drop(columns=["ID"])
 
@@ -53,9 +29,7 @@ X_train, X_val, y_train, y_val = train_test_split(
 )
 print(f"Training: {X_train.shape[0]} 筆, Validation: {X_val.shape[0]} 筆")
 
-# ------------------------------------------------------------------
-# 2. Feature Scaling (與 Quiz 2 相同：只用 Training data fit)
-# ------------------------------------------------------------------
+# Feature Scaling
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train).astype(np.float32)
 X_val_scaled = scaler.transform(X_val).astype(np.float32)
@@ -68,9 +42,7 @@ val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False)
 
 INPUT_DIM = X_train_scaled.shape[1]
 
-# ==================================================================
-# 3. 重新訓練 Quiz 2 的 MLP (Improved 版本: Dropout + L2 + Early Stopping)
-# ==================================================================
+#  重新訓練 Quiz 2 的 MLP 
 class MLP(nn.Module):
     def __init__(self, input_dim, hidden_dims=(64, 32, 16), dropout=0.2):
         super().__init__()
@@ -140,18 +112,14 @@ with torch.no_grad():
     mlp_logits = mlp_model(torch.tensor(X_val_scaled).to(device))
     proba_mlp = torch.sigmoid(mlp_logits).cpu().numpy()
 
-# ==================================================================
-# 4. 第二個模型: Logistic Regression (課程介紹過的 ML 演算法)
+# 第二個模型: Logistic Regression (課程介紹過的 ML 演算法)
 #    使用完全相同的 Training / Validation set 與 Scaled 特徵
-# ==================================================================
 print("訓練 Logistic Regression...")
 log_reg = LogisticRegression(random_state=RANDOM_STATE, max_iter=1000)
 log_reg.fit(X_train_scaled, y_train)
 proba_lr = log_reg.predict_proba(X_val_scaled)[:, 1]
 
-# ==================================================================
-# 5. 計算 ROC Curve / AUC
-# ==================================================================
+#  計算 ROC Curve / AUC
 fpr_mlp, tpr_mlp, _ = roc_curve(y_val, proba_mlp)
 auc_mlp = roc_auc_score(y_val, proba_mlp)
 
@@ -161,9 +129,7 @@ auc_lr = roc_auc_score(y_val, proba_lr)
 print(f"\nMLP AUC = {auc_mlp:.4f}")
 print(f"Logistic Regression AUC = {auc_lr:.4f}")
 
-# ==================================================================
-# 6. 繪製 ROC Curve (兩模型畫在同一張圖)
-# ==================================================================
+# 繪製 ROC Curve (兩模型畫在同一張圖)
 fig, ax = plt.subplots(figsize=(7, 6))
 ax.plot(fpr_mlp, tpr_mlp, label=f"MLP (AUC = {auc_mlp:.3f})", linewidth=2)
 ax.plot(fpr_lr, tpr_lr, label=f"Logistic Regression (AUC = {auc_lr:.3f})", linewidth=2)
@@ -177,7 +143,7 @@ plt.tight_layout()
 plt.savefig("./roc_curve_comparison.png", dpi=150)
 plt.close()
 
-# 單獨一張只有 MLP 的 ROC 圖 (對應「基礎」部分要求)
+# 單獨一張只有 MLP 的 ROC 圖 
 fig, ax = plt.subplots(figsize=(6, 6))
 ax.plot(fpr_mlp, tpr_mlp, color="tab:blue", linewidth=2, label=f"MLP (AUC = {auc_mlp:.3f})")
 ax.plot([0, 1], [0, 1], linestyle="--", color="gray")
@@ -190,9 +156,7 @@ plt.tight_layout()
 plt.savefig("./roc_curve_mlp_only.png", dpi=150)
 plt.close()
 
-# ------------------------------------------------------------------
-# 7. 輸出比較表
-# ------------------------------------------------------------------
+# 輸出比較表
 summary = pd.DataFrame({
     "Model": ["MLP (Improved)", "Logistic Regression"],
     "AUC": [auc_mlp, auc_lr]
