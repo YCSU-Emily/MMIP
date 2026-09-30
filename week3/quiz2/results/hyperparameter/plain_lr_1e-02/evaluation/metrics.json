@@ -1,0 +1,19 @@
+{
+    "model": "plain",
+    "test_top1": 78.36879432624113,
+    "test_top5": 100.0,
+    "macro_auc": 0.9763860595543483,
+    "parameter_count": 391689,
+    "trainable_parameter_count": 391689,
+    "per_class_auc": {
+        "Center": 0.9217971933001359,
+        "Donut": 0.9813971253961069,
+        "Edge-Loc": 0.9680568130375736,
+        "Edge-Ring": 0.9985428927116342,
+        "Local": 0.9432152557718425,
+        "Near-Full": 0.9968877320054323,
+        "Normal": 1.0,
+        "Random": 0.9956286781349027,
+        "Scratch": 0.9819488456315075
+    }
+}

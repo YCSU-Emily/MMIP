@@ -1,0 +1,12 @@
+{
+    "model": "resnet18",
+    "epochs": 1,
+    "batch_size": 32,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.0001,
+    "device": "cpu",
+    "seed": 42,
+    "total_parameters": 11181129,
+    "trainable_parameters": 11181129,
+    "best_val_top1": 89.60573476702508
+}

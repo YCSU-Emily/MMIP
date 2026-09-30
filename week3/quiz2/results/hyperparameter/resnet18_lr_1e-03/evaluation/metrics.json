@@ -1,0 +1,19 @@
+{
+    "model": "resnet18",
+    "test_top1": 87.94326241134752,
+    "test_top5": 99.88179669030733,
+    "macro_auc": 0.9973231351541673,
+    "parameter_count": 11181129,
+    "trainable_parameter_count": 11181129,
+    "per_class_auc": {
+        "Center": 1.0,
+        "Donut": 1.0,
+        "Edge-Loc": 0.9833352195563605,
+        "Edge-Ring": 0.9979345857854233,
+        "Local": 0.999462426437302,
+        "Near-Full": 0.9986985061113627,
+        "Normal": 0.9965199185151652,
+        "Random": 0.9999575599818922,
+        "Scratch": 1.0
+    }
+}

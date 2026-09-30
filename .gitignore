@@ -5,3 +5,6 @@ __pycache__/
 .ipynb_checkpoints/
 # Week 3 Wafer dataset
 week3/dataset/wafer/
+
+# Week 3 Quiz 2 model checkpoints
+*.pth
