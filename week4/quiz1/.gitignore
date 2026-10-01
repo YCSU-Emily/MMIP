@@ -1,0 +1,26 @@
+# ============================================
+# Week 4 Quiz 1 - Dataset files
+# ============================================
+
+# Sentiment Analysis dataset
+sentiment/data/*.csv
+
+# Image Classification dataset
+image_classification/data/**/*.jpg
+image_classification/data/**/*.jpeg
+image_classification/data/**/*.png
+
+# Image Captioning images
+image_captioning/data/images/**/*.jpg
+image_captioning/data/images/**/*.jpeg
+image_captioning/data/images/**/*.png
+
+# Image Captioning generated caption subsets
+image_captioning/data/captions/*.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
