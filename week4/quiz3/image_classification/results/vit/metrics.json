@@ -1,0 +1,27 @@
+{
+  "model": "ViT-B/16",
+  "dataset": "Wafer Defect",
+  "num_classes": 9,
+  "class_names": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Local",
+    "Near-Full",
+    "Normal",
+    "Random",
+    "Scratch"
+  ],
+  "test_samples": 846,
+  "accuracy": 0.9940898345153665,
+  "precision_macro": 0.9941371859135018,
+  "recall_macro": 0.9940898345153665,
+  "f1_macro": 0.994069926233669,
+  "macro_auc": 0.9999717066545948,
+  "total_parameters": 85805577,
+  "trainable_parameters": 85805577,
+  "training_time_sec": 127.37024120699789,
+  "inference_time_sec": 1.5128536459960742,
+  "inference_time_per_image_ms": 1.7882430803736102
+}

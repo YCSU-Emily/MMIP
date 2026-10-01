@@ -1,0 +1,14 @@
+{
+  "seed": 3407,
+  "model": "resnet18",
+  "pretrained": true,
+  "image_size": 224,
+  "batch_size": 64,
+  "epochs": 10,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "optimizer": "AdamW",
+  "scheduler": "CosineAnnealingLR",
+  "num_workers": 8,
+  "device": "cuda"
+}

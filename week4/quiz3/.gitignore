@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Large model files
+models/
+
+# Dataset
+data/
+
+# Jupyter
+.ipynb_checkpoints/
