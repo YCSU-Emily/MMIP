@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Dataset
+*.csv
+
+# Training outputs
+results/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
