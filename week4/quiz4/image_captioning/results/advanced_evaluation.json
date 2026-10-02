@@ -1,0 +1,1824 @@
+{
+  "evaluation_type": "Image Captioning Advanced Evaluation",
+  "num_generated_images": 100,
+  "num_matched_images": 100,
+  "bleu": {
+    "BLEU-1": 0.5901647709160777,
+    "BLEU-2": 0.3739965893511687,
+    "BLEU-3": 0.22931784536332198,
+    "BLEU-4": 0.15289963825381545
+  },
+  "bertscore": {
+    "model": "roberta-base",
+    "precision": 0.9021159410476685,
+    "recall": 0.8995657563209534,
+    "f1": 0.9007830619812012,
+    "evaluation_time_sec": 14.65802777800127
+  },
+  "inference": {
+    "total_inference_time_sec": 0.7001410779921571,
+    "average_inference_time_ms_per_image": 7.001410779921571
+  },
+  "samples": [
+    {
+      "image": "000000000776.jpg",
+      "generated_caption": "a teddy bear is sitting on a table",
+      "references": [
+        "Three teddy bears, each a different color, snuggling together.",
+        "Three stuffed animals are sitting on a bed.",
+        "three teddy bears giving each other a hug",
+        "A group of three stuffed animal teddy bears.",
+        "Three stuffed bears hugging and sitting on a blue pillow"
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.3779644730092272,
+      "BLEU-3": 0.28768479133239405,
+      "BLEU-4": 0.1477219991186121,
+      "BERTScore_P": 0.8948318362236023,
+      "BERTScore_R": 0.8769384622573853,
+      "BERTScore_F1": 0.8857948184013367
+    },
+    {
+      "image": "000000000802.jpg",
+      "generated_caption": "a white sink and a sink in a bathroom",
+      "references": [
+        "A kitchen with a refrigerator, stove and oven with cabinets.",
+        "A white oven and a white refrigerator are in the kitchen.",
+        "The refrigerator is brand new and was delivered today.",
+        "Stark white appliances stand out against brown wooden cabinets.",
+        "Kitchen appliances and cabinets as seen through opening."
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.372677996249965,
+      "BLEU-3": 0.125657906854859,
+      "BLEU-4": 0.07583235673413397,
+      "BERTScore_P": 0.884513258934021,
+      "BERTScore_R": 0.883969783782959,
+      "BERTScore_F1": 0.8842414617538452
+    },
+    {
+      "image": "000000000872.jpg",
+      "generated_caption": "a baseball player is swinging at a ball",
+      "references": [
+        "A couple of baseball player standing on a field.",
+        "Two men playing baseball in a field on a sunny day.",
+        "two baseball players are playing baseball on a field",
+        "A couple of men play baseball and the batter runs for base.",
+        "Two guys playing baseball, with trees in the back."
+      ],
+      "BLEU-1": 0.4412484512922977,
+      "BLEU-2": 0.23585721816862673,
+      "BLEU-3": 0.09353053698126731,
+      "BLEU-4": 0.06164542728425844,
+      "BERTScore_P": 0.9075452089309692,
+      "BERTScore_R": 0.9113160967826843,
+      "BERTScore_F1": 0.9094268083572388
+    },
+    {
+      "image": "000000001425.jpg",
+      "generated_caption": "a close up of a white plate with a of broccoli",
+      "references": [
+        "A meal is lying on a plate on a table.",
+        "part of a sandwich sitting on a table",
+        "A plate with a burger that is halfway eaten.",
+        "A half eaten meal sitting on a plate.",
+        "A sandwich with a bite taken on a plate."
+      ],
+      "BLEU-1": 0.5454545454545454,
+      "BLEU-2": 0.40451991747794525,
+      "BLEU-3": 0.2629535894329295,
+      "BLEU-4": 0.12278260149096115,
+      "BERTScore_P": 0.8679422736167908,
+      "BERTScore_R": 0.8976473808288574,
+      "BERTScore_F1": 0.8825448751449585
+    },
+    {
+      "image": "000000001503.jpg",
+      "generated_caption": "a desk with a computer and a laptop on it",
+      "references": [
+        "A computer on a desk next to a laptop.",
+        "A picture of an iMac desktop next to a Mac laptop on a desk.",
+        "Two apple computers are on a white desk",
+        "A laptop and desktop computer on a white desk",
+        "A computer desk with several pieces of computer equipment."
+      ],
+      "BLEU-1": 0.9,
+      "BLEU-2": 0.7071067811865476,
+      "BLEU-3": 0.18420157493201939,
+      "BLEU-4": 0.09720654209069822,
+      "BERTScore_P": 0.9252380132675171,
+      "BERTScore_R": 0.935099184513092,
+      "BERTScore_F1": 0.9301424622535706
+    },
+    {
+      "image": "000000001818.jpg",
+      "generated_caption": "a zebra standing next to a tree in a field",
+      "references": [
+        "A zebra in the grass who is cleaning himself.",
+        "A baby giraffe drinking milk from it's mother in a field.",
+        "A baby zebra is suckling milk from its mother.",
+        "a baby zebra nursing from an adult zebra",
+        "Baby zebra sucking milk from its mothers teat."
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.408248290463863,
+      "BLEU-3": 0.27516060407455223,
+      "BLEU-4": 0.13134549472120793,
+      "BERTScore_P": 0.9169057011604309,
+      "BERTScore_R": 0.910483181476593,
+      "BERTScore_F1": 0.9136831760406494
+    },
+    {
+      "image": "000000003553.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "references": [
+        "a person skating on some pieces of wood",
+        "Legs on a skateboard going down a small ramp,",
+        "A person wearing sneakers balancing on a skateboard on a wooden platform.",
+        "A man riding a skateboard on piece of concrete in a park.",
+        "A skateboarder is riding on boards that have been placed over grass."
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.372677996249965,
+      "BLEU-3": 0.125657906854859,
+      "BLEU-4": 0.07583235673413397,
+      "BERTScore_P": 0.8810089826583862,
+      "BERTScore_R": 0.889289140701294,
+      "BERTScore_F1": 0.8851296901702881
+    },
+    {
+      "image": "000000004134.jpg",
+      "generated_caption": "a man and a woman are standing in a kitchen",
+      "references": [
+        "A man is shaking hands with another man.",
+        "Two men shake hands at a formal dinner gathering.",
+        "Two men standing next to each other holding hands.",
+        "Two men are shaking hands at a social gathering.",
+        "Two men shaking hands after a dinner speech."
+      ],
+      "BLEU-1": 0.4,
+      "BLEU-2": 0.21081851067789192,
+      "BLEU-3": 0.08220706914434903,
+      "BLEU-4": 0.05307712171072445,
+      "BERTScore_P": 0.9086528420448303,
+      "BERTScore_R": 0.9175668954849243,
+      "BERTScore_F1": 0.9130880832672119
+    },
+    {
+      "image": "000000005477.jpg",
+      "generated_caption": "a large jetliner sitting on top of a runway",
+      "references": [
+        "large mustard yellow commercial airplane parked in the airport",
+        "A brown jetliner sitting on top of an airport runway.",
+        "A brown LOT airliner sitting on the tarmac",
+        "A gold colored, Polish airplane sitting on the runway.",
+        "A large golden airplane is on the runway."
+      ],
+      "BLEU-1": 0.8888888888888888,
+      "BLEU-2": 0.7453559924999299,
+      "BLEU-3": 0.6197980942410934,
+      "BLEU-4": 0.5307712171072443,
+      "BERTScore_P": 0.8962209224700928,
+      "BERTScore_R": 0.8904563784599304,
+      "BERTScore_F1": 0.8933293223381042
+    },
+    {
+      "image": "000000006213.jpg",
+      "generated_caption": "a white sink sitting under a white sink",
+      "references": [
+        "A shower curtain sits open in an empty and clean bathroom.",
+        "a bathroom view of a tub and sink wit mirrors",
+        "Nice and neat clean bathroom with shower in the corner.",
+        "A bathroom has two sinks, a bathtub, and a shower.",
+        "The bathroom had a tub with two sinks and a separate shower."
+      ],
+      "BLEU-1": 0.2920502936517768,
+      "BLEU-2": 0.057002380575881924,
+      "BLEU-3": 0.03480863865617522,
+      "BLEU-4": 0.02846946938149362,
+      "BERTScore_P": 0.8705259561538696,
+      "BERTScore_R": 0.8706589937210083,
+      "BERTScore_F1": 0.870592474937439
+    },
+    {
+      "image": "000000006894.jpg",
+      "generated_caption": "a man standing next to a man holding a surfboard",
+      "references": [
+        "A man getting a kiss on the neck from an elephant's trunk",
+        "A man being kiss by a baby elephant with it's trunk.",
+        "A man throws his head back as an elephant touches his face with its trunk.",
+        "An elephant using his truck to cuddle with a man.",
+        "A man is playing with an elephant in a field."
+      ],
+      "BLEU-1": 0.36193496721438384,
+      "BLEU-2": 0.19075647687597008,
+      "BLEU-3": 0.07438403218887638,
+      "BLEU-4": 0.04802616576551228,
+      "BERTScore_P": 0.8890734910964966,
+      "BERTScore_R": 0.8541134595870972,
+      "BERTScore_F1": 0.871242880821228
+    },
+    {
+      "image": "000000006954.jpg",
+      "generated_caption": "a group of people playing frisbee in a field",
+      "references": [
+        "A group of young children sitting in the grass.",
+        "A group of children sitting on the grass with frisbees in their hands.",
+        "A group of children sitting in the grass with two of them holding a Frisbee .",
+        "Five small boys sitting on the grass holding two frisbees",
+        "a bunch of kids sitting on grass holding a frisbe"
+      ],
+      "BLEU-1": 0.596559544542913,
+      "BLEU-2": 0.3653166213293175,
+      "BLEU-3": 0.257431662133764,
+      "BLEU-4": 0.1262975489687145,
+      "BERTScore_P": 0.9043722152709961,
+      "BERTScore_R": 0.9388956427574158,
+      "BERTScore_F1": 0.9213106036186218
+    },
+    {
+      "image": "000000007108.jpg",
+      "generated_caption": "a elephant that is standing in the dirt",
+      "references": [
+        "A herd of elephants walking away from a watering hole.",
+        "A close up from knees up front view of an elephant with trunk forward, outside on dirt, with other elephants, grass, bushes and white-blue sky.",
+        "An elephant is seen head on amongst other elephants.",
+        "Elephants walking along a dirt path next to water.",
+        "Several elephants walking together in a line near water."
+      ],
+      "BLEU-1": 0.48675048941962806,
+      "BLEU-2": 0.07358975688818928,
+      "BLEU-3": 0.0412702045915212,
+      "BLEU-4": 0.03234756246430655,
+      "BERTScore_P": 0.8993839025497437,
+      "BERTScore_R": 0.8944447040557861,
+      "BERTScore_F1": 0.8969074487686157
+    },
+    {
+      "image": "000000007574.jpg",
+      "generated_caption": "a kitchen with a stove and a sink",
+      "references": [
+        "A kitchen with a very messy counter space.",
+        "A kitchen that has black counters and wooden cabinets.",
+        "A metallic refrigerator freezer sitting inside of a kitchen.",
+        "a kitchen filled with assorted items like a bottle of dish soap",
+        "A kitchen with two sinks, a counter, detergent, a stove and a refrigerator in it."
+      ],
+      "BLEU-1": 0.772184789761521,
+      "BLEU-2": 0.7642647363993407,
+      "BLEU-3": 0.7004382557607322,
+      "BLEU-4": 0.5901612477751701,
+      "BERTScore_P": 0.917557954788208,
+      "BERTScore_R": 0.9169577360153198,
+      "BERTScore_F1": 0.9172577857971191
+    },
+    {
+      "image": "000000007816.jpg",
+      "generated_caption": "a man riding a motorcycle down a road",
+      "references": [
+        "A person on a motor bike travels around a sharp corner.",
+        "A person on a motor bike on a road.",
+        "a rider dressed in white riding a matching white motorcycle",
+        "A person on a motorcycles driving past a group of people behind a fence.",
+        "A guy on a motorcycle with some people watching."
+      ],
+      "BLEU-1": 0.5841005873035536,
+      "BLEU-2": 0.44153854132913556,
+      "BLEU-3": 0.13627121310819992,
+      "BLEU-4": 0.07923502246035705,
+      "BERTScore_P": 0.9289383292198181,
+      "BERTScore_R": 0.9247511625289917,
+      "BERTScore_F1": 0.92684006690979
+    },
+    {
+      "image": "000000007977.jpg",
+      "generated_caption": "a man on a skateboard is performing a trick",
+      "references": [
+        "A young man performing tricks on a skateboard.",
+        "A young man skateboarding at a public park.",
+        "A teenager is doing a wheelie on a skateboard.",
+        "a boy on a skateboard at a skatepark",
+        "A boy is doing a trick on his skateboard."
+      ],
+      "BLEU-1": 1.0,
+      "BLEU-2": 0.6123724356957946,
+      "BLEU-3": 0.3769737205645769,
+      "BLEU-4": 0.17286039232097053,
+      "BERTScore_P": 0.9531497955322266,
+      "BERTScore_R": 0.9581307768821716,
+      "BERTScore_F1": 0.9556337594985962
+    },
+    {
+      "image": "000000008844.jpg",
+      "generated_caption": "a bunch of different fruits in a produce",
+      "references": [
+        "Smiling lady standing by two bunches of bananas on a table.",
+        "A woman smiling as she walks toward bunches of bananas.",
+        "a black woman standing over a bushel of yellow bananas",
+        "An African woman is smiling above a large group of bananas.",
+        "A middle aged black woman is standing behind a table full of bananas."
+      ],
+      "BLEU-1": 0.2920502936517768,
+      "BLEU-2": 0.057002380575881924,
+      "BLEU-3": 0.03480863865617522,
+      "BLEU-4": 0.02846946938149362,
+      "BERTScore_P": 0.8766474723815918,
+      "BERTScore_R": 0.8643172383308411,
+      "BERTScore_F1": 0.8704386949539185
+    },
+    {
+      "image": "000000010363.jpg",
+      "generated_caption": "a cat sitting on top of a wooden floor",
+      "references": [
+        "A gray cat standing on top of a black car.",
+        "A cat standing on the hood of a car.",
+        "Grey color cat standing on hood of car in garage",
+        "A gray cat on the hood of a black car",
+        "A cat sitting on the hood of a parked black car in a garage."
+      ],
+      "BLEU-1": 0.6959861353000654,
+      "BLEU-2": 0.6834448173540699,
+      "BLEU-3": 0.6204469290454626,
+      "BLEU-4": 0.5166357204442371,
+      "BERTScore_P": 0.9469649791717529,
+      "BERTScore_R": 0.9452208876609802,
+      "BERTScore_F1": 0.9460920691490173
+    },
+    {
+      "image": "000000010583.jpg",
+      "generated_caption": "a plate with a sandwich and salad",
+      "references": [
+        "a plate of meat topped with potatoes veggies and gravy",
+        "A white plate with a pile of food on it.",
+        "A large pile of food on a plate with knife.",
+        "A white plate sitting on a table filled with food.",
+        "Plate of food with gravy on mesh table with knife"
+      ],
+      "BLEU-1": 0.46531361252218256,
+      "BLEU-2": 0.38930929939947584,
+      "BLEU-3": 0.3405449518507679,
+      "BLEU-4": 0.15925177647011354,
+      "BERTScore_P": 0.9240336418151855,
+      "BERTScore_R": 0.9007155299186707,
+      "BERTScore_F1": 0.9122255444526672
+    },
+    {
+      "image": "000000010707.jpg",
+      "generated_caption": "a group of people sitting on a bed with a dog",
+      "references": [
+        "A man standing in a living room holding a Nintendo Wii game controller.",
+        "Three people with cups on the couch and one with remote standing",
+        "A man holding a motion controlled video game controller",
+        "Man with video game controller in living room with onlooker seated nearby.",
+        "A man playing a video game while two men sit on a couch."
+      ],
+      "BLEU-1": 0.4980549361539613,
+      "BLEU-2": 0.2132543830616615,
+      "BLEU-3": 0.07727233491543727,
+      "BLEU-4": 0.04790437745835816,
+      "BERTScore_P": 0.9005230665206909,
+      "BERTScore_R": 0.8932259678840637,
+      "BERTScore_F1": 0.8968596458435059
+    },
+    {
+      "image": "000000010764.jpg",
+      "generated_caption": "a baseball player is preparing to hit the ball",
+      "references": [
+        "A catches crouches on a patch of dirt.",
+        "A catcher squatting at a base with his gloved hand extended.",
+        "A baseball catcher stands ready to catch a ball.",
+        "a catcher kneeling at the mound waiting for a baseball",
+        "A catcher in white uniform during a baseball game."
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.26352313834736496,
+      "BLEU-3": 0.09973474676476263,
+      "BLEU-4": 0.06376715693797415,
+      "BERTScore_P": 0.8437459468841553,
+      "BERTScore_R": 0.8629879951477051,
+      "BERTScore_F1": 0.853258490562439
+    },
+    {
+      "image": "000000011122.jpg",
+      "generated_caption": "a green and white train is coming down the tracks",
+      "references": [
+        "A red stop sign behind a chain link fence.",
+        "A stop sign behind a green chain link fence.",
+        "A gated grassy noel has a shorted stop sign stuck in part of the land.",
+        "The stop sign is behind the fence instead of on the street.",
+        "a stop sign is in grass behind a fence"
+      ],
+      "BLEU-1": 0.4,
+      "BLEU-2": 0.21081851067789192,
+      "BLEU-3": 0.08220706914434903,
+      "BLEU-4": 0.05307712171072445,
+      "BERTScore_P": 0.8614267110824585,
+      "BERTScore_R": 0.8721339702606201,
+      "BERTScore_F1": 0.866747260093689
+    },
+    {
+      "image": "000000012062.jpg",
+      "generated_caption": "a sheep standing on a dirt ground",
+      "references": [
+        "A large white sheep standing next to other sheep.",
+        "A sheep in a cage looking at sheep fur.",
+        "A lamb standing up in a couch full of wool.",
+        "A sheep inspects a big pile of shaved sheep wool.",
+        "A freshly shorn sheep standing near a pile of wool."
+      ],
+      "BLEU-1": 0.37225089001774603,
+      "BLEU-2": 0.2843113135035004,
+      "BLEU-3": 0.10174131757600746,
+      "BLEU-4": 0.06435413670103206,
+      "BERTScore_P": 0.9180726408958435,
+      "BERTScore_R": 0.9163284301757812,
+      "BERTScore_F1": 0.9171996712684631
+    },
+    {
+      "image": "000000012120.jpg",
+      "generated_caption": "a man standing on a tennis court holding a racquet",
+      "references": [
+        "A couple of women playing a game of tennis on a tennis court.",
+        "Two women play tennis on a blue court.",
+        "Two women playing in a professional tennis match.",
+        "a couple of people that are on a tennis court",
+        "Two women playing tennis at a professional court."
+      ],
+      "BLEU-1": 0.6,
+      "BLEU-2": 0.4472135954999579,
+      "BLEU-3": 0.36840314986403866,
+      "BLEU-4": 0.2907153684841096,
+      "BERTScore_P": 0.9350280165672302,
+      "BERTScore_R": 0.9297641515731812,
+      "BERTScore_F1": 0.9323887228965759
+    },
+    {
+      "image": "000000012748.jpg",
+      "generated_caption": "a man is standing in a field of grass",
+      "references": [
+        "A man and child next to a horse.",
+        "a little boy touching the nose of a brown horse",
+        "A man holding a baby whose petting a horse.",
+        "a man letting his baby pet a horse",
+        "man holding a baby and petting a horse"
+      ],
+      "BLEU-1": 0.4444444444444444,
+      "BLEU-2": 0.23570226039551587,
+      "BLEU-3": 0.09258553738130408,
+      "BLEU-4": 0.06030725360407769,
+      "BERTScore_P": 0.8966093063354492,
+      "BERTScore_R": 0.9062780737876892,
+      "BERTScore_F1": 0.9014177322387695
+    },
+    {
+      "image": "000000013291.jpg",
+      "generated_caption": "a group of people playing frisbee in a field",
+      "references": [
+        "A group of people hold up Frisbees for the camera.",
+        "A group of people holding frisbees on a field.",
+        "A group of people in a field smile holding frisbees.",
+        "Several people posing in a field while holding frisbees.",
+        "A group of people playing with Frisbee's on the grass."
+      ],
+      "BLEU-1": 0.8948393168143697,
+      "BLEU-2": 0.7749535806663558,
+      "BLEU-3": 0.6746618131339542,
+      "BLEU-4": 0.5501366107724776,
+      "BERTScore_P": 0.9266127347946167,
+      "BERTScore_R": 0.9183309078216553,
+      "BERTScore_F1": 0.9224532246589661
+    },
+    {
+      "image": "000000013348.jpg",
+      "generated_caption": "a plane is parked on the runway",
+      "references": [
+        "a large air plane on a terminal",
+        "The humongous twin engine airliner is being loaded.",
+        "A JAL jetliner on the tarmac at an airport.",
+        "A large plane is parked at the airport.",
+        "A Japan Airlines plane sits parked at an airport."
+      ],
+      "BLEU-1": 0.8571428571428571,
+      "BLEU-2": 0.6546536707079771,
+      "BLEU-3": 0.4409111383083693,
+      "BLEU-4": 0.21515344521672802,
+      "BERTScore_P": 0.920226514339447,
+      "BERTScore_R": 0.9263437390327454,
+      "BERTScore_F1": 0.9232749938964844
+    },
+    {
+      "image": "000000015272.jpg",
+      "generated_caption": "a green and yellow fire hydrant in front of a tree",
+      "references": [
+        "A red light is a wonderful contrast to the pink leaves on trees",
+        "A stoplight that has turned red on a road lined with trees that are in bloom.",
+        "A traffic light in front of trees with white blossoms.",
+        "a beautiful red bud tree full of flowers under a stop light",
+        "A traffic light hanging in front of blossoming trees."
+      ],
+      "BLEU-1": 0.5454545454545454,
+      "BLEU-2": 0.33028912953790823,
+      "BLEU-3": 0.2297111188608965,
+      "BLEU-4": 0.11094660471566163,
+      "BERTScore_P": 0.8691650629043579,
+      "BERTScore_R": 0.8684418201446533,
+      "BERTScore_F1": 0.8688032627105713
+    },
+    {
+      "image": "000000015338.jpg",
+      "generated_caption": "a street with a clock on the side of a building",
+      "references": [
+        "A yellow bus is on a street near a black guard rail.",
+        "The passenger buses are travelling down the road.",
+        "City buses on a city street in the dawn hours.",
+        "A yellow bus driving down a street next to a ball building.",
+        "a yellow bus and a white bus on a empty road"
+      ],
+      "BLEU-1": 0.6363636363636364,
+      "BLEU-2": 0.25226248955475655,
+      "BLEU-3": 0.08908835677033948,
+      "BLEU-4": 0.05452469119630864,
+      "BERTScore_P": 0.888134241104126,
+      "BERTScore_R": 0.8943843841552734,
+      "BERTScore_F1": 0.891248345375061
+    },
+    {
+      "image": "000000015517.jpg",
+      "generated_caption": "a large white building with a lot of cars",
+      "references": [
+        "Buses parked on a road outside a large bus station.",
+        "A city road with buses and bus park",
+        "The view of a metropolitan area behind many buses.",
+        "A wide view of a bunch of buses by some buildings.",
+        "a photo of a bus terminal taken from a distance"
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.26352313834736496,
+      "BLEU-3": 0.09973474676476263,
+      "BLEU-4": 0.06376715693797415,
+      "BERTScore_P": 0.8742824792861938,
+      "BERTScore_R": 0.8750700950622559,
+      "BERTScore_F1": 0.8746761083602905
+    },
+    {
+      "image": "000000015597.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "references": [
+        "shirtless skateboarder going down a ramp on clear day",
+        "a male shirtless skateboarder is doing a trick",
+        "A man riding a skateboard on top of a cement rail.",
+        "A man with a cowboy hat on doing a trick on a skateboard.",
+        "A skateboarder in cowboy hat just about to go down a ramp"
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.372677996249965,
+      "BLEU-3": 0.125657906854859,
+      "BLEU-4": 0.07583235673413397,
+      "BERTScore_P": 0.8919970989227295,
+      "BERTScore_R": 0.8524404764175415,
+      "BERTScore_F1": 0.8717702627182007
+    },
+    {
+      "image": "000000017029.jpg",
+      "generated_caption": "a black and white cat is standing in the grass",
+      "references": [
+        "a dog jumping to catch a frisbee in a yard",
+        "A dog jumping to catch a red frisbee in a garden",
+        "The dog is catching the Frisbee in mid air in the yard.",
+        "A dog catches a frisbee outside in the grass.",
+        "A dog leaping to catch a red frisbee."
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.3333333333333333,
+      "BLEU-3": 0.2403749283845681,
+      "BLEU-4": 0.1186840521952098,
+      "BERTScore_P": 0.8840668201446533,
+      "BERTScore_R": 0.8737173080444336,
+      "BERTScore_F1": 0.8788615465164185
+    },
+    {
+      "image": "000000017178.jpg",
+      "generated_caption": "a large truck parked on a road near a road",
+      "references": [
+        "Horses communing with each other on a shady street.",
+        "A few horses stand on the street next to a silver car.",
+        "a couple of horses standing in front of a car",
+        "A silver sports car is parked beside horse droppings left by a group of horses.",
+        "horses stand around on a neighborhood street in front of a car"
+      ],
+      "BLEU-1": 0.4,
+      "BLEU-2": 0.21081851067789192,
+      "BLEU-3": 0.08220706914434903,
+      "BLEU-4": 0.05307712171072445,
+      "BERTScore_P": 0.9000434279441833,
+      "BERTScore_R": 0.8895896077156067,
+      "BERTScore_F1": 0.8947859406471252
+    },
+    {
+      "image": "000000017714.jpg",
+      "generated_caption": "a close up of a piece of on a plate",
+      "references": [
+        "Food on a train with a pie and some vegetable",
+        "A banana frittata next to a plate of decoratively cut fruit and a cup of coffee.",
+        "a plate of fruit sitting next to another plate of food on a table",
+        "Breakfast on a tray consisting of coffee, crepe, and artistically sliced fruit.",
+        "A table that has plates of food, cups, and silver ware on it."
+      ],
+      "BLEU-1": 0.7,
+      "BLEU-2": 0.3944053188733077,
+      "BLEU-3": 0.12481453978697513,
+      "BLEU-4": 0.07259795291154773,
+      "BERTScore_P": 0.8561899662017822,
+      "BERTScore_R": 0.8633027076721191,
+      "BERTScore_F1": 0.8597316145896912
+    },
+    {
+      "image": "000000018193.jpg",
+      "generated_caption": "a man holding a hot dog in his hand",
+      "references": [
+        "A woman in green sweater eating a hotdog by campfire.",
+        "a person eating an apple with a plate of food",
+        "A person eating from a plate on their lap while sitting in a camping chair.",
+        "A person is sitting outside in a chair with a plate of food.",
+        "A woman eating a sandwich near a campfire."
+      ],
+      "BLEU-1": 0.3333333333333333,
+      "BLEU-2": 0.06454972243679029,
+      "BLEU-3": 0.039044833280954025,
+      "BLEU-4": 0.03155984539112946,
+      "BERTScore_P": 0.9019567966461182,
+      "BERTScore_R": 0.9017471671104431,
+      "BERTScore_F1": 0.9018518924713135
+    },
+    {
+      "image": "000000019109.jpg",
+      "generated_caption": "a row of motorcycles parked on the side of the road",
+      "references": [
+        "Many small motorbikes are parked along the street.",
+        "Numerous motor scooters parked by backing in facing the street",
+        "A line of motor scooters in front of a bar.",
+        "A row of parked motorcycles sitting in front of a restaurants.",
+        "A group of motorcycles are parked on the street."
+      ],
+      "BLEU-1": 0.7272727272727273,
+      "BLEU-2": 0.6030226891555273,
+      "BLEU-3": 0.43233287816535193,
+      "BLEU-4": 0.17827531042796255,
+      "BERTScore_P": 0.8918170928955078,
+      "BERTScore_R": 0.9147300720214844,
+      "BERTScore_F1": 0.9031283259391785
+    },
+    {
+      "image": "000000020571.jpg",
+      "generated_caption": "a group of boats are parked in a harbor",
+      "references": [
+        "a group of boats parked next to a dock in the water",
+        "A few fishing boats tied to a dock.",
+        "Two tug boats tied up to the dock.",
+        "some boats that are by a dock in some water",
+        "A tugboat sits beside a ferry on placid water with a mountain in the distance."
+      ],
+      "BLEU-1": 0.8888888888888888,
+      "BLEU-2": 0.5773502691896257,
+      "BLEU-3": 0.4566711403962942,
+      "BLEU-4": 0.3549481056010053,
+      "BERTScore_P": 0.9589890241622925,
+      "BERTScore_R": 0.9431885480880737,
+      "BERTScore_F1": 0.9510231614112854
+    },
+    {
+      "image": "000000021465.jpg",
+      "generated_caption": "a table with a bunch of different colored flowers in it",
+      "references": [
+        "A dirty table has incense burners on it.",
+        "There are various items on shelves tagged for sale.",
+        "a cabinet with some paint on top of it",
+        "A blue shelf holds different sized silver vases.",
+        "A blue shelving unit has a vase and metal cups on it."
+      ],
+      "BLEU-1": 0.6363636363636364,
+      "BLEU-2": 0.07977240352174658,
+      "BLEU-3": 0.04135115219901191,
+      "BLEU-4": 0.030661487102926755,
+      "BERTScore_P": 0.8959448337554932,
+      "BERTScore_R": 0.9114614725112915,
+      "BERTScore_F1": 0.9036365747451782
+    },
+    {
+      "image": "000000021604.jpg",
+      "generated_caption": "a man wearing a suit and tie standing in a room",
+      "references": [
+        "A man in a suit is wearing a lit up tie.",
+        "A man posing for a portrait wearing a lighted tie",
+        "a man in a suits fixes his tie",
+        "A man in glasses and a light up tie.",
+        "A man with glasses and sideburns straightening his necktie that has lights on it."
+      ],
+      "BLEU-1": 0.8181818181818182,
+      "BLEU-2": 0.5720775535473553,
+      "BLEU-3": 0.1537761919657259,
+      "BLEU-4": 0.08210967436686387,
+      "BERTScore_P": 0.9160913228988647,
+      "BERTScore_R": 0.9270844459533691,
+      "BERTScore_F1": 0.9215551018714905
+    },
+    {
+      "image": "000000021879.jpg",
+      "generated_caption": "a woman in a wetsuit is standing on a beach",
+      "references": [
+        "there are many surfers that are in the water",
+        "Young girl on surfboard riding wave with young boys nearby looking on.",
+        "The girl is balancing with one leg on the surfboard.",
+        "A young girl is surfing and just about to wipe out.",
+        "Several people are surfing or swimming at the ocean."
+      ],
+      "BLEU-1": 0.4,
+      "BLEU-2": 0.06666666666666667,
+      "BLEU-3": 0.038157141418444424,
+      "BLEU-4": 0.02984745896009824,
+      "BERTScore_P": 0.8778651356697083,
+      "BERTScore_R": 0.8808869123458862,
+      "BERTScore_F1": 0.8793734312057495
+    },
+    {
+      "image": "000000022479.jpg",
+      "generated_caption": "a man riding a skateboard down a street",
+      "references": [
+        "The skateboarder wears headphones while jumping to grab his board.",
+        "A man on a skateboard performs a trick on a ramp",
+        "A man performs a jump on a skateboard at a skate park.",
+        "A person doing a trick on a skateboard",
+        "Skateboarder holding the bottom of his board in the air."
+      ],
+      "BLEU-1": 0.625,
+      "BLEU-2": 0.42257712736425823,
+      "BLEU-3": 0.14384239566619703,
+      "BLEU-4": 0.08783602619713961,
+      "BERTScore_P": 0.8852344155311584,
+      "BERTScore_R": 0.8877082467079163,
+      "BERTScore_F1": 0.8864696025848389
+    },
+    {
+      "image": "000000023230.jpg",
+      "generated_caption": "a group of people standing in a river",
+      "references": [
+        "A family of swans swimming on top of a lake.",
+        "A group of geese swimming in water near a wooded area.",
+        "Four geese floating in the middle of a river.",
+        "ducks in a body of water with trees in the background",
+        "A gaggle of geese swim in a body of water."
+      ],
+      "BLEU-1": 0.5841005873035536,
+      "BLEU-2": 0.5098447913879421,
+      "BLEU-3": 0.32313477699952986,
+      "BLEU-4": 0.1514090621997985,
+      "BERTScore_P": 0.9314053058624268,
+      "BERTScore_R": 0.9170694351196289,
+      "BERTScore_F1": 0.9241818189620972
+    },
+    {
+      "image": "000000023359.jpg",
+      "generated_caption": "a person on a snowboard on a snowy surface",
+      "references": [
+        "A man flying through the air while riding a snowboard.",
+        "a man kind of high in the air while doing a snowboard trick",
+        "Someone jumping in the air on their snowboard.",
+        "a snowboarder in a brown jacket is doing a trick",
+        "A young man is snowboarding on top of some snow."
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.26352313834736496,
+      "BLEU-3": 0.09973474676476263,
+      "BLEU-4": 0.06376715693797415,
+      "BERTScore_P": 0.9252859950065613,
+      "BERTScore_R": 0.9070059657096863,
+      "BERTScore_F1": 0.9160547852516174
+    },
+    {
+      "image": "000000023666.jpg",
+      "generated_caption": "a white toilet sitting next to a white sink",
+      "references": [
+        "A toilet and bathtub in a dark room with abnormal plumbing.",
+        "a bath tub with a toilet beside it",
+        "The bathroom is clean and ready to be used.",
+        "This is an old fashioned toilet with the tank high above",
+        "A very old bathroom has dusty toilet and clawfoot tub."
+      ],
+      "BLEU-1": 0.4444444444444444,
+      "BLEU-2": 0.07453559924999299,
+      "BLEU-3": 0.04297439964630995,
+      "BLEU-4": 0.03391326091030751,
+      "BERTScore_P": 0.9038575291633606,
+      "BERTScore_R": 0.9020735025405884,
+      "BERTScore_F1": 0.9029646515846252
+    },
+    {
+      "image": "000000023781.jpg",
+      "generated_caption": "a pile of carrots and carrots on a table",
+      "references": [
+        "An assortment of fruits and vegetable all set together",
+        "A display of strawberries, peas, broccoli, carrots, radishes and potatoes.",
+        "Fresh fruits and vegetables piled in a wooden box.",
+        "Various fruits and vegetables are on display close together.",
+        "a variety of different vegetables and some strawberries"
+      ],
+      "BLEU-1": 0.5555555555555556,
+      "BLEU-2": 0.08333333333333337,
+      "BLEU-3": 0.04629276869065204,
+      "BLEU-4": 0.03585890753612134,
+      "BERTScore_P": 0.8864929676055908,
+      "BERTScore_R": 0.8786895871162415,
+      "BERTScore_F1": 0.8825740218162537
+    },
+    {
+      "image": "000000024610.jpg",
+      "generated_caption": "a living room with a couch and a television",
+      "references": [
+        "A disorderly living area is free from decorative elements.",
+        "A small living space with a couch, desk, chair, and bookcase.",
+        "There is a laptop computer in a room with a couch and a bookcase.",
+        "A simple room with minimal decor and furniture.",
+        "A small room with a computer and bookcase."
+      ],
+      "BLEU-1": 0.8888888888888888,
+      "BLEU-2": 0.7453559924999299,
+      "BLEU-3": 0.682176072062542,
+      "BLEU-4": 0.631196907822589,
+      "BERTScore_P": 0.8706398010253906,
+      "BERTScore_R": 0.8822916150093079,
+      "BERTScore_F1": 0.8764269948005676
+    },
+    {
+      "image": "000000026941.jpg",
+      "generated_caption": "a bench sitting in front of a brick wall",
+      "references": [
+        "A bunch of suitcases that are on a cart.",
+        "a little green cart filled with assorted suitcases",
+        "Seven suitcases are stacked on top of a dolly",
+        "A pile of suitcases that are stacked on a green roller.",
+        "A green cart with old luggage on it standing by."
+      ],
+      "BLEU-1": 0.3333333333333333,
+      "BLEU-2": 0.20412414523193154,
+      "BLEU-3": 0.08411954328699874,
+      "BLEU-4": 0.056122223243057295,
+      "BERTScore_P": 0.8668328523635864,
+      "BERTScore_R": 0.881350040435791,
+      "BERTScore_F1": 0.8740311861038208
+    },
+    {
+      "image": "000000027696.jpg",
+      "generated_caption": "a pizza with cheese and olives on it",
+      "references": [
+        "A person is eating pizza with a knife and fork.",
+        "there is a small pizza that is on a white plate",
+        "A pizza sitting on top of a white plate with lots of toppings.",
+        "a close up of a plate of food",
+        "A vegetable pizza on a plate on a table."
+      ],
+      "BLEU-1": 0.625,
+      "BLEU-2": 0.42257712736425823,
+      "BLEU-3": 0.14384239566619703,
+      "BLEU-4": 0.08783602619713961,
+      "BERTScore_P": 0.8833903074264526,
+      "BERTScore_R": 0.8954146504402161,
+      "BERTScore_F1": 0.8893617987632751
+    },
+    {
+      "image": "000000027982.jpg",
+      "generated_caption": "a toilet in a bathroom with a toilet seat",
+      "references": [
+        "A small bathroom with marble tiles and counter.",
+        "a toilet with the toilet seat left up and the sink next to it",
+        "The black and white photo shows a toilet and a bathroom sink.",
+        "a toilet a sink a counter a mirror and some toilet paper",
+        "Modern bathroom with stone sink area and tiled walls."
+      ],
+      "BLEU-1": 0.8888888888888888,
+      "BLEU-2": 0.6666666666666666,
+      "BLEU-3": 0.1851710747626081,
+      "BLEU-4": 0.10142430673893117,
+      "BERTScore_P": 0.9115232229232788,
+      "BERTScore_R": 0.9081438779830933,
+      "BERTScore_F1": 0.9098304510116577
+    },
+    {
+      "image": "000000028285.jpg",
+      "generated_caption": "a stone building with a clock on the top",
+      "references": [
+        "A white clock tower at the top of a tiled building.",
+        "A small white tower off of a tiled roof.",
+        "A large white and blue clock tower sitting over a roof.",
+        "The view of a top of a buildings spire showing a small clock on it.",
+        "a white steeple near the roof of a neighboring building."
+      ],
+      "BLEU-1": 0.6959861353000654,
+      "BLEU-2": 0.3945870492756269,
+      "BLEU-3": 0.1257894516662567,
+      "BLEU-4": 0.07381278975119651,
+      "BERTScore_P": 0.9180741310119629,
+      "BERTScore_R": 0.910283088684082,
+      "BERTScore_F1": 0.9141620397567749
+    },
+    {
+      "image": "000000028449.jpg",
+      "generated_caption": "a large elephant standing next to a fence",
+      "references": [
+        "A group of elephants are standing in the trees.",
+        "A group of large elephants standing on a road.",
+        "a family of elephants standing together in the jungle",
+        "A herd of elephants is walking together down a dirt trail.",
+        "Elephants standing beside each other outside on a road."
+      ],
+      "BLEU-1": 0.4412484512922977,
+      "BLEU-2": 0.07458460120041083,
+      "BLEU-3": 0.043413029605405766,
+      "BLEU-4": 0.0346657712709552,
+      "BERTScore_P": 0.9148495197296143,
+      "BERTScore_R": 0.9199050664901733,
+      "BERTScore_F1": 0.9173703789710999
+    },
+    {
+      "image": "000000028809.jpg",
+      "generated_caption": "a close up of a hot dog with mustard",
+      "references": [
+        "A picture of a bunch of bananas sitting on a table.",
+        "Bunches of bananas are sitting on a shelf.",
+        "A purple shelf withs bunches of ripe yellow bananas placed together.",
+        "Many yellow bananas are arranged on a blue display case.",
+        "very ripe bananas placed on a purple basket"
+      ],
+      "BLEU-1": 0.3333333333333333,
+      "BLEU-2": 0.20412414523193154,
+      "BLEU-3": 0.08411954328699874,
+      "BLEU-4": 0.056122223243057295,
+      "BERTScore_P": 0.8987420797348022,
+      "BERTScore_R": 0.8995919227600098,
+      "BERTScore_F1": 0.8991668224334717
+    },
+    {
+      "image": "000000030828.jpg",
+      "generated_caption": "a man flying a kite in a field",
+      "references": [
+        "A person with an orange blanket covering them, sleeping on a wooden park bench.",
+        "Person sleeping on bench in sleeping bag near parking meters.",
+        "A person is sleeping on a bench in a sleeping bag.",
+        "The person is sleeping on a park bench.",
+        "A person covered with an orange sleeping bag rests his head on a blue back pack as he sleeps on a park bench."
+      ],
+      "BLEU-1": 0.4412484512922977,
+      "BLEU-2": 0.23585721816862673,
+      "BLEU-3": 0.09353053698126731,
+      "BLEU-4": 0.06164542728425844,
+      "BERTScore_P": 0.9015263915061951,
+      "BERTScore_R": 0.8821737766265869,
+      "BERTScore_F1": 0.8917450308799744
+    },
+    {
+      "image": "000000032038.jpg",
+      "generated_caption": "a pizza with a knife and fork on it",
+      "references": [
+        "A large cheese pizza being served to customers.",
+        "There is a fresh pizza that just came out the oven",
+        "a large cheesy pizza on a wooden counter",
+        "a close up of a pizza on a wooden table",
+        "A close-up of a cheese pizza on a wooden table."
+      ],
+      "BLEU-1": 0.4444444444444444,
+      "BLEU-2": 0.23570226039551587,
+      "BLEU-3": 0.09258553738130408,
+      "BLEU-4": 0.06030725360407769,
+      "BERTScore_P": 0.8619097471237183,
+      "BERTScore_R": 0.893452525138855,
+      "BERTScore_F1": 0.8773977160453796
+    },
+    {
+      "image": "000000032811.jpg",
+      "generated_caption": "a white and black cat sitting on top of a window",
+      "references": [
+        "A bird resting outside of a boat window.",
+        "A bird sits by a window on the water.",
+        "a bird is outside of a window on a boat",
+        "A bird sitting on the window sill of a boat floating on a lake.",
+        "A bird is hanging onto the ledge outside the window."
+      ],
+      "BLEU-1": 0.5454545454545454,
+      "BLEU-2": 0.40451991747794525,
+      "BLEU-3": 0.2629535894329295,
+      "BLEU-4": 0.12278260149096115,
+      "BERTScore_P": 0.9041414856910706,
+      "BERTScore_R": 0.9364583492279053,
+      "BERTScore_F1": 0.9200162291526794
+    },
+    {
+      "image": "000000032901.jpg",
+      "generated_caption": "a man in a suit and tie standing in a kitchen",
+      "references": [
+        "four men are posing for a picture at an event",
+        "Four men are standing together behind a group of red chairs.",
+        "A group of older man standing next to each other.",
+        "Four gentleman posing for a picture at a cocktail party.",
+        "A group of four older men posing for a photo."
+      ],
+      "BLEU-1": 0.36363636363636365,
+      "BLEU-2": 0.06030226891555274,
+      "BLEU-3": 0.03431428328000597,
+      "BLEU-4": 0.026658376817028855,
+      "BERTScore_P": 0.8592829704284668,
+      "BERTScore_R": 0.8688555955886841,
+      "BERTScore_F1": 0.8640427589416504
+    },
+    {
+      "image": "000000034257.jpg",
+      "generated_caption": "a wooden table topped with many different types of vegetables",
+      "references": [
+        "A market display case filled with different colored vegetables.",
+        "A display of healthy vegetables on a stand",
+        "Baskets are displaying carrots, leafy greens, and other vegetables.",
+        "Assorted vegetables are arranged in baskets on display.",
+        "A large number of fresh vegetables have been stacked together."
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.07453559924999299,
+      "BLEU-3": 0.04110353457217451,
+      "BLEU-4": 0.03155984539112946,
+      "BERTScore_P": 0.9196290969848633,
+      "BERTScore_R": 0.9260824918746948,
+      "BERTScore_F1": 0.9228444695472717
+    },
+    {
+      "image": "000000035062.jpg",
+      "generated_caption": "a cat laying on a bed with a blanket",
+      "references": [
+        "a sleeping child in a bed with a black and white cover",
+        "A bed with a person sleeping in it covered in a blanket.",
+        "A little boy asleep under a sunflower print blanket",
+        "A person in a bed with a dark bedspread with flowers.",
+        "Child in bed covered with a flower patterned blanket."
+      ],
+      "BLEU-1": 0.6666666666666666,
+      "BLEU-2": 0.5773502691896257,
+      "BLEU-3": 0.4566711403962942,
+      "BLEU-4": 0.3549481056010053,
+      "BERTScore_P": 0.9436869621276855,
+      "BERTScore_R": 0.9167312979698181,
+      "BERTScore_F1": 0.9300137758255005
+    },
+    {
+      "image": "000000035279.jpg",
+      "generated_caption": "a computer desk with a keyboard and mouse",
+      "references": [
+        "there is a tennis racket and a laptop on the floor",
+        "unable to see this image in this particular hit",
+        "A man laying his head down next to electronics, a butterfly, and a book.",
+        "A man is laying by a racket, laptop, cell phone, and other objects.",
+        "a man lies on the floor next to some gadgets"
+      ],
+      "BLEU-1": 0.3309363384692233,
+      "BLEU-2": 0.06459215937068712,
+      "BLEU-3": 0.039443355046607086,
+      "BLEU-4": 0.03226013518927287,
+      "BERTScore_P": 0.890299916267395,
+      "BERTScore_R": 0.8813891410827637,
+      "BERTScore_F1": 0.8858221173286438
+    },
+    {
+      "image": "000000037689.jpg",
+      "generated_caption": "a person on skis is standing in the snow",
+      "references": [
+        "There are two snowboarders in the air completing stunts.",
+        "Some people on snow boards high up in the air.",
+        "Two snowboarders high in the air off of a jump",
+        "People doing tricks in the air on their snow boards.",
+        "A guy is doing snow boarding tricks in the snow while people are watching him on the sidelines."
+      ],
+      "BLEU-1": 0.596559544542913,
+      "BLEU-2": 0.3653166213293175,
+      "BLEU-3": 0.257431662133764,
+      "BLEU-4": 0.1262975489687145,
+      "BERTScore_P": 0.9034411311149597,
+      "BERTScore_R": 0.8953762054443359,
+      "BERTScore_F1": 0.8993905186653137
+    },
+    {
+      "image": "000000037988.jpg",
+      "generated_caption": "a man holding a tennis racquet on a tennis court",
+      "references": [
+        "a woman is throwing a tennis ball to serve",
+        "A female tennis player on the court serving a ball.",
+        "A female tennis player tossing a tennis ball up.",
+        "A women tennis player throwing the ball up for a serve.",
+        "A woman tennise player standing at the service line and throwing a tennis ball up in the air to serve it."
+      ],
+      "BLEU-1": 0.6,
+      "BLEU-2": 0.25819888974716104,
+      "BLEU-3": 0.09410360288810288,
+      "BLEU-4": 0.05873949094699214,
+      "BERTScore_P": 0.9289830923080444,
+      "BERTScore_R": 0.9180406332015991,
+      "BERTScore_F1": 0.923479437828064
+    },
+    {
+      "image": "000000038210.jpg",
+      "generated_caption": "a person skiing down a hill on a snowy slope",
+      "references": [
+        "a skier is prepared to go down a mountain.",
+        "A man skiing in the snow with large pine trees.",
+        "A man in a racing bib in his skis and a beanie.",
+        "a man on skis goes through the snow",
+        "A man on skis riding through a snowy trail."
+      ],
+      "BLEU-1": 0.7,
+      "BLEU-2": 0.3944053188733077,
+      "BLEU-3": 0.12481453978697513,
+      "BLEU-4": 0.07259795291154773,
+      "BERTScore_P": 0.9225109815597534,
+      "BERTScore_R": 0.9118236899375916,
+      "BERTScore_F1": 0.9171362519264221
+    },
+    {
+      "image": "000000038678.jpg",
+      "generated_caption": "a woman holding a glass of wine with a glass of wine",
+      "references": [
+        "A woman in striped shirt holding a plate with a bagel on it.",
+        "Woman in maroon shirt holding up a bagel.",
+        "a close up of a person holding a doughnut",
+        "A woman seated across the table shows off her bagel with cream cheese.",
+        "A woman sitting on a train is showing off a bagel."
+      ],
+      "BLEU-1": 0.5833333333333334,
+      "BLEU-2": 0.39886201760873286,
+      "BLEU-3": 0.11673877216503953,
+      "BLEU-4": 0.06484115071397646,
+      "BERTScore_P": 0.8892428874969482,
+      "BERTScore_R": 0.8809499740600586,
+      "BERTScore_F1": 0.8850769996643066
+    },
+    {
+      "image": "000000039670.jpg",
+      "generated_caption": "a train is coming down the tracks",
+      "references": [
+        "A train traveling through rural countryside lined with trees.",
+        "a blue train going up the tracks, lots of trees around.",
+        "a train moving along a railway line in the bush",
+        "A train drives down a narrow track surrounded by trees.",
+        "A silver and blue passenger train traveling through a heavily vegetated area."
+      ],
+      "BLEU-1": 0.46531361252218256,
+      "BLEU-2": 0.3178697118830404,
+      "BLEU-3": 0.10959751199765055,
+      "BLEU-4": 0.06804621483119704,
+      "BERTScore_P": 0.8929539918899536,
+      "BERTScore_R": 0.8846356868743896,
+      "BERTScore_F1": 0.8887754082679749
+    },
+    {
+      "image": "000000040757.jpg",
+      "generated_caption": "a dog laying on a bed with a blanket on top of it",
+      "references": [
+        "A young boy laying in bed with a pacifier in his mouth",
+        "A child is landing on a shallow pillow.",
+        "A child laying on a bed with a white pillow.",
+        "a small childi is laying in a bed",
+        "A young child with a pacifier lying down in his bed"
+      ],
+      "BLEU-1": 0.5384615384615384,
+      "BLEU-2": 0.47366546671567095,
+      "BLEU-3": 0.43371414275155395,
+      "BLEU-4": 0.3955332535877179,
+      "BERTScore_P": 0.9058442711830139,
+      "BERTScore_R": 0.902868390083313,
+      "BERTScore_F1": 0.9043538570404053
+    },
+    {
+      "image": "000000042178.jpg",
+      "generated_caption": "a group of people standing next to a train",
+      "references": [
+        "Smoggy picture of many trains in a busy train station.",
+        "An extensive network of wires are required to operate the railroad.",
+        "A foggy view above trains on train tracks.",
+        "A long train yard full of different equipment",
+        "Railway cars in large yard with many power poles."
+      ],
+      "BLEU-1": 0.4444444444444444,
+      "BLEU-2": 0.07453559924999299,
+      "BLEU-3": 0.04297439964630995,
+      "BLEU-4": 0.03391326091030751,
+      "BERTScore_P": 0.8906081318855286,
+      "BERTScore_R": 0.8864455819129944,
+      "BERTScore_F1": 0.8885219693183899
+    },
+    {
+      "image": "000000042628.jpg",
+      "generated_caption": "a group of people riding horses down a snow covered slope",
+      "references": [
+        "Snow piled high around pipes with people walking in background",
+        "Some people are walking down a snowy streets with white snow.",
+        "A group of people walking across very dirty snow.",
+        "Many persons are busy in clearing the snow.",
+        "The snow is almost covering the fire hydrant."
+      ],
+      "BLEU-1": 0.5454545454545454,
+      "BLEU-2": 0.4670993664969138,
+      "BLEU-3": 0.3646436717285792,
+      "BLEU-4": 0.2790159393585827,
+      "BERTScore_P": 0.8657454252243042,
+      "BERTScore_R": 0.858839750289917,
+      "BERTScore_F1": 0.8622787594795227
+    },
+    {
+      "image": "000000043435.jpg",
+      "generated_caption": "a person riding a surfboard on a wave",
+      "references": [
+        "Two surfers catching two different waves, one after the other.",
+        "Two people are riding on surfboards in the ocean.",
+        "Surfers ride towering waves on the open ocean.",
+        "Two men ride surfboards through the crashing waves.",
+        "Two surfers are riding two large ocean waves."
+      ],
+      "BLEU-1": 0.22062422564614886,
+      "BLEU-2": 0.05273927728090481,
+      "BLEU-3": 0.03445694443237384,
+      "BLEU-4": 0.02915032279375143,
+      "BERTScore_P": 0.8968382477760315,
+      "BERTScore_R": 0.8636713027954102,
+      "BERTScore_F1": 0.8799423575401306
+    },
+    {
+      "image": "000000044195.jpg",
+      "generated_caption": "a man standing on a snowy hill with a frisbee",
+      "references": [
+        "A woman with a snowboard with a man standing next to her on a ski slope.",
+        "Two people standing atop a snowy hill with snow boards in hand ready to head down the slope",
+        "Two people are standing in the snow with a snow board.",
+        "a person holding skis on a snowy surface",
+        "A couple of people standing on top of  a snow covered slope."
+      ],
+      "BLEU-1": 0.9,
+      "BLEU-2": 0.8944271909999159,
+      "BLEU-3": 0.7368062997280773,
+      "BLEU-4": 0.488923022434901,
+      "BERTScore_P": 0.9174245595932007,
+      "BERTScore_R": 0.923816442489624,
+      "BERTScore_F1": 0.9206094145774841
+    },
+    {
+      "image": "000000044652.jpg",
+      "generated_caption": "a person on a surfboard riding a wave",
+      "references": [
+        "A flying plane with smoke trailing behind it.",
+        "An single passanger in an airplane flying through the sky",
+        "An old airplane is flying through the sky.",
+        "An airplane is flying high in the cloudy sky",
+        "A small airplane is flying across the sky"
+      ],
+      "BLEU-1": 0.12500000000000003,
+      "BLEU-2": 0.04225771273642583,
+      "BLEU-3": 0.030989904712054688,
+      "BLEU-4": 0.02777619034011792,
+      "BERTScore_P": 0.8655600547790527,
+      "BERTScore_R": 0.8622316718101501,
+      "BERTScore_F1": 0.8638926148414612
+    },
+    {
+      "image": "000000045090.jpg",
+      "generated_caption": "a person riding a surfboard on a wave",
+      "references": [
+        "A couple of men in the water on surfboards.",
+        "People on a wave using a surf board in the ocean.",
+        "People riding the high waves on their surfboards.",
+        "Two surfers riding the waves in the ocean.",
+        "Two surfers riding the waves in the ocean."
+      ],
+      "BLEU-1": 0.5515605641153721,
+      "BLEU-2": 0.37292300600205397,
+      "BLEU-3": 0.2734849491978001,
+      "BLEU-4": 0.13784336590962212,
+      "BERTScore_P": 0.9172637462615967,
+      "BERTScore_R": 0.9232304692268372,
+      "BERTScore_F1": 0.9202374815940857
+    },
+    {
+      "image": "000000045596.jpg",
+      "generated_caption": "a train is coming down the tracks in a wooded area",
+      "references": [
+        "A view A large metal structure near the side of a building",
+        "The view from a window of an enclosed staircase open to the air.",
+        "a bunch of parked bikes sit between two buildings",
+        "The passage between the modern buildings is used by bicycle riders.",
+        "A caged stairway beside a building on a rainy day."
+      ],
+      "BLEU-1": 0.36363636363636365,
+      "BLEU-2": 0.06030226891555274,
+      "BLEU-3": 0.03431428328000597,
+      "BLEU-4": 0.026658376817028855,
+      "BERTScore_P": 0.8763964176177979,
+      "BERTScore_R": 0.8762151002883911,
+      "BERTScore_F1": 0.8763057589530945
+    },
+    {
+      "image": "000000046031.jpg",
+      "generated_caption": "a desk with a computer keyboard and mouse",
+      "references": [
+        "A laptop and a desktop computer sitting on a table.",
+        "A laptop and computer monitor with the same screen.",
+        "A laptop that is sitting near a mouse.",
+        "A laptop screen displays an image of bright green leaves.",
+        "A small tablet computer next to a larger monitor and keyboard."
+      ],
+      "BLEU-1": 0.772184789761521,
+      "BLEU-2": 0.09866615320560829,
+      "BLEU-3": 0.05231578873393947,
+      "BLEU-4": 0.03987129846774613,
+      "BERTScore_P": 0.9063111543655396,
+      "BERTScore_R": 0.9143906831741333,
+      "BERTScore_F1": 0.910332977771759
+    },
+    {
+      "image": "000000046804.jpg",
+      "generated_caption": "a sheep standing on a lush green field",
+      "references": [
+        "A sheep standing in grass next to a rock wall.",
+        "A lonely sheep standing in a field in front of a rock wall.",
+        "A white sheep looks at the camera and stands in the grass.",
+        "A sheep that is standing in a field.",
+        "The adult sheep is standing near a stone wall."
+      ],
+      "BLEU-1": 0.5515605641153721,
+      "BLEU-2": 0.37292300600205397,
+      "BLEU-3": 0.2734849491978001,
+      "BLEU-4": 0.13784336590962212,
+      "BERTScore_P": 0.9316400289535522,
+      "BERTScore_R": 0.9252055883407593,
+      "BERTScore_F1": 0.9284116625785828
+    },
+    {
+      "image": "000000046872.jpg",
+      "generated_caption": "a man standing next to a white fence",
+      "references": [
+        "A man standing along side of a truck trailer.",
+        "two males a truck some cars and trees",
+        "this is a man spraying a trick with water",
+        "a man standing next to a truck with some stuff on it",
+        "a man standing beside a large truck in a parking lot"
+      ],
+      "BLEU-1": 0.75,
+      "BLEU-2": 0.7319250547113999,
+      "BLEU-3": 0.709491705985192,
+      "BLEU-4": 0.6803749333171202,
+      "BERTScore_P": 0.934990406036377,
+      "BERTScore_R": 0.9353907108306885,
+      "BERTScore_F1": 0.9351904988288879
+    },
+    {
+      "image": "000000047769.jpg",
+      "generated_caption": "a living room with a couch and a table",
+      "references": [
+        "a black table and stools sitting next to two windows with shutters",
+        "A small living room with furniture and two windows.",
+        "A small living room with seating and a television.",
+        "The small room has a couch, a television, and a table with two stools.",
+        "A small bar table and stools set up in the corner of a living room by windows"
+      ],
+      "BLEU-1": 0.8948393168143697,
+      "BLEU-2": 0.7749535806663558,
+      "BLEU-3": 0.6129709369215885,
+      "BLEU-4": 0.2420908439902982,
+      "BERTScore_P": 0.903464674949646,
+      "BERTScore_R": 0.8781973123550415,
+      "BERTScore_F1": 0.8906518220901489
+    },
+    {
+      "image": "000000048555.jpg",
+      "generated_caption": "a group of people riding horses along a beach",
+      "references": [
+        "A group of people on horses racing together.",
+        "The horses are racing each other along the beach.",
+        "Three people race their horses down a beach.",
+        "A black and white photo of jockeys riding their horses",
+        "Horses with jockeys racing across the coast of some beach."
+      ],
+      "BLEU-1": 0.8888888888888888,
+      "BLEU-2": 0.6666666666666666,
+      "BLEU-3": 0.5026316274194359,
+      "BLEU-4": 0.3814165616365676,
+      "BERTScore_P": 0.9306874871253967,
+      "BERTScore_R": 0.9467223882675171,
+      "BERTScore_F1": 0.9386364221572876
+    },
+    {
+      "image": "000000048924.jpg",
+      "generated_caption": "a man riding a motorcycle with a dog in the background",
+      "references": [
+        "A dirt bike parked near a tent in the woods.",
+        "a green tent and a parked motorcycle and some trees",
+        "Motorcycle parked in front of a tent with the sun going down behind them.",
+        "a motorcycle parked next to a green tent in a field",
+        "A parked motorcycle next to a green tent."
+      ],
+      "BLEU-1": 0.6363636363636364,
+      "BLEU-2": 0.35675303400633784,
+      "BLEU-3": 0.11224429599549512,
+      "BLEU-4": 0.06484115071397646,
+      "BERTScore_P": 0.8933210372924805,
+      "BERTScore_R": 0.9062575101852417,
+      "BERTScore_F1": 0.8997427821159363
+    },
+    {
+      "image": "000000049810.jpg",
+      "generated_caption": "a dog is looking at a dog in a cage",
+      "references": [
+        "A little cat looking at itself in a mirror.",
+        "A white and orange cat looking at itself in front of a mirror.",
+        "a brown and white cat looking it itself in a mirror",
+        "An orange and white cat standing in front of a mirror.",
+        "A cat on a porch looking at it's reflection."
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.3333333333333333,
+      "BLEU-3": 0.11157215834702826,
+      "BLEU-4": 0.06674094719041482,
+      "BERTScore_P": 0.9187380075454712,
+      "BERTScore_R": 0.9098203182220459,
+      "BERTScore_F1": 0.9142574071884155
+    },
+    {
+      "image": "000000050165.jpg",
+      "generated_caption": "a train on a track near a bridge",
+      "references": [
+        "Small train running down the tracks in the middle of a field.",
+        "A short train traveling through a rustic contryside.",
+        "A small train moving along the tracks with a mountain town in the background.",
+        "A small train travels down the track by itself.",
+        "A small train is traveling near a large hills and a small town."
+      ],
+      "BLEU-1": 0.6618726769384466,
+      "BLEU-2": 0.2888649183327127,
+      "BLEU-3": 0.1070657377961178,
+      "BLEU-4": 0.0682218798076897,
+      "BERTScore_P": 0.9252246618270874,
+      "BERTScore_R": 0.9062880873680115,
+      "BERTScore_F1": 0.9156585335731506
+    },
+    {
+      "image": "000000050679.jpg",
+      "generated_caption": "a bird is standing on the sand near a tree",
+      "references": [
+        "A close-up of an orange on the side of the road.",
+        "an orange is on the white line on a street and some cars",
+        "a close up of an orange on a city street",
+        "An orange sitting in the middle of a road",
+        "An orange lying near the white stripe of a highway."
+      ],
+      "BLEU-1": 0.6,
+      "BLEU-2": 0.25819888974716104,
+      "BLEU-3": 0.09410360288810288,
+      "BLEU-4": 0.05873949094699214,
+      "BERTScore_P": 0.8735036849975586,
+      "BERTScore_R": 0.8660187721252441,
+      "BERTScore_F1": 0.8697450757026672
+    },
+    {
+      "image": "000000050828.jpg",
+      "generated_caption": "a bedroom with a bed and a table in it",
+      "references": [
+        "Two twin beds with no comforters on them.",
+        "A hotel room bed with white linens, and a white desk beside it.",
+        "A bedroom with two small beds right next to each other.",
+        "A bedroom with two beds placed next to one another with a desk to one side and a small window on the opposite side.",
+        "A white bed in a small hotel room"
+      ],
+      "BLEU-1": 0.9,
+      "BLEU-2": 0.6324555320336759,
+      "BLEU-3": 0.3684031498640387,
+      "BLEU-4": 0.1634812655665549,
+      "BERTScore_P": 0.8923693895339966,
+      "BERTScore_R": 0.8946197032928467,
+      "BERTScore_F1": 0.8934931755065918
+    },
+    {
+      "image": "000000051326.jpg",
+      "generated_caption": "a red fire hydrant sitting in a green grass",
+      "references": [
+        "Three decorated, carved jack-o-lanterns, one with pink flowers and a vase inside it",
+        "Three Jack-O-Laturns of various shapes, one of which has flowers in it.",
+        "A group of Halloween Jack o' lantern sitting on a floor with flowers and paper cut outs.",
+        "Pumpkins are made with different faces and one has flowers.",
+        "A bunch of pumpkins that have been carved with different faces in them."
+      ],
+      "BLEU-1": 0.35588329018524795,
+      "BLEU-2": 0.059683442168287366,
+      "BLEU-3": 0.03441120916469522,
+      "BLEU-4": 0.027155616465759737,
+      "BERTScore_P": 0.8620153665542603,
+      "BERTScore_R": 0.8247565031051636,
+      "BERTScore_F1": 0.8429744243621826
+    },
+    {
+      "image": "000000051712.jpg",
+      "generated_caption": "a person on skis is standing on a snowy slope",
+      "references": [
+        "A man skiing down the side of a snow covered mountain.",
+        "A man with goggles on snow skiing on a mountain",
+        "a man in a big jacket skiing down a snowy slope",
+        "a man standing on a pair of skis and coming down a snow covered hill",
+        "a man in a coat skiing down a hill"
+      ],
+      "BLEU-1": 0.8,
+      "BLEU-2": 0.5962847939999439,
+      "BLEU-3": 0.44628863338811303,
+      "BLEU-4": 0.18877190536462235,
+      "BERTScore_P": 0.9082168340682983,
+      "BERTScore_R": 0.912610650062561,
+      "BERTScore_F1": 0.9104084372520447
+    },
+    {
+      "image": "000000051938.jpg",
+      "generated_caption": "a person skiing down a hill on a snowy hill",
+      "references": [
+        "A person on skis does a trick on a rail.",
+        "A skier is skiing on a metal beam.",
+        "A man skiing on top of a pipe.",
+        "A man on ice skates sliding across a ramp in the snow.",
+        "a skier approaches a red bar stuck into the snow on a snowy hill"
+      ],
+      "BLEU-1": 0.8,
+      "BLEU-2": 0.5962847939999439,
+      "BLEU-3": 0.44628863338811303,
+      "BLEU-4": 0.3356891925037239,
+      "BERTScore_P": 0.9081212282180786,
+      "BERTScore_R": 0.9129623174667358,
+      "BERTScore_F1": 0.9105353355407715
+    },
+    {
+      "image": "000000051976.jpg",
+      "generated_caption": "a man riding a wave on top of a surfboard",
+      "references": [
+        "A man on a surfboard riding a wave in the ocean.",
+        "A man riding a wave on top of a surfboard.",
+        "A person on a surf board riding a wave.",
+        "A person surfing a wave  on the ocean",
+        "A person that is standing on a surfboard in the water."
+      ],
+      "BLEU-1": 1.0,
+      "BLEU-2": 1.0,
+      "BLEU-3": 1.0,
+      "BLEU-4": 1.0,
+      "BERTScore_P": 0.9508759379386902,
+      "BERTScore_R": 0.9577573537826538,
+      "BERTScore_F1": 0.9543042778968811
+    },
+    {
+      "image": "000000052996.jpg",
+      "generated_caption": "a group of people standing around a kitchen counter",
+      "references": [
+        "A group of women in military outfits helping other women in a kitchen.",
+        "Two woman soldiers talking to other women in a kitchen",
+        "female soldiers helping out citizens in the kitchen",
+        "A group of people standing in a kitchen.",
+        "Some people are in a kitchen with a big pot on the stove."
+      ],
+      "BLEU-1": 0.7777777777777778,
+      "BLEU-2": 0.6972166887783963,
+      "BLEU-3": 0.5928155507483438,
+      "BLEU-4": 0.5133450480401704,
+      "BERTScore_P": 0.9300441741943359,
+      "BERTScore_R": 0.9121090769767761,
+      "BERTScore_F1": 0.9209892749786377
+    },
+    {
+      "image": "000000053505.jpg",
+      "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+      "references": [
+        "A toilet sitting underneath a medicine cabinet in a bathroom.",
+        "A small bathroom with a toilet and medicine cabinet.",
+        "A bathroom is shown with a stainless steel shelf, toilet and wall phone.",
+        "There are a variety of bottles and two towels over the toilet.",
+        "A toilet area features some shelving with silver accents and towels and a white toilet."
+      ],
+      "BLEU-1": 0.8181818181818182,
+      "BLEU-2": 0.6396021490668313,
+      "BLEU-3": 0.44964431302260915,
+      "BLEU-4": 0.18360281349467963,
+      "BERTScore_P": 0.9385365843772888,
+      "BERTScore_R": 0.9487055540084839,
+      "BERTScore_F1": 0.9435936808586121
+    },
+    {
+      "image": "000000054654.jpg",
+      "generated_caption": "a woman standing in a kitchen with a stove and a stove",
+      "references": [
+        "The woman is dipping food out of the pot to eat.",
+        "A woman stirring a pot on the stove while holding a plate.",
+        "A woman preparing a plate of food in the kitchen",
+        "A woman preparing food from a pot in kitchen",
+        "a woman standing over a pot holding a plate of food"
+      ],
+      "BLEU-1": 0.6666666666666666,
+      "BLEU-2": 0.34815531191139565,
+      "BLEU-3": 0.22971111886089657,
+      "BLEU-4": 0.10772732737663729,
+      "BERTScore_P": 0.8915742039680481,
+      "BERTScore_R": 0.8769068717956543,
+      "BERTScore_F1": 0.8841797709465027
+    },
+    {
+      "image": "000000055150.jpg",
+      "generated_caption": "a man sitting on a motorcycle with a dog in the background",
+      "references": [
+        "Two children smiling on top of luggage in parking lot",
+        "Two little children on stroller in a parking lot.",
+        "Two children in a stroller among cars in a rental lot.",
+        "Two children sit atop their parent's luggage in the parking lot.",
+        "Two kids sitting in a luggage cart together"
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.21320071635561041,
+      "BLEU-3": 0.07688809598286293,
+      "BLEU-4": 0.04740604259878138,
+      "BERTScore_P": 0.8676555156707764,
+      "BERTScore_R": 0.8654816746711731,
+      "BERTScore_F1": 0.8665672540664673
+    },
+    {
+      "image": "000000055950.jpg",
+      "generated_caption": "a man holding a tennis racquet on a tennis court",
+      "references": [
+        "a man is playing tennis and is going to return the ball",
+        "a man playing tennis on a tennis court",
+        "A man at the net makes a forehand volley in a tennis match.",
+        "A young man playing tennis and preparing to hit the ball.",
+        "a man is on a court with a tennis racket"
+      ],
+      "BLEU-1": 0.8,
+      "BLEU-2": 0.5962847939999439,
+      "BLEU-3": 0.44628863338811303,
+      "BLEU-4": 0.3356891925037239,
+      "BERTScore_P": 0.9028726816177368,
+      "BERTScore_R": 0.8853360414505005,
+      "BERTScore_F1": 0.8940183520317078
+    },
+    {
+      "image": "000000056545.jpg",
+      "generated_caption": "a bird that is standing in the grass",
+      "references": [
+        "A gray bird is standing on small brown branch.",
+        "There is a bird sitting on a tree branch.",
+        "There is a bird perched on the tree branch.",
+        "The bird is sitting on the small branch of the tree.",
+        "A bird is perched on a twig in the trees."
+      ],
+      "BLEU-1": 0.5841005873035536,
+      "BLEU-2": 0.44153854132913556,
+      "BLEU-3": 0.13627121310819992,
+      "BLEU-4": 0.07923502246035705,
+      "BERTScore_P": 0.9277265071868896,
+      "BERTScore_R": 0.9128495454788208,
+      "BERTScore_F1": 0.9202278852462769
+    },
+    {
+      "image": "000000057672.jpg",
+      "generated_caption": "a group of people riding on a boat in the water",
+      "references": [
+        "The group paddles the boat down on the water.",
+        "The boat is full of many rowers as one person stands steering.",
+        "a river.A group of people with life jacket rowing a long boat in",
+        "A group of men in red vests rowing a dragon boat.",
+        "A long canoe paddled along by a large group of people."
+      ],
+      "BLEU-1": 0.9090909090909091,
+      "BLEU-2": 0.674199862463242,
+      "BLEU-3": 0.46571647518038106,
+      "BLEU-4": 0.18850319022747353,
+      "BERTScore_P": 0.9125629663467407,
+      "BERTScore_R": 0.9158594608306885,
+      "BERTScore_F1": 0.9142082333564758
+    },
+    {
+      "image": "000000058393.jpg",
+      "generated_caption": "a bench sitting on a beach near a body of water",
+      "references": [
+        "Two people sitting on a bench silhouetted against the sea.",
+        "Two people are sitting on a bench together in front of water.",
+        "The silhouette of two people sitting on a bench in front of the water.",
+        "A couple is sitting on a bench in front of the water.",
+        "A couple sits on a park bench and watches the water"
+      ],
+      "BLEU-1": 0.6363636363636364,
+      "BLEU-2": 0.504524979109513,
+      "BLEU-3": 0.304677894412465,
+      "BLEU-4": 0.13712233890675465,
+      "BERTScore_P": 0.9078456163406372,
+      "BERTScore_R": 0.8949060440063477,
+      "BERTScore_F1": 0.9013293981552124
+    },
+    {
+      "image": "000000058705.jpg",
+      "generated_caption": "a man wearing a suit and tie",
+      "references": [
+        "A man wearing a helmet while holding a banana next to a woman wearing a helmet.",
+        "Two people posing in funny hats for a camera",
+        "A man and woman at a party dressed in costumes.",
+        "A man and a woman posing together for a picture",
+        "There are two people posing and one man is holding a banana"
+      ],
+      "BLEU-1": 0.5367694950537757,
+      "BLEU-2": 0.4490935799743743,
+      "BLEU-3": 0.39284073564328575,
+      "BLEU-4": 0.32668286409255015,
+      "BERTScore_P": 0.9063025712966919,
+      "BERTScore_R": 0.8964595794677734,
+      "BERTScore_F1": 0.9013542532920837
+    },
+    {
+      "image": "000000059920.jpg",
+      "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+      "references": [
+        "a bathroom with a both a toilet and bidet",
+        "A bathroom with two toilets and a shower in it, with no space for any of them.",
+        "A bathroom with a toilet and a drain in it.",
+        "A tiny bathroom area features a patterned wall, bidet and toilet.",
+        "The toilet is across from a bidet in the small bathroom."
+      ],
+      "BLEU-1": 0.6363636363636364,
+      "BLEU-2": 0.25226248955475655,
+      "BLEU-3": 0.08908835677033948,
+      "BLEU-4": 0.05452469119630864,
+      "BERTScore_P": 0.8904401063919067,
+      "BERTScore_R": 0.8785331845283508,
+      "BERTScore_F1": 0.8844465017318726
+    },
+    {
+      "image": "000000060835.jpg",
+      "generated_caption": "a giraffe standing next to a tree in a field",
+      "references": [
+        "A dog in a a cage with a bed and bowl",
+        "A dog in a cage with a padded bed and water bowl",
+        "A dog that is sitting down inside of a cage.",
+        "a black and white dog is in a cage",
+        "A dog sitting inside a cage, in the dirt."
+      ],
+      "BLEU-1": 0.4,
+      "BLEU-2": 0.21081851067789192,
+      "BLEU-3": 0.08220706914434903,
+      "BLEU-4": 0.05307712171072445,
+      "BERTScore_P": 0.8953249454498291,
+      "BERTScore_R": 0.8899507522583008,
+      "BERTScore_F1": 0.8926298022270203
+    },
+    {
+      "image": "000000060886.jpg",
+      "generated_caption": "a baseball player holding a bat on a field",
+      "references": [
+        "A group of baseball players cluster together while wearing blue and white uniforms.",
+        "A baseball team all huddled together on the baseball field .",
+        "The entire baseball team has gathered on the field for a celebration.",
+        "A baseball team celebrates on the field together.",
+        "A baseball team crowd together on the field"
+      ],
+      "BLEU-1": 0.4444444444444444,
+      "BLEU-2": 0.23570226039551587,
+      "BLEU-3": 0.09258553738130408,
+      "BLEU-4": 0.06030725360407769,
+      "BERTScore_P": 0.9074265956878662,
+      "BERTScore_R": 0.879615068435669,
+      "BERTScore_F1": 0.8933044075965881
+    },
+    {
+      "image": "000000061268.jpg",
+      "generated_caption": "a train is coming down the tracks",
+      "references": [
+        "A train going down the track near a city",
+        "a big long train that has some storage containers on it",
+        "A train passing through a station, in the middle of the day.",
+        "A train carrying freight containers is on the tracks.",
+        "the train is crossing a street in the city"
+      ],
+      "BLEU-1": 0.6441233940645307,
+      "BLEU-2": 0.568063438111202,
+      "BLEU-3": 0.16926994170550788,
+      "BLEU-4": 0.0977009645333305,
+      "BERTScore_P": 0.9349680542945862,
+      "BERTScore_R": 0.9167971611022949,
+      "BERTScore_F1": 0.925793468952179
+    },
+    {
+      "image": "000000061471.jpg",
+      "generated_caption": "a cat is sitting on a chair in a kitchen",
+      "references": [
+        "Puppy chewing on toilet paper in the bathroom.",
+        "A brown dog standing next to a toilet in a bathroom.",
+        "A puppy pulls a line of toilet paper.",
+        "A dog playing with a roll of toilet paper in a bathroom.",
+        "A puppy has pulled toilet paper across the bathroom floor."
+      ],
+      "BLEU-1": 0.5,
+      "BLEU-2": 0.2357022603955158,
+      "BLEU-3": 0.08855488076521761,
+      "BLEU-4": 0.056122223243057295,
+      "BERTScore_P": 0.9069188833236694,
+      "BERTScore_R": 0.9068351984024048,
+      "BERTScore_F1": 0.9068770408630371
+    }
+  ]
+}

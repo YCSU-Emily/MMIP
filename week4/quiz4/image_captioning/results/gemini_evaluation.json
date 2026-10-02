@@ -1,0 +1,158 @@
+{
+  "model": "gemini-3.8-flash",
+  "evaluation_type": "Gemini visual caption matching",
+  "num_images": 20,
+  "valid_evaluations": 12,
+  "statistics": {
+    "MATCH": 2,
+    "PARTIAL": 5,
+    "MISMATCH": 5,
+    "ERROR": 8,
+    "match_rate_percent": 16.666666666666664,
+    "acceptable_rate_percent": 58.333333333333336
+  },
+  "total_evaluation_time_sec": 1223.7192349960096,
+  "average_evaluation_time_sec": 61.185961749800484,
+  "evaluations": [
+    {
+      "image": "000000000776.jpg",
+      "generated_caption": "a teddy bear is sitting on a table",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 83.4605091889971
+    },
+    {
+      "image": "000000000802.jpg",
+      "generated_caption": "a white sink and a sink in a bathroom",
+      "label": "MISMATCH",
+      "reason": "The image depicts a kitchen with a stove and refrigerator, not a bathroom with sinks.",
+      "evaluation_time_sec": 103.14232313798857
+    },
+    {
+      "image": "000000000872.jpg",
+      "generated_caption": "a baseball player is swinging at a ball",
+      "label": "PARTIAL",
+      "reason": "The image features baseball players, but the main player is running the bases rather than swinging at a ball.",
+      "evaluation_time_sec": 19.714432017994113
+    },
+    {
+      "image": "000000001425.jpg",
+      "generated_caption": "a close up of a white plate with a of broccoli",
+      "label": "MISMATCH",
+      "reason": "The image shows a sandwich on a plate, not broccoli.",
+      "evaluation_time_sec": 56.25117499800399
+    },
+    {
+      "image": "000000001503.jpg",
+      "generated_caption": "a desk with a computer and a laptop on it",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 56.79558274502051
+    },
+    {
+      "image": "000000001818.jpg",
+      "generated_caption": "a zebra standing next to a tree in a field",
+      "label": "PARTIAL",
+      "reason": "The caption correctly identifies a zebra, but misses the nursing foal and incorrectly mentions a tree.",
+      "evaluation_time_sec": 35.84788896300597
+    },
+    {
+      "image": "000000003553.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "label": "MISMATCH",
+      "reason": "The image depicts a person skateboarding on wooden planks, completely unrelated to a man sitting on a bench reading.",
+      "evaluation_time_sec": 10.063122763996944
+    },
+    {
+      "image": "000000004134.jpg",
+      "generated_caption": "a man and a woman are standing in a kitchen",
+      "label": "MISMATCH",
+      "reason": "The image shows two men shaking hands in a banquet hall, not a man and a woman in a kitchen.",
+      "evaluation_time_sec": 132.7490490229975
+    },
+    {
+      "image": "000000005477.jpg",
+      "generated_caption": "a large jetliner sitting on top of a runway",
+      "label": "MATCH",
+      "reason": "The caption accurately describes the large passenger airplane positioned on the runway.",
+      "evaluation_time_sec": 368.01461068200297
+    },
+    {
+      "image": "000000006213.jpg",
+      "generated_caption": "a white sink sitting under a white sink",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 6.15592907401151
+    },
+    {
+      "image": "000000006894.jpg",
+      "generated_caption": "a man standing next to a man holding a surfboard",
+      "label": "MISMATCH",
+      "reason": "The caption incorrectly mentions a man holding a surfboard instead of an elephant interacting with a man.",
+      "evaluation_time_sec": 109.75123337301193
+    },
+    {
+      "image": "000000006954.jpg",
+      "generated_caption": "a group of people playing frisbee in a field",
+      "label": "PARTIAL",
+      "reason": "The children are sitting and holding frisbees rather than actively playing.",
+      "evaluation_time_sec": 18.186639794992516
+    },
+    {
+      "image": "000000007108.jpg",
+      "generated_caption": "a elephant that is standing in the dirt",
+      "label": "MATCH",
+      "reason": "The caption accurately identifies the prominent elephant standing on dirt, capturing the primary subject.",
+      "evaluation_time_sec": 35.18215500199585
+    },
+    {
+      "image": "000000007574.jpg",
+      "generated_caption": "a kitchen with a stove and a sink",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 10.739344758010702
+    },
+    {
+      "image": "000000007816.jpg",
+      "generated_caption": "a man riding a motorcycle down a road",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 16.48422535401187
+    },
+    {
+      "image": "000000007977.jpg",
+      "generated_caption": "a man on a skateboard is performing a trick",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 30.61660194801516
+    },
+    {
+      "image": "000000008844.jpg",
+      "generated_caption": "a bunch of different fruits in a produce",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 30.311769630992785
+    },
+    {
+      "image": "000000010363.jpg",
+      "generated_caption": "a cat sitting on top of a wooden floor",
+      "label": "PARTIAL",
+      "reason": "The model correctly identifies the cat, but it is standing on a car hood, not sitting on a wooden floor.",
+      "evaluation_time_sec": 29.9417657199956
+    },
+    {
+      "image": "000000010583.jpg",
+      "generated_caption": "a plate with a sandwich and salad",
+      "label": "PARTIAL",
+      "reason": "The plate contains an open-faced sandwich covered in gravy, but there is no salad present.",
+      "evaluation_time_sec": 11.885212074994342
+    },
+    {
+      "image": "000000010707.jpg",
+      "generated_caption": "a group of people sitting on a bed with a dog",
+      "label": "ERROR",
+      "reason": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "evaluation_time_sec": 48.90800313500222
+    }
+  ]
+}

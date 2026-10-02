@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Python environments
+.venv/
+venv/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store

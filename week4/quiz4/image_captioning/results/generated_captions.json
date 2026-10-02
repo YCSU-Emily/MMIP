@@ -1,0 +1,513 @@
+{
+  "model": "ResNet18 + LSTM",
+  "decoding": "Greedy Search",
+  "num_images": 100,
+  "total_inference_time_sec": 0.7001410779921571,
+  "average_inference_time_sec": 0.0070014107799215705,
+  "average_inference_time_ms": 7.001410779921571,
+  "checkpoint": "./models/best_caption_model.pth",
+  "best_epoch": 5,
+  "validation_loss": 2.665705383883847,
+  "results": [
+    {
+      "image": "000000000776.jpg",
+      "generated_caption": "a teddy bear is sitting on a table",
+      "inference_time_sec": 0.21307147800689563
+    },
+    {
+      "image": "000000000802.jpg",
+      "generated_caption": "a white sink and a sink in a bathroom",
+      "inference_time_sec": 0.0029698520083911717
+    },
+    {
+      "image": "000000000872.jpg",
+      "generated_caption": "a baseball player is swinging at a ball",
+      "inference_time_sec": 0.002882093991502188
+    },
+    {
+      "image": "000000001425.jpg",
+      "generated_caption": "a close up of a white plate with a of broccoli",
+      "inference_time_sec": 0.006234642001800239
+    },
+    {
+      "image": "000000001503.jpg",
+      "generated_caption": "a desk with a computer and a laptop on it",
+      "inference_time_sec": 0.005510776987648569
+    },
+    {
+      "image": "000000001818.jpg",
+      "generated_caption": "a zebra standing next to a tree in a field",
+      "inference_time_sec": 0.005729099997552112
+    },
+    {
+      "image": "000000003553.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "inference_time_sec": 0.005435866987681948
+    },
+    {
+      "image": "000000004134.jpg",
+      "generated_caption": "a man and a woman are standing in a kitchen",
+      "inference_time_sec": 0.00558139500208199
+    },
+    {
+      "image": "000000005477.jpg",
+      "generated_caption": "a large jetliner sitting on top of a runway",
+      "inference_time_sec": 0.0051864819979527965
+    },
+    {
+      "image": "000000006213.jpg",
+      "generated_caption": "a white sink sitting under a white sink",
+      "inference_time_sec": 0.004918232996715233
+    },
+    {
+      "image": "000000006894.jpg",
+      "generated_caption": "a man standing next to a man holding a surfboard",
+      "inference_time_sec": 0.005393701998400502
+    },
+    {
+      "image": "000000006954.jpg",
+      "generated_caption": "a group of people playing frisbee in a field",
+      "inference_time_sec": 0.005403303002822213
+    },
+    {
+      "image": "000000007108.jpg",
+      "generated_caption": "a elephant that is standing in the dirt",
+      "inference_time_sec": 0.005230984999798238
+    },
+    {
+      "image": "000000007574.jpg",
+      "generated_caption": "a kitchen with a stove and a sink",
+      "inference_time_sec": 0.005127665004692972
+    },
+    {
+      "image": "000000007816.jpg",
+      "generated_caption": "a man riding a motorcycle down a road",
+      "inference_time_sec": 0.005322736004018225
+    },
+    {
+      "image": "000000007977.jpg",
+      "generated_caption": "a man on a skateboard is performing a trick",
+      "inference_time_sec": 0.005496760000823997
+    },
+    {
+      "image": "000000008844.jpg",
+      "generated_caption": "a bunch of different fruits in a produce",
+      "inference_time_sec": 0.0051022800034843385
+    },
+    {
+      "image": "000000010363.jpg",
+      "generated_caption": "a cat sitting on top of a wooden floor",
+      "inference_time_sec": 0.005320101001416333
+    },
+    {
+      "image": "000000010583.jpg",
+      "generated_caption": "a plate with a sandwich and salad",
+      "inference_time_sec": 0.0048790650034789
+    },
+    {
+      "image": "000000010707.jpg",
+      "generated_caption": "a group of people sitting on a bed with a dog",
+      "inference_time_sec": 0.005843994003953412
+    },
+    {
+      "image": "000000010764.jpg",
+      "generated_caption": "a baseball player is preparing to hit the ball",
+      "inference_time_sec": 0.005447193994768895
+    },
+    {
+      "image": "000000011122.jpg",
+      "generated_caption": "a green and white train is coming down the tracks",
+      "inference_time_sec": 0.005646553996484727
+    },
+    {
+      "image": "000000012062.jpg",
+      "generated_caption": "a sheep standing on a dirt ground",
+      "inference_time_sec": 0.004942162995575927
+    },
+    {
+      "image": "000000012120.jpg",
+      "generated_caption": "a man standing on a tennis court holding a racquet",
+      "inference_time_sec": 0.005564045990468003
+    },
+    {
+      "image": "000000012748.jpg",
+      "generated_caption": "a man is standing in a field of grass",
+      "inference_time_sec": 0.005583926002145745
+    },
+    {
+      "image": "000000013291.jpg",
+      "generated_caption": "a group of people playing frisbee in a field",
+      "inference_time_sec": 0.005427854994195513
+    },
+    {
+      "image": "000000013348.jpg",
+      "generated_caption": "a plane is parked on the runway",
+      "inference_time_sec": 0.005134242004714906
+    },
+    {
+      "image": "000000015272.jpg",
+      "generated_caption": "a green and yellow fire hydrant in front of a tree",
+      "inference_time_sec": 0.005919896007981151
+    },
+    {
+      "image": "000000015338.jpg",
+      "generated_caption": "a street with a clock on the side of a building",
+      "inference_time_sec": 0.005866159001016058
+    },
+    {
+      "image": "000000015517.jpg",
+      "generated_caption": "a large white building with a lot of cars",
+      "inference_time_sec": 0.005360091003240086
+    },
+    {
+      "image": "000000015597.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "inference_time_sec": 0.005399312009103596
+    },
+    {
+      "image": "000000017029.jpg",
+      "generated_caption": "a black and white cat is standing in the grass",
+      "inference_time_sec": 0.005798744998173788
+    },
+    {
+      "image": "000000017178.jpg",
+      "generated_caption": "a large truck parked on a road near a road",
+      "inference_time_sec": 0.005687111013685353
+    },
+    {
+      "image": "000000017714.jpg",
+      "generated_caption": "a close up of a piece of on a plate",
+      "inference_time_sec": 0.005834458002937026
+    },
+    {
+      "image": "000000018193.jpg",
+      "generated_caption": "a man holding a hot dog in his hand",
+      "inference_time_sec": 0.00548326299758628
+    },
+    {
+      "image": "000000019109.jpg",
+      "generated_caption": "a row of motorcycles parked on the side of the road",
+      "inference_time_sec": 0.005878842988749966
+    },
+    {
+      "image": "000000020571.jpg",
+      "generated_caption": "a group of boats are parked in a harbor",
+      "inference_time_sec": 0.0024779200030025095
+    },
+    {
+      "image": "000000021465.jpg",
+      "generated_caption": "a table with a bunch of different colored flowers in it",
+      "inference_time_sec": 0.002445871999952942
+    },
+    {
+      "image": "000000021604.jpg",
+      "generated_caption": "a man wearing a suit and tie standing in a room",
+      "inference_time_sec": 0.0024854729999788105
+    },
+    {
+      "image": "000000021879.jpg",
+      "generated_caption": "a woman in a wetsuit is standing on a beach",
+      "inference_time_sec": 0.0023484520061174408
+    },
+    {
+      "image": "000000022479.jpg",
+      "generated_caption": "a man riding a skateboard down a street",
+      "inference_time_sec": 0.002153424997231923
+    },
+    {
+      "image": "000000023230.jpg",
+      "generated_caption": "a group of people standing in a river",
+      "inference_time_sec": 0.0024236610042862594
+    },
+    {
+      "image": "000000023359.jpg",
+      "generated_caption": "a person on a snowboard on a snowy surface",
+      "inference_time_sec": 0.002258314998471178
+    },
+    {
+      "image": "000000023666.jpg",
+      "generated_caption": "a white toilet sitting next to a white sink",
+      "inference_time_sec": 0.0025316569954156876
+    },
+    {
+      "image": "000000023781.jpg",
+      "generated_caption": "a pile of carrots and carrots on a table",
+      "inference_time_sec": 0.0027895390085177496
+    },
+    {
+      "image": "000000024610.jpg",
+      "generated_caption": "a living room with a couch and a television",
+      "inference_time_sec": 0.0022603410034207627
+    },
+    {
+      "image": "000000026941.jpg",
+      "generated_caption": "a bench sitting in front of a brick wall",
+      "inference_time_sec": 0.005244113999651745
+    },
+    {
+      "image": "000000027696.jpg",
+      "generated_caption": "a pizza with cheese and olives on it",
+      "inference_time_sec": 0.005136535997735336
+    },
+    {
+      "image": "000000027982.jpg",
+      "generated_caption": "a toilet in a bathroom with a toilet seat",
+      "inference_time_sec": 0.005323339995811693
+    },
+    {
+      "image": "000000028285.jpg",
+      "generated_caption": "a stone building with a clock on the top",
+      "inference_time_sec": 0.00540677500248421
+    },
+    {
+      "image": "000000028449.jpg",
+      "generated_caption": "a large elephant standing next to a fence",
+      "inference_time_sec": 0.005084199001430534
+    },
+    {
+      "image": "000000028809.jpg",
+      "generated_caption": "a close up of a hot dog with mustard",
+      "inference_time_sec": 0.0052998320024926215
+    },
+    {
+      "image": "000000030828.jpg",
+      "generated_caption": "a man flying a kite in a field",
+      "inference_time_sec": 0.005294067988870665
+    },
+    {
+      "image": "000000032038.jpg",
+      "generated_caption": "a pizza with a knife and fork on it",
+      "inference_time_sec": 0.005330264990334399
+    },
+    {
+      "image": "000000032811.jpg",
+      "generated_caption": "a white and black cat sitting on top of a window",
+      "inference_time_sec": 0.005765345005784184
+    },
+    {
+      "image": "000000032901.jpg",
+      "generated_caption": "a man in a suit and tie standing in a kitchen",
+      "inference_time_sec": 0.005817060999106616
+    },
+    {
+      "image": "000000034257.jpg",
+      "generated_caption": "a wooden table topped with many different types of vegetables",
+      "inference_time_sec": 0.005532720999326557
+    },
+    {
+      "image": "000000035062.jpg",
+      "generated_caption": "a cat laying on a bed with a blanket",
+      "inference_time_sec": 0.005284218001179397
+    },
+    {
+      "image": "000000035279.jpg",
+      "generated_caption": "a computer desk with a keyboard and mouse",
+      "inference_time_sec": 0.005013717003748752
+    },
+    {
+      "image": "000000037689.jpg",
+      "generated_caption": "a person on skis is standing in the snow",
+      "inference_time_sec": 0.00528267900517676
+    },
+    {
+      "image": "000000037988.jpg",
+      "generated_caption": "a man holding a tennis racquet on a tennis court",
+      "inference_time_sec": 0.005519160011317581
+    },
+    {
+      "image": "000000038210.jpg",
+      "generated_caption": "a person skiing down a hill on a snowy slope",
+      "inference_time_sec": 0.005548365006688982
+    },
+    {
+      "image": "000000038678.jpg",
+      "generated_caption": "a woman holding a glass of wine with a glass of wine",
+      "inference_time_sec": 0.0061261480004759505
+    },
+    {
+      "image": "000000039670.jpg",
+      "generated_caption": "a train is coming down the tracks",
+      "inference_time_sec": 0.002177390008000657
+    },
+    {
+      "image": "000000040757.jpg",
+      "generated_caption": "a dog laying on a bed with a blanket on top of it",
+      "inference_time_sec": 0.004369955000584014
+    },
+    {
+      "image": "000000042178.jpg",
+      "generated_caption": "a group of people standing next to a train",
+      "inference_time_sec": 0.0025630230084061623
+    },
+    {
+      "image": "000000042628.jpg",
+      "generated_caption": "a group of people riding horses down a snow covered slope",
+      "inference_time_sec": 0.002552282006945461
+    },
+    {
+      "image": "000000043435.jpg",
+      "generated_caption": "a person riding a surfboard on a wave",
+      "inference_time_sec": 0.005063069998868741
+    },
+    {
+      "image": "000000044195.jpg",
+      "generated_caption": "a man standing on a snowy hill with a frisbee",
+      "inference_time_sec": 0.005462019995320588
+    },
+    {
+      "image": "000000044652.jpg",
+      "generated_caption": "a person on a surfboard riding a wave",
+      "inference_time_sec": 0.005025399994337931
+    },
+    {
+      "image": "000000045090.jpg",
+      "generated_caption": "a person riding a surfboard on a wave",
+      "inference_time_sec": 0.004941010003676638
+    },
+    {
+      "image": "000000045596.jpg",
+      "generated_caption": "a train is coming down the tracks in a wooded area",
+      "inference_time_sec": 0.005634120010654442
+    },
+    {
+      "image": "000000046031.jpg",
+      "generated_caption": "a desk with a computer keyboard and mouse",
+      "inference_time_sec": 0.005365097007597797
+    },
+    {
+      "image": "000000046804.jpg",
+      "generated_caption": "a sheep standing on a lush green field",
+      "inference_time_sec": 0.0051094910013489425
+    },
+    {
+      "image": "000000046872.jpg",
+      "generated_caption": "a man standing next to a white fence",
+      "inference_time_sec": 0.005043255994678475
+    },
+    {
+      "image": "000000047769.jpg",
+      "generated_caption": "a living room with a couch and a table",
+      "inference_time_sec": 0.005348135004169308
+    },
+    {
+      "image": "000000048555.jpg",
+      "generated_caption": "a group of people riding horses along a beach",
+      "inference_time_sec": 0.005329808001988567
+    },
+    {
+      "image": "000000048924.jpg",
+      "generated_caption": "a man riding a motorcycle with a dog in the background",
+      "inference_time_sec": 0.005788072987343185
+    },
+    {
+      "image": "000000049810.jpg",
+      "generated_caption": "a dog is looking at a dog in a cage",
+      "inference_time_sec": 0.005528488996787928
+    },
+    {
+      "image": "000000050165.jpg",
+      "generated_caption": "a train on a track near a bridge",
+      "inference_time_sec": 0.005071583989774808
+    },
+    {
+      "image": "000000050679.jpg",
+      "generated_caption": "a bird is standing on the sand near a tree",
+      "inference_time_sec": 0.005526472989004105
+    },
+    {
+      "image": "000000050828.jpg",
+      "generated_caption": "a bedroom with a bed and a table in it",
+      "inference_time_sec": 0.005728913005441427
+    },
+    {
+      "image": "000000051326.jpg",
+      "generated_caption": "a red fire hydrant sitting in a green grass",
+      "inference_time_sec": 0.005615540998405777
+    },
+    {
+      "image": "000000051712.jpg",
+      "generated_caption": "a person on skis is standing on a snowy slope",
+      "inference_time_sec": 0.005907361992285587
+    },
+    {
+      "image": "000000051938.jpg",
+      "generated_caption": "a person skiing down a hill on a snowy hill",
+      "inference_time_sec": 0.0026025879924418405
+    },
+    {
+      "image": "000000051976.jpg",
+      "generated_caption": "a man riding a wave on top of a surfboard",
+      "inference_time_sec": 0.005537121993256733
+    },
+    {
+      "image": "000000052996.jpg",
+      "generated_caption": "a group of people standing around a kitchen counter",
+      "inference_time_sec": 0.005232095994870178
+    },
+    {
+      "image": "000000053505.jpg",
+      "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+      "inference_time_sec": 0.005607679006061517
+    },
+    {
+      "image": "000000054654.jpg",
+      "generated_caption": "a woman standing in a kitchen with a stove and a stove",
+      "inference_time_sec": 0.00595253000210505
+    },
+    {
+      "image": "000000055150.jpg",
+      "generated_caption": "a man sitting on a motorcycle with a dog in the background",
+      "inference_time_sec": 0.005964939991827123
+    },
+    {
+      "image": "000000055950.jpg",
+      "generated_caption": "a man holding a tennis racquet on a tennis court",
+      "inference_time_sec": 0.005510916991624981
+    },
+    {
+      "image": "000000056545.jpg",
+      "generated_caption": "a bird that is standing in the grass",
+      "inference_time_sec": 0.004899763996945694
+    },
+    {
+      "image": "000000057672.jpg",
+      "generated_caption": "a group of people riding on a boat in the water",
+      "inference_time_sec": 0.005686300995876081
+    },
+    {
+      "image": "000000058393.jpg",
+      "generated_caption": "a bench sitting on a beach near a body of water",
+      "inference_time_sec": 0.005713936989195645
+    },
+    {
+      "image": "000000058705.jpg",
+      "generated_caption": "a man wearing a suit and tie",
+      "inference_time_sec": 0.002038755003013648
+    },
+    {
+      "image": "000000059920.jpg",
+      "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+      "inference_time_sec": 0.005676491011399776
+    },
+    {
+      "image": "000000060835.jpg",
+      "generated_caption": "a giraffe standing next to a tree in a field",
+      "inference_time_sec": 0.005483115994138643
+    },
+    {
+      "image": "000000060886.jpg",
+      "generated_caption": "a baseball player holding a bat on a field",
+      "inference_time_sec": 0.005106958007672802
+    },
+    {
+      "image": "000000061268.jpg",
+      "generated_caption": "a train is coming down the tracks",
+      "inference_time_sec": 0.004730158994789235
+    },
+    {
+      "image": "000000061471.jpg",
+      "generated_caption": "a cat is sitting on a chair in a kitchen",
+      "inference_time_sec": 0.005449666001368314
+    }
+  ]
+}
