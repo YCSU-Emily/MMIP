@@ -1,0 +1,48 @@
+[
+  {
+    "epoch": 5,
+    "phase": "baseline_checkpoint",
+    "train_loss": null,
+    "val_loss": 2.665705383883847
+  },
+  {
+    "epoch": 6,
+    "phase": "continued_training",
+    "train_loss": 2.0471743397132185,
+    "val_loss": 2.624941343122667,
+    "epoch_time_sec": 48.615655183792114,
+    "learning_rate": 0.0001
+  },
+  {
+    "epoch": 7,
+    "phase": "continued_training",
+    "train_loss": 1.9982366895349704,
+    "val_loss": 2.6236171326556286,
+    "epoch_time_sec": 46.04285025596619,
+    "learning_rate": 0.0001
+  },
+  {
+    "epoch": 8,
+    "phase": "continued_training",
+    "train_loss": 1.968463223875111,
+    "val_loss": 2.623136569355632,
+    "epoch_time_sec": 46.63167381286621,
+    "learning_rate": 0.0001
+  },
+  {
+    "epoch": 9,
+    "phase": "continued_training",
+    "train_loss": 1.9423785698873473,
+    "val_loss": 2.625183144292155,
+    "epoch_time_sec": 46.70202589035034,
+    "learning_rate": 0.0001
+  },
+  {
+    "epoch": 10,
+    "phase": "continued_training",
+    "train_loss": 1.917264187834669,
+    "val_loss": 2.630135868455504,
+    "epoch_time_sec": 46.586066246032715,
+    "learning_rate": 0.0001
+  }
+]

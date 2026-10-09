@@ -1,0 +1,208 @@
+{
+  "source": "results/advanced_evaluation.json",
+  "num_samples": 100,
+  "metrics": {
+    "BLEU-1": {
+      "count": 100,
+      "mean": 0.5901647709160781,
+      "median": 0.5555555555555556,
+      "std_population": 0.18517736067650395,
+      "min": 0.12500000000000003,
+      "max": 1.0
+    },
+    "BLEU-2": {
+      "count": 100,
+      "mean": 0.37399658935116875,
+      "median": 0.36899730878964127,
+      "std_population": 0.2236966044106263,
+      "min": 0.04225771273642583,
+      "max": 1.0
+    },
+    "BLEU-3": {
+      "count": 100,
+      "mean": 0.22931784536332192,
+      "median": 0.125657906854859,
+      "std_population": 0.20674141144026212,
+      "min": 0.030989904712054688,
+      "max": 1.0
+    },
+    "BLEU-4": {
+      "count": 100,
+      "mean": 0.15289963825381545,
+      "median": 0.07583235673413397,
+      "std_population": 0.17403239713443738,
+      "min": 0.026658376817028855,
+      "max": 1.0
+    },
+    "BERTScore_P": {
+      "count": 100,
+      "mean": 0.9021159195899964,
+      "median": 0.9031569063663483,
+      "std_population": 0.02388123201958579,
+      "min": 0.8437459468841553,
+      "max": 0.9589890241622925
+    },
+    "BERTScore_R": {
+      "count": 100,
+      "mean": 0.8995656907558441,
+      "median": 0.9001537263393402,
+      "std_population": 0.025272314150800914,
+      "min": 0.8247565031051636,
+      "max": 0.9581307768821716
+    },
+    "BERTScore_F1": {
+      "count": 100,
+      "mean": 0.900783069729805,
+      "median": 0.9013418257236481,
+      "std_population": 0.0235683848160933,
+      "min": 0.8429744243621826,
+      "max": 0.9556337594985962
+    }
+  },
+  "risk_flag_definition": "BLEU-4 或 BERTScore F1 位於本批樣本最低 20% 的自動篩查標記；只代表值得檢查，不代表字幕一定錯誤。",
+  "bleu4_low_score_threshold": 0.04790437745835816,
+  "bertscore_f1_low_score_threshold": 0.8788615465164185,
+  "num_flagged": 33,
+  "lowest_bleu4_examples": [
+    {
+      "image": "000000032901.jpg",
+      "BLEU-4": 0.026658376817028855,
+      "BERTScore_F1": 0.8640427589416504,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a man in a suit and tie standing in a kitchen"
+    },
+    {
+      "image": "000000045596.jpg",
+      "BLEU-4": 0.026658376817028855,
+      "BERTScore_F1": 0.8763057589530945,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a train is coming down the tracks in a wooded area"
+    },
+    {
+      "image": "000000051326.jpg",
+      "BLEU-4": 0.027155616465759737,
+      "BERTScore_F1": 0.8429744243621826,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a red fire hydrant sitting in a green grass"
+    },
+    {
+      "image": "000000044652.jpg",
+      "BLEU-4": 0.02777619034011792,
+      "BERTScore_F1": 0.8638926148414612,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a person on a surfboard riding a wave"
+    },
+    {
+      "image": "000000006213.jpg",
+      "BLEU-4": 0.02846946938149362,
+      "BERTScore_F1": 0.870592474937439,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a white sink sitting under a white sink"
+    },
+    {
+      "image": "000000008844.jpg",
+      "BLEU-4": 0.02846946938149362,
+      "BERTScore_F1": 0.8704386949539185,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a bunch of different fruits in a produce"
+    },
+    {
+      "image": "000000043435.jpg",
+      "BLEU-4": 0.02915032279375143,
+      "BERTScore_F1": 0.8799423575401306,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a person riding a surfboard on a wave"
+    },
+    {
+      "image": "000000021879.jpg",
+      "BLEU-4": 0.02984745896009824,
+      "BERTScore_F1": 0.8793734312057495,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a woman in a wetsuit is standing on a beach"
+    },
+    {
+      "image": "000000021465.jpg",
+      "BLEU-4": 0.030661487102926755,
+      "BERTScore_F1": 0.9036365747451782,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a table with a bunch of different colored flowers in it"
+    },
+    {
+      "image": "000000018193.jpg",
+      "BLEU-4": 0.03155984539112946,
+      "BERTScore_F1": 0.9018518924713135,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a man holding a hot dog in his hand"
+    },
+    {
+      "image": "000000034257.jpg",
+      "BLEU-4": 0.03155984539112946,
+      "BERTScore_F1": 0.9228444695472717,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a wooden table topped with many different types of vegetables"
+    },
+    {
+      "image": "000000035279.jpg",
+      "BLEU-4": 0.03226013518927287,
+      "BERTScore_F1": 0.8858221173286438,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a computer desk with a keyboard and mouse"
+    },
+    {
+      "image": "000000007108.jpg",
+      "BLEU-4": 0.03234756246430655,
+      "BERTScore_F1": 0.8969074487686157,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a elephant that is standing in the dirt"
+    },
+    {
+      "image": "000000023666.jpg",
+      "BLEU-4": 0.03391326091030751,
+      "BERTScore_F1": 0.9029646515846252,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a white toilet sitting next to a white sink"
+    },
+    {
+      "image": "000000042178.jpg",
+      "BLEU-4": 0.03391326091030751,
+      "BERTScore_F1": 0.8885219693183899,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a group of people standing next to a train"
+    },
+    {
+      "image": "000000028449.jpg",
+      "BLEU-4": 0.0346657712709552,
+      "BERTScore_F1": 0.9173703789710999,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a large elephant standing next to a fence"
+    },
+    {
+      "image": "000000023781.jpg",
+      "BLEU-4": 0.03585890753612134,
+      "BERTScore_F1": 0.8825740218162537,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a pile of carrots and carrots on a table"
+    },
+    {
+      "image": "000000046031.jpg",
+      "BLEU-4": 0.03987129846774613,
+      "BERTScore_F1": 0.910332977771759,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a desk with a computer keyboard and mouse"
+    },
+    {
+      "image": "000000055150.jpg",
+      "BLEU-4": 0.04740604259878138,
+      "BERTScore_F1": 0.8665672540664673,
+      "automatic_risk_flag": "BLEU-4低分；BERTScore-F1低分",
+      "generated_caption": "a man sitting on a motorcycle with a dog in the background"
+    },
+    {
+      "image": "000000010707.jpg",
+      "BLEU-4": 0.04790437745835816,
+      "BERTScore_F1": 0.8968596458435059,
+      "automatic_risk_flag": "BLEU-4低分",
+      "generated_caption": "a group of people sitting on a bed with a dog"
+    }
+  ]
+}

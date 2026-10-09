@@ -1,0 +1,38 @@
+{
+  "dataset": "COCO test captions",
+  "num_images": 100,
+  "bleu_method": "Sentence-level BLEU averaged across images; lowercase regex tokenization, clipped n-gram counts, 0.1 smoothing, brevity penalty; all available references",
+  "bert_score_method": "If installed: roberta-base, English; score each generated caption against every available reference, then average across references and images.",
+  "models": {
+    "Week4_baseline": {
+      "num_images": 100,
+      "BLEU1": 0.5778587379863908,
+      "BLEU2": 0.3878085234877733,
+      "BLEU3": 0.23747102541029405,
+      "BLEU4": 0.16273151634804184,
+      "BERTScore_P": 0.9007475680112839,
+      "BERTScore_R": 0.8991603648662567,
+      "BERTScore_F1": 0.8998866099119186
+    },
+    "Week4_continuation": {
+      "num_images": 100,
+      "BLEU1": 0.6125010212046802,
+      "BLEU2": 0.4162343951568542,
+      "BLEU3": 0.2649225864880916,
+      "BLEU4": 0.1760098754654894,
+      "BERTScore_P": 0.9002605801820756,
+      "BERTScore_R": 0.8988650888204575,
+      "BERTScore_F1": 0.8994937491416931
+    },
+    "Week5_CLIP_LSTM": {
+      "num_images": 100,
+      "BLEU1": 0.6574936170172415,
+      "BLEU2": 0.4411063289772863,
+      "BLEU3": 0.2713868630811878,
+      "BLEU4": 0.17036506732867554,
+      "BERTScore_P": 0.8934774941205978,
+      "BERTScore_R": 0.8999198395013809,
+      "BERTScore_F1": 0.8966241651773452
+    }
+  }
+}

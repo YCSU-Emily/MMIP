@@ -1,0 +1,1914 @@
+{
+  "evaluation": "Paired sentence-level BLEU comparison",
+  "tokenization": "lowercase regex tokens; punctuation retained",
+  "smoothing": "method1-style epsilon 0.1",
+  "reference_captions": "all available COCO references per image",
+  "num_common_images": 100,
+  "models": {
+    "epoch5": {
+      "num_images": 100,
+      "metrics": {
+        "BLEU-1": {
+          "count": 100,
+          "mean": 0.6004188840010378,
+          "median": 0.5666666666666667,
+          "std_population": 0.18522649823801857,
+          "min": 0.1375,
+          "max": 1.011111111111111
+        },
+        "BLEU-2": {
+          "count": 100,
+          "mean": 0.384264033207343,
+          "median": 0.3815629763318017,
+          "std_population": 0.22599087673280338,
+          "min": 0.04432026302139594,
+          "max": 1.0105554028464854
+        },
+        "BLEU-3": {
+          "count": 100,
+          "mean": 0.2360934285215064,
+          "median": 0.12856407953291177,
+          "std_population": 0.21128787981694158,
+          "min": 0.03199026241414162,
+          "max": 1.0112031865682143
+        },
+        "BLEU-4": {
+          "count": 100,
+          "mean": 0.15890585611485158,
+          "median": 0.07714395865600263,
+          "std_population": 0.17962451963981718,
+          "min": 0.02682345205292152,
+          "max": 1.0119729391198107
+        }
+      },
+      "samples": [
+        {
+          "image": "000000000776.jpg",
+          "generated_caption": "a teddy bear is sitting on a table",
+          "num_references": 5,
+          "BLEU-1": 0.5125,
+          "BLEU-2": 0.392109678533953,
+          "BLEU-3": 0.3043351998606951,
+          "BLEU-4": 0.1540890007144168
+        },
+        {
+          "image": "000000000802.jpg",
+          "generated_caption": "a white sink and a sink in a bathroom",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.3856812155135378,
+          "BLEU-3": 0.12856407953291177,
+          "BLEU-4": 0.07714395865600263
+        },
+        {
+          "image": "000000000872.jpg",
+          "generated_caption": "a baseball player is swinging at a ball",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.25044216368441086,
+          "BLEU-3": 0.09734768121711006,
+          "BLEU-4": 0.06352285438777089
+        },
+        {
+          "image": "000000001425.jpg",
+          "generated_caption": "a close up of a white plate with a of broccoli",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.41461921193920925,
+          "BLEU-3": 0.27594106733364315,
+          "BLEU-4": 0.12730332824940982
+        },
+        {
+          "image": "000000001503.jpg",
+          "generated_caption": "a desk with a computer and a laptop on it",
+          "num_references": 5,
+          "BLEU-1": 0.9099999999999999,
+          "BLEU-2": 0.7180993431738165,
+          "BLEU-3": 0.1861057067975189,
+          "BLEU-4": 0.09795920637518724
+        },
+        {
+          "image": "000000001818.jpg",
+          "generated_caption": "a zebra standing next to a tree in a field",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.4191260749066642,
+          "BLEU-3": 0.2890662263134604,
+          "BLEU-4": 0.13629298543574664
+        },
+        {
+          "image": "000000003553.jpg",
+          "generated_caption": "a man sitting on a bench reading a book",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.3856812155135378,
+          "BLEU-3": 0.12856407953291177,
+          "BLEU-4": 0.07714395865600263
+        },
+        {
+          "image": "000000004134.jpg",
+          "generated_caption": "a man and a woman are standing in a kitchen",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000005477.jpg",
+          "generated_caption": "a large jetliner sitting on top of a runway",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.7574628703771558,
+          "BLEU-3": 0.6333767503102883,
+          "BLEU-4": 0.5460892145804251
+        },
+        {
+          "image": "000000006213.jpg",
+          "generated_caption": "a white sink sitting under a white sink",
+          "num_references": 5,
+          "BLEU-1": 0.3017853034401694,
+          "BLEU-2": 0.05794463251842172,
+          "BLEU-3": 0.03519118179958165,
+          "BLEU-4": 0.02870380576452593
+        },
+        {
+          "image": "000000006894.jpg",
+          "generated_caption": "a man standing next to a man holding a surfboard",
+          "num_references": 5,
+          "BLEU-1": 0.37098334139474337,
+          "BLEU-2": 0.2025524814401799,
+          "BLEU-3": 0.07741977419221134,
+          "BLEU-4": 0.049488814809539254
+        },
+        {
+          "image": "000000006954.jpg",
+          "generated_caption": "a group of people playing frisbee in a field",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.37744473715006555,
+          "BLEU-3": 0.27159106850852677,
+          "BLEU-4": 0.13147254337977238
+        },
+        {
+          "image": "000000007108.jpg",
+          "generated_caption": "a elephant that is standing in the dirt",
+          "num_references": 5,
+          "BLEU-1": 0.4964854992080206,
+          "BLEU-2": 0.07432201131051323,
+          "BLEU-3": 0.04154352517001728,
+          "BLEU-4": 0.032508101203376834
+        },
+        {
+          "image": "000000007574.jpg",
+          "generated_caption": "a kitchen with a stove and a sink",
+          "num_references": 5,
+          "BLEU-1": 0.7832160010438284,
+          "BLEU-2": 0.7760921097168095,
+          "BLEU-3": 0.7134947427538076,
+          "BLEU-4": 0.6057364432260509
+        },
+        {
+          "image": "000000007816.jpg",
+          "generated_caption": "a man riding a motorcycle down a road",
+          "num_references": 5,
+          "BLEU-1": 0.5938355970919462,
+          "BLEU-2": 0.4525620473475334,
+          "BLEU-3": 0.13852998802408964,
+          "BLEU-4": 0.08021802057277592
+        },
+        {
+          "image": "000000007977.jpg",
+          "generated_caption": "a man on a skateboard is performing a trick",
+          "num_references": 5,
+          "BLEU-1": 1.011111111111111,
+          "BLEU-2": 0.625943731940464,
+          "BLEU-3": 0.39487085335075134,
+          "BLEU-4": 0.17897958474157666
+        },
+        {
+          "image": "000000008844.jpg",
+          "generated_caption": "a bunch of different fruits in a produce",
+          "num_references": 5,
+          "BLEU-1": 0.3017853034401694,
+          "BLEU-2": 0.05794463251842172,
+          "BLEU-3": 0.03519118179958165,
+          "BLEU-4": 0.02870380576452593
+        },
+        {
+          "image": "000000010363.jpg",
+          "generated_caption": "a cat sitting on top of a wooden floor",
+          "num_references": 5,
+          "BLEU-1": 0.7059287943757805,
+          "BLEU-2": 0.694021462607675,
+          "BLEU-3": 0.6320123414031551,
+          "BLEU-4": 0.5302704725618331
+        },
+        {
+          "image": "000000010583.jpg",
+          "generated_caption": "a plate with a sandwich and salad",
+          "num_references": 5,
+          "BLEU-1": 0.4746198847726262,
+          "BLEU-2": 0.3996824540197529,
+          "BLEU-3": 0.3522500662381584,
+          "BLEU-4": 0.1633397035807055
+        },
+        {
+          "image": "000000010707.jpg",
+          "generated_caption": "a group of people sitting on a bed with a dog",
+          "num_references": 5,
+          "BLEU-1": 0.5063558517565273,
+          "BLEU-2": 0.225519240870011,
+          "BLEU-3": 0.08020740372302039,
+          "BLEU-4": 0.04926267811375202
+        },
+        {
+          "image": "000000010764.jpg",
+          "generated_caption": "a baseball player is preparing to hit the ball",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.2791355704074038,
+          "BLEU-3": 0.10363603164281672,
+          "BLEU-4": 0.06562892167896849
+        },
+        {
+          "image": "000000011122.jpg",
+          "generated_caption": "a green and white train is coming down the tracks",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000012062.jpg",
+          "generated_caption": "a sheep standing on a dirt ground",
+          "num_references": 5,
+          "BLEU-1": 0.38155716226818964,
+          "BLEU-2": 0.29495157799844834,
+          "BLEU-3": 0.10426416728390221,
+          "BLEU-4": 0.06554729286414282
+        },
+        {
+          "image": "000000012120.jpg",
+          "generated_caption": "a man standing on a tennis court holding a racquet",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.458378785625067,
+          "BLEU-3": 0.3806502409615994,
+          "BLEU-4": 0.3051182909253573
+        },
+        {
+          "image": "000000012748.jpg",
+          "generated_caption": "a man is standing in a field of grass",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000013291.jpg",
+          "generated_caption": "a group of people playing frisbee in a field",
+          "num_references": 5,
+          "BLEU-1": 0.9047819758900849,
+          "BLEU-2": 0.7857138760027229,
+          "BLEU-3": 0.6865200731713027,
+          "BLEU-4": 0.5642131520861723
+        },
+        {
+          "image": "000000013348.jpg",
+          "generated_caption": "a plane is parked on the runway",
+          "num_references": 5,
+          "BLEU-1": 0.8714285714285713,
+          "BLEU-2": 0.6709978354943443,
+          "BLEU-3": 0.4626880749811392,
+          "BLEU-4": 0.22307516967241384
+        },
+        {
+          "image": "000000015272.jpg",
+          "generated_caption": "a green and yellow fire hydrant in front of a tree",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.3412543706013821,
+          "BLEU-3": 0.24234582375225835,
+          "BLEU-4": 0.11549259997857537
+        },
+        {
+          "image": "000000015338.jpg",
+          "generated_caption": "a street with a clock on the side of a building",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.2664582518894846,
+          "BLEU-3": 0.09239999472495838,
+          "BLEU-4": 0.05603784982999849
+        },
+        {
+          "image": "000000015517.jpg",
+          "generated_caption": "a large white building with a lot of cars",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.2791355704074038,
+          "BLEU-3": 0.10363603164281672,
+          "BLEU-4": 0.06562892167896849
+        },
+        {
+          "image": "000000015597.jpg",
+          "generated_caption": "a man sitting on a bench reading a book",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.3856812155135378,
+          "BLEU-3": 0.12856407953291177,
+          "BLEU-4": 0.07714395865600263
+        },
+        {
+          "image": "000000017029.jpg",
+          "generated_caption": "a black and white cat is standing in the grass",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.3449637662132068,
+          "BLEU-3": 0.25387302227902636,
+          "BLEU-4": 0.12364823028018096
+        },
+        {
+          "image": "000000017178.jpg",
+          "generated_caption": "a large truck parked on a road near a road",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000017714.jpg",
+          "generated_caption": "a close up of a piece of on a plate",
+          "num_references": 5,
+          "BLEU-1": 0.71,
+          "BLEU-2": 0.4070217029430577,
+          "BLEU-3": 0.12746228967208784,
+          "BLEU-4": 0.07374995790299528
+        },
+        {
+          "image": "000000018193.jpg",
+          "generated_caption": "a man holding a hot dog in his hand",
+          "num_references": 5,
+          "BLEU-1": 0.34444444444444444,
+          "BLEU-2": 0.06561673228343178,
+          "BLEU-3": 0.03947393174138539,
+          "BLEU-4": 0.03181961911289835
+        },
+        {
+          "image": "000000019109.jpg",
+          "generated_caption": "a row of motorcycles parked on the side of the road",
+          "num_references": 5,
+          "BLEU-1": 0.7363636363636363,
+          "BLEU-2": 0.6128176356351492,
+          "BLEU-3": 0.4441671460471485,
+          "BLEU-4": 0.18192288182915103
+        },
+        {
+          "image": "000000020571.jpg",
+          "generated_caption": "a group of boats are parked in a harbor",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.5905505905508858,
+          "BLEU-3": 0.47120709785870896,
+          "BLEU-4": 0.3721510309600733
+        },
+        {
+          "image": "000000021465.jpg",
+          "generated_caption": "a table with a bunch of different colored flowers in it",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.08034018580103892,
+          "BLEU-3": 0.04154713215139663,
+          "BLEU-4": 0.030770410619538873
+        },
+        {
+          "image": "000000021604.jpg",
+          "generated_caption": "a man wearing a suit and tie standing in a room",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.5823931817782709,
+          "BLEU-3": 0.15561926202527743,
+          "BLEU-4": 0.08284666239024814
+        },
+        {
+          "image": "000000021879.jpg",
+          "generated_caption": "a woman in a wetsuit is standing on a beach",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.06749485577105528,
+          "BLEU-3": 0.038472503995893505,
+          "BLEU-4": 0.030032281778173464
+        },
+        {
+          "image": "000000022479.jpg",
+          "generated_caption": "a man riding a skateboard down a street",
+          "num_references": 5,
+          "BLEU-1": 0.6375,
+          "BLEU-2": 0.4373213921133975,
+          "BLEU-3": 0.1471691329220834,
+          "BLEU-4": 0.08935524445344915
+        },
+        {
+          "image": "000000023230.jpg",
+          "generated_caption": "a group of people standing in a river",
+          "num_references": 5,
+          "BLEU-1": 0.5938355970919462,
+          "BLEU-2": 0.5204622224422414,
+          "BLEU-3": 0.3381806433707258,
+          "BLEU-4": 0.15666632400128508
+        },
+        {
+          "image": "000000023359.jpg",
+          "generated_caption": "a person on a snowboard on a snowy surface",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.2791355704074038,
+          "BLEU-3": 0.10363603164281672,
+          "BLEU-4": 0.06562892167896849
+        },
+        {
+          "image": "000000023666.jpg",
+          "generated_caption": "a white toilet sitting next to a white sink",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.07546154281781182,
+          "BLEU-3": 0.04332957608073321,
+          "BLEU-4": 0.03412326017556969
+        },
+        {
+          "image": "000000023781.jpg",
+          "generated_caption": "a pile of carrots and carrots on a table",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.08416254115301736,
+          "BLEU-3": 0.04659935225242372,
+          "BLEU-4": 0.03603687284051295
+        },
+        {
+          "image": "000000024610.jpg",
+          "generated_caption": "a living room with a couch and a television",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.7574628703771558,
+          "BLEU-3": 0.6952422745759659,
+          "BLEU-4": 0.6455126235363391
+        },
+        {
+          "image": "000000026941.jpg",
+          "generated_caption": "a bench sitting in front of a brick wall",
+          "num_references": 5,
+          "BLEU-1": 0.34444444444444444,
+          "BLEU-2": 0.21762608095334326,
+          "BLEU-3": 0.08778923828933329,
+          "BLEU-4": 0.057948626670717825
+        },
+        {
+          "image": "000000027696.jpg",
+          "generated_caption": "a pizza with cheese and olives on it",
+          "num_references": 5,
+          "BLEU-1": 0.6375,
+          "BLEU-2": 0.4373213921133975,
+          "BLEU-3": 0.1471691329220834,
+          "BLEU-4": 0.08935524445344915
+        },
+        {
+          "image": "000000027982.jpg",
+          "generated_caption": "a toilet in a bathroom with a toilet seat",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.6791538853603062,
+          "BLEU-3": 0.18747618745211886,
+          "BLEU-4": 0.10236978052670907
+        },
+        {
+          "image": "000000028285.jpg",
+          "generated_caption": "a stone building with a clock on the top",
+          "num_references": 5,
+          "BLEU-1": 0.7059287943757805,
+          "BLEU-2": 0.4072092466050949,
+          "BLEU-3": 0.12845788281831771,
+          "BLEU-4": 0.07498407211958022
+        },
+        {
+          "image": "000000028449.jpg",
+          "generated_caption": "a large elephant standing next to a fence",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.07551115351145107,
+          "BLEU-3": 0.04377183124521141,
+          "BLEU-4": 0.03488043026573311
+        },
+        {
+          "image": "000000028809.jpg",
+          "generated_caption": "a close up of a hot dog with mustard",
+          "num_references": 5,
+          "BLEU-1": 0.34444444444444444,
+          "BLEU-2": 0.21762608095334326,
+          "BLEU-3": 0.08778923828933329,
+          "BLEU-4": 0.057948626670717825
+        },
+        {
+          "image": "000000030828.jpg",
+          "generated_caption": "a man flying a kite in a field",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.25044216368441086,
+          "BLEU-3": 0.09734768121711006,
+          "BLEU-4": 0.06352285438777089
+        },
+        {
+          "image": "000000032038.jpg",
+          "generated_caption": "a pizza with a knife and fork on it",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000032811.jpg",
+          "generated_caption": "a white and black cat sitting on top of a window",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.41461921193920925,
+          "BLEU-3": 0.27594106733364315,
+          "BLEU-4": 0.12730332824940982
+        },
+        {
+          "image": "000000032901.jpg",
+          "generated_caption": "a man in a suit and tie standing in a kitchen",
+          "num_references": 5,
+          "BLEU-1": 0.3727272727272727,
+          "BLEU-2": 0.061051394146839334,
+          "BLEU-3": 0.03459788525898623,
+          "BLEU-4": 0.02682345205292152
+        },
+        {
+          "image": "000000034257.jpg",
+          "generated_caption": "a wooden table topped with many different types of vegetables",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.0752772652709081,
+          "BLEU-3": 0.0413757513435401,
+          "BLEU-4": 0.03171647474426652
+        },
+        {
+          "image": "000000035062.jpg",
+          "generated_caption": "a cat laying on a bed with a blanket",
+          "num_references": 5,
+          "BLEU-1": 0.6777777777777777,
+          "BLEU-2": 0.5893734903362308,
+          "BLEU-3": 0.47058074181286663,
+          "BLEU-4": 0.3717799555849669
+        },
+        {
+          "image": "000000035279.jpg",
+          "generated_caption": "a computer desk with a keyboard and mouse",
+          "num_references": 5,
+          "BLEU-1": 0.34196754975153076,
+          "BLEU-2": 0.06565987070177529,
+          "BLEU-3": 0.039876833217789405,
+          "BLEU-4": 0.03252567309920321
+        },
+        {
+          "image": "000000037689.jpg",
+          "generated_caption": "a person on skis is standing in the snow",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.37744473715006555,
+          "BLEU-3": 0.27159106850852677,
+          "BLEU-4": 0.13147254337977238
+        },
+        {
+          "image": "000000037988.jpg",
+          "generated_caption": "a man holding a tennis racquet on a tennis court",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.2730486322169653,
+          "BLEU-3": 0.09767798108982693,
+          "BLEU-4": 0.06040501491962195
+        },
+        {
+          "image": "000000038210.jpg",
+          "generated_caption": "a person skiing down a hill on a snowy slope",
+          "num_references": 5,
+          "BLEU-1": 0.71,
+          "BLEU-2": 0.4070217029430577,
+          "BLEU-3": 0.12746228967208784,
+          "BLEU-4": 0.07374995790299528
+        },
+        {
+          "image": "000000038678.jpg",
+          "generated_caption": "a woman holding a glass of wine with a glass of wine",
+          "num_references": 5,
+          "BLEU-1": 0.5916666666666667,
+          "BLEU-2": 0.4083410636250342,
+          "BLEU-3": 0.11858107153611985,
+          "BLEU-4": 0.06560710894486058
+        },
+        {
+          "image": "000000039670.jpg",
+          "generated_caption": "a train is coming down the tracks",
+          "num_references": 5,
+          "BLEU-1": 0.4746198847726262,
+          "BLEU-2": 0.3289605989288417,
+          "BLEU-3": 0.11213224540935723,
+          "BLEU-4": 0.0692231470800706
+        },
+        {
+          "image": "000000040757.jpg",
+          "generated_caption": "a dog laying on a bed with a blanket on top of it",
+          "num_references": 5,
+          "BLEU-1": 0.5461538461538461,
+          "BLEU-2": 0.4817835453970845,
+          "BLEU-3": 0.44228108467293764,
+          "BLEU-4": 0.4046822891309715
+        },
+        {
+          "image": "000000042178.jpg",
+          "generated_caption": "a group of people standing next to a train",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.07546154281781182,
+          "BLEU-3": 0.04332957608073321,
+          "BLEU-4": 0.03412326017556969
+        },
+        {
+          "image": "000000042628.jpg",
+          "generated_caption": "a group of people riding horses down a snow covered slope",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.4768266313490013,
+          "BLEU-3": 0.3757502376666381,
+          "BLEU-4": 0.2922470409205021
+        },
+        {
+          "image": "000000043435.jpg",
+          "generated_caption": "a person riding a surfboard on a wave",
+          "num_references": 5,
+          "BLEU-1": 0.2316554369284563,
+          "BLEU-2": 0.05404167777297232,
+          "BLEU-3": 0.03502191278803663,
+          "BLEU-4": 0.029508062388758503
+        },
+        {
+          "image": "000000044195.jpg",
+          "generated_caption": "a man standing on a snowy hill with a frisbee",
+          "num_references": 5,
+          "BLEU-1": 0.9099999999999999,
+          "BLEU-2": 0.9049861877399012,
+          "BLEU-3": 0.7487311880320398,
+          "BLEU-4": 0.5067784094864263
+        },
+        {
+          "image": "000000044652.jpg",
+          "generated_caption": "a person on a surfboard riding a wave",
+          "num_references": 5,
+          "BLEU-1": 0.1375,
+          "BLEU-2": 0.04432026302139594,
+          "BLEU-3": 0.03199026241414162,
+          "BLEU-4": 0.028445976757929897
+        },
+        {
+          "image": "000000045090.jpg",
+          "generated_caption": "a person riding a surfboard on a wave",
+          "num_references": 5,
+          "BLEU-1": 0.5625917753976796,
+          "BLEU-2": 0.3859347739740566,
+          "BLEU-3": 0.28884231424332224,
+          "BLEU-4": 0.1436089174184442
+        },
+        {
+          "image": "000000045596.jpg",
+          "generated_caption": "a train is coming down the tracks in a wooded area",
+          "num_references": 5,
+          "BLEU-1": 0.3727272727272727,
+          "BLEU-2": 0.061051394146839334,
+          "BLEU-3": 0.03459788525898623,
+          "BLEU-4": 0.02682345205292152
+        },
+        {
+          "image": "000000046031.jpg",
+          "generated_caption": "a desk with a computer keyboard and mouse",
+          "num_references": 5,
+          "BLEU-1": 0.7832160010438284,
+          "BLEU-2": 0.09936841226867907,
+          "BLEU-3": 0.0525637345647038,
+          "BLEU-4": 0.04001293941381044
+        },
+        {
+          "image": "000000046804.jpg",
+          "generated_caption": "a sheep standing on a lush green field",
+          "num_references": 5,
+          "BLEU-1": 0.5625917753976796,
+          "BLEU-2": 0.3859347739740566,
+          "BLEU-3": 0.28884231424332224,
+          "BLEU-4": 0.1436089174184442
+        },
+        {
+          "image": "000000046872.jpg",
+          "generated_caption": "a man standing next to a white fence",
+          "num_references": 5,
+          "BLEU-1": 0.7625,
+          "BLEU-2": 0.7453426824526516,
+          "BLEU-3": 0.724071627522533,
+          "BLEU-4": 0.6965207676346664
+        },
+        {
+          "image": "000000047769.jpg",
+          "generated_caption": "a living room with a couch and a table",
+          "num_references": 5,
+          "BLEU-1": 0.9047819758900849,
+          "BLEU-2": 0.7857138760027229,
+          "BLEU-3": 0.6254306863506323,
+          "BLEU-4": 0.24577224760403496
+        },
+        {
+          "image": "000000048555.jpg",
+          "generated_caption": "a group of people riding horses along a beach",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.6791538853603062,
+          "BLEU-3": 0.5172325860574095,
+          "BLEU-4": 0.39909360350920775
+        },
+        {
+          "image": "000000048924.jpg",
+          "generated_caption": "a man riding a motorcycle with a dog in the background",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.3681649827800772,
+          "BLEU-3": 0.11462538735178952,
+          "BLEU-4": 0.06587006855914923
+        },
+        {
+          "image": "000000049810.jpg",
+          "generated_caption": "a dog is looking at a dog in a cage",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.3449637662132068,
+          "BLEU-3": 0.11415256069762637,
+          "BLEU-4": 0.0678953034358522
+        },
+        {
+          "image": "000000050165.jpg",
+          "generated_caption": "a train on a track near a bridge",
+          "num_references": 5,
+          "BLEU-1": 0.672903888220754,
+          "BLEU-2": 0.3054783501333,
+          "BLEU-3": 0.1111324624228572,
+          "BLEU-4": 0.07015627138047528
+        },
+        {
+          "image": "000000050679.jpg",
+          "generated_caption": "a bird is standing on the sand near a tree",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.2730486322169653,
+          "BLEU-3": 0.09767798108982693,
+          "BLEU-4": 0.06040501491962195
+        },
+        {
+          "image": "000000050828.jpg",
+          "generated_caption": "a bedroom with a bed and a table in it",
+          "num_references": 5,
+          "BLEU-1": 0.9099999999999999,
+          "BLEU-2": 0.643859888139924,
+          "BLEU-3": 0.38485323891542705,
+          "BLEU-4": 0.16892613649547544
+        },
+        {
+          "image": "000000051326.jpg",
+          "generated_caption": "a red fire hydrant sitting in a green grass",
+          "num_references": 5,
+          "BLEU-1": 0.36478037243987915,
+          "BLEU-2": 0.06042487981603014,
+          "BLEU-3": 0.034695612220372554,
+          "BLEU-4": 0.027323770732040217
+        },
+        {
+          "image": "000000051712.jpg",
+          "generated_caption": "a person on skis is standing on a snowy slope",
+          "num_references": 5,
+          "BLEU-1": 0.8099999999999999,
+          "BLEU-2": 0.6074537019394975,
+          "BLEU-3": 0.45925288299204803,
+          "BLEU-4": 0.1928698792007496
+        },
+        {
+          "image": "000000051938.jpg",
+          "generated_caption": "a person skiing down a hill on a snowy hill",
+          "num_references": 5,
+          "BLEU-1": 0.8099999999999999,
+          "BLEU-2": 0.6074537019394975,
+          "BLEU-3": 0.45925288299204803,
+          "BLEU-4": 0.3512469645276228
+        },
+        {
+          "image": "000000051976.jpg",
+          "generated_caption": "a man riding a wave on top of a surfboard",
+          "num_references": 5,
+          "BLEU-1": 1.01,
+          "BLEU-2": 1.0105554028464854,
+          "BLEU-3": 1.0112031865682143,
+          "BLEU-4": 1.0119729391198107
+        },
+        {
+          "image": "000000052996.jpg",
+          "generated_caption": "a group of people standing around a kitchen counter",
+          "num_references": 5,
+          "BLEU-1": 0.7888888888888889,
+          "BLEU-2": 0.7091661770464428,
+          "BLEU-3": 0.6061590041353693,
+          "BLEU-4": 0.5283928492157396
+        },
+        {
+          "image": "000000053505.jpg",
+          "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.6495452955022389,
+          "BLEU-3": 0.46174112441333304,
+          "BLEU-4": 0.18729510208982866
+        },
+        {
+          "image": "000000054654.jpg",
+          "generated_caption": "a woman standing in a kitchen with a stove and a stove",
+          "num_references": 5,
+          "BLEU-1": 0.6749999999999999,
+          "BLEU-2": 0.3589758158478595,
+          "BLEU-3": 0.2420142969036816,
+          "BLEU-4": 0.11202633796572632
+        },
+        {
+          "image": "000000055150.jpg",
+          "generated_caption": "a man sitting on a motorcycle with a dog in the background",
+          "num_references": 5,
+          "BLEU-1": 0.5083333333333333,
+          "BLEU-2": 0.2254624876411447,
+          "BLEU-3": 0.0798085700754437,
+          "BLEU-4": 0.048750213260168804
+        },
+        {
+          "image": "000000055950.jpg",
+          "generated_caption": "a man holding a tennis racquet on a tennis court",
+          "num_references": 5,
+          "BLEU-1": 0.8099999999999999,
+          "BLEU-2": 0.6074537019394975,
+          "BLEU-3": 0.45925288299204803,
+          "BLEU-4": 0.3512469645276228
+        },
+        {
+          "image": "000000056545.jpg",
+          "generated_caption": "a bird that is standing in the grass",
+          "num_references": 5,
+          "BLEU-1": 0.5938355970919462,
+          "BLEU-2": 0.4525620473475334,
+          "BLEU-3": 0.13852998802408964,
+          "BLEU-4": 0.08021802057277592
+        },
+        {
+          "image": "000000057672.jpg",
+          "generated_caption": "a group of people riding on a boat in the water",
+          "num_references": 5,
+          "BLEU-1": 0.9181818181818181,
+          "BLEU-2": 0.6843045573958478,
+          "BLEU-3": 0.47807043126264126,
+          "BLEU-4": 0.35010199622239513
+        },
+        {
+          "image": "000000058393.jpg",
+          "generated_caption": "a bench sitting on a beach near a body of water",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.5144281909424906,
+          "BLEU-3": 0.31861525482187475,
+          "BLEU-4": 0.14180039063457348
+        },
+        {
+          "image": "000000058705.jpg",
+          "generated_caption": "a man wearing a suit and tie",
+          "num_references": 5,
+          "BLEU-1": 0.5475048849548512,
+          "BLEU-2": 0.4610596880309603,
+          "BLEU-3": 0.4063433458618225,
+          "BLEU-4": 0.3431484197610475
+        },
+        {
+          "image": "000000059920.jpg",
+          "generated_caption": "a white toilet sitting in a bathroom next to a wall",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.2664582518894846,
+          "BLEU-3": 0.09239999472495838,
+          "BLEU-4": 0.05603784982999849
+        },
+        {
+          "image": "000000060835.jpg",
+          "generated_caption": "a giraffe standing next to a tree in a field",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000060886.jpg",
+          "generated_caption": "a baseball player holding a bat on a field",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000061268.jpg",
+          "generated_caption": "a train is coming down the tracks",
+          "num_references": 5,
+          "BLEU-1": 0.6548587839656062,
+          "BLEU-2": 0.5798932625803207,
+          "BLEU-3": 0.17161187168833955,
+          "BLEU-4": 0.09871302566620867
+        },
+        {
+          "image": "000000061471.jpg",
+          "generated_caption": "a cat is sitting on a chair in a kitchen",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.2496664441476534,
+          "BLEU-3": 0.09201884722037974,
+          "BLEU-4": 0.05776078424275454
+        }
+      ]
+    },
+    "epoch8": {
+      "num_images": 100,
+      "metrics": {
+        "BLEU-1": {
+          "count": 100,
+          "mean": 0.6140234021256837,
+          "median": 0.5927511318793064,
+          "std_population": 0.1779635955452769,
+          "min": 0.2316554369284563,
+          "max": 1.0142857142857142
+        },
+        "BLEU-2": {
+          "count": 100,
+          "mean": 0.4055984465921401,
+          "median": 0.3823975073458321,
+          "std_population": 0.22951836118637114,
+          "min": 0.053086550256932485,
+          "max": 1.011805317242403
+        },
+        "BLEU-3": {
+          "count": 100,
+          "mean": 0.25179739045343974,
+          "median": 0.1330858635283071,
+          "std_population": 0.2284873368417289,
+          "min": 0.03151922277210509,
+          "max": 1.012631441554787
+        },
+        "BLEU-4": {
+          "count": 100,
+          "mean": 0.17461604909469883,
+          "median": 0.07832071452186232,
+          "std_population": 0.20516795611786623,
+          "min": 0.025012616708532463,
+          "max": 1.0119729391198107
+        }
+      },
+      "samples": [
+        {
+          "image": "000000000776.jpg",
+          "generated_caption": "a teddy bear is sitting on a couch",
+          "num_references": 5,
+          "BLEU-1": 0.5125,
+          "BLEU-2": 0.392109678533953,
+          "BLEU-3": 0.3043351998606951,
+          "BLEU-4": 0.1540890007144168
+        },
+        {
+          "image": "000000000802.jpg",
+          "generated_caption": "a white sink and a toilet in a bathroom",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.3856812155135378,
+          "BLEU-3": 0.12856407953291177,
+          "BLEU-4": 0.07714395865600263
+        },
+        {
+          "image": "000000000872.jpg",
+          "generated_caption": "a baseball player swinging a bat at a ball",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000001425.jpg",
+          "generated_caption": "a close up of a plate of food with a fork",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.41461921193920925,
+          "BLEU-3": 0.12407533165596156,
+          "BLEU-4": 0.06990231950997017
+        },
+        {
+          "image": "000000001503.jpg",
+          "generated_caption": "a computer and a laptop sitting on a desk",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.6791538853603062,
+          "BLEU-3": 0.4169433083493532,
+          "BLEU-4": 0.18643177886755144
+        },
+        {
+          "image": "000000001818.jpg",
+          "generated_caption": "a zebra is standing in a dirt area",
+          "num_references": 5,
+          "BLEU-1": 0.6375,
+          "BLEU-2": 0.5313392782125452,
+          "BLEU-3": 0.16757048662245858,
+          "BLEU-4": 0.09849306377702005
+        },
+        {
+          "image": "000000003553.jpg",
+          "generated_caption": "a man sitting on a bench with a skateboard",
+          "num_references": 5,
+          "BLEU-1": 0.6777777777777777,
+          "BLEU-2": 0.5124830620507266,
+          "BLEU-3": 0.15538902110593106,
+          "BLEU-4": 0.08892572927632236
+        },
+        {
+          "image": "000000004134.jpg",
+          "generated_caption": "a man and a woman are standing in a room",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000005477.jpg",
+          "generated_caption": "a plane is flying in the air",
+          "num_references": 5,
+          "BLEU-1": 0.5077427698536778,
+          "BLEU-2": 0.28406750504604417,
+          "BLEU-3": 0.11184339636102894,
+          "BLEU-4": 0.07420484206962924
+        },
+        {
+          "image": "000000006213.jpg",
+          "generated_caption": "a bathroom with a sink and a mirror",
+          "num_references": 5,
+          "BLEU-1": 0.6911856949758718,
+          "BLEU-2": 0.48825015215188655,
+          "BLEU-3": 0.14572027021887415,
+          "BLEU-4": 0.08332092251394939
+        },
+        {
+          "image": "000000006894.jpg",
+          "generated_caption": "a man with a beard is holding a large elephant",
+          "num_references": 5,
+          "BLEU-1": 0.5519508250019353,
+          "BLEU-2": 0.34136882867083723,
+          "BLEU-3": 0.10964178471789561,
+          "BLEU-4": 0.0642466075238396
+        },
+        {
+          "image": "000000006954.jpg",
+          "generated_caption": "a group of people are sitting in a field",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.4585899931244084,
+          "BLEU-3": 0.3092404406322233,
+          "BLEU-4": 0.14491744361772732
+        },
+        {
+          "image": "000000007108.jpg",
+          "generated_caption": "a baby elephant walking in a grassy area",
+          "num_references": 5,
+          "BLEU-1": 0.4964854992080206,
+          "BLEU-2": 0.24649822518152256,
+          "BLEU-3": 0.09239197287018365,
+          "BLEU-4": 0.059202462912096326
+        },
+        {
+          "image": "000000007574.jpg",
+          "generated_caption": "a kitchen with a stove and a sink",
+          "num_references": 5,
+          "BLEU-1": 0.7832160010438284,
+          "BLEU-2": 0.7760921097168095,
+          "BLEU-3": 0.7134947427538076,
+          "BLEU-4": 0.6057364432260509
+        },
+        {
+          "image": "000000007816.jpg",
+          "generated_caption": "a man riding a motorcycle on a street",
+          "num_references": 5,
+          "BLEU-1": 0.5938355970919462,
+          "BLEU-2": 0.4525620473475334,
+          "BLEU-3": 0.13852998802408964,
+          "BLEU-4": 0.08021802057277592
+        },
+        {
+          "image": "000000007977.jpg",
+          "generated_caption": "a man on a skateboard doing a trick on a ramp",
+          "num_references": 5,
+          "BLEU-1": 0.7363636363636363,
+          "BLEU-2": 0.6128176356351492,
+          "BLEU-3": 0.5057399152051458,
+          "BLEU-4": 0.36519186790284824
+        },
+        {
+          "image": "000000008844.jpg",
+          "generated_caption": "a bunch of bananas are hanging on a display",
+          "num_references": 5,
+          "BLEU-1": 0.5070756128614762,
+          "BLEU-2": 0.34512271539826983,
+          "BLEU-3": 0.11504419309609905,
+          "BLEU-4": 0.06903144726009337
+        },
+        {
+          "image": "000000010363.jpg",
+          "generated_caption": "a cat sitting on a desk near a window",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.4585899931244084,
+          "BLEU-3": 0.38362345580017687,
+          "BLEU-4": 0.3102240676780216
+        },
+        {
+          "image": "000000010583.jpg",
+          "generated_caption": "a plate with a sandwich and a salad",
+          "num_references": 5,
+          "BLEU-1": 0.4964854992080206,
+          "BLEU-2": 0.41380744594852525,
+          "BLEU-3": 0.3600507130016406,
+          "BLEU-4": 0.16420517888459074
+        },
+        {
+          "image": "000000010707.jpg",
+          "generated_caption": "a group of people sitting around a table with a cake",
+          "num_references": 5,
+          "BLEU-1": 0.4233466957308671,
+          "BLEU-2": 0.06217380244987305,
+          "BLEU-3": 0.03397532949931391,
+          "BLEU-4": 0.025866039240430773
+        },
+        {
+          "image": "000000010764.jpg",
+          "generated_caption": "a baseball player is swinging a bat at a ball",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.4191260749066642,
+          "BLEU-3": 0.129976984748754,
+          "BLEU-4": 0.07483854464693811
+        },
+        {
+          "image": "000000011122.jpg",
+          "generated_caption": "a green and yellow train is coming down the tracks",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000012062.jpg",
+          "generated_caption": "a sheep standing in a field of grass next to a fence",
+          "num_references": 5,
+          "BLEU-1": 0.6749999999999999,
+          "BLEU-2": 0.5015883861204414,
+          "BLEU-3": 0.13600816507547248,
+          "BLEU-4": 0.07271317505625748
+        },
+        {
+          "image": "000000012120.jpg",
+          "generated_caption": "a man is playing tennis on a court",
+          "num_references": 5,
+          "BLEU-1": 0.672903888220754,
+          "BLEU-2": 0.5128199838686133,
+          "BLEU-3": 0.3491093673077771,
+          "BLEU-4": 0.1655415140019473
+        },
+        {
+          "image": "000000012748.jpg",
+          "generated_caption": "a man is sitting on a bench in the woods",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.2238551118717442,
+          "BLEU-3": 0.08556208292121555,
+          "BLEU-4": 0.05469359889753421
+        },
+        {
+          "image": "000000013291.jpg",
+          "generated_caption": "a group of people playing soccer on a field",
+          "num_references": 5,
+          "BLEU-1": 0.8053553851329326,
+          "BLEU-2": 0.7412867479940939,
+          "BLEU-3": 0.6603909538965295,
+          "BLEU-4": 0.548029721269469
+        },
+        {
+          "image": "000000013348.jpg",
+          "generated_caption": "a plane is parked at the airport",
+          "num_references": 5,
+          "BLEU-1": 1.0142857142857142,
+          "BLEU-2": 0.9285164818907939,
+          "BLEU-3": 0.8908358695464167,
+          "BLEU-4": 0.8603470963824621
+        },
+        {
+          "image": "000000015272.jpg",
+          "generated_caption": "a green and yellow fire hydrant in front of a tree",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.3412543706013821,
+          "BLEU-3": 0.24234582375225835,
+          "BLEU-4": 0.11549259997857537
+        },
+        {
+          "image": "000000015338.jpg",
+          "generated_caption": "a city street with a clock on the side of a building",
+          "num_references": 5,
+          "BLEU-1": 0.6749999999999999,
+          "BLEU-2": 0.3589758158478595,
+          "BLEU-3": 0.2420142969036816,
+          "BLEU-4": 0.11202633796572632
+        },
+        {
+          "image": "000000015517.jpg",
+          "generated_caption": "a large white city bus with a on it",
+          "num_references": 5,
+          "BLEU-1": 0.7888888888888889,
+          "BLEU-2": 0.32935121408949175,
+          "BLEU-3": 0.11571957567130635,
+          "BLEU-4": 0.07128814463014922
+        },
+        {
+          "image": "000000015597.jpg",
+          "generated_caption": "a man sitting on a bench next to a beach",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.3772709017845577,
+          "BLEU-3": 0.1211729118761292,
+          "BLEU-4": 0.07100348222036762
+        },
+        {
+          "image": "000000017029.jpg",
+          "generated_caption": "a black and white cat is walking in a grassy field",
+          "num_references": 5,
+          "BLEU-1": 0.3727272727272727,
+          "BLEU-2": 0.20248456731316586,
+          "BLEU-3": 0.07694500799178698,
+          "BLEU-4": 0.04884980563468046
+        },
+        {
+          "image": "000000017178.jpg",
+          "generated_caption": "a truck with a bunch of on it",
+          "num_references": 5,
+          "BLEU-1": 0.4964854992080206,
+          "BLEU-2": 0.07432201131051323,
+          "BLEU-3": 0.04154352517001728,
+          "BLEU-4": 0.032508101203376834
+        },
+        {
+          "image": "000000017714.jpg",
+          "generated_caption": "a close up of a person holding a piece of food",
+          "num_references": 5,
+          "BLEU-1": 0.5545454545454546,
+          "BLEU-2": 0.24698178070456941,
+          "BLEU-3": 0.0878406974091413,
+          "BLEU-4": 0.05395097959656368
+        },
+        {
+          "image": "000000018193.jpg",
+          "generated_caption": "a man holding a hot dog in his mouth",
+          "num_references": 5,
+          "BLEU-1": 0.34444444444444444,
+          "BLEU-2": 0.06561673228343178,
+          "BLEU-3": 0.03947393174138539,
+          "BLEU-4": 0.03181961911289835
+        },
+        {
+          "image": "000000019109.jpg",
+          "generated_caption": "a group of motorcycles parked on the side of a road",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.7103776204501122,
+          "BLEU-3": 0.558083576591642,
+          "BLEU-4": 0.39318786544795536
+        },
+        {
+          "image": "000000020571.jpg",
+          "generated_caption": "a train on a bridge over a river",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.07551115351145107,
+          "BLEU-3": 0.04377183124521141,
+          "BLEU-4": 0.03488043026573311
+        },
+        {
+          "image": "000000021465.jpg",
+          "generated_caption": "a table with a bunch of different foods and a cup of coffee",
+          "num_references": 5,
+          "BLEU-1": 0.5461538461538461,
+          "BLEU-2": 0.06746319034319422,
+          "BLEU-3": 0.03458706327352611,
+          "BLEU-4": 0.025362103253356222
+        },
+        {
+          "image": "000000021604.jpg",
+          "generated_caption": "a man wearing a suit and tie standing in a room",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.5823931817782709,
+          "BLEU-3": 0.15561926202527743,
+          "BLEU-4": 0.08284666239024814
+        },
+        {
+          "image": "000000021879.jpg",
+          "generated_caption": "a man is surfing on a wave in the ocean",
+          "num_references": 5,
+          "BLEU-1": 0.8099999999999999,
+          "BLEU-2": 0.5282045058497703,
+          "BLEU-3": 0.15164848364446995,
+          "BLEU-4": 0.08401446072467171
+        },
+        {
+          "image": "000000022479.jpg",
+          "generated_caption": "a man riding a skateboard down a street",
+          "num_references": 5,
+          "BLEU-1": 0.6375,
+          "BLEU-2": 0.4373213921133975,
+          "BLEU-3": 0.1471691329220834,
+          "BLEU-4": 0.08935524445344915
+        },
+        {
+          "image": "000000023230.jpg",
+          "generated_caption": "a group of people in a body of water",
+          "num_references": 5,
+          "BLEU-1": 0.8053553851329326,
+          "BLEU-2": 0.7412867479940939,
+          "BLEU-3": 0.6603909538965295,
+          "BLEU-4": 0.548029721269469
+        },
+        {
+          "image": "000000023359.jpg",
+          "generated_caption": "a man riding a snowboard on top of a snow covered slope",
+          "num_references": 5,
+          "BLEU-1": 0.8416666666666667,
+          "BLEU-2": 0.6246817371488242,
+          "BLEU-3": 0.43435581273574375,
+          "BLEU-4": 0.17370951230418843
+        },
+        {
+          "image": "000000023666.jpg",
+          "generated_caption": "a white toilet sitting next to a sink",
+          "num_references": 5,
+          "BLEU-1": 0.5125,
+          "BLEU-2": 0.08556534679079243,
+          "BLEU-3": 0.04959998286341348,
+          "BLEU-4": 0.03952470559792078
+        },
+        {
+          "image": "000000023781.jpg",
+          "generated_caption": "a pile of oranges sitting on top of a table",
+          "num_references": 5,
+          "BLEU-1": 0.31,
+          "BLEU-2": 0.05868938953886338,
+          "BLEU-3": 0.035049061957690364,
+          "BLEU-4": 0.02800482024155724
+        },
+        {
+          "image": "000000024610.jpg",
+          "generated_caption": "a living room with a couch and a coffee table",
+          "num_references": 5,
+          "BLEU-1": 0.8099999999999999,
+          "BLEU-2": 0.6774953874381728,
+          "BLEU-3": 0.6173083977766282,
+          "BLEU-4": 0.5681232362226273
+        },
+        {
+          "image": "000000026941.jpg",
+          "generated_caption": "a red fire hydrant sitting in front of a brick wall",
+          "num_references": 5,
+          "BLEU-1": 0.2818181818181818,
+          "BLEU-2": 0.1760681686165901,
+          "BLEU-3": 0.0700981239153807,
+          "BLEU-4": 0.04555198421947671
+        },
+        {
+          "image": "000000027696.jpg",
+          "generated_caption": "a pizza with a pepperoni and half pepperoni and cheese",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.4191260749066642,
+          "BLEU-3": 0.2890662263134604,
+          "BLEU-4": 0.13629298543574664
+        },
+        {
+          "image": "000000027982.jpg",
+          "generated_caption": "a toilet with a and a toilet in it",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.5905505905508858,
+          "BLEU-3": 0.3798419736012167,
+          "BLEU-4": 0.17384588001215345
+        },
+        {
+          "image": "000000028285.jpg",
+          "generated_caption": "a large clock tower with a clock on it",
+          "num_references": 5,
+          "BLEU-1": 0.7059287943757805,
+          "BLEU-2": 0.5689838139529039,
+          "BLEU-3": 0.3570643643054861,
+          "BLEU-4": 0.16142036816584782
+        },
+        {
+          "image": "000000028449.jpg",
+          "generated_caption": "a large elephant standing next to a baby elephant",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.07546154281781182,
+          "BLEU-3": 0.04332957608073321,
+          "BLEU-4": 0.03412326017556969
+        },
+        {
+          "image": "000000028809.jpg",
+          "generated_caption": "a close up of a person holding a banana",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000030828.jpg",
+          "generated_caption": "a red and white fire hydrant in front of a field",
+          "num_references": 5,
+          "BLEU-1": 0.2818181818181818,
+          "BLEU-2": 0.053086550256932485,
+          "BLEU-3": 0.03151922277210509,
+          "BLEU-4": 0.025012616708532463
+        },
+        {
+          "image": "000000032038.jpg",
+          "generated_caption": "a pizza with a knife and a fork on it",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.2496664441476534,
+          "BLEU-3": 0.09201884722037974,
+          "BLEU-4": 0.05776078424275454
+        },
+        {
+          "image": "000000032811.jpg",
+          "generated_caption": "a small white and black cat is sitting on a window sill",
+          "num_references": 5,
+          "BLEU-1": 0.5916666666666667,
+          "BLEU-2": 0.4696065406596282,
+          "BLEU-3": 0.13016356198114168,
+          "BLEU-4": 0.07035685876531858
+        },
+        {
+          "image": "000000032901.jpg",
+          "generated_caption": "a man in a suit and tie standing in a kitchen",
+          "num_references": 5,
+          "BLEU-1": 0.3727272727272727,
+          "BLEU-2": 0.061051394146839334,
+          "BLEU-3": 0.03459788525898623,
+          "BLEU-4": 0.02682345205292152
+        },
+        {
+          "image": "000000034257.jpg",
+          "generated_caption": "a bunch of bananas are hanging on a wall",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.2791355704074038,
+          "BLEU-3": 0.10363603164281672,
+          "BLEU-4": 0.06562892167896849
+        },
+        {
+          "image": "000000035062.jpg",
+          "generated_caption": "a cat laying on a bed with a blanket",
+          "num_references": 5,
+          "BLEU-1": 0.6777777777777777,
+          "BLEU-2": 0.5893734903362308,
+          "BLEU-3": 0.47058074181286663,
+          "BLEU-4": 0.3717799555849669
+        },
+        {
+          "image": "000000035279.jpg",
+          "generated_caption": "a laptop computer sitting on top of a desk",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000037689.jpg",
+          "generated_caption": "a person on skis in the snow with a snowboard in the background",
+          "num_references": 5,
+          "BLEU-1": 0.46923076923076923,
+          "BLEU-2": 0.2865578207192828,
+          "BLEU-3": 0.20174750713599857,
+          "BLEU-4": 0.095193245285951
+        },
+        {
+          "image": "000000037988.jpg",
+          "generated_caption": "a man is playing tennis on a tennis court",
+          "num_references": 5,
+          "BLEU-1": 0.7888888888888889,
+          "BLEU-2": 0.32935121408949175,
+          "BLEU-3": 0.11571957567130635,
+          "BLEU-4": 0.07128814463014922
+        },
+        {
+          "image": "000000038210.jpg",
+          "generated_caption": "a man on skis is standing in the snow",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.7574628703771558,
+          "BLEU-3": 0.6333767503102883,
+          "BLEU-4": 0.4645761886973045
+        },
+        {
+          "image": "000000038678.jpg",
+          "generated_caption": "a man is holding a piece of pizza",
+          "num_references": 5,
+          "BLEU-1": 0.5625917753976796,
+          "BLEU-2": 0.2793190825481605,
+          "BLEU-3": 0.1046938211336408,
+          "BLEU-4": 0.06708517926658812
+        },
+        {
+          "image": "000000039670.jpg",
+          "generated_caption": "a train is coming down the tracks in a rural area",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.41680603729705346,
+          "BLEU-3": 0.12451122257728524,
+          "BLEU-4": 0.0700864199176321
+        },
+        {
+          "image": "000000040757.jpg",
+          "generated_caption": "a baby sleeping on a bed with a blanket",
+          "num_references": 5,
+          "BLEU-1": 0.6777777777777777,
+          "BLEU-2": 0.5893734903362308,
+          "BLEU-3": 0.5358151015436673,
+          "BLEU-4": 0.48170174919971515
+        },
+        {
+          "image": "000000042178.jpg",
+          "generated_caption": "a group of people are standing in the dirt",
+          "num_references": 5,
+          "BLEU-1": 0.5666666666666667,
+          "BLEU-2": 0.08416254115301736,
+          "BLEU-3": 0.04659935225242372,
+          "BLEU-4": 0.03603687284051295
+        },
+        {
+          "image": "000000042628.jpg",
+          "generated_caption": "a group of people riding skis on a snow covered slope",
+          "num_references": 5,
+          "BLEU-1": 0.4636363636363636,
+          "BLEU-2": 0.3791137991781264,
+          "BLEU-3": 0.32248188472286243,
+          "BLEU-4": 0.2605881526188192
+        },
+        {
+          "image": "000000043435.jpg",
+          "generated_caption": "a person riding a surfboard on a wave",
+          "num_references": 5,
+          "BLEU-1": 0.2316554369284563,
+          "BLEU-2": 0.05404167777297232,
+          "BLEU-3": 0.03502191278803663,
+          "BLEU-4": 0.029508062388758503
+        },
+        {
+          "image": "000000044195.jpg",
+          "generated_caption": "a man is standing on a surfboard in the water",
+          "num_references": 5,
+          "BLEU-1": 0.71,
+          "BLEU-2": 0.5687217636458485,
+          "BLEU-3": 0.1593076274109374,
+          "BLEU-4": 0.08717720024599719
+        },
+        {
+          "image": "000000044652.jpg",
+          "generated_caption": "a plane is flying through the air over a snow covered mountain",
+          "num_references": 5,
+          "BLEU-1": 0.5083333333333333,
+          "BLEU-2": 0.378493825256867,
+          "BLEU-3": 0.311013301985439,
+          "BLEU-4": 0.24624746425412344
+        },
+        {
+          "image": "000000045090.jpg",
+          "generated_caption": "a man riding a surfboard on top of a wave",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.2730486322169653,
+          "BLEU-3": 0.09767798108982693,
+          "BLEU-4": 0.06040501491962195
+        },
+        {
+          "image": "000000045596.jpg",
+          "generated_caption": "a train is going down the tracks in a city",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.06749485577105528,
+          "BLEU-3": 0.038472503995893505,
+          "BLEU-4": 0.030032281778173464
+        },
+        {
+          "image": "000000046031.jpg",
+          "generated_caption": "a laptop computer sitting on top of a desk",
+          "num_references": 5,
+          "BLEU-1": 0.7888888888888889,
+          "BLEU-2": 0.5528964138466124,
+          "BLEU-3": 0.3635192361167835,
+          "BLEU-4": 0.16821229464240012
+        },
+        {
+          "image": "000000046804.jpg",
+          "generated_caption": "a sheep standing on a field with a green and white sheep",
+          "num_references": 5,
+          "BLEU-1": 0.6749999999999999,
+          "BLEU-2": 0.5015883861204414,
+          "BLEU-3": 0.30247945128271564,
+          "BLEU-4": 0.13242234674234626
+        },
+        {
+          "image": "000000046872.jpg",
+          "generated_caption": "a man is standing on a train track",
+          "num_references": 5,
+          "BLEU-1": 0.7625,
+          "BLEU-2": 0.3461523198989552,
+          "BLEU-3": 0.12592957787996784,
+          "BLEU-4": 0.07949747038772202
+        },
+        {
+          "image": "000000047769.jpg",
+          "generated_caption": "a living room with a couch and a table",
+          "num_references": 5,
+          "BLEU-1": 0.9047819758900849,
+          "BLEU-2": 0.7857138760027229,
+          "BLEU-3": 0.6254306863506323,
+          "BLEU-4": 0.24577224760403496
+        },
+        {
+          "image": "000000048555.jpg",
+          "generated_caption": "a group of people riding horses on a beach",
+          "num_references": 5,
+          "BLEU-1": 0.8999999999999999,
+          "BLEU-2": 0.6791538853603062,
+          "BLEU-3": 0.5172325860574095,
+          "BLEU-4": 0.39909360350920775
+        },
+        {
+          "image": "000000048924.jpg",
+          "generated_caption": "a man riding a motorcycle with a dog in the background",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.3681649827800772,
+          "BLEU-3": 0.11462538735178952,
+          "BLEU-4": 0.06587006855914923
+        },
+        {
+          "image": "000000049810.jpg",
+          "generated_caption": "a cat is sitting on a table with a cat",
+          "num_references": 5,
+          "BLEU-1": 0.41,
+          "BLEU-2": 0.30930028559098793,
+          "BLEU-3": 0.10614272140018981,
+          "BLEU-4": 0.06428995973358322
+        },
+        {
+          "image": "000000050165.jpg",
+          "generated_caption": "a train on a train track with a green hillside behind it",
+          "num_references": 5,
+          "BLEU-1": 0.4676892441032393,
+          "BLEU-2": 0.207435502462668,
+          "BLEU-3": 0.07342742913746493,
+          "BLEU-4": 0.04485236142200668
+        },
+        {
+          "image": "000000050679.jpg",
+          "generated_caption": "a bird is standing on the water near a tree",
+          "num_references": 5,
+          "BLEU-1": 0.61,
+          "BLEU-2": 0.2730486322169653,
+          "BLEU-3": 0.09767798108982693,
+          "BLEU-4": 0.06040501491962195
+        },
+        {
+          "image": "000000050828.jpg",
+          "generated_caption": "a white bed sitting in a room with a window",
+          "num_references": 5,
+          "BLEU-1": 0.9099999999999999,
+          "BLEU-2": 0.643859888139924,
+          "BLEU-3": 0.38485323891542705,
+          "BLEU-4": 0.16892613649547544
+        },
+        {
+          "image": "000000051326.jpg",
+          "generated_caption": "a red and black fire hydrant sitting in a green field",
+          "num_references": 5,
+          "BLEU-1": 0.4636363636363636,
+          "BLEU-2": 0.06809084840390549,
+          "BLEU-3": 0.03720874257732077,
+          "BLEU-4": 0.028327695706718656
+        },
+        {
+          "image": "000000051712.jpg",
+          "generated_caption": "a person on skis is riding a snowboard",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.07551115351145107,
+          "BLEU-3": 0.04377183124521141,
+          "BLEU-4": 0.03488043026573311
+        },
+        {
+          "image": "000000051938.jpg",
+          "generated_caption": "a person on skis is riding down a snow covered slope",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.447315223406167,
+          "BLEU-3": 0.3600819740997805,
+          "BLEU-4": 0.283058831953153
+        },
+        {
+          "image": "000000051976.jpg",
+          "generated_caption": "a man riding a wave on top of a surfboard",
+          "num_references": 5,
+          "BLEU-1": 1.01,
+          "BLEU-2": 1.0105554028464854,
+          "BLEU-3": 1.0112031865682143,
+          "BLEU-4": 1.0119729391198107
+        },
+        {
+          "image": "000000052996.jpg",
+          "generated_caption": "a group of people standing around a kitchen counter",
+          "num_references": 5,
+          "BLEU-1": 0.7888888888888889,
+          "BLEU-2": 0.7091661770464428,
+          "BLEU-3": 0.6061590041353693,
+          "BLEU-4": 0.5283928492157396
+        },
+        {
+          "image": "000000053505.jpg",
+          "generated_caption": "a white toilet sitting next to a toilet in a bathroom",
+          "num_references": 5,
+          "BLEU-1": 0.8272727272727273,
+          "BLEU-2": 0.7103776204501122,
+          "BLEU-3": 0.490138076940091,
+          "BLEU-4": 0.1958692837091695
+        },
+        {
+          "image": "000000054654.jpg",
+          "generated_caption": "a woman is sitting at a table with a laptop",
+          "num_references": 5,
+          "BLEU-1": 0.51,
+          "BLEU-2": 0.3449637662132068,
+          "BLEU-3": 0.11415256069762637,
+          "BLEU-4": 0.0678953034358522
+        },
+        {
+          "image": "000000055150.jpg",
+          "generated_caption": "a man sitting on a bench with a dog in the back seat",
+          "num_references": 5,
+          "BLEU-1": 0.46923076923076923,
+          "BLEU-2": 0.20739532423085266,
+          "BLEU-3": 0.07312542652064857,
+          "BLEU-4": 0.04446838009626367
+        },
+        {
+          "image": "000000055950.jpg",
+          "generated_caption": "a man is playing tennis on a tennis court",
+          "num_references": 5,
+          "BLEU-1": 1.011111111111111,
+          "BLEU-2": 1.011805317242403,
+          "BLEU-3": 1.012631441554787,
+          "BLEU-4": 0.9692666885456833
+        },
+        {
+          "image": "000000056545.jpg",
+          "generated_caption": "a bird with a bird perched on a branch",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.5273945714409732,
+          "BLEU-3": 0.47946841940415735,
+          "BLEU-4": 0.3667048285595874
+        },
+        {
+          "image": "000000057672.jpg",
+          "generated_caption": "a group of people are riding on a raft",
+          "num_references": 5,
+          "BLEU-1": 0.6065022036186283,
+          "BLEU-2": 0.4585899931244084,
+          "BLEU-3": 0.38362345580017687,
+          "BLEU-4": 0.3102240676780216
+        },
+        {
+          "image": "000000058393.jpg",
+          "generated_caption": "a bench sitting on a beach near a body of water",
+          "num_references": 5,
+          "BLEU-1": 0.6454545454545454,
+          "BLEU-2": 0.5144281909424906,
+          "BLEU-3": 0.31861525482187475,
+          "BLEU-4": 0.14180039063457348
+        },
+        {
+          "image": "000000058705.jpg",
+          "generated_caption": "a man wearing a suit and tie",
+          "num_references": 5,
+          "BLEU-1": 0.5475048849548512,
+          "BLEU-2": 0.4610596880309603,
+          "BLEU-3": 0.4063433458618225,
+          "BLEU-4": 0.3431484197610475
+        },
+        {
+          "image": "000000059920.jpg",
+          "generated_caption": "a bathroom with a toilet and a sink",
+          "num_references": 5,
+          "BLEU-1": 0.7832160010438284,
+          "BLEU-2": 0.7760921097168095,
+          "BLEU-3": 0.7673371367836033,
+          "BLEU-4": 0.7561734477076094
+        },
+        {
+          "image": "000000060835.jpg",
+          "generated_caption": "a giraffe is standing in a dirt field",
+          "num_references": 5,
+          "BLEU-1": 0.5625917753976796,
+          "BLEU-2": 0.2793190825481605,
+          "BLEU-3": 0.1046938211336408,
+          "BLEU-4": 0.06708517926658812
+        },
+        {
+          "image": "000000060886.jpg",
+          "generated_caption": "a baseball player holding a bat on a field",
+          "num_references": 5,
+          "BLEU-1": 0.4555555555555555,
+          "BLEU-2": 0.2502776236280201,
+          "BLEU-3": 0.09636411453635908,
+          "BLEU-4": 0.06214392628918381
+        },
+        {
+          "image": "000000061268.jpg",
+          "generated_caption": "a train is going down the tracks in a city",
+          "num_references": 5,
+          "BLEU-1": 1.01,
+          "BLEU-2": 0.8273787255879592,
+          "BLEU-3": 0.4548872866384072,
+          "BLEU-4": 0.1914931924021471
+        },
+        {
+          "image": "000000061471.jpg",
+          "generated_caption": "a cat is sitting on a toilet seat",
+          "num_references": 5,
+          "BLEU-1": 0.4522796625746051,
+          "BLEU-2": 0.25044216368441086,
+          "BLEU-3": 0.09734768121711006,
+          "BLEU-4": 0.06352285438777089
+        }
+      ]
+    }
+  },
+  "deltas_epoch8_minus_epoch5": {
+    "BLEU-1": {
+      "epoch5_mean": 0.6004188840010378,
+      "epoch8_mean": 0.6140234021256837,
+      "absolute_change": 0.013604518124645915,
+      "relative_change_percent": 2.265837815424606
+    },
+    "BLEU-2": {
+      "epoch5_mean": 0.384264033207343,
+      "epoch8_mean": 0.4055984465921401,
+      "absolute_change": 0.021334413384797135,
+      "relative_change_percent": 5.552019325546769
+    },
+    "BLEU-3": {
+      "epoch5_mean": 0.2360934285215064,
+      "epoch8_mean": 0.25179739045343974,
+      "absolute_change": 0.015703961931933352,
+      "relative_change_percent": 6.651587903262134
+    },
+    "BLEU-4": {
+      "epoch5_mean": 0.15890585611485158,
+      "epoch8_mean": 0.17461604909469883,
+      "absolute_change": 0.015710192979847243,
+      "relative_change_percent": 9.886478298504283
+    }
+  },
+  "warning": "BLEU measures text overlap, not image-grounded correctness. Do not compare these scores directly with reports that use different tokenization or aggregation settings."
+}

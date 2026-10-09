@@ -1,0 +1,17 @@
+{
+  "model": "ResNet18 Encoder + LSTM Decoder",
+  "seed": 3407,
+  "image_size": 224,
+  "batch_size": 64,
+  "embed_dim": 256,
+  "hidden_dim": 512,
+  "epochs": 5,
+  "learning_rate": 0.001,
+  "min_word_freq": 5,
+  "max_length": 30,
+  "vocabulary_size": 3360,
+  "train_samples": 50031,
+  "val_samples": 5005,
+  "best_val_loss": 2.665705383883847,
+  "training_time_sec": 248.14671158790588
+}

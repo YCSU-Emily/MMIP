@@ -1,0 +1,442 @@
+{
+  "baseline_checkpoint": "./models/best_caption_model.pth",
+  "baseline_epoch": 5,
+  "continuation_checkpoint": "./models/experiments/continuation_v1_best.pth",
+  "continuation_epoch": 8,
+  "num_images": 100,
+  "identical_caption_count": 14,
+  "changed_caption_count": 86,
+  "changed_caption_ratio": 0.86,
+  "examples": [
+    {
+      "image": "000000000776.jpg",
+      "epoch5_caption": "a teddy bear is sitting on a table",
+      "epoch8_caption": "a teddy bear is sitting on a couch"
+    },
+    {
+      "image": "000000000802.jpg",
+      "epoch5_caption": "a white sink and a sink in a bathroom",
+      "epoch8_caption": "a white sink and a toilet in a bathroom"
+    },
+    {
+      "image": "000000000872.jpg",
+      "epoch5_caption": "a baseball player is swinging at a ball",
+      "epoch8_caption": "a baseball player swinging a bat at a ball"
+    },
+    {
+      "image": "000000001425.jpg",
+      "epoch5_caption": "a close up of a white plate with a of broccoli",
+      "epoch8_caption": "a close up of a plate of food with a fork"
+    },
+    {
+      "image": "000000001503.jpg",
+      "epoch5_caption": "a desk with a computer and a laptop on it",
+      "epoch8_caption": "a computer and a laptop sitting on a desk"
+    },
+    {
+      "image": "000000001818.jpg",
+      "epoch5_caption": "a zebra standing next to a tree in a field",
+      "epoch8_caption": "a zebra is standing in a dirt area"
+    },
+    {
+      "image": "000000003553.jpg",
+      "epoch5_caption": "a man sitting on a bench reading a book",
+      "epoch8_caption": "a man sitting on a bench with a skateboard"
+    },
+    {
+      "image": "000000004134.jpg",
+      "epoch5_caption": "a man and a woman are standing in a kitchen",
+      "epoch8_caption": "a man and a woman are standing in a room"
+    },
+    {
+      "image": "000000005477.jpg",
+      "epoch5_caption": "a large jetliner sitting on top of a runway",
+      "epoch8_caption": "a plane is flying in the air"
+    },
+    {
+      "image": "000000006213.jpg",
+      "epoch5_caption": "a white sink sitting under a white sink",
+      "epoch8_caption": "a bathroom with a sink and a mirror"
+    },
+    {
+      "image": "000000006894.jpg",
+      "epoch5_caption": "a man standing next to a man holding a surfboard",
+      "epoch8_caption": "a man with a beard is holding a large elephant"
+    },
+    {
+      "image": "000000006954.jpg",
+      "epoch5_caption": "a group of people playing frisbee in a field",
+      "epoch8_caption": "a group of people are sitting in a field"
+    },
+    {
+      "image": "000000007108.jpg",
+      "epoch5_caption": "a elephant that is standing in the dirt",
+      "epoch8_caption": "a baby elephant walking in a grassy area"
+    },
+    {
+      "image": "000000007816.jpg",
+      "epoch5_caption": "a man riding a motorcycle down a road",
+      "epoch8_caption": "a man riding a motorcycle on a street"
+    },
+    {
+      "image": "000000007977.jpg",
+      "epoch5_caption": "a man on a skateboard is performing a trick",
+      "epoch8_caption": "a man on a skateboard doing a trick on a ramp"
+    },
+    {
+      "image": "000000008844.jpg",
+      "epoch5_caption": "a bunch of different fruits in a produce",
+      "epoch8_caption": "a bunch of bananas are hanging on a display"
+    },
+    {
+      "image": "000000010363.jpg",
+      "epoch5_caption": "a cat sitting on top of a wooden floor",
+      "epoch8_caption": "a cat sitting on a desk near a window"
+    },
+    {
+      "image": "000000010583.jpg",
+      "epoch5_caption": "a plate with a sandwich and salad",
+      "epoch8_caption": "a plate with a sandwich and a salad"
+    },
+    {
+      "image": "000000010707.jpg",
+      "epoch5_caption": "a group of people sitting on a bed with a dog",
+      "epoch8_caption": "a group of people sitting around a table with a cake"
+    },
+    {
+      "image": "000000010764.jpg",
+      "epoch5_caption": "a baseball player is preparing to hit the ball",
+      "epoch8_caption": "a baseball player is swinging a bat at a ball"
+    },
+    {
+      "image": "000000011122.jpg",
+      "epoch5_caption": "a green and white train is coming down the tracks",
+      "epoch8_caption": "a green and yellow train is coming down the tracks"
+    },
+    {
+      "image": "000000012062.jpg",
+      "epoch5_caption": "a sheep standing on a dirt ground",
+      "epoch8_caption": "a sheep standing in a field of grass next to a fence"
+    },
+    {
+      "image": "000000012120.jpg",
+      "epoch5_caption": "a man standing on a tennis court holding a racquet",
+      "epoch8_caption": "a man is playing tennis on a court"
+    },
+    {
+      "image": "000000012748.jpg",
+      "epoch5_caption": "a man is standing in a field of grass",
+      "epoch8_caption": "a man is sitting on a bench in the woods"
+    },
+    {
+      "image": "000000013291.jpg",
+      "epoch5_caption": "a group of people playing frisbee in a field",
+      "epoch8_caption": "a group of people playing soccer on a field"
+    },
+    {
+      "image": "000000013348.jpg",
+      "epoch5_caption": "a plane is parked on the runway",
+      "epoch8_caption": "a plane is parked at the airport"
+    },
+    {
+      "image": "000000015338.jpg",
+      "epoch5_caption": "a street with a clock on the side of a building",
+      "epoch8_caption": "a city street with a clock on the side of a building"
+    },
+    {
+      "image": "000000015517.jpg",
+      "epoch5_caption": "a large white building with a lot of cars",
+      "epoch8_caption": "a large white city bus with a on it"
+    },
+    {
+      "image": "000000015597.jpg",
+      "epoch5_caption": "a man sitting on a bench reading a book",
+      "epoch8_caption": "a man sitting on a bench next to a beach"
+    },
+    {
+      "image": "000000017029.jpg",
+      "epoch5_caption": "a black and white cat is standing in the grass",
+      "epoch8_caption": "a black and white cat is walking in a grassy field"
+    },
+    {
+      "image": "000000017178.jpg",
+      "epoch5_caption": "a large truck parked on a road near a road",
+      "epoch8_caption": "a truck with a bunch of on it"
+    },
+    {
+      "image": "000000017714.jpg",
+      "epoch5_caption": "a close up of a piece of on a plate",
+      "epoch8_caption": "a close up of a person holding a piece of food"
+    },
+    {
+      "image": "000000018193.jpg",
+      "epoch5_caption": "a man holding a hot dog in his hand",
+      "epoch8_caption": "a man holding a hot dog in his mouth"
+    },
+    {
+      "image": "000000019109.jpg",
+      "epoch5_caption": "a row of motorcycles parked on the side of the road",
+      "epoch8_caption": "a group of motorcycles parked on the side of a road"
+    },
+    {
+      "image": "000000020571.jpg",
+      "epoch5_caption": "a group of boats are parked in a harbor",
+      "epoch8_caption": "a train on a bridge over a river"
+    },
+    {
+      "image": "000000021465.jpg",
+      "epoch5_caption": "a table with a bunch of different colored flowers in it",
+      "epoch8_caption": "a table with a bunch of different foods and a cup of coffee"
+    },
+    {
+      "image": "000000021879.jpg",
+      "epoch5_caption": "a woman in a wetsuit is standing on a beach",
+      "epoch8_caption": "a man is surfing on a wave in the ocean"
+    },
+    {
+      "image": "000000023230.jpg",
+      "epoch5_caption": "a group of people standing in a river",
+      "epoch8_caption": "a group of people in a body of water"
+    },
+    {
+      "image": "000000023359.jpg",
+      "epoch5_caption": "a person on a snowboard on a snowy surface",
+      "epoch8_caption": "a man riding a snowboard on top of a snow covered slope"
+    },
+    {
+      "image": "000000023666.jpg",
+      "epoch5_caption": "a white toilet sitting next to a white sink",
+      "epoch8_caption": "a white toilet sitting next to a sink"
+    },
+    {
+      "image": "000000023781.jpg",
+      "epoch5_caption": "a pile of carrots and carrots on a table",
+      "epoch8_caption": "a pile of oranges sitting on top of a table"
+    },
+    {
+      "image": "000000024610.jpg",
+      "epoch5_caption": "a living room with a couch and a television",
+      "epoch8_caption": "a living room with a couch and a coffee table"
+    },
+    {
+      "image": "000000026941.jpg",
+      "epoch5_caption": "a bench sitting in front of a brick wall",
+      "epoch8_caption": "a red fire hydrant sitting in front of a brick wall"
+    },
+    {
+      "image": "000000027696.jpg",
+      "epoch5_caption": "a pizza with cheese and olives on it",
+      "epoch8_caption": "a pizza with a pepperoni and half pepperoni and cheese"
+    },
+    {
+      "image": "000000027982.jpg",
+      "epoch5_caption": "a toilet in a bathroom with a toilet seat",
+      "epoch8_caption": "a toilet with a and a toilet in it"
+    },
+    {
+      "image": "000000028285.jpg",
+      "epoch5_caption": "a stone building with a clock on the top",
+      "epoch8_caption": "a large clock tower with a clock on it"
+    },
+    {
+      "image": "000000028449.jpg",
+      "epoch5_caption": "a large elephant standing next to a fence",
+      "epoch8_caption": "a large elephant standing next to a baby elephant"
+    },
+    {
+      "image": "000000028809.jpg",
+      "epoch5_caption": "a close up of a hot dog with mustard",
+      "epoch8_caption": "a close up of a person holding a banana"
+    },
+    {
+      "image": "000000030828.jpg",
+      "epoch5_caption": "a man flying a kite in a field",
+      "epoch8_caption": "a red and white fire hydrant in front of a field"
+    },
+    {
+      "image": "000000032038.jpg",
+      "epoch5_caption": "a pizza with a knife and fork on it",
+      "epoch8_caption": "a pizza with a knife and a fork on it"
+    },
+    {
+      "image": "000000032811.jpg",
+      "epoch5_caption": "a white and black cat sitting on top of a window",
+      "epoch8_caption": "a small white and black cat is sitting on a window sill"
+    },
+    {
+      "image": "000000034257.jpg",
+      "epoch5_caption": "a wooden table topped with many different types of vegetables",
+      "epoch8_caption": "a bunch of bananas are hanging on a wall"
+    },
+    {
+      "image": "000000035279.jpg",
+      "epoch5_caption": "a computer desk with a keyboard and mouse",
+      "epoch8_caption": "a laptop computer sitting on top of a desk"
+    },
+    {
+      "image": "000000037689.jpg",
+      "epoch5_caption": "a person on skis is standing in the snow",
+      "epoch8_caption": "a person on skis in the snow with a snowboard in the background"
+    },
+    {
+      "image": "000000037988.jpg",
+      "epoch5_caption": "a man holding a tennis racquet on a tennis court",
+      "epoch8_caption": "a man is playing tennis on a tennis court"
+    },
+    {
+      "image": "000000038210.jpg",
+      "epoch5_caption": "a person skiing down a hill on a snowy slope",
+      "epoch8_caption": "a man on skis is standing in the snow"
+    },
+    {
+      "image": "000000038678.jpg",
+      "epoch5_caption": "a woman holding a glass of wine with a glass of wine",
+      "epoch8_caption": "a man is holding a piece of pizza"
+    },
+    {
+      "image": "000000039670.jpg",
+      "epoch5_caption": "a train is coming down the tracks",
+      "epoch8_caption": "a train is coming down the tracks in a rural area"
+    },
+    {
+      "image": "000000040757.jpg",
+      "epoch5_caption": "a dog laying on a bed with a blanket on top of it",
+      "epoch8_caption": "a baby sleeping on a bed with a blanket"
+    },
+    {
+      "image": "000000042178.jpg",
+      "epoch5_caption": "a group of people standing next to a train",
+      "epoch8_caption": "a group of people are standing in the dirt"
+    },
+    {
+      "image": "000000042628.jpg",
+      "epoch5_caption": "a group of people riding horses down a snow covered slope",
+      "epoch8_caption": "a group of people riding skis on a snow covered slope"
+    },
+    {
+      "image": "000000044195.jpg",
+      "epoch5_caption": "a man standing on a snowy hill with a frisbee",
+      "epoch8_caption": "a man is standing on a surfboard in the water"
+    },
+    {
+      "image": "000000044652.jpg",
+      "epoch5_caption": "a person on a surfboard riding a wave",
+      "epoch8_caption": "a plane is flying through the air over a snow covered mountain"
+    },
+    {
+      "image": "000000045090.jpg",
+      "epoch5_caption": "a person riding a surfboard on a wave",
+      "epoch8_caption": "a man riding a surfboard on top of a wave"
+    },
+    {
+      "image": "000000045596.jpg",
+      "epoch5_caption": "a train is coming down the tracks in a wooded area",
+      "epoch8_caption": "a train is going down the tracks in a city"
+    },
+    {
+      "image": "000000046031.jpg",
+      "epoch5_caption": "a desk with a computer keyboard and mouse",
+      "epoch8_caption": "a laptop computer sitting on top of a desk"
+    },
+    {
+      "image": "000000046804.jpg",
+      "epoch5_caption": "a sheep standing on a lush green field",
+      "epoch8_caption": "a sheep standing on a field with a green and white sheep"
+    },
+    {
+      "image": "000000046872.jpg",
+      "epoch5_caption": "a man standing next to a white fence",
+      "epoch8_caption": "a man is standing on a train track"
+    },
+    {
+      "image": "000000048555.jpg",
+      "epoch5_caption": "a group of people riding horses along a beach",
+      "epoch8_caption": "a group of people riding horses on a beach"
+    },
+    {
+      "image": "000000049810.jpg",
+      "epoch5_caption": "a dog is looking at a dog in a cage",
+      "epoch8_caption": "a cat is sitting on a table with a cat"
+    },
+    {
+      "image": "000000050165.jpg",
+      "epoch5_caption": "a train on a track near a bridge",
+      "epoch8_caption": "a train on a train track with a green hillside behind it"
+    },
+    {
+      "image": "000000050679.jpg",
+      "epoch5_caption": "a bird is standing on the sand near a tree",
+      "epoch8_caption": "a bird is standing on the water near a tree"
+    },
+    {
+      "image": "000000050828.jpg",
+      "epoch5_caption": "a bedroom with a bed and a table in it",
+      "epoch8_caption": "a white bed sitting in a room with a window"
+    },
+    {
+      "image": "000000051326.jpg",
+      "epoch5_caption": "a red fire hydrant sitting in a green grass",
+      "epoch8_caption": "a red and black fire hydrant sitting in a green field"
+    },
+    {
+      "image": "000000051712.jpg",
+      "epoch5_caption": "a person on skis is standing on a snowy slope",
+      "epoch8_caption": "a person on skis is riding a snowboard"
+    },
+    {
+      "image": "000000051938.jpg",
+      "epoch5_caption": "a person skiing down a hill on a snowy hill",
+      "epoch8_caption": "a person on skis is riding down a snow covered slope"
+    },
+    {
+      "image": "000000053505.jpg",
+      "epoch5_caption": "a white toilet sitting in a bathroom next to a wall",
+      "epoch8_caption": "a white toilet sitting next to a toilet in a bathroom"
+    },
+    {
+      "image": "000000054654.jpg",
+      "epoch5_caption": "a woman standing in a kitchen with a stove and a stove",
+      "epoch8_caption": "a woman is sitting at a table with a laptop"
+    },
+    {
+      "image": "000000055150.jpg",
+      "epoch5_caption": "a man sitting on a motorcycle with a dog in the background",
+      "epoch8_caption": "a man sitting on a bench with a dog in the back seat"
+    },
+    {
+      "image": "000000055950.jpg",
+      "epoch5_caption": "a man holding a tennis racquet on a tennis court",
+      "epoch8_caption": "a man is playing tennis on a tennis court"
+    },
+    {
+      "image": "000000056545.jpg",
+      "epoch5_caption": "a bird that is standing in the grass",
+      "epoch8_caption": "a bird with a bird perched on a branch"
+    },
+    {
+      "image": "000000057672.jpg",
+      "epoch5_caption": "a group of people riding on a boat in the water",
+      "epoch8_caption": "a group of people are riding on a raft"
+    },
+    {
+      "image": "000000059920.jpg",
+      "epoch5_caption": "a white toilet sitting in a bathroom next to a wall",
+      "epoch8_caption": "a bathroom with a toilet and a sink"
+    },
+    {
+      "image": "000000060835.jpg",
+      "epoch5_caption": "a giraffe standing next to a tree in a field",
+      "epoch8_caption": "a giraffe is standing in a dirt field"
+    },
+    {
+      "image": "000000061268.jpg",
+      "epoch5_caption": "a train is coming down the tracks",
+      "epoch8_caption": "a train is going down the tracks in a city"
+    },
+    {
+      "image": "000000061471.jpg",
+      "epoch5_caption": "a cat is sitting on a chair in a kitchen",
+      "epoch8_caption": "a cat is sitting on a toilet seat"
+    }
+  ]
+}

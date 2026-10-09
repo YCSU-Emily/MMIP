@@ -1,0 +1,512 @@
+{
+  "model": "Week 4 ResNet18 + LSTM",
+  "experiment": "continuation",
+  "checkpoint": "week4/quiz4/image_captioning/models/experiments/continuation_v1_best.pth",
+  "checkpoint_epoch": 8,
+  "validation_loss": 2.623136569355632,
+  "num_images": 100,
+  "total_inference_time_sec": 0.22570997800266923,
+  "average_inference_time_ms": 2.2570997800266923,
+  "results": [
+    {
+      "file_name": "000000010363.jpg",
+      "generated_caption": "a cat sitting on a desk near a window",
+      "inference_time_sec": 0.002361046000260103
+    },
+    {
+      "file_name": "000000017178.jpg",
+      "generated_caption": "a truck with a bunch of on it",
+      "inference_time_sec": 0.002080475999719056
+    },
+    {
+      "file_name": "000000507975.jpg",
+      "generated_caption": "a group of people riding horses on a field",
+      "inference_time_sec": 0.0026289440002074116
+    },
+    {
+      "file_name": "000000314177.jpg",
+      "generated_caption": "a man is standing in a room with a surfboard",
+      "inference_time_sec": 0.0021048799999334733
+    },
+    {
+      "file_name": "000000313182.jpg",
+      "generated_caption": "a white truck with a on the front rack",
+      "inference_time_sec": 0.002520514000025287
+    },
+    {
+      "file_name": "000000538364.jpg",
+      "generated_caption": "a man riding a motorcycle down a street",
+      "inference_time_sec": 0.0026965029992425116
+    },
+    {
+      "file_name": "000000149406.jpg",
+      "generated_caption": "a bike parked next to a brick wall",
+      "inference_time_sec": 0.001965301000382169
+    },
+    {
+      "file_name": "000000180383.jpg",
+      "generated_caption": "a cat sitting on top of a laptop computer",
+      "inference_time_sec": 0.002042720000645204
+    },
+    {
+      "file_name": "000000402433.jpg",
+      "generated_caption": "a pizza sitting on top of a wooden cutting board",
+      "inference_time_sec": 0.0024504650000380934
+    },
+    {
+      "file_name": "000000449996.jpg",
+      "generated_caption": "a group of people flying kites in the sky",
+      "inference_time_sec": 0.002259644000332628
+    },
+    {
+      "file_name": "000000168619.jpg",
+      "generated_caption": "a train traveling down tracks next to a lush green field",
+      "inference_time_sec": 0.0022669540003334987
+    },
+    {
+      "file_name": "000000209613.jpg",
+      "generated_caption": "a herd of sheep grazing on a lush green hillside",
+      "inference_time_sec": 0.0028222000000823755
+    },
+    {
+      "file_name": "000000103548.jpg",
+      "generated_caption": "a herd of zebra standing on top of a lush green field",
+      "inference_time_sec": 0.0023072479998518247
+    },
+    {
+      "file_name": "000000469652.jpg",
+      "generated_caption": "a giraffe standing in a zoo enclosure",
+      "inference_time_sec": 0.0018350469999859342
+    },
+    {
+      "file_name": "000000015338.jpg",
+      "generated_caption": "a city street with a clock on the side of a building",
+      "inference_time_sec": 0.002641539000251214
+    },
+    {
+      "file_name": "000000512564.jpg",
+      "generated_caption": "a city street with a lot of cars and buildings",
+      "inference_time_sec": 0.0023242480001499644
+    },
+    {
+      "file_name": "000000336658.jpg",
+      "generated_caption": "a large passenger bus is parked on the side of a road",
+      "inference_time_sec": 0.0022972629994910676
+    },
+    {
+      "file_name": "000000568439.jpg",
+      "generated_caption": "a woman walking down a street with a bus",
+      "inference_time_sec": 0.0020659410001826473
+    },
+    {
+      "file_name": "000000372317.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0020980290000807145
+    },
+    {
+      "file_name": "000000476704.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0024920780006141285
+    },
+    {
+      "file_name": "000000260266.jpg",
+      "generated_caption": "a street sign with a street name and a stop sign",
+      "inference_time_sec": 0.0024294410004586098
+    },
+    {
+      "file_name": "000000106048.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0020910220000587287
+    },
+    {
+      "file_name": "000000177893.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0021401089998107636
+    },
+    {
+      "file_name": "000000479099.jpg",
+      "generated_caption": "a bench in a park surrounded by trees",
+      "inference_time_sec": 0.0019503579997035558
+    },
+    {
+      "file_name": "000000269196.jpg",
+      "generated_caption": "a group of sheep standing in a field",
+      "inference_time_sec": 0.0020383110004331684
+    },
+    {
+      "file_name": "000000315450.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0021352049998313305
+    },
+    {
+      "file_name": "000000171050.jpg",
+      "generated_caption": "a fire hydrant sitting on the side of a sidewalk",
+      "inference_time_sec": 0.002268643999741471
+    },
+    {
+      "file_name": "000000243867.jpg",
+      "generated_caption": "a car parked on the side of the road",
+      "inference_time_sec": 0.0020412619996932335
+    },
+    {
+      "file_name": "000000263594.jpg",
+      "generated_caption": "a car parked on the side of the road",
+      "inference_time_sec": 0.001997245999518782
+    },
+    {
+      "file_name": "000000147725.jpg",
+      "generated_caption": "a car is parked on the side of the road",
+      "inference_time_sec": 0.0024461670000164304
+    },
+    {
+      "file_name": "000000088432.jpg",
+      "generated_caption": "a green and yellow bus is parked on the side of the road",
+      "inference_time_sec": 0.002506572000129381
+    },
+    {
+      "file_name": "000000272364.jpg",
+      "generated_caption": "a giraffe standing in a tree in front of a tree",
+      "inference_time_sec": 0.0022017030005372362
+    },
+    {
+      "file_name": "000000138979.jpg",
+      "generated_caption": "a bus is parked on the side of the road",
+      "inference_time_sec": 0.0031104529998629005
+    },
+    {
+      "file_name": "000000519491.jpg",
+      "generated_caption": "a large clock tower with a clock on it",
+      "inference_time_sec": 0.002026852000199142
+    },
+    {
+      "file_name": "000000100283.jpg",
+      "generated_caption": "a stop sign with a street name sign and a sign",
+      "inference_time_sec": 0.0024996190004458185
+    },
+    {
+      "file_name": "000000563653.jpg",
+      "generated_caption": "a city street with a stop light and a street sign",
+      "inference_time_sec": 0.00354543499997817
+    },
+    {
+      "file_name": "000000345361.jpg",
+      "generated_caption": "a woman sitting at a table with a cake",
+      "inference_time_sec": 0.0020856070004811045
+    },
+    {
+      "file_name": "000000113051.jpg",
+      "generated_caption": "a large white boat with a on it",
+      "inference_time_sec": 0.002041531000031682
+    },
+    {
+      "file_name": "000000286708.jpg",
+      "generated_caption": "a cat is sitting on a blanket on a bed",
+      "inference_time_sec": 0.0029500380005629268
+    },
+    {
+      "file_name": "000000475732.jpg",
+      "generated_caption": "a cat is sitting on a laptop computer",
+      "inference_time_sec": 0.0022573850001208484
+    },
+    {
+      "file_name": "000000108244.jpg",
+      "generated_caption": "a cat laying on a bed next to a remote control",
+      "inference_time_sec": 0.0022822840001026634
+    },
+    {
+      "file_name": "000000121153.jpg",
+      "generated_caption": "a street sign on a pole in front of a building",
+      "inference_time_sec": 0.003064558999540168
+    },
+    {
+      "file_name": "000000023230.jpg",
+      "generated_caption": "a group of people in a body of water",
+      "inference_time_sec": 0.0020376299999043113
+    },
+    {
+      "file_name": "000000073702.jpg",
+      "generated_caption": "a man sitting on a bench with a dog in his hand",
+      "inference_time_sec": 0.002249647999633453
+    },
+    {
+      "file_name": "000000086483.jpg",
+      "generated_caption": "a street sign with a street name and a sign",
+      "inference_time_sec": 0.0032082039997476386
+    },
+    {
+      "file_name": "000000521141.jpg",
+      "generated_caption": "a man is standing on a sidewalk near a street",
+      "inference_time_sec": 0.002179932000217377
+    },
+    {
+      "file_name": "000000061268.jpg",
+      "generated_caption": "a train is going down the tracks in a city",
+      "inference_time_sec": 0.00210281500039855
+    },
+    {
+      "file_name": "000000393093.jpg",
+      "generated_caption": "a train on a track near a platform",
+      "inference_time_sec": 0.00270076299966604
+    },
+    {
+      "file_name": "000000493566.jpg",
+      "generated_caption": "a train is going down the tracks in a forest",
+      "inference_time_sec": 0.0020904339999106014
+    },
+    {
+      "file_name": "000000191471.jpg",
+      "generated_caption": "a stop sign with a street sign on it",
+      "inference_time_sec": 0.0023110140000426327
+    },
+    {
+      "file_name": "000000011122.jpg",
+      "generated_caption": "a green and yellow train is coming down the tracks",
+      "inference_time_sec": 0.003028263000487641
+    },
+    {
+      "file_name": "000000198510.jpg",
+      "generated_caption": "a man in a suit is standing in front of a train",
+      "inference_time_sec": 0.0023191370000859024
+    },
+    {
+      "file_name": "000000126592.jpg",
+      "generated_caption": "a stop sign with a street sign on it",
+      "inference_time_sec": 0.0020164679999652435
+    },
+    {
+      "file_name": "000000416269.jpg",
+      "generated_caption": "a train is going down the tracks in a city",
+      "inference_time_sec": 0.002115057000082743
+    },
+    {
+      "file_name": "000000133567.jpg",
+      "generated_caption": "a red and white train on a track",
+      "inference_time_sec": 0.002090041999508685
+    },
+    {
+      "file_name": "000000521052.jpg",
+      "generated_caption": "a train is going down the tracks in a city",
+      "inference_time_sec": 0.002375838000261865
+    },
+    {
+      "file_name": "000000332318.jpg",
+      "generated_caption": "a herd of sheep grazing in a field",
+      "inference_time_sec": 0.0019520229998306604
+    },
+    {
+      "file_name": "000000186296.jpg",
+      "generated_caption": "a cat laying on a blanket in a cage",
+      "inference_time_sec": 0.0019964620005339384
+    },
+    {
+      "file_name": "000000415990.jpg",
+      "generated_caption": "a herd of cows grazing in a field",
+      "inference_time_sec": 0.001901886999803537
+    },
+    {
+      "file_name": "000000187236.jpg",
+      "generated_caption": "a cat laying on a bed with a blanket on top of it",
+      "inference_time_sec": 0.002751064000221959
+    },
+    {
+      "file_name": "000000271728.jpg",
+      "generated_caption": "a cat laying on a bed in a room",
+      "inference_time_sec": 0.0021303769999576616
+    },
+    {
+      "file_name": "000000460147.jpg",
+      "generated_caption": "a city bus is parked on the side of the road",
+      "inference_time_sec": 0.002197257000261743
+    },
+    {
+      "file_name": "000000200667.jpg",
+      "generated_caption": "a train is parked on the tracks near a platform",
+      "inference_time_sec": 0.0024947249994511367
+    },
+    {
+      "file_name": "000000077595.jpg",
+      "generated_caption": "a cat sitting on a desk with a laptop",
+      "inference_time_sec": 0.0020157439994363813
+    },
+    {
+      "file_name": "000000278463.jpg",
+      "generated_caption": "a laptop computer sitting on top of a desk",
+      "inference_time_sec": 0.0022816830005467637
+    },
+    {
+      "file_name": "000000190140.jpg",
+      "generated_caption": "a man is standing on a surfboard in the water",
+      "inference_time_sec": 0.002147791999959736
+    },
+    {
+      "file_name": "000000476810.jpg",
+      "generated_caption": "a cat is sitting on a laptop computer",
+      "inference_time_sec": 0.0019900569996025297
+    },
+    {
+      "file_name": "000000540280.jpg",
+      "generated_caption": "a woman is sitting on a bench with a",
+      "inference_time_sec": 0.0020862920000581653
+    },
+    {
+      "file_name": "000000126216.jpg",
+      "generated_caption": "a group of zebras grazing in a field",
+      "inference_time_sec": 0.0019257060002928483
+    },
+    {
+      "file_name": "000000032901.jpg",
+      "generated_caption": "a man in a suit and tie standing in a kitchen",
+      "inference_time_sec": 0.002380924999670242
+    },
+    {
+      "file_name": "000000407960.jpg",
+      "generated_caption": "a cat sitting on a window sill looking out a window",
+      "inference_time_sec": 0.002395999999862397
+    },
+    {
+      "file_name": "000000084270.jpg",
+      "generated_caption": "a group of people standing around a train station",
+      "inference_time_sec": 0.0020493959991654265
+    },
+    {
+      "file_name": "000000267191.jpg",
+      "generated_caption": "a baby elephant walking in a grassy area",
+      "inference_time_sec": 0.0019609110004239483
+    },
+    {
+      "file_name": "000000422836.jpg",
+      "generated_caption": "a man is standing in front of a building with a clock",
+      "inference_time_sec": 0.002296468000167806
+    },
+    {
+      "file_name": "000000493613.jpg",
+      "generated_caption": "a small white and blue bird sitting on a tree branch",
+      "inference_time_sec": 0.002163694999580912
+    },
+    {
+      "file_name": "000000217948.jpg",
+      "generated_caption": "a cat is sitting on a bench in front of a building",
+      "inference_time_sec": 0.0022161839997352217
+    },
+    {
+      "file_name": "000000317024.jpg",
+      "generated_caption": "a zebra standing next to a fence in a field",
+      "inference_time_sec": 0.0020584980002240627
+    },
+    {
+      "file_name": "000000463522.jpg",
+      "generated_caption": "a horse pulling a carriage down a street",
+      "inference_time_sec": 0.001872730999821215
+    },
+    {
+      "file_name": "000000213547.jpg",
+      "generated_caption": "a woman is standing in front of a store with a sign",
+      "inference_time_sec": 0.0022094560008554254
+    },
+    {
+      "file_name": "000000456015.jpg",
+      "generated_caption": "a group of people riding horses on a beach",
+      "inference_time_sec": 0.0019533979993866524
+    },
+    {
+      "file_name": "000000547886.jpg",
+      "generated_caption": "a group of people riding horses on a beach",
+      "inference_time_sec": 0.0019490230006340425
+    },
+    {
+      "file_name": "000000124975.jpg",
+      "generated_caption": "a group of zebras standing in a field",
+      "inference_time_sec": 0.0018615230001159944
+    },
+    {
+      "file_name": "000000378453.jpg",
+      "generated_caption": "a group of zebras are standing in a field",
+      "inference_time_sec": 0.001957100000254286
+    },
+    {
+      "file_name": "000000069356.jpg",
+      "generated_caption": "a man and a woman are standing in a lot",
+      "inference_time_sec": 0.0020242170003257343
+    },
+    {
+      "file_name": "000000162415.jpg",
+      "generated_caption": "a man holding a red frisbee in his hand",
+      "inference_time_sec": 0.001978141000108735
+    },
+    {
+      "file_name": "000000274708.jpg",
+      "generated_caption": "a person on a snowboard is performing a jump",
+      "inference_time_sec": 0.0019743269995160517
+    },
+    {
+      "file_name": "000000377113.jpg",
+      "generated_caption": "a man and a woman are standing in the snow",
+      "inference_time_sec": 0.002037885999925493
+    },
+    {
+      "file_name": "000000079651.jpg",
+      "generated_caption": "a tray of food that includes a sandwich and a drink",
+      "inference_time_sec": 0.0021286370001689647
+    },
+    {
+      "file_name": "000000104669.jpg",
+      "generated_caption": "a plate of food with broccoli and meat",
+      "inference_time_sec": 0.0018600240000523627
+    },
+    {
+      "file_name": "000000439994.jpg",
+      "generated_caption": "a baseball game with a batter and catcher behind him",
+      "inference_time_sec": 0.0020431960001587868
+    },
+    {
+      "file_name": "000000430377.jpg",
+      "generated_caption": "a man and a woman are skiing on a snowy surface",
+      "inference_time_sec": 0.0021170419995542034
+    },
+    {
+      "file_name": "000000512776.jpg",
+      "generated_caption": "a man is holding a baseball bat at a baseball",
+      "inference_time_sec": 0.0020517019993349095
+    },
+    {
+      "file_name": "000000095155.jpg",
+      "generated_caption": "a person on skis riding a snowboard down a snowy slope",
+      "inference_time_sec": 0.0021466569996846374
+    },
+    {
+      "file_name": "000000184978.jpg",
+      "generated_caption": "a person on skis is going down a hill",
+      "inference_time_sec": 0.0024523310003132792
+    },
+    {
+      "file_name": "000000199055.jpg",
+      "generated_caption": "a man in a red shirt and a black shirt and a black tie",
+      "inference_time_sec": 0.0026635630001692334
+    },
+    {
+      "file_name": "000000431848.jpg",
+      "generated_caption": "a man riding a skateboard down a street",
+      "inference_time_sec": 0.0021102870005051955
+    },
+    {
+      "file_name": "000000333772.jpg",
+      "generated_caption": "a cat laying on top of a laptop on a bed",
+      "inference_time_sec": 0.002202378000220051
+    },
+    {
+      "file_name": "000000128699.jpg",
+      "generated_caption": "a man flying a kite in a cloudy sky",
+      "inference_time_sec": 0.0020213380003042403
+    },
+    {
+      "file_name": "000000121591.jpg",
+      "generated_caption": "a person is holding a snowboard on a beach",
+      "inference_time_sec": 0.002732466999987082
+    },
+    {
+      "file_name": "000000176799.jpg",
+      "generated_caption": "a street sign on a city street with a building in the background",
+      "inference_time_sec": 0.0027733199995054747
+    }
+  ]
+}

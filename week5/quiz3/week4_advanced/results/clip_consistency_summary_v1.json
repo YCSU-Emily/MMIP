@@ -1,0 +1,240 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "num_samples": 100,
+  "metric_definition": "CLIP cosine similarity between each image and its generated caption. This is a ranking/screening signal, not a calibrated probability or a direct measure of caption correctness.",
+  "threshold_method": "Each low-score threshold is the 20th percentile of the evaluated sample. Thresholds are exploratory screening rules, not validated error thresholds.",
+  "thresholds": {
+    "BLEU_4_p20": 0.04800180810408146,
+    "BERTScore_F1_p20": 0.8792710542678833,
+    "CLIP_cosine_similarity_p20": 0.20477341413497924
+  },
+  "risk_signal_counts": {
+    "0": 56,
+    "1": 33,
+    "2": 6,
+    "3": 5
+  },
+  "samples_with_two_or_more_low_score_signals": 11,
+  "mean": {
+    "BLEU_4": 0.15289963825381545,
+    "BERTScore_F1": 0.900783069729805,
+    "CLIP_cosine_similarity": 0.2496708984673023
+  },
+  "median": {
+    "BLEU_4": 0.07583235673413397,
+    "BERTScore_F1": 0.9013418257236481,
+    "CLIP_cosine_similarity": 0.25147588551044464
+  },
+  "lowest_clip_similarity_examples": [
+    {
+      "image": "000000051326.jpg",
+      "generated_caption": "a red fire hydrant sitting in a green grass",
+      "CLIP_cosine_similarity": 0.14158515632152557,
+      "BLEU_4": 0.027155616465759737,
+      "BERTScore_F1": 0.8429744243621826
+    },
+    {
+      "image": "000000012748.jpg",
+      "generated_caption": "a man is standing in a field of grass",
+      "CLIP_cosine_similarity": 0.1553710550069809,
+      "BLEU_4": 0.06030725360407769,
+      "BERTScore_F1": 0.9014177322387695
+    },
+    {
+      "image": "000000046872.jpg",
+      "generated_caption": "a man standing next to a white fence",
+      "CLIP_cosine_similarity": 0.16678889095783234,
+      "BLEU_4": 0.6803749333171202,
+      "BERTScore_F1": 0.9351904988288879
+    },
+    {
+      "image": "000000044652.jpg",
+      "generated_caption": "a person on a surfboard riding a wave",
+      "CLIP_cosine_similarity": 0.16763918101787567,
+      "BLEU_4": 0.02777619034011792,
+      "BERTScore_F1": 0.8638926148414612
+    },
+    {
+      "image": "000000015597.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "CLIP_cosine_similarity": 0.17244595289230347,
+      "BLEU_4": 0.07583235673413397,
+      "BERTScore_F1": 0.8717702627182007
+    },
+    {
+      "image": "000000055150.jpg",
+      "generated_caption": "a man sitting on a motorcycle with a dog in the background",
+      "CLIP_cosine_similarity": 0.17340612411499023,
+      "BLEU_4": 0.04740604259878138,
+      "BERTScore_F1": 0.8665672540664673
+    },
+    {
+      "image": "000000006894.jpg",
+      "generated_caption": "a man standing next to a man holding a surfboard",
+      "CLIP_cosine_similarity": 0.17486590147018433,
+      "BLEU_4": 0.04802616576551228,
+      "BERTScore_F1": 0.871242880821228
+    },
+    {
+      "image": "000000026941.jpg",
+      "generated_caption": "a bench sitting in front of a brick wall",
+      "CLIP_cosine_similarity": 0.1758880913257599,
+      "BLEU_4": 0.056122223243057295,
+      "BERTScore_F1": 0.8740311861038208
+    },
+    {
+      "image": "000000004134.jpg",
+      "generated_caption": "a man and a woman are standing in a kitchen",
+      "CLIP_cosine_similarity": 0.1785462200641632,
+      "BLEU_4": 0.05307712171072445,
+      "BERTScore_F1": 0.9130880832672119
+    },
+    {
+      "image": "000000045596.jpg",
+      "generated_caption": "a train is coming down the tracks in a wooded area",
+      "CLIP_cosine_similarity": 0.178636834025383,
+      "BLEU_4": 0.026658376817028855,
+      "BERTScore_F1": 0.8763057589530945
+    }
+  ],
+  "highest_risk_examples": [
+    {
+      "image": "000000051326.jpg",
+      "generated_caption": "a red fire hydrant sitting in a green grass",
+      "BLEU_4": 0.027155616465759737,
+      "BERTScore_F1": 0.8429744243621826,
+      "CLIP_cosine_similarity": 0.14158515632152557,
+      "risk_signal_count": 3,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000044652.jpg",
+      "generated_caption": "a person on a surfboard riding a wave",
+      "BLEU_4": 0.02777619034011792,
+      "BERTScore_F1": 0.8638926148414612,
+      "CLIP_cosine_similarity": 0.16763918101787567,
+      "risk_signal_count": 3,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000055150.jpg",
+      "generated_caption": "a man sitting on a motorcycle with a dog in the background",
+      "BLEU_4": 0.04740604259878138,
+      "BERTScore_F1": 0.8665672540664673,
+      "CLIP_cosine_similarity": 0.17340612411499023,
+      "risk_signal_count": 3,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000045596.jpg",
+      "generated_caption": "a train is coming down the tracks in a wooded area",
+      "BLEU_4": 0.026658376817028855,
+      "BERTScore_F1": 0.8763057589530945,
+      "CLIP_cosine_similarity": 0.178636834025383,
+      "risk_signal_count": 3,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000032901.jpg",
+      "generated_caption": "a man in a suit and tie standing in a kitchen",
+      "BLEU_4": 0.026658376817028855,
+      "BERTScore_F1": 0.8640427589416504,
+      "CLIP_cosine_similarity": 0.20009751617908478,
+      "risk_signal_count": 3,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000015597.jpg",
+      "generated_caption": "a man sitting on a bench reading a book",
+      "BLEU_4": 0.07583235673413397,
+      "BERTScore_F1": 0.8717702627182007,
+      "CLIP_cosine_similarity": 0.17244595289230347,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000006894.jpg",
+      "generated_caption": "a man standing next to a man holding a surfboard",
+      "BLEU_4": 0.04802616576551228,
+      "BERTScore_F1": 0.871242880821228,
+      "CLIP_cosine_similarity": 0.17486590147018433,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000026941.jpg",
+      "generated_caption": "a bench sitting in front of a brick wall",
+      "BLEU_4": 0.056122223243057295,
+      "BERTScore_F1": 0.8740311861038208,
+      "CLIP_cosine_similarity": 0.1758880913257599,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000050679.jpg",
+      "generated_caption": "a bird is standing on the sand near a tree",
+      "BLEU_4": 0.05873949094699214,
+      "BERTScore_F1": 0.8697450757026672,
+      "CLIP_cosine_similarity": 0.1850612759590149,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000008844.jpg",
+      "generated_caption": "a bunch of different fruits in a produce",
+      "BLEU_4": 0.02846946938149362,
+      "BERTScore_F1": 0.8704386949539185,
+      "CLIP_cosine_similarity": 0.20479387044906616,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000006213.jpg",
+      "generated_caption": "a white sink sitting under a white sink",
+      "BLEU_4": 0.02846946938149362,
+      "BERTScore_F1": 0.870592474937439,
+      "CLIP_cosine_similarity": 0.25674673914909363,
+      "risk_signal_count": 2,
+      "automatic_risk_flag": true
+    },
+    {
+      "image": "000000012748.jpg",
+      "generated_caption": "a man is standing in a field of grass",
+      "BLEU_4": 0.06030725360407769,
+      "BERTScore_F1": 0.9014177322387695,
+      "CLIP_cosine_similarity": 0.1553710550069809,
+      "risk_signal_count": 1,
+      "automatic_risk_flag": false
+    },
+    {
+      "image": "000000046872.jpg",
+      "generated_caption": "a man standing next to a white fence",
+      "BLEU_4": 0.6803749333171202,
+      "BERTScore_F1": 0.9351904988288879,
+      "CLIP_cosine_similarity": 0.16678889095783234,
+      "risk_signal_count": 1,
+      "automatic_risk_flag": false
+    },
+    {
+      "image": "000000004134.jpg",
+      "generated_caption": "a man and a woman are standing in a kitchen",
+      "BLEU_4": 0.05307712171072445,
+      "BERTScore_F1": 0.9130880832672119,
+      "CLIP_cosine_similarity": 0.1785462200641632,
+      "risk_signal_count": 1,
+      "automatic_risk_flag": false
+    },
+    {
+      "image": "000000060835.jpg",
+      "generated_caption": "a giraffe standing next to a tree in a field",
+      "BLEU_4": 0.05307712171072445,
+      "BERTScore_F1": 0.8926298022270203,
+      "CLIP_cosine_similarity": 0.19091281294822693,
+      "risk_signal_count": 1,
+      "automatic_risk_flag": false
+    }
+  ],
+  "missing_images": [],
+  "missing_existing_metrics": []
+}

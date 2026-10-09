@@ -1,0 +1,702 @@
+[
+  {
+    "image_id": 10363,
+    "file_name": "000000010363.jpg",
+    "generated_caption": "a cat is sitting on a bench in a bathroom .",
+    "batch_elapsed_sec": 0.22394410200013226,
+    "approx_image_inference_sec": 0.04478882040002645
+  },
+  {
+    "image_id": 17178,
+    "file_name": "000000017178.jpg",
+    "generated_caption": "a horse drawn carriage is walking in the woods .",
+    "batch_elapsed_sec": 0.22394410200013226,
+    "approx_image_inference_sec": 0.04478882040002645
+  },
+  {
+    "image_id": 507975,
+    "file_name": "000000507975.jpg",
+    "generated_caption": "a man riding a horse in a field .",
+    "batch_elapsed_sec": 0.22394410200013226,
+    "approx_image_inference_sec": 0.04478882040002645
+  },
+  {
+    "image_id": 314177,
+    "file_name": "000000314177.jpg",
+    "generated_caption": "a woman in a suit and a tie .",
+    "batch_elapsed_sec": 0.22394410200013226,
+    "approx_image_inference_sec": 0.04478882040002645
+  },
+  {
+    "image_id": 313182,
+    "file_name": "000000313182.jpg",
+    "generated_caption": "a bus is parked on the side of a road .",
+    "batch_elapsed_sec": 0.22394410200013226,
+    "approx_image_inference_sec": 0.04478882040002645
+  },
+  {
+    "image_id": 538364,
+    "file_name": "000000538364.jpg",
+    "generated_caption": "a man on a motorcycle with a backpack on it .",
+    "batch_elapsed_sec": 0.006748983000306907,
+    "approx_image_inference_sec": 0.0013497966000613816
+  },
+  {
+    "image_id": 149406,
+    "file_name": "000000149406.jpg",
+    "generated_caption": "a motorcycle parked next to a building with a large clock on it .",
+    "batch_elapsed_sec": 0.006748983000306907,
+    "approx_image_inference_sec": 0.0013497966000613816
+  },
+  {
+    "image_id": 180383,
+    "file_name": "000000180383.jpg",
+    "generated_caption": "a teddy bear is sitting on a bench in a room .",
+    "batch_elapsed_sec": 0.006748983000306907,
+    "approx_image_inference_sec": 0.0013497966000613816
+  },
+  {
+    "image_id": 402433,
+    "file_name": "000000402433.jpg",
+    "generated_caption": "a person holding a hot dog on a white plate .",
+    "batch_elapsed_sec": 0.006748983000306907,
+    "approx_image_inference_sec": 0.0013497966000613816
+  },
+  {
+    "image_id": 449996,
+    "file_name": "000000449996.jpg",
+    "generated_caption": "a large passenger jet with a plane on the runway .",
+    "batch_elapsed_sec": 0.006748983000306907,
+    "approx_image_inference_sec": 0.0013497966000613816
+  },
+  {
+    "image_id": 168619,
+    "file_name": "000000168619.jpg",
+    "generated_caption": "a city street with a large tower and a clock tower .",
+    "batch_elapsed_sec": 0.006579504999990604,
+    "approx_image_inference_sec": 0.0013159009999981208
+  },
+  {
+    "image_id": 209613,
+    "file_name": "000000209613.jpg",
+    "generated_caption": "a herd of sheep standing in a field .",
+    "batch_elapsed_sec": 0.006579504999990604,
+    "approx_image_inference_sec": 0.0013159009999981208
+  },
+  {
+    "image_id": 103548,
+    "file_name": "000000103548.jpg",
+    "generated_caption": "a herd of sheep standing in a field .",
+    "batch_elapsed_sec": 0.006579504999990604,
+    "approx_image_inference_sec": 0.0013159009999981208
+  },
+  {
+    "image_id": 469652,
+    "file_name": "000000469652.jpg",
+    "generated_caption": "a giraffe standing in a field with a green grass .",
+    "batch_elapsed_sec": 0.006579504999990604,
+    "approx_image_inference_sec": 0.0013159009999981208
+  },
+  {
+    "image_id": 15338,
+    "file_name": "000000015338.jpg",
+    "generated_caption": "a bus is parked on the side of a road .",
+    "batch_elapsed_sec": 0.006579504999990604,
+    "approx_image_inference_sec": 0.0013159009999981208
+  },
+  {
+    "image_id": 512564,
+    "file_name": "000000512564.jpg",
+    "generated_caption": "a city street with a street sign and a sign on it .",
+    "batch_elapsed_sec": 0.012313683000229503,
+    "approx_image_inference_sec": 0.0024627366000459006
+  },
+  {
+    "image_id": 336658,
+    "file_name": "000000336658.jpg",
+    "generated_caption": "a city street with a large tower with a clock tower .",
+    "batch_elapsed_sec": 0.012313683000229503,
+    "approx_image_inference_sec": 0.0024627366000459006
+  },
+  {
+    "image_id": 568439,
+    "file_name": "000000568439.jpg",
+    "generated_caption": "a man on a city street with a large passenger train .",
+    "batch_elapsed_sec": 0.012313683000229503,
+    "approx_image_inference_sec": 0.0024627366000459006
+  },
+  {
+    "image_id": 372317,
+    "file_name": "000000372317.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a bus stop .",
+    "batch_elapsed_sec": 0.012313683000229503,
+    "approx_image_inference_sec": 0.0024627366000459006
+  },
+  {
+    "image_id": 476704,
+    "file_name": "000000476704.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a bus stop .",
+    "batch_elapsed_sec": 0.012313683000229503,
+    "approx_image_inference_sec": 0.0024627366000459006
+  },
+  {
+    "image_id": 260266,
+    "file_name": "000000260266.jpg",
+    "generated_caption": "a street sign with a sign on it .",
+    "batch_elapsed_sec": 0.007920377000118606,
+    "approx_image_inference_sec": 0.001584075400023721
+  },
+  {
+    "image_id": 106048,
+    "file_name": "000000106048.jpg",
+    "generated_caption": "a bus is parked on the side of a road .",
+    "batch_elapsed_sec": 0.007920377000118606,
+    "approx_image_inference_sec": 0.001584075400023721
+  },
+  {
+    "image_id": 177893,
+    "file_name": "000000177893.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a bus stop .",
+    "batch_elapsed_sec": 0.007920377000118606,
+    "approx_image_inference_sec": 0.001584075400023721
+  },
+  {
+    "image_id": 479099,
+    "file_name": "000000479099.jpg",
+    "generated_caption": "a large white and green tree in a field .",
+    "batch_elapsed_sec": 0.007920377000118606,
+    "approx_image_inference_sec": 0.001584075400023721
+  },
+  {
+    "image_id": 269196,
+    "file_name": "000000269196.jpg",
+    "generated_caption": "a herd of sheep standing in a field .",
+    "batch_elapsed_sec": 0.007920377000118606,
+    "approx_image_inference_sec": 0.001584075400023721
+  },
+  {
+    "image_id": 315450,
+    "file_name": "000000315450.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a city street .",
+    "batch_elapsed_sec": 0.006819207999797072,
+    "approx_image_inference_sec": 0.0013638415999594144
+  },
+  {
+    "image_id": 171050,
+    "file_name": "000000171050.jpg",
+    "generated_caption": "a fire hydrant on a sidewalk near a street .",
+    "batch_elapsed_sec": 0.006819207999797072,
+    "approx_image_inference_sec": 0.0013638415999594144
+  },
+  {
+    "image_id": 243867,
+    "file_name": "000000243867.jpg",
+    "generated_caption": "a bus is parked on the side of a road .",
+    "batch_elapsed_sec": 0.006819207999797072,
+    "approx_image_inference_sec": 0.0013638415999594144
+  },
+  {
+    "image_id": 263594,
+    "file_name": "000000263594.jpg",
+    "generated_caption": "a red fire hydrant sitting on the side of a road .",
+    "batch_elapsed_sec": 0.006819207999797072,
+    "approx_image_inference_sec": 0.0013638415999594144
+  },
+  {
+    "image_id": 147725,
+    "file_name": "000000147725.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a bus stop .",
+    "batch_elapsed_sec": 0.006819207999797072,
+    "approx_image_inference_sec": 0.0013638415999594144
+  },
+  {
+    "image_id": 88432,
+    "file_name": "000000088432.jpg",
+    "generated_caption": "a street sign with a sign on it .",
+    "batch_elapsed_sec": 0.009090139999898383,
+    "approx_image_inference_sec": 0.0018180279999796766
+  },
+  {
+    "image_id": 272364,
+    "file_name": "000000272364.jpg",
+    "generated_caption": "two giraffes are standing in the woods .",
+    "batch_elapsed_sec": 0.009090139999898383,
+    "approx_image_inference_sec": 0.0018180279999796766
+  },
+  {
+    "image_id": 138979,
+    "file_name": "000000138979.jpg",
+    "generated_caption": "a bus stopped at a bus stop with a large crowd of people .",
+    "batch_elapsed_sec": 0.009090139999898383,
+    "approx_image_inference_sec": 0.0018180279999796766
+  },
+  {
+    "image_id": 519491,
+    "file_name": "000000519491.jpg",
+    "generated_caption": "a large clock tower with a clock tower .",
+    "batch_elapsed_sec": 0.009090139999898383,
+    "approx_image_inference_sec": 0.0018180279999796766
+  },
+  {
+    "image_id": 100283,
+    "file_name": "000000100283.jpg",
+    "generated_caption": "a stop sign with a sign on it .",
+    "batch_elapsed_sec": 0.009090139999898383,
+    "approx_image_inference_sec": 0.0018180279999796766
+  },
+  {
+    "image_id": 563653,
+    "file_name": "000000563653.jpg",
+    "generated_caption": "a street sign with a lot of cars and a sign .",
+    "batch_elapsed_sec": 0.0060643320002782275,
+    "approx_image_inference_sec": 0.0012128664000556455
+  },
+  {
+    "image_id": 345361,
+    "file_name": "000000345361.jpg",
+    "generated_caption": "a group of children are standing in a kitchen .",
+    "batch_elapsed_sec": 0.0060643320002782275,
+    "approx_image_inference_sec": 0.0012128664000556455
+  },
+  {
+    "image_id": 113051,
+    "file_name": "000000113051.jpg",
+    "generated_caption": "a large boat sitting on top of a beach .",
+    "batch_elapsed_sec": 0.0060643320002782275,
+    "approx_image_inference_sec": 0.0012128664000556455
+  },
+  {
+    "image_id": 286708,
+    "file_name": "000000286708.jpg",
+    "generated_caption": "a cat laying on a bench in a room .",
+    "batch_elapsed_sec": 0.0060643320002782275,
+    "approx_image_inference_sec": 0.0012128664000556455
+  },
+  {
+    "image_id": 475732,
+    "file_name": "000000475732.jpg",
+    "generated_caption": "a cat is sitting on a bench in front of a laptop .",
+    "batch_elapsed_sec": 0.0060643320002782275,
+    "approx_image_inference_sec": 0.0012128664000556455
+  },
+  {
+    "image_id": 108244,
+    "file_name": "000000108244.jpg",
+    "generated_caption": "a cat sitting on top of a wooden bench .",
+    "batch_elapsed_sec": 0.0075313180000193825,
+    "approx_image_inference_sec": 0.0015062636000038765
+  },
+  {
+    "image_id": 121153,
+    "file_name": "000000121153.jpg",
+    "generated_caption": "a street sign with a sign on it .",
+    "batch_elapsed_sec": 0.0075313180000193825,
+    "approx_image_inference_sec": 0.0015062636000038765
+  },
+  {
+    "image_id": 23230,
+    "file_name": "000000023230.jpg",
+    "generated_caption": "a group of birds are standing in the woods .",
+    "batch_elapsed_sec": 0.0075313180000193825,
+    "approx_image_inference_sec": 0.0015062636000038765
+  },
+  {
+    "image_id": 73702,
+    "file_name": "000000073702.jpg",
+    "generated_caption": "a man and a woman in a suit and a tie .",
+    "batch_elapsed_sec": 0.0075313180000193825,
+    "approx_image_inference_sec": 0.0015062636000038765
+  },
+  {
+    "image_id": 86483,
+    "file_name": "000000086483.jpg",
+    "generated_caption": "a stop sign with a sign on it .",
+    "batch_elapsed_sec": 0.0075313180000193825,
+    "approx_image_inference_sec": 0.0015062636000038765
+  },
+  {
+    "image_id": 521141,
+    "file_name": "000000521141.jpg",
+    "generated_caption": "a man walking down a street with a street sign .",
+    "batch_elapsed_sec": 0.007171401000050537,
+    "approx_image_inference_sec": 0.0014342802000101075
+  },
+  {
+    "image_id": 61268,
+    "file_name": "000000061268.jpg",
+    "generated_caption": "a train is parked on the tracks near a train station .",
+    "batch_elapsed_sec": 0.007171401000050537,
+    "approx_image_inference_sec": 0.0014342802000101075
+  },
+  {
+    "image_id": 393093,
+    "file_name": "000000393093.jpg",
+    "generated_caption": "a train is parked on the tracks near a train station .",
+    "batch_elapsed_sec": 0.007171401000050537,
+    "approx_image_inference_sec": 0.0014342802000101075
+  },
+  {
+    "image_id": 493566,
+    "file_name": "000000493566.jpg",
+    "generated_caption": "a train is parked on the tracks near a train station .",
+    "batch_elapsed_sec": 0.007171401000050537,
+    "approx_image_inference_sec": 0.0014342802000101075
+  },
+  {
+    "image_id": 191471,
+    "file_name": "000000191471.jpg",
+    "generated_caption": "a stop sign with a sign on it .",
+    "batch_elapsed_sec": 0.007171401000050537,
+    "approx_image_inference_sec": 0.0014342802000101075
+  },
+  {
+    "image_id": 11122,
+    "file_name": "000000011122.jpg",
+    "generated_caption": "a stop sign with a sign on it .",
+    "batch_elapsed_sec": 0.0058638860000428394,
+    "approx_image_inference_sec": 0.001172777200008568
+  },
+  {
+    "image_id": 198510,
+    "file_name": "000000198510.jpg",
+    "generated_caption": "a man is standing on a train track with a train .",
+    "batch_elapsed_sec": 0.0058638860000428394,
+    "approx_image_inference_sec": 0.001172777200008568
+  },
+  {
+    "image_id": 126592,
+    "file_name": "000000126592.jpg",
+    "generated_caption": "a stop sign with a sign on it ' s side .",
+    "batch_elapsed_sec": 0.0058638860000428394,
+    "approx_image_inference_sec": 0.001172777200008568
+  },
+  {
+    "image_id": 416269,
+    "file_name": "000000416269.jpg",
+    "generated_caption": "a train is parked on the tracks near a train station .",
+    "batch_elapsed_sec": 0.0058638860000428394,
+    "approx_image_inference_sec": 0.001172777200008568
+  },
+  {
+    "image_id": 133567,
+    "file_name": "000000133567.jpg",
+    "generated_caption": "a train is parked on the tracks near a train station .",
+    "batch_elapsed_sec": 0.0058638860000428394,
+    "approx_image_inference_sec": 0.001172777200008568
+  },
+  {
+    "image_id": 521052,
+    "file_name": "000000521052.jpg",
+    "generated_caption": "a large truck with a large white and blue sky .",
+    "batch_elapsed_sec": 0.007114938000086113,
+    "approx_image_inference_sec": 0.0014229876000172227
+  },
+  {
+    "image_id": 332318,
+    "file_name": "000000332318.jpg",
+    "generated_caption": "a large white and white boat with a green and green grass .",
+    "batch_elapsed_sec": 0.007114938000086113,
+    "approx_image_inference_sec": 0.0014229876000172227
+  },
+  {
+    "image_id": 186296,
+    "file_name": "000000186296.jpg",
+    "generated_caption": "a cat laying on a couch with a remote control .",
+    "batch_elapsed_sec": 0.007114938000086113,
+    "approx_image_inference_sec": 0.0014229876000172227
+  },
+  {
+    "image_id": 415990,
+    "file_name": "000000415990.jpg",
+    "generated_caption": "a herd of sheep standing in a field .",
+    "batch_elapsed_sec": 0.007114938000086113,
+    "approx_image_inference_sec": 0.0014229876000172227
+  },
+  {
+    "image_id": 187236,
+    "file_name": "000000187236.jpg",
+    "generated_caption": "a cat laying on a bed with a remote control .",
+    "batch_elapsed_sec": 0.007114938000086113,
+    "approx_image_inference_sec": 0.0014229876000172227
+  },
+  {
+    "image_id": 271728,
+    "file_name": "000000271728.jpg",
+    "generated_caption": "a cat laying on a desk with a laptop computer .",
+    "batch_elapsed_sec": 0.006610258000364411,
+    "approx_image_inference_sec": 0.001322051600072882
+  },
+  {
+    "image_id": 460147,
+    "file_name": "000000460147.jpg",
+    "generated_caption": "a city street with a lot of cars and cars",
+    "batch_elapsed_sec": 0.006610258000364411,
+    "approx_image_inference_sec": 0.001322051600072882
+  },
+  {
+    "image_id": 200667,
+    "file_name": "000000200667.jpg",
+    "generated_caption": "a large white cow sitting in a field .",
+    "batch_elapsed_sec": 0.006610258000364411,
+    "approx_image_inference_sec": 0.001322051600072882
+  },
+  {
+    "image_id": 77595,
+    "file_name": "000000077595.jpg",
+    "generated_caption": "a cat laying on a couch with a laptop computer .",
+    "batch_elapsed_sec": 0.006610258000364411,
+    "approx_image_inference_sec": 0.001322051600072882
+  },
+  {
+    "image_id": 278463,
+    "file_name": "000000278463.jpg",
+    "generated_caption": "a laptop computer sitting on top of a desk .",
+    "batch_elapsed_sec": 0.006610258000364411,
+    "approx_image_inference_sec": 0.001322051600072882
+  },
+  {
+    "image_id": 190140,
+    "file_name": "000000190140.jpg",
+    "generated_caption": "a man sitting on a bench with a dog on a beach .",
+    "batch_elapsed_sec": 0.0066577380002854625,
+    "approx_image_inference_sec": 0.0013315476000570925
+  },
+  {
+    "image_id": 476810,
+    "file_name": "000000476810.jpg",
+    "generated_caption": "a cat laying on a couch with a laptop .",
+    "batch_elapsed_sec": 0.0066577380002854625,
+    "approx_image_inference_sec": 0.0013315476000570925
+  },
+  {
+    "image_id": 540280,
+    "file_name": "000000540280.jpg",
+    "generated_caption": "a fire hydrant on a street with a light on it .",
+    "batch_elapsed_sec": 0.0066577380002854625,
+    "approx_image_inference_sec": 0.0013315476000570925
+  },
+  {
+    "image_id": 126216,
+    "file_name": "000000126216.jpg",
+    "generated_caption": "a herd of zebra standing in a field .",
+    "batch_elapsed_sec": 0.0066577380002854625,
+    "approx_image_inference_sec": 0.0013315476000570925
+  },
+  {
+    "image_id": 32901,
+    "file_name": "000000032901.jpg",
+    "generated_caption": "a group of people are sitting at a table with a remote control .",
+    "batch_elapsed_sec": 0.0066577380002854625,
+    "approx_image_inference_sec": 0.0013315476000570925
+  },
+  {
+    "image_id": 407960,
+    "file_name": "000000407960.jpg",
+    "generated_caption": "a cat sitting on top of a wooden floor .",
+    "batch_elapsed_sec": 0.005706603999897197,
+    "approx_image_inference_sec": 0.0011413207999794394
+  },
+  {
+    "image_id": 84270,
+    "file_name": "000000084270.jpg",
+    "generated_caption": "a large group of people standing around a large building .",
+    "batch_elapsed_sec": 0.005706603999897197,
+    "approx_image_inference_sec": 0.0011413207999794394
+  },
+  {
+    "image_id": 267191,
+    "file_name": "000000267191.jpg",
+    "generated_caption": "a giraffe standing in a field with a large elephant .",
+    "batch_elapsed_sec": 0.005706603999897197,
+    "approx_image_inference_sec": 0.0011413207999794394
+  },
+  {
+    "image_id": 422836,
+    "file_name": "000000422836.jpg",
+    "generated_caption": "a man sitting on a bench in a park .",
+    "batch_elapsed_sec": 0.005706603999897197,
+    "approx_image_inference_sec": 0.0011413207999794394
+  },
+  {
+    "image_id": 493613,
+    "file_name": "000000493613.jpg",
+    "generated_caption": "a couple of people are riding a skateboard .",
+    "batch_elapsed_sec": 0.005706603999897197,
+    "approx_image_inference_sec": 0.0011413207999794394
+  },
+  {
+    "image_id": 217948,
+    "file_name": "000000217948.jpg",
+    "generated_caption": "a bear is standing in the woods with a frisbee .",
+    "batch_elapsed_sec": 0.006588106999970478,
+    "approx_image_inference_sec": 0.0013176213999940955
+  },
+  {
+    "image_id": 317024,
+    "file_name": "000000317024.jpg",
+    "generated_caption": "a zebra standing in a field with a green grass .",
+    "batch_elapsed_sec": 0.006588106999970478,
+    "approx_image_inference_sec": 0.0013176213999940955
+  },
+  {
+    "image_id": 463522,
+    "file_name": "000000463522.jpg",
+    "generated_caption": "a horse drawn carriage is walking down the street .",
+    "batch_elapsed_sec": 0.006588106999970478,
+    "approx_image_inference_sec": 0.0013176213999940955
+  },
+  {
+    "image_id": 213547,
+    "file_name": "000000213547.jpg",
+    "generated_caption": "a woman holding a cell phone in a red park .",
+    "batch_elapsed_sec": 0.006588106999970478,
+    "approx_image_inference_sec": 0.0013176213999940955
+  },
+  {
+    "image_id": 456015,
+    "file_name": "000000456015.jpg",
+    "generated_caption": "a group of people riding horses on a beach .",
+    "batch_elapsed_sec": 0.006588106999970478,
+    "approx_image_inference_sec": 0.0013176213999940955
+  },
+  {
+    "image_id": 547886,
+    "file_name": "000000547886.jpg",
+    "generated_caption": "a group of people riding horses on a beach .",
+    "batch_elapsed_sec": 0.006291159999818774,
+    "approx_image_inference_sec": 0.0012582319999637549
+  },
+  {
+    "image_id": 124975,
+    "file_name": "000000124975.jpg",
+    "generated_caption": "a zebra standing in a field with a green grass .",
+    "batch_elapsed_sec": 0.006291159999818774,
+    "approx_image_inference_sec": 0.0012582319999637549
+  },
+  {
+    "image_id": 378453,
+    "file_name": "000000378453.jpg",
+    "generated_caption": "a group of zebras standing in a field .",
+    "batch_elapsed_sec": 0.006291159999818774,
+    "approx_image_inference_sec": 0.0012582319999637549
+  },
+  {
+    "image_id": 69356,
+    "file_name": "000000069356.jpg",
+    "generated_caption": "a man sitting on a bench in a garage .",
+    "batch_elapsed_sec": 0.006291159999818774,
+    "approx_image_inference_sec": 0.0012582319999637549
+  },
+  {
+    "image_id": 162415,
+    "file_name": "000000162415.jpg",
+    "generated_caption": "a young boy holding a baseball bat on a field .",
+    "batch_elapsed_sec": 0.006291159999818774,
+    "approx_image_inference_sec": 0.0012582319999637549
+  },
+  {
+    "image_id": 274708,
+    "file_name": "000000274708.jpg",
+    "generated_caption": "a group of people on a ski lift at a ski lift",
+    "batch_elapsed_sec": 0.006055832999663835,
+    "approx_image_inference_sec": 0.001211166599932767
+  },
+  {
+    "image_id": 377113,
+    "file_name": "000000377113.jpg",
+    "generated_caption": "a man riding a skateboard down a snowy hill .",
+    "batch_elapsed_sec": 0.006055832999663835,
+    "approx_image_inference_sec": 0.001211166599932767
+  },
+  {
+    "image_id": 79651,
+    "file_name": "000000079651.jpg",
+    "generated_caption": "a bunch of doughnuts are sitting on a table .",
+    "batch_elapsed_sec": 0.006055832999663835,
+    "approx_image_inference_sec": 0.001211166599932767
+  },
+  {
+    "image_id": 104669,
+    "file_name": "000000104669.jpg",
+    "generated_caption": "a plate of food with a spoon on it .",
+    "batch_elapsed_sec": 0.006055832999663835,
+    "approx_image_inference_sec": 0.001211166599932767
+  },
+  {
+    "image_id": 439994,
+    "file_name": "000000439994.jpg",
+    "generated_caption": "a baseball player holding a bat on a field .",
+    "batch_elapsed_sec": 0.006055832999663835,
+    "approx_image_inference_sec": 0.001211166599932767
+  },
+  {
+    "image_id": 430377,
+    "file_name": "000000430377.jpg",
+    "generated_caption": "a woman in a red jacket is skiing down a snow covered slope .",
+    "batch_elapsed_sec": 0.007720436999989033,
+    "approx_image_inference_sec": 0.0015440873999978066
+  },
+  {
+    "image_id": 512776,
+    "file_name": "000000512776.jpg",
+    "generated_caption": "a baseball player holding a bat on a field .",
+    "batch_elapsed_sec": 0.007720436999989033,
+    "approx_image_inference_sec": 0.0015440873999978066
+  },
+  {
+    "image_id": 95155,
+    "file_name": "000000095155.jpg",
+    "generated_caption": "a person on a snowboard on a snowy hill",
+    "batch_elapsed_sec": 0.007720436999989033,
+    "approx_image_inference_sec": 0.0015440873999978066
+  },
+  {
+    "image_id": 184978,
+    "file_name": "000000184978.jpg",
+    "generated_caption": "a person on a snowboard on a snowy hill",
+    "batch_elapsed_sec": 0.007720436999989033,
+    "approx_image_inference_sec": 0.0015440873999978066
+  },
+  {
+    "image_id": 199055,
+    "file_name": "000000199055.jpg",
+    "generated_caption": "a man on a skateboard with a skateboard .",
+    "batch_elapsed_sec": 0.007720436999989033,
+    "approx_image_inference_sec": 0.0015440873999978066
+  },
+  {
+    "image_id": 431848,
+    "file_name": "000000431848.jpg",
+    "generated_caption": "a man riding a skateboard down a street .",
+    "batch_elapsed_sec": 0.005962501000340126,
+    "approx_image_inference_sec": 0.001192500200068025
+  },
+  {
+    "image_id": 333772,
+    "file_name": "000000333772.jpg",
+    "generated_caption": "a cat laying on a desk with a laptop computer .",
+    "batch_elapsed_sec": 0.005962501000340126,
+    "approx_image_inference_sec": 0.001192500200068025
+  },
+  {
+    "image_id": 128699,
+    "file_name": "000000128699.jpg",
+    "generated_caption": "a man doing a trick on a skateboard .",
+    "batch_elapsed_sec": 0.005962501000340126,
+    "approx_image_inference_sec": 0.001192500200068025
+  },
+  {
+    "image_id": 121591,
+    "file_name": "000000121591.jpg",
+    "generated_caption": "a person on a skateboard on a skateboard .",
+    "batch_elapsed_sec": 0.005962501000340126,
+    "approx_image_inference_sec": 0.001192500200068025
+  },
+  {
+    "image_id": 176799,
+    "file_name": "000000176799.jpg",
+    "generated_caption": "a man doing a trick on a skateboard .",
+    "batch_elapsed_sec": 0.005962501000340126,
+    "approx_image_inference_sec": 0.001192500200068025
+  }
+]

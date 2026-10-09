@@ -1,0 +1,16 @@
+{
+  "experiment": "continuation_v1",
+  "source_checkpoint": "./models/best_caption_model.pth",
+  "source_epoch": 5,
+  "continued_epochs": 5,
+  "learning_rate": 0.0001,
+  "batch_size": 64,
+  "vocabulary_size": 3360,
+  "train_samples": 50031,
+  "val_samples": 5005,
+  "best_val_loss": 2.623136569355632,
+  "best_checkpoint": "./models/experiments/continuation_v1_best.pth",
+  "latest_checkpoint": "./models/experiments/continuation_v1_latest.pth",
+  "total_time_sec": 235.19187259674072,
+  "optimizer_state_resumed": false
+}

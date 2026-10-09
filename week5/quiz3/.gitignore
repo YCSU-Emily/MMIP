@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Runtime logs
+*.log
+
+# Intermediate backup prediction file
+results/clip_lstm_test_captions_20_backup.json
+
+# Smoke-test backup artifacts
+results/smoke_test_backup/
