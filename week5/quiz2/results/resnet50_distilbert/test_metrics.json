@@ -1,0 +1,14 @@
+{
+  "model": "ResNet50 + DistilBERT",
+  "split": "test",
+  "num_samples": 744,
+  "num_classes": 80,
+  "prediction_threshold": 0.5,
+  "test_loss": 0.06140985960761706,
+  "macro_f1": 0.5649059842528965,
+  "micro_f1": 0.6619488296135003,
+  "macro_precision": 0.7803532527532843,
+  "micro_precision": 0.8194070080862533,
+  "macro_recall": 0.4747515080256862,
+  "micro_recall": 0.5552511415525114
+}

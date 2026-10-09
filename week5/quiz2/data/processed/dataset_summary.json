@@ -1,0 +1,75 @@
+{
+  "dataset": "COCO 2017 validation images, internally split for coursework",
+  "seed": 42,
+  "num_images": 4952,
+  "num_classes": 80,
+  "split_sizes": {
+    "train": 3466,
+    "val": 742,
+    "test": 744
+  },
+  "split_proportions": {
+    "train": 0.6999,
+    "val": 0.1498,
+    "test": 0.1502
+  },
+  "num_unique_image_ids": 4952,
+  "num_labels_per_image": {
+    "min": 1,
+    "max": 14,
+    "mean": 2.955
+  },
+  "top_10_label_counts": [
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "image_count": 2693
+    },
+    {
+      "class_id": 56,
+      "class_name": "chair",
+      "image_count": 580
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "image_count": 535
+    },
+    {
+      "class_id": 60,
+      "class_name": "dining table",
+      "image_count": 501
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "image_count": 390
+    },
+    {
+      "class_id": 39,
+      "class_name": "bottle",
+      "image_count": 379
+    },
+    {
+      "class_id": 45,
+      "class_name": "bowl",
+      "image_count": 314
+    },
+    {
+      "class_id": 26,
+      "class_name": "handbag",
+      "image_count": 292
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "image_count": 250
+    },
+    {
+      "class_id": 13,
+      "class_name": "bench",
+      "image_count": 235
+    }
+  ],
+  "note": "Splits are made by image_id. This is a small internal split of COCO val2017, not the official COCO test set."
+}

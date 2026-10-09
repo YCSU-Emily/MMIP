@@ -8,3 +8,6 @@ week3/dataset/wafer/
 
 # Week 3 Quiz 2 model checkpoints
 *.pth
+
+# Week 5 Quiz 2 multimodal dataset (large raw files)
+week5/quiz2/data/raw/

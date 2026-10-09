@@ -1,0 +1,8 @@
+# Versions from the working mmipQuiz environment.
+# Install a PyTorch build compatible with your CUDA/driver separately if needed.
+torch==2.14.1
+torchvision==0.29.1
+transformers==5.19.0
+scikit-learn==1.9.1
+numpy==2.4.6
+Pillow==12.3.0

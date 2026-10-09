@@ -1,0 +1,13 @@
+{
+  "split": "test",
+  "num_samples": 744,
+  "num_classes": 80,
+  "prediction_threshold": 0.5,
+  "test_loss": 0.07247735944486433,
+  "macro_f1": 0.4259765492468137,
+  "micro_f1": 0.570264765784114,
+  "macro_precision": 0.7089543896119261,
+  "micro_precision": 0.7858861267040899,
+  "macro_recall": 0.34243998298185224,
+  "micro_recall": 0.4474885844748858
+}
