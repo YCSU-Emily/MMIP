@@ -1,0 +1,18 @@
+# Dataset images
+data/
+
+# Model checkpoints and serialized feature tensors
+*.pth
+*.pt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc

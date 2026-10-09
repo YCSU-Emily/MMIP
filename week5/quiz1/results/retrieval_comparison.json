@@ -1,0 +1,17 @@
+{
+  "Recall@1": {
+    "baseline": 0.7730000019073486,
+    "triplet": 0.8349999785423279,
+    "delta_percentage_points": 6.199997663497925
+  },
+  "Recall@5": {
+    "baseline": 0.9390000104904175,
+    "triplet": 0.9309999942779541,
+    "delta_percentage_points": -0.8000016212463379
+  },
+  "Recall@10": {
+    "baseline": 0.9779999852180481,
+    "triplet": 0.9589999914169312,
+    "delta_percentage_points": -1.8999993801116943
+  }
+}

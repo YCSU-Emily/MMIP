@@ -1,0 +1,172 @@
+{
+  "airplane": {
+    "HitRate@1": {
+      "baseline": 0.75,
+      "triplet": 0.7599999904632568,
+      "delta_percentage_points": 0.9999990463256836
+    },
+    "HitRate@5": {
+      "baseline": 0.9200000166893005,
+      "triplet": 0.8500000238418579,
+      "delta_percentage_points": -6.999999284744263
+    },
+    "HitRate@10": {
+      "baseline": 0.949999988079071,
+      "triplet": 0.9100000262260437,
+      "delta_percentage_points": -3.9999961853027344
+    }
+  },
+  "automobile": {
+    "HitRate@1": {
+      "baseline": 0.8600000143051147,
+      "triplet": 0.949999988079071,
+      "delta_percentage_points": 8.99999737739563
+    },
+    "HitRate@5": {
+      "baseline": 0.9700000286102295,
+      "triplet": 0.9599999785423279,
+      "delta_percentage_points": -1.0000050067901611
+    },
+    "HitRate@10": {
+      "baseline": 1.0,
+      "triplet": 0.9800000190734863,
+      "delta_percentage_points": -1.9999980926513672
+    }
+  },
+  "bird": {
+    "HitRate@1": {
+      "baseline": 0.6399999856948853,
+      "triplet": 0.800000011920929,
+      "delta_percentage_points": 16.00000262260437
+    },
+    "HitRate@5": {
+      "baseline": 0.8700000047683716,
+      "triplet": 0.8999999761581421,
+      "delta_percentage_points": 2.999997138977051
+    },
+    "HitRate@10": {
+      "baseline": 0.9800000190734863,
+      "triplet": 0.9300000071525574,
+      "delta_percentage_points": -5.0000011920928955
+    }
+  },
+  "cat": {
+    "HitRate@1": {
+      "baseline": 0.6200000047683716,
+      "triplet": 0.6200000047683716,
+      "delta_percentage_points": 0.0
+    },
+    "HitRate@5": {
+      "baseline": 0.8999999761581421,
+      "triplet": 0.8700000047683716,
+      "delta_percentage_points": -2.999997138977051
+    },
+    "HitRate@10": {
+      "baseline": 0.9700000286102295,
+      "triplet": 0.9200000166893005,
+      "delta_percentage_points": -5.0000011920928955
+    }
+  },
+  "deer": {
+    "HitRate@1": {
+      "baseline": 0.6700000166893005,
+      "triplet": 0.7200000286102295,
+      "delta_percentage_points": 5.0000011920928955
+    },
+    "HitRate@5": {
+      "baseline": 0.9100000262260437,
+      "triplet": 0.8700000047683716,
+      "delta_percentage_points": -4.000002145767212
+    },
+    "HitRate@10": {
+      "baseline": 0.9800000190734863,
+      "triplet": 0.9300000071525574,
+      "delta_percentage_points": -5.0000011920928955
+    }
+  },
+  "dog": {
+    "HitRate@1": {
+      "baseline": 0.75,
+      "triplet": 0.8100000023841858,
+      "delta_percentage_points": 6.000000238418579
+    },
+    "HitRate@5": {
+      "baseline": 0.9300000071525574,
+      "triplet": 0.9700000286102295,
+      "delta_percentage_points": 4.000002145767212
+    },
+    "HitRate@10": {
+      "baseline": 0.949999988079071,
+      "triplet": 0.9900000095367432,
+      "delta_percentage_points": 4.000002145767212
+    }
+  },
+  "frog": {
+    "HitRate@1": {
+      "baseline": 0.8399999737739563,
+      "triplet": 0.949999988079071,
+      "delta_percentage_points": 11.000001430511475
+    },
+    "HitRate@5": {
+      "baseline": 0.9599999785423279,
+      "triplet": 0.9900000095367432,
+      "delta_percentage_points": 3.0000030994415283
+    },
+    "HitRate@10": {
+      "baseline": 0.9800000190734863,
+      "triplet": 1.0,
+      "delta_percentage_points": 1.9999980926513672
+    }
+  },
+  "horse": {
+    "HitRate@1": {
+      "baseline": 0.8500000238418579,
+      "triplet": 0.8500000238418579,
+      "delta_percentage_points": 0.0
+    },
+    "HitRate@5": {
+      "baseline": 0.9700000286102295,
+      "triplet": 0.9599999785423279,
+      "delta_percentage_points": -1.0000050067901611
+    },
+    "HitRate@10": {
+      "baseline": 0.9900000095367432,
+      "triplet": 0.9700000286102295,
+      "delta_percentage_points": -1.9999980926513672
+    }
+  },
+  "ship": {
+    "HitRate@1": {
+      "baseline": 0.8700000047683716,
+      "triplet": 0.9399999976158142,
+      "delta_percentage_points": 6.999999284744263
+    },
+    "HitRate@5": {
+      "baseline": 0.9700000286102295,
+      "triplet": 0.9700000286102295,
+      "delta_percentage_points": 0.0
+    },
+    "HitRate@10": {
+      "baseline": 0.9900000095367432,
+      "triplet": 0.9800000190734863,
+      "delta_percentage_points": -0.9999990463256836
+    }
+  },
+  "truck": {
+    "HitRate@1": {
+      "baseline": 0.8799999952316284,
+      "triplet": 0.949999988079071,
+      "delta_percentage_points": 6.999999284744263
+    },
+    "HitRate@5": {
+      "baseline": 0.9900000095367432,
+      "triplet": 0.9700000286102295,
+      "delta_percentage_points": -1.9999980926513672
+    },
+    "HitRate@10": {
+      "baseline": 0.9900000095367432,
+      "triplet": 0.9800000190734863,
+      "delta_percentage_points": -0.9999990463256836
+    }
+  }
+}

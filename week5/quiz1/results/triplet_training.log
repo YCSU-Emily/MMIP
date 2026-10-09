@@ -1,0 +1,43 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 5090
+Gallery images: 10000
+Classes: ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+Training images: 9000
+Validation images: 1000
+Epoch 1/5 | Step 20/70 | Loss 0.4243
+Epoch 1/5 | Step 40/70 | Loss 0.4227
+Epoch 1/5 | Step 60/70 | Loss 0.4164
+
+Epoch 1/5 summary | Train loss: 0.4257 | Validation loss: 0.4107
+
+Saved best checkpoint: /home/emily/MMIP/week5/quiz1/models/resnet18_triplet_best.pth
+Epoch 2/5 | Step 20/70 | Loss 0.3755
+Epoch 2/5 | Step 40/70 | Loss 0.3888
+Epoch 2/5 | Step 60/70 | Loss 0.3870
+
+Epoch 2/5 summary | Train loss: 0.3834 | Validation loss: 0.4016
+
+Saved best checkpoint: /home/emily/MMIP/week5/quiz1/models/resnet18_triplet_best.pth
+Epoch 3/5 | Step 20/70 | Loss 0.3405
+Epoch 3/5 | Step 40/70 | Loss 0.3565
+Epoch 3/5 | Step 60/70 | Loss 0.3072
+
+Epoch 3/5 summary | Train loss: 0.3425 | Validation loss: 0.4006
+
+Saved best checkpoint: /home/emily/MMIP/week5/quiz1/models/resnet18_triplet_best.pth
+Epoch 4/5 | Step 20/70 | Loss 0.2695
+Epoch 4/5 | Step 40/70 | Loss 0.2801
+Epoch 4/5 | Step 60/70 | Loss 0.2692
+
+Epoch 4/5 summary | Train loss: 0.2840 | Validation loss: 0.4092
+
+Epoch 5/5 | Step 20/70 | Loss 0.2188
+Epoch 5/5 | Step 40/70 | Loss 0.1924
+Epoch 5/5 | Step 60/70 | Loss 0.2214
+
+Epoch 5/5 summary | Train loss: 0.2228 | Validation loss: 0.4303
+
+
+Training completed.
+Best validation loss: 0.40057719871401787
+Checkpoint: /home/emily/MMIP/week5/quiz1/models/resnet18_triplet_best.pth
