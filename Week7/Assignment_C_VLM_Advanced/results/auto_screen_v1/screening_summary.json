@@ -1,0 +1,15 @@
+{
+  "input_file": "results/eval_dpo_lora_v1/paired_manual_audit.csv",
+  "output_csv": "results/auto_screen_v1/automatic_screening.csv",
+  "num_images": 100,
+  "identical_descriptions": 12,
+  "changed_descriptions": 88,
+  "animal_mention_changes": 3,
+  "high_priority_cases": 3,
+  "important_limitations": [
+    "這是關鍵字初篩，不是可靠的幻覺判定器。",
+    "COCO 物件標註可能漏掉影像中實際存在的物體。",
+    "分數只代表人工審查優先度，不代表模型品質。",
+    "最後的品質判斷仍需查看原圖。"
+  ]
+}

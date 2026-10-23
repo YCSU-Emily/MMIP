@@ -1,0 +1,13 @@
+{
+  "num_images": 100,
+  "exactly_identical_predictions": 12,
+  "changed_predictions": 88,
+  "exact_match_rate": 0.12,
+  "changed_rate": 0.88,
+  "baseline_mean_latency_seconds": 0.30241,
+  "dpo_mean_latency_seconds": 0.4861411,
+  "baseline_median_latency_seconds": 0.30205,
+  "dpo_median_latency_seconds": 0.460976,
+  "mean_latency_change_percent": 60.75562977414768,
+  "comparison_csv": "results/eval_dpo_lora_v1/baseline_vs_dpo.csv"
+}

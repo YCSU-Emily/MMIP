@@ -1,0 +1,179 @@
+{
+  "input": "results/auto_screen_v1/manual_review_sample_20_scored.csv",
+  "total_rows": 20,
+  "groups": {
+    "all": {
+      "n": 20,
+      "baseline_groundedness": {
+        "good": 20
+      },
+      "dpo_groundedness": {
+        "good": 19,
+        "minor_issue": 1
+      },
+      "baseline_hallucinated_object": {
+        "yes": 0,
+        "no": 20,
+        "rated": 20
+      },
+      "dpo_hallucinated_object": {
+        "yes": 0,
+        "no": 19,
+        "rated": 19
+      },
+      "baseline_unsupported_action_or_attribute": {
+        "yes": 0,
+        "no": 20,
+        "rated": 20
+      },
+      "dpo_unsupported_action_or_attribute": {
+        "yes": 1,
+        "no": 19,
+        "rated": 20
+      },
+      "baseline_important_object_omitted": {
+        "yes": 0,
+        "no": 20,
+        "rated": 20
+      },
+      "dpo_important_object_omitted": {
+        "yes": 0,
+        "no": 20,
+        "rated": 20
+      },
+      "baseline_severity": {
+        "0": 20
+      },
+      "dpo_severity": {
+        "0": 20
+      },
+      "pairwise_preference": {
+        "baseline": 7,
+        "tie": 13
+      },
+      "paired_groundedness": {
+        "rated_pairs": 20,
+        "dpo_better": 0,
+        "same": 19,
+        "dpo_worse": 1
+      }
+    },
+    "high_priority": {
+      "n": 10,
+      "baseline_groundedness": {
+        "good": 10
+      },
+      "dpo_groundedness": {
+        "good": 9,
+        "minor_issue": 1
+      },
+      "baseline_hallucinated_object": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_hallucinated_object": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "baseline_unsupported_action_or_attribute": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_unsupported_action_or_attribute": {
+        "yes": 1,
+        "no": 9,
+        "rated": 10
+      },
+      "baseline_important_object_omitted": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_important_object_omitted": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "baseline_severity": {
+        "0": 10
+      },
+      "dpo_severity": {
+        "0": 10
+      },
+      "pairwise_preference": {
+        "baseline": 3,
+        "tie": 7
+      },
+      "paired_groundedness": {
+        "rated_pairs": 10,
+        "dpo_better": 0,
+        "same": 9,
+        "dpo_worse": 1
+      }
+    },
+    "random_sample": {
+      "n": 10,
+      "baseline_groundedness": {
+        "good": 10
+      },
+      "dpo_groundedness": {
+        "good": 10
+      },
+      "baseline_hallucinated_object": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_hallucinated_object": {
+        "yes": 0,
+        "no": 9,
+        "rated": 9
+      },
+      "baseline_unsupported_action_or_attribute": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_unsupported_action_or_attribute": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "baseline_important_object_omitted": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "dpo_important_object_omitted": {
+        "yes": 0,
+        "no": 10,
+        "rated": 10
+      },
+      "baseline_severity": {
+        "0": 10
+      },
+      "dpo_severity": {
+        "0": 10
+      },
+      "pairwise_preference": {
+        "tie": 6,
+        "baseline": 4
+      },
+      "paired_groundedness": {
+        "rated_pairs": 10,
+        "dpo_better": 0,
+        "same": 10,
+        "dpo_worse": 0
+      }
+    }
+  },
+  "caveats": [
+    "高優先組是依初篩疑點選出的，不能代表整體資料分布。",
+    "隨機組只有 10 張，結果僅適合探索性分析。",
+    "人工評分結果不等於統計顯著性檢定。",
+    "若只有單人評分，尚未估計評分者間一致性。"
+  ]
+}

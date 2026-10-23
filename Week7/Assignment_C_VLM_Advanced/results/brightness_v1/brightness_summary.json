@@ -1,0 +1,40 @@
+{
+  "experiment": "VLM brightness robustness exploratory evaluation",
+  "base_model": "/home/emily/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "adapter": "/home/emily/MMIP/Week7/Assignment_C_VLM_Advanced/checkpoints/dpo_lora_v1/final_adapter",
+  "image_ids": [
+    270386,
+    47010,
+    229997,
+    64868,
+    132408,
+    52017,
+    8211,
+    2149,
+    4795,
+    7108,
+    528705,
+    159684,
+    76261,
+    257478,
+    556873,
+    30494,
+    180188,
+    434996,
+    55299,
+    463174
+  ],
+  "conditions": {
+    "original": 1.0,
+    "dark_0.5": 0.5,
+    "bright_1.5": 1.5
+  },
+  "num_images": 20,
+  "num_generations": 120,
+  "generation_settings": {
+    "do_sample": false,
+    "max_new_tokens": 80,
+    "prompt": "Describe this image in one concise sentence. Mention only objects and actions supported by the image. Do not guess details that cannot be determined from the image."
+  },
+  "caveat": "Exploratory evaluation only. Different captions do not by themselves prove hallucination or quality improvement."
+}

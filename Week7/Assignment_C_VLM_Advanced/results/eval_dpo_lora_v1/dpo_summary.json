@@ -1,0 +1,19 @@
+{
+  "model": "Qwen2.5-VL-3B-Instruct + DPO LoRA v1",
+  "base_model": "/home/emily/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "adapter": "/home/emily/MMIP/Week7/Assignment_C_VLM_Advanced/checkpoints/dpo_lora_v1/final_adapter",
+  "condition": "dpo_lora_v1",
+  "num_images": 100,
+  "total_elapsed_seconds": 49.3293,
+  "total_generation_seconds": 48.6141,
+  "mean_generation_latency_seconds": 0.4861,
+  "median_generation_latency_seconds": 0.461,
+  "prompt": "Describe this image in one concise sentence. Mention only objects and actions supported by the image. Do not guess details that cannot be determined from the image.",
+  "generation_config": {
+    "do_sample": false,
+    "max_new_tokens": 80,
+    "dtype": "bfloat16",
+    "attn_implementation": "sdpa"
+  },
+  "predictions_file": "results/eval_dpo_lora_v1/dpo_predictions.jsonl"
+}
