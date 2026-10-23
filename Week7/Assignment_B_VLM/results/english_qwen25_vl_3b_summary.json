@@ -1,0 +1,11 @@
+{
+  "model": "Qwen2.5-VL-3B",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 2.98,
+  "mean_inference_seconds": 0.2049,
+  "mean_generated_tokens": 13.95,
+  "evaluation_status": "Not scored yet. Requires answer-level manual review or an independent judge. No keyword accuracy is reported."
+}

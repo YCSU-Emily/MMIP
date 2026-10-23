@@ -1,0 +1,156 @@
+English benchmark questions: 20
+GPU: NVIDIA GeForce RTX 5090
+Decoding: greedy; max_new_tokens = 128
+Existing Chinese result files will not be overwritten.
+No keyword accuracy will be reported for this English run.
+
+======================================================================
+MODEL: Qwen2.5-VL-3B
+MODEL ID: Qwen/Qwen2.5-VL-3B-Instruct
+======================================================================
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   2%|▏         | 13/824 [00:00<00:06, 123.49it/s]Loading weights:   7%|▋         | 57/824 [00:00<00:02, 301.51it/s]Loading weights:  13%|█▎        | 107/824 [00:00<00:01, 379.88it/s]Loading weights:  19%|█▉        | 160/824 [00:00<00:01, 430.39it/s]Loading weights:  25%|██▌       | 209/824 [00:00<00:01, 442.95it/s]Loading weights:  31%|███       | 257/824 [00:00<00:01, 454.72it/s]Loading weights:  38%|███▊      | 311/824 [00:00<00:01, 480.98it/s]Loading weights:  44%|████▍     | 363/824 [00:00<00:00, 488.18it/s]Loading weights:  50%|█████     | 413/824 [00:00<00:00, 483.89it/s]Loading weights:  70%|██████▉   | 576/824 [00:01<00:00, 827.25it/s]Loading weights:  94%|█████████▎| 772/824 [00:01<00:00, 1166.73it/s]Loading weights: 100%|██████████| 824/824 [00:01<00:00, 703.10it/s] 
+Model load time: 2.980 seconds
+[01/20] ID=01 time=0.567s tokens=15
+  Answer: The image contains two shapes: a red circle and a blue rectangle.
+[02/20] ID=02 time=0.210s tokens=16
+  Answer: There are six objects in total: three red circles and two blue squares.
+[03/20] ID=03 time=0.114s tokens=7
+  Answer: Red, green, blue.
+[04/20] ID=04 time=0.115s tokens=7
+  Answer: The largest circle is blue.
+[05/20] ID=05 time=0.327s tokens=25
+  Answer: The image contains three shapes:
+
+1. A red rectangle.
+2. A yellow circle.
+3. A blue triangle.
+[06/20] ID=06 time=0.060s tokens=2
+  Answer: Four
+[07/20] ID=07 time=0.504s tokens=45
+  Answer: The image contains two shapes: a red circle and a blue rectangle. The red circle is positioned at the top of the image, while the blue rectangle is located below it, closer to the bottom edge of the image.
+[08/20] ID=08 time=0.387s tokens=33
+  Answer: The object that is different from the other three is the circle. It has a round shape with no straight edges, and it is colored blue like the rectangles.
+[09/20] ID=09 time=0.060s tokens=2
+  Answer: 3
+[10/20] ID=10 time=0.207s tokens=16
+  Answer: There are three orange squares. They are arranged horizontally from left to right.
+[11/20] ID=11 time=0.070s tokens=3
+  Answer: HELLO
+[12/20] ID=12 time=0.090s tokens=5
+  Answer: 2026
+[13/20] ID=13 time=0.080s tokens=4
+  Answer: CAT DOG
+[14/20] ID=14 time=0.216s tokens=17
+  Answer: The circle is yellow, the square is purple, and the triangle is green.
+[15/20] ID=15 time=0.226s tokens=18
+  Answer: The largest square is the green one, and the smallest square is the red one.
+[16/20] ID=16 time=0.060s tokens=2
+  Answer: Four
+[17/20] ID=17 time=0.177s tokens=13
+  Answer: The blue square is to the right of the yellow circle.
+[18/20] ID=18 time=0.194s tokens=15
+  Answer: There are five circles in total, including both red and blue circles.
+[19/20] ID=19 time=0.214s tokens=17
+  Answer: The object above the green square is a circle. It is orange in color.
+[20/20] ID=20 time=0.220s tokens=17
+  Answer: There are three red objects: a circle, a triangle, and a rectangle.
+
+SUMMARY
+{
+  "model": "Qwen2.5-VL-3B",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 2.98,
+  "mean_inference_seconds": 0.2049,
+  "mean_generated_tokens": 13.95,
+  "evaluation_status": "Not scored yet. Requires answer-level manual review or an independent judge. No keyword accuracy is reported."
+}
+
+======================================================================
+MODEL: SmolVLM2-2.2B
+MODEL ID: HuggingFaceTB/SmolVLM2-2.2B-Instruct
+======================================================================
+Loading weights:   0%|          | 0/657 [00:00<?, ?it/s]Loading weights:   1%|          | 5/657 [00:00<00:13, 48.47it/s]Loading weights:   4%|▎         | 23/657 [00:00<00:05, 121.96it/s]Loading weights:   8%|▊         | 50/657 [00:00<00:03, 184.19it/s]Loading weights:  11%|█         | 69/657 [00:00<00:03, 181.20it/s]Loading weights:  14%|█▍        | 95/657 [00:00<00:02, 190.35it/s]Loading weights:  19%|█▊        | 122/657 [00:00<00:02, 202.58it/s]Loading weights:  23%|██▎       | 149/657 [00:00<00:02, 209.88it/s]Loading weights:  27%|██▋       | 176/657 [00:00<00:02, 212.56it/s]Loading weights:  31%|███       | 203/657 [00:01<00:02, 211.99it/s]Loading weights:  44%|████▍     | 292/657 [00:01<00:00, 391.71it/s]Loading weights:  69%|██████▉   | 453/657 [00:01<00:00, 716.85it/s]Loading weights:  94%|█████████▎| 615/657 [00:01<00:00, 965.58it/s]Loading weights: 100%|██████████| 657/657 [00:01<00:00, 478.29it/s]
+Model load time: 2.964 seconds
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[01/20] ID=01 time=0.441s tokens=9
+  Answer: Circle, red; Square, blue.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[02/20] ID=02 time=0.322s tokens=3
+  Answer: 5
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[03/20] ID=03 time=0.348s tokens=6
+  Answer: red, green, blue
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[04/20] ID=04 time=0.305s tokens=2
+  Answer: blue
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[05/20] ID=05 time=0.344s tokens=6
+  Answer: red, yellow, blue
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[06/20] ID=06 time=0.330s tokens=4
+  Answer: 4.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[07/20] ID=07 time=0.359s tokens=7
+  Answer: Red circle above blue square.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[08/20] ID=08 time=0.317s tokens=3
+  Answer: Circle.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[09/20] ID=09 time=0.326s tokens=4
+  Answer: 4.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[10/20] ID=10 time=0.341s tokens=5
+  Answer: Three orange squares.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[11/20] ID=11 time=0.342s tokens=5
+  Answer: HELLO.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[12/20] ID=12 time=0.357s tokens=7
+  Answer: 2026.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[13/20] ID=13 time=0.416s tokens=4
+  Answer: CAT DOG
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[14/20] ID=14 time=0.346s tokens=6
+  Answer: yellow, purple, green
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[15/20] ID=15 time=0.333s tokens=4
+  Answer: green, red
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[16/20] ID=16 time=0.328s tokens=4
+  Answer: 4.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[17/20] ID=17 time=0.337s tokens=5
+  Answer: To the right.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[18/20] ID=18 time=0.332s tokens=4
+  Answer: 6.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[19/20] ID=19 time=0.319s tokens=3
+  Answer: Circle.
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[20/20] ID=20 time=0.327s tokens=4
+  Answer: 3.
+
+SUMMARY
+{
+  "model": "SmolVLM2-2.2B",
+  "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 2.964,
+  "mean_inference_seconds": 0.3434,
+  "mean_generated_tokens": 4.75,
+  "evaluation_status": "Not scored yet. Requires answer-level manual review or an independent judge. No keyword accuracy is reported."
+}
+
+======================================================================
+ENGLISH BENCHMARK COMPLETE
+Comparison: Week7/Assignment_B_VLM/results/english_benchmark_comparison_summary.json
+All answers: Week7/Assignment_B_VLM/results/english_benchmark_all_answers.json
+All answers CSV: Week7/Assignment_B_VLM/results/english_benchmark_all_answers.csv
+======================================================================

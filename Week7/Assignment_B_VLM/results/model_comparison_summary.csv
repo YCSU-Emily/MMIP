@@ -1,0 +1,4 @@
+﻿model,questions_scored,score,maximum_score,score_rate_percent,successful_inference_count,mean_latency_seconds,median_latency_seconds,latency_measurement
+Gemini Flash Lite,20,40,40,100.00,20,1.9607,1.7132,Cloud API request latency; successful initial calls plus successful retests
+Qwen2.5-VL-3B-Instruct,20,34,40,85.00,20,0.2049,0.2005,Local inference_seconds from result CSV
+SmolVLM2-2.2B-Instruct,20,30,40,75.00,20,0.3434,0.3347,Local inference_seconds from result CSV

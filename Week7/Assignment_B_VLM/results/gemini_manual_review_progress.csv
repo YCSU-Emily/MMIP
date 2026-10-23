@@ -1,0 +1,50 @@
+﻿model,question_id,category,prompt,reference_answer,model_answer,score_0_to_2,error_type,review_notes,latency_seconds
+Gemini Flash Lite,1,shape_color,"What shapes are in the image, and what color is each shape? Answer in English only.",There is one red circle and one blue square.,A red circle and a blue square.,2,correct,正確指出紅色圓形與藍色正方形。,1.5823
+Gemini Flash Lite,2,counting,How many objects are there in total? How many red circles and blue squares are there? Answer in English only.,There are 5 objects in total: 3 red circles and 2 blue squares.,There are 5 objects in total: 3 red circles and 2 blue squares.,2,correct,物件總數及各形狀、顏色數量正確。,1.6598
+Gemini Flash Lite,3,spatial_relation,What are the colors of the three squares from left to right? Answer in English only.,"From left to right, the squares are red, green, and blue.","Red, green, blue",2,correct,紅、綠、藍的順序正確。,2.6665
+Gemini Flash Lite,4,comparison,"Which circle is the largest, and what color is it? Answer in English only.",The blue circle is the largest.,"The circle on the right is the largest, and its color is **blue**.",2,correct,正確指出最大的圓形是藍色。,1.2469
+Gemini Flash Lite,5,shape_color,Identify the shapes and colors of all objects in the image. Answer in English only.,"There is a red square, a yellow circle, and a blue triangle.","There are three objects in the image:
+
+1. **A red square** on the left.
+2. **A yellow circle** in the middle.
+3. **A blue triangle** on the right.",2,correct,三個物件的形狀、顏色與位置正確。,2.4433
+Gemini Flash Lite,6,counting,How many green triangles are in the image? Answer in English only.,There are 4 green triangles.,There are four green triangles in the image.,2,correct,正確回答有四個綠色三角形。,2.1873
+Gemini Flash Lite,7,spatial_relation,"Describe the shapes, colors, and relative vertical positions of the objects. Answer in English only.","The red circle is at the top, and the blue square is at the bottom.","Based on the image provided, here are the descriptions of the objects:
+
+1. **Top Object:**
+   * **Shape:** Circle
+   * **Color:** Red
+   * **Position:** Located in the upper portion of the image.
+
+2. **Bottom Object:**
+   * **Shape:** Square
+   * **Color:** Blue
+   * **Position:** Located directly beneath the red circle, in the lower portion of the image.",2,correct,正確描述紅色圓形在上方、藍色正方形在下方。,2.0066
+Gemini Flash Lite,8,visual_reasoning,Which object is different from the other three? Describe its shape and color. Answer in English only.,"The rightmost blue circle is different from the other three objects, which are squares.","Based on the image, the object that is different from the other three is the one on the far right. 
+
+* **Shape:** It is a circle (whereas the other three are squares).
+* **Color:** It is blue.",2,correct,正確指出最右側藍色圓形與其他三個正方形不同。,1.6939
+Gemini Flash Lite,9,counting,How many red circles are in the image? Answer in English only.,There are 3 red circles.,There are 3 red circles in the image.,2,correct,正確回答有三個紅色圓形。,2.2537
+Gemini Flash Lite,10,spatial_relation,"Describe the number, color, shape, and arrangement of the objects. Answer in English only.",Three orange squares are arranged in a horizontal line.,"Based on the image provided:
+
+* **Number:** There are 3 objects.
+* **Color:** The objects are orange with black outlines.
+* **Shape:** The objects are squares.
+* **Arrangement:** The squares are arranged in a single horizontal row side-by-side, spaced evenly apart from left to right.",2,correct,正確描述三個橘色正方形水平排列。,1.4173
+Gemini Flash Lite,11,ocr,What English word is written in the image? Answer in English only.,The word is HELLO.,HELLO,2,correct,正確辨識出英文單字 HELLO。,1.5063
+Gemini Flash Lite,12,ocr,What number is shown in the image? Answer in English only.,The number is 2026.,2026,2,correct,正確辨識數字 2026。,2.8612
+Gemini Flash Lite,13,ocr,What two English words are written in the image? Answer in English only.,The words are CAT and DOG.,"CAT, DOG",2,correct,正確辨識出 CAT 和 DOG。,2.1751
+Gemini Flash Lite,14,shape_color,"Identify the color of each shape: the circle, square, and triangle. Answer in English only.","The circle is yellow, the square is purple, and the triangle is green.","Based on the image provided:
+
+* **Circle:** Yellow
+* **Square:** Purple
+* **Triangle:** Green",2,correct,圓形、正方形、三角形的顏色全部正確。,1.6799
+Gemini Flash Lite,15,comparison,Which square is the largest and which is the smallest? Describe their colors. Answer in English only.,"The green square is the largest, and the red square is the smallest.","Based on the image:
+
+* **The largest square** is **green**.
+* **The smallest square** is **red**.",2,correct,正確指出綠色正方形最大、紅色正方形最小。,3.0367
+Gemini Flash Lite,16,counting,How many objects are in the image? Answer in English only.,There are 4 objects.,Four,2,correct,正確回答總共有四個物件。,1.6533
+Gemini Flash Lite,17,spatial_relation,Where is the blue square relative to the yellow circle? Answer in English only.,The blue square is to the right of the yellow circle.,The blue square is to the right of the yellow circle.,2,correct,正確指出藍色正方形在黃色圓形右側。,2.589
+Gemini Flash Lite,18,visual_reasoning,"How many circles are there in total, including both red and blue circles? Answer in English only.",There are 5 circles in total: 3 red circles and 2 blue circles.,Five,2,correct,正確回答圓形總數為五個。,1.7325
+Gemini Flash Lite,19,spatial_relation,What object is above the green square? Describe its shape and color. Answer in English only.,An orange circle is above the green square.,The object above the green square is a **circle** and it is **orange** in color.,2,correct,正確指出綠色正方形上方是橘色圓形。,1.4015
+Gemini Flash Lite,20,visual_reasoning,"How many red objects are there, and what are their shapes? Answer in English only.","There are 3 red objects: a circle, a triangle, and a square.","There are three red objects: a circle, a triangle, and a square.",2,correct,正確指出三個紅色物件，分別是圓形、三角形和正方形。,1.4203

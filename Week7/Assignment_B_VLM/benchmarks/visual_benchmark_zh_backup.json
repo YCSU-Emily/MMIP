@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "image": "images/benchmark/01.png",
+    "category": "shape_color",
+    "prompt": "圖片中有哪些形狀？各自是什麼顏色？",
+    "reference_answer": "一個紅色圓形和一個藍色正方形。"
+  },
+  {
+    "id": 2,
+    "image": "images/benchmark/02.png",
+    "category": "counting",
+    "prompt": "圖片中總共有幾個物件？紅色圓形和藍色正方形各有幾個？",
+    "reference_answer": "總共 5 個物件：3 個紅色圓形和 2 個藍色正方形。"
+  },
+  {
+    "id": 3,
+    "image": "images/benchmark/03.png",
+    "category": "spatial_relation",
+    "prompt": "由左到右，三個正方形的顏色依序是什麼？",
+    "reference_answer": "由左到右依序是紅色、綠色、藍色。"
+  },
+  {
+    "id": 4,
+    "image": "images/benchmark/04.png",
+    "category": "comparison",
+    "prompt": "哪一個圓形最大？請指出它的顏色。",
+    "reference_answer": "藍色圓形最大。"
+  },
+  {
+    "id": 5,
+    "image": "images/benchmark/05.png",
+    "category": "shape_color",
+    "prompt": "圖片中有哪三種幾何形狀？請說出各自的顏色。",
+    "reference_answer": "紅色正方形、黃色圓形和藍色三角形。"
+  },
+  {
+    "id": 6,
+    "image": "images/benchmark/06.png",
+    "category": "counting",
+    "prompt": "圖片中有幾個綠色三角形？",
+    "reference_answer": "有 4 個綠色三角形。"
+  },
+  {
+    "id": 7,
+    "image": "images/benchmark/07.png",
+    "category": "spatial_relation",
+    "prompt": "哪個形狀在上方？哪個形狀在下方？",
+    "reference_answer": "紅色圓形在上方，藍色正方形在下方。"
+  },
+  {
+    "id": 8,
+    "image": "images/benchmark/08.png",
+    "category": "visual_reasoning",
+    "prompt": "哪一個物件的形狀和其他三個不同？",
+    "reference_answer": "最右邊的藍色圓形不同；其他三個是正方形。"
+  },
+  {
+    "id": 9,
+    "image": "images/benchmark/09.png",
+    "category": "counting",
+    "prompt": "圖片中紅色圓形有幾個？",
+    "reference_answer": "有 3 個紅色圓形。"
+  },
+  {
+    "id": 10,
+    "image": "images/benchmark/10.png",
+    "category": "spatial_relation",
+    "prompt": "三個橘色正方形排列成什麼方向？",
+    "reference_answer": "三個橘色正方形由左至右水平排列。"
+  },
+  {
+    "id": 11,
+    "image": "images/benchmark/11.png",
+    "category": "ocr",
+    "prompt": "圖片中寫了什麼英文單字？",
+    "reference_answer": "HELLO。"
+  },
+  {
+    "id": 12,
+    "image": "images/benchmark/12.png",
+    "category": "ocr",
+    "prompt": "圖片中顯示的數字是什麼？",
+    "reference_answer": "2026。"
+  },
+  {
+    "id": 13,
+    "image": "images/benchmark/13.png",
+    "category": "ocr",
+    "prompt": "圖片中有哪兩個英文單字？",
+    "reference_answer": "CAT 和 DOG。"
+  },
+  {
+    "id": 14,
+    "image": "images/benchmark/14.png",
+    "category": "shape_color",
+    "prompt": "請分別說出圓形、正方形和三角形的顏色。",
+    "reference_answer": "圓形是黃色，正方形是紫色，三角形是綠色。"
+  },
+  {
+    "id": 15,
+    "image": "images/benchmark/15.png",
+    "category": "comparison",
+    "prompt": "三個正方形中，哪個最大、哪個最小？",
+    "reference_answer": "綠色正方形最大，紅色正方形最小。"
+  },
+  {
+    "id": 16,
+    "image": "images/benchmark/16.png",
+    "category": "counting",
+    "prompt": "圖片中一共有幾個物件？",
+    "reference_answer": "一共有 4 個物件。"
+  },
+  {
+    "id": 17,
+    "image": "images/benchmark/17.png",
+    "category": "spatial_relation",
+    "prompt": "藍色正方形位於黃色圓形的哪一側？",
+    "reference_answer": "藍色正方形位於黃色圓形的右側。"
+  },
+  {
+    "id": 18,
+    "image": "images/benchmark/18.png",
+    "category": "visual_reasoning",
+    "prompt": "如果把所有紅色和藍色圓形合在一起，總共有幾個圓形？",
+    "reference_answer": "總共有 5 個圓形。"
+  },
+  {
+    "id": 19,
+    "image": "images/benchmark/19.png",
+    "category": "spatial_relation",
+    "prompt": "綠色正方形的上方是什麼形狀、什麼顏色？",
+    "reference_answer": "綠色正方形上方是橘色圓形。"
+  },
+  {
+    "id": 20,
+    "image": "images/benchmark/20.png",
+    "category": "visual_reasoning",
+    "prompt": "圖片中紅色物件有幾個？其中有哪些形狀？",
+    "reference_answer": "有 3 個紅色物件：圓形、三角形和正方形。"
+  }
+]

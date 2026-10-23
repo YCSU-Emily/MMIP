@@ -1,0 +1,6 @@
+﻿model,error_type,question_count
+Qwen2.5-VL-3B,None,14
+Qwen2.5-VL-3B,Incomplete or partially incorrect,6
+SmolVLM2-2.2B,None,10
+SmolVLM2-2.2B,Incomplete or partially incorrect,8
+SmolVLM2-2.2B,Incorrect core answer,2

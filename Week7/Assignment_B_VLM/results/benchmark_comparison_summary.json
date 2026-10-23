@@ -1,0 +1,30 @@
+[
+  {
+    "model": "Qwen2.5-VL-3B",
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "questions_total": 20,
+    "questions_successful": 20,
+    "questions_with_errors": 0,
+    "model_load_seconds": 4.122,
+    "mean_inference_seconds": 0.2497,
+    "mean_generated_tokens": 18.15,
+    "keyword_question_pass_rate": 0.7,
+    "mean_keyword_group_score": 0.865,
+    "peak_gpu_memory_gib_max": 7.087,
+    "note": "Keyword metrics are heuristic preliminary checks, not semantic accuracy or a substitute for commercial LLM judging."
+  },
+  {
+    "model": "SmolVLM2-2.2B",
+    "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "questions_total": 20,
+    "questions_successful": 20,
+    "questions_with_errors": 0,
+    "model_load_seconds": 3.007,
+    "mean_inference_seconds": 0.5711,
+    "mean_generated_tokens": 27.9,
+    "keyword_question_pass_rate": 0.4,
+    "mean_keyword_group_score": 0.67,
+    "peak_gpu_memory_gib_max": 9.052,
+    "note": "Keyword metrics are heuristic preliminary checks, not semantic accuracy or a substitute for commercial LLM judging."
+  }
+]

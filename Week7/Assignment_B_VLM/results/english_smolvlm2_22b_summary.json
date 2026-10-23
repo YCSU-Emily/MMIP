@@ -1,0 +1,11 @@
+{
+  "model": "SmolVLM2-2.2B",
+  "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 2.964,
+  "mean_inference_seconds": 0.3434,
+  "mean_generated_tokens": 4.75,
+  "evaluation_status": "Not scored yet. Requires answer-level manual review or an independent judge. No keyword accuracy is reported."
+}

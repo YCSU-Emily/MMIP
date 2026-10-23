@@ -1,0 +1,12 @@
+Model: Qwen/Qwen2.5-VL-3B-Instruct
+Image: Week7/Assignment_B_VLM/images/vlm_smoke_test.png
+Answer:
+這張圖片中有兩個基本的幾何形狀：
+
+1. 圓形：在圖片的左側，是一個紅色的圓形。
+2. 正方形：在圖片的右側，是一個藍色的正方形。
+
+這些形狀大致位於圖片的左右兩邊，分別代表了不同的顏色和形狀。
+
+Model load time: 80.00 seconds
+Inference time: 1.888 seconds

@@ -1,0 +1,156 @@
+Benchmark questions: 20
+GPU: NVIDIA GeForce RTX 5090
+Generation: greedy decoding, max_new_tokens = 128
+Models will run sequentially to reduce VRAM pressure.
+
+======================================================================
+MODEL: Qwen2.5-VL-3B
+ID: Qwen/Qwen2.5-VL-3B-Instruct
+======================================================================
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   3%|▎         | 26/824 [00:00<00:03, 231.91it/s]Loading weights:   9%|▉         | 75/824 [00:00<00:02, 352.59it/s]Loading weights:  15%|█▌        | 124/824 [00:00<00:01, 404.15it/s]Loading weights:  21%|██        | 172/824 [00:00<00:01, 430.13it/s]Loading weights:  26%|██▋       | 217/824 [00:00<00:01, 426.69it/s]Loading weights:  32%|███▏      | 265/824 [00:00<00:01, 426.05it/s]Loading weights:  37%|███▋      | 308/824 [00:00<00:01, 351.91it/s]Loading weights:  42%|████▏     | 346/824 [00:00<00:01, 311.60it/s]Loading weights:  46%|████▌     | 379/824 [00:01<00:01, 275.68it/s]Loading weights:  50%|████▉     | 409/824 [00:01<00:01, 216.75it/s]Loading weights:  53%|█████▎    | 434/824 [00:01<00:02, 181.49it/s]Loading weights:  61%|██████    | 500/824 [00:01<00:01, 271.23it/s]Loading weights:  66%|██████▋   | 546/824 [00:01<00:00, 307.97it/s]Loading weights:  76%|███████▋  | 630/824 [00:01<00:00, 430.09it/s]Loading weights:  84%|████████▍ | 696/824 [00:01<00:00, 482.79it/s]Loading weights:  91%|█████████ | 751/824 [00:02<00:00, 474.29it/s]Loading weights:  97%|█████████▋| 803/824 [00:02<00:00, 450.58it/s]Loading weights: 100%|██████████| 824/824 [00:02<00:00, 353.57it/s]
+Model load time: 4.12 seconds
+[01/20] ID=01 time=0.673s keyword=4/4 pass=True
+  Answer: 圖片中有兩個形狀。一個是紅色的圓形，另一個是藍色的方形。
+[02/20] ID=02 time=0.195s keyword=2/3 pass=False
+  Answer: 圖片中有三個紅色圓形和兩個藍色正方形。
+[03/20] ID=03 time=0.282s keyword=3/3 pass=True
+  Answer: 從左到右，三個正方形的顏色依次是紅色、綠色和藍色。
+[04/20] ID=04 time=0.132s keyword=2/2 pass=True
+  Answer: 最大的圓形是藍色的。
+[05/20] ID=05 time=0.535s keyword=5/6 pass=False
+  Answer: 圖片中有以下三種幾何形狀：  1. 矩形（Red）：紅色 2. 圓形（Yellow）：黃色 3. 三角形（Blue）：藍色
+[06/20] ID=06 time=0.144s keyword=3/3 pass=True
+  Answer: 圖片中有四個綠色三角形。
+[07/20] ID=07 time=0.187s keyword=2/6 pass=False
+  Answer: 红色的圆形在上方，蓝色的矩形在下方。
+[08/20] ID=08 time=0.197s keyword=2/3 pass=False
+  Answer: 圓形的圖案是其他三種圖案中不同的。
+[09/20] ID=09 time=0.137s keyword=3/3 pass=True
+  Answer: 圖片中有三個紅色圓形。
+[10/20] ID=10 time=0.156s keyword=0/3 pass=False
+  Answer: Three orange squares are arranged in a horizontal line.
+[11/20] ID=11 time=0.175s keyword=1/1 pass=True
+  Answer: The English word written in the picture is "HELLO".
+[12/20] ID=12 time=0.090s keyword=1/1 pass=True
+  Answer: 2026
+[13/20] ID=13 time=0.232s keyword=2/2 pass=True
+  Answer: 圖片中有兩個英文單詞，分別是 "CAT" 和 "DOG"。
+[14/20] ID=14 time=0.233s keyword=6/6 pass=True
+  Answer: 圓形是黃色，正方形是紫色，三角形是綠色。
+[15/20] ID=15 time=0.535s keyword=4/4 pass=True
+  Answer: 在這三個正方形中，最大的是綠色的正方形，因為它的邊長最長。最小的是紅色的正方形，因為它的邊長最短。蓝色的正方形介於兩者之間。
+[16/20] ID=16 time=0.130s keyword=1/1 pass=True
+  Answer: 圖片中一共有四個物件。
+[17/20] ID=17 time=0.190s keyword=1/1 pass=True
+  Answer: 藍色正方形位於黃色圓形的右側。
+[18/20] ID=18 time=0.250s keyword=2/2 pass=True
+  Answer: 把所有紅色和藍色圓形合在一起，總共有5個圓形。
+[19/20] ID=19 time=0.179s keyword=5/5 pass=True
+  Answer: 綠色正方形的上方是一個橙色圓形。
+[20/20] ID=20 time=0.342s keyword=4/5 pass=False
+  Answer: 圖片中有四個紅色的物件。這些物件的形狀分別是圓形、長方形、三角形和正方形。
+
+SUMMARY
+{
+  "model": "Qwen2.5-VL-3B",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 4.122,
+  "mean_inference_seconds": 0.2497,
+  "mean_generated_tokens": 18.15,
+  "keyword_question_pass_rate": 0.7,
+  "mean_keyword_group_score": 0.865,
+  "peak_gpu_memory_gib_max": 7.087,
+  "note": "Keyword metrics are heuristic preliminary checks, not semantic accuracy or a substitute for commercial LLM judging."
+}
+
+======================================================================
+MODEL: SmolVLM2-2.2B
+ID: HuggingFaceTB/SmolVLM2-2.2B-Instruct
+======================================================================
+Loading weights:   0%|          | 0/657 [00:00<?, ?it/s]Loading weights:   1%|          | 5/657 [00:00<00:16, 40.50it/s]Loading weights:   5%|▍         | 32/657 [00:00<00:03, 160.42it/s]Loading weights:   8%|▊         | 50/657 [00:00<00:03, 163.94it/s]Loading weights:  12%|█▏        | 77/657 [00:00<00:02, 197.86it/s]Loading weights:  15%|█▍        | 98/657 [00:00<00:02, 198.25it/s]Loading weights:  19%|█▊        | 122/657 [00:00<00:02, 198.91it/s]Loading weights:  23%|██▎       | 149/657 [00:00<00:02, 220.16it/s]Loading weights:  26%|██▌       | 172/657 [00:00<00:02, 216.85it/s]Loading weights:  30%|██▉       | 194/657 [00:01<00:02, 203.38it/s]Loading weights:  35%|███▍      | 229/657 [00:01<00:01, 240.81it/s]Loading weights:  60%|█████▉    | 391/657 [00:01<00:00, 628.53it/s]Loading weights:  84%|████████▍ | 551/657 [00:01<00:00, 898.39it/s]Loading weights: 100%|██████████| 657/657 [00:01<00:00, 477.01it/s]
+Model load time: 3.01 seconds
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[01/20] ID=01 time=0.782s keyword=4/4 pass=True
+  Answer: 圖片中有一個圓和一個方形。圓是紅色的，方形是藍色的。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[02/20] ID=02 time=0.609s keyword=2/3 pass=False
+  Answer: 紅色圓形有3個，藍色正方形有2個。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[03/20] ID=03 time=0.803s keyword=3/3 pass=True
+  Answer: 由左到右，三個正方形的顏色依序是：紅色、綠色和藍色。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[04/20] ID=04 time=0.550s keyword=2/2 pass=True
+  Answer: 第三個圓形最大，它是藍色的。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[05/20] ID=05 time=0.810s keyword=6/6 pass=True
+  Answer: 圖片中有一個紅色的方形、一個黃色的圓、一個藍色的三角形。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[06/20] ID=06 time=0.322s keyword=1/3 pass=False
+  Answer: 4
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[07/20] ID=07 time=0.532s keyword=4/6 pass=False
+  Answer: 在上方有一個圓，在下方有一個方形。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[08/20] ID=08 time=0.540s keyword=1/3 pass=False
+  Answer: 小球的形狀和其他三個不同。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[09/20] ID=09 time=0.328s keyword=0/3 pass=False
+  Answer: 6
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[10/20] ID=10 time=0.640s keyword=2/3 pass=False
+  Answer: 三個橘色正方形排列成一個橘色正方形。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[11/20] ID=11 time=0.708s keyword=1/1 pass=True
+  Answer: 在這個圖片中，我們只有一個英文單字，這是 "HELLO"。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[12/20] ID=12 time=0.459s keyword=1/1 pass=True
+  Answer: 圖片中的數字是2026。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[13/20] ID=13 time=0.580s keyword=2/2 pass=True
+  Answer: 在圖片中，有两個英文單字：CAT和DOG。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[14/20] ID=14 time=0.726s keyword=5/6 pass=False
+  Answer: 圓形是黃色的，正方形是紅色的，三角形是綠色的。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[15/20] ID=15 time=0.563s keyword=4/4 pass=True
+  Answer: 最大的是綠色的，最小的是紅色的。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[16/20] ID=16 time=0.318s keyword=0/1 pass=False
+  Answer: 4
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[17/20] ID=17 time=0.414s keyword=0/1 pass=False
+  Answer: 藍色正方形
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[18/20] ID=18 time=0.443s keyword=1/2 pass=False
+  Answer: 總共有6個圓形。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[19/20] ID=19 time=0.629s keyword=4/5 pass=False
+  Answer: 綠色正方形的上方是圓形，顏色是綠色。
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+[20/20] ID=20 time=0.666s keyword=3/5 pass=False
+  Answer: 紅色物件有兩個，其中一個是圓形，另一個是方形。
+
+SUMMARY
+{
+  "model": "SmolVLM2-2.2B",
+  "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "questions_total": 20,
+  "questions_successful": 20,
+  "questions_with_errors": 0,
+  "model_load_seconds": 3.007,
+  "mean_inference_seconds": 0.5711,
+  "mean_generated_tokens": 27.9,
+  "keyword_question_pass_rate": 0.4,
+  "mean_keyword_group_score": 0.67,
+  "peak_gpu_memory_gib_max": 9.052,
+  "note": "Keyword metrics are heuristic preliminary checks, not semantic accuracy or a substitute for commercial LLM judging."
+}
+
+======================================================================
+BENCHMARK COMPLETE
+Summary JSON: Week7/Assignment_B_VLM/results/benchmark_comparison_summary.json
+Summary CSV : Week7/Assignment_B_VLM/results/benchmark_comparison_summary.csv
+======================================================================

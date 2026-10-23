@@ -1,0 +1,110 @@
+﻿id,category,image,prompt,model,answer,latency_seconds,http_status,error
+1,shape_color,images/benchmark/01.png,"What shapes are in the image, and what color is each shape? Answer in English only.",gemini-flash-lite-latest,A red circle and a blue square.,1.5823,200,
+2,counting,images/benchmark/02.png,How many objects are there in total? How many red circles and blue squares are there? Answer in English only.,gemini-flash-lite-latest,There are 5 objects in total: 3 red circles and 2 blue squares.,1.6598,200,
+3,spatial_relation,images/benchmark/03.png,What are the colors of the three squares from left to right? Answer in English only.,gemini-flash-lite-latest,"Red, green, blue",2.6665,200,
+4,comparison,images/benchmark/04.png,"Which circle is the largest, and what color is it? Answer in English only.",gemini-flash-lite-latest,"The circle on the right is the largest, and its color is **blue**.",1.2469,200,
+5,shape_color,images/benchmark/05.png,Identify the shapes and colors of all objects in the image. Answer in English only.,gemini-flash-lite-latest,"There are three objects in the image:
+
+1. **A red square** on the left.
+2. **A yellow circle** in the middle.
+3. **A blue triangle** on the right.",2.4433,200,
+6,counting,images/benchmark/06.png,How many green triangles are in the image? Answer in English only.,gemini-flash-lite-latest,There are four green triangles in the image.,2.1873,200,
+7,spatial_relation,images/benchmark/07.png,"Describe the shapes, colors, and relative vertical positions of the objects. Answer in English only.",gemini-flash-lite-latest,"Based on the image provided, here are the descriptions of the objects:
+
+1. **Top Object:**
+   * **Shape:** Circle
+   * **Color:** Red
+   * **Position:** Located in the upper portion of the image.
+
+2. **Bottom Object:**
+   * **Shape:** Square
+   * **Color:** Blue
+   * **Position:** Located directly beneath the red circle, in the lower portion of the image.",2.0066,200,
+8,visual_reasoning,images/benchmark/08.png,Which object is different from the other three? Describe its shape and color. Answer in English only.,gemini-flash-lite-latest,"Based on the image, the object that is different from the other three is the one on the far right. 
+
+* **Shape:** It is a circle (whereas the other three are squares).
+* **Color:** It is blue.",1.6939,200,
+9,counting,images/benchmark/09.png,How many red circles are in the image? Answer in English only.,gemini-flash-lite-latest,There are 3 red circles in the image.,2.2537,200,
+10,spatial_relation,images/benchmark/10.png,"Describe the number, color, shape, and arrangement of the objects. Answer in English only.",gemini-flash-lite-latest,"Based on the image provided:
+
+* **Number:** There are 3 objects.
+* **Color:** The objects are orange with black outlines.
+* **Shape:** The objects are squares.
+* **Arrangement:** The squares are arranged in a single horizontal row side-by-side, spaced evenly apart from left to right.",1.4173,200,
+11,ocr,images/benchmark/11.png,What English word is written in the image? Answer in English only.,gemini-flash-lite-latest,HELLO,1.5063,200,
+12,ocr,images/benchmark/12.png,What number is shown in the image? Answer in English only.,gemini-flash-lite-latest,2026,2.8612,200,
+13,ocr,images/benchmark/13.png,What two English words are written in the image? Answer in English only.,gemini-flash-lite-latest,"CAT, DOG",2.1751,200,
+14,shape_color,images/benchmark/14.png,"Identify the color of each shape: the circle, square, and triangle. Answer in English only.",gemini-flash-lite-latest,"Based on the image provided:
+
+* **Circle:** Yellow
+* **Square:** Purple
+* **Triangle:** Green",1.6799,200,
+15,comparison,images/benchmark/15.png,Which square is the largest and which is the smallest? Describe their colors. Answer in English only.,gemini-flash-lite-latest,"Based on the image:
+
+* **The largest square** is **green**.
+* **The smallest square** is **red**.",3.0367,200,
+16,counting,images/benchmark/16.png,How many objects are in the image? Answer in English only.,gemini-flash-lite-latest,Four,1.6533,200,
+17,spatial_relation,images/benchmark/17.png,Where is the blue square relative to the yellow circle? Answer in English only.,gemini-flash-lite-latest,,0.2002,429,"{
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 497.412553ms."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""q"
+18,visual_reasoning,images/benchmark/18.png,"How many circles are there in total, including both red and blue circles? Answer in English only.",gemini-flash-lite-latest,,0.2169,429,"{
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 53.914859806s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            """
+19,spatial_relation,images/benchmark/19.png,What object is above the green square? Describe its shape and color. Answer in English only.,gemini-flash-lite-latest,The object above the green square is a **circle** and it is **orange** in color.,1.4015,200,"{
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 53.721200304s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            """
+20,visual_reasoning,images/benchmark/20.png,"How many red objects are there, and what are their shapes? Answer in English only.",gemini-flash-lite-latest,"There are three red objects: a circle, a triangle, and a square.",1.4203,200,

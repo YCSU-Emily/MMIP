@@ -1,0 +1,10 @@
+Model: HuggingFaceTB/SmolVLM2-2.2B-Instruct
+Image: Week7/Assignment_B_VLM/images/vlm_smoke_test.png
+Prompt: 請仔細觀察圖片，說明圖片中有哪些幾何形狀、各自的顏色，以及它們大致位於圖片的哪個位置。
+Answer:
+ 圖片中有一個圓形和一個方形，圓形是紅色的，方形是藍色的。圓形位於圖片的左邊，方形位於圖片的右邊。
+
+Model load time: 50.38 seconds
+Inference time: 1.482 seconds
+Generated tokens: 85
+Peak GPU memory: 9.07 GiB

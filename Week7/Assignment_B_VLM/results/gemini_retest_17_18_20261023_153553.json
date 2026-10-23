@@ -1,0 +1,22 @@
+[
+  {
+    "id": 17,
+    "image": "images/benchmark/17.png",
+    "prompt": "Where is the blue square relative to the yellow circle? Answer in English only.",
+    "model": "gemini-flash-lite-latest",
+    "answer": "The blue square is to the right of the yellow circle.",
+    "latency_seconds": 2.589,
+    "http_status": 200,
+    "error": ""
+  },
+  {
+    "id": 18,
+    "image": "images/benchmark/18.png",
+    "prompt": "How many circles are there in total, including both red and blue circles? Answer in English only.",
+    "model": "gemini-flash-lite-latest",
+    "answer": "Five",
+    "latency_seconds": 1.7325,
+    "http_status": 200,
+    "error": ""
+  }
+]

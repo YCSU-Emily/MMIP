@@ -1,0 +1,19 @@
+﻿category,model,questions,score,maximum_score,score_rate_percent,mean_score_per_question
+comparison,Gemini Flash Lite,2,4,4,100.00,2.000
+comparison,Qwen2.5-VL-3B-Instruct,2,4,4,100.00,2.000
+comparison,SmolVLM2-2.2B-Instruct,2,4,4,100.00,2.000
+counting,Gemini Flash Lite,4,8,8,100.00,2.000
+counting,Qwen2.5-VL-3B-Instruct,4,7,8,87.50,1.750
+counting,SmolVLM2-2.2B-Instruct,4,5,8,62.50,1.250
+ocr,Gemini Flash Lite,3,6,6,100.00,2.000
+ocr,Qwen2.5-VL-3B-Instruct,3,6,6,100.00,2.000
+ocr,SmolVLM2-2.2B-Instruct,3,6,6,100.00,2.000
+shape_color,Gemini Flash Lite,3,6,6,100.00,2.000
+shape_color,Qwen2.5-VL-3B-Instruct,3,4,6,66.67,1.333
+shape_color,SmolVLM2-2.2B-Instruct,3,5,6,83.33,1.667
+spatial_relation,Gemini Flash Lite,5,10,10,100.00,2.000
+spatial_relation,Qwen2.5-VL-3B-Instruct,5,9,10,90.00,1.800
+spatial_relation,SmolVLM2-2.2B-Instruct,5,8,10,80.00,1.600
+visual_reasoning,Gemini Flash Lite,3,6,6,100.00,2.000
+visual_reasoning,Qwen2.5-VL-3B-Instruct,3,4,6,66.67,1.333
+visual_reasoning,SmolVLM2-2.2B-Instruct,3,2,6,33.33,0.667

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "image": "images/benchmark/01.png",
+    "category": "shape_color",
+    "prompt": "What shapes are in the image, and what color is each shape? Answer in English only.",
+    "reference_answer": "There is one red circle and one blue square."
+  },
+  {
+    "id": 2,
+    "image": "images/benchmark/02.png",
+    "category": "counting",
+    "prompt": "How many objects are there in total? How many red circles and blue squares are there? Answer in English only.",
+    "reference_answer": "There are 5 objects in total: 3 red circles and 2 blue squares."
+  },
+  {
+    "id": 3,
+    "image": "images/benchmark/03.png",
+    "category": "spatial_relation",
+    "prompt": "What are the colors of the three squares from left to right? Answer in English only.",
+    "reference_answer": "From left to right, the squares are red, green, and blue."
+  },
+  {
+    "id": 4,
+    "image": "images/benchmark/04.png",
+    "category": "comparison",
+    "prompt": "Which circle is the largest, and what color is it? Answer in English only.",
+    "reference_answer": "The blue circle is the largest."
+  },
+  {
+    "id": 5,
+    "image": "images/benchmark/05.png",
+    "category": "shape_color",
+    "prompt": "Identify the shapes and colors of all objects in the image. Answer in English only.",
+    "reference_answer": "There is a red square, a yellow circle, and a blue triangle."
+  },
+  {
+    "id": 6,
+    "image": "images/benchmark/06.png",
+    "category": "counting",
+    "prompt": "How many green triangles are in the image? Answer in English only.",
+    "reference_answer": "There are 4 green triangles."
+  },
+  {
+    "id": 7,
+    "image": "images/benchmark/07.png",
+    "category": "spatial_relation",
+    "prompt": "Describe the shapes, colors, and relative vertical positions of the objects. Answer in English only.",
+    "reference_answer": "The red circle is at the top, and the blue square is at the bottom."
+  },
+  {
+    "id": 8,
+    "image": "images/benchmark/08.png",
+    "category": "visual_reasoning",
+    "prompt": "Which object is different from the other three? Describe its shape and color. Answer in English only.",
+    "reference_answer": "The rightmost blue circle is different from the other three objects, which are squares."
+  },
+  {
+    "id": 9,
+    "image": "images/benchmark/09.png",
+    "category": "counting",
+    "prompt": "How many red circles are in the image? Answer in English only.",
+    "reference_answer": "There are 3 red circles."
+  },
+  {
+    "id": 10,
+    "image": "images/benchmark/10.png",
+    "category": "spatial_relation",
+    "prompt": "Describe the number, color, shape, and arrangement of the objects. Answer in English only.",
+    "reference_answer": "Three orange squares are arranged in a horizontal line."
+  },
+  {
+    "id": 11,
+    "image": "images/benchmark/11.png",
+    "category": "ocr",
+    "prompt": "What English word is written in the image? Answer in English only.",
+    "reference_answer": "The word is HELLO."
+  },
+  {
+    "id": 12,
+    "image": "images/benchmark/12.png",
+    "category": "ocr",
+    "prompt": "What number is shown in the image? Answer in English only.",
+    "reference_answer": "The number is 2026."
+  },
+  {
+    "id": 13,
+    "image": "images/benchmark/13.png",
+    "category": "ocr",
+    "prompt": "What two English words are written in the image? Answer in English only.",
+    "reference_answer": "The words are CAT and DOG."
+  },
+  {
+    "id": 14,
+    "image": "images/benchmark/14.png",
+    "category": "shape_color",
+    "prompt": "Identify the color of each shape: the circle, square, and triangle. Answer in English only.",
+    "reference_answer": "The circle is yellow, the square is purple, and the triangle is green."
+  },
+  {
+    "id": 15,
+    "image": "images/benchmark/15.png",
+    "category": "comparison",
+    "prompt": "Which square is the largest and which is the smallest? Describe their colors. Answer in English only.",
+    "reference_answer": "The green square is the largest, and the red square is the smallest."
+  },
+  {
+    "id": 16,
+    "image": "images/benchmark/16.png",
+    "category": "counting",
+    "prompt": "How many objects are in the image? Answer in English only.",
+    "reference_answer": "There are 4 objects."
+  },
+  {
+    "id": 17,
+    "image": "images/benchmark/17.png",
+    "category": "spatial_relation",
+    "prompt": "Where is the blue square relative to the yellow circle? Answer in English only.",
+    "reference_answer": "The blue square is to the right of the yellow circle."
+  },
+  {
+    "id": 18,
+    "image": "images/benchmark/18.png",
+    "category": "visual_reasoning",
+    "prompt": "How many circles are there in total, including both red and blue circles? Answer in English only.",
+    "reference_answer": "There are 5 circles in total: 3 red circles and 2 blue circles."
+  },
+  {
+    "id": 19,
+    "image": "images/benchmark/19.png",
+    "category": "spatial_relation",
+    "prompt": "What object is above the green square? Describe its shape and color. Answer in English only.",
+    "reference_answer": "An orange circle is above the green square."
+  },
+  {
+    "id": 20,
+    "image": "images/benchmark/20.png",
+    "category": "visual_reasoning",
+    "prompt": "How many red objects are there, and what are their shapes? Answer in English only.",
+    "reference_answer": "There are 3 red objects: a circle, a triangle, and a square."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "benchmark": "Week7/Assignment_B_VLM/benchmarks/visual_benchmark.json",
+  "total_questions": 20,
+  "successful_questions": 18,
+  "failed_questions": 2,
+  "mean_latency_seconds": 1.9384,
+  "latency_measurement": "Per-request wall-clock time, including API response; does not include local image loading/base64 encoding.",
+  "completed_at": "2026-10-23T07:33:11.108575+00:00",
+  "csv_file": "Week7/Assignment_B_VLM/results/gemini_benchmark_results_20261023_153220.csv",
+  "json_file": "Week7/Assignment_B_VLM/results/gemini_benchmark_results_20261023_153220.json"
+}
