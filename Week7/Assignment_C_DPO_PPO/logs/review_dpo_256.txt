@@ -1,0 +1,71 @@
+==== 待人工複查: 14 題 ====
+general_031 english_vocabulary | ref: 花園 | format: None
+    園林
+general_033 english_vocabulary | ref: 圖書館 | format: None
+    書庫
+general_035 english_vocabulary | ref: 旅程 | format: None
+    旅行
+general_038 english_vocabulary | ref: 安靜的 | format: None
+    靜默
+general_040 english_vocabulary | ref: 改善 | format: None
+    提升
+general_048 english_vocabulary | ref: 解決方案 | format: None
+    解決方法
+general_055 basic_science | ref: 氧氣 | format: None
+    人類呼吸時主要吸入氧气(O2)以供細胞使用。
+general_060 basic_science | ref: 通常 28 至 32 顆 | format: None
+    成人通常有32顆恆齒（不含智齒），但這會因個人差異而有所變化。
+general_061 basic_science | ref: 遺傳資訊 | format: None
+    DNA的主要功能之一是儲存資訊，這些資訊會被轉譯成RNA，再進一步製造成細胞需要的蛋白质等物質。
+general_064 basic_science | ref: 汽化 | format: None
+    物質由液態變成氣態的過程稱作蒸發或揮發；如果是吸熱過程，也可以稱作汽化。如果是受熱引起的汽化，也可以稱作沸騰。請注意都是指吸收熱量的過程，而非所有的情況下物質從液態變為氣態都需要吸收熱量。這個描述根據具體情況可能會有所不同。
+general_075 basic_science | ref: 岩石圈 | format: None
+    地震主要與地殼層的板塊運動有關。地殼是地球最外層，分成大塊稱為板塊，這些板塊在地慢層上漂移。板塊與板塊交界處常是地殼活動頻繁的地區，容易發生地震。
+general_085 instruction_following | ref: 真 | format: False
+    是真的
+general_091 instruction_following | ref: ***** | format: False
+    ******
+general_097 instruction_following | ref: 12 | format: False
+    一年通常有12個月。
+
+==== 科學題自動判對的完整回答 ====
+general_051 | ref: H2O
+    水的化學分子式是H2O。
+general_052 | ref: 月球
+    地球的天然衛星是月球。
+general_053 | ref: 光合作用
+    植物通常透過光合作用過程利用光能製造養分。
+general_054 | ref: 100
+    海平面標準大氣壓下，水的沸點約為100攝氏度。
+general_056 | ref: 太陽
+    地球繞著太阳公轉。
+general_057 | ref: 牛頓
+    力的國際標準單位是牛頓（N）。
+general_058 | ref: 安培
+    電流的 SI 單位是安培（A）。
+general_059 | ref: 快
+    光在真空中傳播速度比聲音快。
+general_062 | ref: 心臟
+    人體負責泵送血液的器官是心臟。
+general_063 | ref: 氮氣
+    地球大氣中含量最多的氣體是氮氣。
+general_065 | ref: 酸性
+    pH 值小於 7 的水溶液通常呈酸性。
+general_066 | ref: 木星
+    太陽系中最大的行星是木星。
+general_067 | ref: 負電
+    電子通常帶負電。这是一个基本的科学事实，是由于湯瑪斯·杨森、約瑟夫·李特爾亨德爾、吉爾伯特·波茲曼等科學家的研究結果確定的。相反地，原子核帶正電。
+general_068 | ref: 不能
+    不能，在真空中聲音無法傳播。
+general_069 | ref: ATP
+    生物細胞中常被稱為能量貨幣的分子是adenosine triphosphate，簡稱ATP。
+general_070 | ref: 約 71%
+    地球表面約有71%被水覆蓋。
+general_071 | ref: 小
+    冰的密度通常比液態水小。
+general_072 | ref: 稜鏡
+    常見光學元件包括棱鏡或濾光片可以將光分解成不同顏色。其中棱鏡因操作簡單、成本低廉為最常見的方式。
+general_073 | ref: 肺
+    人體主要透過肺進行氣體交換。
+general_074 | ref: 良導體
+    金屬通常是熱和電的良導體。

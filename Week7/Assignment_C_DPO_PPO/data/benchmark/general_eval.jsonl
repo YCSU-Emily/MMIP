@@ -1,0 +1,100 @@
+{"id": "general_001", "category": "arithmetic", "question": "請計算 13 + 2，只回答數字。", "reference": "15"}
+{"id": "general_002", "category": "arithmetic", "question": "請計算 14 + 9，只回答數字。", "reference": "23"}
+{"id": "general_003", "category": "arithmetic", "question": "請計算 15 + 16，只回答數字。", "reference": "31"}
+{"id": "general_004", "category": "arithmetic", "question": "請計算 16 + 4，只回答數字。", "reference": "20"}
+{"id": "general_005", "category": "arithmetic", "question": "請計算 17 + 11，只回答數字。", "reference": "28"}
+{"id": "general_006", "category": "arithmetic", "question": "請計算 18 + 18，只回答數字。", "reference": "36"}
+{"id": "general_007", "category": "arithmetic", "question": "請計算 19 + 6，只回答數字。", "reference": "25"}
+{"id": "general_008", "category": "arithmetic", "question": "請計算 20 + 13，只回答數字。", "reference": "33"}
+{"id": "general_009", "category": "arithmetic", "question": "請計算 21 + 20，只回答數字。", "reference": "41"}
+{"id": "general_010", "category": "arithmetic", "question": "請計算 22 + 8，只回答數字。", "reference": "30"}
+{"id": "general_011", "category": "arithmetic", "question": "請計算 23 + 15，只回答數字。", "reference": "38"}
+{"id": "general_012", "category": "arithmetic", "question": "請計算 24 + 3，只回答數字。", "reference": "27"}
+{"id": "general_013", "category": "arithmetic", "question": "請計算 25 + 10，只回答數字。", "reference": "35"}
+{"id": "general_014", "category": "arithmetic", "question": "請計算 26 + 17，只回答數字。", "reference": "43"}
+{"id": "general_015", "category": "arithmetic", "question": "請計算 27 + 5，只回答數字。", "reference": "32"}
+{"id": "general_016", "category": "arithmetic", "question": "請計算 28 + 12，只回答數字。", "reference": "40"}
+{"id": "general_017", "category": "arithmetic", "question": "請計算 29 + 19，只回答數字。", "reference": "48"}
+{"id": "general_018", "category": "arithmetic", "question": "請計算 30 + 7，只回答數字。", "reference": "37"}
+{"id": "general_019", "category": "arithmetic", "question": "請計算 31 + 14，只回答數字。", "reference": "45"}
+{"id": "general_020", "category": "arithmetic", "question": "請計算 32 + 2，只回答數字。", "reference": "34"}
+{"id": "general_021", "category": "arithmetic", "question": "請計算 33 + 9，只回答數字。", "reference": "42"}
+{"id": "general_022", "category": "arithmetic", "question": "請計算 34 + 16，只回答數字。", "reference": "50"}
+{"id": "general_023", "category": "arithmetic", "question": "請計算 35 + 4，只回答數字。", "reference": "39"}
+{"id": "general_024", "category": "arithmetic", "question": "請計算 36 + 11，只回答數字。", "reference": "47"}
+{"id": "general_025", "category": "arithmetic", "question": "請計算 37 + 18，只回答數字。", "reference": "55"}
+{"id": "general_026", "category": "english_vocabulary", "question": "請將英文單字 'apple' 翻譯成繁體中文，只回答主要意思。", "reference": "蘋果"}
+{"id": "general_027", "category": "english_vocabulary", "question": "請將英文單字 'book' 翻譯成繁體中文，只回答主要意思。", "reference": "書"}
+{"id": "general_028", "category": "english_vocabulary", "question": "請將英文單字 'river' 翻譯成繁體中文，只回答主要意思。", "reference": "河流"}
+{"id": "general_029", "category": "english_vocabulary", "question": "請將英文單字 'mountain' 翻譯成繁體中文，只回答主要意思。", "reference": "山"}
+{"id": "general_030", "category": "english_vocabulary", "question": "請將英文單字 'window' 翻譯成繁體中文，只回答主要意思。", "reference": "窗戶"}
+{"id": "general_031", "category": "english_vocabulary", "question": "請將英文單字 'garden' 翻譯成繁體中文，只回答主要意思。", "reference": "花園"}
+{"id": "general_032", "category": "english_vocabulary", "question": "請將英文單字 'teacher' 翻譯成繁體中文，只回答主要意思。", "reference": "老師"}
+{"id": "general_033", "category": "english_vocabulary", "question": "請將英文單字 'library' 翻譯成繁體中文，只回答主要意思。", "reference": "圖書館"}
+{"id": "general_034", "category": "english_vocabulary", "question": "請將英文單字 'weather' 翻譯成繁體中文，只回答主要意思。", "reference": "天氣"}
+{"id": "general_035", "category": "english_vocabulary", "question": "請將英文單字 'journey' 翻譯成繁體中文，只回答主要意思。", "reference": "旅程"}
+{"id": "general_036", "category": "english_vocabulary", "question": "請將英文單字 'careful' 翻譯成繁體中文，只回答主要意思。", "reference": "小心的"}
+{"id": "general_037", "category": "english_vocabulary", "question": "請將英文單字 'bright' 翻譯成繁體中文，只回答主要意思。", "reference": "明亮的"}
+{"id": "general_038", "category": "english_vocabulary", "question": "請將英文單字 'quiet' 翻譯成繁體中文，只回答主要意思。", "reference": "安靜的"}
+{"id": "general_039", "category": "english_vocabulary", "question": "請將英文單字 'ancient' 翻譯成繁體中文，只回答主要意思。", "reference": "古老的"}
+{"id": "general_040", "category": "english_vocabulary", "question": "請將英文單字 'improve' 翻譯成繁體中文，只回答主要意思。", "reference": "改善"}
+{"id": "general_041", "category": "english_vocabulary", "question": "請將英文單字 'compare' 翻譯成繁體中文，只回答主要意思。", "reference": "比較"}
+{"id": "general_042", "category": "english_vocabulary", "question": "請將英文單字 'discover' 翻譯成繁體中文，只回答主要意思。", "reference": "發現"}
+{"id": "general_043", "category": "english_vocabulary", "question": "請將英文單字 'protect' 翻譯成繁體中文，只回答主要意思。", "reference": "保護"}
+{"id": "general_044", "category": "english_vocabulary", "question": "請將英文單字 'decision' 翻譯成繁體中文，只回答主要意思。", "reference": "決定"}
+{"id": "general_045", "category": "english_vocabulary", "question": "請將英文單字 'knowledge' 翻譯成繁體中文，只回答主要意思。", "reference": "知識"}
+{"id": "general_046", "category": "english_vocabulary", "question": "請將英文單字 'energy' 翻譯成繁體中文，只回答主要意思。", "reference": "能量"}
+{"id": "general_047", "category": "english_vocabulary", "question": "請將英文單字 'environment' 翻譯成繁體中文，只回答主要意思。", "reference": "環境"}
+{"id": "general_048", "category": "english_vocabulary", "question": "請將英文單字 'solution' 翻譯成繁體中文，只回答主要意思。", "reference": "解決方案"}
+{"id": "general_049", "category": "english_vocabulary", "question": "請將英文單字 'culture' 翻譯成繁體中文，只回答主要意思。", "reference": "文化"}
+{"id": "general_050", "category": "english_vocabulary", "question": "請將英文單字 'conversation' 翻譯成繁體中文，只回答主要意思。", "reference": "對話"}
+{"id": "general_051", "category": "basic_science", "question": "水的化學分子式是什麼？", "reference": "H2O"}
+{"id": "general_052", "category": "basic_science", "question": "地球的天然衛星是什麼？", "reference": "月球"}
+{"id": "general_053", "category": "basic_science", "question": "植物通常透過什麼過程利用光能製造養分？", "reference": "光合作用"}
+{"id": "general_054", "category": "basic_science", "question": "海平面標準大氣壓下，水的沸點約為幾攝氏度？", "reference": "100"}
+{"id": "general_055", "category": "basic_science", "question": "人類呼吸時主要吸入哪種氣體以供細胞使用？", "reference": "氧氣"}
+{"id": "general_056", "category": "basic_science", "question": "地球繞著哪一顆恆星公轉？", "reference": "太陽"}
+{"id": "general_057", "category": "basic_science", "question": "力的 SI 單位是什麼？", "reference": "牛頓"}
+{"id": "general_058", "category": "basic_science", "question": "電流的 SI 單位是什麼？", "reference": "安培"}
+{"id": "general_059", "category": "basic_science", "question": "光在真空中比聲音傳播得快還是慢？", "reference": "快"}
+{"id": "general_060", "category": "basic_science", "question": "成人通常有幾顆恆齒（不含智齒也可能不同）？", "reference": "通常 28 至 32 顆"}
+{"id": "general_061", "category": "basic_science", "question": "DNA 的主要功能之一是儲存什麼資訊？", "reference": "遺傳資訊"}
+{"id": "general_062", "category": "basic_science", "question": "人體負責泵送血液的器官是什麼？", "reference": "心臟"}
+{"id": "general_063", "category": "basic_science", "question": "地球大氣中含量最多的氣體是什麼？", "reference": "氮氣"}
+{"id": "general_064", "category": "basic_science", "question": "物質由液態變成氣態的過程稱為什麼？", "reference": "汽化"}
+{"id": "general_065", "category": "basic_science", "question": "pH 值小於 7 的水溶液通常呈什麼性？", "reference": "酸性"}
+{"id": "general_066", "category": "basic_science", "question": "太陽系中最大的行星是哪一顆？", "reference": "木星"}
+{"id": "general_067", "category": "basic_science", "question": "電子通常帶正電還是負電？", "reference": "負電"}
+{"id": "general_068", "category": "basic_science", "question": "聲音在真空中能否傳播？", "reference": "不能"}
+{"id": "general_069", "category": "basic_science", "question": "生物細胞中常被稱為能量貨幣的分子是什麼？", "reference": "ATP"}
+{"id": "general_070", "category": "basic_science", "question": "地球表面約有多少比例被水覆蓋？", "reference": "約 71%"}
+{"id": "general_071", "category": "basic_science", "question": "冰的密度通常比液態水大還是小？", "reference": "小"}
+{"id": "general_072", "category": "basic_science", "question": "將光分解成不同顏色的常見光學元件是什麼？", "reference": "稜鏡"}
+{"id": "general_073", "category": "basic_science", "question": "人體主要透過哪個器官進行氣體交換？", "reference": "肺"}
+{"id": "general_074", "category": "basic_science", "question": "金屬通常是熱和電的良導體還是不良導體？", "reference": "良導體"}
+{"id": "general_075", "category": "basic_science", "question": "地震主要與地球哪一層的板塊運動有關？", "reference": "岩石圈"}
+{"id": "general_076", "category": "instruction_following", "question": "用三個詞描述雨天，詞語以逗號分隔。", "reference": "潮濕,陰暗,清涼"}
+{"id": "general_077", "category": "instruction_following", "question": "只輸出英文大寫字母 A 到 E。", "reference": "ABCDE"}
+{"id": "general_078", "category": "instruction_following", "question": "將數字 42 寫成中文數字，只回答結果。", "reference": "四十二"}
+{"id": "general_079", "category": "instruction_following", "question": "用繁體中文回答：一週有幾天？只回答數字。", "reference": "7"}
+{"id": "general_080", "category": "instruction_following", "question": "請把 'good morning' 轉成全大寫，只回答結果。", "reference": "GOOD MORNING"}
+{"id": "general_081", "category": "instruction_following", "question": "列出紅、藍、綠三色，以頓號分隔，不要解釋。", "reference": "紅、藍、綠"}
+{"id": "general_082", "category": "instruction_following", "question": "將單字 cat 翻譯成繁體中文，只回答一個詞。", "reference": "貓"}
+{"id": "general_083", "category": "instruction_following", "question": "只輸出 9 的平方。", "reference": "81"}
+{"id": "general_084", "category": "instruction_following", "question": "請將字串 abc 反轉，只回答結果。", "reference": "cba"}
+{"id": "general_085", "category": "instruction_following", "question": "只回答 true 的繁體中文意思。", "reference": "真"}
+{"id": "general_086", "category": "instruction_following", "question": "列出星期一的英文，只回答單字。", "reference": "Monday"}
+{"id": "general_087", "category": "instruction_following", "question": "請把數字 1000 寫成阿拉伯數字。", "reference": "1000"}
+{"id": "general_088", "category": "instruction_following", "question": "只輸出 15 減 6 的結果。", "reference": "9"}
+{"id": "general_089", "category": "instruction_following", "question": "將 'Taiwan' 轉成小寫，只回答結果。", "reference": "taiwan"}
+{"id": "general_090", "category": "instruction_following", "question": "請用一個詞回答：白天相對於黑夜的時段叫什麼？", "reference": "白晝"}
+{"id": "general_091", "category": "instruction_following", "question": "只輸出五個連續的星號。", "reference": "*****"}
+{"id": "general_092", "category": "instruction_following", "question": "將 'machine learning' 翻譯成繁體中文。", "reference": "機器學習"}
+{"id": "general_093", "category": "instruction_following", "question": "只回答 3 乘以 8 的結果。", "reference": "24"}
+{"id": "general_094", "category": "instruction_following", "question": "請把英文單字 'water' 翻譯成繁體中文，只回答結果。", "reference": "水"}
+{"id": "general_095", "category": "instruction_following", "question": "只輸出字母表中 C 的下一個字母。", "reference": "D"}
+{"id": "general_096", "category": "instruction_following", "question": "請將 2、4、6 依序以逗號連接。", "reference": "2,4,6"}
+{"id": "general_097", "category": "instruction_following", "question": "只回答一年通常有幾個月。", "reference": "12"}
+{"id": "general_098", "category": "instruction_following", "question": "請將 'HELLO' 轉成小寫。", "reference": "hello"}
+{"id": "general_099", "category": "instruction_following", "question": "只輸出 20 除以 4 的結果。", "reference": "5"}
+{"id": "general_100", "category": "instruction_following", "question": "用繁體中文回答：三角形有幾條邊？只回答數字。", "reference": "3"}

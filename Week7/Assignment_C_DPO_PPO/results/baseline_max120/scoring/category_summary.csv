@@ -1,0 +1,6 @@
+﻿dataset,category,total,automatic_correct,automatic_accuracy,needs_review
+general,arithmetic,25,25,1.0,0
+general,basic_science,25,20,0.8,5
+general,english_vocabulary,25,18,0.72,7
+general,instruction_following,25,21,0.84,4
+target,all_target_categories,100,49,0.49,7

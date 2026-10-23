@@ -1,0 +1,106 @@
+{
+  "strict_baseline_256": {
+    "arithmetic": {
+      "n": 25,
+      "content": 25,
+      "fmt": 0,
+      "full": 0
+    },
+    "english_vocabulary": {
+      "n": 25,
+      "content": 22,
+      "fmt": 0,
+      "full": 0
+    },
+    "basic_science": {
+      "n": 25,
+      "content": 19,
+      "fmt": 0,
+      "full": 0
+    },
+    "instruction_following": {
+      "n": 25,
+      "content": 21,
+      "fmt": 18,
+      "full": 17
+    }
+  },
+  "strict_dpo_256": {
+    "arithmetic": {
+      "n": 25,
+      "content": 25,
+      "fmt": 0,
+      "full": 0
+    },
+    "english_vocabulary": {
+      "n": 25,
+      "content": 19,
+      "fmt": 0,
+      "full": 0
+    },
+    "basic_science": {
+      "n": 25,
+      "content": 20,
+      "fmt": 0,
+      "full": 0
+    },
+    "instruction_following": {
+      "n": 25,
+      "content": 22,
+      "fmt": 19,
+      "full": 18
+    }
+  },
+  "lenient_baseline_256": {
+    "arithmetic": {
+      "n": 25,
+      "content": 25,
+      "fmt": 0,
+      "full": 0
+    },
+    "english_vocabulary": {
+      "n": 25,
+      "content": 24,
+      "fmt": 0,
+      "full": 0
+    },
+    "basic_science": {
+      "n": 25,
+      "content": 20,
+      "fmt": 0,
+      "full": 0
+    },
+    "instruction_following": {
+      "n": 25,
+      "content": 22,
+      "fmt": 18,
+      "full": 17
+    }
+  },
+  "lenient_dpo_256": {
+    "arithmetic": {
+      "n": 25,
+      "content": 25,
+      "fmt": 0,
+      "full": 0
+    },
+    "english_vocabulary": {
+      "n": 25,
+      "content": 24,
+      "fmt": 0,
+      "full": 0
+    },
+    "basic_science": {
+      "n": 25,
+      "content": 21,
+      "fmt": 0,
+      "full": 0
+    },
+    "instruction_following": {
+      "n": 25,
+      "content": 22,
+      "fmt": 19,
+      "full": 18
+    }
+  }
+}

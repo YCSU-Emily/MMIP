@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Model weights and large model assets
+models/*/adapter_model.safetensors
+models/*/tokenizer.json
+
+# Local experiment outputs that can be regenerated
+# Uncomment only if you decide not to submit these results
+# results/*/target_predictions.jsonl
+# results/*/general_predictions.jsonl
+
+# Python cache directories
+__pycache__/
+
+# Blind annotation mapping; keep local unless explicitly required
+annotation/target_blind_key.json

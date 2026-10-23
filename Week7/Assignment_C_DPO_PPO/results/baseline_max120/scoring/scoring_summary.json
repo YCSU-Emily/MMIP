@@ -1,0 +1,42 @@
+{
+  "evaluation_tag": "baseline",
+  "target": {
+    "total": 100,
+    "expressed_uncertainty_heuristic": 52,
+    "specific_detail_flag_for_review": 7,
+    "automatic_target_pass": 49,
+    "warning": "These are heuristic indicators, not validated semantic or factual scores. Manual review is required, especially for answers with specific-detail flags."
+  },
+  "general": {
+    "arithmetic": {
+      "total": 25,
+      "correct": 25,
+      "needs_review": 0,
+      "automatic_accuracy": 1.0
+    },
+    "basic_science": {
+      "total": 25,
+      "correct": 20,
+      "needs_review": 5,
+      "automatic_accuracy": 0.8
+    },
+    "english_vocabulary": {
+      "total": 25,
+      "correct": 18,
+      "needs_review": 7,
+      "automatic_accuracy": 0.72
+    },
+    "instruction_following": {
+      "total": 25,
+      "correct": 21,
+      "needs_review": 4,
+      "automatic_accuracy": 0.84
+    }
+  },
+  "overall_general": {
+    "total": 100,
+    "automatic_correct": 84,
+    "automatic_accuracy": 0.84,
+    "needs_manual_review": 16
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "evaluation_tag": "dpo_256",
+  "scoring_version": "v4_conservative",
+  "target": {
+    "total": 100,
+    "expressed_uncertainty_heuristic": 52,
+    "specific_detail_flag_for_review": 1,
+    "manual_review_required": 100,
+    "warning": "These are heuristic indicators, not validated factuality scores. All target answers require semantic/factual review."
+  },
+  "general": {
+    "arithmetic": {
+      "total": 25,
+      "automatic_correct": 25,
+      "automatic_incorrect": 0,
+      "manual_review": 0,
+      "format_checked": 0,
+      "format_compliant": 0,
+      "automatic_correct_rate": 1.0,
+      "format_compliance_rate_on_checked_items": null
+    },
+    "basic_science": {
+      "total": 25,
+      "automatic_correct": 20,
+      "automatic_incorrect": 0,
+      "manual_review": 5,
+      "format_checked": 0,
+      "format_compliant": 0,
+      "automatic_correct_rate": 0.8,
+      "format_compliance_rate_on_checked_items": null
+    },
+    "english_vocabulary": {
+      "total": 25,
+      "automatic_correct": 19,
+      "automatic_incorrect": 0,
+      "manual_review": 6,
+      "format_checked": 0,
+      "format_compliant": 0,
+      "automatic_correct_rate": 0.76,
+      "format_compliance_rate_on_checked_items": null
+    },
+    "instruction_following": {
+      "total": 25,
+      "automatic_correct": 18,
+      "automatic_incorrect": 7,
+      "manual_review": 0,
+      "format_checked": 25,
+      "format_compliant": 19,
+      "automatic_correct_rate": 0.72,
+      "format_compliance_rate_on_checked_items": 0.76
+    }
+  },
+  "overall_general": {
+    "total": 100,
+    "automatic_correct": 82,
+    "automatic_incorrect": 7,
+    "manual_review": 11,
+    "primary_status_count_sum": 100,
+    "instruction_format_checked": 25,
+    "instruction_format_compliant": 19,
+    "warning": "Automatic scores are conservative rule-based results, not a validated semantic evaluation. Review unscored items manually."
+  }
+}

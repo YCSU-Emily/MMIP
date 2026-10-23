@@ -1,0 +1,5 @@
+﻿category,total,automatic_correct,automatic_incorrect,automatic_correct_rate,manual_review,format_checked,format_compliant,format_compliance_rate_on_checked_items
+arithmetic,25,25,0,1.0,0,0,0,
+basic_science,25,11,0,0.44,14,0,0,
+english_vocabulary,25,23,0,0.92,2,0,0,
+instruction_following,25,16,9,0.64,0,25,17,0.68

@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "tag": "baseline",
+  "target_questions": 100,
+  "general_questions": 100,
+  "total_questions": 200,
+  "dtype": "torch.bfloat16",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 120
+  }
+}

@@ -1,0 +1,371 @@
+import json
+import re
+import csv
+from pathlib import Path
+from collections import defaultdict
+
+ROOT = Path(__file__).resolve().parents[1]
+BASELINE = ROOT / "results/baseline"
+OUT_DIR = BASELINE / "scoring_v2"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def read_jsonl(path):
+    with path.open(encoding="utf-8") as f:
+        return [json.loads(line) for line in f if line.strip()]
+
+
+def normalize(text):
+    text = str(text).strip().lower()
+    text = text.replace("太阳", "太陽").replace("三棱镜", "三稜鏡")
+    text = re.sub(r"\s+", "", text)
+    text = re.sub(r"[，。！？、；：,.!?;:'\"「」『』（）()\[\]{}]", "", text)
+    return text
+
+
+def get_answer(row):
+    return str(row.get("model_answer", "")).strip()
+
+
+def get_reference(row):
+    return str(row.get("reference", "")).strip()
+
+
+# 明確列出的可接受同義答案；不進行寬鬆的子字串猜測。
+ALIASES = {
+    "general_028": {"河流", "河"},
+    "general_030": {"窗戶", "窗"},
+    "general_037": {"明亮的", "明亮"},
+    "general_038": {"安靜的", "安靜", "靜謐"},
+    "general_039": {"古老的", "古老"},
+    "general_056": {"太陽", "太阳"},
+    "general_072": {"稜鏡", "三稜鏡", "三棱鏡"},
+    "general_090": {"白晝", "白日"},
+}
+
+# 題目要求的輸出格式：只對可明確程式化檢查的條件評分。
+def instruction_format(row, answer):
+    qid = row.get("id", "")
+    a = answer.strip()
+
+    if qid == "general_076":
+        parts = [p.strip() for p in a.split(",")]
+        ok = len(parts) == 3 and all(parts)
+        return ok, "three_comma_separated_words"
+
+    if qid == "general_077":
+        return a == "ABCDE", "exact_uppercase_ABCDE"
+
+    if qid == "general_078":
+        return a == "四十二", "chinese_numeral_only"
+
+    if qid == "general_079":
+        return bool(re.fullmatch(r"7", a)), "arabic_digit_only"
+
+    if qid == "general_080":
+        return a == "GOOD MORNING", "uppercase_conversion_only"
+
+    if qid == "general_081":
+        return a == "紅、藍、綠", "exact_list_with_ideographic_commas"
+
+    if qid == "general_082":
+        return a == "貓", "one_word_translation"
+
+    if qid == "general_083":
+        return a == "81", "result_only"
+
+    if qid == "general_084":
+        return a == "cba", "reversed_string_only"
+
+    if qid == "general_085":
+        return a == "真", "translation_only"
+
+    if qid == "general_086":
+        return a == "Monday", "single_english_word"
+
+    if qid == "general_087":
+        return a == "1000", "arabic_numeral_only"
+
+    if qid == "general_088":
+        return a == "9", "result_only"
+
+    if qid == "general_089":
+        return a == "taiwan", "lowercase_conversion_only"
+
+    if qid == "general_090":
+        return len(a) > 0 and not re.search(r"[\s，,。！？]", a), "one_word"
+
+    if qid == "general_091":
+        return a == "*****", "exactly_five_asterisks"
+
+    if qid == "general_092":
+        return a == "機器學習", "translation_only"
+
+    if qid == "general_093":
+        return a == "24", "result_only"
+
+    if qid == "general_094":
+        return a == "水", "translation_only"
+
+    if qid == "general_095":
+        return a == "D", "single_letter_only"
+
+    if qid == "general_096":
+        return a == "2,4,6", "exact_comma_separated_sequence"
+
+    if qid == "general_097":
+        return a == "12", "number_only"
+
+    if qid == "general_098":
+        return a == "hello", "lowercase_conversion_only"
+
+    if qid == "general_099":
+        return a == "5", "result_only"
+
+    if qid == "general_100":
+        return bool(re.fullmatch(r"3", a)), "arabic_digit_only"
+
+    return None, "format_not_automatically_checked"
+
+
+def score_general(row):
+    answer = get_answer(row)
+    reference = get_reference(row)
+    qid = row.get("id", "")
+    category = row.get("category", "")
+    a_norm = normalize(answer)
+    r_norm = normalize(reference)
+
+    if not answer or not reference:
+        return {
+            **row,
+            "answer_correct": None,
+            "format_compliant": None,
+            "scoring_status": "manual_review",
+            "scoring_note": "Missing answer or reference",
+        }
+
+    if category == "instruction_following":
+        format_ok, format_rule = instruction_format(row, answer)
+
+        # 語意/內容採精確答案或明確同義詞判斷。
+        accepted = ALIASES.get(qid, {reference})
+        content_ok = normalize(answer) in {normalize(x) for x in accepted}
+
+        # 三詞描述雨天：內容也必須符合參考詞集合，不只看逗號格式。
+        if qid == "general_076":
+            parts = [normalize(x) for x in answer.split(",")]
+            expected = [normalize(x) for x in reference.split(",")]
+            content_ok = parts == expected
+
+        return {
+            **row,
+            "answer_correct": content_ok,
+            "format_compliant": format_ok,
+            "scoring_status": (
+                "automatic_exact_or_allowlisted"
+                if content_ok and format_ok
+                else "manual_review"
+            ),
+            "scoring_note": format_rule,
+        }
+
+    accepted = ALIASES.get(qid, {reference})
+    accepted_norm = {normalize(x) for x in accepted}
+
+    if a_norm in accepted_norm:
+        return {
+            **row,
+            "answer_correct": True,
+            "format_compliant": None,
+            "scoring_status": "automatic_exact_or_allowlisted",
+            "scoring_note": "Exact normalized answer or explicitly allowed synonym",
+        }
+
+    # 數學題：只在回答本身是數字時自動判定，避免把解釋中的數字誤當答案。
+    if category == "arithmetic":
+        if re.fullmatch(r"[-+]?\d+(?:\.\d+)?", answer):
+            return {
+                **row,
+                "answer_correct": normalize(answer) == r_norm,
+                "format_compliant": None,
+                "scoring_status": "automatic_numeric_comparison",
+                "scoring_note": "Standalone numeric answer",
+            }
+
+    # 其他不完全相同的答案不直接判錯，留待人工語意審查。
+    return {
+        **row,
+        "answer_correct": None,
+        "format_compliant": None,
+        "scoring_status": "manual_review",
+        "scoring_note": "No safe automatic match; manual semantic review required",
+    }
+
+
+UNCERTAINTY_MARKERS = [
+    "沒有證據", "沒有可信證據", "沒有可靠證據",
+    "目前沒有", "尚未", "並不存在", "不存在",
+    "無法確認", "無法確定", "無法提供",
+    "沒有資料", "沒有紀錄", "未有紀錄",
+    "前提不成立", "資訊不足", "無法判斷",
+    "不清楚", "不能確認", "沒有可信紀錄",
+    "no evidence", "does not exist", "do not exist",
+    "cannot confirm", "unable to verify", "not enough information",
+]
+
+
+def score_target(row):
+    answer = get_answer(row)
+    lower = answer.lower()
+
+    expressed_uncertainty = any(
+        marker in lower for marker in UNCERTAINTY_MARKERS
+    )
+
+    patterns = [
+        r"\b(?:19|20|21|22)\d{2}\b",
+        r"\b[A-Z][A-Za-z0-9&.-]*(?:\s+[A-Z][A-Za-z0-9&.-]*){0,2}\b",
+        r"\d+(?:\.\d+)?\s*(?:%|倍|年|月|日|公里|公尺|攝氏度)",
+    ]
+    has_specific_detail = any(
+        re.search(pattern, answer) for pattern in patterns
+    )
+
+    return {
+        **row,
+        "expressed_uncertainty_heuristic": expressed_uncertainty,
+        "specific_detail_flag_for_review": has_specific_detail,
+        "manual_review_required": True,
+        "scoring_note": (
+            "Heuristic indicators only. Neither uncertainty nor a detail flag "
+            "determines factual correctness; inspect the full answer manually."
+        ),
+    }
+
+
+def main():
+    target_rows = read_jsonl(BASELINE / "target_predictions.jsonl")
+    general_rows = read_jsonl(BASELINE / "general_predictions.jsonl")
+
+    target_scored = [score_target(r) for r in target_rows]
+    general_scored = [score_general(r) for r in general_rows]
+
+    target_path = OUT_DIR / "target_scored.jsonl"
+    general_path = OUT_DIR / "general_scored.jsonl"
+
+    for path, rows in [
+        (target_path, target_scored),
+        (general_path, general_scored),
+    ]:
+        with path.open("w", encoding="utf-8") as f:
+            for row in rows:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+    stats = defaultdict(lambda: {
+        "total": 0,
+        "automatic_correct": 0,
+        "manual_review": 0,
+        "format_checked": 0,
+        "format_compliant": 0,
+    })
+
+    for row in general_scored:
+        s = stats[row.get("category", "unknown")]
+        s["total"] += 1
+        s["automatic_correct"] += int(row.get("answer_correct") is True)
+        s["manual_review"] += int(row.get("scoring_status") == "manual_review")
+        if row.get("format_compliant") is not None:
+            s["format_checked"] += 1
+            s["format_compliant"] += int(row["format_compliant"] is True)
+
+    general_summary = {}
+    for category, s in sorted(stats.items()):
+        general_summary[category] = {
+            **s,
+            "automatic_correct_rate": (
+                round(s["automatic_correct"] / s["total"], 4)
+                if s["total"] else None
+            ),
+            "format_compliance_rate_on_checked_items": (
+                round(s["format_compliant"] / s["format_checked"], 4)
+                if s["format_checked"] else None
+            ),
+        }
+
+    target_summary = {
+        "total": len(target_scored),
+        "expressed_uncertainty_heuristic": sum(
+            r["expressed_uncertainty_heuristic"] for r in target_scored
+        ),
+        "specific_detail_flag_for_review": sum(
+            r["specific_detail_flag_for_review"] for r in target_scored
+        ),
+        "manual_review_required": len(target_scored),
+        "warning": (
+            "These are heuristic indicators, not validated factuality scores. "
+            "All target answers require semantic/factual review."
+        ),
+    }
+
+    summary = {
+        "evaluation_tag": "baseline",
+        "scoring_version": "v2_conservative",
+        "target": target_summary,
+        "general": general_summary,
+        "overall_general": {
+            "total": len(general_scored),
+            "automatic_correct": sum(
+                r.get("answer_correct") is True for r in general_scored
+            ),
+            "manual_review": sum(
+                r.get("scoring_status") == "manual_review"
+                for r in general_scored
+            ),
+            "instruction_format_checked": sum(
+                r.get("format_compliant") is not None for r in general_scored
+            ),
+            "instruction_format_compliant": sum(
+                r.get("format_compliant") is True for r in general_scored
+            ),
+            "warning": (
+                "Automatic scores are conservative rule-based results, not a "
+                "validated semantic evaluation. Review unscored items manually."
+            ),
+        },
+    }
+
+    summary_path = OUT_DIR / "scoring_summary.json"
+    summary_path.write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    csv_path = OUT_DIR / "category_summary.csv"
+    with csv_path.open("w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            "category", "total", "automatic_correct",
+            "automatic_correct_rate", "manual_review",
+            "format_checked", "format_compliant",
+            "format_compliance_rate_on_checked_items",
+        ])
+        for category, s in sorted(general_summary.items()):
+            writer.writerow([
+                category, s["total"], s["automatic_correct"],
+                s["automatic_correct_rate"], s["manual_review"],
+                s["format_checked"], s["format_compliant"],
+                s["format_compliance_rate_on_checked_items"],
+            ])
+
+    print("===== BASELINE SCORING V2 SUMMARY =====")
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    print("\nSaved:")
+    print(target_path)
+    print(general_path)
+    print(summary_path)
+    print(csv_path)
+
+
+if __name__ == "__main__":
+    main()

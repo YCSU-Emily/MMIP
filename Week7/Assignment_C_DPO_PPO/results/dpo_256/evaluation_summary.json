@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "tag": "dpo_256",
+  "adapter": "models/dpo_lora_v1",
+  "target_questions": 100,
+  "general_questions": 100,
+  "total_questions": 200,
+  "dtype": "torch.bfloat16",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  }
+}
