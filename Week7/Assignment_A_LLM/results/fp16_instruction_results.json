@@ -1,0 +1,393 @@
+{
+  "timestamp": "2026-10-23T14:16:42",
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "precision": "FP16",
+  "max_new_tokens": 160,
+  "num_questions": 20,
+  "results": [
+    {
+      "id": 1,
+      "category": "指令遵循",
+      "prompt": "請用繁體中文列出節省用電的三個方法，恰好三點，每點不超過20個中文字。",
+      "reference_answer": "應提供恰好三個節省用電的方法，每點不超過20個中文字。",
+      "evaluation_keywords": [
+        "關閉",
+        "電源",
+        "節能"
+      ],
+      "model_answer": "1. 調整冷氣設定溫度至26度以上\n2. 選擇性關閉未使用的電源插座\n3. 使用LED燈泡替代傳統燈泡",
+      "input_tokens": 71,
+      "generated_tokens": 44,
+      "latency_seconds": 0.7906,
+      "tokens_per_second": 55.6554,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 2,
+      "category": "摘要",
+      "prompt": "請將以下內容摘要成兩句話：邊緣運算是將資料處理工作放在靠近資料來源的裝置或節點執行，而不是全部送到遠端雲端。這能降低傳輸延遲與網路負擔，也有助於即時應用。不過，邊緣裝置通常有運算能力、記憶體與能源限制，因此需要設計更有效率的模型。",
+      "reference_answer": "邊緣運算將資料處理放在靠近資料來源的位置，可降低延遲與網路負擔。由於邊緣裝置的資源有限，因此需要高效率的模型。",
+      "evaluation_keywords": [
+        "延遲",
+        "網路",
+        "資源",
+        "模型"
+      ],
+      "model_answer": "邊緣運算將資料處理移至資料源附近執行，以減少傳輸延遲和網路負擔，並支援即時應用；然而，由於邊緣裝置的資源限制，需設計高效能的模型。",
+      "input_tokens": 129,
+      "generated_tokens": 50,
+      "latency_seconds": 0.5477,
+      "tokens_per_second": 91.2833,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 3,
+      "category": "翻譯",
+      "prompt": "請將句子翻譯成自然的繁體中文：Quantization reduces model memory usage by representing weights with fewer bits, but it may affect accuracy.",
+      "reference_answer": "量化透過使用較少位元表示模型權重來降低記憶體使用量，但可能影響準確度。",
+      "evaluation_keywords": [
+        "量化",
+        "權重",
+        "記憶體",
+        "準確度"
+      ],
+      "model_answer": "量化可以減少模型的記憶體使用，因為它可以用較少的位元來表示權重，但可能會影響準確度。",
+      "input_tokens": 75,
+      "generated_tokens": 31,
+      "latency_seconds": 0.3268,
+      "tokens_per_second": 94.8635,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 4,
+      "category": "英文生成",
+      "prompt": "請用英文寫一封約50字的正式郵件，向教授詢問下週是否有時間討論研究進度。",
+      "reference_answer": "一封語氣正式、內容清楚、約50字且詢問下週討論研究進度時間的英文郵件。",
+      "evaluation_keywords": [
+        "Dear",
+        "research",
+        "meeting",
+        "Best"
+      ],
+      "model_answer": "Subject: Inquiry about Time for Research Progress Discussion Next Week\n\nDear Professor [Last Name],\n\nI hope this message finds you well. Would you have a moment next week to discuss the progress of our research project?\n\nThank you,  \n[Your Name]",
+      "input_tokens": 70,
+      "generated_tokens": 51,
+      "latency_seconds": 0.5271,
+      "tokens_per_second": 96.7472,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 5,
+      "category": "數學推理",
+      "prompt": "一個模型原本每張圖片推論需要200毫秒，最佳化後降低25%。請計算新的推論時間，並寫出計算過程。",
+      "reference_answer": "200 × (1 - 0.25) = 150 毫秒。",
+      "evaluation_keywords": [
+        "150",
+        "毫秒",
+        "25%"
+      ],
+      "model_answer": "原來每張圖片推論需要200毫秒。\n\n最佳化後，推論時間降低了25%，即降低了原時間的25%。\n\n首先計算降低的時間：\n200毫秒 * 25% = 200毫秒 * 0.25 = 50毫秒\n\n然後從原時間中減去降低的時間得到新的推論時間：\n200毫秒 - 50毫秒 = 150毫秒\n\n因此，最佳化後的新的推論時間為150毫秒。",
+      "input_tokens": 79,
+      "generated_tokens": 123,
+      "latency_seconds": 1.2195,
+      "tokens_per_second": 100.8578,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 6,
+      "category": "邏輯推理",
+      "prompt": "所有 FPGA 都是可重新配置的硬體裝置。裝置 A 是 FPGA。根據這兩個前提，可以得出什麼結論？請勿加入前提以外的資訊。",
+      "reference_answer": "裝置 A 是可重新配置的硬體裝置。",
+      "evaluation_keywords": [
+        "裝置 A",
+        "可重新配置"
+      ],
+      "model_answer": "根據給定的前提，可以得出以下結論：\n\n裝置A是可重新配置的硬體裝置。",
+      "input_tokens": 82,
+      "generated_tokens": 25,
+      "latency_seconds": 0.25,
+      "tokens_per_second": 100.019,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 7,
+      "category": "資訊擷取",
+      "prompt": "請從文字擷取專案名稱、平台、作業系統與加速器：本專案使用 TinyFormer，在 Ubuntu 22.04 上透過 Xilinx Alveo U50 FPGA 進行推論加速。",
+      "reference_answer": "專案：TinyFormer；平台：Xilinx Alveo U50 FPGA；作業系統：Ubuntu 22.04；用途：推論加速。",
+      "evaluation_keywords": [
+        "TinyFormer",
+        "Ubuntu 22.04",
+        "U50",
+        "推論加速"
+      ],
+      "model_answer": "根據您的描述，可以得到以下資訊：\n\n- **專案名稱**：未提供具體名稱，僅提及使用了 TinyFormer 模型。\n- **平台**：Xilinx Alveo U50 FPGA\n- **作業系統**：Ubuntu 22.04\n- **加速器**：Xilinx Alveo U50 FPGA",
+      "input_tokens": 94,
+      "generated_tokens": 80,
+      "latency_seconds": 0.7923,
+      "tokens_per_second": 100.9728,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 8,
+      "category": "分類",
+      "prompt": "請將以下評論分類為正面、負面或中性，並簡短說明：模型的速度很快，但準確率比原本版本低很多。",
+      "reference_answer": "中性或複合評價：速度表現正面，但準確率表現負面。",
+      "evaluation_keywords": [
+        "速度",
+        "準確率"
+      ],
+      "model_answer": "這則評論可以被分類為中性。\n\n理由是，評論中提到了兩個方面：速度和準確率。其中，「模型的速度很快」是一個正面的評價，表明了模型在速度上的優點；然而，「準確率比原本版本低很多」則是一個負面的評價，指出模型在另一個重要指標上的不足。由於正面和負面評價相互抵銷，整體評論沒有明確的偏向性，因此歸類為中性。",
+      "input_tokens": 78,
+      "generated_tokens": 112,
+      "latency_seconds": 1.1127,
+      "tokens_per_second": 100.6521,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 9,
+      "category": "情緒分析",
+      "prompt": "判斷句子的主要情緒是開心、憤怒、悲傷或擔憂：我已經準備了很久，但還是不確定報告能不能順利完成。",
+      "reference_answer": "擔憂。",
+      "evaluation_keywords": [
+        "擔憂",
+        "不確定"
+      ],
+      "model_answer": "這個句子的主要情緒是擔憂。句子中提到「已經準備了很久」但仍然有疑慮「能不能順利完成」，顯示出一種對結果的不安和焦慮。",
+      "input_tokens": 77,
+      "generated_tokens": 40,
+      "latency_seconds": 0.3976,
+      "tokens_per_second": 100.6011,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 10,
+      "category": "結構化輸出",
+      "prompt": "請只輸出合法 JSON，欄位為 model、precision、device。值分別為 Qwen2.5-3B-Instruct、FP16、RTX 5090。不得加入 Markdown 或其他文字。",
+      "reference_answer": "{\"model\":\"Qwen2.5-3B-Instruct\",\"precision\":\"FP16\",\"device\":\"RTX 5090\"}",
+      "evaluation_keywords": [
+        "model",
+        "precision",
+        "device",
+        "RTX 5090"
+      ],
+      "model_answer": "{\n  \"model\": \"Qwen2.5-3B-Instruct\",\n  \"precision\": \"FP16\",\n  \"device\": \"RTX 5090\"\n}",
+      "input_tokens": 92,
+      "generated_tokens": 41,
+      "latency_seconds": 0.4064,
+      "tokens_per_second": 100.8917,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 11,
+      "category": "程式生成",
+      "prompt": "請用 Python 寫一個函式 square(n)，回傳 n 的平方，並附上 square(4) 的測試。請只輸出程式碼。",
+      "reference_answer": "定義 square(n) 並回傳 n*n 或 n**2，測試 square(4) 得到16。",
+      "evaluation_keywords": [
+        "def square",
+        "return",
+        "16"
+      ],
+      "model_answer": "```python\ndef square(n):\n    return n * n\n\nprint(square(4))\n```\n\n執行上述程式碼後，`square(4)` 的結果會印出 `16`。",
+      "input_tokens": 78,
+      "generated_tokens": 42,
+      "latency_seconds": 0.4172,
+      "tokens_per_second": 100.6741,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 12,
+      "category": "除錯",
+      "prompt": "請指出並修正程式錯誤：for i in range(5) print(i)。請提供正確的 Python 程式碼。",
+      "reference_answer": "for i in range(5):\\n    print(i)",
+      "evaluation_keywords": [
+        "for i in range(5):",
+        "print(i)"
+      ],
+      "model_answer": "這個程式碼的主要問題在於 `print` 這一行應該放在 `for` 迴圈內部，因為目前它會在迴圈結束後才執行一次。以下是修正後的程式碼：\n\n```python\nfor i in range(5):\n    print(i)\n```\n\n這樣就可以讓迴圈中的每個數字都能夠被印出。",
+      "input_tokens": 72,
+      "generated_tokens": 75,
+      "latency_seconds": 0.7463,
+      "tokens_per_second": 100.4901,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 13,
+      "category": "概念解釋",
+      "prompt": "請向沒有工程背景的人解釋什麼是 FPGA，使用一個生活化的比喻，限80字以內。",
+      "reference_answer": "以容易理解的比喻說明 FPGA 是可重新配置、能依需求改變硬體功能的晶片。",
+      "evaluation_keywords": [
+        "重新配置",
+        "晶片",
+        "比喻"
+      ],
+      "model_answer": "FPGA就像一台 customizable 的積木機器人，你可以根據需要組裝不同的模組來完成各種任務。",
+      "input_tokens": 67,
+      "generated_tokens": 26,
+      "latency_seconds": 0.2606,
+      "tokens_per_second": 99.7547,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 14,
+      "category": "比較分析",
+      "prompt": "請比較 CPU 與 GPU 在平行運算方面的一般差異，列出兩項差異，並說明這不代表其中一者在所有工作都比較快。",
+      "reference_answer": "CPU 通常偏向較少但較複雜的核心與通用控制；GPU 通常有大量運算單元，適合高度平行工作。效能取決於工作負載。",
+      "evaluation_keywords": [
+        "平行",
+        "核心",
+        "工作負載"
+      ],
+      "model_answer": "CPU（中央處理器）與GPU（圖形處理器）在平行運算方面的差異主要體現在以下兩點：\n\n1. **專門化設計**：GPU是為處理大量平行計算而設計的，它有著大量的核心和較低的單個核心性能。相比之下，CPU的核心數量較少，但每個核心的性能較高。這種設計使得GPU在進行大量並行計算時效率更高。\n\n2. **指令集與架構**：GPU的指令集和架構設計更適合並行運算，例如支持SIMD（Single Instruction Multiple Data，單一指令多數據流）運算模式，允許同時處理多個數據元素。而CPU的指令集和架構則更適合串",
+      "input_tokens": 80,
+      "generated_tokens": 160,
+      "latency_seconds": 1.5975,
+      "tokens_per_second": 100.1589,
+      "hit_max_new_tokens": true,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 15,
+      "category": "規劃能力",
+      "prompt": "請列出部署開源語言模型的四個基本步驟，順序需合理，並使用編號清單。",
+      "reference_answer": "合理步驟包括確認硬體與環境、下載模型、載入模型、執行推論與驗證結果。",
+      "evaluation_keywords": [
+        "環境",
+        "模型",
+        "載入",
+        "推論"
+      ],
+      "model_answer": "部署開源語言模型的四個基本步驟如下：\n\n1. **模型訓練與優化**：首先需要根據具體需求選擇合適的開源語言模型進行訓練。訓練過程中，可能需要調整超參數以獲得最佳表現。此外，還需對模型進行優化，包括剪枝、量化等技術，以減少模型大小和運算量，提高部署效率。\n\n2. **模型轉換與適配**：訓練完畢後，需要將模型轉換為適合特定應用場景的格式。例如，可以將模型轉換為ONNX（Open Neural Network Exchange）格式，以便在不同的框架之間進行相容性運作。此外，還需對模型進行適配，確保其能夠滿足",
+      "input_tokens": 70,
+      "generated_tokens": 160,
+      "latency_seconds": 1.6768,
+      "tokens_per_second": 95.4204,
+      "hit_max_new_tokens": true,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 16,
+      "category": "知識問答",
+      "prompt": "在深度學習中，訓練集、驗證集與測試集通常各自有什麼用途？請各用一句話回答。",
+      "reference_answer": "訓練集用來更新模型參數；驗證集用於模型選擇與超參數調整；測試集用於估計最終泛化表現。",
+      "evaluation_keywords": [
+        "參數",
+        "超參數",
+        "泛化"
+      ],
+      "model_answer": "訓練集用於訓練模型，讓模型學習到數據中的模式和關係。\n驗證集用於調整模型的超參數，以避免過度擬合並找到最佳模型配置。\n測試集用於評估最終訓練完成後模型的預測能力，確保模型在未見之新數據上的表現。",
+      "input_tokens": 71,
+      "generated_tokens": 70,
+      "latency_seconds": 0.705,
+      "tokens_per_second": 99.2849,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 17,
+      "category": "不確定性處理",
+      "prompt": "只根據以下資訊回答：某模型在測試集上的準確率是92%。是否能因此斷定它在所有真實情境都會有92%的準確率？請說明原因。",
+      "reference_answer": "不能。真實情境的資料分布、測試集代表性及其他條件都可能影響實際表現。",
+      "evaluation_keywords": [
+        "不能",
+        "資料分布",
+        "測試集"
+      ],
+      "model_answer": "不能因此斷定它在所有真實情境都會有92%的準確率。因為測試集上的準確率是基於特定訓練和測試數據集的結果，並不代表模型在所有真實情境下的表現。真實情境可能會有不同的條件和變數，這些都可能影響模型的預測準確性。此外，模型的準確率也可能受到過度擬合或欠擬合的影響，這也意味著模型可能在訓練集上表現良好，但在未見到的數據上表現不佳。因此，單純從測試集上的準確率來評估模型在所有真實情境下的表現是不夠全面的。",
+      "input_tokens": 88,
+      "generated_tokens": 143,
+      "latency_seconds": 1.4317,
+      "tokens_per_second": 99.8846,
+      "hit_max_new_tokens": false,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 18,
+      "category": "資料安全",
+      "prompt": "同事寄來一封要求立即提供密碼的郵件，並附上陌生連結。請提出三項安全處理方式。",
+      "reference_answer": "不要提供密碼、不要直接點擊陌生連結、透過官方管道確認寄件者並回報可疑郵件。",
+      "evaluation_keywords": [
+        "不要提供密碼",
+        "連結",
+        "確認",
+        "回報"
+      ],
+      "model_answer": "面對這種情況，確實需要謹慎處理，以避免可能的安全風險。以下是三個建議的安全處理方式：\n\n1. **確認來源**：首先，應該確認這封郵件是否來自可靠的來源。如果郵件是從公司內部系統發出的，且內容符合公司的慣例和風格，那可能是正常的。但如果是從未知或可疑的電子郵件地址收到的，則應提高警覺。\n\n2. **不要點擊連結**：即使郵件看似來自公司內部，也不要直接點擊任何附上的連結。這些連結可能會導向偽造的網站，用來盜取用戶的敏感信息。最好的做法是通過公司官方渠道（如企業內部網站）尋找相關資訊，或者直接聯繫",
+      "input_tokens": 69,
+      "generated_tokens": 160,
+      "latency_seconds": 1.5877,
+      "tokens_per_second": 100.7743,
+      "hit_max_new_tokens": true,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 19,
+      "category": "因果分析",
+      "prompt": "某次實驗發現量化後模型準確率下降。請提出兩個可能原因，並說明還需要什麼實驗才能確認原因。",
+      "reference_answer": "可能原因包括量化誤差與校正資料不具代表性；需控制其他條件並比較不同精度、校正方式與資料集。",
+      "evaluation_keywords": [
+        "量化誤差",
+        "校正",
+        "比較",
+        "實驗"
+      ],
+      "model_answer": "當量化後模型準確率下降時，可能的原因有以下兩種：\n\n1. **量化過程中的信息損失**：在進行模型量化時，為了節省存儲空間和運算資源，我們通常會將模型參數從浮點數轉換為整數。這個過程中可能會有一些信息被舍棄，導致模型的表現下降。\n\n2. **模型適應性問題**：量化過程可能會影響模型的訓練過程，使得模型在訓練過程中無法有效地學習到所有的模式和特徵，進而導致模型的準確率下降。\n\n為了確認具體原因，可以進行以下實驗：\n\n1. **比較未量化模型與量化模型的表現**：首先，對比未進行量化處理的原始模型與經過",
+      "input_tokens": 73,
+      "generated_tokens": 160,
+      "latency_seconds": 1.5886,
+      "tokens_per_second": 100.7157,
+      "hit_max_new_tokens": true,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    {
+      "id": 20,
+      "category": "創意生成",
+      "prompt": "提出三個利用邊緣 AI 改善校園生活的點子，每個點子包含應用情境與一項好處。",
+      "reference_answer": "三個不同的校園邊緣 AI 應用點子，每個都有明確情境與好處。",
+      "evaluation_keywords": [
+        "校園",
+        "應用",
+        "好處"
+      ],
+      "model_answer": "好的，以下是三個利用邊緣 AI 改善校園生活的點子：\n\n1. **智慧門禁系統**\n   - **應用情境**：在學校的入口設置一個邊緣 AI 智慧門禁系統，當學生或教師通過時，系統會自動識別他們的身份並進行身份驗證。\n   - **好處**：此系統可以大幅提高門禁的安全性，減少人工操作的錯誤，同時也提高了通行效率，讓學生和教師能夠更快地進入校園。\n\n2. **行動學習輔助系統**\n   - **應用情境**：利用邊緣 AI 技術，為學生提供個性化的學習輔助，例如根據學生的學習進度和偏好，推薦相關的學習資源和",
+      "input_tokens": 70,
+      "generated_tokens": 160,
+      "latency_seconds": 1.5888,
+      "tokens_per_second": 100.7018,
+      "hit_max_new_tokens": true,
+      "precision": "FP16",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct"
+    }
+  ]
+}

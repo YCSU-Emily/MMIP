@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "quantization": "4-bit NF4 with double quantization",
+  "compute_dtype": "float16",
+  "load_seconds": 3.2293506710557267,
+  "inference_seconds": 0.8106533660320565,
+  "input_tokens": 47,
+  "generated_tokens": 31,
+  "tokens_per_second": 38.24075899633547,
+  "gpu_allocated_after_inference_gib": 1.9544239044189453,
+  "gpu_peak_allocated_gib": 2.0038208961486816,
+  "gpu_peak_reserved_gib": 2.02734375,
+  "answer": "減少使用電冰箱，開燈時盡量使用自然光。使用LED燈泡代替傳統燈泡。選擇能效高的家电产品。"
+}

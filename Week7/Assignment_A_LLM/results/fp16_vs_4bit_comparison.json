@@ -1,0 +1,456 @@
+{
+  "description": "FP16 versus 4-bit NF4 on the same 20 prompts. Keyword coverage is a simple string-match proxy, not semantic accuracy. Memory fields are only compared when recorded by the respective run.",
+  "summaries": {
+    "FP16": {
+      "questions": 20,
+      "average_keyword_coverage": 0.7083333333333333,
+      "average_latency_seconds": 0.8985449999999998,
+      "total_generated_tokens": 1753,
+      "overall_tokens_per_second": 97.54658920810868,
+      "responses_at_token_limit": 5,
+      "average_peak_allocated_gib": null,
+      "max_peak_allocated_gib": null
+    },
+    "4-bit NF4": {
+      "questions": 20,
+      "average_keyword_coverage": 0.7208333333333333,
+      "average_latency_seconds": 1.451045,
+      "total_generated_tokens": 1844,
+      "overall_tokens_per_second": 63.54041397751276,
+      "responses_at_token_limit": 7,
+      "average_peak_allocated_gib": 2.0074300000000003,
+      "max_peak_allocated_gib": 2.0121
+    }
+  },
+  "per_question": [
+    {
+      "id": 1,
+      "category": "指令遵循",
+      "fp16_coverage": 0.6667,
+      "4bit_coverage": 0.6667,
+      "fp16_matched_keywords": [
+        "關閉",
+        "電源"
+      ],
+      "4bit_matched_keywords": [
+        "電源",
+        "節能"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 0.7906,
+      "4bit_latency_seconds": 1.1101,
+      "fp16_generated_tokens": 44,
+      "4bit_generated_tokens": 51,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 2,
+      "category": "摘要",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "延遲",
+        "網路",
+        "資源",
+        "模型"
+      ],
+      "4bit_matched_keywords": [
+        "延遲",
+        "網路",
+        "資源",
+        "模型"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 0.5477,
+      "4bit_latency_seconds": 0.9417,
+      "fp16_generated_tokens": 50,
+      "4bit_generated_tokens": 55,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 3,
+      "category": "翻譯",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "量化",
+        "權重",
+        "記憶體",
+        "準確度"
+      ],
+      "4bit_matched_keywords": [
+        "量化",
+        "權重",
+        "記憶體",
+        "準確度"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 0.3268,
+      "4bit_latency_seconds": 0.501,
+      "fp16_generated_tokens": 31,
+      "4bit_generated_tokens": 31,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 4,
+      "category": "英文生成",
+      "fp16_coverage": 0.5,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "Dear",
+        "research"
+      ],
+      "4bit_matched_keywords": [
+        "Dear",
+        "research",
+        "meeting",
+        "Best"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 0.5271,
+      "4bit_latency_seconds": 0.8381,
+      "fp16_generated_tokens": 51,
+      "4bit_generated_tokens": 51,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 5,
+      "category": "數學推理",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "150",
+        "毫秒",
+        "25%"
+      ],
+      "4bit_matched_keywords": [
+        "150",
+        "毫秒",
+        "25%"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 1.2195,
+      "4bit_latency_seconds": 2.5227,
+      "fp16_generated_tokens": 123,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 6,
+      "category": "邏輯推理",
+      "fp16_coverage": 0.5,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "可重新配置"
+      ],
+      "4bit_matched_keywords": [
+        "裝置 A",
+        "可重新配置"
+      ],
+      "keyword_count": 2,
+      "fp16_latency_seconds": 0.25,
+      "4bit_latency_seconds": 0.7101,
+      "fp16_generated_tokens": 25,
+      "4bit_generated_tokens": 45,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 7,
+      "category": "資訊擷取",
+      "fp16_coverage": 0.75,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "TinyFormer",
+        "Ubuntu 22.04",
+        "U50"
+      ],
+      "4bit_matched_keywords": [
+        "TinyFormer",
+        "Ubuntu 22.04",
+        "U50",
+        "推論加速"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 0.7923,
+      "4bit_latency_seconds": 1.8049,
+      "fp16_generated_tokens": 80,
+      "4bit_generated_tokens": 119,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 8,
+      "category": "分類",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "速度",
+        "準確率"
+      ],
+      "4bit_matched_keywords": [
+        "速度",
+        "準確率"
+      ],
+      "keyword_count": 2,
+      "fp16_latency_seconds": 1.1127,
+      "4bit_latency_seconds": 1.602,
+      "fp16_generated_tokens": 112,
+      "4bit_generated_tokens": 103,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 9,
+      "category": "情緒分析",
+      "fp16_coverage": 0.5,
+      "4bit_coverage": 0.5,
+      "fp16_matched_keywords": [
+        "擔憂"
+      ],
+      "4bit_matched_keywords": [
+        "擔憂"
+      ],
+      "keyword_count": 2,
+      "fp16_latency_seconds": 0.3976,
+      "4bit_latency_seconds": 0.1456,
+      "fp16_generated_tokens": 40,
+      "4bit_generated_tokens": 9,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 10,
+      "category": "結構化輸出",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "model",
+        "precision",
+        "device",
+        "RTX 5090"
+      ],
+      "4bit_matched_keywords": [
+        "model",
+        "precision",
+        "device",
+        "RTX 5090"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 0.4064,
+      "4bit_latency_seconds": 0.7081,
+      "fp16_generated_tokens": 41,
+      "4bit_generated_tokens": 45,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 11,
+      "category": "程式生成",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 0.6667,
+      "fp16_matched_keywords": [
+        "def square",
+        "return",
+        "16"
+      ],
+      "4bit_matched_keywords": [
+        "def square",
+        "return"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 0.4172,
+      "4bit_latency_seconds": 0.311,
+      "fp16_generated_tokens": 42,
+      "4bit_generated_tokens": 20,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 12,
+      "category": "除錯",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "for i in range(5):",
+        "print(i)"
+      ],
+      "4bit_matched_keywords": [
+        "for i in range(5):",
+        "print(i)"
+      ],
+      "keyword_count": 2,
+      "fp16_latency_seconds": 0.7463,
+      "4bit_latency_seconds": 1.1253,
+      "fp16_generated_tokens": 75,
+      "4bit_generated_tokens": 74,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 13,
+      "category": "概念解釋",
+      "fp16_coverage": 0.0,
+      "4bit_coverage": 0.0,
+      "fp16_matched_keywords": [],
+      "4bit_matched_keywords": [],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 0.2606,
+      "4bit_latency_seconds": 0.5191,
+      "fp16_generated_tokens": 26,
+      "4bit_generated_tokens": 34,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 14,
+      "category": "比較分析",
+      "fp16_coverage": 0.6667,
+      "4bit_coverage": 0.3333,
+      "fp16_matched_keywords": [
+        "平行",
+        "核心"
+      ],
+      "4bit_matched_keywords": [
+        "平行"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 1.5975,
+      "4bit_latency_seconds": 2.4601,
+      "fp16_generated_tokens": 160,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": true,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 15,
+      "category": "規劃能力",
+      "fp16_coverage": 0.25,
+      "4bit_coverage": 0.5,
+      "fp16_matched_keywords": [
+        "模型"
+      ],
+      "4bit_matched_keywords": [
+        "環境",
+        "模型"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 1.6768,
+      "4bit_latency_seconds": 2.4164,
+      "fp16_generated_tokens": 160,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": true,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 16,
+      "category": "知識問答",
+      "fp16_coverage": 0.6667,
+      "4bit_coverage": 1.0,
+      "fp16_matched_keywords": [
+        "參數",
+        "超參數"
+      ],
+      "4bit_matched_keywords": [
+        "參數",
+        "超參數",
+        "泛化"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 0.705,
+      "4bit_latency_seconds": 1.3543,
+      "fp16_generated_tokens": 70,
+      "4bit_generated_tokens": 87,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": false
+    },
+    {
+      "id": 17,
+      "category": "不確定性處理",
+      "fp16_coverage": 0.6667,
+      "4bit_coverage": 0.6667,
+      "fp16_matched_keywords": [
+        "不能",
+        "測試集"
+      ],
+      "4bit_matched_keywords": [
+        "不能",
+        "測試集"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 1.4317,
+      "4bit_latency_seconds": 2.5015,
+      "fp16_generated_tokens": 143,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": false,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 18,
+      "category": "資料安全",
+      "fp16_coverage": 0.5,
+      "4bit_coverage": 0.5,
+      "fp16_matched_keywords": [
+        "連結",
+        "確認"
+      ],
+      "4bit_matched_keywords": [
+        "連結",
+        "確認"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 1.5877,
+      "4bit_latency_seconds": 2.5656,
+      "fp16_generated_tokens": 160,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": true,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 19,
+      "category": "因果分析",
+      "fp16_coverage": 0.5,
+      "4bit_coverage": 0.25,
+      "fp16_matched_keywords": [
+        "比較",
+        "實驗"
+      ],
+      "4bit_matched_keywords": [
+        "實驗"
+      ],
+      "keyword_count": 4,
+      "fp16_latency_seconds": 1.5886,
+      "4bit_latency_seconds": 2.4499,
+      "fp16_generated_tokens": 160,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": true,
+      "4bit_hit_max_tokens": true
+    },
+    {
+      "id": 20,
+      "category": "創意生成",
+      "fp16_coverage": 1.0,
+      "4bit_coverage": 0.3333,
+      "fp16_matched_keywords": [
+        "校園",
+        "應用",
+        "好處"
+      ],
+      "4bit_matched_keywords": [
+        "校園"
+      ],
+      "keyword_count": 3,
+      "fp16_latency_seconds": 1.5888,
+      "4bit_latency_seconds": 2.4334,
+      "fp16_generated_tokens": 160,
+      "4bit_generated_tokens": 160,
+      "fp16_hit_max_tokens": true,
+      "4bit_hit_max_tokens": true
+    }
+  ]
+}

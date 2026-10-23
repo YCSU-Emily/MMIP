@@ -1,0 +1,442 @@
+{
+  "timestamp": "2026-10-23T14:23:53",
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "precision": "4-bit NF4",
+  "quantization": {
+    "type": "NF4",
+    "double_quant": true,
+    "compute_dtype": "float16"
+  },
+  "max_new_tokens": 160,
+  "model_load_seconds": 4.18,
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "memory_after_load_gib": 1.9232,
+  "reserved_after_load_gib": 1.9805,
+  "num_questions": 20,
+  "results": [
+    {
+      "id": 1,
+      "category": "指令遵循",
+      "prompt": "請用繁體中文列出節省用電的三個方法，恰好三點，每點不超過20個中文字。",
+      "reference_answer": "應提供恰好三個節省用電的方法，每點不超過20個中文字。",
+      "evaluation_keywords": [
+        "關閉",
+        "電源",
+        "節能"
+      ],
+      "model_answer": "1. 使用LED燈泡替代傳統燈泡，節能又環保。\n2. 利用自然光照明，減少人工照明使用。\n3. 繼續開關不用時，立即拔掉電源插頭。",
+      "input_tokens": 71,
+      "generated_tokens": 51,
+      "latency_seconds": 1.1101,
+      "tokens_per_second": 45.9403,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0066,
+      "peak_reserved_gib": 2.0293
+    },
+    {
+      "id": 2,
+      "category": "摘要",
+      "prompt": "請將以下內容摘要成兩句話：邊緣運算是將資料處理工作放在靠近資料來源的裝置或節點執行，而不是全部送到遠端雲端。這能降低傳輸延遲與網路負擔，也有助於即時應用。不過，邊緣裝置通常有運算能力、記憶體與能源限制，因此需要設計更有效率的模型。",
+      "reference_answer": "邊緣運算將資料處理放在靠近資料來源的位置，可降低延遲與網路負擔。由於邊緣裝置的資源有限，因此需要高效率的模型。",
+      "evaluation_keywords": [
+        "延遲",
+        "網路",
+        "資源",
+        "模型"
+      ],
+      "model_answer": "邊緣運算將資料處理移至接近資料源的地點進行，以減少傳輸延遲和網路負擔，並促進即時應用；然而，由於邊緣裝置的資源限制，必須設計出更高效能的模型。",
+      "input_tokens": 129,
+      "generated_tokens": 55,
+      "latency_seconds": 0.9417,
+      "tokens_per_second": 58.4035,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0121,
+      "peak_reserved_gib": 2.0312
+    },
+    {
+      "id": 3,
+      "category": "翻譯",
+      "prompt": "請將句子翻譯成自然的繁體中文：Quantization reduces model memory usage by representing weights with fewer bits, but it may affect accuracy.",
+      "reference_answer": "量化透過使用較少位元表示模型權重來降低記憶體使用量，但可能影響準確度。",
+      "evaluation_keywords": [
+        "量化",
+        "權重",
+        "記憶體",
+        "準確度"
+      ],
+      "model_answer": "量化會通過用較少的位元來表示權重來減少模型的記憶體使用量，但可能會影響準確度。",
+      "input_tokens": 75,
+      "generated_tokens": 31,
+      "latency_seconds": 0.501,
+      "tokens_per_second": 61.8807,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0069,
+      "peak_reserved_gib": 2.0312
+    },
+    {
+      "id": 4,
+      "category": "英文生成",
+      "prompt": "請用英文寫一封約50字的正式郵件，向教授詢問下週是否有時間討論研究進度。",
+      "reference_answer": "一封語氣正式、內容清楚、約50字且詢問下週討論研究進度時間的英文郵件。",
+      "evaluation_keywords": [
+        "Dear",
+        "research",
+        "meeting",
+        "Best"
+      ],
+      "model_answer": "Subject: Inquiry about Meeting to Discuss Research Progress Next Week\n\nDear Professor [Last Name],\n\nI hope this message finds you well. May I schedule a meeting next week to discuss the progress of our research project?\n\nBest regards,  \n[Your Name]",
+      "input_tokens": 70,
+      "generated_tokens": 51,
+      "latency_seconds": 0.8381,
+      "tokens_per_second": 60.853,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0066,
+      "peak_reserved_gib": 2.0312
+    },
+    {
+      "id": 5,
+      "category": "數學推理",
+      "prompt": "一個模型原本每張圖片推論需要200毫秒，最佳化後降低25%。請計算新的推論時間，並寫出計算過程。",
+      "reference_answer": "200 × (1 - 0.25) = 150 毫秒。",
+      "evaluation_keywords": [
+        "150",
+        "毫秒",
+        "25%"
+      ],
+      "model_answer": "原始的推論時間是200毫秒。最佳化後時間降低了25%，我們可以這樣計算新的推論時間：\n\n1. 首先計算25%的200毫秒：\n   200毫秒 * 25% = 200毫秒 * 0.25 = 50毫秒\n\n2. 然後從原始時間中減去這個值：\n   200毫秒 - 50毫秒 = 150毫秒\n\n所以，最佳化後的推論時間是150毫秒。\n\n計算過程如下：\n原始時間：200毫秒\n降低的時間：200毫秒 * 25% = 5",
+      "input_tokens": 79,
+      "generated_tokens": 160,
+      "latency_seconds": 2.5227,
+      "tokens_per_second": 63.423,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0075,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 6,
+      "category": "邏輯推理",
+      "prompt": "所有 FPGA 都是可重新配置的硬體裝置。裝置 A 是 FPGA。根據這兩個前提，可以得出什麼結論？請勿加入前提以外的資訊。",
+      "reference_answer": "裝置 A 是可重新配置的硬體裝置。",
+      "evaluation_keywords": [
+        "裝置 A",
+        "可重新配置"
+      ],
+      "model_answer": "根據前提 \"所有 FPGA 都是可重新配置的硬體裝置\" 和 \"裝置 A 是 FPGA\"，可以得出結論：裝置 A 是可重新配置的硬體裝置。",
+      "input_tokens": 82,
+      "generated_tokens": 45,
+      "latency_seconds": 0.7101,
+      "tokens_per_second": 63.3747,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0078,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 7,
+      "category": "資訊擷取",
+      "prompt": "請從文字擷取專案名稱、平台、作業系統與加速器：本專案使用 TinyFormer，在 Ubuntu 22.04 上透過 Xilinx Alveo U50 FPGA 進行推論加速。",
+      "reference_answer": "專案：TinyFormer；平台：Xilinx Alveo U50 FPGA；作業系統：Ubuntu 22.04；用途：推論加速。",
+      "evaluation_keywords": [
+        "TinyFormer",
+        "Ubuntu 22.04",
+        "U50",
+        "推論加速"
+      ],
+      "model_answer": "根據提供的信息，可以得到以下的專案資訊：\n\n- **專案名稱**：未直接提及，但可以推測為 \"TinyFormer\"。\n- **平台**：Xilinx Alveo U50 FPGA\n- **作業系統**：Ubuntu 22.04\n- **加速器**：Xilinx Alveo U50 FPGA\n\n因此，完整的描述為：本專案使用 TinyFormer，在 Ubuntu 22.04 上透過 Xilinx Alveo U50 FPGA 进行推論加速。",
+      "input_tokens": 94,
+      "generated_tokens": 119,
+      "latency_seconds": 1.8049,
+      "tokens_per_second": 65.9318,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0089,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 8,
+      "category": "分類",
+      "prompt": "請將以下評論分類為正面、負面或中性，並簡短說明：模型的速度很快，但準確率比原本版本低很多。",
+      "reference_answer": "中性或複合評價：速度表現正面，但準確率表現負面。",
+      "evaluation_keywords": [
+        "速度",
+        "準確率"
+      ],
+      "model_answer": "這個評論可以被分類為中性。\n\n理由是，評論中提到了兩個不同的方面：模型的速度和準確率。一方面，模型的速度很快，這是一個積極的評價；另一方面，模型的準確率比原本版本低很多，這是一個負面的評價。由於兩者之間存在矛盾，因此整體評論不能簡單地歸類為正面或負面，而是需要保持客觀，因此可以被視為中性評論。",
+      "input_tokens": 78,
+      "generated_tokens": 103,
+      "latency_seconds": 1.602,
+      "tokens_per_second": 64.2964,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0071,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 9,
+      "category": "情緒分析",
+      "prompt": "判斷句子的主要情緒是開心、憤怒、悲傷或擔憂：我已經準備了很久，但還是不確定報告能不能順利完成。",
+      "reference_answer": "擔憂。",
+      "evaluation_keywords": [
+        "擔憂",
+        "不確定"
+      ],
+      "model_answer": "這個句子的主要情緒是擔憂。",
+      "input_tokens": 77,
+      "generated_tokens": 9,
+      "latency_seconds": 0.1456,
+      "tokens_per_second": 61.8188,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0071,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 10,
+      "category": "結構化輸出",
+      "prompt": "請只輸出合法 JSON，欄位為 model、precision、device。值分別為 Qwen2.5-3B-Instruct、FP16、RTX 5090。不得加入 Markdown 或其他文字。",
+      "reference_answer": "{\"model\":\"Qwen2.5-3B-Instruct\",\"precision\":\"FP16\",\"device\":\"RTX 5090\"}",
+      "evaluation_keywords": [
+        "model",
+        "precision",
+        "device",
+        "RTX 5090"
+      ],
+      "model_answer": "```json\n{\n  \"model\": \"Qwen2.5-3B-Instruct\",\n  \"precision\": \"FP16\",\n  \"device\": \"RTX 5090\"\n}\n```",
+      "input_tokens": 92,
+      "generated_tokens": 45,
+      "latency_seconds": 0.7081,
+      "tokens_per_second": 63.5531,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0087,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 11,
+      "category": "程式生成",
+      "prompt": "請用 Python 寫一個函式 square(n)，回傳 n 的平方，並附上 square(4) 的測試。請只輸出程式碼。",
+      "reference_answer": "定義 square(n) 並回傳 n*n 或 n**2，測試 square(4) 得到16。",
+      "evaluation_keywords": [
+        "def square",
+        "return",
+        "16"
+      ],
+      "model_answer": "```python\ndef square(n):\n    return n * n\n\nprint(square(4))\n```",
+      "input_tokens": 78,
+      "generated_tokens": 20,
+      "latency_seconds": 0.311,
+      "tokens_per_second": 64.3054,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0071,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 12,
+      "category": "除錯",
+      "prompt": "請指出並修正程式錯誤：for i in range(5) print(i)。請提供正確的 Python 程式碼。",
+      "reference_answer": "for i in range(5):\\n    print(i)",
+      "evaluation_keywords": [
+        "for i in range(5):",
+        "print(i)"
+      ],
+      "model_answer": "這個程式碼的問題在於 `print` 這一行應該放在 `for` 循環的內部，而不是放在 `for` 循環之外。以下是修正後的程式碼：\n\n```python\nfor i in range(5):\n    print(i)\n```\n\n這樣就能正確地印出 0 到 4 的數字。",
+      "input_tokens": 72,
+      "generated_tokens": 74,
+      "latency_seconds": 1.1253,
+      "tokens_per_second": 65.7598,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0067,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 13,
+      "category": "概念解釋",
+      "prompt": "請向沒有工程背景的人解釋什麼是 FPGA，使用一個生活化的比喻，限80字以內。",
+      "reference_answer": "以容易理解的比喻說明 FPGA 是可重新配置、能依需求改變硬體功能的晶片。",
+      "evaluation_keywords": [
+        "重新配置",
+        "晶片",
+        "比喻"
+      ],
+      "model_answer": "FPGA就像一塊可以自己編程的積木板，你可以根據需要組裝不同的積木塊來創造各種不同的功能，非常靈活。",
+      "input_tokens": 67,
+      "generated_tokens": 34,
+      "latency_seconds": 0.5191,
+      "tokens_per_second": 65.5039,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0064,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 14,
+      "category": "比較分析",
+      "prompt": "請比較 CPU 與 GPU 在平行運算方面的一般差異，列出兩項差異，並說明這不代表其中一者在所有工作都比較快。",
+      "reference_answer": "CPU 通常偏向較少但較複雜的核心與通用控制；GPU 通常有大量運算單元，適合高度平行工作。效能取決於工作負載。",
+      "evaluation_keywords": [
+        "平行",
+        "核心",
+        "工作負載"
+      ],
+      "model_answer": "CPU（中央處理器）和GPU（圖形處理器）在平行運算方面的主要差異包括：\n\n1. **專用架構**：GPU設計專門用於處理大量平行計算任務，例如圖形渲染和複雜的數值運算。它們包含成千上萬個微小的處理單元，這些單元可以並行處理不同的數據。相比之下，CPU的設計更為複雜，專注於執行多種不同類型的指令，因此效能較為均衡。\n\n2. **指令集與資源分配**：GPU的指令集和資源分配方式與CPU不同。GPU通常有專屬的指令集，用於高效地處理大量平行計算任務。而CPU則需要根據不同的任務來",
+      "input_tokens": 80,
+      "generated_tokens": 160,
+      "latency_seconds": 2.4601,
+      "tokens_per_second": 65.0369,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0076,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 15,
+      "category": "規劃能力",
+      "prompt": "請列出部署開源語言模型的四個基本步驟，順序需合理，並使用編號清單。",
+      "reference_answer": "合理步驟包括確認硬體與環境、下載模型、載入模型、執行推論與驗證結果。",
+      "evaluation_keywords": [
+        "環境",
+        "模型",
+        "載入",
+        "推論"
+      ],
+      "model_answer": "以下是部署開源語言模型的四個基本步驟，以合理的順序排列：\n\n1. **模型訓練與優化**：首先需要對模型進行訓練，並根據實際需求進行優化。這一步是整個過程的基礎，確保模型具有足夠的能力來完成預期的任務。\n\n2. **模型評估**：在訓練完畢後，需要對模型進行評估，以確定其性能是否符合預期。評估過程中可能會發現一些問題，這些問題需要在之後的步驟中進行修正。\n\n3. **模型部署**：將訓練好的模型部署到生產環境中，使其可以被外部系統調用。這一步包括選擇適當的部署方式（如雲端服務、本地部署等），",
+      "input_tokens": 70,
+      "generated_tokens": 160,
+      "latency_seconds": 2.4164,
+      "tokens_per_second": 66.2153,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0066,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 16,
+      "category": "知識問答",
+      "prompt": "在深度學習中，訓練集、驗證集與測試集通常各自有什麼用途？請各用一句話回答。",
+      "reference_answer": "訓練集用來更新模型參數；驗證集用於模型選擇與超參數調整；測試集用於估計最終泛化表現。",
+      "evaluation_keywords": [
+        "參數",
+        "超參數",
+        "泛化"
+      ],
+      "model_answer": "訓練集的主要用途是供模型學習和訓練，以改善模型的預測能力。\n驗證集的主要用途是在模型訓練過程中，用來評估不同超參數配置的效果，用於選擇最佳的模型配置，但不會再進一步調整模型。\n測試集的主要用途是在模型訓練結束後，用來評估模型在未見數據上的表現，以衡量模型的泛化能力。",
+      "input_tokens": 71,
+      "generated_tokens": 87,
+      "latency_seconds": 1.3543,
+      "tokens_per_second": 64.2397,
+      "hit_max_new_tokens": false,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0067,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 17,
+      "category": "不確定性處理",
+      "prompt": "只根據以下資訊回答：某模型在測試集上的準確率是92%。是否能因此斷定它在所有真實情境都會有92%的準確率？請說明原因。",
+      "reference_answer": "不能。真實情境的資料分布、測試集代表性及其他條件都可能影響實際表現。",
+      "evaluation_keywords": [
+        "不能",
+        "資料分布",
+        "測試集"
+      ],
+      "model_answer": "不能因此斷定該模型在所有真實情境都會有92%的準確率。理由如下：\n\n1. **測試集與真實情境的差異**：模型在測試集上的表現並不代表其在所有真實情境下的表現。測試集通常是模型訓練後特意挑選的一組數據，用來評估模型的性能。而真實情境可能包含更多的變數和複雜性，這些因素可能會影響模型的表現。\n\n2. **泛化能力**：模型在測試集上的高準確率表明模型具備良好的泛化能力，即能夠將訓練數據中的模式應用到未見的數據上。然而，這並不意味著模型在所有真實情境下都能達到相同的表現水平。\n\n3. **",
+      "input_tokens": 88,
+      "generated_tokens": 160,
+      "latency_seconds": 2.5015,
+      "tokens_per_second": 63.9628,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0083,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 18,
+      "category": "資料安全",
+      "prompt": "同事寄來一封要求立即提供密碼的郵件，並附上陌生連結。請提出三項安全處理方式。",
+      "reference_answer": "不要提供密碼、不要直接點擊陌生連結、透過官方管道確認寄件者並回報可疑郵件。",
+      "evaluation_keywords": [
+        "不要提供密碼",
+        "連結",
+        "確認",
+        "回報"
+      ],
+      "model_answer": "當收到要求立即提供密碼的郵件時，應保持高度警覺，避免直接按照郵件指示行事。以下是三個安全處理方式：\n\n1. **確認真實性**：首先，應該先確認該郵件的真實性。可以聯繫發信人確認郵件內容，或者直接詢問對方是否真的需要密碼。\n\n2. **不要點擊連結**：不要點擊郵件中的任何連結，因為這些連結可能會引導您到一個偽裝的網站，從而盜取您的帳戶資訊。如果需要進行相關操作，請直接聯繫寄件者，尋求更安全的方式進行。\n\n3. **使用官方渠道**：如果確實需要提供密碼，請通過官方渠道進行，例如直接",
+      "input_tokens": 69,
+      "generated_tokens": 160,
+      "latency_seconds": 2.5656,
+      "tokens_per_second": 62.363,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0065,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 19,
+      "category": "因果分析",
+      "prompt": "某次實驗發現量化後模型準確率下降。請提出兩個可能原因，並說明還需要什麼實驗才能確認原因。",
+      "reference_answer": "可能原因包括量化誤差與校正資料不具代表性；需控制其他條件並比較不同精度、校正方式與資料集。",
+      "evaluation_keywords": [
+        "量化誤差",
+        "校正",
+        "比較",
+        "實驗"
+      ],
+      "model_answer": "可能的原因有以下兩種：\n\n1. **數據過度擬合**：在量化過程中，模型可能過度適應訓練數據，導致在未見到的新數據上表現不佳。這時，模型對訓練數據中的噪音或特例過度敏感，而忽略了新數據中的重要模式。\n\n2. **模型選擇不當**：所選用的模型可能無法有效捕捉數據中的重要模式，或者模型本身的結構設計不合理，導致其在量化後的表現不如預期。\n\n為了確認具體原因，我們可以進行以下實驗：\n\n1. **交叉驗證**：通過交叉驗證（如K折交叉驗證）來評估模型在不同數據集上的表現，以檢查模型是否過度適應訓練數據",
+      "input_tokens": 73,
+      "generated_tokens": 160,
+      "latency_seconds": 2.4499,
+      "tokens_per_second": 65.3077,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0068,
+      "peak_reserved_gib": 2.0352
+    },
+    {
+      "id": 20,
+      "category": "創意生成",
+      "prompt": "提出三個利用邊緣 AI 改善校園生活的點子，每個點子包含應用情境與一項好處。",
+      "reference_answer": "三個不同的校園邊緣 AI 應用點子，每個都有明確情境與好處。",
+      "evaluation_keywords": [
+        "校園",
+        "應用",
+        "好處"
+      ],
+      "model_answer": "好的，以下是三個利用邊緣 AI 改善校園生活的點子：\n\n1. **智能門禁系統**：在學校的入口設置智能門禁系統，利用邊緣 AI 技術進行訪客識別和身份驗證。例如，當學生或教師通過門禁時，系統可以立即識別並記錄他們的身份，並自動發送通知給相關人員，確保安全。這項技術可以提高校園的安全性，同時也方便了管理員的工作。\n\n2. **智慧教室管理**：利用邊緣 AI 技術來監控和分析教室的使用情況，例如學生的到課率、座位安排等。例如，如果發現某個教室的使用率低於預期，系統可以自動調整",
+      "input_tokens": 70,
+      "generated_tokens": 160,
+      "latency_seconds": 2.4334,
+      "tokens_per_second": 65.7511,
+      "hit_max_new_tokens": true,
+      "precision": "4-bit NF4",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "peak_allocated_gib": 2.0066,
+      "peak_reserved_gib": 2.0352
+    }
+  ]
+}

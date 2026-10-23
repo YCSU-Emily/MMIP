@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-23T14:14:41",
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "precision": "FP16",
+  "prompt": "請用繁體中文解釋什麼是人工智慧，並列出三個日常生活中的應用。",
+  "response": "人工智慧（Artificial Intelligence，簡稱AI）是一種模擬人類智能的技術，它使電腦和機器能夠執行通常需要人類智能才能完成的任務。這些任務包括學習、推理、問題解決、感知、理解語言等。人工智慧的核心是開發出能夠模仿人類思考方式的軟體和硬體系統。\n\n在日常生活中，人工智慧已經有了廣泛的應用：\n\n1. **語音助理**：像是蘋果的Siri、谷歌的Google Assistant以及華為的小藝等語音助理，可以回答問題、設定提醒、播放音樂或控制家裡",
+  "input_tokens": 50,
+  "generated_tokens": 128,
+  "model_load_seconds": 61.7365,
+  "inference_seconds": 1.2897,
+  "tokens_per_second": 99.2455,
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "gpu_total_memory_gib": 31.348,
+  "gpu_allocated_gib_after_inference": 5.7793,
+  "gpu_reserved_gib_after_inference": 5.8281,
+  "gpu_peak_allocated_gib": 5.7879,
+  "gpu_peak_reserved_gib": 5.8281,
+  "measurement_note": "GPU memory figures are PyTorch CUDA allocator statistics, not total system GPU usage. Peak statistics were reset after model loading and before measured inference."
+}

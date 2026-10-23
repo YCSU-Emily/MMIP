@@ -1,0 +1,536 @@
+{
+  "description": "Keyword coverage recalculated with identical rules for both prompt settings.",
+  "results": {
+    "Baseline": [
+      {
+        "id": 1,
+        "category": "指令遵循",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "關閉",
+          "電源"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.7906,
+        "generated_tokens": 44,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 2,
+        "category": "摘要",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "延遲",
+          "網路",
+          "資源",
+          "模型"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.5477,
+        "generated_tokens": 50,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 3,
+        "category": "翻譯",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "量化",
+          "權重",
+          "記憶體",
+          "準確度"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.3268,
+        "generated_tokens": 31,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 4,
+        "category": "英文生成",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "Dear",
+          "research"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.5271,
+        "generated_tokens": 51,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 5,
+        "category": "數學推理",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "150",
+          "毫秒",
+          "25%"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.2195,
+        "generated_tokens": 123,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 6,
+        "category": "邏輯推理",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "可重新配置"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.25,
+        "generated_tokens": 25,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 7,
+        "category": "資訊擷取",
+        "coverage": 0.75,
+        "matched_keywords": [
+          "TinyFormer",
+          "Ubuntu 22.04",
+          "U50"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.7923,
+        "generated_tokens": 80,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 8,
+        "category": "分類",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "速度",
+          "準確率"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 1.1127,
+        "generated_tokens": 112,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 9,
+        "category": "情緒分析",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "擔憂"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.3976,
+        "generated_tokens": 40,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 10,
+        "category": "結構化輸出",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "model",
+          "precision",
+          "device",
+          "RTX 5090"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.4064,
+        "generated_tokens": 41,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 11,
+        "category": "程式生成",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "def square",
+          "return",
+          "16"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.4172,
+        "generated_tokens": 42,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 12,
+        "category": "除錯",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "for i in range(5):",
+          "print(i)"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.7463,
+        "generated_tokens": 75,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 13,
+        "category": "概念解釋",
+        "coverage": 0.0,
+        "matched_keywords": [],
+        "keyword_count": 3,
+        "latency_seconds": 0.2606,
+        "generated_tokens": 26,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 14,
+        "category": "比較分析",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "平行",
+          "核心"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.5975,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 15,
+        "category": "規劃能力",
+        "coverage": 0.25,
+        "matched_keywords": [
+          "模型"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 1.6768,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 16,
+        "category": "知識問答",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "參數",
+          "超參數"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.705,
+        "generated_tokens": 70,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 17,
+        "category": "不確定性處理",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "不能",
+          "測試集"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.4317,
+        "generated_tokens": 143,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 18,
+        "category": "資料安全",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "連結",
+          "確認"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 1.5877,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 19,
+        "category": "因果分析",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "比較",
+          "實驗"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 1.5886,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 20,
+        "category": "創意生成",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "校園",
+          "應用",
+          "好處"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.5888,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      }
+    ],
+    "Optimized": [
+      {
+        "id": 1,
+        "category": "指令遵循",
+        "coverage": 0.3333,
+        "matched_keywords": [
+          "關閉"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.7903,
+        "generated_tokens": 44,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 2,
+        "category": "摘要",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "延遲",
+          "網路",
+          "資源",
+          "模型"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.5234,
+        "generated_tokens": 45,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 3,
+        "category": "翻譯",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "量化",
+          "權重",
+          "記憶體",
+          "準確度"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.3027,
+        "generated_tokens": 28,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 4,
+        "category": "英文生成",
+        "coverage": 0.75,
+        "matched_keywords": [
+          "Dear",
+          "research",
+          "meeting"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.4223,
+        "generated_tokens": 39,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 5,
+        "category": "數學推理",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "150",
+          "毫秒",
+          "25%"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.2776,
+        "generated_tokens": 119,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 6,
+        "category": "邏輯推理",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "裝置 A",
+          "可重新配置"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.1557,
+        "generated_tokens": 14,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 7,
+        "category": "資訊擷取",
+        "coverage": 0.75,
+        "matched_keywords": [
+          "TinyFormer",
+          "Ubuntu 22.04",
+          "U50"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.4332,
+        "generated_tokens": 40,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 8,
+        "category": "分類",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "速度",
+          "準確率"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.4866,
+        "generated_tokens": 45,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 9,
+        "category": "情緒分析",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "擔憂"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.0365,
+        "generated_tokens": 3,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 10,
+        "category": "結構化輸出",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "model",
+          "precision",
+          "device",
+          "RTX 5090"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.4397,
+        "generated_tokens": 41,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 11,
+        "category": "程式生成",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "def square",
+          "return"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.2184,
+        "generated_tokens": 20,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 12,
+        "category": "除錯",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "for i in range(5):",
+          "print(i)"
+        ],
+        "keyword_count": 2,
+        "latency_seconds": 0.8787,
+        "generated_tokens": 83,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 13,
+        "category": "概念解釋",
+        "coverage": 0.0,
+        "matched_keywords": [],
+        "keyword_count": 3,
+        "latency_seconds": 0.2692,
+        "generated_tokens": 25,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 14,
+        "category": "比較分析",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "平行",
+          "核心"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.6949,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 15,
+        "category": "規劃能力",
+        "coverage": 0.5,
+        "matched_keywords": [
+          "環境",
+          "模型"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 1.1594,
+        "generated_tokens": 107,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 16,
+        "category": "知識問答",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "參數",
+          "超參數"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.5649,
+        "generated_tokens": 52,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 17,
+        "category": "不確定性處理",
+        "coverage": 0.6667,
+        "matched_keywords": [
+          "不能",
+          "測試集"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 0.8014,
+        "generated_tokens": 76,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 18,
+        "category": "資料安全",
+        "coverage": 0.25,
+        "matched_keywords": [
+          "連結"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 0.8249,
+        "generated_tokens": 79,
+        "hit_max_new_tokens": false
+      },
+      {
+        "id": 19,
+        "category": "因果分析",
+        "coverage": 0.25,
+        "matched_keywords": [
+          "實驗"
+        ],
+        "keyword_count": 4,
+        "latency_seconds": 1.6637,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      },
+      {
+        "id": 20,
+        "category": "創意生成",
+        "coverage": 1.0,
+        "matched_keywords": [
+          "校園",
+          "應用",
+          "好處"
+        ],
+        "keyword_count": 3,
+        "latency_seconds": 1.7303,
+        "generated_tokens": 160,
+        "hit_max_new_tokens": true
+      }
+    ]
+  }
+}

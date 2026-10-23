@@ -1,0 +1,88 @@
+﻿id,category,prompt,reference_answer,evaluation_keywords,matched_keywords,keyword_coverage,model_answer,input_tokens,generated_tokens,latency_seconds,tokens_per_second,hit_max_new_tokens,precision,prompt_technique,model_name
+1,指令遵循,請用繁體中文列出節省用電的三個方法，恰好三點，每點不超過20個中文字。,應提供恰好三個節省用電的方法，每點不超過20個中文字。,"[""關閉"", ""電源"", ""節能""]","[""關閉""]",0.3333,"1. 使用LED燈泡替代傳統燈泡
+2. 發動機不在運轉時關閉空調
+3. 空調設定溫度適中，夏季不低于26度",166,44,0.7903,55.6767,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+2,摘要,請將以下內容摘要成兩句話：邊緣運算是將資料處理工作放在靠近資料來源的裝置或節點執行，而不是全部送到遠端雲端。這能降低傳輸延遲與網路負擔，也有助於即時應用。不過，邊緣裝置通常有運算能力、記憶體與能源限制，因此需要設計更有效率的模型。,邊緣運算將資料處理放在靠近資料來源的位置，可降低延遲與網路負擔。由於邊緣裝置的資源有限，因此需要高效率的模型。,"[""延遲"", ""網路"", ""資源"", ""模型""]","[""延遲"", ""網路"", ""資源"", ""模型""]",1.0,邊緣運算將資料處理移至接近資料源的裝置，以減少傳輸延遲和網路負載，適合即時應用；然而，受限於資源，需設計高效能模型。,224,45,0.5234,85.9841,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+3,翻譯,"請將句子翻譯成自然的繁體中文：Quantization reduces model memory usage by representing weights with fewer bits, but it may affect accuracy.",量化透過使用較少位元表示模型權重來降低記憶體使用量，但可能影響準確度。,"[""量化"", ""權重"", ""記憶體"", ""準確度""]","[""量化"", ""權重"", ""記憶體"", ""準確度""]",1.0,量化通過用較少的位元表示權重來減少模型的記憶體使用，但可能會影響準確度。,170,28,0.3027,92.4868,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+4,英文生成,請用英文寫一封約50字的正式郵件，向教授詢問下週是否有時間討論研究進度。,一封語氣正式、內容清楚、約50字且詢問下週討論研究進度時間的英文郵件。,"[""Dear"", ""research"", ""meeting"", ""Best""]","[""Dear"", ""research"", ""meeting""]",0.75,"Subject: Inquiry about Meeting to Discuss Research Progress Next Week
+
+Dear Professor, I hope this message finds you well. Could we schedule a meeting next week to discuss the progress of our research?",165,39,0.4223,92.3574,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+5,數學推理,一個模型原本每張圖片推論需要200毫秒，最佳化後降低25%。請計算新的推論時間，並寫出計算過程。,200 × (1 - 0.25) = 150 毫秒。,"[""150"", ""毫秒"", ""25%""]","[""150"", ""毫秒"", ""25%""]",1.0,"新的推論時間為150毫秒。
+
+計算過程如下：
+原時間 = 200毫秒
+減少百分比 = 25%
+
+減少時間 = 原時間 × 减少百分比 / 100
+減少時間 = 200毫秒 × 25 / 100
+減少時間 = 50毫秒
+
+新時間 = 原時間 - 减少時間
+新時間 = 200毫秒 - 50毫秒
+新時間 = 150毫秒",174,119,1.2776,93.1467,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+6,邏輯推理,所有 FPGA 都是可重新配置的硬體裝置。裝置 A 是 FPGA。根據這兩個前提，可以得出什麼結論？請勿加入前提以外的資訊。,裝置 A 是可重新配置的硬體裝置。,"[""裝置 A"", ""可重新配置""]","[""裝置 A"", ""可重新配置""]",1.0,裝置 A 是可重新配置的硬體裝置。,177,14,0.1557,89.9125,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+7,資訊擷取,請從文字擷取專案名稱、平台、作業系統與加速器：本專案使用 TinyFormer，在 Ubuntu 22.04 上透過 Xilinx Alveo U50 FPGA 進行推論加速。,專案：TinyFormer；平台：Xilinx Alveo U50 FPGA；作業系統：Ubuntu 22.04；用途：推論加速。,"[""TinyFormer"", ""Ubuntu 22.04"", ""U50"", ""推論加速""]","[""TinyFormer"", ""Ubuntu 22.04"", ""U50""]",0.75,"專案名稱：無特定文字描述
+平台：Xilinx Alveo U50 FPGA
+作業系統：Ubuntu 22.04
+加速器：TinyFormer",189,40,0.4332,92.3426,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+8,分類,請將以下評論分類為正面、負面或中性，並簡短說明：模型的速度很快，但準確率比原本版本低很多。,中性或複合評價：速度表現正面，但準確率表現負面。,"[""速度"", ""準確率""]","[""速度"", ""準確率""]",1.0,"負面
+
+理由：評論中提到模型的速度很快，這是正面評價；然而，準確率比原本版本低很多，這是一個負面因素，因此整體評價偏向負面。",173,45,0.4866,92.4733,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+9,情緒分析,判斷句子的主要情緒是開心、憤怒、悲傷或擔憂：我已經準備了很久，但還是不確定報告能不能順利完成。,擔憂。,"[""擔憂"", ""不確定""]","[""擔憂""]",0.5,擔憂,172,3,0.0365,82.0815,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+10,結構化輸出,請只輸出合法 JSON，欄位為 model、precision、device。值分別為 Qwen2.5-3B-Instruct、FP16、RTX 5090。不得加入 Markdown 或其他文字。,"{""model"":""Qwen2.5-3B-Instruct"",""precision"":""FP16"",""device"":""RTX 5090""}","[""model"", ""precision"", ""device"", ""RTX 5090""]","[""model"", ""precision"", ""device"", ""RTX 5090""]",1.0,"{
+  ""model"": ""Qwen2.5-3B-Instruct"",
+  ""precision"": ""FP16"",
+  ""device"": ""RTX 5090""
+}",187,41,0.4397,93.2472,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+11,程式生成,請用 Python 寫一個函式 square(n)，回傳 n 的平方，並附上 square(4) 的測試。請只輸出程式碼。,定義 square(n) 並回傳 n*n 或 n**2，測試 square(4) 得到16。,"[""def square"", ""return"", ""16""]","[""def square"", ""return""]",0.6667,"```python
+def square(n):
+    return n * n
+
+print(square(4))
+```",173,20,0.2184,91.5851,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+12,除錯,請指出並修正程式錯誤：for i in range(5) print(i)。請提供正確的 Python 程式碼。,for i in range(5):\n    print(i),"[""for i in range(5):"", ""print(i)""]","[""for i in range(5):"", ""print(i)""]",1.0,"for i in range(5):  
+    print(i)  
+
+這段程式碼已經修正了原始的問題，即在 `print` 之前缺少了一個冒號 (`:`)，以及在 `range(5)` 後面的括號外沒有閉合的括號。修正後的程式碼會正確地從 0 到 4 打印每個數字。",167,83,0.8787,94.4608,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+13,概念解釋,請向沒有工程背景的人解釋什麼是 FPGA，使用一個生活化的比喻，限80字以內。,以容易理解的比喻說明 FPGA 是可重新配置、能依需求改變硬體功能的晶片。,"[""重新配置"", ""晶片"", ""比喻""]",[],0.0,FPGA就像可編程的積木塊，你可以根據需要改變它的組合方式來建造不同的東西。,162,25,0.2692,92.8596,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+14,比較分析,請比較 CPU 與 GPU 在平行運算方面的一般差異，列出兩項差異，並說明這不代表其中一者在所有工作都比較快。,CPU 通常偏向較少但較複雜的核心與通用控制；GPU 通常有大量運算單元，適合高度平行工作。效能取決於工作負載。,"[""平行"", ""核心"", ""工作負載""]","[""平行"", ""核心""]",0.6667,"CPU 和 GPU 在平行運算方面的主要差異如下：
+
+1. **設計目的不同**：CPU（中央處理器）專門設計用於執行複雜的單個指令，適合進行串行運算。而GPU（圖形處理器）則是為了高效地處理大量簡單的平行運算而設計，特別適用于並行計算。
+
+2. **核心數量與結構**：CPU通常具有較少的核心數量，但每個核心性能強大。GPU則擁有成千上萬個核心，這些核心可以同時處理不同的任務，適合並行運算。
+
+這兩項差異表明，CPU 不適用於大量簡單任務的並行處理，而 GPU 则在這種情況下表現更優異。然而",175,160,1.6949,94.3997,True,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+15,規劃能力,請列出部署開源語言模型的四個基本步驟，順序需合理，並使用編號清單。,合理步驟包括確認硬體與環境、下載模型、載入模型、執行推論與驗證結果。,"[""環境"", ""模型"", ""載入"", ""推論""]","[""環境"", ""模型""]",0.5,"1. 安裝必要的開發環境和工具，包括Python和相關的依賴庫。
+2. 下載或安裝所需的開源語言模型，例如Hugging Face的transformers套件。
+3. 調整模型參數以適應特定應用需求，如微調模型以進行特定語法分析或生成。
+4. 測試模型性能，包括評估其在預定義測試集上的表現，確保其能夠正確處理各種類型的輸入。",165,107,1.1594,92.2898,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+16,知識問答,在深度學習中，訓練集、驗證集與測試集通常各自有什麼用途？請各用一句話回答。,訓練集用來更新模型參數；驗證集用於模型選擇與超參數調整；測試集用於估計最終泛化表現。,"[""參數"", ""超參數"", ""泛化""]","[""參數"", ""超參數""]",0.6667,訓練集用於調整模型參數以最小化損失函數；驗證集用於監控模型過度擬合並調整超參數；測試集用於評估最終訓練完成後模型的預測性能。,166,52,0.5649,92.0475,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+17,不確定性處理,只根據以下資訊回答：某模型在測試集上的準確率是92%。是否能因此斷定它在所有真實情境都會有92%的準確率？請說明原因。,不能。真實情境的資料分布、測試集代表性及其他條件都可能影響實際表現。,"[""不能"", ""資料分布"", ""測試集""]","[""不能"", ""測試集""]",0.6667,不能因此斷定它在所有真實情境都會有92%的準確率。模型在測試集上的準確率僅反映該模型在特定訓練和測試數據集上的表現，並不代表其在所有真實情境下的準確率。真實情境可能會受到更多變數和條件的影響，這些因素可能導致模型表現有所不同。,183,76,0.8014,94.8312,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+18,資料安全,同事寄來一封要求立即提供密碼的郵件，並附上陌生連結。請提出三項安全處理方式。,不要提供密碼、不要直接點擊陌生連結、透過官方管道確認寄件者並回報可疑郵件。,"[""不要提供密碼"", ""連結"", ""確認"", ""回報""]","[""連結""]",0.25,"1. 不點擊連結，直接回覆原郵件告知同事該連結可疑，建議不要使用此途徑傳遞敏感信息。
+2. 請同事立即更改密碼，並通知所有相關系統進行同步更新，以保護帳戶安全。
+3. 告知同事立即啟用兩步驟驗證，增加賬戶安全性。",164,79,0.8249,95.7637,False,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+19,因果分析,某次實驗發現量化後模型準確率下降。請提出兩個可能原因，並說明還需要什麼實驗才能確認原因。,可能原因包括量化誤差與校正資料不具代表性；需控制其他條件並比較不同精度、校正方式與資料集。,"[""量化誤差"", ""校正"", ""比較"", ""實驗""]","[""實驗""]",0.25,"可能的原因包括：
+
+1. **數據過度擬合**：模型在訓練過程中過度學習了訓練數據的特徵，導致在未見到的數據上表現不佳。這可能是因為訓練數據量不足或者模型複雜度過高。
+
+2. **測試集選擇問題**：如果測試集與訓練集的分布存在顯著差異，可能會影響模型的準確率。例如，測試集中的某些特徵可能在訓練集上較少出現，導致模型在這些特徵上的表現不佳。
+
+還需要進行的實驗包括：
+
+1. **交叉驗證**：通過交叉驗證來評估模型的泛化能力，確保訓練集和測試集之間的分布相似。
+2. **增加",168,160,1.6637,96.1692,True,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
+20,創意生成,提出三個利用邊緣 AI 改善校園生活的點子，每個點子包含應用情境與一項好處。,三個不同的校園邊緣 AI 應用點子，每個都有明確情境與好處。,"[""校園"", ""應用"", ""好處""]","[""校園"", ""應用"", ""好處""]",1.0,"### 点子一：智能門禁系統
+
+**應用情境**：校園入口設置智能門禁系統，學生和教師通過手機應用程式掃描臉部或指紋進入校園。
+
+**好處**：提高安全性，減少人為疏失，如忘帶門禁卡或冒名頂替。
+
+### 点子二：行動學習輔助工具
+
+**應用情境**：學生在課堂上使用行動裝置接收個人化學習建議，系統根據學生的學習進度和偏好調整內容。
+
+**好處**：個性化學習體驗，提高學習效率和興趣，有助於因材施教。
+
+### 点子三：環境監控與能源管理
+
+**應用情境**：利用邊緣 AI",165,160,1.7303,92.4714,True,FP16,structured_instruction_constraint_check,Qwen/Qwen2.5-3B-Instruct
