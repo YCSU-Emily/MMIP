@@ -1,0 +1,104 @@
+{
+  "scenario": "Multi-turn order tracking with problem description preservation",
+  "conversation": [
+    {
+      "turn": 1,
+      "user": "我的 ASUS 筆電無法開機，我想查詢訂單物流",
+      "assistant_output": {
+        "intent": {
+          "category": "order_tracking",
+          "confidence": 0.9,
+          "needs_clarification": true
+        },
+        "entities": {
+          "product_name": "ASUS",
+          "product_model": null,
+          "order_id": null,
+          "purchase_date": null,
+          "problem_description": "我的 ASUS 筆電無法開機，我想查詢訂單物流"
+        },
+        "image_analysis": {
+          "image_provided": false,
+          "image_type": "none",
+          "observations": [],
+          "visible_damage": null,
+          "limitations": []
+        },
+        "conversation_state": {
+          "session_id": "demo-order-001",
+          "turn_count": 1,
+          "collected_information": [
+            "product_name"
+          ],
+          "missing_information": [
+            "order_id"
+          ],
+          "previous_intent": null,
+          "awaiting_user_input": true
+        },
+        "routing": {
+          "department": "order_support",
+          "action": "ask_follow_up",
+          "priority": "normal",
+          "requires_human": false,
+          "reason": "Intent-based routing"
+        },
+        "response": {
+          "message": "請提供訂單編號，以便查詢物流。",
+          "language": "zh-TW",
+          "suggested_questions": [
+            "order_id"
+          ]
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "user": "AB12345678",
+      "assistant_output": {
+        "intent": {
+          "category": "order_tracking",
+          "confidence": 0.9,
+          "needs_clarification": false
+        },
+        "entities": {
+          "product_name": "ASUS",
+          "product_model": null,
+          "order_id": "AB12345678",
+          "purchase_date": null,
+          "problem_description": "我的 ASUS 筆電無法開機，我想查詢訂單物流"
+        },
+        "image_analysis": {
+          "image_provided": false,
+          "image_type": "none",
+          "observations": [],
+          "visible_damage": null,
+          "limitations": []
+        },
+        "conversation_state": {
+          "session_id": "demo-order-001",
+          "turn_count": 2,
+          "collected_information": [
+            "product_name",
+            "order_id"
+          ],
+          "missing_information": [],
+          "previous_intent": "order_tracking",
+          "awaiting_user_input": false
+        },
+        "routing": {
+          "department": "order_support",
+          "action": "track_order",
+          "priority": "normal",
+          "requires_human": false,
+          "reason": "Intent-based routing"
+        },
+        "response": {
+          "message": "已辨識您的需求，將由 order_support 部門處理。",
+          "language": "zh-TW",
+          "suggested_questions": []
+        }
+      }
+    }
+  ]
+}

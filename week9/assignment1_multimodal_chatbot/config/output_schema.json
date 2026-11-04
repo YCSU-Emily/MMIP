@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MultimodalCustomerServiceOutput",
+  "description": "Structured output for a multimodal, multi-turn 3C after-sales customer service chatbot.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intent",
+    "entities",
+    "image_analysis",
+    "conversation_state",
+    "routing",
+    "response"
+  ],
+  "properties": {
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "confidence",
+        "needs_clarification"
+      ],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "faq",
+            "order_tracking",
+            "warranty_check",
+            "repair_request",
+            "return_refund",
+            "human_handoff",
+            "other",
+            "unknown"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "needs_clarification": {
+          "type": "boolean"
+        }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_name",
+        "product_model",
+        "order_id",
+        "purchase_date",
+        "problem_description"
+      ],
+      "properties": {
+        "product_name": {
+          "type": ["string", "null"]
+        },
+        "product_model": {
+          "type": ["string", "null"]
+        },
+        "order_id": {
+          "type": ["string", "null"]
+        },
+        "purchase_date": {
+          "type": ["string", "null"]
+        },
+        "problem_description": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "image_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "image_provided",
+        "image_type",
+        "observations",
+        "visible_damage",
+        "limitations"
+      ],
+      "properties": {
+        "image_provided": {
+          "type": "boolean"
+        },
+        "image_type": {
+          "type": "string",
+          "enum": [
+            "product",
+            "damage",
+            "receipt",
+            "order_information",
+            "other",
+            "unknown",
+            "none"
+          ]
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "visible_damage": {
+          "type": ["string", "null"]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "conversation_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "session_id",
+        "turn_count",
+        "collected_information",
+        "missing_information",
+        "previous_intent",
+        "awaiting_user_input"
+      ],
+      "properties": {
+        "session_id": {
+          "type": "string"
+        },
+        "turn_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "collected_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "missing_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "previous_intent": {
+          "type": ["string", "null"]
+        },
+        "awaiting_user_input": {
+          "type": "boolean"
+        }
+      }
+    },
+    "routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "department",
+        "action",
+        "priority",
+        "requires_human",
+        "reason"
+      ],
+      "properties": {
+        "department": {
+          "type": "string",
+          "enum": [
+            "general_support",
+            "order_support",
+            "warranty_service",
+            "repair_center",
+            "returns_refunds",
+            "human_agent",
+            "security_review",
+            "none"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "enum": [
+            "answer_faq",
+            "track_order",
+            "check_warranty",
+            "create_repair_request",
+            "start_return_refund",
+            "ask_follow_up",
+            "handoff_to_human",
+            "security_review",
+            "no_action"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "normal",
+            "high",
+            "urgent"
+          ]
+        },
+        "requires_human": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "message",
+        "language",
+        "suggested_questions"
+      ],
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "zh-TW",
+            "en"
+          ]
+        },
+        "suggested_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+===== QWEN3.5-4B VISION TEST =====
+Model: /home/emily/.cache/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+Image: images/real_product.jpg
+
+===== LOAD IMAGE =====
+Image size: (1024, 765)
+
+===== LOAD PROCESSOR =====
+
+===== LOAD MODEL =====
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:   0%|          | 1/723 [00:00<01:53,  6.34it/s]Loading weights:   6%|▌         | 41/723 [00:00<00:03, 190.22it/s]Loading weights:  11%|█         | 79/723 [00:00<00:02, 259.32it/s]Loading weights:  16%|█▌        | 114/723 [00:00<00:02, 283.18it/s]Loading weights:  21%|██        | 152/723 [00:00<00:01, 310.83it/s]Loading weights:  26%|██▌       | 189/723 [00:00<00:01, 329.09it/s]Loading weights:  31%|███▏      | 226/723 [00:00<00:01, 335.50it/s]Loading weights:  36%|███▌      | 261/723 [00:00<00:01, 337.23it/s]Loading weights:  42%|████▏     | 305/723 [00:00<00:01, 364.26it/s]Loading weights:  48%|████▊     | 344/723 [00:01<00:01, 358.72it/s]Loading weights:  53%|█████▎    | 384/723 [00:01<00:00, 362.77it/s]Loading weights:  58%|█████▊    | 421/723 [00:01<00:00, 361.54it/s]Loading weights:  94%|█████████▍| 682/723 [00:01<00:00, 1014.37it/s]Loading weights: 100%|██████████| 723/723 [00:01<00:00, 502.09it/s] 
+/home/emily/miniconda3/envs/mmipQuiz/lib/python3.11/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py:129: FutureWarning: Passing `min_pixels` and `max_pixels` to a processor call is deprecated and will be removed in v5.23. Pass in `size={'longest_edge': xxx, 'shortest_edge': xxx} to override the target size.`
+  warnings.warn(
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+Model loaded successfully.
+Device: cuda:0
+GPU memory allocated: 8.46 GB
+
+===== IMAGE INFERENCE =====
+Inference time: 6.655 seconds
+
+===== MODEL ANSWER =====
+這是一個關於描述圖片內容的任務。我需要仔細觀察圖片中的每個細節，並按照要求進行描述。
+
+1.  **主要主體：筆記型電腦**
+    *   **類型/品牌：** 這是一台 Apple MacBook Pro。從鍵盤上方的字樣 "MacBook Pro" 可以確認。
+    *   **外觀特徵：** 銀色/深空灰色金屬外殼。黑色的鍵盤和觸控板。
+    *   **損壞情況：**
+        *   **螢幕：** 螢幕嚴重破裂。有一個巨大的中心裂口（像蜘蛛網一樣），並且有大量的細微裂紋覆蓋整個螢幕。螢幕玻璃看起來已經碎裂。
+        *   **機身/觸控板：** 在觸控板右側邊緣，有明顯的剝落和碎裂，看起來像是外殼被撕開或撞擊導致碎片飛濺。
+        *   **鍵盤：** 鍵盤看起來基本完整，但可能有些灰塵或污漬。
+        *   **連接線：** 左側有一根黑色的線（可能是充電線或數據線）連接著電腦。
+
+2.  **周圍的物品**
+    *   **左側：**
+        *   **筆記本：** 一張白色的橫格紙，上面手寫著字。
+        *   **文字內容：** "Broken Laptop"（壞掉的筆記型電腦），"Need Repair"（需要維修），日期 "14/10/23"。
+        *   **筆：** 
+
+===== GPU MEMORY AFTER INFERENCE =====
+Allocated: 8.5 GB
+
+===== TEST FINISHED =====
