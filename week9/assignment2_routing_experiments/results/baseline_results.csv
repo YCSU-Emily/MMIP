@@ -1,0 +1,11 @@
+﻿id,description,latency_ms,schema_valid,intent_correct,product_correct,image_type_correct,department_correct,action_correct,routing_correct,clarification_correct,expected_intent,predicted_intent,expected_department,predicted_department,expected_action,predicted_action,expected_image_type,predicted_image_type,expected_needs_clarification,predicted_needs_clarification
+B01,Order tracking with order ID,0.061,True,True,True,True,True,True,True,True,order_tracking,order_tracking,order_support,order_support,track_order,track_order,none,none,False,False
+B02,Warranty inquiry,0.013,True,True,True,True,True,True,True,True,warranty_check,warranty_check,warranty_service,warranty_service,check_warranty,check_warranty,none,none,False,False
+B03,Laptop screen repair,0.012,True,True,True,True,True,True,True,True,repair_request,repair_request,repair_center,repair_center,create_repair_request,create_repair_request,none,none,False,False
+B04,Return and refund,0.013,True,True,True,True,True,True,True,True,return_refund,return_refund,returns_refunds,returns_refunds,start_return_refund,start_return_refund,none,none,False,False
+B05,Human agent handoff,0.013,True,True,True,True,True,True,True,True,human_handoff,human_handoff,human_agent,human_agent,handoff_to_human,handoff_to_human,none,none,False,False
+B06,Product usage FAQ,0.015,True,True,True,True,True,True,True,True,faq,faq,general_support,general_support,answer_faq,answer_faq,none,none,False,False
+B07,Ambiguous request,0.014,True,True,True,True,True,True,True,True,unknown,unknown,general_support,general_support,ask_follow_up,ask_follow_up,none,none,True,True
+B08,Order tracking without order ID,0.014,True,True,True,True,True,True,True,True,order_tracking,order_tracking,order_support,order_support,ask_follow_up,ask_follow_up,none,none,True,True
+B09,Image-based damage repair,1.291,True,True,True,True,True,True,True,True,repair_request,repair_request,repair_center,repair_center,create_repair_request,create_repair_request,damage,damage,False,False
+B10,Warranty inquiry without image,0.016,True,True,True,True,True,True,True,True,warranty_check,warranty_check,warranty_service,warranty_service,check_warranty,check_warranty,none,none,False,False

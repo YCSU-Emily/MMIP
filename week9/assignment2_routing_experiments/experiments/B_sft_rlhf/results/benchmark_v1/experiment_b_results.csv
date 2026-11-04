@@ -1,0 +1,11 @@
+﻿id,json_parse_valid,schema_valid,latency_ms,input_tokens,output_tokens,scores,schema_error
+B01,True,True,7214.457,1671,253,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B02,True,True,6699.157,1669,246,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B03,True,True,7488.445,1669,272,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B04,True,True,6751.935,1667,246,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B05,True,True,6506.648,1665,235,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B06,True,True,6313.78,1665,229,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B07,True,True,6434.423,1664,231,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B08,True,True,6589.061,1667,235,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B09,True,True,9431.378,2441,333,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",
+B10,True,True,6798.212,1669,239,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true, ""combined_routing"": true}",

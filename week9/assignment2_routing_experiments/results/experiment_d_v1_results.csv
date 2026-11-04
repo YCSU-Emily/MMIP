@@ -1,0 +1,11 @@
+﻿id,selected_path,routing_reason,model_invoked,json_parse_valid,schema_valid,latency_ms,input_tokens,output_tokens,scores,schema_error
+B01,fast,Clear single-intent text request.,False,True,True,7.676,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B02,fast,Clear single-intent text request.,False,True,True,7.202,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B03,fast,Clear single-intent text request.,False,True,True,7.235,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B04,fast,Clear single-intent text request.,False,True,True,7.334,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B05,fast,Clear single-intent text request.,False,True,True,7.138,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B06,fast,Clear single-intent text request.,False,True,True,7.179,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B07,deep,Ambiguous or unknown intent requires deeper analysis.,True,True,True,8370.56,1664,417,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B08,fast,Clear single-intent text request.,False,True,True,7.108,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B09,deep,Actual image requires multimodal analysis.,True,True,True,10865.359,2441,573,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B10,fast,Clear single-intent text request.,False,True,True,6.922,0,0,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",

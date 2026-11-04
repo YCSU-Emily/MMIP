@@ -1,0 +1,15 @@
+{
+  "experiment": "Rule-based lightweight baseline",
+  "benchmark_cases": 10,
+  "vision_model_enabled": false,
+  "schema_validity": 1.0,
+  "intent_accuracy": 1.0,
+  "product_accuracy": 1.0,
+  "image_type_accuracy": 1.0,
+  "department_accuracy": 1.0,
+  "action_accuracy": 1.0,
+  "routing_accuracy": 1.0,
+  "clarification_accuracy": 1.0,
+  "average_latency_ms": 0.1462,
+  "total_latency_ms": 1.462
+}

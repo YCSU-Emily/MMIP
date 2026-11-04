@@ -1,0 +1,17 @@
+{
+  "benchmark_cases": 10,
+  "A": {
+    "schema_validity": 1.0,
+    "average_latency_ms": 7736.9786,
+    "average_output_tokens": 408.2,
+    "combined_routing_accuracy": 1.0
+  },
+  "B": {
+    "schema_validity": 1.0,
+    "average_latency_ms": 7022.7496,
+    "average_output_tokens": 251.9,
+    "combined_routing_accuracy": 1.0
+  },
+  "latency_reduction_percent": 9.231368431082387,
+  "output_token_reduction_percent": 38.290053895149434
+}

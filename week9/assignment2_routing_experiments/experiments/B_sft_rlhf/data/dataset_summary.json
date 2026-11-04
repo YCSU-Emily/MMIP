@@ -1,0 +1,10 @@
+{
+  "experiment": "B - Qwen3.5-4B LoRA SFT",
+  "training_samples": 90,
+  "validation_samples": 10,
+  "image_training_samples": 0,
+  "test_benchmark": "benchmark/benchmark_v1.json",
+  "test_samples_reserved": 10,
+  "data_generation": "deterministic synthetic examples",
+  "note": "All training and validation samples are text-only. The benchmark B01-B10 is reserved for final evaluation."
+}

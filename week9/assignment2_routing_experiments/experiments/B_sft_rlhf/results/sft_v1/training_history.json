@@ -1,0 +1,23 @@
+[
+  {
+    "epoch": 1,
+    "optimizer_steps": 23,
+    "train_loss": 0.2419936332023806,
+    "validation_loss": 0.06001250110566616,
+    "learning_rate": 6.96969696969697e-05
+  },
+  {
+    "epoch": 2,
+    "optimizer_steps": 46,
+    "train_loss": 0.02918753106560972,
+    "validation_loss": 0.009098566137254238,
+    "learning_rate": 3.484848484848485e-05
+  },
+  {
+    "epoch": 3,
+    "optimizer_steps": 69,
+    "train_loss": 0.004805762172004001,
+    "validation_loss": 0.004174372495617718,
+    "learning_rate": 0.0
+  }
+]

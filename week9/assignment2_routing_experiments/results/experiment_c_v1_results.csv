@@ -1,0 +1,11 @@
+﻿id,json_parse_valid,schema_valid,latency_ms,input_tokens,output_tokens,scores,schema_error
+B01,True,True,9874.035,1671,360,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B02,True,True,11142.302,1669,408,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B03,True,True,12470.115,1669,438,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B04,True,True,11657.439,1667,419,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B05,True,True,7387.557,1665,315,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B06,True,True,11510.242,1665,411,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B07,True,True,11407.485,1664,410,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B08,True,True,8477.789,1667,342,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B09,True,True,17666.481,2441,555,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",
+B10,True,True,11283.879,1669,404,"{""intent"": true, ""product"": true, ""image_type"": true, ""department"": true, ""action"": true, ""clarification"": true}",

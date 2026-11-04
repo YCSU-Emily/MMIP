@@ -1,0 +1,657 @@
+[
+  {
+    "id": "B01",
+    "user_text": "我要查詢訂單 A123456 的物流進度。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"order_tracking\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": \"A123456\", \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B01\", \"turn_count\": 1, \"collected_information\": [\"order_id: A123456\"], \"missing_information\": [], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"order_support\", \"action\": \"track_order\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 order_tracking，分派至 order_support。\"}, \"response\": {\"message\": \"已收到訂單 A123456 的查詢需求，將協助確認物流進度。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "order_tracking",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": "A123456",
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B01",
+        "turn_count": 1,
+        "collected_information": [
+          "order_id: A123456"
+        ],
+        "missing_information": [],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "order_support",
+        "action": "track_order",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 order_tracking，分派至 order_support。"
+      },
+      "response": {
+        "message": "已收到訂單 A123456 的查詢需求，將協助確認物流進度。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 7214.457,
+    "input_tokens": 1671,
+    "output_tokens": 253,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B02",
+    "user_text": "請問我的 ASUS 筆電還在保固期限內嗎？",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"warranty_check\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": \"ASUS\", \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B02\", \"turn_count\": 1, \"collected_information\": [\"product_name: ASUS\"], \"missing_information\": [\"purchase_date_or_order_id\"], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"warranty_service\", \"action\": \"check_warranty\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 warranty_check，分派至 warranty_service。\"}, \"response\": {\"message\": \"已收到您的保固查詢需求，接下來可確認產品及購買資訊。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "warranty_check",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": "ASUS",
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B02",
+        "turn_count": 1,
+        "collected_information": [
+          "product_name: ASUS"
+        ],
+        "missing_information": [
+          "purchase_date_or_order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "warranty_service",
+        "action": "check_warranty",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 warranty_check，分派至 warranty_service。"
+      },
+      "response": {
+        "message": "已收到您的保固查詢需求，接下來可確認產品及購買資訊。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6699.157,
+    "input_tokens": 1669,
+    "output_tokens": 246,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B03",
+    "user_text": "我的 MacBook Pro 螢幕摔裂了，想申請維修。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"repair_request\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": \"Apple MacBook\", \"product_model\": \"MacBook Pro\", \"order_id\": null, \"purchase_date\": null, \"problem_description\": \"螢幕摔裂\"}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B03\", \"turn_count\": 1, \"collected_information\": [\"product_name: Apple MacBook\", \"product_model: MacBook Pro\", \"problem_description: 螢幕摔裂\"], \"missing_information\": [\"purchase_date_or_order_id\"], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"repair_center\", \"action\": \"create_repair_request\", \"priority\": \"high\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 repair_request，分派至 repair_center。\"}, \"response\": {\"message\": \"已收到您的維修需求，可以先協助建立維修案件；後續再確認產品及購買資訊。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "repair_request",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": "Apple MacBook",
+        "product_model": "MacBook Pro",
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": "螢幕摔裂"
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B03",
+        "turn_count": 1,
+        "collected_information": [
+          "product_name: Apple MacBook",
+          "product_model: MacBook Pro",
+          "problem_description: 螢幕摔裂"
+        ],
+        "missing_information": [
+          "purchase_date_or_order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "repair_center",
+        "action": "create_repair_request",
+        "priority": "high",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 repair_request，分派至 repair_center。"
+      },
+      "response": {
+        "message": "已收到您的維修需求，可以先協助建立維修案件；後續再確認產品及購買資訊。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 7488.445,
+    "input_tokens": 1669,
+    "output_tokens": 272,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B04",
+    "user_text": "我收到的商品不符合需求，想申請退貨退款。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"return_refund\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B04\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [\"purchase_date_or_order_id\"], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"returns_refunds\", \"action\": \"start_return_refund\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 return_refund，分派至 returns_refunds。\"}, \"response\": {\"message\": \"已收到您的退貨退款需求，將協助啟動申請流程，後續再確認相關購買資訊。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "return_refund",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B04",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [
+          "purchase_date_or_order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "returns_refunds",
+        "action": "start_return_refund",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 return_refund，分派至 returns_refunds。"
+      },
+      "response": {
+        "message": "已收到您的退貨退款需求，將協助啟動申請流程，後續再確認相關購買資訊。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6751.935,
+    "input_tokens": 1667,
+    "output_tokens": 246,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B05",
+    "user_text": "我想找真人客服人員協助處理問題。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"human_handoff\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B05\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"human_agent\", \"action\": \"handoff_to_human\", \"priority\": \"high\", \"requires_human\": true, \"reason\": \"根據客戶需求判定為 human_handoff，分派至 human_agent。\"}, \"response\": {\"message\": \"已收到您希望聯繫人工客服的需求，將協助您轉接專人。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "human_handoff",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B05",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "human_agent",
+        "action": "handoff_to_human",
+        "priority": "high",
+        "requires_human": true,
+        "reason": "根據客戶需求判定為 human_handoff，分派至 human_agent。"
+      },
+      "response": {
+        "message": "已收到您希望聯繫人工客服的需求，將協助您轉接專人。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6506.648,
+    "input_tokens": 1665,
+    "output_tokens": 235,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B06",
+    "user_text": "請問筆電第一次使用時要如何設定？",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"faq\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B06\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"general_support\", \"action\": \"answer_faq\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 faq，分派至 general_support。\"}, \"response\": {\"message\": \"已收到您的產品使用問題，我可以協助您查詢相關操作方式。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "faq",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B06",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "general_support",
+        "action": "answer_faq",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 faq，分派至 general_support。"
+      },
+      "response": {
+        "message": "已收到您的產品使用問題，我可以協助您查詢相關操作方式。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6313.78,
+    "input_tokens": 1665,
+    "output_tokens": 229,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B07",
+    "user_text": "我有一個問題，請幫幫我。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"unknown\", \"confidence\": 0.95, \"needs_clarification\": true}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B07\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [\"specific_request\"], \"previous_intent\": null, \"awaiting_user_input\": true}, \"routing\": {\"department\": \"general_support\", \"action\": \"ask_follow_up\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 unknown，分派至 general_support。\"}, \"response\": {\"message\": \"請描述您遇到的問題或想辦理的服務，我會協助您確認。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "unknown",
+        "confidence": 0.95,
+        "needs_clarification": true
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B07",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [
+          "specific_request"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": true
+      },
+      "routing": {
+        "department": "general_support",
+        "action": "ask_follow_up",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 unknown，分派至 general_support。"
+      },
+      "response": {
+        "message": "請描述您遇到的問題或想辦理的服務，我會協助您確認。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6434.423,
+    "input_tokens": 1664,
+    "output_tokens": 231,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B08",
+    "user_text": "我的包裹現在到哪裡了？我要查物流。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"order_tracking\", \"confidence\": 0.95, \"needs_clarification\": true}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B08\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [\"order_id\"], \"previous_intent\": null, \"awaiting_user_input\": true}, \"routing\": {\"department\": \"order_support\", \"action\": \"ask_follow_up\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 order_tracking，分派至 order_support。\"}, \"response\": {\"message\": \"請提供訂單編號，才能協助查詢物流進度。\", \"language\": \"zh-TW\", \"suggested_questions\": [\"請提供訂單編號。\"]}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "order_tracking",
+        "confidence": 0.95,
+        "needs_clarification": true
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B08",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [
+          "order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": true
+      },
+      "routing": {
+        "department": "order_support",
+        "action": "ask_follow_up",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 order_tracking，分派至 order_support。"
+      },
+      "response": {
+        "message": "請提供訂單編號，才能協助查詢物流進度。",
+        "language": "zh-TW",
+        "suggested_questions": [
+          "請提供訂單編號。"
+        ]
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6589.061,
+    "input_tokens": 1667,
+    "output_tokens": 235,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B09",
+    "user_text": "這是我的 MacBook Pro，螢幕破裂了，請幫我申請維修。",
+    "image_path": "/home/emily/MMIP/week9/assignment1_multimodal_chatbot/images/real_product.jpg",
+    "raw_output": "{\"intent\": {\"category\": \"repair_request\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": \"Apple MacBook\", \"product_model\": \"MacBook Pro\", \"order_id\": null, \"purchase_date\": null, \"problem_description\": \"螢幕破裂\"}, \"image_analysis\": {\"image_provided\": true, \"image_type\": \"damage\", \"observations\": [\"MacBook Pro 外殼及鍵盤區域有明顯損傷\", \"螢幕玻璃破裂且伴隨裂紋\", \"筆記本放置於木製桌面上，旁邊有咖啡杯及筆\"], \"visible_damage\": \"螢幕破裂、外殼及鍵盤損傷\", \"limitations\": [\"無法確認購買日期及序號\", \"無法判定損壞原因\"]}, \"conversation_state\": {\"session_id\": \"experiment_b_B09\", \"turn_count\": 1, \"collected_information\": [\"product_name: Apple MacBook\", \"product_model: MacBook Pro\", \"problem_description: 螢幕破裂\"], \"missing_information\": [\"purchase_date_or_order_id\"], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"repair_center\", \"action\": \"create_repair_request\", \"priority\": \"high\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 repair_request，分派至 repair_center。\"}, \"response\": {\"message\": \"已收到您的維修需求，可以先建立維修案件；後續再確認產品及購買資訊。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "repair_request",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": "Apple MacBook",
+        "product_model": "MacBook Pro",
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": "螢幕破裂"
+      },
+      "image_analysis": {
+        "image_provided": true,
+        "image_type": "damage",
+        "observations": [
+          "MacBook Pro 外殼及鍵盤區域有明顯損傷",
+          "螢幕玻璃破裂且伴隨裂紋",
+          "筆記本放置於木製桌面上，旁邊有咖啡杯及筆"
+        ],
+        "visible_damage": "螢幕破裂、外殼及鍵盤損傷",
+        "limitations": [
+          "無法確認購買日期及序號",
+          "無法判定損壞原因"
+        ]
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B09",
+        "turn_count": 1,
+        "collected_information": [
+          "product_name: Apple MacBook",
+          "product_model: MacBook Pro",
+          "problem_description: 螢幕破裂"
+        ],
+        "missing_information": [
+          "purchase_date_or_order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "repair_center",
+        "action": "create_repair_request",
+        "priority": "high",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 repair_request，分派至 repair_center。"
+      },
+      "response": {
+        "message": "已收到您的維修需求，可以先建立維修案件；後續再確認產品及購買資訊。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 9431.378,
+    "input_tokens": 2441,
+    "output_tokens": 333,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  },
+  {
+    "id": "B10",
+    "user_text": "我附上購買收據，請幫我確認產品保固。",
+    "image_path": null,
+    "raw_output": "{\"intent\": {\"category\": \"warranty_check\", \"confidence\": 0.95, \"needs_clarification\": false}, \"entities\": {\"product_name\": null, \"product_model\": null, \"order_id\": null, \"purchase_date\": null, \"problem_description\": null}, \"image_analysis\": {\"image_provided\": false, \"image_type\": \"none\", \"observations\": [], \"visible_damage\": null, \"limitations\": []}, \"conversation_state\": {\"session_id\": \"experiment_b_B10\", \"turn_count\": 1, \"collected_information\": [], \"missing_information\": [\"purchase_date_or_order_id\"], \"previous_intent\": null, \"awaiting_user_input\": false}, \"routing\": {\"department\": \"warranty_service\", \"action\": \"check_warranty\", \"priority\": \"normal\", \"requires_human\": false, \"reason\": \"根據客戶需求判定為 warranty_check，分派至 warranty_service。\"}, \"response\": {\"message\": \"已收到您的保固查詢需求，接下來可確認產品及購買資訊。\", \"language\": \"zh-TW\", \"suggested_questions\": []}}\n",
+    "parsed_output": {
+      "intent": {
+        "category": "warranty_check",
+        "confidence": 0.95,
+        "needs_clarification": false
+      },
+      "entities": {
+        "product_name": null,
+        "product_model": null,
+        "order_id": null,
+        "purchase_date": null,
+        "problem_description": null
+      },
+      "image_analysis": {
+        "image_provided": false,
+        "image_type": "none",
+        "observations": [],
+        "visible_damage": null,
+        "limitations": []
+      },
+      "conversation_state": {
+        "session_id": "experiment_b_B10",
+        "turn_count": 1,
+        "collected_information": [],
+        "missing_information": [
+          "purchase_date_or_order_id"
+        ],
+        "previous_intent": null,
+        "awaiting_user_input": false
+      },
+      "routing": {
+        "department": "warranty_service",
+        "action": "check_warranty",
+        "priority": "normal",
+        "requires_human": false,
+        "reason": "根據客戶需求判定為 warranty_check，分派至 warranty_service。"
+      },
+      "response": {
+        "message": "已收到您的保固查詢需求，接下來可確認產品及購買資訊。",
+        "language": "zh-TW",
+        "suggested_questions": []
+      }
+    },
+    "json_parse_valid": true,
+    "schema_valid": true,
+    "schema_error": null,
+    "latency_ms": 6798.212,
+    "input_tokens": 1669,
+    "output_tokens": 239,
+    "scores": {
+      "intent": true,
+      "product": true,
+      "image_type": true,
+      "department": true,
+      "action": true,
+      "clarification": true,
+      "combined_routing": true
+    }
+  }
+]

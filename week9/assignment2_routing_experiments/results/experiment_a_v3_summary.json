@@ -1,0 +1,20 @@
+{
+  "experiment": "A - Prompt-only Qwen3.5-4B multimodal routing",
+  "benchmark_cases": 10,
+  "model": "Qwen3.5-4B",
+  "device": "NVIDIA GeForce RTX 5090",
+  "schema_validity": 1.0,
+  "intent_accuracy": 1.0,
+  "product_accuracy": 1.0,
+  "image_type_accuracy": 1.0,
+  "department_accuracy": 1.0,
+  "action_accuracy": 1.0,
+  "clarification_accuracy": 1.0,
+  "routing_accuracy": 1.0,
+  "average_latency_ms": 7736.9786,
+  "total_latency_ms": 77369.78600000001,
+  "total_input_tokens": 17447,
+  "total_output_tokens": 4082,
+  "api_cost": null,
+  "cost_note": "Local GPU inference; no API billing data. GPU electricity and hardware costs are not included."
+}

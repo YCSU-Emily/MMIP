@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary and backup files
+*.backup
+*.bak
+*.before_*
+*.v1_backup
+*.v2_backup
+README.md.before_visual_update
+
+# Smoke test artifacts
+experiments/B_sft_rlhf/checkpoints/qwen35_lora/sft_smoke_best/
+experiments/B_sft_rlhf/results/benchmark_v1_smoke/
+experiments/B_sft_rlhf/results/sft_smoke/
+results/*smoke*
+
+# Intermediate environment snapshot
+results/environment_before_peft.txt
+
+# Superseded intermediate A experiment results
+/results/experiment_a_results.*
+/results/experiment_a_summary.json
+/results/experiment_a_v1_*
+/results/experiment_a_v2_*

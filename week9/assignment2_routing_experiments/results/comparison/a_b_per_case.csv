@@ -1,0 +1,11 @@
+﻿id,A_latency_ms,B_latency_ms,A_output_tokens,B_output_tokens,A_intent,B_intent,A_product,B_product,A_image_type,B_image_type,A_department,B_department,A_action,B_action,A_clarification,B_clarification,A_combined_routing,B_combined_routing
+B01,7364.647,7214.457,362,253,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B02,7740.668,6699.157,410,246,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B03,8269.785,7488.445,440,272,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B04,7869.609,6751.935,421,246,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B05,5996.711,6506.648,317,235,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B06,7717.978,6313.78,413,229,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B07,7641.178,6434.423,412,231,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B08,6523.543,6589.061,344,235,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B09,10594.817,9431.378,557,333,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+B10,7650.85,6798.212,406,239,True,True,True,True,True,True,True,True,True,True,True,True,True,True

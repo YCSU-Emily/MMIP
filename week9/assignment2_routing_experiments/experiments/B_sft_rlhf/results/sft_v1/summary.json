@@ -1,0 +1,63 @@
+{
+  "experiment": "B - Qwen3.5-4B LoRA SFT",
+  "run_name": "sft_v1",
+  "model": "Qwen3.5-4B",
+  "precision": "BF16",
+  "training_samples": 90,
+  "validation_samples": 10,
+  "image_training_samples": 0,
+  "epochs_completed": 3,
+  "optimizer_steps": 69,
+  "best_validation_loss": 0.004174372495617718,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_a",
+      "in_proj_b",
+      "out_proj",
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "training_config": {
+    "epochs": 3,
+    "batch_size": 1,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_length": 2048,
+    "max_steps": 0,
+    "run_name": "sft_v1",
+    "seed": 42
+  },
+  "vision_encoder_finetuned": false,
+  "history": [
+    {
+      "epoch": 1,
+      "optimizer_steps": 23,
+      "train_loss": 0.2419936332023806,
+      "validation_loss": 0.06001250110566616,
+      "learning_rate": 6.96969696969697e-05
+    },
+    {
+      "epoch": 2,
+      "optimizer_steps": 46,
+      "train_loss": 0.02918753106560972,
+      "validation_loss": 0.009098566137254238,
+      "learning_rate": 3.484848484848485e-05
+    },
+    {
+      "epoch": 3,
+      "optimizer_steps": 69,
+      "train_loss": 0.004805762172004001,
+      "validation_loss": 0.004174372495617718,
+      "learning_rate": 0.0
+    }
+  ]
+}
