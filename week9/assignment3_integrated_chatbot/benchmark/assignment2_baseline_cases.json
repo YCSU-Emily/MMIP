@@ -1,0 +1,122 @@
+[
+  {
+    "id": "B01",
+    "description": "Order tracking with order ID",
+    "user_text": "我要查詢訂單 A123456 的物流進度。",
+    "image_path": null,
+    "expected_intent": "order_tracking",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "order_support",
+    "expected_action": "track_order",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B02",
+    "description": "Warranty inquiry",
+    "user_text": "請問我的 ASUS 筆電還在保固期限內嗎？",
+    "image_path": null,
+    "expected_intent": "warranty_check",
+    "expected_product_name": "ASUS",
+    "expected_image_type": "none",
+    "expected_department": "warranty_service",
+    "expected_action": "check_warranty",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B03",
+    "description": "Laptop screen repair",
+    "user_text": "我的 MacBook Pro 螢幕摔裂了，想申請維修。",
+    "image_path": null,
+    "expected_intent": "repair_request",
+    "expected_product_name": "Apple MacBook",
+    "expected_image_type": "none",
+    "expected_department": "repair_center",
+    "expected_action": "create_repair_request",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B04",
+    "description": "Return and refund",
+    "user_text": "我收到的商品不符合需求，想申請退貨退款。",
+    "image_path": null,
+    "expected_intent": "return_refund",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "returns_refunds",
+    "expected_action": "start_return_refund",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B05",
+    "description": "Human agent handoff",
+    "user_text": "我想找真人客服人員協助處理問題。",
+    "image_path": null,
+    "expected_intent": "human_handoff",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "human_agent",
+    "expected_action": "handoff_to_human",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B06",
+    "description": "Product usage FAQ",
+    "user_text": "請問筆電第一次使用時要如何設定？",
+    "image_path": null,
+    "expected_intent": "faq",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "general_support",
+    "expected_action": "answer_faq",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B07",
+    "description": "Ambiguous request",
+    "user_text": "我有一個問題，請幫幫我。",
+    "image_path": null,
+    "expected_intent": "unknown",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "general_support",
+    "expected_action": "ask_follow_up",
+    "expected_needs_clarification": true
+  },
+  {
+    "id": "B08",
+    "description": "Order tracking without order ID",
+    "user_text": "我的包裹現在到哪裡了？我要查物流。",
+    "image_path": null,
+    "expected_intent": "order_tracking",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "order_support",
+    "expected_action": "ask_follow_up",
+    "expected_needs_clarification": true
+  },
+  {
+    "id": "B09",
+    "description": "Image-based damage repair",
+    "user_text": "這是我的 MacBook Pro，螢幕破裂了，請幫我申請維修。",
+    "image_path": "../assignment1_multimodal_chatbot/images/real_product.jpg",
+    "expected_intent": "repair_request",
+    "expected_product_name": "Apple MacBook",
+    "expected_image_type": "damage",
+    "expected_department": "repair_center",
+    "expected_action": "create_repair_request",
+    "expected_needs_clarification": false
+  },
+  {
+    "id": "B10",
+    "description": "Warranty inquiry without image",
+    "user_text": "我附上購買收據，請幫我確認產品保固。",
+    "image_path": null,
+    "expected_intent": "warranty_check",
+    "expected_product_name": null,
+    "expected_image_type": "none",
+    "expected_department": "warranty_service",
+    "expected_action": "check_warranty",
+    "expected_needs_clarification": false
+  }
+]
