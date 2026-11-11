@@ -1,0 +1,1219 @@
+{
+  "experiment": "Smart3C Canonical Document Split V4 Retrieval Evaluation",
+  "database": "/home/emily/MMIP/week10/assignment1_rag/vector_db_canonical_v4",
+  "collection": "smart3c_faq_canonical_v4",
+  "train_dataset": "/home/emily/MMIP/week10/assignment1_rag/data/splits_canonical_v4/train.jsonl",
+  "test_dataset": "/home/emily/MMIP/week10/assignment1_rag/data/splits_canonical_v4/test.jsonl",
+  "canonical_separation": {
+    "train_qa_count": 118,
+    "test_qa_count": 16,
+    "train_canonical_document_count": 27,
+    "test_canonical_document_count": 4,
+    "overlapping_canonical_document_count": 0,
+    "qa_id_overlap_count": 0,
+    "manifest_url_match": true
+  },
+  "database_integrity": {
+    "database_count": 118,
+    "database_qa_ids_match_train": true,
+    "database_canonical_urls_match_train": true
+  },
+  "metrics": {
+    "total_queries": 16,
+    "top1_category_accuracy": 0.4375,
+    "top1_category_correct": 7,
+    "reference_complete_queries": 16,
+    "reference_completeness_rate": 1.0,
+    "by_k": {
+      "1": {
+        "category_hit_count": 7,
+        "category_hit_rate": 0.4375,
+        "exact_qa_id_hit_count": 0,
+        "exact_qa_id_hit_rate": 0.0
+      },
+      "3": {
+        "category_hit_count": 12,
+        "category_hit_rate": 0.75,
+        "exact_qa_id_hit_count": 0,
+        "exact_qa_id_hit_rate": 0.0
+      },
+      "5": {
+        "category_hit_count": 14,
+        "category_hit_rate": 0.875,
+        "exact_qa_id_hit_count": 0,
+        "exact_qa_id_hit_rate": 0.0
+      }
+    }
+  },
+  "per_query_results": [
+    {
+      "query_id": "BATTERY_006",
+      "query": "iPhone 無法充電時，可以先檢查哪些地方？",
+      "expected_category": "battery_charging",
+      "top1_category": "battery_charging",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "BATTERY_008",
+          "category": "battery_charging",
+          "similarity": 0.7277540564537048,
+          "source_id": "SRC021",
+          "source_title": "Fix an Android device that won't charge or turn on",
+          "source_publisher": "Google Android Help",
+          "source_url": "https://support.google.com/android/answer/7662405"
+        },
+        {
+          "rank": 2,
+          "id": "BATTERY_004",
+          "category": "battery_charging",
+          "similarity": 0.7154413461685181,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 3,
+          "id": "MOBILE_017",
+          "category": "mobile_tablet",
+          "similarity": 0.6932374238967896,
+          "source_id": "SRC021",
+          "source_title": "Fix an Android device that won't charge or turn on",
+          "source_publisher": "Google Android Help",
+          "source_url": "https://support.google.com/android/answer/7662405"
+        },
+        {
+          "rank": 4,
+          "id": "MOBILE_006",
+          "category": "mobile_tablet",
+          "similarity": 0.6888378858566284,
+          "source_id": "SRC018",
+          "source_title": "如果 iPad 無法充電",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/102612"
+        },
+        {
+          "rank": 5,
+          "id": "BATTERY_018",
+          "category": "battery_charging",
+          "similarity": 0.6839187145233154,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "BATTERY_010",
+      "query": "iPhone 充電時沒有反應，如何判斷是否為充電配件造成？",
+      "expected_category": "battery_charging",
+      "top1_category": "battery_charging",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "BATTERY_007",
+          "category": "battery_charging",
+          "similarity": 0.702064037322998,
+          "source_id": "SRC018",
+          "source_title": "如果 iPad 無法充電",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/102612"
+        },
+        {
+          "rank": 2,
+          "id": "BATTERY_018",
+          "category": "battery_charging",
+          "similarity": 0.6883198022842407,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 3,
+          "id": "BATTERY_004",
+          "category": "battery_charging",
+          "similarity": 0.685524582862854,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 4,
+          "id": "BLUETOOTH_004",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.6734948754310608,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 5,
+          "id": "BLUETOOTH_020",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.6726785898208618,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "MOBILE_007",
+      "query": "iPhone 插上充電線後沒有充電，可以按照什麼順序排除？",
+      "expected_category": "mobile_tablet",
+      "top1_category": "battery_charging",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "BATTERY_007",
+          "category": "battery_charging",
+          "similarity": 0.7098604440689087,
+          "source_id": "SRC018",
+          "source_title": "如果 iPad 無法充電",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/102612"
+        },
+        {
+          "rank": 2,
+          "id": "MOBILE_005",
+          "category": "mobile_tablet",
+          "similarity": 0.7031258344650269,
+          "source_id": "SRC018",
+          "source_title": "如果 iPad 無法充電",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/102612"
+        },
+        {
+          "rank": 3,
+          "id": "BATTERY_004",
+          "category": "battery_charging",
+          "similarity": 0.6846070289611816,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 4,
+          "id": "BATTERY_018",
+          "category": "battery_charging",
+          "similarity": 0.6725826263427734,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 5,
+          "id": "BLUETOOTH_019",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.672325074672699,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "MOBILE_015",
+      "query": "iPhone 顯示配件可能不受支援或無法使用，應該如何排除充電問題？",
+      "expected_category": "mobile_tablet",
+      "top1_category": "bluetooth_peripherals",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "BLUETOOTH_020",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.7092947363853455,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 2,
+          "id": "BLUETOOTH_015",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.7044278383255005,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 3,
+          "id": "BLUETOOTH_004",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.698535680770874,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 4,
+          "id": "BLUETOOTH_019",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.6943738460540771,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 5,
+          "id": "BATTERY_007",
+          "category": "battery_charging",
+          "similarity": 0.6789364814758301,
+          "source_id": "SRC018",
+          "source_title": "如果 iPad 無法充電",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/102612"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "MOBILE_016",
+      "query": "iPhone 充電到約 80% 後暫停或沒有繼續增加，是否一定代表電池故障？",
+      "expected_category": "mobile_tablet",
+      "top1_category": "battery_charging",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "BATTERY_004",
+          "category": "battery_charging",
+          "similarity": 0.7693467140197754,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 2,
+          "id": "BATTERY_018",
+          "category": "battery_charging",
+          "similarity": 0.6259896159172058,
+          "source_id": "SRC030",
+          "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/108055"
+        },
+        {
+          "rank": 3,
+          "id": "BLUETOOTH_019",
+          "category": "bluetooth_peripherals",
+          "similarity": 0.5678497552871704,
+          "source_id": "SRC028",
+          "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111804"
+        },
+        {
+          "rank": 4,
+          "id": "BATTERY_013",
+          "category": "battery_charging",
+          "similarity": 0.5673369765281677,
+          "source_id": "SRC029",
+          "source_title": "Caring for your battery in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows"
+        },
+        {
+          "rank": 5,
+          "id": "BATTERY_014",
+          "category": "battery_charging",
+          "similarity": 0.5663525462150574,
+          "source_id": "SRC021",
+          "source_title": "Fix an Android device that won't charge or turn on",
+          "source_publisher": "Google Android Help",
+          "source_url": "https://support.google.com/android/answer/7662405"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "WIFI_016",
+      "query": "Chromebook 無法連接 Wi-Fi 或無法上網時，應該先進行哪些基本檢查？",
+      "expected_category": "wifi_network",
+      "top1_category": "os_software",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.6686201095581055,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 2,
+          "id": "WIFI_022",
+          "category": "wifi_network",
+          "similarity": 0.6436913013458252,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "LAPTOP_003",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6390836238861084,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 4,
+          "id": "DISPLAY_007",
+          "category": "display_hardware",
+          "similarity": 0.631875216960907,
+          "source_id": "SRC036",
+          "source_title": "Connect your Chromebook to a monitor",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/1060909?hl=en-EN"
+        },
+        {
+          "rank": 5,
+          "id": "WIFI_001",
+          "category": "wifi_network",
+          "similarity": 0.6292098760604858,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "WIFI_017",
+      "query": "Chromebook 連接公共 Wi-Fi 後，為什麼需要登入或接受使用條款才能上網？",
+      "expected_category": "wifi_network",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_003",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5854257345199585,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "OS_014",
+          "category": "os_software",
+          "similarity": 0.5715104341506958,
+          "source_id": "SRC042",
+          "source_title": "Install & manage web apps",
+          "source_publisher": "Google Chrome Web Store Help",
+          "source_url": "https://support.google.com/chrome_webstore/answer/1053346?hl=en-GB"
+        },
+        {
+          "rank": 3,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.550356388092041,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 4,
+          "id": "OS_008",
+          "category": "os_software",
+          "similarity": 0.5399124026298523,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 5,
+          "id": "WIFI_022",
+          "category": "wifi_network",
+          "similarity": 0.5392389297485352,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "WIFI_018",
+      "query": "Chromebook 連接需要登入的公共 Wi-Fi，但登入頁面沒有自動出現時，可以怎麼處理？",
+      "expected_category": "wifi_network",
+      "top1_category": "display_hardware",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "DISPLAY_007",
+          "category": "display_hardware",
+          "similarity": 0.5900996923446655,
+          "source_id": "SRC036",
+          "source_title": "Connect your Chromebook to a monitor",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/1060909?hl=en-EN"
+        },
+        {
+          "rank": 2,
+          "id": "LAPTOP_003",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5783241987228394,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "LAPTOP_002",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5659403204917908,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 4,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.563788890838623,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 5,
+          "id": "WIFI_007",
+          "category": "wifi_network",
+          "similarity": 0.5567471385002136,
+          "source_id": "SRC017",
+          "source_title": "如果無法在 iPhone 或 iPad 上連接 Wi-Fi",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111786"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "WIFI_019",
+      "query": "Chromebook 已完成公共 Wi-Fi 登入，但仍然無法連接網際網路，應該如何排查？",
+      "expected_category": "wifi_network",
+      "top1_category": "wifi_network",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "WIFI_022",
+          "category": "wifi_network",
+          "similarity": 0.6813734769821167,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "LAPTOP_003",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6785997748374939,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.6599368453025818,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 4,
+          "id": "DISPLAY_007",
+          "category": "display_hardware",
+          "similarity": 0.6442028880119324,
+          "source_id": "SRC036",
+          "source_title": "Connect your Chromebook to a monitor",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/1060909?hl=en-EN"
+        },
+        {
+          "rank": 5,
+          "id": "LAPTOP_001",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6374108195304871,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "WIFI_020",
+      "query": "同一個 Wi-Fi 網路中的其他裝置都能正常上網，只有 Chromebook 無法連線，該怎麼辦？",
+      "expected_category": "wifi_network",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_003",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6292274594306946,
+          "source_id": "SRC001",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "WIFI_004",
+          "category": "wifi_network",
+          "similarity": 0.6236171126365662,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.6082988977432251,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 4,
+          "id": "WIFI_022",
+          "category": "wifi_network",
+          "similarity": 0.6069877743721008,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 5,
+          "id": "MOBILE_012",
+          "category": "mobile_tablet",
+          "similarity": 0.5935701131820679,
+          "source_id": "SRC017",
+          "source_title": "如果無法在 iPhone 或 iPad 上連接 Wi-Fi",
+          "source_publisher": "Apple Support",
+          "source_url": "https://support.apple.com/zh-tw/111786"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "LAPTOP_013",
+      "query": "Windows Update 無法下載或安裝更新時，可以先進行哪些基本排除步驟？",
+      "expected_category": "laptop_troubleshooting",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_015",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6965510845184326,
+          "source_id": "SRC012",
+          "source_title": "Free up drive space in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "OS_002",
+          "category": "os_software",
+          "similarity": 0.6056089997291565,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        },
+        {
+          "rank": 3,
+          "id": "OS_001",
+          "category": "os_software",
+          "similarity": 0.597676157951355,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        },
+        {
+          "rank": 4,
+          "id": "WIFI_025",
+          "category": "wifi_network",
+          "similarity": 0.5923599600791931,
+          "source_id": "SRC025",
+          "source_title": "Fix Wi-Fi connection issues in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        },
+        {
+          "rank": 5,
+          "id": "LAPTOP_016",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5900790095329285,
+          "source_id": "SRC013",
+          "source_title": "Windows startup settings",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "LAPTOP_014",
+      "query": "Windows 更新進度長時間停留在同一個百分比，應該如何判斷及排除？",
+      "expected_category": "laptop_troubleshooting",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_015",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5717924237251282,
+          "source_id": "SRC012",
+          "source_title": "Free up drive space in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "BATTERY_017",
+          "category": "battery_charging",
+          "similarity": 0.5637627243995667,
+          "source_id": "SRC029",
+          "source_title": "Caring for your battery in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "LAPTOP_011",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5516712665557861,
+          "source_id": "SRC007",
+          "source_title": "Tips to improve PC performance in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"
+        },
+        {
+          "rank": 4,
+          "id": "LAPTOP_017",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5498262643814087,
+          "source_id": "SRC007",
+          "source_title": "Tips to improve PC performance in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"
+        },
+        {
+          "rank": 5,
+          "id": "BATTERY_011",
+          "category": "battery_charging",
+          "similarity": 0.5486506819725037,
+          "source_id": "SRC029",
+          "source_title": "Caring for your battery in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "OS_005",
+      "query": "Windows Update cannot finish installing an update. What troubleshooting steps should I try?",
+      "expected_category": "os_software",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_015",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6651703715324402,
+          "source_id": "SRC012",
+          "source_title": "Free up drive space in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "OS_001",
+          "category": "os_software",
+          "similarity": 0.6205408573150635,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        },
+        {
+          "rank": 3,
+          "id": "OS_002",
+          "category": "os_software",
+          "similarity": 0.6064026355743408,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        },
+        {
+          "rank": 4,
+          "id": "OS_007",
+          "category": "os_software",
+          "similarity": 0.6048085689544678,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 5,
+          "id": "OS_013",
+          "category": "os_software",
+          "similarity": 0.599636435508728,
+          "source_id": "SRC039",
+          "source_title": "Repair apps and programs in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "OS_011",
+      "query": "Windows Update keeps failing even after I restart my computer. What should I do next?",
+      "expected_category": "os_software",
+      "top1_category": "os_software",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "OS_013",
+          "category": "os_software",
+          "similarity": 0.6090981960296631,
+          "source_id": "SRC039",
+          "source_title": "Repair apps and programs in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "LAPTOP_015",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.5950862169265747,
+          "source_id": "SRC012",
+          "source_title": "Free up drive space in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "OS_001",
+          "category": "os_software",
+          "similarity": 0.5850057601928711,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        },
+        {
+          "rank": 4,
+          "id": "OS_008",
+          "category": "os_software",
+          "similarity": 0.582172155380249,
+          "source_id": "SRC041",
+          "source_title": "Update your Chromebook's operating system",
+          "source_publisher": "Google Chromebook Help",
+          "source_url": "https://support.google.com/chromebook/answer/177889?hl=en"
+        },
+        {
+          "rank": 5,
+          "id": "OS_002",
+          "category": "os_software",
+          "similarity": 0.5752046704292297,
+          "source_id": "SRC037",
+          "source_title": "Fix problems that block programs from being installed or removed",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "DISPLAY_004",
+      "query": "Windows 電腦的螢幕一直閃爍，應該如何排查？",
+      "expected_category": "display_hardware",
+      "top1_category": "display_hardware",
+      "top1_category_correct": true,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "DISPLAY_015",
+          "category": "display_hardware",
+          "similarity": 0.657967209815979,
+          "source_id": "SRC032",
+          "source_title": "Troubleshoot external monitor connections in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "DISPLAY_002",
+          "category": "display_hardware",
+          "similarity": 0.632422924041748,
+          "source_id": "SRC032",
+          "source_title": "Troubleshoot external monitor connections in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows"
+        },
+        {
+          "rank": 3,
+          "id": "BATTERY_011",
+          "category": "battery_charging",
+          "similarity": 0.6257266402244568,
+          "source_id": "SRC029",
+          "source_title": "Caring for your battery in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows"
+        },
+        {
+          "rank": 4,
+          "id": "LAPTOP_016",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6157245635986328,
+          "source_id": "SRC013",
+          "source_title": "Windows startup settings",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings"
+        },
+        {
+          "rank": 5,
+          "id": "LAPTOP_017",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6154212355613708,
+          "source_id": "SRC007",
+          "source_title": "Tips to improve PC performance in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    },
+    {
+      "query_id": "DISPLAY_010",
+      "query": "Windows 螢幕閃爍時，如何初步判斷是顯示卡驅動程式還是應用程式造成？",
+      "expected_category": "display_hardware",
+      "top1_category": "laptop_troubleshooting",
+      "top1_category_correct": false,
+      "top_results": [
+        {
+          "rank": 1,
+          "id": "LAPTOP_017",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6325749158859253,
+          "source_id": "SRC007",
+          "source_title": "Tips to improve PC performance in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"
+        },
+        {
+          "rank": 2,
+          "id": "LAPTOP_016",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6214026808738708,
+          "source_id": "SRC013",
+          "source_title": "Windows startup settings",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings"
+        },
+        {
+          "rank": 3,
+          "id": "DISPLAY_015",
+          "category": "display_hardware",
+          "similarity": 0.6190506219863892,
+          "source_id": "SRC032",
+          "source_title": "Troubleshoot external monitor connections in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows"
+        },
+        {
+          "rank": 4,
+          "id": "LAPTOP_011",
+          "category": "laptop_troubleshooting",
+          "similarity": 0.6171737909317017,
+          "source_id": "SRC007",
+          "source_title": "Tips to improve PC performance in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"
+        },
+        {
+          "rank": 5,
+          "id": "BATTERY_011",
+          "category": "battery_charging",
+          "similarity": 0.6054596304893494,
+          "source_id": "SRC029",
+          "source_title": "Caring for your battery in Windows",
+          "source_publisher": "Microsoft Support",
+          "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows"
+        }
+      ],
+      "metrics_at_k": {
+        "1": {
+          "category_hit": false,
+          "exact_qa_id_hit": false
+        },
+        "3": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        },
+        "5": {
+          "category_hit": true,
+          "exact_qa_id_hit": false
+        }
+      }
+    }
+  ],
+  "metric_note": "Category hit rates are diagnostic proxies, not human semantic relevance judgments. Exact QA ID hit rate is a strict matching metric and does not imply that other retrieved answers are irrelevant. References are checked for metadata completeness, not independently fact-checked."
+}

@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+WIFI_016,SRC026,SUPPORTED,依 Google Chromebook Help 官方文件核對 Wi-Fi 連線確認、網路診斷工具及重新啟動 Chromebook。
+WIFI_017,SRC026,SUPPORTED,依 Google Chromebook Help 官方文件核對公共網路可能要求使用者登入並接受使用條款的 Captive Portal 機制。
+WIFI_018,SRC026,SUPPORTED,依 Google Chromebook Help 官方文件核對使用 http:// 網址尋找登入頁面、管理員允許時使用無痕視窗，以及停用 Chrome 擴充功能。
+WIFI_019,SRC026,SUPPORTED,依 Google Chromebook Help 官方文件核對重新連接網路、使用其他裝置測試，以及詢問網路提供者是否提供網際網路服務。
+WIFI_020,SRC026,SUPPORTED,依 Google Chromebook Help 官方文件核對其他裝置可連線但 Chrome 裝置無法連線時，請管理員確認主機名稱允許清單，必要時聯絡製造商。

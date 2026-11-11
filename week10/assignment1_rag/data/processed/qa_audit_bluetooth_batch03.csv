@@ -1,0 +1,6 @@
+qa_id,source_id,verification_status,audit_note
+BLUETOOTH_011,SRC003,SUPPORTED,依據 Microsoft 官方 Windows 藍牙疑難排解文件整理。
+BLUETOOTH_012,SRC004,SUPPORTED,依據 Microsoft 官方 Windows 藍牙疑難排解文件整理。
+BLUETOOTH_013,SRC004,SUPPORTED,依據 Microsoft 官方 Windows 藍牙疑難排解文件整理。
+BLUETOOTH_014,SRC028,SUPPORTED,依據 Apple 官方藍牙配件連線支援文件整理。
+BLUETOOTH_015,SRC028,SUPPORTED,依據 Apple 官方藍牙配件連線支援文件整理。

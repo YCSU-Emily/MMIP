@@ -1,0 +1,37 @@
+{
+  "dataset_name": "Smart3C QA Dataset",
+  "version": "1.0",
+  "format": "JSONL",
+  "target_size": 150,
+  "language": "zh-TW",
+  "fields": {
+    "id": "Unique QA identifier",
+    "category": "Knowledge category",
+    "question": "User question in Traditional Chinese",
+    "answer": "Verified answer grounded in the reference",
+    "keywords": "List of retrieval keywords",
+    "difficulty": "easy, medium, or hard",
+    "source_title": "Official source document title",
+    "source_publisher": "Official publisher or manufacturer",
+    "source_url": "Verified source URL",
+    "verified_at": "Date when the source was checked"
+  },
+  "categories": {
+    "laptop_troubleshooting": 30,
+    "mobile_tablet": 25,
+    "wifi_network": 25,
+    "bluetooth_peripherals": 20,
+    "battery_charging": 20,
+    "display_hardware": 15,
+    "os_software": 15
+  },
+  "validation_rules": [
+    "Every QA must have a unique ID.",
+    "Every question and answer must be non-empty.",
+    "Every QA must have at least one keyword.",
+    "Difficulty must be easy, medium, or hard.",
+    "Every answer must be supported by its reference.",
+    "Source URLs must be checked before finalization.",
+    "No fabricated references or unsupported technical claims."
+  ]
+}

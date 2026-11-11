@@ -1,0 +1,155 @@
+{
+  "version": "Canonical Document Split V4",
+  "source_dataset": "data/processed/smart3c_qa_v3.jsonl",
+  "total_qa": 150,
+  "total_canonical_document_groups": 37,
+  "split_method": "canonical_url_grouped_simulated_annealing",
+  "seed": 42,
+  "target_ratios": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "optimization_cost": 4.016953544760978,
+  "canonicalization": {
+    "lowercase_scheme_host_path": true,
+    "remove_leading_locale_segment": true,
+    "remove_query_and_fragment": true,
+    "remove_trailing_slash": true,
+    "remove_www_prefix": true
+  },
+  "splits": {
+    "train": {
+      "qa_count": 118,
+      "canonical_document_group_count": 27,
+      "source_ids": [
+        "SRC001",
+        "SRC004",
+        "SRC005",
+        "SRC006",
+        "SRC007",
+        "SRC009",
+        "SRC012",
+        "SRC013",
+        "SRC014",
+        "SRC015",
+        "SRC016",
+        "SRC017",
+        "SRC018",
+        "SRC020",
+        "SRC021",
+        "SRC022",
+        "SRC023",
+        "SRC025",
+        "SRC027",
+        "SRC028",
+        "SRC029",
+        "SRC030",
+        "SRC032",
+        "SRC033",
+        "SRC036",
+        "SRC037",
+        "SRC039",
+        "SRC041",
+        "SRC042"
+      ],
+      "category_distribution": {
+        "battery_charging": 16,
+        "bluetooth_peripherals": 18,
+        "display_hardware": 11,
+        "laptop_troubleshooting": 26,
+        "mobile_tablet": 20,
+        "os_software": 12,
+        "wifi_network": 15
+      },
+      "canonical_urls": [
+        "https://support.apple.com/102612",
+        "https://support.apple.com/102623",
+        "https://support.apple.com/108055",
+        "https://support.apple.com/111786",
+        "https://support.apple.com/111804",
+        "https://support.apple.com/en-mide/guide/iphone/-iph168c4bbd5/ios",
+        "https://support.google.com/android/answer/13532937",
+        "https://support.google.com/android/answer/7662405",
+        "https://support.google.com/android/answer/9431959",
+        "https://support.google.com/chrome_webstore/answer/1053346",
+        "https://support.google.com/chromebook/answer/1060909",
+        "https://support.google.com/chromebook/answer/177889",
+        "https://support.microsoft.com/windows/apps/repair-apps-and-programs-in-windows",
+        "https://support.microsoft.com/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "https://support.microsoft.com/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "https://support.microsoft.com/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+        "https://support.microsoft.com/windows/experience/power-battery/caring-for-your-battery-in-windows",
+        "https://support.microsoft.com/windows/experience/startup-boot/startup-repair",
+        "https://support.microsoft.com/windows/experience/startup-boot/windows-startup-settings",
+        "https://support.microsoft.com/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "https://support.microsoft.com/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+        "https://support.microsoft.com/windows/hardware/bluetooth/troubleshoot-bluetooth-not-connecting-in-windows",
+        "https://support.microsoft.com/windows/hardware/camera/camera-doesn-t-work-in-windows",
+        "https://support.microsoft.com/windows/hardware/display-graphics/change-your-screen-resolution-and-layout-in-windows",
+        "https://support.microsoft.com/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "https://support.microsoft.com/windows/hardware/drivers/fix-microphone-problems",
+        "https://support.microsoft.com/windows/security/windows-security/device-performance-and-health-in-the-windows-security-app"
+      ]
+    },
+    "validation": {
+      "qa_count": 16,
+      "canonical_document_group_count": 6,
+      "source_ids": [
+        "SRC002",
+        "SRC003",
+        "SRC024",
+        "SRC031",
+        "SRC035",
+        "SRC038"
+      ],
+      "category_distribution": {
+        "battery_charging": 2,
+        "bluetooth_peripherals": 2,
+        "display_hardware": 2,
+        "laptop_troubleshooting": 2,
+        "mobile_tablet": 2,
+        "os_software": 1,
+        "wifi_network": 5
+      },
+      "canonical_urls": [
+        "https://support.apple.com/102501",
+        "https://support.apple.com/118418",
+        "https://support.google.com/android/answer/2651367",
+        "https://support.microsoft.com/windows/apps/uninstall-or-remove-apps-and-programs-in-windows",
+        "https://support.microsoft.com/windows/hardware/bluetooth/fix-bluetooth-disappeared-in-windows",
+        "https://support.microsoft.com/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows"
+      ]
+    },
+    "test": {
+      "qa_count": 16,
+      "canonical_document_group_count": 4,
+      "source_ids": [
+        "SRC008",
+        "SRC019",
+        "SRC026",
+        "SRC034",
+        "SRC040"
+      ],
+      "category_distribution": {
+        "battery_charging": 2,
+        "display_hardware": 2,
+        "laptop_troubleshooting": 2,
+        "mobile_tablet": 3,
+        "os_software": 2,
+        "wifi_network": 5
+      },
+      "canonical_urls": [
+        "https://support.apple.com/108805",
+        "https://support.google.com/chromebook/answer/6318213",
+        "https://support.microsoft.com/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+        "https://support.microsoft.com/windows/hardware/display-graphics/troubleshoot-screen-flickering-in-windows"
+      ]
+    }
+  },
+  "integrity_checks": {
+    "all_qa_ids_assigned_once": true,
+    "canonical_document_overlap": 0,
+    "missing_source_urls": 0
+  }
+}

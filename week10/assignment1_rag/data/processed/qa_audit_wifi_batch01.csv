@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+WIFI_001,SRC025,SUPPORTED,Microsoft 官方 Wi-Fi 疑難排解文件列出確認 Wi-Fi 開啟、飛航模式關閉及網路疑難排解。
+WIFI_002,SRC025,SUPPORTED,Microsoft 官方文件提供忘記已知 Wi-Fi 網路，再重新選擇網路並輸入密碼的步驟。
+WIFI_003,SRC025,SUPPORTED,Microsoft 官方文件說明重新啟動數據機與路由器的步驟，並提醒其他連線裝置會暫時中斷。
+WIFI_004,SRC025,SUPPORTED,Microsoft 官方文件建議使用另一台筆電或手機測試相同網路，以協助判斷問題是否集中於單一裝置。
+WIFI_005,SRC025,SUPPORTED,Microsoft 官方文件建議在路由器提供不同頻段時嘗試另一頻段，並指出網路介面卡必須支援相應頻率。

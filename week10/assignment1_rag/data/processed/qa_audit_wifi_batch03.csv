@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+WIFI_011,SRC024,SUPPORTED,依 Google Android Help 官方文件核對 Wi-Fi 開啟、連線狀態及裝置設定路徑。
+WIFI_012,SRC024,SUPPORTED,依 Google 官方文件核對 Wi-Fi 訊號指標、網路涵蓋範圍及靠近路由器的建議。
+WIFI_013,SRC024,SUPPORTED,依 Google 官方文件核對重新啟動裝置及開啟飛航模式等待 10 秒後關閉的步驟。
+WIFI_014,SRC024,SUPPORTED,依 Google 官方文件核對重新啟動裝置及 Wi-Fi 與行動數據切換測試。
+WIFI_015,SRC024,SUPPORTED,依 Google 官方文件核對路由器斷電等待 30 秒、重新接電等待 30 秒，以及仍無法連線時聯絡 ISP 或網路管理者；明確區分重新啟動與恢復原廠設定。

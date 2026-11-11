@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+WIFI_006,SRC017,SUPPORTED,需以 Apple 官方文件確認 Wi-Fi 設定無法開啟時的重新啟動及後續支援建議。
+WIFI_007,SRC017,SUPPORTED,依 Apple 官方文件核對 Wi-Fi 開啟、選擇網路、飛航模式及連線輔助設定。
+WIFI_008,SRC017,SUPPORTED,以 Apple 官方 Wi-Fi 疑難排解作為連線異常的排查依據；其他裝置交叉測試用於縮小問題範圍。
+WIFI_009,SRC017,SUPPORTED,依 Apple 官方文件核對 VPN 或安全防護軟體的解除安裝、重新啟動、測試連線及聯絡管理者或供應商等步驟。
+WIFI_010,SRC017,SUPPORTED,重置網路設定造成的 Wi-Fi、行動網路、VPN 及 APN 設定影響，需逐項對照 Apple 官方說明。

@@ -1,0 +1,8 @@
+category,target_count,id_prefix
+laptop_troubleshooting,30,LAPTOP
+mobile_tablet,25,MOBILE
+wifi_network,25,WIFI
+bluetooth_peripherals,20,BLUETOOTH
+battery_charging,20,BATTERY
+display_hardware,15,DISPLAY
+os_software,15,OS

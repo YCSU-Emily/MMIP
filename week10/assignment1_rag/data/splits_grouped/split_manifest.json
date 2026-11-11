@@ -1,0 +1,95 @@
+{
+  "version": "Group Split V3",
+  "source_dataset": "data/processed/smart3c_qa_v3.jsonl",
+  "total_qa": 150,
+  "total_source_groups": 40,
+  "split_method": "source_id_grouped_local_search",
+  "seed": 42,
+  "splits": {
+    "train": {
+      "qa_count": 118,
+      "source_group_count": 29,
+      "source_ids": [
+        "SRC001",
+        "SRC002",
+        "SRC005",
+        "SRC006",
+        "SRC007",
+        "SRC008",
+        "SRC009",
+        "SRC012",
+        "SRC013",
+        "SRC014",
+        "SRC015",
+        "SRC016",
+        "SRC017",
+        "SRC018",
+        "SRC019",
+        "SRC021",
+        "SRC022",
+        "SRC023",
+        "SRC025",
+        "SRC027",
+        "SRC028",
+        "SRC029",
+        "SRC032",
+        "SRC033",
+        "SRC036",
+        "SRC037",
+        "SRC040",
+        "SRC041",
+        "SRC042"
+      ],
+      "category_distribution": {
+        "battery_charging": 16,
+        "bluetooth_peripherals": 14,
+        "display_hardware": 11,
+        "laptop_troubleshooting": 28,
+        "mobile_tablet": 22,
+        "os_software": 12,
+        "wifi_network": 15
+      }
+    },
+    "validation": {
+      "qa_count": 16,
+      "source_group_count": 5,
+      "source_ids": [
+        "SRC003",
+        "SRC024",
+        "SRC030",
+        "SRC035",
+        "SRC039"
+      ],
+      "category_distribution": {
+        "battery_charging": 2,
+        "bluetooth_peripherals": 2,
+        "display_hardware": 2,
+        "laptop_troubleshooting": 1,
+        "mobile_tablet": 2,
+        "os_software": 2,
+        "wifi_network": 5
+      }
+    },
+    "test": {
+      "qa_count": 16,
+      "source_group_count": 6,
+      "source_ids": [
+        "SRC004",
+        "SRC020",
+        "SRC026",
+        "SRC031",
+        "SRC034",
+        "SRC038"
+      ],
+      "category_distribution": {
+        "battery_charging": 2,
+        "bluetooth_peripherals": 4,
+        "display_hardware": 2,
+        "laptop_troubleshooting": 1,
+        "mobile_tablet": 1,
+        "os_software": 1,
+        "wifi_network": 5
+      }
+    }
+  }
+}

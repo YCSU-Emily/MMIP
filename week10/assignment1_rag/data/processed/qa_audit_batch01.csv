@@ -1,0 +1,11 @@
+qa_id,source_id,verification_status,audit_note
+LAPTOP_001,SRC001,SUPPORTED,Wi-Fi connection troubleshooting steps
+LAPTOP_002,SRC001,SUPPORTED,Missing Wi-Fi option and WLAN AutoConfig
+LAPTOP_003,SRC001,SUPPORTED,Connected without internet and network commands
+LAPTOP_004,SRC001,SUPPORTED,Slow Wi-Fi signal strength and background apps
+LAPTOP_005,SRC002,SUPPORTED,Blank screen with cursor and Explorer restart
+LAPTOP_006,SRC003,SUPPORTED,Missing Bluetooth toggle and driver troubleshooting
+LAPTOP_007,SRC004,SUPPORTED,Bluetooth pairing and remove/re-add device
+LAPTOP_008,SRC005,SUPPORTED,Audio output and driver troubleshooting
+LAPTOP_009,SRC006,SUPPORTED,Windows Recovery Environment and Startup Repair
+LAPTOP_010,SRC009,SUPPORTED,Mac power connection and startup troubleshooting

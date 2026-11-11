@@ -1,0 +1,43 @@
+﻿source_id,category,source_title,publisher,source_url,verified_at
+SRC001,laptop_troubleshooting,Fix Wi-Fi connection issues in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows,2026-11-11
+SRC002,laptop_troubleshooting,Troubleshooting blank screens in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows,2026-11-11
+SRC003,laptop_troubleshooting,Fix Bluetooth disappeared in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-disappeared-in-windows,2026-11-11
+SRC004,laptop_troubleshooting,Troubleshoot Bluetooth not connecting in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/bluetooth/troubleshoot-bluetooth-not-connecting-in-windows,2026-11-11
+SRC005,laptop_troubleshooting,Fix sound or audio problems in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/audio/fix-sound-or-audio-problems-in-windows,2026-11-11
+SRC006,laptop_troubleshooting,Startup Repair,Microsoft Support,https://support.microsoft.com/en-us/windows/experience/startup-boot/startup-repair,2026-11-11
+SRC007,laptop_troubleshooting,Tips to improve PC performance in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows,2026-11-11
+SRC008,laptop_troubleshooting,Troubleshoot problems updating Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows,2026-11-11
+SRC009,laptop_troubleshooting,If your Mac doesn't turn on,Apple Support,https://support.apple.com/en-us/102623,2026-11-11
+SRC010,laptop_troubleshooting,If your Mac starts up to a blank screen,Apple Support,https://support.apple.com/en-ie/102575,2026-11-11
+SRC011,laptop_troubleshooting,If your Mac starts up to a question mark,Apple Support,https://support.apple.com/en-ie/102601,2026-11-11
+SRC012,laptop_troubleshooting,Free up drive space in Windows,Microsoft Support,https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows,2026-11-11
+SRC013,laptop_troubleshooting,Windows startup settings,Microsoft Support,https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings,2026-11-11
+SRC014,laptop_troubleshooting,Device performance and health in the Windows Security App,Microsoft Support,https://support.microsoft.com/en-us/windows/security/windows-security/device-performance-and-health-in-the-windows-security-app,2026-11-11
+SRC015,laptop_troubleshooting,Camera doesn't work in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/camera/camera-doesn-t-work-in-windows,2026-11-11
+SRC016,laptop_troubleshooting,Fix microphone problems,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/drivers/fix-microphone-problems,2026-11-11
+SRC017,mobile_tablet,如果無法在 iPhone 或 iPad 上連接 Wi-Fi,Apple Support,https://support.apple.com/zh-tw/111786,2026-11-11
+SRC018,mobile_tablet,如果 iPad 無法充電,Apple Support,https://support.apple.com/zh-tw/102612,2026-11-11
+SRC019,mobile_tablet,If your iPhone or iPod touch won't charge,Apple Support,https://support.apple.com/en-us/108805,2026-11-11
+SRC020,mobile_tablet,Control access to hardware features on iPhone,Apple Support,https://support.apple.com/en-mide/guide/iphone/-iph168c4bbd5/ios,2026-11-11
+SRC021,mobile_tablet,Fix an Android device that won't charge or turn on,Google Android Help,https://support.google.com/android/answer/7662405,2026-11-11
+SRC022,mobile_tablet,Check if your Android camera or microphone is on or off,Google Android Help,https://support.google.com/android/answer/13532937,2026-11-11
+SRC023,mobile_tablet,Change app permissions on your Android phone,Google Android Help,https://support.google.com/android/answer/9431959,2026-11-11
+SRC024,mobile_tablet,Fix internet connection problems on Android devices,Google Android Help,https://support.google.com/android/answer/2651367?hl=en-en,2026-11-11
+SRC025,wifi_network,Fix Wi-Fi connection issues in Windows,Microsoft Support,https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows,2026-11-11
+SRC026,wifi_network,Fix connection problems,Google Chromebook Help,https://support.google.com/chromebook/answer/6318213?hl=en-GB,2026-11-11
+SRC027,bluetooth_peripherals,Troubleshoot Bluetooth not connecting in Windows,Microsoft Support,https://support.microsoft.com/en-gb/windows/hardware/bluetooth/troubleshoot-bluetooth-not-connecting-in-windows,2026-11-11
+SRC028,bluetooth_peripherals,如果藍牙配件無法連接 iPhone 或 iPad,Apple Support,https://support.apple.com/zh-tw/111804,2026-11-11
+SRC029,battery_charging,Caring for your battery in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows,2026-11-11
+SRC030,battery_charging,關於 iPhone 的「充電上限」和「最佳化電池充電」,Apple Support,https://support.apple.com/zh-tw/108055,2026-11-11
+SRC031,battery_charging,關於 iPad 電池的充電與維護,Apple Support,https://support.apple.com/zh-tw/118418,2026-11-11
+SRC032,display_hardware,Troubleshoot external monitor connections in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows,2026-11-11
+SRC033,display_hardware,Change your screen resolution and layout in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-your-screen-resolution-and-layout-in-windows,2026-11-11
+SRC034,display_hardware,Troubleshoot screen flickering in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-screen-flickering-in-windows,2026-11-11
+SRC035,display_hardware,如果外接顯示器太暗或解析度太低,Apple Support,https://support.apple.com/zh-tw/102501,2026-11-11
+SRC036,display_hardware,Connect your Chromebook to a monitor,Google Chromebook Help,https://support.google.com/chromebook/answer/1060909?hl=en-EN,2026-11-11
+SRC037,os_software,Fix problems that block programs from being installed or removed,Microsoft Support,https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed,2026-11-11
+SRC038,os_software,Uninstall or remove apps and programs in Windows,Microsoft Support,https://support.microsoft.com/en-gb/windows/apps/uninstall-or-remove-apps-and-programs-in-windows,2026-11-11
+SRC039,os_software,Repair apps and programs in Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows,2026-11-11
+SRC040,os_software,Troubleshoot problems updating Windows,Microsoft Support,https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows,2026-11-11
+SRC041,os_software,Update your Chromebook's operating system,Google Chromebook Help,https://support.google.com/chromebook/answer/177889?hl=en,2026-11-11
+SRC042,os_software,Install & manage web apps,Google Chrome Web Store Help,https://support.google.com/chrome_webstore/answer/1053346?hl=en-GB,2026-11-11

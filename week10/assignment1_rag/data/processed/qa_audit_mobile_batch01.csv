@@ -1,0 +1,11 @@
+﻿qa_id,source_id,verification_status,audit_note
+MOBILE_001,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：檢查 Wi-Fi、選擇網路及飛航模式
+MOBILE_002,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：Wi-Fi 設定開關呈灰色時的處理方式
+MOBILE_003,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：比較其他裝置及其他 Wi-Fi 網路
+MOBILE_004,SRC017,SUPPORTED,Apple 官方文件明確說明重置網路設定會移除的網路資訊
+MOBILE_005,SRC018,SUPPORTED,Apple 官方 iPad 充電疑難排解：確認線材及電源來源
+MOBILE_006,SRC018,SUPPORTED,Apple 官方 iPad 充電文件：測試其他配件、檢查溫度及依機型重新啟動
+MOBILE_007,SRC019,SUPPORTED,Apple 官方 iPhone 充電疑難排解：檢查配件、插座、連接埠及充電時間
+MOBILE_008,SRC021,SUPPORTED,Google Android 官方文件：長按電源按鈕及檢查充電配件
+MOBILE_009,SRC020,SUPPORTED,Apple 官方硬體功能存取權限文件：相機、麥克風及隱私權指示燈
+MOBILE_010,SRC023,SUPPORTED,Google Android 官方文件：透過 App 權限設定管理相機及麥克風存取

@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+WIFI_021,SRC025,SUPPORTED,依 Microsoft Support 官方文件核對 Wi-Fi 開關、實體開關、裝置管理員中的網路介面卡，以及 2.4 GHz / 5 GHz 頻段相容性。
+WIFI_022,SRC025,SUPPORTED,依 Microsoft Support 官方文件核對重新連接 Wi-Fi、更新 IP 位址、清除 DNS 快取及檢查 Proxy 設定。
+WIFI_023,SRC025,SUPPORTED,依 Microsoft Support 官方文件核對 Manage known networks 中 Forget 網路，以及重新選擇網路並輸入密碼。
+WIFI_024,SRC025,SUPPORTED,依 Microsoft Support 官方文件核對 Windows 11 Get Help 中的 Network and Internet 自動疑難排解工具。
+WIFI_025,SRC025,SUPPORTED,依 Microsoft Support 官方文件核對 Network reset 的最後手段定位、網路介面卡重裝，以及 VPN / Hyper-V 軟體可能需要重新設定。

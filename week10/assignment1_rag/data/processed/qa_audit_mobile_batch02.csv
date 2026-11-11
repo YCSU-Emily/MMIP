@@ -1,0 +1,11 @@
+﻿qa_id,source_id,verification_status,audit_note
+MOBILE_011,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：忘記網路後重新連線
+MOBILE_012,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：路由器與數據機連線問題
+MOBILE_013,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解：確認裝置與無線路由器的連線環境
+MOBILE_014,SRC018,SUPPORTED,Apple 官方 iPad 充電文件：裝置溫度與充電問題
+MOBILE_015,SRC019,SUPPORTED,Apple 官方 iPhone 充電文件：不受支援配件及充電配件檢查
+MOBILE_016,SRC019,SUPPORTED,Apple 官方 iPhone 充電文件：最佳化電池充電及充電上限
+MOBILE_017,SRC021,SUPPORTED,Google Android 官方文件：檢查充電配件及手機充電連接埠
+MOBILE_018,SRC022,SUPPORTED,Google Android 官方文件：Android 12 以上相機與麥克風快速設定控制
+MOBILE_019,SRC022,SUPPORTED,Google Android 官方文件：相機及麥克風使用指示與 App 資訊
+MOBILE_020,SRC023,SUPPORTED,Google Android 官方文件：App 權限選項及相機存取管理

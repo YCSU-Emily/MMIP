@@ -1,0 +1,11 @@
+﻿qa_id,source_id,verification_status,audit_note
+LAPTOP_021,SRC015,SUPPORTED,Microsoft camera privacy settings and app permissions
+LAPTOP_022,SRC015,SUPPORTED,Microsoft camera device detection and hardware scan guidance
+LAPTOP_023,SRC015,SUPPORTED,"Microsoft Camera app testing, desktop app permissions, and app conflicts"
+LAPTOP_024,SRC015,SUPPORTED,"Microsoft camera troubleshooting including lens obstruction, driver, and Camera app testing"
+LAPTOP_025,SRC015,SUPPORTED,Microsoft camera driver rollback and device reinstallation guidance
+LAPTOP_026,SRC016,SUPPORTED,Microsoft microphone privacy settings and app permissions
+LAPTOP_027,SRC016,SUPPORTED,"Microsoft microphone connection, input volume, and test guidance"
+LAPTOP_028,SRC016,SUPPORTED,"Microsoft headset connection, input device selection, and device detection"
+LAPTOP_029,SRC016,SUPPORTED,"Microsoft microphone Start test, Stop test, Play, and input volume guidance"
+LAPTOP_030,SRC016,SUPPORTED,"Microsoft audio device driver uninstall, restart, hardware scan, and update guidance"

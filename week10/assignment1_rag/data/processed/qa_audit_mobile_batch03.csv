@@ -1,0 +1,6 @@
+﻿qa_id,source_id,verification_status,audit_note
+MOBILE_021,SRC017,SUPPORTED,Apple 官方 Wi-Fi 疑難排解列出 VPN 與 APN 設定作為進一步檢查項目
+MOBILE_022,SRC024,SUPPORTED,Google Android 官方網路疑難排解：檢查 Wi-Fi、其他網路及路由器
+MOBILE_023,SRC024,SUPPORTED,Google Android 官方網路疑難排解：比較其他裝置及網路，檢查路由器
+MOBILE_024,SRC018,SUPPORTED,Apple 官方 iPad 充電文件：電腦 USB 充電時電腦須保持開機且不能睡眠
+MOBILE_025,SRC023,SUPPORTED,Google Android 官方 App 權限文件：透過應用程式權限重新允許相機及麥克風

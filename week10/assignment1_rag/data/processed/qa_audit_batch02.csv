@@ -1,0 +1,11 @@
+qa_id,source_id,verification_status,audit_note
+LAPTOP_011,SRC007,SUPPORTED,Startup apps and Task Manager performance guidance
+LAPTOP_012,SRC012,SUPPORTED,Storage Sense and temporary file cleanup
+LAPTOP_013,SRC008,SUPPORTED,Windows Update troubleshooting guidance
+LAPTOP_014,SRC008,SUPPORTED,Revised using Microsoft's stuck update troubleshooting steps
+LAPTOP_015,SRC012,SUPPORTED,Storage cleanup instructions verified against Microsoft's free up drive space guide
+LAPTOP_016,SRC013,SUPPORTED,Windows Recovery Environment and Safe Mode instructions
+LAPTOP_017,SRC007,SUPPORTED,Task Manager and resource usage troubleshooting
+LAPTOP_018,SRC007,SUPPORTED,Disable unnecessary startup applications
+LAPTOP_019,SRC012,SUPPORTED,Storage management and cleanup recommendations
+LAPTOP_020,SRC014,SUPPORTED,Device performance and health report
