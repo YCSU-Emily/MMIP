@@ -1,0 +1,1196 @@
+{
+  "project": "VideoRAG Multi-turn Conversational RAG",
+  "conversation_turns": 3,
+  "retrieval_method": "Conversation-aware Dynamic Multi-query RRF Top-8",
+  "matching_method": "BGE-M3 Top-2",
+  "generation_method": "V4 Evidence-first Stage 1 + Stage 2, with V7 validation",
+  "conversation_history_policy": "Previous user questions are used as context; previous assistant answers are not treated as video evidence.",
+  "turns": [
+    {
+      "turn": 1,
+      "user_query": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+      "is_follow_up": false,
+      "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+      "turn_queries": {
+        "Q0_CURRENT": "我的手機 Wi-Fi 無法連線，怎麼辦？"
+      },
+      "previous_history": [],
+      "retrieval_method": "Dynamic Multi-query RRF Top-8",
+      "matching_method": "BGE-M3 Top-2",
+      "answer_method": "V4 Evidence-first + V7 source validation and duplicate filtering",
+      "evidence_count": 8,
+      "unique_candidate_count": 8,
+      "success_count": 1,
+      "results": [
+        {
+          "evidence_id": "speech_0000",
+          "status": "NO_ANSWER",
+          "evidence_text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+          "extracted_fact": "当手机无法连接WiFi时，可以进行基本故障排除。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 1,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 1,
+                  "distance": 0.19882524013519287
+                }
+              ],
+              "similarity": 0.8011749982833862
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.8011749982833862,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0001",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+          "extracted_fact": "9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 2,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 1,
+                  "distance": 0.43587327003479004
+                }
+              ],
+              "similarity": 0.5641269683837891
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.5641269683837891,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0006",
+          "status": "NO_ANSWER",
+          "evidence_text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+          "extracted_fact": "以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 3,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 2,
+                  "distance": 0.23417747020721436
+                }
+              ],
+              "similarity": 0.7658226490020752
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.7658226490020752,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0011",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+          "extracted_fact": "9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 4,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 2,
+                  "distance": 0.4400333762168884
+                }
+              ],
+              "similarity": 0.5599667429924011
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.5599667429924011,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0002",
+          "status": "SUCCESS",
+          "evidence_text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "extracted_fact": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 5,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 3,
+                  "distance": 0.24893414974212646
+                }
+              ],
+              "similarity": 0.7510663270950317
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.7510663270950317,
+              "answer": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]",
+              "answer_for_output": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]",
+              "success": true,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": "Q0_CURRENT",
+          "answer_origin": "QWEN_V4_VALIDATED",
+          "final_answer": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]"
+        },
+        {
+          "evidence_id": "visual_0005",
+          "status": "NO_FACT",
+          "extracted_fact": "沒有可用的明確事實",
+          "attempts": [],
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0004",
+          "status": "NO_ANSWER",
+          "evidence_text": "连线完成后,确认手机是否成功连上WiFi。",
+          "extracted_fact": "连线完成后，确认手机是否成功连上WiFi。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 7,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 4,
+                  "distance": 0.28235960006713867
+                }
+              ],
+              "similarity": 0.7176402807235718
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.7176402807235718,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0013",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+          "extracted_fact": "9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。",
+          "matched_queries": [
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "query_rank": 8,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 4,
+                  "distance": 0.4480913281440735
+                }
+              ],
+              "similarity": 0.5519089102745056
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q0_CURRENT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+              "similarity": 0.5519089102745056,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        }
+      ],
+      "final_answer": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]"
+    },
+    {
+      "turn": 2,
+      "user_query": "那如果還是不行呢？",
+      "is_follow_up": true,
+      "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+      "turn_queries": {
+        "Q0_CURRENT": "那如果還是不行呢？",
+        "Q1_CONTEXT": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？"
+      },
+      "previous_history": [
+        {
+          "role": "user",
+          "content": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+          "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+          "is_follow_up": false
+        },
+        {
+          "role": "assistant",
+          "content": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]"
+        }
+      ],
+      "retrieval_method": "Dynamic Multi-query RRF Top-8",
+      "matching_method": "BGE-M3 Top-2",
+      "answer_method": "V4 Evidence-first + V7 source validation and duplicate filtering",
+      "evidence_count": 8,
+      "unique_candidate_count": 8,
+      "success_count": 1,
+      "results": [
+        {
+          "evidence_id": "speech_0000",
+          "status": "NO_ANSWER",
+          "evidence_text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+          "extracted_fact": "当手机无法连接WiFi时，可以进行基本故障排除。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 1,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 1,
+                  "distance": 0.24140632152557373
+                }
+              ],
+              "similarity": 0.758593738079071
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 3,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 2,
+                  "distance": 0.4606512784957886
+                }
+              ],
+              "similarity": 0.5393489599227905
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.758593738079071,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.5393489599227905,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0011",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+          "extracted_fact": "9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 2,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 1,
+                  "distance": 0.41492265462875366
+                }
+              ],
+              "similarity": 0.5850773453712463
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 4,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 2,
+                  "distance": 0.6177835464477539
+                }
+              ],
+              "similarity": 0.3822166323661804
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.5850773453712463,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.3822166323661804,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0013",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+          "extracted_fact": "9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 4,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 2,
+                  "distance": 0.42281508445739746
+                }
+              ],
+              "similarity": 0.5771849155426025
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 2,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 1,
+                  "distance": 0.6154141426086426
+                }
+              ],
+              "similarity": 0.384585976600647
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.5771849155426025,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.384585976600647,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0002",
+          "status": "NO_ANSWER",
+          "evidence_text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "extracted_fact": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 5,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 3,
+                  "distance": 0.2734729051589966
+                }
+              ],
+              "similarity": 0.7265269756317139
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 1,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 1,
+                  "distance": 0.4538249969482422
+                }
+              ],
+              "similarity": 0.5461751222610474
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.7265269756317139,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.5461751222610474,
+              "answer": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]",
+              "answer_for_output": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]",
+              "success": false,
+              "rejection_reason": "與先前對話或本輪已接受的答案完全重複。"
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0006",
+          "status": "NO_ANSWER",
+          "evidence_text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+          "extracted_fact": "以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 3,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 2,
+                  "distance": 0.26390838623046875
+                }
+              ],
+              "similarity": 0.7360912561416626
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 7,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 4,
+                  "distance": 0.4879980683326721
+                }
+              ],
+              "similarity": 0.5120019912719727
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.7360912561416626,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.5120019912719727,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0012",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+          "extracted_fact": "9:41 連接到 Home-WiFi 或其他網路 成功",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 6,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 3,
+                  "distance": 0.43472909927368164
+                }
+              ],
+              "similarity": 0.5652710199356079
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 6,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 3,
+                  "distance": 0.6250759363174438
+                }
+              ],
+              "similarity": 0.3749242126941681
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.5652710199356079,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.3749242126941681,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0005",
+          "status": "SUCCESS",
+          "evidence_text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+          "extracted_fact": "如果重新连线后，问题仍然存在，可以进一步检查无线路由器是否正常运作，或者尝试重新启动手机。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 7,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 4,
+                  "distance": 0.3116186857223511
+                }
+              ],
+              "similarity": 0.6883808970451355
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 5,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 3,
+                  "distance": 0.4738041162490845
+                }
+              ],
+              "similarity": 0.5261960029602051
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.6883808970451355,
+              "answer": "如果重新连线后，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]",
+              "answer_for_output": "如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]",
+              "success": true,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": "Q1_CONTEXT",
+          "answer_origin": "QWEN_V4_VALIDATED",
+          "final_answer": "如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]"
+        },
+        {
+          "evidence_id": "visual_0001",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+          "extracted_fact": "9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "query_rank": 8,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 4,
+                  "distance": 0.4377039670944214
+                }
+              ],
+              "similarity": 0.5622960329055786
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "query_rank": 8,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 4,
+                  "distance": 0.6259135603904724
+                }
+              ],
+              "similarity": 0.3740866184234619
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+              "similarity": 0.5622960329055786,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "那如果還是不行呢？",
+              "similarity": 0.3740866184234619,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        }
+      ],
+      "final_answer": "如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]"
+    },
+    {
+      "turn": 3,
+      "user_query": "路由器也需要重新啟動嗎？",
+      "is_follow_up": true,
+      "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+      "turn_queries": {
+        "Q0_CURRENT": "路由器也需要重新啟動嗎？",
+        "Q1_CONTEXT": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？"
+      },
+      "previous_history": [
+        {
+          "role": "user",
+          "content": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+          "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？",
+          "is_follow_up": false
+        },
+        {
+          "role": "assistant",
+          "content": "如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]"
+        },
+        {
+          "role": "user",
+          "content": "那如果還是不行呢？",
+          "rewritten_query": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？",
+          "is_follow_up": true
+        },
+        {
+          "role": "assistant",
+          "content": "如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]"
+        }
+      ],
+      "retrieval_method": "Dynamic Multi-query RRF Top-8",
+      "matching_method": "BGE-M3 Top-2",
+      "answer_method": "V4 Evidence-first + V7 source validation and duplicate filtering",
+      "evidence_count": 8,
+      "unique_candidate_count": 11,
+      "success_count": 1,
+      "results": [
+        {
+          "evidence_id": "visual_0001",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+          "extracted_fact": "9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 2,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 1,
+                  "distance": 0.4407099485397339
+                }
+              ],
+              "similarity": 0.5592901110649109
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "query_rank": 2,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 1,
+                  "distance": 0.5452513694763184
+                }
+              ],
+              "similarity": 0.4547487497329712
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.5592901110649109,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "similarity": 0.4547487497329712,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0002",
+          "status": "NO_ANSWER",
+          "evidence_text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "extracted_fact": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 1,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 1,
+                  "distance": 0.26754605770111084
+                }
+              ],
+              "similarity": 0.7324536442756653
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "query_rank": 3,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 2,
+                  "distance": 0.4388534426689148
+                }
+              ],
+              "similarity": 0.5611464977264404
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.7324536442756653,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "similarity": 0.5611464977264404,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0005",
+          "status": "SUCCESS",
+          "evidence_text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+          "extracted_fact": "如果重新连线后，问题仍然存在，可以进一步检查无线路由器是否正常运作，或者尝试重新启动手机。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 3,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 2,
+                  "distance": 0.27133655548095703
+                }
+              ],
+              "similarity": 0.7286630868911743
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "query_rank": 1,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 1,
+                  "distance": 0.3813466429710388
+                }
+              ],
+              "similarity": 0.6186531782150269
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.7286630868911743,
+              "answer": "如果重新啟動手機後問題仍然存在，可以考慮重新啟動路由器。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]",
+              "answer_for_output": "如果重新啟動手機後問題仍然存在，可以考慮重新啟動路由器。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]",
+              "success": false,
+              "rejection_reason": "答案提到重新啟動路由器，但原始影片證據沒有支持這項操作。"
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "similarity": 0.6186531782150269,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": "RULE_BASED_SAFE_FALLBACK",
+          "answer_origin": "RULE_BASED_SOURCE_GROUNDED_FALLBACK",
+          "final_answer": "這段影片內容沒有明確提到需要重新啟動路由器；只提到檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]"
+        },
+        {
+          "evidence_id": "visual_0011",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+          "extracted_fact": "9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 4,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 2,
+                  "distance": 0.4624996781349182
+                }
+              ],
+              "similarity": 0.5375003814697266
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "query_rank": 6,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 3,
+                  "distance": 0.5557982325553894
+                }
+              ],
+              "similarity": 0.4442019462585449
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.5375003814697266,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "similarity": 0.4442019462585449,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0000",
+          "status": "NO_ANSWER",
+          "evidence_text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+          "extracted_fact": "当手机无法连接WiFi时，可以进行基本故障排除。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 5,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 3,
+                  "distance": 0.2739701271057129
+                }
+              ],
+              "similarity": 0.7260297536849976
+            },
+            {
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "query_rank": 5,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 3,
+                  "distance": 0.4404603838920593
+                }
+              ],
+              "similarity": 0.5595396757125854
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.7260297536849976,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            },
+            {
+              "rank": 2,
+              "query_name": "Q0_CURRENT",
+              "query_text": "路由器也需要重新啟動嗎？",
+              "similarity": 0.5595396757125854,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0005",
+          "status": "NO_FACT",
+          "extracted_fact": "沒有可用的明確事實",
+          "attempts": [],
+          "final_answer": null
+        },
+        {
+          "evidence_id": "visual_0013",
+          "status": "NO_ANSWER",
+          "evidence_text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+          "extracted_fact": "9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 6,
+              "modality_ranks": [
+                {
+                  "modality": "visual_ocr",
+                  "rank": 3,
+                  "distance": 0.46410155296325684
+                }
+              ],
+              "similarity": 0.5358982682228088
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.5358982682228088,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        },
+        {
+          "evidence_id": "speech_0006",
+          "status": "NO_ANSWER",
+          "evidence_text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+          "extracted_fact": "以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。",
+          "matched_queries": [
+            {
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "query_rank": 7,
+              "modality_ranks": [
+                {
+                  "modality": "speech",
+                  "rank": 4,
+                  "distance": 0.28831595182418823
+                }
+              ],
+              "similarity": 0.7116837501525879
+            }
+          ],
+          "attempts": [
+            {
+              "rank": 1,
+              "query_name": "Q1_CONTEXT",
+              "query_text": "我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？",
+              "similarity": 0.7116837501525879,
+              "answer": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "answer_for_output": "目前沒有足夠且通過格式驗證的影片證據回答這個問題。",
+              "success": false,
+              "rejection_reason": null
+            }
+          ],
+          "selected_query": null,
+          "answer_origin": null,
+          "final_answer": null
+        }
+      ],
+      "final_answer": "這段影片內容沒有明確提到需要重新啟動路由器；只提到檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]"
+    }
+  ]
+}

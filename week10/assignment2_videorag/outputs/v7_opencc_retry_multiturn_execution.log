@@ -1,0 +1,737 @@
+
+========== 1. INITIALIZE RETRIEVER ==========
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 56236.64it/s]
+[VideoRetriever] BGE-M3 loaded on CPU.
+[VideoRetriever] Corpus records: 22
+
+========== 2. INITIALIZE V4 GENERATOR ==========
+[VideoAnswerGenerator] Loading Qwen on cuda:0...
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<02:05,  3.45it/s]Loading weights:  45%|████▍     | 195/434 [00:00<00:00, 635.41it/s]Loading weights:  71%|███████   | 306/434 [00:00<00:00, 609.69it/s]Loading weights:  91%|█████████ | 393/434 [00:00<00:00, 610.79it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 553.96it/s]
+[VideoAnswerGenerator] Qwen loaded successfully.
+
+#####################################################################################
+CONVERSATION TURN 1
+#####################################################################################
+
+User: 我的手機 Wi-Fi 無法連線，怎麼辦？
+
+========== A. CONVERSATION CONTEXT ==========
+Is follow-up: False
+Rewritten query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+Previous history:
+
+========== B. DYNAMIC QUERIES ==========
+Q0_CURRENT: 我的手機 Wi-Fi 無法連線，怎麼辦？
+
+========== C. MULTI-QUERY RRF ==========
+
+===========================================================================
+Q0_CURRENT: 我的手機 Wi-Fi 無法連線，怎麼辦？
+Retrieved candidates: 8
+Unique candidates: 8
+Final evidence count: 8
+
+========== D. EVIDENCE-FIRST GENERATION ==========
+
+===========================================================================
+EVIDENCE 1/8: speech_0000
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.801175
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 当手机无法连接WiFi时，可以进行基本故障排除。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for speech_0000: NO_ANSWER
+[V4 Stage 2] Reject speech_0000: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 2/8: visual_0001
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.564127
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for visual_0001: NO_ANSWER
+[V4 Stage 2] Reject visual_0001: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 3/8: speech_0006
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.765823
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for speech_0006: NO_ANSWER
+[V4 Stage 2] Reject speech_0006: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 4/8: visual_0011
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.559967
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for visual_0011: NO_ANSWER
+[V4 Stage 2] Reject visual_0011: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 5/8: speech_0002
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.751066
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for speech_0002: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。
+
+Fallback result: SUCCESS
+
+Evidence status: SUCCESS
+Selected query: Q0_CURRENT
+Answer: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]
+
+===========================================================================
+EVIDENCE 6/8: visual_0005
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.558335
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 沒有可用的明確事實
+Skip: no usable fact (NO_FACT).
+
+===========================================================================
+EVIDENCE 7/8: speech_0004
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.717640
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 连线完成后，确认手机是否成功连上WiFi。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for speech_0004: NO_ANSWER
+[V4 Stage 2] Reject speech_0004: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 8/8: visual_0013
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.551909
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？
+[V4 Stage 2 1/1] Raw output for visual_0013: NO_ANSWER
+[V4 Stage 2] Reject visual_0013: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+TURN 1 FINAL ANSWER
+===========================================================================
+如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]
+
+Turn evidence count: 8
+Successful evidence count: 1
+
+#####################################################################################
+CONVERSATION TURN 2
+#####################################################################################
+
+User: 那如果還是不行呢？
+
+========== A. CONVERSATION CONTEXT ==========
+Is follow-up: True
+Rewritten query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+Previous history:
+- user: 我的手機 Wi-Fi 無法連線，怎麼辦？
+- assistant: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]
+
+========== B. DYNAMIC QUERIES ==========
+Q0_CURRENT: 那如果還是不行呢？
+Q1_CONTEXT: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+
+========== C. MULTI-QUERY RRF ==========
+
+===========================================================================
+Q0_CURRENT: 那如果還是不行呢？
+Retrieved candidates: 8
+
+===========================================================================
+Q1_CONTEXT: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+Retrieved candidates: 8
+Unique candidates: 8
+Final evidence count: 8
+
+========== D. EVIDENCE-FIRST GENERATION ==========
+
+===========================================================================
+EVIDENCE 1/8: speech_0000
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.758594
+Top-2: Q0_CURRENT | similarity=0.539349
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 当手机无法连接WiFi时，可以进行基本故障排除。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0000: NO_ANSWER
+[V4 Stage 2] Reject speech_0000: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0000: NO_ANSWER
+[V4 Stage 2] Reject speech_0000: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 2/8: visual_0011
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.585077
+Top-2: Q0_CURRENT | similarity=0.382217
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0011: NO_ANSWER
+[V4 Stage 2] Reject visual_0011: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0011: NO_ANSWER
+[V4 Stage 2] Reject visual_0011: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 3/8: visual_0013
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.577185
+Top-2: Q0_CURRENT | similarity=0.384586
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0013: NO_ANSWER
+[V4 Stage 2] Reject visual_0013: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0013: NO_ANSWER
+[V4 Stage 2] Reject visual_0013: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 4/8: speech_0002
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.726527
+Top-2: Q0_CURRENT | similarity=0.546175
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0002: NO_ANSWER
+[V4 Stage 2] Reject speech_0002: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0002: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。
+[V7 DUPLICATE FILTERED] 與先前對話或本輪已接受的答案完全重複。
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 5/8: speech_0006
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.736091
+Top-2: Q0_CURRENT | similarity=0.512002
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0006: NO_ANSWER
+[V4 Stage 2] Reject speech_0006: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0006: NO_ANSWER
+[V4 Stage 2] Reject speech_0006: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 6/8: visual_0012
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.565271
+Top-2: Q0_CURRENT | similarity=0.374924
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 連接到 Home-WiFi 或其他網路 成功
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0012: NO_ANSWER
+[V4 Stage 2] Reject visual_0012: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0012: NO_ANSWER
+[V4 Stage 2] Reject visual_0012: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 7/8: speech_0005
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.688381
+Top-2: Q0_CURRENT | similarity=0.526196
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 如果重新连线后，问题仍然存在，可以进一步检查无线路由器是否正常运作，或者尝试重新启动手机。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for speech_0005: 如果重新连线后，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。
+
+Fallback result: SUCCESS
+
+Evidence status: SUCCESS
+Selected query: Q1_CONTEXT
+Answer: 如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+===========================================================================
+EVIDENCE 8/8: visual_0001
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.562296
+Top-2: Q0_CURRENT | similarity=0.374087
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0001: NO_ANSWER
+[V4 Stage 2] Reject visual_0001: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 那如果還是不行呢？
+[V4 Stage 2 1/1] Raw output for visual_0001: NO_ANSWER
+[V4 Stage 2] Reject visual_0001: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+TURN 2 FINAL ANSWER
+===========================================================================
+如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+Turn evidence count: 8
+Successful evidence count: 1
+
+#####################################################################################
+CONVERSATION TURN 3
+#####################################################################################
+
+User: 路由器也需要重新啟動嗎？
+
+========== A. CONVERSATION CONTEXT ==========
+Is follow-up: True
+Rewritten query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+Previous history:
+- user: 我的手機 Wi-Fi 無法連線，怎麼辦？
+- assistant: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]
+- user: 那如果還是不行呢？
+- assistant: 如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+========== B. DYNAMIC QUERIES ==========
+Q0_CURRENT: 路由器也需要重新啟動嗎？
+Q1_CONTEXT: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+
+========== C. MULTI-QUERY RRF ==========
+
+===========================================================================
+Q0_CURRENT: 路由器也需要重新啟動嗎？
+Retrieved candidates: 8
+
+===========================================================================
+Q1_CONTEXT: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+Retrieved candidates: 8
+Unique candidates: 11
+Final evidence count: 8
+
+========== D. EVIDENCE-FIRST GENERATION ==========
+
+===========================================================================
+EVIDENCE 1/8: visual_0001
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.559290
+Top-2: Q0_CURRENT | similarity=0.454749
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設定 At 飛航模式，Wi-Fi 設為 Home-WiFi，藍牙開啟，行動服務開啟聲音與觸覺回饋。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for visual_0001: NO_ANSWER
+[V4 Stage 2] Reject visual_0001: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for visual_0001: NO_ANSWER
+[V4 Stage 2] Reject visual_0001: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 2/8: speech_0002
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.732454
+Top-2: Q0_CURRENT | similarity=0.561146
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0002: NO_ANSWER
+[V4 Stage 2] Reject speech_0002: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0002: NO_ANSWER
+[V4 Stage 2] Reject speech_0002: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 3/8: speech_0005
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.728663
+Top-2: Q0_CURRENT | similarity=0.618653
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 如果重新连线后，问题仍然存在，可以进一步检查无线路由器是否正常运作，或者尝试重新启动手机。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0005: 如果重新啟動手機後問題仍然存在，可以考慮重新啟動路由器。
+[V7 VALIDATION REJECTED] 答案提到重新啟動路由器，但原始影片證據沒有支持這項操作。
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0005: NO_ANSWER
+[V4 Stage 2] Reject speech_0005: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+[V7 SAFE FALLBACK] 使用原始影片文字組成保守回答。
+
+Evidence status: SUCCESS
+Selected query: RULE_BASED_SAFE_FALLBACK
+Answer: 這段影片內容沒有明確提到需要重新啟動路由器；只提到檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+===========================================================================
+EVIDENCE 4/8: visual_0011
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.537500
+Top-2: Q0_CURRENT | similarity=0.444202
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 連線成功至「BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G」
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for visual_0011: NO_ANSWER
+[V4 Stage 2] Reject visual_0011: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for visual_0011: NO_ANSWER
+[V4 Stage 2] Reject visual_0011: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 5/8: speech_0000
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.726030
+Top-2: Q0_CURRENT | similarity=0.559540
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 当手机无法连接WiFi时，可以进行基本故障排除。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0000: NO_ANSWER
+[V4 Stage 2] Reject speech_0000: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 2
+Query: 路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0000: NO_ANSWER
+[V4 Stage 2] Reject speech_0000: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 6/8: visual_0005
+
+Matched queries:
+Top-1: Q0_CURRENT | similarity=0.446426
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 沒有可用的明確事實
+Skip: no usable fact (NO_FACT).
+
+===========================================================================
+EVIDENCE 7/8: visual_0013
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.535898
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 9:41 設備成功連接到 ME WI-FI Wi-Fi 的 Home-WiFi 網路。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for visual_0013: NO_ANSWER
+[V4 Stage 2] Reject visual_0013: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+EVIDENCE 8/8: speech_0006
+
+Matched queries:
+Top-1: Q1_CONTEXT | similarity=0.711684
+
+========== STAGE 1: FACT EXTRACTION ==========
+Extracted fact: 以上就是手機無法連接WiFi時，可以進行的基本故障排除步驟。
+
+-----------------------------------------------------------------
+STAGE 2 ATTEMPT 1
+Query: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+[V4 Stage 2 1/1] Raw output for speech_0006: NO_ANSWER
+[V4 Stage 2] Reject speech_0006: empty, unsupported, or placeholder output.
+
+Fallback result: REJECTED_OR_NO_ANSWER
+
+Evidence status: NO_ANSWER
+Selected query: None
+Answer: None
+
+===========================================================================
+TURN 3 FINAL ANSWER
+===========================================================================
+這段影片內容沒有明確提到需要重新啟動路由器；只提到檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+Turn evidence count: 8
+Successful evidence count: 1
+
+#####################################################################################
+V7 MULTI-TURN VIDEORAG SUMMARY
+#####################################################################################
+
+Turn 1: 我的手機 Wi-Fi 無法連線，怎麼辦？
+Rewritten: 我的手機 Wi-Fi 無法連線，怎麼辦？
+Evidence: 8
+Success: 1
+Answer: 如果WiFi已經開啟但手機仍然無法連線，可以先關閉WiFi，等待幾秒鐘後再重新開啟。 [證據 ID: speech_0002，影片時間：20.00–33.00 秒]
+
+Turn 2: 那如果還是不行呢？
+Rewritten: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：那如果還是不行呢？
+Evidence: 8
+Success: 1
+Answer: 如果重新連線後，問題仍然存在，可以進一步檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+Turn 3: 路由器也需要重新啟動嗎？
+Rewritten: 我的手機 Wi-Fi 無法連線，怎麼辦？；使用者進一步詢問：路由器也需要重新啟動嗎？
+Evidence: 8
+Success: 1
+Answer: 這段影片內容沒有明確提到需要重新啟動路由器；只提到檢查無線路由器是否正常運作，或者嘗試重新啟動手機。 [證據 ID: speech_0005，影片時間：50.00–64.00 秒]
+
+Report saved: outputs/v7_opencc_retry_multiturn_videorag_report.json
+Answers saved: outputs/v7_opencc_retry_multiturn_videorag_answers.txt

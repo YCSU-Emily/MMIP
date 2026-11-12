@@ -1,0 +1,238 @@
+[
+  {
+    "video_id": "wifi_troubleshooting_speech",
+    "video_type": "speech",
+    "video_path": "videos/speech/wifi_troubleshooting_speech.mp4",
+    "duration_seconds": 74.945,
+    "width": 1226,
+    "height": 468,
+    "fps": 16.0,
+    "audio_present": true,
+    "audio_path": "outputs/audio/wifi_troubleshooting_speech.wav",
+    "sample_interval_seconds": 2.0,
+    "frames": [
+      {
+        "timestamp_seconds": 0.0,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0000.jpg"
+      },
+      {
+        "timestamp_seconds": 2.061,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0001.jpg"
+      },
+      {
+        "timestamp_seconds": 4.06,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0002.jpg"
+      },
+      {
+        "timestamp_seconds": 6.058,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0003.jpg"
+      },
+      {
+        "timestamp_seconds": 8.057,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0004.jpg"
+      },
+      {
+        "timestamp_seconds": 10.055,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0005.jpg"
+      },
+      {
+        "timestamp_seconds": 12.054,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0006.jpg"
+      },
+      {
+        "timestamp_seconds": 14.052,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0007.jpg"
+      },
+      {
+        "timestamp_seconds": 16.051,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0008.jpg"
+      },
+      {
+        "timestamp_seconds": 18.049,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0009.jpg"
+      },
+      {
+        "timestamp_seconds": 20.048,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0010.jpg"
+      },
+      {
+        "timestamp_seconds": 22.047,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0011.jpg"
+      },
+      {
+        "timestamp_seconds": 24.045,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0012.jpg"
+      },
+      {
+        "timestamp_seconds": 26.044,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0013.jpg"
+      },
+      {
+        "timestamp_seconds": 28.042,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0014.jpg"
+      },
+      {
+        "timestamp_seconds": 30.041,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0015.jpg"
+      },
+      {
+        "timestamp_seconds": 32.039,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0016.jpg"
+      },
+      {
+        "timestamp_seconds": 34.038,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0017.jpg"
+      },
+      {
+        "timestamp_seconds": 36.036,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0018.jpg"
+      },
+      {
+        "timestamp_seconds": 38.035,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0019.jpg"
+      },
+      {
+        "timestamp_seconds": 40.033,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0020.jpg"
+      },
+      {
+        "timestamp_seconds": 42.032,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0021.jpg"
+      },
+      {
+        "timestamp_seconds": 44.031,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0022.jpg"
+      },
+      {
+        "timestamp_seconds": 46.029,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0023.jpg"
+      },
+      {
+        "timestamp_seconds": 48.028,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0024.jpg"
+      },
+      {
+        "timestamp_seconds": 50.026,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0025.jpg"
+      },
+      {
+        "timestamp_seconds": 52.025,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0026.jpg"
+      },
+      {
+        "timestamp_seconds": 54.023,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0027.jpg"
+      },
+      {
+        "timestamp_seconds": 56.022,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0028.jpg"
+      },
+      {
+        "timestamp_seconds": 58.02,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0029.jpg"
+      },
+      {
+        "timestamp_seconds": 60.019,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0030.jpg"
+      },
+      {
+        "timestamp_seconds": 62.018,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0031.jpg"
+      },
+      {
+        "timestamp_seconds": 64.016,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0032.jpg"
+      },
+      {
+        "timestamp_seconds": 66.015,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0033.jpg"
+      },
+      {
+        "timestamp_seconds": 68.013,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0034.jpg"
+      },
+      {
+        "timestamp_seconds": 70.012,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0035.jpg"
+      },
+      {
+        "timestamp_seconds": 72.01,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0036.jpg"
+      },
+      {
+        "timestamp_seconds": 74.009,
+        "frame_path": "frames/speech/wifi_troubleshooting_speech/frame_0037.jpg"
+      }
+    ]
+  },
+  {
+    "video_id": "wifi_troubleshooting_silent",
+    "video_type": "silent",
+    "video_path": "videos/silent/wifi_troubleshooting_silent.mp4",
+    "duration_seconds": 26.176667,
+    "width": 302,
+    "height": 478,
+    "fps": 22.0,
+    "audio_present": false,
+    "audio_path": null,
+    "sample_interval_seconds": 2.0,
+    "frames": [
+      {
+        "timestamp_seconds": 0.0,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0000.jpg"
+      },
+      {
+        "timestamp_seconds": 2.045,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg"
+      },
+      {
+        "timestamp_seconds": 4.045,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0002.jpg"
+      },
+      {
+        "timestamp_seconds": 6.044,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0003.jpg"
+      },
+      {
+        "timestamp_seconds": 8.044,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg"
+      },
+      {
+        "timestamp_seconds": 10.043,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg"
+      },
+      {
+        "timestamp_seconds": 12.043,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0006.jpg"
+      },
+      {
+        "timestamp_seconds": 14.043,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg"
+      },
+      {
+        "timestamp_seconds": 16.042,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg"
+      },
+      {
+        "timestamp_seconds": 18.042,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0009.jpg"
+      },
+      {
+        "timestamp_seconds": 20.042,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg"
+      },
+      {
+        "timestamp_seconds": 22.041,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg"
+      },
+      {
+        "timestamp_seconds": 24.041,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg"
+      },
+      {
+        "timestamp_seconds": 26.04,
+        "frame_path": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg"
+      }
+    ]
+  }
+]
