@@ -1,0 +1,60 @@
+{
+  "project": "VideoRAG Independent Evaluation Set V2",
+  "annotation_note": "Additional questions for exploratory adaptive-fusion evaluation. Speech and OCR are from separate source videos. Ground Truth IDs are verified against video_corpus.jsonl.",
+  "questions": [
+    {
+      "id": "VQ07",
+      "question": "手機設定首頁有哪些應用程式或功能？",
+      "gold_speech_ids": [],
+      "gold_ocr_ids": [
+        "visual_0000"
+      ],
+      "intent": "visual"
+    },
+    {
+      "id": "VQ08",
+      "question": "進入 Wi-Fi 設定前，應該先開啟哪個手機功能頁面？",
+      "gold_speech_ids": [
+        "speech_0001"
+      ],
+      "gold_ocr_ids": [],
+      "intent": "speech"
+    },
+    {
+      "id": "VQ09",
+      "question": "Wi-Fi 清單中有哪些可選擇的網路名稱？",
+      "gold_speech_ids": [],
+      "gold_ocr_ids": [
+        "visual_0003"
+      ],
+      "intent": "visual"
+    },
+    {
+      "id": "VQ10",
+      "question": "關閉 Wi-Fi 後，應該等待多久再重新開啟？",
+      "gold_speech_ids": [
+        "speech_0002"
+      ],
+      "gold_ocr_ids": [],
+      "intent": "speech"
+    },
+    {
+      "id": "VQ11",
+      "question": "手機連線成功後，畫面出現什麼提示？",
+      "gold_speech_ids": [],
+      "gold_ocr_ids": [
+        "visual_0011"
+      ],
+      "intent": "visual"
+    },
+    {
+      "id": "VQ12",
+      "question": "如果重新連線仍然失敗，可以採取哪些後續處理方式？",
+      "gold_speech_ids": [
+        "speech_0005"
+      ],
+      "gold_ocr_ids": [],
+      "intent": "speech"
+    }
+  ]
+}

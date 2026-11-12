@@ -1,0 +1,15 @@
+{
+  "experiment": "Smart3C Canonical V4 RAGAS Evaluation",
+  "ragas_version": "0.4.3",
+  "model": "Qwen/Qwen3.5-4B",
+  "embedding_model": "BAAI/bge-m3",
+  "retrieval_top_k": 3,
+  "test_samples": 16,
+  "reference_note": "Reference answers are taken from the existing Canonical V4 test dataset; they are not claimed to be independently human-validated.",
+  "metrics": {
+    "faithfulness": 0.730969030969031,
+    "answer_relevancy": 0.1716561783659549,
+    "llm_context_precision_with_reference": 0.1249999999875,
+    "context_recall": 0.17708333333333331
+  }
+}

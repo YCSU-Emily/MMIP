@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "BATTERY_006",
+    "category": "battery_charging",
+    "question": "iPhone 無法充電時，可以先檢查哪些地方？",
+    "reference_answer": "先確認充電線與電源轉接器是否正確連接，並檢查充電配件是否有明顯損壞。也可以嘗試重新連接充電線，確認電源正常，再依 Apple 的建議排除充電問題。如果仍然無法充電，建議進一步尋求 Apple 支援。",
+    "generated_answer": "根據檢索到的參考資料，針對 **iPhone 無法充電** 的情況，目前資料中**未提供**具體的檢查步驟或建議。\n\n現有的參考資料主要針對以下情境：\n1.  **Android 手機**完全無法充電時的檢查（如檢查充電線、轉接器、插座、連接處異物等）。\n2.  **iPhone**充電至 80% 左右停止充電的檢查（如檢查設定中的充電上限或最佳化電池充電功能）。\n\n由於資料中沒有提及 iPhone「完全無法充電」時的排查方法，因此無法提供已確認事實的檢查清單。若需進一步協助，建議您提供更多關於 iPhone 無法充電的具體情境（例如：是否完全無反應、有閃爍但無法進入系統、或僅是充電速度異常等），以便更精準地查詢相關資訊",
+    "retrieval_query": "iPhone 無法充電時，可以先檢查哪些地方？",
+    "retrieved_context": "[資料 1]\n問題：Android 手機完全無法充電時，應該先檢查什麼？\n答案：先檢查充電線、電源轉接器與插座是否正常，並確認充電連接處沒有明顯異物或損壞。可以嘗試使用其他相容的充電配件，再觀察手機是否有充電反應。若問題持續，請依裝置製造商的支援指引進一步排查。\n分類：battery_charging\n\n[資料 2]\n問題：iPhone 充電到 80% 左右就停止，應該如何檢查？\n答案：先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。\n分類：battery_charging\n\n[資料 3]\n問題：Android 手機完全無法充電，如何確認問題是不是出在充電器或充電線？\n答案：可以先確認充電線與電源轉接器是否正確連接，再檢查充電連接埠是否有灰塵或異物。接著可以使用另一條充電線或另一個充電器測試，也可以將原本的充電器與充電線接到其他裝置，確認配件是否能正常運作。\n分類：mobile_tablet",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "BATTERY_008",
+        "question": "Android 手機完全無法充電時，應該先檢查什麼？",
+        "answer": "先檢查充電線、電源轉接器與插座是否正常，並確認充電連接處沒有明顯異物或損壞。可以嘗試使用其他相容的充電配件，再觀察手機是否有充電反應。若問題持續，請依裝置製造商的支援指引進一步排查。",
+        "keywords": "Android, 無法充電, 充電線, 電源轉接器",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC021",
+        "source_title": "Fix an Android device that won't charge or turn on",
+        "source_publisher": "Google Android Help",
+        "source_url": "https://support.google.com/android/answer/7662405",
+        "verified_at": "2026-11-11",
+        "distance": 0.27224594354629517,
+        "similarity": 0.7277540564537048
+      },
+      {
+        "rank": 2,
+        "id": "BATTERY_004",
+        "question": "iPhone 充電到 80% 左右就停止，應該如何檢查？",
+        "answer": "先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。",
+        "keywords": "iPhone, 充電上限, 最佳化電池充電, 80%, 電池設定",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.28455865383148193,
+        "similarity": 0.7154413461685181
+      },
+      {
+        "rank": 3,
+        "id": "MOBILE_017",
+        "question": "Android 手機完全無法充電，如何確認問題是不是出在充電器或充電線？",
+        "answer": "可以先確認充電線與電源轉接器是否正確連接，再檢查充電連接埠是否有灰塵或異物。接著可以使用另一條充電線或另一個充電器測試，也可以將原本的充電器與充電線接到其他裝置，確認配件是否能正常運作。",
+        "keywords": "Android, 無法充電, 充電器, 充電線, 充電連接埠",
+        "category": "mobile_tablet",
+        "difficulty": "easy",
+        "source_id": "SRC021",
+        "source_title": "Fix an Android device that won't charge or turn on",
+        "source_publisher": "Google Android Help",
+        "source_url": "https://support.google.com/android/answer/7662405",
+        "verified_at": "2026-11-11",
+        "distance": 0.30676257610321045,
+        "similarity": 0.6932374238967896
+      }
+    ],
+    "references": [
+      {
+        "title": "Fix an Android device that won't charge or turn on",
+        "publisher": "Google Android Help",
+        "url": "https://support.google.com/android/answer/7662405",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "BATTERY_010",
+    "category": "battery_charging",
+    "question": "iPhone 充電時沒有反應，如何判斷是否為充電配件造成？",
+    "reference_answer": "可以先檢查充電線與電源轉接器是否連接牢固，以及配件是否有損壞。若有其他相容且正常的充電配件，可以交叉測試，觀察 iPhone 是否恢復充電。如果仍無法充電，建議參考 Apple 官方排除方式或聯絡 Apple 支援。",
+    "generated_answer": "根據檢索到的參考資料，針對「iPhone 充電時沒有反應，如何判斷是否為充電配件造成？」這個問題，資料中**未提供**具體的判斷步驟或方法。\n\n現有的參考資料僅針對以下情境提供了處理建議，與您的問題無直接關聯：\n1.  **iPad 充電無反應**：建議確認充電線、轉接器及連接是否正常，並檢查配件損壞（資料 1）。\n2.  **iPhone 充電過熱**：建議停止充電並移至適宜環境（資料 2）。\n3.  **iPhone 充電至 80% 停止**：建議檢查設定中的充電上限或最佳化電池充電選項（資料 3）。\n\n由於資料未提及 iPhone 充電無反應時如何區分是裝置問題還是配件問題，因此無法依據參考資料給",
+    "retrieval_query": "iPhone 充電時沒有反應，如何判斷是否為充電配件造成？",
+    "retrieved_context": "[資料 1]\n問題：iPad 插上充電器卻沒有充電，應該如何處理？\n答案：先確認充電線、電源轉接器及電源連接是否正常，並檢查配件是否有損壞。可以重新連接充電配件，稍候再確認充電狀態。如果仍無法充電，請參考 Apple 官方的 iPad 無法充電排除方式。\n分類：battery_charging\n\n[資料 2]\n問題：iPhone 充電時機身溫度很高，應該如何處理？\n答案：如果 iPhone 充電時明顯發熱，可以先停止充電，將裝置移到溫度適宜的環境，避免陽光直射或高溫環境，待裝置溫度恢復後再確認充電狀況。若反覆發生異常，建議參考 Apple 官方電池與充電說明或聯絡 Apple 支援。\n分類：battery_charging\n\n[資料 3]\n問題：iPhone 充電到 80% 左右就停止，應該如何檢查？\n答案：先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。\n分類：battery_charging",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "BATTERY_007",
+        "question": "iPad 插上充電器卻沒有充電，應該如何處理？",
+        "answer": "先確認充電線、電源轉接器及電源連接是否正常，並檢查配件是否有損壞。可以重新連接充電配件，稍候再確認充電狀態。如果仍無法充電，請參考 Apple 官方的 iPad 無法充電排除方式。",
+        "keywords": "iPad, 無法充電, 充電器, 充電線",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC018",
+        "source_title": "如果 iPad 無法充電",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/102612",
+        "verified_at": "2026-11-11",
+        "distance": 0.29793596267700195,
+        "similarity": 0.702064037322998
+      },
+      {
+        "rank": 2,
+        "id": "BATTERY_018",
+        "question": "iPhone 充電時機身溫度很高，應該如何處理？",
+        "answer": "如果 iPhone 充電時明顯發熱，可以先停止充電，將裝置移到溫度適宜的環境，避免陽光直射或高溫環境，待裝置溫度恢復後再確認充電狀況。若反覆發生異常，建議參考 Apple 官方電池與充電說明或聯絡 Apple 支援。",
+        "keywords": "iPhone, 充電發熱, 裝置溫度, 電池, 充電",
+        "category": "battery_charging",
+        "difficulty": "medium",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.3116801977157593,
+        "similarity": 0.6883198022842407
+      },
+      {
+        "rank": 3,
+        "id": "BATTERY_004",
+        "question": "iPhone 充電到 80% 左右就停止，應該如何檢查？",
+        "answer": "先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。",
+        "keywords": "iPhone, 充電上限, 最佳化電池充電, 80%, 電池設定",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.314475417137146,
+        "similarity": 0.685524582862854
+      }
+    ],
+    "references": [
+      {
+        "title": "如果 iPad 無法充電",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/102612",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "MOBILE_007",
+    "category": "mobile_tablet",
+    "question": "iPhone 插上充電線後沒有充電，可以按照什麼順序排除？",
+    "reference_answer": "可以先檢查充電線和電源轉接器是否損壞，再將充電器連接到牆壁插座，並確認所有接頭都已牢固連接。接著檢查 iPhone 的充電連接埠是否有異物或灰塵。完成上述檢查後，可以讓裝置充電約 30 分鐘，再確認是否恢復正常。",
+    "generated_answer": "根據提供的參考資料，針對「iPhone 插上充電線後沒有充電」的排除步驟，資料中**未提供**針對 iPhone 的具體檢查順序。\n\n現有的參考資料僅包含以下資訊：\n1.  **iPad** 的充電排除方式（檢查充電線、轉接器、連接狀況、重新連接、稍候再確認）。\n2.  **iPad** 透過電腦 USB 充電時的注意事項（電腦需開機且非睡眠狀態、使用有供電能力的集線器等）。\n3.  **iPhone** 充電至 80% 左右停止的檢查方式（檢查設定中的充電上限或最佳化電池充電功能）。\n\n由於資料中缺乏 iPhone 無法充電的通用排除步驟，無法提供符合要求的順序建議。",
+    "retrieval_query": "iPhone 插上充電線後沒有充電，可以按照什麼順序排除？",
+    "retrieved_context": "[資料 1]\n問題：iPad 插上充電器卻沒有充電，應該如何處理？\n答案：先確認充電線、電源轉接器及電源連接是否正常，並檢查配件是否有損壞。可以重新連接充電配件，稍候再確認充電狀態。如果仍無法充電，請參考 Apple 官方的 iPad 無法充電排除方式。\n分類：battery_charging\n\n[資料 2]\n問題：iPad 插上充電線後沒有顯示充電，應該先檢查什麼？\n答案：可以先確認充電線已正確連接 iPad，並使用相容的電源供應器。如果透過電腦 USB 連接埠充電，電腦必須保持開機且不能處於睡眠狀態。也可以改用有供電能力的 USB 集線器、擴充基座或電源轉接器測試。\n分類：mobile_tablet\n\n[資料 3]\n問題：iPhone 充電到 80% 左右就停止，應該如何檢查？\n答案：先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。\n分類：battery_charging",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "BATTERY_007",
+        "question": "iPad 插上充電器卻沒有充電，應該如何處理？",
+        "answer": "先確認充電線、電源轉接器及電源連接是否正常，並檢查配件是否有損壞。可以重新連接充電配件，稍候再確認充電狀態。如果仍無法充電，請參考 Apple 官方的 iPad 無法充電排除方式。",
+        "keywords": "iPad, 無法充電, 充電器, 充電線",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC018",
+        "source_title": "如果 iPad 無法充電",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/102612",
+        "verified_at": "2026-11-11",
+        "distance": 0.2901395559310913,
+        "similarity": 0.7098604440689087
+      },
+      {
+        "rank": 2,
+        "id": "MOBILE_005",
+        "question": "iPad 插上充電線後沒有顯示充電，應該先檢查什麼？",
+        "answer": "可以先確認充電線已正確連接 iPad，並使用相容的電源供應器。如果透過電腦 USB 連接埠充電，電腦必須保持開機且不能處於睡眠狀態。也可以改用有供電能力的 USB 集線器、擴充基座或電源轉接器測試。",
+        "keywords": "iPad, 無法充電, 充電線, 電源轉接器, USB",
+        "category": "mobile_tablet",
+        "difficulty": "easy",
+        "source_id": "SRC018",
+        "source_title": "如果 iPad 無法充電",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/102612",
+        "verified_at": "2026-11-11",
+        "distance": 0.29687416553497314,
+        "similarity": 0.7031258344650269
+      },
+      {
+        "rank": 3,
+        "id": "BATTERY_004",
+        "question": "iPhone 充電到 80% 左右就停止，應該如何檢查？",
+        "answer": "先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。",
+        "keywords": "iPhone, 充電上限, 最佳化電池充電, 80%, 電池設定",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.31539297103881836,
+        "similarity": 0.6846070289611816
+      }
+    ],
+    "references": [
+      {
+        "title": "如果 iPad 無法充電",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/102612",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "MOBILE_015",
+    "category": "mobile_tablet",
+    "question": "iPhone 顯示配件可能不受支援或無法使用，應該如何排除充電問題？",
+    "reference_answer": "可以先檢查充電線與電源轉接器是否損壞，確認接頭連接牢固，並檢查 iPhone 充電連接埠是否有異物。也可以更換其他充電線或電源轉接器測試。如果問題仍然存在，應參考 Apple 官方對於配件不受支援或無法使用的處理方式。",
+    "generated_answer": "根據提供的參考資料，**無法回答**關於「如何排除充電問題」的具體步驟。\n\n參考資料僅涵蓋以下與藍牙配件配對相關的資訊，未提及充電故障的排除方法：\n*   確認配件是否支援 iPhone 及開啟配對模式。\n*   檢查配件電量（僅在無法連線時建議檢查）。\n*   確認配件未連接其他裝置。\n*   檢查專用 App 的藍牙權限。\n*   若無法配對或設定異常，建議聯絡 Apple 支援。\n\n由於資料中未包含針對「配件可能不受支援或無法使用」時，如何排除**充電問題**的具體指引，因此無法提供相關已確認事實。若需進一步協助，建議您提供更多關於該裝置或故障症狀的詳細資訊。",
+    "retrieval_query": "iPhone 顯示配件可能不受支援或無法使用，應該如何排除充電問題？",
+    "retrieved_context": "[資料 1]\n問題：iPhone 無法配對某個第三方藍牙配件時，如何確認配件是否相容並正確進入配對狀態？\n答案：先確認配件支援 iPhone，並依照製造商的說明開啟配件及啟用配對模式。配對時讓配件靠近 iPhone，並確認配件沒有持續連接其他裝置。如果仍然無法配對，可以查看製造商提供的相容性與操作說明；若 iPhone 無法連接任何藍牙配件，則可進一步聯絡 Apple 支援。\n分類：bluetooth_peripherals\n\n[資料 2]\n問題：iPhone 無法與任何藍牙配件配對，應該如何判斷問題可能出在哪裡？\n答案：可以先確認藍牙配件已開啟、進入配對模式，並嘗試使用其他相容配件進行測試。如果只有某一個配件無法連線，應檢查該配件的電量、配對狀態及相容性。如果 iPhone 無法連接任何藍牙配件，或藍牙設定呈現灰色且無法使用，建議聯絡 Apple 支援進一步檢查。\n分類：bluetooth_peripherals\n\n[資料 3]\n問題：iPhone 或 iPad 搜尋不到藍牙耳機或其他藍牙配件時，應該如何檢查？\n答案：先確認配件已開啟並進入可被搜尋的配對模式，同時讓配件靠近 iPhone 或 iPad，並確認配件有足夠電量。可以將配件關閉後重新開啟，再次嘗試配對。如果配件需要搭配專用 App，也要檢查該 App 是否具有使用藍牙的權限。\n分類：bluetooth_peripherals",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "BLUETOOTH_020",
+        "question": "iPhone 無法配對某個第三方藍牙配件時，如何確認配件是否相容並正確進入配對狀態？",
+        "answer": "先確認配件支援 iPhone，並依照製造商的說明開啟配件及啟用配對模式。配對時讓配件靠近 iPhone，並確認配件沒有持續連接其他裝置。如果仍然無法配對，可以查看製造商提供的相容性與操作說明；若 iPhone 無法連接任何藍牙配件，則可進一步聯絡 Apple 支援。",
+        "keywords": "iPhone, 第三方藍牙配件, 相容性, 配對模式, 製造商, Apple 支援",
+        "category": "bluetooth_peripherals",
+        "difficulty": "medium",
+        "source_id": "SRC028",
+        "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11",
+        "distance": 0.29070526361465454,
+        "similarity": 0.7092947363853455
+      },
+      {
+        "rank": 2,
+        "id": "BLUETOOTH_015",
+        "question": "iPhone 無法與任何藍牙配件配對，應該如何判斷問題可能出在哪裡？",
+        "answer": "可以先確認藍牙配件已開啟、進入配對模式，並嘗試使用其他相容配件進行測試。如果只有某一個配件無法連線，應檢查該配件的電量、配對狀態及相容性。如果 iPhone 無法連接任何藍牙配件，或藍牙設定呈現灰色且無法使用，建議聯絡 Apple 支援進一步檢查。",
+        "keywords": "iPhone, 藍牙, 無法配對, 相容性, Apple 支援",
+        "category": "bluetooth_peripherals",
+        "difficulty": "hard",
+        "source_id": "SRC028",
+        "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11",
+        "distance": 0.2955721616744995,
+        "similarity": 0.7044278383255005
+      },
+      {
+        "rank": 3,
+        "id": "BLUETOOTH_004",
+        "question": "iPhone 或 iPad 搜尋不到藍牙耳機或其他藍牙配件時，應該如何檢查？",
+        "answer": "先確認配件已開啟並進入可被搜尋的配對模式，同時讓配件靠近 iPhone 或 iPad，並確認配件有足夠電量。可以將配件關閉後重新開啟，再次嘗試配對。如果配件需要搭配專用 App，也要檢查該 App 是否具有使用藍牙的權限。",
+        "keywords": "iPhone, iPad, 藍牙配件, 搜尋不到, 配對模式, 藍牙權限",
+        "category": "bluetooth_peripherals",
+        "difficulty": "easy",
+        "source_id": "SRC028",
+        "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11",
+        "distance": 0.301464319229126,
+        "similarity": 0.698535680770874
+      }
+    ],
+    "references": [
+      {
+        "title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "MOBILE_016",
+    "category": "mobile_tablet",
+    "question": "iPhone 充電到約 80% 後暫停或沒有繼續增加，是否一定代表電池故障？",
+    "reference_answer": "不一定。iPhone 可能因為最佳化電池充電功能或充電上限設定，而暫時停止在約 80% 充電。可以檢查電池設定中的充電最佳化或充電上限選項，確認目前設定是否影響充電。若排除設定因素後仍有異常，再依照 Apple 官方充電疑難排解方式檢查。",
+    "generated_answer": "根據檢索到的參考資料，iPhone 充電到約 80% 後暫停或沒有繼續增加，**不一定代表電池故障**。\n\n可能的原因包括：\n1.  **設定充電上限**：在 iPhone 的「設定」中可能設定了充電上限，導致達到該百分比後暫停充電。\n2.  **最佳化電池充電**：若啟用了此功能，iPhone 會依使用習慣調整充電時機，在達到約 80% 後暫停以優化電池健康。\n\n以上情況均非電池或充電器故障。若需確認，建議先檢查「設定」中的相關選項。",
+    "retrieval_query": "iPhone 充電到約 80% 後暫停或沒有繼續增加，是否一定代表電池故障？",
+    "retrieved_context": "[資料 1]\n問題：iPhone 充電到 80% 左右就停止，應該如何檢查？\n答案：先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。\n分類：battery_charging\n\n[資料 2]\n問題：iPhone 充電時機身溫度很高，應該如何處理？\n答案：如果 iPhone 充電時明顯發熱，可以先停止充電，將裝置移到溫度適宜的環境，避免陽光直射或高溫環境，待裝置溫度恢復後再確認充電狀況。若反覆發生異常，建議參考 Apple 官方電池與充電說明或聯絡 Apple 支援。\n分類：battery_charging\n\n[資料 3]\n問題：iPhone 已經與藍牙配件配對，但使用時經常斷線，可以先檢查哪些情況？\n答案：先確認配件有足夠電量，並讓配件保持在 iPhone 附近。接著確認配件已開啟且沒有持續連接到其他裝置。如果問題仍然存在，可以在 iPhone 中忘記該配件，再依照配件說明重新進入配對模式並重新配對。若持續無法穩定連線，建議參考配件製造商的支援資訊。\n分類：bluetooth_peripherals",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "BATTERY_004",
+        "question": "iPhone 充電到 80% 左右就停止，應該如何檢查？",
+        "answer": "先到 iPhone 的「設定」中查看「電池」相關選項，確認是否設定了充電上限，或啟用了最佳化電池充電。充電上限可能讓 iPhone 在達到設定的百分比後暫停充電；最佳化電池充電則會依使用習慣調整充電時機。這不一定代表電池或充電器故障。",
+        "keywords": "iPhone, 充電上限, 最佳化電池充電, 80%, 電池設定",
+        "category": "battery_charging",
+        "difficulty": "easy",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.2306532859802246,
+        "similarity": 0.7693467140197754
+      },
+      {
+        "rank": 2,
+        "id": "BATTERY_018",
+        "question": "iPhone 充電時機身溫度很高，應該如何處理？",
+        "answer": "如果 iPhone 充電時明顯發熱，可以先停止充電，將裝置移到溫度適宜的環境，避免陽光直射或高溫環境，待裝置溫度恢復後再確認充電狀況。若反覆發生異常，建議參考 Apple 官方電池與充電說明或聯絡 Apple 支援。",
+        "keywords": "iPhone, 充電發熱, 裝置溫度, 電池, 充電",
+        "category": "battery_charging",
+        "difficulty": "medium",
+        "source_id": "SRC030",
+        "source_title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11",
+        "distance": 0.3740103840827942,
+        "similarity": 0.6259896159172058
+      },
+      {
+        "rank": 3,
+        "id": "BLUETOOTH_019",
+        "question": "iPhone 已經與藍牙配件配對，但使用時經常斷線，可以先檢查哪些情況？",
+        "answer": "先確認配件有足夠電量，並讓配件保持在 iPhone 附近。接著確認配件已開啟且沒有持續連接到其他裝置。如果問題仍然存在，可以在 iPhone 中忘記該配件，再依照配件說明重新進入配對模式並重新配對。若持續無法穩定連線，建議參考配件製造商的支援資訊。",
+        "keywords": "iPhone, 藍牙配件, 反覆斷線, 電量, 距離, 重新配對",
+        "category": "bluetooth_peripherals",
+        "difficulty": "medium",
+        "source_id": "SRC028",
+        "source_title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "source_publisher": "Apple Support",
+        "source_url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11",
+        "distance": 0.4321502447128296,
+        "similarity": 0.5678497552871704
+      }
+    ],
+    "references": [
+      {
+        "title": "關於 iPhone 的「充電上限」和「最佳化電池充電」",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/108055",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "如果藍牙配件無法連接 iPhone 或 iPad",
+        "publisher": "Apple Support",
+        "url": "https://support.apple.com/zh-tw/111804",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "WIFI_016",
+    "category": "wifi_network",
+    "question": "Chromebook 無法連接 Wi-Fi 或無法上網時，應該先進行哪些基本檢查？",
+    "reference_answer": "先確認 Chromebook 已連接到正確的 Wi-Fi 網路，並檢查是否能正常使用網際網路。接著可以使用 Chromebook 內建的網路診斷工具排查連線問題。完成每個排查步驟後，都應再次測試網路是否恢復。如果問題仍然存在，可以重新啟動 Chromebook，再次嘗試連線。",
+    "generated_answer": "根據提供的參考資料，針對 Chromebook 無法連接 Wi-Fi 或無法上網的情況，**資料中並未提供具體的「基本檢查步驟」**（例如：資料 2 與 3 提到的關閉重開 Wi-Fi、執行 `ipconfig` 命令、檢查 Proxy 設定等，均為針對 Windows 系統的解決方案，未提及適用於 Chromebook 的操作）。\n\n因此，基於現有資料，無法確認 Chromebook 應先進行哪些特定檢查步驟。\n\n**一般建議**（非參考資料內容）\n通常處理此類問題時，建議先確認 Wi-Fi 開關是否開啟、是否已選擇正確的網路並輸入密碼、以及該 Wi-Fi 網路是否為公共免費網路（部分公共網路需先登入才能上網）。但以上內容未包含在您提供的參考資料中。",
+    "retrieval_query": "Chromebook 無法連接 Wi-Fi 或無法上網時，應該先進行哪些基本檢查？",
+    "retrieved_context": "[資料 1]\n問題：My Chromebook cannot complete a ChromeOS update. What should I try?\n答案：First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.\n分類：os_software\n\n[資料 2]\n問題：Windows 顯示已連接 Wi-Fi，但仍然無法上網，應該如何進一步排查？\n答案：先關閉 Wi-Fi 再重新開啟，並重新連接無線網路。如果仍然無法上網，可以使用系統管理員身分開啟命令提示字元，依序執行 ipconfig /release 和 ipconfig /renew，更新電腦取得的 IP 位址。接著可以執行 ipconfig /flushdns 清除 DNS 快取。另外也應檢查 Windows 的 Proxy 設定，確認是否有不需要的手動 Proxy 設定。\n分類：wifi_network\n\n[資料 3]\n問題：筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？\n答案：Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。\n分類：laptop_troubleshooting",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "OS_007",
+        "question": "My Chromebook cannot complete a ChromeOS update. What should I try?",
+        "answer": "First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.",
+        "keywords": "Chromebook, ChromeOS update, update failure, internet connection",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC041",
+        "source_title": "Update your Chromebook's operating system",
+        "source_publisher": "Google Chromebook Help",
+        "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11",
+        "distance": 0.33137989044189453,
+        "similarity": 0.6686201095581055
+      },
+      {
+        "rank": 2,
+        "id": "WIFI_022",
+        "question": "Windows 顯示已連接 Wi-Fi，但仍然無法上網，應該如何進一步排查？",
+        "answer": "先關閉 Wi-Fi 再重新開啟，並重新連接無線網路。如果仍然無法上網，可以使用系統管理員身分開啟命令提示字元，依序執行 ipconfig /release 和 ipconfig /renew，更新電腦取得的 IP 位址。接著可以執行 ipconfig /flushdns 清除 DNS 快取。另外也應檢查 Windows 的 Proxy 設定，確認是否有不需要的手動 Proxy 設定。",
+        "keywords": "Windows, Wi-Fi, 已連線無法上網, IP 位址, ipconfig, DNS, Proxy",
+        "category": "wifi_network",
+        "difficulty": "medium",
+        "source_id": "SRC025",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3563086986541748,
+        "similarity": 0.6436913013458252
+      },
+      {
+        "rank": 3,
+        "id": "LAPTOP_003",
+        "question": "筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？",
+        "answer": "Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。",
+        "keywords": "Wi-Fi 已連線, 無法上網, No Internet, ipconfig, DNS, Proxy",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3609163761138916,
+        "similarity": 0.6390836238861084
+      }
+    ],
+    "references": [
+      {
+        "title": "Update your Chromebook's operating system",
+        "publisher": "Google Chromebook Help",
+        "url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "WIFI_017",
+    "category": "wifi_network",
+    "question": "Chromebook 連接公共 Wi-Fi 後，為什麼需要登入或接受使用條款才能上網？",
+    "reference_answer": "部分公共 Wi-Fi 使用需要登入或接受使用條款的入口網站（Captive Portal）。即使 Chromebook 已連接到無線網路，仍可能需要先完成網頁登入或同意條款，才能使用網際網路。請確認是否出現網路登入頁面，並依照頁面指示完成操作。",
+    "generated_answer": "根據提供的參考資料，**無法回答**您關於「為什麼需要登入或接受使用條款才能上網」的問題。\n\n原因如下：\n1.  **資料 1** 僅說明 Wi-Fi 顯示連線不代表能上網，並提供重新連線、執行命令提示字元（ipconfig 等）及檢查 Proxy 的步驟，未提及登入或接受使用條款的機制。\n2.  **資料 2** 與 **資料 3** 分別討論應用程式安裝限制與系統更新問題，與公共 Wi-Fi 的登入機制無關。\n\n參考資料中未提及 Chromebook 連接公共 Wi-Fi 後需登入或接受使用條款的原因。",
+    "retrieval_query": "Chromebook 連接公共 Wi-Fi 後，為什麼需要登入或接受使用條款才能上網？",
+    "retrieved_context": "[資料 1]\n問題：筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？\n答案：Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：Why can't I install an application from the Chrome Web Store on my Chromebook?\n答案：Check whether the item is compatible with your Chromebook and whether your account or device is allowed to install it. Some installation options may be restricted on devices managed by a school or workplace. Review the Chrome Web Store installation instructions and contact your administrator if the device is managed and installation is blocked.\n分類：os_software\n\n[資料 3]\n問題：My Chromebook cannot complete a ChromeOS update. What should I try?\n答案：First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_003",
+        "question": "筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？",
+        "answer": "Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。",
+        "keywords": "Wi-Fi 已連線, 無法上網, No Internet, ipconfig, DNS, Proxy",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.4145742654800415,
+        "similarity": 0.5854257345199585
+      },
+      {
+        "rank": 2,
+        "id": "OS_014",
+        "question": "Why can't I install an application from the Chrome Web Store on my Chromebook?",
+        "answer": "Check whether the item is compatible with your Chromebook and whether your account or device is allowed to install it. Some installation options may be restricted on devices managed by a school or workplace. Review the Chrome Web Store installation instructions and contact your administrator if the device is managed and installation is blocked.",
+        "keywords": "Chromebook, Chrome Web Store, app installation, managed device",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC042",
+        "source_title": "Install & manage web apps",
+        "source_publisher": "Google Chrome Web Store Help",
+        "source_url": "https://support.google.com/chrome_webstore/answer/1053346?hl=en-GB",
+        "verified_at": "2026-11-11",
+        "distance": 0.4284895658493042,
+        "similarity": 0.5715104341506958
+      },
+      {
+        "rank": 3,
+        "id": "OS_007",
+        "question": "My Chromebook cannot complete a ChromeOS update. What should I try?",
+        "answer": "First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.",
+        "keywords": "Chromebook, ChromeOS update, update failure, internet connection",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC041",
+        "source_title": "Update your Chromebook's operating system",
+        "source_publisher": "Google Chromebook Help",
+        "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11",
+        "distance": 0.449643611907959,
+        "similarity": 0.550356388092041
+      }
+    ],
+    "references": [
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Install & manage web apps",
+        "publisher": "Google Chrome Web Store Help",
+        "url": "https://support.google.com/chrome_webstore/answer/1053346?hl=en-GB",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Update your Chromebook's operating system",
+        "publisher": "Google Chromebook Help",
+        "url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "WIFI_018",
+    "category": "wifi_network",
+    "question": "Chromebook 連接需要登入的公共 Wi-Fi，但登入頁面沒有自動出現時，可以怎麼處理？",
+    "reference_answer": "可以先開啟瀏覽器，嘗試瀏覽網址開頭為 http:// 的網站，讓公共 Wi-Fi 的登入入口頁面有機會顯示。請注意使用 http://，而不是 https://。如果仍然找不到登入頁面，在管理員允許的情況下，可以嘗試使用無痕視窗。若問題持續存在，也可以暫時停用 Chrome 擴充功能後再次測試。",
+    "generated_answer": "根據提供的參考資料，**無法回答**關於「Chromebook 連接需要登入的公共 Wi-Fi 時，登入頁面沒有自動出現該如何處理」的問題。\n\n原因如下：\n1.  **資料 1** 僅針對「外接螢幕無顯示畫面」的故障處理。\n2.  **資料 2** 針對「Wi-Fi 連線但無法打開網頁」的處理，未提及登入頁面未出現的情況。\n3.  **資料 3** 針對「Windows 筆電 Wi-Fi 開關不見」的處理，與 Chromebook 無關。\n\n參考資料中未提及公共 Wi-Fi 登入頁面未自動出現的解決方案，因此無法提供已確認事實的處理步驟。",
+    "retrieval_query": "Chromebook 連接需要登入的公共 Wi-Fi，但登入頁面沒有自動出現時，可以怎麼處理？",
+    "retrieved_context": "[資料 1]\n問題：Chromebook 已經接上外接螢幕，卻沒有顯示畫面，應該檢查什麼？\n答案：先確認外接螢幕已開啟，並選擇正確的輸入來源。接著檢查連接線與轉接器是否適用且連接牢固，也可以重新插拔線材或嘗試其他支援的連接方式。若仍無法顯示，請確認 Chromebook 與外接螢幕的相容性，並參考官方連接外接螢幕指引。\n分類：display_hardware\n\n[資料 2]\n問題：筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？\n答案：Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。\n分類：laptop_troubleshooting\n\n[資料 3]\n問題：Windows 筆電的 Wi-Fi 開關不見了，設定裡也找不到 Wi-Fi，怎麼辦？\n答案：先確認筆電是否有實體無線網路開關，並確認它已開啟。接著開啟裝置管理員，展開「網路介面卡」，找到無線網路介面卡，確認裝置沒有被停用；若已停用，可嘗試啟用裝置。也可以開啟 services.msc，找到 WLAN AutoConfig 服務並重新啟動。如果裝置管理員完全找不到無線網路介面卡，可能需要向電腦製造商確認硬體或驅動程式問題。\n分類：laptop_troubleshooting",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "DISPLAY_007",
+        "question": "Chromebook 已經接上外接螢幕，卻沒有顯示畫面，應該檢查什麼？",
+        "answer": "先確認外接螢幕已開啟，並選擇正確的輸入來源。接著檢查連接線與轉接器是否適用且連接牢固，也可以重新插拔線材或嘗試其他支援的連接方式。若仍無法顯示，請確認 Chromebook 與外接螢幕的相容性，並參考官方連接外接螢幕指引。",
+        "keywords": "Chromebook, 外接螢幕, 沒有畫面, 連接線, 轉接器",
+        "category": "display_hardware",
+        "difficulty": "medium",
+        "source_id": "SRC036",
+        "source_title": "Connect your Chromebook to a monitor",
+        "source_publisher": "Google Chromebook Help",
+        "source_url": "https://support.google.com/chromebook/answer/1060909?hl=en-EN",
+        "verified_at": "2026-11-11",
+        "distance": 0.4099003076553345,
+        "similarity": 0.5900996923446655
+      },
+      {
+        "rank": 2,
+        "id": "LAPTOP_003",
+        "question": "筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？",
+        "answer": "Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。",
+        "keywords": "Wi-Fi 已連線, 無法上網, No Internet, ipconfig, DNS, Proxy",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.42167580127716064,
+        "similarity": 0.5783241987228394
+      },
+      {
+        "rank": 3,
+        "id": "LAPTOP_002",
+        "question": "Windows 筆電的 Wi-Fi 開關不見了，設定裡也找不到 Wi-Fi，怎麼辦？",
+        "answer": "先確認筆電是否有實體無線網路開關，並確認它已開啟。接著開啟裝置管理員，展開「網路介面卡」，找到無線網路介面卡，確認裝置沒有被停用；若已停用，可嘗試啟用裝置。也可以開啟 services.msc，找到 WLAN AutoConfig 服務並重新啟動。如果裝置管理員完全找不到無線網路介面卡，可能需要向電腦製造商確認硬體或驅動程式問題。",
+        "keywords": "Windows, Wi-Fi 開關不見, 無線網路介面卡, 裝置管理員, WLAN AutoConfig",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.43405967950820923,
+        "similarity": 0.5659403204917908
+      }
+    ],
+    "references": [
+      {
+        "title": "Connect your Chromebook to a monitor",
+        "publisher": "Google Chromebook Help",
+        "url": "https://support.google.com/chromebook/answer/1060909?hl=en-EN",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "WIFI_019",
+    "category": "wifi_network",
+    "question": "Chromebook 已完成公共 Wi-Fi 登入，但仍然無法連接網際網路，應該如何排查？",
+    "reference_answer": "可以先中斷目前的 Wi-Fi 連線，再重新連接該網路。接著使用手機或其他裝置嘗試連接相同的公共 Wi-Fi，確認其他裝置是否也無法上網。如果其他裝置同樣無法連線，可能是該網路本身有問題，建議詢問 Wi-Fi 網路的提供者或管理者，確認該網路是否提供網際網路服務。",
+    "generated_answer": "根據檢索到的參考資料，針對 Chromebook 已完成公共 Wi-Fi 登入但仍無法上網的情況，可參考以下排查步驟：\n\n1.  **重新連線 Wi-Fi**：\n    *   先關閉 Wi-Fi，再重新開啟。\n    *   重新連接無線網路後測試。\n    *   *依據：資料 1、資料 2*\n\n2.  **檢查 Proxy 設定**：\n    *   檢查是否設定了不需要的手動 Proxy 設定。\n    *   *依據：資料 1、資料 2*\n\n3.  **執行網路指令（需系統管理員身分）**：\n    *   若上述步驟無效，可嘗試使用系統管理員身分開啟命令提示字元，依序執行以下指令更新 IP 位址與清除 DNS 快取：",
+    "retrieval_query": "Chromebook 已完成公共 Wi-Fi 登入，但仍然無法連接網際網路，應該如何排查？",
+    "retrieved_context": "[資料 1]\n問題：Windows 顯示已連接 Wi-Fi，但仍然無法上網，應該如何進一步排查？\n答案：先關閉 Wi-Fi 再重新開啟，並重新連接無線網路。如果仍然無法上網，可以使用系統管理員身分開啟命令提示字元，依序執行 ipconfig /release 和 ipconfig /renew，更新電腦取得的 IP 位址。接著可以執行 ipconfig /flushdns 清除 DNS 快取。另外也應檢查 Windows 的 Proxy 設定，確認是否有不需要的手動 Proxy 設定。\n分類：wifi_network\n\n[資料 2]\n問題：筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？\n答案：Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。\n分類：laptop_troubleshooting\n\n[資料 3]\n問題：My Chromebook cannot complete a ChromeOS update. What should I try?\n答案：First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "WIFI_022",
+        "question": "Windows 顯示已連接 Wi-Fi，但仍然無法上網，應該如何進一步排查？",
+        "answer": "先關閉 Wi-Fi 再重新開啟，並重新連接無線網路。如果仍然無法上網，可以使用系統管理員身分開啟命令提示字元，依序執行 ipconfig /release 和 ipconfig /renew，更新電腦取得的 IP 位址。接著可以執行 ipconfig /flushdns 清除 DNS 快取。另外也應檢查 Windows 的 Proxy 設定，確認是否有不需要的手動 Proxy 設定。",
+        "keywords": "Windows, Wi-Fi, 已連線無法上網, IP 位址, ipconfig, DNS, Proxy",
+        "category": "wifi_network",
+        "difficulty": "medium",
+        "source_id": "SRC025",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3186265230178833,
+        "similarity": 0.6813734769821167
+      },
+      {
+        "rank": 2,
+        "id": "LAPTOP_003",
+        "question": "筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？",
+        "answer": "Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。",
+        "keywords": "Wi-Fi 已連線, 無法上網, No Internet, ipconfig, DNS, Proxy",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3214002251625061,
+        "similarity": 0.6785997748374939
+      },
+      {
+        "rank": 3,
+        "id": "OS_007",
+        "question": "My Chromebook cannot complete a ChromeOS update. What should I try?",
+        "answer": "First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.",
+        "keywords": "Chromebook, ChromeOS update, update failure, internet connection",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC041",
+        "source_title": "Update your Chromebook's operating system",
+        "source_publisher": "Google Chromebook Help",
+        "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11",
+        "distance": 0.3400631546974182,
+        "similarity": 0.6599368453025818
+      }
+    ],
+    "references": [
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Update your Chromebook's operating system",
+        "publisher": "Google Chromebook Help",
+        "url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "WIFI_020",
+    "category": "wifi_network",
+    "question": "同一個 Wi-Fi 網路中的其他裝置都能正常上網，只有 Chromebook 無法連線，該怎麼辦？",
+    "reference_answer": "如果已經嘗試其他連線排除方式，但只有 Chromebook 無法連接網路，可能需要檢查該網路是否限制了 Chromebook 裝置。如果是學校或公司管理的網路，可以請網路管理員確認是否需要將 Chromebook 的主機名稱加入允許清單。如果問題仍然無法解決，建議聯絡 Chromebook 製造商尋求進一步協助。",
+    "generated_answer": "根據檢索到的參考資料，針對「同一 Wi-Fi 網路中其他裝置正常，唯 Chromebook 無法連線」的情況，建議如下：\n\n1.  **重新連線 Wi-Fi**\n    先關閉再開啟 Chromebook 的 Wi-Fi，重新連線後測試是否能上網。\n\n2.  **執行網路重置指令**\n    若重新連線後仍無法上網，請依序執行以下步驟（需使用系統管理員權限開啟命令提示字元）：\n    *   執行 `ipconfig /release`\n    *   執行 `ipconfig /renew`\n    *   執行 `ipconfig /flushdns`\n    完成後再測試網路。\n\n3.  **檢查 Proxy 設定**\n    檢查 Chromebook 是否設定了不需要的手動 Proxy。\n\n4.",
+    "retrieval_query": "同一個 Wi-Fi 網路中的其他裝置都能正常上網，只有 Chromebook 無法連線，該怎麼辦？",
+    "retrieved_context": "[資料 1]\n問題：筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？\n答案：Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：Windows 電腦無法連接家中的 Wi-Fi，如何判斷問題是出在電腦還是網路設備？\n答案：可以使用另一台筆電或手機，嘗試連接相同的 Wi-Fi 網路。如果其他裝置可以正常連線，問題可能與原本的 Windows 電腦有關；如果其他裝置也無法連線，則應進一步檢查路由器、數據機或網際網路服務。這項測試可以協助縮小故障範圍，但不能單獨確定故障原因。\n分類：wifi_network\n\n[資料 3]\n問題：My Chromebook cannot complete a ChromeOS update. What should I try?\n答案：First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_003",
+        "question": "筆電顯示已連接 Wi-Fi，但是打不開網頁，也無法使用網路，該怎麼處理？",
+        "answer": "Wi-Fi 顯示已連線不一定代表可以存取網際網路。可以先關閉再開啟 Wi-Fi，重新連線後測試。若仍無法上網，可使用系統管理員權限開啟命令提示字元，依序執行 ipconfig /release、ipconfig /renew 與 ipconfig /flushdns，再測試網路。也應檢查是否設定了不需要的手動 Proxy。若其他裝置也無法上網，則應進一步檢查路由器或網際網路服務。",
+        "keywords": "Wi-Fi 已連線, 無法上網, No Internet, ipconfig, DNS, Proxy",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC001",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3707725405693054,
+        "similarity": 0.6292274594306946
+      },
+      {
+        "rank": 2,
+        "id": "WIFI_004",
+        "question": "Windows 電腦無法連接家中的 Wi-Fi，如何判斷問題是出在電腦還是網路設備？",
+        "answer": "可以使用另一台筆電或手機，嘗試連接相同的 Wi-Fi 網路。如果其他裝置可以正常連線，問題可能與原本的 Windows 電腦有關；如果其他裝置也無法連線，則應進一步檢查路由器、數據機或網際網路服務。這項測試可以協助縮小故障範圍，但不能單獨確定故障原因。",
+        "keywords": "Windows, Wi-Fi, 其他裝置測試, 路由器, 故障排除",
+        "category": "wifi_network",
+        "difficulty": "medium",
+        "source_id": "SRC025",
+        "source_title": "Fix Wi-Fi connection issues in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.37638288736343384,
+        "similarity": 0.6236171126365662
+      },
+      {
+        "rank": 3,
+        "id": "OS_007",
+        "question": "My Chromebook cannot complete a ChromeOS update. What should I try?",
+        "answer": "First, make sure your Chromebook is connected to a stable internet connection. Open Settings, go to About ChromeOS, and check for updates again. Follow any instructions displayed on the screen. If the update still cannot complete, consult Google's ChromeOS update guidance for further troubleshooting.",
+        "keywords": "Chromebook, ChromeOS update, update failure, internet connection",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC041",
+        "source_title": "Update your Chromebook's operating system",
+        "source_publisher": "Google Chromebook Help",
+        "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11",
+        "distance": 0.3917011022567749,
+        "similarity": 0.6082988977432251
+      }
+    ],
+    "references": [
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Update your Chromebook's operating system",
+        "publisher": "Google Chromebook Help",
+        "url": "https://support.google.com/chromebook/answer/177889?hl=en",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "LAPTOP_013",
+    "category": "laptop_troubleshooting",
+    "question": "Windows Update 無法下載或安裝更新時，可以先進行哪些基本排除步驟？",
+    "reference_answer": "首先確認網路連線正常，並重新啟動電腦後再次檢查更新。接著確認系統磁碟有足夠可用空間，因為更新可能需要額外空間下載及安裝檔案。若仍然失敗，可以開啟 Windows 的疑難排解功能，執行 Windows Update 疑難排解員，依照系統提供的結果處理問題。若畫面顯示錯誤代碼，建議記錄代碼並依 Microsoft 官方說明進一步排除，不要直接刪除不明系統檔案。",
+    "generated_answer": "根據提供的參考資料，針對「Windows Update 無法下載或安裝更新」的問題，目前**沒有明確的排除步驟**可供確認。\n\n資料中僅提及以下相關但**不直接適用**的資訊：\n1.  **磁碟空間不足**：若提示此錯誤，可透過「設定」→「系統」→「儲存空間」進行清理（資料 1）。\n2.  **一般程式安裝失敗**：可嘗試重啟 Windows，或使用 Microsoft 的「程式安裝與移除故障排除程式」（Program Install and Uninstall troubleshooter）（資料 2、3）。\n\n由於參考資料未列出具體針對「Windows Update 無法下載或安裝」的步驟，無法提供其他已確認的解決方案。建議您提供更多關於錯誤訊息或具體症狀的資訊，以便進一步查詢。",
+    "retrieval_query": "Windows Update 無法下載或安裝更新時，可以先進行哪些基本排除步驟？",
+    "retrieved_context": "[資料 1]\n問題：Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？\n答案：可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：A Windows program installation or removal fails with an error. How can I troubleshoot it?\n答案：Use Microsoft's Program Install and Uninstall troubleshooter. It is designed to help resolve problems that block programs from being installed or removed. Run the troubleshooter, follow its suggested steps, and then retry the installation or removal. If the issue continues, record the error message so it can be investigated further.\n分類：os_software\n\n[資料 3]\n問題：My Windows computer cannot install a program. What should I do?\n答案：First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_015",
+        "question": "Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？",
+        "answer": "可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。",
+        "keywords": "Windows Update, 磁碟空間不足, 更新安裝失敗, 系統磁碟, 暫存檔清理",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC012",
+        "source_title": "Free up drive space in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3034489154815674,
+        "similarity": 0.6965510845184326
+      },
+      {
+        "rank": 2,
+        "id": "OS_002",
+        "question": "A Windows program installation or removal fails with an error. How can I troubleshoot it?",
+        "answer": "Use Microsoft's Program Install and Uninstall troubleshooter. It is designed to help resolve problems that block programs from being installed or removed. Run the troubleshooter, follow its suggested steps, and then retry the installation or removal. If the issue continues, record the error message so it can be investigated further.",
+        "keywords": "Windows, installation error, uninstall error, program troubleshooter",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC037",
+        "source_title": "Fix problems that block programs from being installed or removed",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11",
+        "distance": 0.3943910002708435,
+        "similarity": 0.6056089997291565
+      },
+      {
+        "rank": 3,
+        "id": "OS_001",
+        "question": "My Windows computer cannot install a program. What should I do?",
+        "answer": "First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.",
+        "keywords": "Windows, program installation, installation error, troubleshooter",
+        "category": "os_software",
+        "difficulty": "easy",
+        "source_id": "SRC037",
+        "source_title": "Fix problems that block programs from being installed or removed",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11",
+        "distance": 0.402323842048645,
+        "similarity": 0.597676157951355
+      }
+    ],
+    "references": [
+      {
+        "title": "Free up drive space in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix problems that block programs from being installed or removed",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "LAPTOP_014",
+    "category": "laptop_troubleshooting",
+    "question": "Windows 更新進度長時間停留在同一個百分比，應該如何判斷及排除？",
+    "reference_answer": "如果 Windows Update 長時間停留在 0% 或 100%，可以先重新啟動電腦，確認網路連線正常，並檢查系統磁碟是否有足夠空間。如果更新進度停留在 51% 至 99% 且無法完成，可以再次前往「設定」中的 Windows Update 檢查更新，或執行 Windows Update 疑難排解員，並依照畫面指示完成排查。",
+    "generated_answer": "根據提供的參考資料，**無法回答**「Windows 更新進度長時間停留在同一個百分比」的判斷及排除方法。\n\n現有的參考資料僅涵蓋以下主題，與您的問題無關：\n1.  **磁碟空間不足**：針對更新失敗時提示空間不足的處理方式（資料 1）。\n2.  **電池續航力縮短**：針對電池容量下降的檢查與建議（資料 2）。\n3.  **開機時間過長**：針對關閉不必要的開機啟動程式的方法（資料 3）。\n\n由於缺乏關於「更新進度卡住」的具體資訊，無法提供相關的排除步驟或判斷依據。",
+    "retrieval_query": "Windows 更新進度長時間停留在同一個百分比，應該如何判斷及排除？",
+    "retrieved_context": "[資料 1]\n問題：Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？\n答案：可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：Windows 筆電使用一段時間後，電池續航力明顯縮短，應該怎麼辦？\n答案：可以先產生 Windows 電池報告，查看目前電池容量與使用情況，再檢查耗電較多的應用程式及電源設定。如果電池容量明顯下降且影響日常使用，建議聯絡筆電製造商確認是否需要檢測或更換電池。\n分類：battery_charging\n\n[資料 3]\n問題：Windows 筆電每次開機都需要很長時間，如何找出並關閉不必要的開機啟動程式？\n答案：可以先檢查 Windows 的啟動應用程式。按 Ctrl + Shift + Esc 開啟工作管理員，進入「啟動應用程式」（Startup apps），查看各程式的啟動狀態與啟動影響。對於不需要在開機時自動執行的應用程式，可以選取後停用。停用前應確認程式用途，不要任意停用不熟悉的系統元件、安全防護程式或硬體驅動相關程式。也可以到設定中的「應用程式」→「啟動」管理啟動項目。\n分類：laptop_troubleshooting",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_015",
+        "question": "Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？",
+        "answer": "可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。",
+        "keywords": "Windows Update, 磁碟空間不足, 更新安裝失敗, 系統磁碟, 暫存檔清理",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC012",
+        "source_title": "Free up drive space in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.4282075762748718,
+        "similarity": 0.5717924237251282
+      },
+      {
+        "rank": 2,
+        "id": "BATTERY_017",
+        "question": "Windows 筆電使用一段時間後，電池續航力明顯縮短，應該怎麼辦？",
+        "answer": "可以先產生 Windows 電池報告，查看目前電池容量與使用情況，再檢查耗電較多的應用程式及電源設定。如果電池容量明顯下降且影響日常使用，建議聯絡筆電製造商確認是否需要檢測或更換電池。",
+        "keywords": "Windows, 筆電, 電池續航, 電池容量, 電池報告",
+        "category": "battery_charging",
+        "difficulty": "medium",
+        "source_id": "SRC029",
+        "source_title": "Caring for your battery in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.43623727560043335,
+        "similarity": 0.5637627243995667
+      },
+      {
+        "rank": 3,
+        "id": "LAPTOP_011",
+        "question": "Windows 筆電每次開機都需要很長時間，如何找出並關閉不必要的開機啟動程式？",
+        "answer": "可以先檢查 Windows 的啟動應用程式。按 Ctrl + Shift + Esc 開啟工作管理員，進入「啟動應用程式」（Startup apps），查看各程式的啟動狀態與啟動影響。對於不需要在開機時自動執行的應用程式，可以選取後停用。停用前應確認程式用途，不要任意停用不熟悉的系統元件、安全防護程式或硬體驅動相關程式。也可以到設定中的「應用程式」→「啟動」管理啟動項目。",
+        "keywords": "Windows, 開機速度慢, 啟動應用程式, Startup apps, 工作管理員",
+        "category": "laptop_troubleshooting",
+        "difficulty": "easy",
+        "source_id": "SRC007",
+        "source_title": "Tips to improve PC performance in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.44832873344421387,
+        "similarity": 0.5516712665557861
+      }
+    ],
+    "references": [
+      {
+        "title": "Free up drive space in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Caring for your battery in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Tips to improve PC performance in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "OS_005",
+    "category": "os_software",
+    "question": "Windows Update cannot finish installing an update. What troubleshooting steps should I try?",
+    "reference_answer": "Restart your computer and check that it has a stable internet connection. Then try Windows Update again. If the update still fails, use the Windows Update troubleshooter and follow the recommended steps. If the problem continues, note the displayed error code and consult Microsoft's troubleshooting guidance for Windows Update.",
+    "generated_answer": "根據提供的參考資料，針對「Windows Update 無法完成更新安裝」的問題，目前**沒有明確的解決方案或步驟**可供參考。\n\n現有的資料主要涵蓋以下情境，但均不直接適用於您的問題：\n1.  **磁碟空間不足**（資料 1）：僅針對提示磁碟空間不足的情況提供清理建議。\n2.  **無法安裝程式**（資料 2、資料 3）：提供使用 Microsoft 的「程式安裝與移除故障排除程式」來解決安裝或移除失敗的問題。\n\n由於「Windows Update 無法完成安裝」與上述「無法安裝程式」雖有相似之處，但參考資料中未明確指出可將「程式安裝故障排除程式」直接應用於「Windows Update」，也未提及針對更新失敗的其他特定步驟。\n\n**結論**：\n基於現有參考資料",
+    "retrieval_query": "Windows Update cannot finish installing an update. What troubleshooting steps should I try?",
+    "retrieved_context": "[資料 1]\n問題：Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？\n答案：可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：My Windows computer cannot install a program. What should I do?\n答案：First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.\n分類：os_software\n\n[資料 3]\n問題：A Windows program installation or removal fails with an error. How can I troubleshoot it?\n答案：Use Microsoft's Program Install and Uninstall troubleshooter. It is designed to help resolve problems that block programs from being installed or removed. Run the troubleshooter, follow its suggested steps, and then retry the installation or removal. If the issue continues, record the error message so it can be investigated further.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_015",
+        "question": "Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？",
+        "answer": "可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。",
+        "keywords": "Windows Update, 磁碟空間不足, 更新安裝失敗, 系統磁碟, 暫存檔清理",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC012",
+        "source_title": "Free up drive space in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3348296284675598,
+        "similarity": 0.6651703715324402
+      },
+      {
+        "rank": 2,
+        "id": "OS_001",
+        "question": "My Windows computer cannot install a program. What should I do?",
+        "answer": "First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.",
+        "keywords": "Windows, program installation, installation error, troubleshooter",
+        "category": "os_software",
+        "difficulty": "easy",
+        "source_id": "SRC037",
+        "source_title": "Fix problems that block programs from being installed or removed",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11",
+        "distance": 0.3794591426849365,
+        "similarity": 0.6205408573150635
+      },
+      {
+        "rank": 3,
+        "id": "OS_002",
+        "question": "A Windows program installation or removal fails with an error. How can I troubleshoot it?",
+        "answer": "Use Microsoft's Program Install and Uninstall troubleshooter. It is designed to help resolve problems that block programs from being installed or removed. Run the troubleshooter, follow its suggested steps, and then retry the installation or removal. If the issue continues, record the error message so it can be investigated further.",
+        "keywords": "Windows, installation error, uninstall error, program troubleshooter",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC037",
+        "source_title": "Fix problems that block programs from being installed or removed",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11",
+        "distance": 0.3935973644256592,
+        "similarity": 0.6064026355743408
+      }
+    ],
+    "references": [
+      {
+        "title": "Free up drive space in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix problems that block programs from being installed or removed",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "OS_011",
+    "category": "os_software",
+    "question": "Windows Update keeps failing even after I restart my computer. What should I do next?",
+    "reference_answer": "Open Windows Settings and run the Windows Update troubleshooter. Follow the recommended steps, then check for updates again. If the installation still fails, record the error code displayed by Windows and use Microsoft's Windows Update troubleshooting guidance to identify the appropriate next step.",
+    "generated_answer": "根據提供的參考資料，針對「Windows Update 持續失敗且重啟電腦後仍無效」的情況，資料中**未提供**具體的解決步驟或建議。\n\n現有的參考資料僅包含以下相關但無法直接回答此問題的內容：\n1.  **資料 3** 提到若程式安裝受阻，可先重啟 Windows 並嘗試再次安裝；若仍被阻擋，則可使用 Microsoft 的「程式安裝與解除安裝故障排除程式」來診斷問題。\n2.  **資料 2** 僅針對「磁碟空間不足」導致更新失敗的情況提供了解決方法（清理暫存檔案等），未涵蓋其他導致更新失敗的原因。\n\n由於缺乏針對「重啟後更新仍失敗」的具體處理流程，無法提供已確認的解決方案。若需進一步協助，建議您提供更多關於失敗",
+    "retrieval_query": "Windows Update keeps failing even after I restart my computer. What should I do next?",
+    "retrieved_context": "[資料 1]\n問題：I repaired a Windows application, but it still does not work properly. What can I try?\n答案：If the application provides a Reset option under Settings > Apps > Installed apps > Advanced options, you can try it after Repair. Be aware that Reset may remove the application's data or settings. If the problem continues, consult the application's publisher or its official support instructions for further troubleshooting.\n分類：os_software\n\n[資料 2]\n問題：Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？\n答案：可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。\n分類：laptop_troubleshooting\n\n[資料 3]\n問題：My Windows computer cannot install a program. What should I do?\n答案：First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.\n分類：os_software",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "OS_013",
+        "question": "I repaired a Windows application, but it still does not work properly. What can I try?",
+        "answer": "If the application provides a Reset option under Settings > Apps > Installed apps > Advanced options, you can try it after Repair. Be aware that Reset may remove the application's data or settings. If the problem continues, consult the application's publisher or its official support instructions for further troubleshooting.",
+        "keywords": "Windows, application repair, Reset, Advanced options",
+        "category": "os_software",
+        "difficulty": "medium",
+        "source_id": "SRC039",
+        "source_title": "Repair apps and programs in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3909018039703369,
+        "similarity": 0.6090981960296631
+      },
+      {
+        "rank": 2,
+        "id": "LAPTOP_015",
+        "question": "Windows Update 安裝更新時提示磁碟空間不足，應該如何處理？",
+        "answer": "可以先開啟「設定」→「系統」→「儲存空間」，查看系統磁碟目前的空間使用情況。接著選擇「清理建議」，檢查暫存檔案、大型或未使用的檔案、雲端同步檔案及不常使用的應用程式，確認哪些項目可以移除後，再執行清理。也可以開啟「儲存空間感知器」，協助自動清理不需要的暫存檔案及資源回收筒內容。清理前應仔細確認項目，避免移除仍需要的個人檔案。",
+        "keywords": "Windows Update, 磁碟空間不足, 更新安裝失敗, 系統磁碟, 暫存檔清理",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC012",
+        "source_title": "Free up drive space in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.4049137830734253,
+        "similarity": 0.5950862169265747
+      },
+      {
+        "rank": 3,
+        "id": "OS_001",
+        "question": "My Windows computer cannot install a program. What should I do?",
+        "answer": "First, restart Windows and try the installation again. Check that the program is compatible with your Windows version and that your account has permission to install it. If the installation is still blocked, use Microsoft's Program Install and Uninstall troubleshooter to diagnose problems that prevent programs from being installed. Follow the troubleshooter's instructions and try the installation again.",
+        "keywords": "Windows, program installation, installation error, troubleshooter",
+        "category": "os_software",
+        "difficulty": "easy",
+        "source_id": "SRC037",
+        "source_title": "Fix problems that block programs from being installed or removed",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11",
+        "distance": 0.4149942398071289,
+        "similarity": 0.5850057601928711
+      }
+    ],
+    "references": [
+      {
+        "title": "Repair apps and programs in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Free up drive space in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-gb/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Fix problems that block programs from being installed or removed",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "DISPLAY_004",
+    "category": "display_hardware",
+    "question": "Windows 電腦的螢幕一直閃爍，應該如何排查？",
+    "reference_answer": "可以先確認螢幕線材與連接是否穩定，並觀察閃爍是否只在特定應用程式開啟時發生。接著檢查顯示卡驅動程式，必要時依照官方指引更新或回復驅動程式。如果問題只出現在某個應用程式，也可以檢查該應用程式是否需要更新。若無法判斷原因，建議依照 Windows 螢幕閃爍疑難排解步驟進一步檢查。",
+    "generated_answer": "根據檢索到的參考資料，針對「Windows 電腦螢幕一直閃爍」的問題，目前**沒有明確的排查步驟或原因說明**。\n\n參考資料中僅包含以下相關情境，但均不直接對應「螢幕一直閃爍」的症狀：\n1.  **資料 1**：針對「外接螢幕有時正常、有時突然沒有畫面」的排查（建議檢查連接線、電源、輸入來源、擴充基座及顯示卡驅動）。\n2.  **資料 2**：針對「系統沒有偵測到第二台螢幕」的排查（建議檢查螢幕開啟狀態、連接線、轉接器、輸入來源選擇及顯示卡驅動）。\n3.  **資料 3**：針對「筆電電池耗電很快」的排查（與螢幕閃爍無關）。\n\n由於資料未提及導致",
+    "retrieval_query": "Windows 電腦的螢幕一直閃爍，應該如何排查？",
+    "retrieved_context": "[資料 1]\n問題：Windows 外接螢幕有時正常、有時突然沒有畫面，應該如何排查？\n答案：先檢查連接線是否鬆動，並確認螢幕電源與輸入來源正常。可以重新插拔連接線，或改用其他支援的連接埠與線材測試。如果使用擴充基座或轉接器，也應確認其連接與相容性。若問題持續發生，再依照 Windows 外接螢幕疑難排解指引檢查顯示設定及顯示卡驅動程式。\n分類：display_hardware\n\n[資料 2]\n問題：Windows 已經連接第二台螢幕，但系統沒有偵測到，應該怎麼辦？\n答案：先確認螢幕已開啟、連接線與轉接器正常，並確認螢幕選擇了正確的輸入來源。接著檢查 Windows 的顯示設定，嘗試使用偵測功能尋找其他顯示器。如果仍無法偵測，可以重新連接設備、嘗試其他連接埠，並檢查顯示卡驅動程式是否需要更新。\n分類：display_hardware\n\n[資料 3]\n問題：Windows 筆電電池耗電很快，可以先檢查哪些設定？\n答案：可以先檢查 Windows 的電源與電池使用情況，找出耗電較多的應用程式，並在不需要高效能時調整電源使用方式。也應確認裝置沒有長時間處於高溫環境。若續航力明顯異常，可以產生電池報告，查看目前電池容量資訊。\n分類：battery_charging",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "DISPLAY_015",
+        "question": "Windows 外接螢幕有時正常、有時突然沒有畫面，應該如何排查？",
+        "answer": "先檢查連接線是否鬆動，並確認螢幕電源與輸入來源正常。可以重新插拔連接線，或改用其他支援的連接埠與線材測試。如果使用擴充基座或轉接器，也應確認其連接與相容性。若問題持續發生，再依照 Windows 外接螢幕疑難排解指引檢查顯示設定及顯示卡驅動程式。",
+        "keywords": "Windows, 外接螢幕, 間歇性黑屏, 連接線, 顯示卡驅動程式",
+        "category": "display_hardware",
+        "difficulty": "hard",
+        "source_id": "SRC032",
+        "source_title": "Troubleshoot external monitor connections in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.342032790184021,
+        "similarity": 0.657967209815979
+      },
+      {
+        "rank": 2,
+        "id": "DISPLAY_002",
+        "question": "Windows 已經連接第二台螢幕，但系統沒有偵測到，應該怎麼辦？",
+        "answer": "先確認螢幕已開啟、連接線與轉接器正常，並確認螢幕選擇了正確的輸入來源。接著檢查 Windows 的顯示設定，嘗試使用偵測功能尋找其他顯示器。如果仍無法偵測，可以重新連接設備、嘗試其他連接埠，並檢查顯示卡驅動程式是否需要更新。",
+        "keywords": "Windows, 第二台螢幕, 偵測不到, 顯示設定, 轉接器",
+        "category": "display_hardware",
+        "difficulty": "medium",
+        "source_id": "SRC032",
+        "source_title": "Troubleshoot external monitor connections in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.36757707595825195,
+        "similarity": 0.632422924041748
+      },
+      {
+        "rank": 3,
+        "id": "BATTERY_011",
+        "question": "Windows 筆電電池耗電很快，可以先檢查哪些設定？",
+        "answer": "可以先檢查 Windows 的電源與電池使用情況，找出耗電較多的應用程式，並在不需要高效能時調整電源使用方式。也應確認裝置沒有長時間處於高溫環境。若續航力明顯異常，可以產生電池報告，查看目前電池容量資訊。",
+        "keywords": "Windows, 筆電, 電池耗電, 電源設定, 電池報告",
+        "category": "battery_charging",
+        "difficulty": "medium",
+        "source_id": "SRC029",
+        "source_title": "Caring for your battery in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3742733597755432,
+        "similarity": 0.6257266402244568
+      }
+    ],
+    "references": [
+      {
+        "title": "Troubleshoot external monitor connections in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Caring for your battery in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/power-battery/caring-for-your-battery-in-windows",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "DISPLAY_010",
+    "category": "display_hardware",
+    "question": "Windows 螢幕閃爍時，如何初步判斷是顯示卡驅動程式還是應用程式造成？",
+    "reference_answer": "可以先觀察工作管理員是否也跟著閃爍。如果工作管理員也閃爍，可能與顯示卡驅動程式有關；如果工作管理員沒有閃爍，則可能是某個不相容的應用程式造成。這只是初步判斷方式，後續仍應依照官方疑難排解指引檢查驅動程式或更新相關應用程式。",
+    "generated_answer": "根據提供的參考資料，**無法回答**如何初步判斷 Windows 螢幕閃爍是顯示卡驅動程式還是應用程式造成。\n\n原因如下：\n1.  **資料 1** 僅說明如何透過工作管理員檢查資源占用，未提及此方法適用於判斷「螢幕閃爍」的成因。\n2.  **資料 2** 僅說明如何進入安全模式以排查驅動衝突，未說明此方法能區分「螢幕閃爍」是驅動或應用程式所致。\n3.  **資料 3** 僅針對「外接螢幕無畫面」的排查，未涉及「螢幕閃爍」的診斷，也未提及應用程式與顯示卡驅動的區分方式。\n\n由於參考資料中缺乏關於「螢幕閃爍」故障診斷的具體資訊，無法提供判斷步驟或結論。",
+    "retrieval_query": "Windows 螢幕閃爍時，如何初步判斷是顯示卡驅動程式還是應用程式造成？",
+    "retrieved_context": "[資料 1]\n問題：Windows 筆電突然變得很慢，如何透過工作管理員找出占用 CPU、記憶體或磁碟資源的程式？\n答案：按 Ctrl + Shift + Esc 開啟工作管理員，進入「處理程序」（Processes），查看 CPU、記憶體及磁碟等資源使用情況。可以點選對應欄位，依使用量排序，找出目前占用資源較高的應用程式。若確認某個非必要應用程式正在大量占用資源，可以先正常關閉該程式，觀察電腦效能是否改善。不要因為某個程序使用率高，就直接結束不熟悉的 Windows 系統程序。若問題反覆發生，可以進一步檢查背景應用程式與開機啟動項目。\n分類：laptop_troubleshooting\n\n[資料 2]\n問題：Windows 筆電出現異常或疑似驅動程式衝突時，如何進入安全模式進行排查？\n答案：如果 Windows 無法正常啟動，可以先進入 Windows Recovery Environment（Windows 復原環境）。在復原環境中選擇「疑難排解」→「進階選項」→「啟動設定」→「重新啟動」。重新啟動後，依畫面指示選擇安全模式，通常按 4 或 F4 可進入安全模式；若需要網路功能，通常按 5 或 F5 可進入含網路功能的安全模式。安全模式只載入有限的驅動程式與服務，可以協助判斷問題是否與一般啟動時載入的元件有關。完成排查後重新啟動電腦即可嘗試正常啟動。\n分類：laptop_troubleshooting\n\n[資料 3]\n問題：Windows 外接螢幕有時正常、有時突然沒有畫面，應該如何排查？\n答案：先檢查連接線是否鬆動，並確認螢幕電源與輸入來源正常。可以重新插拔連接線，或改用其他支援的連接埠與線材測試。如果使用擴充基座或轉接器，也應確認其連接與相容性。若問題持續發生，再依照 Windows 外接螢幕疑難排解指引檢查顯示設定及顯示卡驅動程式。\n分類：display_hardware",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "id": "LAPTOP_017",
+        "question": "Windows 筆電突然變得很慢，如何透過工作管理員找出占用 CPU、記憶體或磁碟資源的程式？",
+        "answer": "按 Ctrl + Shift + Esc 開啟工作管理員，進入「處理程序」（Processes），查看 CPU、記憶體及磁碟等資源使用情況。可以點選對應欄位，依使用量排序，找出目前占用資源較高的應用程式。若確認某個非必要應用程式正在大量占用資源，可以先正常關閉該程式，觀察電腦效能是否改善。不要因為某個程序使用率高，就直接結束不熟悉的 Windows 系統程序。若問題反覆發生，可以進一步檢查背景應用程式與開機啟動項目。",
+        "keywords": "筆電變慢, 工作管理員, CPU 使用率, 記憶體占用, 磁碟使用率",
+        "category": "laptop_troubleshooting",
+        "difficulty": "medium",
+        "source_id": "SRC007",
+        "source_title": "Tips to improve PC performance in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.3674250841140747,
+        "similarity": 0.6325749158859253
+      },
+      {
+        "rank": 2,
+        "id": "LAPTOP_016",
+        "question": "Windows 筆電出現異常或疑似驅動程式衝突時，如何進入安全模式進行排查？",
+        "answer": "如果 Windows 無法正常啟動，可以先進入 Windows Recovery Environment（Windows 復原環境）。在復原環境中選擇「疑難排解」→「進階選項」→「啟動設定」→「重新啟動」。重新啟動後，依畫面指示選擇安全模式，通常按 4 或 F4 可進入安全模式；若需要網路功能，通常按 5 或 F5 可進入含網路功能的安全模式。安全模式只載入有限的驅動程式與服務，可以協助判斷問題是否與一般啟動時載入的元件有關。完成排查後重新啟動電腦即可嘗試正常啟動。",
+        "keywords": "安全模式, Safe Mode, Windows Recovery Environment, 啟動設定, 驅動程式衝突",
+        "category": "laptop_troubleshooting",
+        "difficulty": "hard",
+        "source_id": "SRC013",
+        "source_title": "Windows startup settings",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings",
+        "verified_at": "2026-11-11",
+        "distance": 0.37859731912612915,
+        "similarity": 0.6214026808738708
+      },
+      {
+        "rank": 3,
+        "id": "DISPLAY_015",
+        "question": "Windows 外接螢幕有時正常、有時突然沒有畫面，應該如何排查？",
+        "answer": "先檢查連接線是否鬆動，並確認螢幕電源與輸入來源正常。可以重新插拔連接線，或改用其他支援的連接埠與線材測試。如果使用擴充基座或轉接器，也應確認其連接與相容性。若問題持續發生，再依照 Windows 外接螢幕疑難排解指引檢查顯示設定及顯示卡驅動程式。",
+        "keywords": "Windows, 外接螢幕, 間歇性黑屏, 連接線, 顯示卡驅動程式",
+        "category": "display_hardware",
+        "difficulty": "hard",
+        "source_id": "SRC032",
+        "source_title": "Troubleshoot external monitor connections in Windows",
+        "source_publisher": "Microsoft Support",
+        "source_url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "verified_at": "2026-11-11",
+        "distance": 0.38094937801361084,
+        "similarity": 0.6190506219863892
+      }
+    ],
+    "references": [
+      {
+        "title": "Tips to improve PC performance in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Windows startup settings",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/startup-boot/windows-startup-settings",
+        "verified_at": "2026-11-11"
+      },
+      {
+        "title": "Troubleshoot external monitor connections in Windows",
+        "publisher": "Microsoft Support",
+        "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+        "verified_at": "2026-11-11"
+      }
+    ]
+  }
+]

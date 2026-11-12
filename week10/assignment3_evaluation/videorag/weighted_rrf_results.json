@@ -1,0 +1,3781 @@
+{
+  "experiment": "Weighted RRF comparison",
+  "created_at_utc": "2026-11-12T07:34:55.460440+00:00",
+  "input_file": "week10/assignment3_evaluation/videorag/videorag_evaluation_results.json",
+  "rrf_constant": 60,
+  "candidate_depth_per_modality": 8,
+  "final_top_k": 8,
+  "weights": {
+    "baseline_1.0_1.0": {
+      "speech": 1.0,
+      "ocr": 1.0
+    },
+    "weighted_A_1.5_1.0": {
+      "speech": 1.5,
+      "ocr": 1.0
+    },
+    "weighted_B_2.0_1.0": {
+      "speech": 2.0,
+      "ocr": 1.0
+    },
+    "weighted_C_1.0_1.5": {
+      "speech": 1.0,
+      "ocr": 1.5
+    }
+  },
+  "baseline_ranking_matches_saved": 6,
+  "question_count": 6,
+  "common_question_ids": [
+    "VQ01",
+    "VQ03",
+    "VQ04"
+  ],
+  "metrics_all_questions": {
+    "baseline_1.0_1.0": {
+      "eligible_questions": 6,
+      "total_gold_evidence": 15,
+      "recall@1": 0.2,
+      "hitrate@1": 0.5,
+      "recall@3": 0.5333333333333333,
+      "hitrate@3": 0.8333333333333334,
+      "recall@5": 0.7333333333333333,
+      "hitrate@5": 1.0,
+      "mrr": 0.6722222222222222
+    },
+    "weighted_A_1.5_1.0": {
+      "eligible_questions": 6,
+      "total_gold_evidence": 15,
+      "recall@1": 0.2,
+      "hitrate@1": 0.5,
+      "recall@3": 0.4,
+      "hitrate@3": 1.0,
+      "recall@5": 0.4,
+      "hitrate@5": 1.0,
+      "mrr": 0.7222222222222222
+    },
+    "weighted_B_2.0_1.0": {
+      "eligible_questions": 6,
+      "total_gold_evidence": 15,
+      "recall@1": 0.2,
+      "hitrate@1": 0.5,
+      "recall@3": 0.4,
+      "hitrate@3": 1.0,
+      "recall@5": 0.4,
+      "hitrate@5": 1.0,
+      "mrr": 0.7222222222222222
+    },
+    "weighted_C_1.0_1.5": {
+      "eligible_questions": 6,
+      "total_gold_evidence": 15,
+      "recall@1": 0.2,
+      "hitrate@1": 0.5,
+      "recall@3": 0.4,
+      "hitrate@3": 0.5,
+      "recall@5": 0.4666666666666667,
+      "hitrate@5": 0.5,
+      "mrr": 0.5
+    }
+  },
+  "metrics_common_questions": {
+    "baseline_1.0_1.0": {
+      "eligible_questions": 3,
+      "total_gold_evidence": 12,
+      "recall@1": 0.16666666666666666,
+      "hitrate@1": 0.6666666666666666,
+      "recall@3": 0.5,
+      "hitrate@3": 1.0,
+      "recall@5": 0.6666666666666666,
+      "hitrate@5": 1.0,
+      "mrr": 0.8333333333333334
+    },
+    "weighted_A_1.5_1.0": {
+      "eligible_questions": 3,
+      "total_gold_evidence": 12,
+      "recall@1": 0.16666666666666666,
+      "hitrate@1": 0.6666666666666666,
+      "recall@3": 0.25,
+      "hitrate@3": 1.0,
+      "recall@5": 0.25,
+      "hitrate@5": 1.0,
+      "mrr": 0.8333333333333334
+    },
+    "weighted_B_2.0_1.0": {
+      "eligible_questions": 3,
+      "total_gold_evidence": 12,
+      "recall@1": 0.16666666666666666,
+      "hitrate@1": 0.6666666666666666,
+      "recall@3": 0.25,
+      "hitrate@3": 1.0,
+      "recall@5": 0.25,
+      "hitrate@5": 1.0,
+      "mrr": 0.8333333333333334
+    },
+    "weighted_C_1.0_1.5": {
+      "eligible_questions": 3,
+      "total_gold_evidence": 12,
+      "recall@1": 0.25,
+      "hitrate@1": 1.0,
+      "recall@3": 0.5,
+      "hitrate@3": 1.0,
+      "recall@5": 0.5833333333333334,
+      "hitrate@5": 1.0,
+      "mrr": 1.0
+    }
+  },
+  "details": [
+    {
+      "question_id": "VQ01",
+      "question": "如何確認手機 Wi-Fi 已經開啟？",
+      "gold_speech_ids": [
+        "speech_0001"
+      ],
+      "gold_ocr_ids": [
+        "visual_0001",
+        "visual_0002"
+      ],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 50.0
+            },
+            "distance": 0.2087763547897339,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 2.045,
+              "frame_index": 1,
+              "end_seconds": 2.045,
+              "ocr_token_count": 26
+            },
+            "distance": 0.42043137550354004,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 20.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0
+            },
+            "distance": 0.24793565273284912,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 8.044,
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "start_seconds": 8.044,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 4,
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43501025438308716,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "modality": "speech"
+            },
+            "distance": 0.30188649892807007,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 14.043,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 7,
+              "frame_index": 7,
+              "start_seconds": 14.043,
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43501025438308716,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "end_seconds": 43.0
+            },
+            "distance": 0.3059971332550049,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0002",
+            "text": "設定 At 飛航模式 fl) Wi-Fi Home-WiFi > 7 開啟, 行動服務 , 聲音與觸覺回饋 ,",
+            "metadata": {
+              "frame_index": 2,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "end_seconds": 4.045,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 24,
+              "start_seconds": 4.045,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0002.jpg"
+            },
+            "distance": 0.4363340735435486,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 50.0
+            },
+            "distance": 0.2087763547897339,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 20.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0
+            },
+            "distance": 0.24793565273284912,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "modality": "speech"
+            },
+            "distance": 0.30188649892807007,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "end_seconds": 43.0
+            },
+            "distance": 0.3059971332550049,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech"
+            },
+            "distance": 0.33820676803588867,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "language": "zh",
+              "start_seconds": 64.0,
+              "end_seconds": 73.0
+            },
+            "distance": 0.3411881923675537,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 50.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "language": "zh"
+            },
+            "distance": 0.36656588315963745,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "model": "small",
+              "start_seconds": 73.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 75.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech"
+            },
+            "distance": 0.5283440947532654,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 50.0
+            },
+            "distance": 0.2087763547897339,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 20.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0
+            },
+            "distance": 0.24793565273284912,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "modality": "speech"
+            },
+            "distance": 0.30188649892807007,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "end_seconds": 43.0
+            },
+            "distance": 0.3059971332550049,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech"
+            },
+            "distance": 0.33820676803588867,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "language": "zh",
+              "start_seconds": 64.0,
+              "end_seconds": 73.0
+            },
+            "distance": 0.3411881923675537,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 50.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "language": "zh"
+            },
+            "distance": 0.36656588315963745,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "model": "small",
+              "start_seconds": 73.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 75.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech"
+            },
+            "distance": 0.5283440947532654,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 2.045,
+              "frame_index": 1,
+              "end_seconds": 2.045,
+              "ocr_token_count": 26
+            },
+            "distance": 0.42043137550354004,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 8.044,
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "start_seconds": 8.044,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 4,
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43501025438308716,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 14.043,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 7,
+              "frame_index": 7,
+              "start_seconds": 14.043,
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43501025438308716,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0002",
+            "text": "設定 At 飛航模式 fl) Wi-Fi Home-WiFi > 7 開啟, 行動服務 , 聲音與觸覺回饋 ,",
+            "metadata": {
+              "frame_index": 2,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "end_seconds": 4.045,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 24,
+              "start_seconds": 4.045,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0002.jpg"
+            },
+            "distance": 0.4363340735435486,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0003",
+            "text": "9:41 see BE Wi-Fi Wi-Fi @© 我的網路 SS Home-WiFi Vv ac 其他網中 Cafe-Guest Office-5G ,",
+            "metadata": {
+              "ocr_token_count": 21,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0003.jpg",
+              "ocr_engine": "tesseract",
+              "end_seconds": 6.044,
+              "start_seconds": 6.044,
+              "frame_index": 3,
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43765735626220703,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "frame_index": 5,
+              "end_seconds": 10.043,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "start_seconds": 10.043
+            },
+            "distance": 0.44004446268081665,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_token_count": 21,
+              "start_seconds": 16.042,
+              "end_seconds": 16.042,
+              "ocr_engine": "tesseract",
+              "frame_index": 8,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg"
+            },
+            "distance": 0.44216597080230713,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "frame_index": 12,
+              "end_seconds": 24.041,
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "start_seconds": 24.041
+            },
+            "distance": 0.44235849380493164,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0004",
+        "visual_0001",
+        "speech_0001",
+        "visual_0004",
+        "speech_0000",
+        "visual_0007",
+        "speech_0003",
+        "visual_0002"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0004",
+        "visual_0001",
+        "speech_0001",
+        "visual_0004",
+        "speech_0000",
+        "visual_0007",
+        "speech_0003",
+        "visual_0002"
+      ],
+      "baseline_ranking_matches_saved": true
+    },
+    {
+      "question_id": "VQ02",
+      "question": "Wi-Fi 已開啟但仍然無法連線，應該怎麼辦？",
+      "gold_speech_ids": [
+        "speech_0002"
+      ],
+      "gold_ocr_ids": [],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.2289869785308838,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 11,
+              "end_seconds": 22.041,
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 24
+            },
+            "distance": 0.4098365902900696,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 20.0,
+              "model": "small",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 33.0
+            },
+            "distance": 0.26787376403808594,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "start_seconds": 26.04,
+              "frame_index": 13,
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "end_seconds": 26.04,
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43483585119247437,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 64.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.28359997272491455,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "end_seconds": 24.041,
+              "frame_index": 12,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 24.041,
+              "modality": "visual_ocr"
+            },
+            "distance": 0.4409528970718384,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "start_seconds": 50.0,
+              "language": "zh",
+              "modality": "speech",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.32123732566833496,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "ocr_token_count": 21,
+              "end_seconds": 16.042,
+              "start_seconds": 16.042,
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 8
+            },
+            "distance": 0.4453725218772888,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.2289869785308838,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 20.0,
+              "model": "small",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 33.0
+            },
+            "distance": 0.26787376403808594,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 64.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.28359997272491455,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "start_seconds": 50.0,
+              "language": "zh",
+              "modality": "speech",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.32123732566833496,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "start_seconds": 43.0,
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 50.0,
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.34172195196151733,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 10.0,
+              "modality": "speech",
+              "end_seconds": 20.0
+            },
+            "distance": 0.3525853753089905,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "end_seconds": 43.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.3638625144958496,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "end_seconds": 75.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 73.0,
+              "modality": "speech"
+            },
+            "distance": 0.5243730545043945,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.2289869785308838,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 20.0,
+              "model": "small",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 33.0
+            },
+            "distance": 0.26787376403808594,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 64.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.28359997272491455,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "start_seconds": 50.0,
+              "language": "zh",
+              "modality": "speech",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.32123732566833496,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "start_seconds": 43.0,
+              "language": "zh",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 50.0,
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.34172195196151733,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 10.0,
+              "modality": "speech",
+              "end_seconds": 20.0
+            },
+            "distance": 0.3525853753089905,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "end_seconds": 43.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.3638625144958496,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "end_seconds": 75.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 73.0,
+              "modality": "speech"
+            },
+            "distance": 0.5243730545043945,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 11,
+              "end_seconds": 22.041,
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 24
+            },
+            "distance": 0.4098365902900696,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "start_seconds": 26.04,
+              "frame_index": 13,
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "end_seconds": 26.04,
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.43483585119247437,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "end_seconds": 24.041,
+              "frame_index": 12,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 24.041,
+              "modality": "visual_ocr"
+            },
+            "distance": 0.4409528970718384,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "ocr_token_count": 21,
+              "end_seconds": 16.042,
+              "start_seconds": 16.042,
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 8
+            },
+            "distance": 0.4453725218772888,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0010",
+            "text": "9:41 eeu HE Wi-Fi 我的網路 Home-WiFi O @ G 其他網路 Cafe-Guest a Office-5G 人 © 點選網路名稱",
+            "metadata": {
+              "start_seconds": 20.042,
+              "ocr_token_count": 27,
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 20.042,
+              "modality": "visual_ocr",
+              "frame_index": 10,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg",
+              "ocr_engine": "tesseract"
+            },
+            "distance": 0.4492255449295044,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 1,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 26,
+              "end_seconds": 2.045,
+              "start_seconds": 2.045,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "ocr_languages": "chi_tra+eng"
+            },
+            "distance": 0.44975918531417847,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "ocr_token_count": 7,
+              "frame_index": 5,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_engine": "tesseract",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "modality": "visual_ocr",
+              "start_seconds": 10.043,
+              "end_seconds": 10.043,
+              "ocr_languages": "chi_tra+eng"
+            },
+            "distance": 0.44990652799606323,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "frame_index": 4,
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 8.044,
+              "modality": "visual_ocr",
+              "ocr_token_count": 7,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "start_seconds": 8.044,
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.4511803388595581,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0000",
+        "visual_0011",
+        "speech_0002",
+        "visual_0013",
+        "speech_0006",
+        "visual_0012",
+        "speech_0005",
+        "visual_0008"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0000",
+        "visual_0011",
+        "speech_0002",
+        "visual_0013",
+        "speech_0006",
+        "visual_0012",
+        "speech_0005",
+        "visual_0008"
+      ],
+      "baseline_ranking_matches_saved": true
+    },
+    {
+      "question_id": "VQ03",
+      "question": "如何選擇想要連線的 Wi-Fi 網路？",
+      "gold_speech_ids": [
+        "speech_0003"
+      ],
+      "gold_ocr_ids": [
+        "visual_0003",
+        "visual_0008",
+        "visual_0009",
+        "visual_0010"
+      ],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "start_seconds": 33.0,
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.3800687789916992,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "ocr_token_count": 21,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "end_seconds": 16.042,
+              "frame_index": 8,
+              "start_seconds": 16.042,
+              "modality": "visual_ocr",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng"
+            },
+            "distance": 0.4381483197212219,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "start_seconds": 0.0,
+              "modality": "speech"
+            },
+            "distance": 0.40898066759109497,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0010",
+            "text": "9:41 eeu HE Wi-Fi 我的網路 Home-WiFi O @ G 其他網路 Cafe-Guest a Office-5G 人 © 點選網路名稱",
+            "metadata": {
+              "start_seconds": 20.042,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg",
+              "modality": "visual_ocr",
+              "ocr_token_count": 27,
+              "frame_index": 10,
+              "ocr_languages": "chi_tra+eng",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 20.042
+            },
+            "distance": 0.4483429193496704,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "language": "zh",
+              "end_seconds": 50.0
+            },
+            "distance": 0.4227348566055298,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 7,
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 5,
+              "video_id": "wifi_troubleshooting_silent",
+              "start_seconds": 10.043,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "end_seconds": 10.043
+            },
+            "distance": 0.46873706579208374,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 64.0,
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.4602530002593994,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "end_seconds": 22.041,
+              "ocr_token_count": 24,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 11,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg"
+            },
+            "distance": 0.47686344385147095,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "start_seconds": 33.0,
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.3800687789916992,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "start_seconds": 0.0,
+              "modality": "speech"
+            },
+            "distance": 0.40898066759109497,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "language": "zh",
+              "end_seconds": 50.0
+            },
+            "distance": 0.4227348566055298,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 64.0,
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.4602530002593994,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "language": "zh",
+              "modality": "speech",
+              "end_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0,
+              "model": "small"
+            },
+            "distance": 0.4769190549850464,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "language": "zh",
+              "model": "small",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4967256188392639,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "language": "zh",
+              "start_seconds": 50.0,
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.5404110550880432,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 75.0,
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small"
+            },
+            "distance": 0.5635535717010498,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "start_seconds": 33.0,
+              "model": "small",
+              "language": "zh"
+            },
+            "distance": 0.3800687789916992,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "language": "zh",
+              "model": "small",
+              "start_seconds": 0.0,
+              "modality": "speech"
+            },
+            "distance": 0.40898066759109497,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "language": "zh",
+              "end_seconds": 50.0
+            },
+            "distance": 0.4227348566055298,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "modality": "speech",
+              "start_seconds": 64.0,
+              "end_seconds": 73.0,
+              "language": "zh",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.4602530002593994,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "language": "zh",
+              "modality": "speech",
+              "end_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0,
+              "model": "small"
+            },
+            "distance": 0.4769190549850464,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "language": "zh",
+              "model": "small",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4967256188392639,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "language": "zh",
+              "start_seconds": 50.0,
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.5404110550880432,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 75.0,
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small"
+            },
+            "distance": 0.5635535717010498,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "ocr_token_count": 21,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "end_seconds": 16.042,
+              "frame_index": 8,
+              "start_seconds": 16.042,
+              "modality": "visual_ocr",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng"
+            },
+            "distance": 0.4381483197212219,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0010",
+            "text": "9:41 eeu HE Wi-Fi 我的網路 Home-WiFi O @ G 其他網路 Cafe-Guest a Office-5G 人 © 點選網路名稱",
+            "metadata": {
+              "start_seconds": 20.042,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg",
+              "modality": "visual_ocr",
+              "ocr_token_count": 27,
+              "frame_index": 10,
+              "ocr_languages": "chi_tra+eng",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 20.042
+            },
+            "distance": 0.4483429193496704,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 7,
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 5,
+              "video_id": "wifi_troubleshooting_silent",
+              "start_seconds": 10.043,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "end_seconds": 10.043
+            },
+            "distance": 0.46873706579208374,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "end_seconds": 22.041,
+              "ocr_token_count": 24,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 11,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg"
+            },
+            "distance": 0.47686344385147095,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 4,
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 8.044,
+              "end_seconds": 8.044
+            },
+            "distance": 0.48179179430007935,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "start_seconds": 14.043,
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "ocr_token_count": 7,
+              "frame_index": 7,
+              "end_seconds": 14.043,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.48179179430007935,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 24.041,
+              "ocr_languages": "chi_tra+eng",
+              "ocr_token_count": 22,
+              "frame_index": 12,
+              "start_seconds": 24.041
+            },
+            "distance": 0.4851330518722534,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0003",
+            "text": "9:41 see BE Wi-Fi Wi-Fi @© 我的網路 SS Home-WiFi Vv ac 其他網中 Cafe-Guest Office-5G ,",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 6.044,
+              "modality": "visual_ocr",
+              "frame_index": 3,
+              "ocr_token_count": 21,
+              "start_seconds": 6.044,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0003.jpg"
+            },
+            "distance": 0.4935893416404724,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0003",
+        "visual_0008",
+        "speech_0000",
+        "visual_0010",
+        "speech_0004",
+        "visual_0005",
+        "speech_0006",
+        "visual_0011"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0003",
+        "visual_0008",
+        "speech_0000",
+        "visual_0010",
+        "speech_0004",
+        "visual_0005",
+        "speech_0006",
+        "visual_0011"
+      ],
+      "baseline_ranking_matches_saved": true
+    },
+    {
+      "question_id": "VQ04",
+      "question": "如何確認手機已成功連線 Wi-Fi？",
+      "gold_speech_ids": [
+        "speech_0004"
+      ],
+      "gold_ocr_ids": [
+        "visual_0011",
+        "visual_0012",
+        "visual_0013"
+      ],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 50.0,
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "model": "small"
+            },
+            "distance": 0.1705712080001831,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "start_seconds": 24.041,
+              "ocr_engine": "tesseract",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr",
+              "end_seconds": 24.041,
+              "frame_index": 12,
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.4142771363258362,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "model": "small",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "modality": "speech",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.26403337717056274,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 24,
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 11,
+              "modality": "visual_ocr",
+              "start_seconds": 22.041,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "ocr_engine": "tesseract",
+              "end_seconds": 22.041
+            },
+            "distance": 0.4142805337905884,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 20.0,
+              "start_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.27943217754364014,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "end_seconds": 26.04,
+              "frame_index": 13,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "start_seconds": 26.04,
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.41834932565689087,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "start_seconds": 33.0,
+              "model": "small",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.2940881848335266,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 8.044,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 8.044,
+              "frame_index": 4,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg"
+            },
+            "distance": 0.4485078454017639,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 50.0,
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "model": "small"
+            },
+            "distance": 0.1705712080001831,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "model": "small",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "modality": "speech",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.26403337717056274,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 20.0,
+              "start_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.27943217754364014,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "start_seconds": 33.0,
+              "model": "small",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.2940881848335266,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 64.0,
+              "model": "small"
+            },
+            "distance": 0.30897384881973267,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "start_seconds": 20.0,
+              "end_seconds": 33.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.3320806622505188,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 64.0,
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 50.0,
+              "model": "small"
+            },
+            "distance": 0.3520694971084595,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "start_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 75.0,
+              "modality": "speech"
+            },
+            "distance": 0.5198572874069214,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 50.0,
+              "start_seconds": 43.0,
+              "modality": "speech",
+              "model": "small"
+            },
+            "distance": 0.1705712080001831,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "model": "small",
+              "start_seconds": 0.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 10.0,
+              "modality": "speech",
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.26403337717056274,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 20.0,
+              "start_seconds": 10.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.27943217754364014,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "start_seconds": 33.0,
+              "model": "small",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.2940881848335266,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 64.0,
+              "model": "small"
+            },
+            "distance": 0.30897384881973267,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "start_seconds": 20.0,
+              "end_seconds": 33.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.3320806622505188,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 64.0,
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 50.0,
+              "model": "small"
+            },
+            "distance": 0.3520694971084595,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "start_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 75.0,
+              "modality": "speech"
+            },
+            "distance": 0.5198572874069214,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "start_seconds": 24.041,
+              "ocr_engine": "tesseract",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr",
+              "end_seconds": 24.041,
+              "frame_index": 12,
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.4142771363258362,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 24,
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 11,
+              "modality": "visual_ocr",
+              "start_seconds": 22.041,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "ocr_engine": "tesseract",
+              "end_seconds": 22.041
+            },
+            "distance": 0.4142805337905884,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "end_seconds": 26.04,
+              "frame_index": 13,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "start_seconds": 26.04,
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.41834932565689087,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 8.044,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 8.044,
+              "frame_index": 4,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg"
+            },
+            "distance": 0.4485078454017639,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 7,
+              "start_seconds": 14.043,
+              "ocr_engine": "tesseract",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "end_seconds": 14.043,
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "ocr_token_count": 7
+            },
+            "distance": 0.4485078454017639,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "start_seconds": 10.043,
+              "ocr_token_count": 7,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "end_seconds": 10.043,
+              "ocr_engine": "tesseract",
+              "frame_index": 5
+            },
+            "distance": 0.45079725980758667,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "frame_index": 1,
+              "start_seconds": 2.045,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 26,
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "end_seconds": 2.045
+            },
+            "distance": 0.45663315057754517,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "start_seconds": 16.042,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 8,
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "ocr_token_count": 21,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 16.042
+            },
+            "distance": 0.4642685055732727,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0004",
+        "visual_0012",
+        "speech_0000",
+        "visual_0011",
+        "speech_0001",
+        "visual_0013",
+        "speech_0003",
+        "visual_0004"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0004",
+        "visual_0012",
+        "speech_0000",
+        "visual_0011",
+        "speech_0001",
+        "visual_0013",
+        "speech_0003",
+        "visual_0004"
+      ],
+      "baseline_ranking_matches_saved": true
+    },
+    {
+      "question_id": "VQ05",
+      "question": "重新連線後仍然無法使用，下一步該怎麼辦？",
+      "gold_speech_ids": [
+        "speech_0005"
+      ],
+      "gold_ocr_ids": [],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 64.0,
+              "start_seconds": 50.0
+            },
+            "distance": 0.29764509201049805,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 22.041,
+              "frame_index": 11,
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "ocr_token_count": 24
+            },
+            "distance": 0.4633394479751587,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "modality": "speech"
+            },
+            "distance": 0.32031959295272827,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 26.04,
+              "start_seconds": 26.04,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "frame_index": 13
+            },
+            "distance": 0.47116512060165405,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "model": "small",
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.3209327459335327,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "frame_index": 12,
+              "ocr_languages": "chi_tra+eng",
+              "ocr_token_count": 22,
+              "end_seconds": 24.041,
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "video_id": "wifi_troubleshooting_silent",
+              "start_seconds": 24.041
+            },
+            "distance": 0.48583894968032837,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.35237252712249756,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 10.043,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 10.043,
+              "frame_index": 5
+            },
+            "distance": 0.4917948246002197,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 64.0,
+              "start_seconds": 50.0
+            },
+            "distance": 0.29764509201049805,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "modality": "speech"
+            },
+            "distance": 0.32031959295272827,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "model": "small",
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.3209327459335327,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.35237252712249756,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 50.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "start_seconds": 43.0,
+              "modality": "speech"
+            },
+            "distance": 0.39535123109817505,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0,
+              "end_seconds": 20.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.4088099002838135,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "model": "small",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4168034791946411,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "start_seconds": 73.0,
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 75.0,
+              "modality": "speech"
+            },
+            "distance": 0.4837793707847595,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "end_seconds": 64.0,
+              "start_seconds": 50.0
+            },
+            "distance": 0.29764509201049805,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "end_seconds": 10.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "model": "small",
+              "modality": "speech"
+            },
+            "distance": 0.32031959295272827,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "model": "small",
+              "language": "zh",
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 33.0,
+              "start_seconds": 20.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.3209327459335327,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "model": "small",
+              "language": "zh",
+              "start_seconds": 64.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.35237252712249756,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "end_seconds": 50.0,
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "model": "small",
+              "start_seconds": 43.0,
+              "modality": "speech"
+            },
+            "distance": 0.39535123109817505,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 10.0,
+              "end_seconds": 20.0,
+              "language": "zh",
+              "video_id": "wifi_troubleshooting_speech",
+              "modality": "speech"
+            },
+            "distance": 0.4088099002838135,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "model": "small",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "start_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4168034791946411,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "language": "zh",
+              "start_seconds": 73.0,
+              "model": "small",
+              "video_id": "wifi_troubleshooting_speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "end_seconds": 75.0,
+              "modality": "speech"
+            },
+            "distance": 0.4837793707847595,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 22.041,
+              "frame_index": 11,
+              "ocr_engine": "tesseract",
+              "start_seconds": 22.041,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "ocr_token_count": 24
+            },
+            "distance": 0.4633394479751587,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0013",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi ba: 其他網路 Cafe-Guest Office-5G CV) 連線成功",
+            "metadata": {
+              "ocr_token_count": 22,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 26.04,
+              "start_seconds": 26.04,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0013.jpg",
+              "frame_index": 13
+            },
+            "distance": 0.47116512060165405,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0012",
+            "text": "9:41 seu (ME WI-FI Wi-Fi 我的網路 Home-WiFi le 其他網路 Cafe-Guest Office-5G G@連線成功",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0012.jpg",
+              "frame_index": 12,
+              "ocr_languages": "chi_tra+eng",
+              "ocr_token_count": 22,
+              "end_seconds": 24.041,
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "video_id": "wifi_troubleshooting_silent",
+              "start_seconds": 24.041
+            },
+            "distance": 0.48583894968032837,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0005",
+            "text": "9:41 9e@ 圖 設定 Wi-Fi Wi-Fi )",
+            "metadata": {
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0005.jpg",
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 10.043,
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 10.043,
+              "frame_index": 5
+            },
+            "distance": 0.4917948246002197,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0010",
+            "text": "9:41 eeu HE Wi-Fi 我的網路 Home-WiFi O @ G 其他網路 Cafe-Guest a Office-5G 人 © 點選網路名稱",
+            "metadata": {
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr",
+              "start_seconds": 20.042,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 10,
+              "end_seconds": 20.042,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg",
+              "ocr_token_count": 27
+            },
+            "distance": 0.49480533599853516,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "ocr_token_count": 7,
+              "start_seconds": 8.044,
+              "video_id": "wifi_troubleshooting_silent",
+              "end_seconds": 8.044,
+              "frame_index": 4,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.49536460638046265,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 14.043,
+              "start_seconds": 14.043,
+              "ocr_engine": "tesseract",
+              "frame_index": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "ocr_token_count": 7
+            },
+            "distance": 0.49536460638046265,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 21,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "start_seconds": 16.042,
+              "modality": "visual_ocr",
+              "end_seconds": 16.042,
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 8
+            },
+            "distance": 0.5016160011291504,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0005",
+        "visual_0011",
+        "speech_0000",
+        "visual_0013",
+        "speech_0002",
+        "visual_0012",
+        "speech_0006",
+        "visual_0005"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0005",
+        "visual_0011",
+        "speech_0000",
+        "visual_0013",
+        "speech_0002",
+        "visual_0012",
+        "speech_0006",
+        "visual_0005"
+      ],
+      "baseline_ranking_matches_saved": true
+    },
+    {
+      "question_id": "VQ06",
+      "question": "Wi-Fi 故障時，影片建議檢查路由器或重新啟動哪個裝置？",
+      "gold_speech_ids": [
+        "speech_0005"
+      ],
+      "gold_ocr_ids": [],
+      "methods": {
+        "baseline_1.0_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 10.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "language": "zh"
+            },
+            "distance": 0.2608945369720459,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 8.044,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 7,
+              "ocr_engine": "tesseract",
+              "start_seconds": 8.044,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "frame_index": 4,
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.5052515864372253,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "start_seconds": 64.0,
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh"
+            },
+            "distance": 0.42406415939331055,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "end_seconds": 14.043,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 7,
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 14.043
+            },
+            "distance": 0.5052515864372253,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 50.0,
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "language": "zh"
+            },
+            "distance": 0.429290235042572,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "frame_index": 8,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 16.042,
+              "modality": "visual_ocr",
+              "start_seconds": 16.042,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 21,
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.507978081703186,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "end_seconds": 50.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "language": "zh",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4506828784942627,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.015625
+          },
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "end_seconds": 2.045,
+              "frame_index": 1,
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "ocr_token_count": 26,
+              "start_seconds": 2.045
+            },
+            "distance": 0.5118558406829834,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.015625
+          }
+        ],
+        "weighted_A_1.5_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 10.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "language": "zh"
+            },
+            "distance": 0.2608945369720459,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "start_seconds": 64.0,
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh"
+            },
+            "distance": 0.42406415939331055,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 50.0,
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "language": "zh"
+            },
+            "distance": 0.429290235042572,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "end_seconds": 50.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "language": "zh",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4506828784942627,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "end_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "start_seconds": 20.0,
+              "language": "zh",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.46953272819519043,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 10.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "end_seconds": 20.0
+            },
+            "distance": 0.4908679127693176,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "start_seconds": 33.0,
+              "model": "small",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.5091695785522461,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "end_seconds": 75.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 73.0,
+              "model": "small",
+              "modality": "speech"
+            },
+            "distance": 0.6000432968139648,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.022058823529411766
+          }
+        ],
+        "weighted_B_2.0_1.0": [
+          {
+            "id": "speech_0000",
+            "text": "这段影片要介绍,当手机无法连接WiFi时,可以如何进行基本故障排除。",
+            "metadata": {
+              "modality": "speech",
+              "end_seconds": 10.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 0.0,
+              "language": "zh"
+            },
+            "distance": 0.2608945369720459,
+            "speech_rank": 1,
+            "ocr_rank": null,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "speech_0006",
+            "text": "以上就是手机无法连接WiFi时,可以进行的基本故障排除步骤。",
+            "metadata": {
+              "end_seconds": 73.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "start_seconds": 64.0,
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh"
+            },
+            "distance": 0.42406415939331055,
+            "speech_rank": 2,
+            "ocr_rank": null,
+            "rrf_score": 0.03225806451612903
+          },
+          {
+            "id": "speech_0005",
+            "text": "如果重新连线后,问题仍然存在,可以进一步检查无线路由器是否正常运作,或是尝试重新启动手机。",
+            "metadata": {
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "start_seconds": 50.0,
+              "modality": "speech",
+              "end_seconds": 64.0,
+              "language": "zh"
+            },
+            "distance": 0.429290235042572,
+            "speech_rank": 3,
+            "ocr_rank": null,
+            "rrf_score": 0.031746031746031744
+          },
+          {
+            "id": "speech_0004",
+            "text": "连线完成后,确认手机是否成功连上WiFi。",
+            "metadata": {
+              "end_seconds": 50.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "modality": "speech",
+              "language": "zh",
+              "start_seconds": 43.0,
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.4506828784942627,
+            "speech_rank": 4,
+            "ocr_rank": null,
+            "rrf_score": 0.03125
+          },
+          {
+            "id": "speech_0002",
+            "text": "如果WiFi已经开启,但手机仍然无法连线,可以先关闭WiFi,等待几秒钟后,再重新开启。",
+            "metadata": {
+              "end_seconds": 33.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "model": "small",
+              "start_seconds": 20.0,
+              "language": "zh",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav"
+            },
+            "distance": 0.46953272819519043,
+            "speech_rank": 5,
+            "ocr_rank": null,
+            "rrf_score": 0.03076923076923077
+          },
+          {
+            "id": "speech_0001",
+            "text": "首先,打开手机的设定,进入WiFi页面,确认WiFi功能是否已经开启。",
+            "metadata": {
+              "modality": "speech",
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 10.0,
+              "model": "small",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "end_seconds": 20.0
+            },
+            "distance": 0.4908679127693176,
+            "speech_rank": 6,
+            "ocr_rank": null,
+            "rrf_score": 0.030303030303030304
+          },
+          {
+            "id": "speech_0003",
+            "text": "接着,选择想要连接的WiFi网路,点选网路名称,等待手机尝试连线。",
+            "metadata": {
+              "start_seconds": 33.0,
+              "model": "small",
+              "end_seconds": 43.0,
+              "language": "zh",
+              "modality": "speech",
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "video_id": "wifi_troubleshooting_speech"
+            },
+            "distance": 0.5091695785522461,
+            "speech_rank": 7,
+            "ocr_rank": null,
+            "rrf_score": 0.029850746268656716
+          },
+          {
+            "id": "speech_0007",
+            "text": "谢谢大家!",
+            "metadata": {
+              "source_file": "outputs/audio/wifi_troubleshooting_speech.wav",
+              "language": "zh",
+              "end_seconds": 75.0,
+              "video_id": "wifi_troubleshooting_speech",
+              "start_seconds": 73.0,
+              "model": "small",
+              "modality": "speech"
+            },
+            "distance": 0.6000432968139648,
+            "speech_rank": 8,
+            "ocr_rank": null,
+            "rrf_score": 0.029411764705882353
+          }
+        ],
+        "weighted_C_1.0_1.5": [
+          {
+            "id": "visual_0004",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "end_seconds": 8.044,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_token_count": 7,
+              "ocr_engine": "tesseract",
+              "start_seconds": 8.044,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0004.jpg",
+              "frame_index": 4,
+              "ocr_languages": "chi_tra+eng",
+              "modality": "visual_ocr"
+            },
+            "distance": 0.5052515864372253,
+            "speech_rank": null,
+            "ocr_rank": 1,
+            "rrf_score": 0.02459016393442623
+          },
+          {
+            "id": "visual_0007",
+            "text": "9:41 9e@ 圖 BE Wi-Fi Wi-Fi y",
+            "metadata": {
+              "ocr_engine": "tesseract",
+              "end_seconds": 14.043,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0007.jpg",
+              "ocr_token_count": 7,
+              "video_id": "wifi_troubleshooting_silent",
+              "frame_index": 7,
+              "ocr_languages": "chi_tra+eng",
+              "start_seconds": 14.043
+            },
+            "distance": 0.5052515864372253,
+            "speech_rank": null,
+            "ocr_rank": 2,
+            "rrf_score": 0.024193548387096774
+          },
+          {
+            "id": "visual_0008",
+            "text": "9:41 @On “設定 Wi-Fi Wi-Fi ( @ 我的網路 Home-WiFi we 其他網路 Cafe-Guest i Office-5G wu",
+            "metadata": {
+              "frame_index": 8,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0008.jpg",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 16.042,
+              "modality": "visual_ocr",
+              "start_seconds": 16.042,
+              "ocr_engine": "tesseract",
+              "ocr_token_count": 21,
+              "video_id": "wifi_troubleshooting_silent"
+            },
+            "distance": 0.507978081703186,
+            "speech_rank": null,
+            "ocr_rank": 3,
+            "rrf_score": 0.023809523809523808
+          },
+          {
+            "id": "visual_0001",
+            "text": "9:41 @@un 設定 At 飛航模式 fl) Wi-Fi « Home-WiFi > 藍牙 開啟, 行動服務 聲音與觸覺回饋",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0001.jpg",
+              "end_seconds": 2.045,
+              "frame_index": 1,
+              "ocr_engine": "tesseract",
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "ocr_token_count": 26,
+              "start_seconds": 2.045
+            },
+            "distance": 0.5118558406829834,
+            "speech_rank": null,
+            "ocr_rank": 4,
+            "rrf_score": 0.0234375
+          },
+          {
+            "id": "visual_0010",
+            "text": "9:41 eeu HE Wi-Fi 我的網路 Home-WiFi O @ G 其他網路 Cafe-Guest a Office-5G 人 © 點選網路名稱",
+            "metadata": {
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0010.jpg",
+              "ocr_engine": "tesseract",
+              "start_seconds": 20.042,
+              "ocr_languages": "chi_tra+eng",
+              "video_id": "wifi_troubleshooting_silent",
+              "modality": "visual_ocr",
+              "end_seconds": 20.042,
+              "frame_index": 10,
+              "ocr_token_count": 27
+            },
+            "distance": 0.5166275501251221,
+            "speech_rank": null,
+            "ocr_rank": 5,
+            "rrf_score": 0.023076923076923078
+          },
+          {
+            "id": "visual_0002",
+            "text": "設定 At 飛航模式 fl) Wi-Fi Home-WiFi > 7 開啟, 行動服務 , 聲音與觸覺回饋 ,",
+            "metadata": {
+              "ocr_token_count": 24,
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_engine": "tesseract",
+              "modality": "visual_ocr",
+              "ocr_languages": "chi_tra+eng",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0002.jpg",
+              "frame_index": 2,
+              "start_seconds": 4.045,
+              "end_seconds": 4.045
+            },
+            "distance": 0.51811283826828,
+            "speech_rank": null,
+            "ocr_rank": 6,
+            "rrf_score": 0.022727272727272728
+          },
+          {
+            "id": "visual_0011",
+            "text": "9:41 een «BRIE WI-FI 我的網路 Home-WiFi ~ eo 其他網路 Cafe-Guest a Office-5G a 07) 連線成功",
+            "metadata": {
+              "modality": "visual_ocr",
+              "ocr_token_count": 24,
+              "end_seconds": 22.041,
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0011.jpg",
+              "start_seconds": 22.041,
+              "ocr_engine": "tesseract",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_languages": "chi_tra+eng",
+              "frame_index": 11
+            },
+            "distance": 0.5190830826759338,
+            "speech_rank": null,
+            "ocr_rank": 7,
+            "rrf_score": 0.022388059701492536
+          },
+          {
+            "id": "visual_0003",
+            "text": "9:41 see BE Wi-Fi Wi-Fi @© 我的網路 SS Home-WiFi Vv ac 其他網中 Cafe-Guest Office-5G ,",
+            "metadata": {
+              "start_seconds": 6.044,
+              "modality": "visual_ocr",
+              "source_file": "frames/silent/wifi_troubleshooting_silent/frame_0003.jpg",
+              "video_id": "wifi_troubleshooting_silent",
+              "ocr_languages": "chi_tra+eng",
+              "end_seconds": 6.044,
+              "frame_index": 3,
+              "ocr_token_count": 21,
+              "ocr_engine": "tesseract"
+            },
+            "distance": 0.5243093967437744,
+            "speech_rank": null,
+            "ocr_rank": 8,
+            "rrf_score": 0.022058823529411766
+          }
+        ]
+      },
+      "saved_original_rrf_ids": [
+        "speech_0000",
+        "visual_0004",
+        "speech_0006",
+        "visual_0007",
+        "speech_0005",
+        "visual_0008",
+        "speech_0004",
+        "visual_0001"
+      ],
+      "reconstructed_baseline_ids": [
+        "speech_0000",
+        "visual_0004",
+        "speech_0006",
+        "visual_0007",
+        "speech_0005",
+        "visual_0008",
+        "speech_0004",
+        "visual_0001"
+      ],
+      "baseline_ranking_matches_saved": true
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "project": "VideoRAG Retrieval Evaluation",
+  "annotation_note": "Ground truth evidence IDs are manually annotated from original speech transcript and OCR transcript. Speech and OCR are separate video sources, so their timestamps must not be treated as one shared timeline.",
+  "questions": [
+    {
+      "id": "VQ01",
+      "question": "如何確認手機 Wi-Fi 已經開啟？",
+      "gold_speech_ids": [
+        "speech_0001"
+      ],
+      "gold_ocr_ids": [
+        "visual_0001",
+        "visual_0002"
+      ]
+    },
+    {
+      "id": "VQ02",
+      "question": "Wi-Fi 已開啟但仍然無法連線，應該怎麼辦？",
+      "gold_speech_ids": [
+        "speech_0002"
+      ],
+      "gold_ocr_ids": []
+    },
+    {
+      "id": "VQ03",
+      "question": "如何選擇想要連線的 Wi-Fi 網路？",
+      "gold_speech_ids": [
+        "speech_0003"
+      ],
+      "gold_ocr_ids": [
+        "visual_0003",
+        "visual_0008",
+        "visual_0009",
+        "visual_0010"
+      ]
+    },
+    {
+      "id": "VQ04",
+      "question": "如何確認手機已成功連線 Wi-Fi？",
+      "gold_speech_ids": [
+        "speech_0004"
+      ],
+      "gold_ocr_ids": [
+        "visual_0011",
+        "visual_0012",
+        "visual_0013"
+      ]
+    },
+    {
+      "id": "VQ05",
+      "question": "重新連線後仍然無法使用，下一步該怎麼辦？",
+      "gold_speech_ids": [
+        "speech_0005"
+      ],
+      "gold_ocr_ids": []
+    },
+    {
+      "id": "VQ06",
+      "question": "Wi-Fi 故障時，影片建議檢查路由器或重新啟動哪個裝置？",
+      "gold_speech_ids": [
+        "speech_0005"
+      ],
+      "gold_ocr_ids": []
+    }
+  ]
+}
