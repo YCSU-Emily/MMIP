@@ -1,0 +1,99 @@
+{
+  "page": 1,
+  "part": 1,
+  "source_characters": 2594,
+  "entities": [
+    {
+      "name": "GraphRAG",
+      "type": "Method",
+      "description": "A graph-based approach to question answering over private text corpora that scales with the generality of user questions and the quantity of source text.",
+      "evidence": "we propose GraphRAG, a graph-based approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text."
+    },
+    {
+      "name": "retrieval-augmented generation",
+      "type": "Method",
+      "description": "An approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window.",
+      "evidence": "Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window"
+    },
+    {
+      "name": "query-focused summarization",
+      "type": "Concept",
+      "description": "A task type where RAG fails on global questions directed at an entire text corpus, such as identifying main themes in a dataset.",
+      "evidence": "since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task."
+    },
+    {
+      "name": "entity knowledge graph",
+      "type": "Model",
+      "description": "A graph index derived from source documents in the first stage of GraphRAG's approach.",
+      "evidence": "first, to derive an entity knowledge graph from the source documents"
+    },
+    {
+      "name": "community summaries",
+      "type": "Concept",
+      "description": "Pre-generated summaries for all groups of closely related entities used to generate partial responses.",
+      "evidence": "then to pre-generate community summaries for all groups of closely related entities."
+    },
+    {
+      "name": "LLM",
+      "type": "Model",
+      "description": "A large language model used to build a graph index and generate responses in the GraphRAG approach.",
+      "evidence": "Our approach uses an LLM to build a graph index in two stages"
+    },
+    {
+      "name": "RAG baseline",
+      "type": "Method",
+      "description": "A conventional RAG system used as a comparison baseline for GraphRAG's performance on global sensemaking questions.",
+      "evidence": "we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers."
+    },
+    {
+      "name": "context window",
+      "type": "Concept",
+      "description": "The maximum number of tokens that can be processed by an LLM at once, which limits the size of data retrieved in canonical RAG setups.",
+      "evidence": "meaning the maximum number of tokens (units of text) that can be processed by the LLM at once"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GraphRAG",
+      "target": "query-focused summarization",
+      "type": "addresses",
+      "description": "GraphRAG is proposed to address the limitations of RAG on global questions that are inherently query-focused summarization tasks.",
+      "evidence": "since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "retrieval-augmented generation",
+      "type": "compares",
+      "description": "GraphRAG is compared against a conventional RAG baseline to show improvements in answer comprehensiveness and diversity.",
+      "evidence": "we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "entity knowledge graph",
+      "type": "consists_of",
+      "description": "The GraphRAG approach uses an LLM to derive an entity knowledge graph from source documents as its first stage.",
+      "evidence": "first, to derive an entity knowledge graph from the source documents"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "community summaries",
+      "type": "consists_of",
+      "description": "The GraphRAG approach pre-generates community summaries for groups of closely related entities as its second stage.",
+      "evidence": "then to pre-generate community summaries for all groups of closely related entities."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "LLM",
+      "type": "uses",
+      "description": "The GraphRAG approach uses an LLM to build a graph index and generate responses.",
+      "evidence": "Our approach uses an LLM to build a graph index in two stages"
+    },
+    {
+      "source": "retrieval-augmented generation",
+      "target": "context window",
+      "type": "addresses",
+      "description": "RAG is designed to handle data that is too large to fit within the context window of an LLM by retrieving a subset of records.",
+      "evidence": "Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window"
+    }
+  ]
+}

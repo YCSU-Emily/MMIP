@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "Shapiro-Wilk test",
+      "type": "Method",
+      "description": "A statistical test used to determine if data follows a normal distribution.",
+      "evidence": "Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution."
+    },
+    {
+      "name": "Wilcoxon signed-rank test",
+      "type": "Method",
+      "description": "A non-parametric test employed to assess performance differences between pairs of conditions.",
+      "evidence": "Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed to assess the performance differences between pairs of conditions"
+    },
+    {
+      "name": "Holm-Bonferroni correction",
+      "type": "Method",
+      "description": "A correction applied to account for multiple pairwise comparisons.",
+      "evidence": "with Holm-Bonferroni correction applied to account for multiple pairwise comparisons."
+    },
+    {
+      "name": "Comprehensiveness",
+      "type": "Metric",
+      "description": "One of the four evaluation metrics used to assess conditions.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "name": "Diversity",
+      "type": "Metric",
+      "description": "One of the four evaluation metrics used to assess conditions.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "name": "Empowerment",
+      "type": "Metric",
+      "description": "One of the four evaluation metrics used to assess conditions.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "name": "Directness",
+      "type": "Metric",
+      "description": "One of the four evaluation metrics used to assess conditions.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "name": "Podcast Transcripts",
+      "type": "Dataset",
+      "description": "One of the two datasets used in the evaluation.",
+      "evidence": "across 125 questions and two datasets. Podcast Transcripts"
+    },
+    {
+      "name": "News Articles",
+      "type": "Dataset",
+      "description": "One of the two datasets used in the evaluation.",
+      "evidence": "across 125 questions and two datasets. Podcast Transcripts"
+    },
+    {
+      "name": "C0",
+      "type": "Concept",
+      "description": "A condition evaluated against TS and SS across all four metrics.",
+      "evidence": "C0 TS 50.24 49.76"
+    },
+    {
+      "name": "C1",
+      "type": "Concept",
+      "description": "A condition evaluated against TS and SS across all four metrics.",
+      "evidence": "C1 TS 51.92 48.08"
+    },
+    {
+      "name": "C2",
+      "type": "Concept",
+      "description": "A condition evaluated against TS and SS across all four metrics.",
+      "evidence": "C2 TS 57.28 42.72"
+    },
+    {
+      "name": "C3",
+      "type": "Concept",
+      "description": "A condition evaluated against TS and SS across all four metrics.",
+      "evidence": "C3 TS 56.48 43.52"
+    },
+    {
+      "name": "TS",
+      "type": "Concept",
+      "description": "A condition evaluated against SS and other conditions across all four metrics.",
+      "evidence": "TS SS 83.12 16.88"
+    },
+    {
+      "name": "SS",
+      "type": "Concept",
+      "description": "A condition evaluated against TS and other conditions across all four metrics.",
+      "evidence": "TS SS 83.12 16.88"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Shapiro-Wilk test",
+      "target": "Wilcoxon signed-rank test",
+      "type": "proposes",
+      "description": "The Shapiro-Wilk test result led to the proposal of using non-parametric tests.",
+      "evidence": "Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution. Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed"
+    },
+    {
+      "source": "Wilcoxon signed-rank test",
+      "target": "Holm-Bonferroni correction",
+      "type": "uses",
+      "description": "The Wilcoxon signed-rank test was used in conjunction with the Holm-Bonferroni correction.",
+      "evidence": "with Holm-Bonferroni correction applied to account for multiple pairwise comparisons."
+    },
+    {
+      "source": "Wilcoxon signed-rank test",
+      "target": "Comprehensiveness",
+      "type": "evaluates",
+      "description": "The Wilcoxon signed-rank test was used to evaluate differences in the Comprehensiveness metric.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "source": "Wilcoxon signed-rank test",
+      "target": "Diversity",
+      "type": "evaluates",
+      "description": "The Wilcoxon signed-rank test was used to evaluate differences in the Diversity metric.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "source": "Wilcoxon signed-rank test",
+      "target": "Empowerment",
+      "type": "evaluates",
+      "description": "The Wilcoxon signed-rank test was used to evaluate differences in the Empowerment metric.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "source": "Wilcoxon signed-rank test",
+      "target": "Directness",
+      "type": "evaluates",
+      "description": "The Wilcoxon signed-rank test was used to evaluate differences in the Directness metric.",
+      "evidence": "Pairwise comparisons of six conditions on four metrics"
+    },
+    {
+      "source": "Podcast Transcripts",
+      "target": "Comprehensiveness",
+      "type": "consists_of",
+      "description": "Podcast Transcripts is one of the datasets used to measure the Comprehensiveness metric.",
+      "evidence": "across 125 questions and two datasets. Podcast Transcripts"
+    },
+    {
+      "source": "News Articles",
+      "target": "Comprehensiveness",
+      "type": "consists_of",
+      "description": "News Articles is one of the datasets used to measure the Comprehensiveness metric.",
+      "evidence": "across 125 questions and two datasets. Podcast Transcripts"
+    },
+    {
+      "source": "C0",
+      "target": "TS",
+      "type": "compares",
+      "description": "Condition C0 is compared against condition TS across all metrics.",
+      "evidence": "C0 TS 50.24 49.76"
+    },
+    {
+      "source": "C0",
+      "target": "SS",
+      "type": "compares",
+      "description": "Condition C0 is compared against condition SS across all metrics.",
+      "evidence": "C0 SS 71.92 28.08"
+    }
+  ]
+}

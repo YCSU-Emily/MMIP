@@ -1,0 +1,138 @@
+{
+  "page": 20,
+  "part": 1,
+  "source_characters": 4848,
+  "entities": [
+    {
+      "name": "Graph RAG",
+      "type": "Method",
+      "description": "A method that provides comprehensive and detailed lists of public figures across various entertainment sectors.",
+      "evidence": "Answer 1 is better because it provides a more comprehensive and detailed list of public figures from a wider range of entertainment sectors"
+    },
+    {
+      "name": "Naïve RAG",
+      "type": "Method",
+      "description": "A method that directly lists specific public figures with concise explanations for their frequent mentions.",
+      "evidence": "Answer 2 is better because it directly lists specific public figures who are repeatedly mentioned across various entertainment articles"
+    },
+    {
+      "name": "News article dataset",
+      "type": "Dataset",
+      "description": "The dataset used to generate example questions, answers, and LLM-generated assessments.",
+      "evidence": "Example question, answers, and LLM-generated assessments for the News article dataset"
+    },
+    {
+      "name": "Taylor Swift",
+      "type": "Concept",
+      "description": "A public figure repeatedly mentioned across various entertainment articles.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift"
+    },
+    {
+      "name": "Travis Kelce",
+      "type": "Concept",
+      "description": "A public figure repeatedly mentioned across various entertainment articles.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce"
+    },
+    {
+      "name": "Britney Spears",
+      "type": "Concept",
+      "description": "A public figure repeatedly mentioned across various entertainment articles.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce, Britney Spears"
+    },
+    {
+      "name": "Justin Timberlake",
+      "type": "Concept",
+      "description": "A public figure repeatedly mentioned across various entertainment articles.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce, Britney Spears, and Justin Timberlake"
+    },
+    {
+      "name": "Comprehensiveness",
+      "type": "Metric",
+      "description": "A metric evaluating the breadth and detail of the answer regarding entertainment sectors.",
+      "evidence": "Comprehensiveness: Winner=1 (Graph RAG)"
+    },
+    {
+      "name": "Diversity",
+      "type": "Metric",
+      "description": "A metric evaluating the variety of public figures and sectors covered in the answer.",
+      "evidence": "Diversity: Winner=1 (Graph RAG)"
+    },
+    {
+      "name": "Empowerment",
+      "type": "Metric",
+      "description": "A metric evaluating the ability of the answer to help the reader understand the topic.",
+      "evidence": "Empowerment: Winner=1 (Graph RAG)"
+    },
+    {
+      "name": "Directness",
+      "type": "Metric",
+      "description": "A metric evaluating the conciseness and specificity of the answer.",
+      "evidence": "Directness: Winner=2 (Naïve RAG)"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Graph RAG",
+      "target": "Comprehensiveness",
+      "type": "wins",
+      "description": "Graph RAG is identified as the winner for the Comprehensiveness metric.",
+      "evidence": "Comprehensiveness: Winner=1 (Graph RAG)"
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Diversity",
+      "type": "wins",
+      "description": "Graph RAG is identified as the winner for the Diversity metric.",
+      "evidence": "Diversity: Winner=1 (Graph RAG)"
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Empowerment",
+      "type": "wins",
+      "description": "Graph RAG is identified as the winner for the Empowerment metric.",
+      "evidence": "Empowerment: Winner=1 (Graph RAG)"
+    },
+    {
+      "source": "Naïve RAG",
+      "target": "Directness",
+      "type": "wins",
+      "description": "Naïve RAG is identified as the winner for the Directness metric.",
+      "evidence": "Directness: Winner=2 (Naïve RAG)"
+    },
+    {
+      "source": "Graph RAG",
+      "target": "News article dataset",
+      "type": "evaluates",
+      "description": "Graph RAG is evaluated against the News article dataset in the example comparison.",
+      "evidence": "Example question, answers, and LLM-generated assessments for the News article dataset"
+    },
+    {
+      "source": "Taylor Swift",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "Taylor Swift is one of the public figures listed by Graph RAG.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift"
+    },
+    {
+      "source": "Travis Kelce",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "Travis Kelce is one of the public figures listed by Graph RAG.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce"
+    },
+    {
+      "source": "Britney Spears",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "Britney Spears is one of the public figures listed by Graph RAG.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce, Britney Spears"
+    },
+    {
+      "source": "Justin Timberlake",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "Justin Timberlake is one of the public figures listed by Graph RAG.",
+      "evidence": "Public figures who are repeatedly mentioned across various entertainment articles include Taylor Swift, Travis Kelce, Britney Spears, and Justin Timberlake"
+    }
+  ]
+}

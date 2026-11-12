@@ -1,0 +1,118 @@
+{
+  "page": 22,
+  "part": 1,
+  "source_characters": 3382,
+  "entities": [
+    {
+      "name": "Goal",
+      "type": "Concept",
+      "description": "To write a comprehensive report of a community based on provided entities, relationships, and claims.",
+      "evidence": "Write a comprehensive report of a community, given a list of entities that belong to the community as well as their relationships and optional associated claims."
+    },
+    {
+      "name": "Report Structure",
+      "type": "Concept",
+      "description": "The required format for the output report including title, summary, and findings.",
+      "evidence": "The report should include the following sections: - TITLE: community's name that represents its key entities - title should be short but specific."
+    },
+    {
+      "name": "IMPACT SEVERITY RATING",
+      "type": "Metric",
+      "description": "A float score between 0-10 representing the severity of IMPACT posed by entities within the community.",
+      "evidence": "IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community."
+    },
+    {
+      "name": "IMPACT",
+      "type": "Concept",
+      "description": "The scored importance of a community.",
+      "evidence": "IMPACT is the scored importance of a community."
+    },
+    {
+      "name": "Grounding Rules",
+      "type": "Concept",
+      "description": "Rules requiring data references for points supported by data, listing dataset names and record ids.",
+      "evidence": "Points supported by data should list their data references as follows: \"This is an example sentence supported by multiple data references [Data: <dataset name> (record ids); <dataset name> (record ids)].\""
+    },
+    {
+      "name": "Data",
+      "type": "Dataset",
+      "description": "The dataset containing records referenced in the grounding rules.",
+      "evidence": "[Data: <dataset name> (record ids); <dataset name> (record ids)]"
+    },
+    {
+      "name": "Reports",
+      "type": "Dataset",
+      "description": "A specific dataset mentioned in the example grounding rule.",
+      "evidence": "[Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+    },
+    {
+      "name": "Entities",
+      "type": "Dataset",
+      "description": "A specific dataset mentioned in the example grounding rule containing entity records.",
+      "evidence": "[Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+    },
+    {
+      "name": "Relationships",
+      "type": "Dataset",
+      "description": "A specific dataset mentioned in the example grounding rule containing relationship records.",
+      "evidence": "[Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+    },
+    {
+      "name": "Claims",
+      "type": "Dataset",
+      "description": "A specific dataset mentioned in the example grounding rule containing claim records.",
+      "evidence": "[Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Goal",
+      "target": "Report Structure",
+      "type": "proposes",
+      "description": "The goal of writing a report is defined by the specific structure required for the output.",
+      "evidence": "The report should include the following sections: - TITLE: community's name that represents its key entities - title should be short but specific."
+    },
+    {
+      "source": "IMPACT SEVERITY RATING",
+      "target": "IMPACT",
+      "type": "evaluates",
+      "description": "The rating metric evaluates the concept of IMPACT within the community.",
+      "evidence": "IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community."
+    },
+    {
+      "source": "IMPACT",
+      "target": "IMPACT SEVERITY RATING",
+      "type": "consists_of",
+      "description": "The concept of IMPACT is quantified by the IMPACT SEVERITY RATING.",
+      "evidence": "IMPACT is the scored importance of a community."
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Reports",
+      "type": "uses",
+      "description": "The grounding rules specify how to reference data from the Reports dataset.",
+      "evidence": "\"This is an example sentence supported by multiple data references [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)].\""
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Entities",
+      "type": "uses",
+      "description": "The grounding rules specify how to reference data from the Entities dataset.",
+      "evidence": "\"This is an example sentence supported by multiple data references [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)].\""
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Relationships",
+      "type": "uses",
+      "description": "The grounding rules specify how to reference data from the Relationships dataset.",
+      "evidence": "\"This is an example sentence supported by multiple data references [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)].\""
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Claims",
+      "type": "uses",
+      "description": "The grounding rules specify how to reference data from the Claims dataset.",
+      "evidence": "\"This is an example sentence supported by multiple data references [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)].\""
+    }
+  ]
+}

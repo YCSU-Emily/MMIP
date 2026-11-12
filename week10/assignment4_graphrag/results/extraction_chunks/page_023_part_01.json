@@ -1,0 +1,67 @@
+{
+  "page": 23,
+  "part": 1,
+  "source_characters": 3706,
+  "entities": [
+    {
+      "name": "Verdant Oasis Plaza",
+      "type": "Location",
+      "description": "The central location of the community where the Unity March takes place.",
+      "evidence": "\"Verdant Oasis Plaza is the central entity in this community, serving as the location for the Unity March.\""
+    },
+    {
+      "name": "Unity March",
+      "type": "Event",
+      "description": "A significant event held at Verdant Oasis Plaza that serves as a common link between other entities.",
+      "evidence": "\"The plaza has relationships with the Harmony Assembly, Unity March, and Tribune Spotlight, all of which are associated with the march event.\""
+    },
+    {
+      "name": "Harmony Assembly",
+      "type": "Organization",
+      "description": "An entity identified as the organizer of the march at Verdant Oasis Plaza.",
+      "evidence": "\"Harmony Assembly is another key entity in this community, being the organizer of the march at Verdant Oasis Plaza.\""
+    },
+    {
+      "name": "Tribune Spotlight",
+      "type": "Organization",
+      "description": "An entity reporting on the Unity March, suggesting the event has attracted media attention.",
+      "evidence": "\"Tribune Spotlight is reporting on the Unity March taking place in Verdant Oasis Plaza.\""
+    },
+    {
+      "name": "Impact Severity Rating",
+      "type": "Metric",
+      "description": "A moderate rating assigned due to the potential for unrest or conflict during the Unity March.",
+      "evidence": "\"The impact severity rating is moderate due to the potential for unrest or conflict during the Unity March.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Verdant Oasis Plaza",
+      "target": "Unity March",
+      "type": "hosts",
+      "description": "The plaza serves as the location for the Unity March.",
+      "evidence": "\"Verdant Oasis Plaza is the central entity in this community, serving as the location for the Unity March.\""
+    },
+    {
+      "source": "Harmony Assembly",
+      "target": "Verdant Oasis Plaza",
+      "type": "organizes",
+      "description": "The Harmony Assembly organizes the march at the plaza.",
+      "evidence": "\"Harmony Assembly is another key entity in this community, being the organizer of the march at Verdant Oasis Plaza.\""
+    },
+    {
+      "source": "Tribune Spotlight",
+      "target": "Unity March",
+      "type": "reports_on",
+      "description": "Tribune Spotlight reports on the Unity March taking place in the plaza.",
+      "evidence": "\"Tribune Spotlight is reporting on the Unity March taking place in Verdant Oasis Plaza.\""
+    },
+    {
+      "source": "Verdant Oasis Plaza",
+      "target": "Harmony Assembly",
+      "type": "associated_with",
+      "description": "The plaza is associated with the Harmony Assembly as part of the march event dynamics.",
+      "evidence": "\"The plaza has relationships with the Harmony Assembly, Unity March, and Tribune Spotlight, all of which are associated with the march event.\""
+    }
+  ]
+}

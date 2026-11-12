@@ -1,0 +1,98 @@
+{
+  "page": 14,
+  "part": 1,
+  "source_characters": 3794,
+  "entities": [
+    {
+      "name": "Forceatlas2",
+      "type": "Method",
+      "description": "A continuous graph layout algorithm designed for handy network visualization in the gephi software.",
+      "evidence": "Forceatlas2, a continuous graph layout algorithm for handy network visualization designed for the gephi software."
+    },
+    {
+      "name": "Openord",
+      "type": "Method",
+      "description": "An open-source toolbox for large graph layout.",
+      "evidence": "Openord: An open-source toolbox for large graph layout."
+    },
+    {
+      "name": "Knowledge graph-augmented language models",
+      "type": "Model",
+      "description": "Models used for knowledge-grounded dialogue generation.",
+      "evidence": "Knowledge graph-augmented language models for knowledge-grounded dialogue generation."
+    },
+    {
+      "name": "Demonstrate-search-predict",
+      "type": "Method",
+      "description": "A method for composing retrieval and language models for knowledge-intensive nlp.",
+      "evidence": "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive nlp."
+    },
+    {
+      "name": "Retrieval-augmented generation",
+      "type": "Method",
+      "description": "A technique for knowledge-intensive nlp tasks.",
+      "evidence": "Retrieval-augmented generation for knowledge-intensive nlp tasks."
+    },
+    {
+      "name": "Tree of clarifications",
+      "type": "Method",
+      "description": "A method for answering ambiguous questions with retrieval-augmented large language models.",
+      "evidence": "Tree of clarifications: Answering ambiguous questions with retrieval-augmented large language models."
+    },
+    {
+      "name": "Self-refine",
+      "type": "Method",
+      "description": "A method for iterative refinement with self-feedback.",
+      "evidence": "Self-refine: Iterative refinement with self-feedback."
+    },
+    {
+      "name": "Selfcheckgpt",
+      "type": "Method",
+      "description": "A zero-resource black-box hallucination detection method for generative large language models.",
+      "evidence": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models."
+    },
+    {
+      "name": "Query focused abstractive summarization",
+      "type": "Method",
+      "description": "A method incorporating query relevance and transfer learning with transformer models.",
+      "evidence": "Query focused abstractive summarization via incorporating query relevance and transfer learning with transformer models."
+    },
+    {
+      "name": "Generation-augmented retrieval",
+      "type": "Method",
+      "description": "A method for open-domain question answering.",
+      "evidence": "Generation-augmented retrieval for open-domain question answering."
+    },
+    {
+      "name": "Probabilistic knowledge graph construction",
+      "type": "Method",
+      "description": "Approaches that are compositional and incremental.",
+      "evidence": "Probabilistic knowledge graph construction: Compositional and incremental approaches."
+    },
+    {
+      "name": "Knowledge graph generation from text",
+      "type": "Method",
+      "description": "A process for generating knowledge graphs from text.",
+      "evidence": "Knowledge graph generation from text."
+    },
+    {
+      "name": "Lost in the middle",
+      "type": "Concept",
+      "description": "A concept describing how language models use long contexts.",
+      "evidence": "Lost in the middle: How language models use long contexts."
+    },
+    {
+      "name": "In search of needles in a 11m haystack",
+      "type": "Concept",
+      "description": "A concept regarding recurrent memory finding what llms miss.",
+      "evidence": "In search of needles in a 11m haystack: Recurrent memory finds what llms miss."
+    },
+    {
+      "name": "Evaluating large language models in theory of mind tasks",
+      "type": "Concept",
+      "description": "An evaluation of large language models in theory of mind tasks.",
+      "evidence": "Evaluating large language models in theory of mind tasks."
+    }
+  ],
+  "relationships": []
+}

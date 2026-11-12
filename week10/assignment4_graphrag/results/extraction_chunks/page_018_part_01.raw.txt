@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GraphRAG",
+      "type": "Method",
+      "description": "A pipeline that uses prompts for initialization to extract knowledge.",
+      "evidence": "default GraphRAG initialization pipeline"
+    },
+    {
+      "name": "GPT-4",
+      "type": "Model",
+      "description": "A large language model used for entity and relationship extraction.",
+      "evidence": "prompts, designed for GPT-4, are used in the default GraphRAG initialization pipeline"
+    },
+    {
+      "name": "HotPotQA",
+      "type": "Dataset",
+      "description": "A sample dataset used to evaluate entity extraction performance.",
+      "evidence": "in a sample dataset (HotPotQA, Yang et al., 2018)"
+    },
+    {
+      "name": "Self-Reflection",
+      "type": "Method",
+      "description": "A prompt engineering technique where an LLM evaluates its own output to improve it.",
+      "evidence": "Self-reflection is a prompt engineering technique where the LLM generates an answer, and is then prompted to evaluate its output for correctness, clarity, or completeness"
+    },
+    {
+      "name": "gpt-4-turbo",
+      "type": "Model",
+      "description": "The specific model version used in the entity extraction prompt evaluation.",
+      "evidence": "generic entity extraction prompt with gpt-4-turbo"
+    },
+    {
+      "name": "Chunk Size",
+      "type": "Concept",
+      "description": "The size of text segments processed by the LLM, affecting extraction cost and quantity.",
+      "evidence": "Using larger chunk size is less costly in terms of calls to the LLM"
+    },
+    {
+      "name": "Entity References",
+      "type": "Metric",
+      "description": "The count of entities detected during extraction, varying with chunk size and iterations.",
+      "evidence": "Entity references detected"
+    },
+    {
+      "name": "Logit Bias",
+      "type": "Concept",
+      "description": "A parameter used to force the LLM to make a yes/no decision during assessment.",
+      "evidence": "using a logit bias of 100 to force a yes/no decision"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GraphRAG",
+      "target": "GPT-4",
+      "type": "uses",
+      "description": "The GraphRAG initialization pipeline uses prompts designed for GPT-4.",
+      "evidence": "The following prompts, designed for GPT-4, are used in the default GraphRAG initialization pipeline"
+    },
+    {
+      "source": "Self-Reflection",
+      "target": "knowledge graph extraction",
+      "type": "addresses",
+      "description": "Self-reflection is a technique used to improve the quality of knowledge graph extraction.",
+      "evidence": "We leverage self-reflection in knowledge graph extraction"
+    },
+    {
+      "source": "GPT-4",
+      "target": "HotPotQA",
+      "type": "evaluates",
+      "description": "GPT-4 extracts entity references from the HotPotQA dataset.",
+      "evidence": "in a sample dataset (HotPotQA, Yang et al., 2018), GPT-4 extracted almost twice as many entity references"
+    },
+    {
+      "source": "Chunk Size",
+      "target": "Entity References",
+      "type": "affects",
+      "description": "Larger chunk sizes are less costly but tend to result in fewer extracted entity references.",
+      "evidence": "Using larger chunk size is less costly in terms of calls to the LLM. However, the LLM tends to extract few entities from chunks of larger size"
+    },
+    {
+      "source": "Self-Reflection",
+      "target": "Chunk Size",
+      "type": "improves",
+      "description": "Self-reflection allows the use of larger chunk sizes without a drop in quality.",
+      "evidence": "This approach allows us to use larger chunk sizes without a drop in quality"
+    },
+    {
+      "source": "Logit Bias",
+      "target": "Self-Reflection",
+      "type": "consists_of",
+      "description": "Logit bias is a component of the self-reflection process used to force binary decisions.",
+      "evidence": "using a logit bias of 100 to force a yes/no decision"
+    },
+    {
+      "source": "Entity References",
+      "target": "Self-Reflection",
+      "type": "evaluates",
+      "description": "The number of entity references detected varies based on the number of self-reflection iterations performed.",
+      "evidence": "Entity references detected varies with chunk size and self-reflection iterations"
+    }
+  ]
+}

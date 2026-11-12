@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "Caire-covid",
+      "type": "Model",
+      "description": "A question answering and query-focused multi-document summarization system for covid-19 scholarly information management.",
+      "evidence": "\"Caire-covid: A ques- tion answering and query-focused multi-document summarization system for covid-19 scholarly information management.\""
+    },
+    {
+      "name": "MultiHop-RAG",
+      "type": "Model",
+      "description": "A benchmarking framework for retrieval-augmented generation for multi-hop queries.",
+      "evidence": "\"MultiHop-RAG: Benchmarking retrieval-augmented generation for multi-hop queries.\""
+    },
+    {
+      "name": "Llama 2",
+      "type": "Model",
+      "description": "Open foundation and fine-tuned chat models.",
+      "evidence": "\"Llama 2: Open foundation and fine-tuned chat models.\""
+    },
+    {
+      "name": "HotpotQA",
+      "type": "Dataset",
+      "description": "A dataset for diverse, explainable multi-hop question answering.",
+      "evidence": "\"HotpotQA: A dataset for diverse, explainable multi-hop question answering.\""
+    },
+    {
+      "name": "Graph-toolformer",
+      "type": "Model",
+      "description": "A model designed to empower llms with graph reasoning ability via prompt augmented by chatgpt.",
+      "evidence": "\"Graph-toolformer: To empower llms with graph reasoning ability via prompt augmented by chatgpt.\""
+    },
+    {
+      "name": "TextRunner",
+      "type": "Model",
+      "description": "An open information extraction system on the web.",
+      "evidence": "\"TextRunner: Open information extraction on the web.\""
+    },
+    {
+      "name": "S-eval",
+      "type": "Dataset",
+      "description": "Automatic and adaptive test generation for benchmarking safety evaluation of large language models.",
+      "evidence": "\"S-eval: Automatic and adaptive test generation for benchmarking safety evaluation of large language models.\""
+    },
+    {
+      "name": "Knowledge graph",
+      "type": "Concept",
+      "description": "A structure used in representation learning and construction enhancement using large language models.",
+      "evidence": "\"Representation learning of large-scale knowledge graphs via entity feature combinations.\""
+    },
+    {
+      "name": "Retrieval-augmented generation",
+      "type": "Concept",
+      "description": "A technique evaluated in federated search contexts and benchmarked for multi-hop queries.",
+      "evidence": "\"Evaluating federated search in the context of retrieval augmented generation.\""
+    },
+    {
+      "name": "Chain of thought reasoning",
+      "type": "Concept",
+      "description": "A reasoning method interleaved with retrieval for knowledge-intensive multi-step questions.",
+      "evidence": "\"Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Caire-covid",
+      "target": "Multi-document summarization",
+      "type": "proposes",
+      "description": "The system proposes a query-focused approach for multi-document summarization in the context of covid-19.",
+      "evidence": "\"A ques- tion answering and query-focused multi-document summarization system for covid-19 scholarly information management.\""
+    },
+    {
+      "source": "MultiHop-RAG",
+      "target": "retrieval-augmented generation",
+      "type": "evaluates",
+      "description": "The work benchmarks the performance of retrieval-augmented generation specifically for multi-hop queries.",
+      "evidence": "\"Benchmarking retrieval-augmented generation for multi-hop queries.\""
+    },
+    {
+      "source": "Graph-toolformer",
+      "target": "llms",
+      "type": "empowers",
+      "description": "The model empowers large language models with graph reasoning abilities.",
+      "evidence": "\"To empower llms with graph reasoning ability via prompt augmented by chatgpt.\""
+    },
+    {
+      "source": "TextRunner",
+      "target": "information extraction",
+      "type": "performs",
+      "description": "TextRunner is described as an open system for information extraction on the web.",
+      "evidence": "\"Open information extraction on the web.\""
+    },
+    {
+      "source": "S-eval",
+      "target": "large language models",
+      "type": "benchmarks",
+      "description": "S-eval is used for benchmarking the safety evaluation of large language models.",
+      "evidence": "\"benchmarking safety evaluation of large language models.\""
+    },
+    {
+      "source": "HotpotQA",
+      "target": "multi-hop question answering",
+      "type": "supports",
+      "description": "The dataset supports research in diverse and explainable multi-hop question answering.",
+      "evidence": "\"A dataset for diverse, explainable multi-hop question answering.\""
+    },
+    {
+      "source": "Interleaving retrieval with chain-of-thought reasoning",
+      "target": "knowledge-intensive multi-step questions",
+      "type": "addresses",
+      "description": "The method addresses the challenge of answering knowledge-intensive multi-step questions.",
+      "evidence": "\"knowledge-intensive multi-step questions.\""
+    },
+    {
+      "source": "Feb4rag",
+      "target": "federated search",
+      "type": "evaluates",
+      "description": "The work evaluates federated search within the context of retrieval augmented generation.",
+      "evidence": "\"Evaluating federated search in the context of retrieval augmented generation.\""
+    }
+  ]
+}

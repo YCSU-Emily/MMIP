@@ -1,0 +1,214 @@
+{
+  "experiment": "GraphRAG-inspired vs. Vector RAG",
+  "method": "vector",
+  "generation_model": "Qwen3.5-4B",
+  "embedding_model": "BAAI/bge-m3",
+  "top_k_chunks": 7,
+  "generation_config": {
+    "max_new_tokens": 600,
+    "do_sample": false
+  },
+  "benchmark_total": 2,
+  "records": [
+    {
+      "id": "Q01",
+      "topic": "GraphRAG Motivation",
+      "difficulty": "easy",
+      "question": "What limitation of conventional RAG motivates the GraphRAG approach?",
+      "reference_answer": "Conventional RAG retrieves a limited number of relevant text passages for a query. This can work for specific questions but may fail to capture global themes and relationships across a large corpus. GraphRAG uses a knowledge graph and community summaries to support query-focused summarization at the corpus level.",
+      "answer": "Based on the retrieved context, the limitation of conventional RAG (specifically referred to as vector RAG) that motivates the GraphRAG approach is its inability to perform **global sensemaking over an entire text corpus**.\n\nConventional RAG systems are designed to retrieve a set number of records that are semantically similar to a specific query. Because they rely on retrieving individual records, they fail on \"global questions directed at an entire text corpus,\" such as identifying main themes, because this is inherently a query-focused summarization task rather than an explicit retrieval task [p. 1]. Additionally, prior query-focused summarization methods do not scale to the large quantities of text indexed by typical RAG systems [p. 1].\n\nThe paper notes that while vector RAG is ideal when the data source exceeds the LLM's context window, it is \"unable to support sensemaking over an entire corpus\" when the volume of data requires a RAG approach [p. 2]. Consequently, there is a risk that answers to global questions might be generated from samples of retrieved facts that are falsely presented as global summaries [p. 12]. GraphRAG addresses this by combining knowledge graph generation with query-focused summarization to enable sensemaking over the entirety of a large text corpus [p. 2].",
+      "method": "vector",
+      "retrieved_chunks": [
+        {
+          "chunk_id": "p01_c002",
+          "page": 1,
+          "text": "AG systems. To combine the strengths of these contrasting methods, we\npropose GraphRAG, a graph-based approach to question answering over private\ntext corpora that scales with both the generality of user questions and the quantity\nof source text. Our approach uses an LLM to build a graph index in two stages:\nfirst, to derive an entity knowledge graph from the source documents, then to pre-\ngenerate community summaries for all groups of closely related entities. Given a\nquestion, each community summary is used to generate a partial response, before\nall partial responses are again summarized in a final response to the user. For a\nclass of global sensemaking questions over datasets in the 1 million token range,\nwe show that GraphRAG leads to substantial improvements over a conventional\nRAG baseline for both the comprehensiveness and diversity of generated answers.\n1\nIntroduction\nRetrieval augmented generation (RAG) (Lewis et al., 2020) is an established approach to using\nLLMs to answer queries based on data that is too large to contain in a language model’s context\nwindow, meaning the maximum number of tokens (units of text) that can be processed by the LLM\nat once (Kuratov et al., 20",
+          "score": 0.6283
+        },
+        {
+          "chunk_id": "p01_c001",
+          "page": 1,
+          "text": "From Local to Global: A GraphRAG Approach to\nQuery-Focused Summarization\nDarren Edge1†\nHa Trinh1†\nNewman Cheng2\nJoshua Bradley2\nAlex Chao3\nApurva Mody3\nSteven Truitt2\nDasha Metropolitansky1\nRobert Osazuwa Ness1\nJonathan Larson1\n1Microsoft Research\n2Microsoft Strategic Missions and Technologies\n3Microsoft Office of the CTO\n{daedge,trinhha,newmancheng,joshbradley,achao,moapurva,\nsteventruitt,dasham,robertness,jolarso}@microsoft.com\n†These authors contributed equally to this work\nAbstract\nThe use of retrieval-augmented generation (RAG) to retrieve relevant informa-\ntion from an external knowledge source enables large language models (LLMs)\nto answer questions over private and/or previously unseen document collections.\nHowever, RAG fails on global questions directed at an entire text corpus, such\nas “What are the main themes in the dataset?”, since this is inherently a query-\nfocused summarization (QFS) task, rather than an explicit retrieval task. Prior\nQFS methods, meanwhile, do not scale to the quantities of text indexed by typ-\nical RAG systems. To combine the strengths of these contrasting methods, we\npropose GraphRAG, a graph-based approach to question answering over private\ntext",
+          "score": 0.626
+        },
+        {
+          "chunk_id": "p02_c004",
+          "page": 2,
+          "text": "hen using\nGPT-4 as the LLM.\nGraphRAG is available as open-source software at https://github.com/microsoft/graphrag. In ad-\ndition, versions of the GraphRAG approach are also available as extensions to multiple open-\nsource libraries, including LangChain (LangChain, 2024), LlamaIndex (LlamaIndex, 2024), Nebu-\nlaGraph (NebulaGraph, 2024), and Neo4J (Neo4J, 2024).\n2\nBackground\n2.1\nRAG Approaches and Systems\nRAG generally refers to any system where a user query is used to retrieve relevant information from\nexternal data sources, whereupon this information is incorporated into the generation of a response\nto the query by an LLM (or other generative AI model, such as a multi-media model). The query and\nretrieved records populate a prompt template, which is then passed to the LLM (Ram et al., 2023).\nRAG is ideal when the total number of records in a data source is too large to include in a single\nprompt to the LLM, i.e. the amount of text in the data source exceeds the LLM’s context window.\nIn canonical RAG approaches, the retrieval process returns a set number of records that are seman-\ntically similar to the query and the generated answer uses only the information in those retrieved\nrec",
+          "score": 0.621
+        },
+        {
+          "chunk_id": "p12_c002",
+          "page": 12,
+          "text": "eration before employing our map-reduce\nsummarization mechanisms. This “roll-up” approach could also be extended across multiple levels\nof the community hierarchy, as well as implemented as a more exploratory “drill down” mechanism\nthat follows the information scent contained in higher-level community summaries.\nBroader impacts. As a mechanism for question answering over large document collections, there\nare risks to downstream sensemaking and decision-making tasks if the generated answers do not\naccurately represent the source data. System use should be accompanied by clear disclosures of AI\nuse and the potential for errors in outputs. Compared to vector RAG, however, GraphRAG shows\npromise as a way to mitigate these downstream risks for questions of a global nature, which might\notherwise be answered by samples of retrieved facts falsely presented as global summaries.\n7\nConclusion\nWe have presented GraphRAG, a RAG approach that combines knowledge graph generation and\nquery-focused summarization (QFS) to support human sensemaking over entire text corpora. Initial\nevaluations show substantial improvements over a vector RAG baseline for both the comprehensive-\nness and diversity of a",
+          "score": 0.6172
+        },
+        {
+          "chunk_id": "p02_c002",
+          "page": 2,
+          "text": "uery and a text with an\nimplicit and interconnected set of concepts, an LLM can generate a summary that answers the query.\nThe challenge, however, arises when the volume of data requires a RAG approach, since vector RAG\napproaches are unable to support sensemaking over an entire corpus.\nIn this paper, we present GraphRAG – a graph-based RAG approach that enables sensemaking over\nthe entirety of a large text corpus. GraphRAG first uses an LLM to construct a knowledge graph,\nwhere nodes correspond to key entities in the corpus and edges represent relationships between those\nentities. Next, it partitions the graph into a hierarchy of communities of closely related entities,\nbefore using an LLM to generate community-level summaries. These summaries are generated in\na bottom-up manner following the hierarchical structure of extracted communities, with summaries\nat higher levels of the hierarchy recursively incorporating lower-level summaries. Together, these\ncommunity summaries provide global descriptions and insights over the corpus. Finally, GraphRAG\nanswers queries through map-reduce processing of community summaries; in the map step, the\nsummaries are used to provide partial answers",
+          "score": 0.5895
+        },
+        {
+          "chunk_id": "p02_c005",
+          "page": 2,
+          "text": "returns a set number of records that are seman-\ntically similar to the query and the generated answer uses only the information in those retrieved\nrecords. A common approach to conventional RAG is to use text embeddings, retrieving records\nclosest to the query in vector space where closeness corresponds to semantic similarity (Gao et al.,\n2023). While some RAG approaches may use alternative retrieval mechanisms, we collectively refer\nto the family of conventional approaches as vector RAG. GraphRAG contrasts with vector RAG in\nits ability to answer queries that require global sensemaking over the entire data corpus.\n2",
+          "score": 0.5846
+        },
+        {
+          "chunk_id": "p02_c003",
+          "page": 2,
+          "text": "lly, GraphRAG\nanswers queries through map-reduce processing of community summaries; in the map step, the\nsummaries are used to provide partial answers to the query independently and in parallel, then in the\nreduce step, the partial answers are combined and used to generate a final global answer.\nThe GraphRAG method and its ability to perform global sensemaking over an entire corpus form\nthe main contribution of this work. To demonstrate this ability, we developed a novel application\nof the LLM-as-a-judge technique (Zheng et al., 2024) suitable for questions targeting broad issues\nand themes where there is no ground-truth answer. This approach first uses one LLM to generate\na diverse set of global sensemaking questions based on corpus-specific use cases, before using a\nsecond LLM to judge the answers of two different RAG systems using predefined criteria (defined\nin Section 3.3). We use this approach to compare GraphRAG to vector RAG on two representative\nreal-world text datasets. Results show GraphRAG strongly outperforms vector RAG when using\nGPT-4 as the LLM.\nGraphRAG is available as open-source software at https://github.com/microsoft/graphrag. In ad-\ndition, versions of the Gra",
+          "score": 0.5819
+        }
+      ],
+      "retrieved_chunk_count": 7,
+      "context_characters": 8029,
+      "prompt_tokens": 2034,
+      "retrieval_seconds": 0.0087,
+      "generation_seconds": 5.3342,
+      "total_seconds": 5.3429,
+      "metrics": {
+        "reference_pages": [
+          1,
+          2
+        ],
+        "retrieved_pages": [
+          1,
+          2,
+          12
+        ],
+        "reference_page_overlap": [
+          1,
+          2
+        ],
+        "retrieval_page_recall": 1.0,
+        "retrieval_page_precision": 0.6667,
+        "reference_page_hit": true,
+        "matched_keywords": [
+          "conventional RAG",
+          "knowledge graph"
+        ],
+        "keyword_coverage": 0.5,
+        "answer_citations": [
+          1,
+          2,
+          12
+        ],
+        "unsupported_citations": [],
+        "citation_valid": true,
+        "citation_precision": 1.0,
+        "citation_has_page_range": false
+      },
+      "retrieved_entities": [],
+      "retrieved_communities": [],
+      "graph_candidate_pages": []
+    },
+    {
+      "id": "Q02",
+      "topic": "GraphRAG Architecture",
+      "difficulty": "easy",
+      "question": "What are the major stages of the GraphRAG indexing pipeline?",
+      "reference_answer": "The pipeline processes source documents into text chunks, extracts entities and relationships, builds a knowledge graph, detects graph communities, and generates community summaries. These indexed structures are then used during query processing.",
+      "answer": "Based on the retrieved context, the GraphRAG indexing pipeline consists of the following major stages:\n\n1.  **Text Extraction and Chunking**: The process begins with source documents, which undergo text extraction and chunking.\n2.  **Entity and Relationship Extraction**: An LLM is used to derive an entity knowledge graph from the source documents. This involves identifying entities (including name, type, and description) and relationships between them (including source, target, and relationship description).\n3.  **Domain-Tailored Summarization**: The extracted entities and relationships undergo domain-tailored summarization.\n4.  **Community Detection**: The graph index is partitioned into groups of closely related elements (nodes, edges, and covariates) using community detection algorithms (e.g., Leiden).\n5.  **Community Summarization**: Each group (community) is summarized in parallel using domain-tailored summarization to generate community summaries.\n\nThese stages result in a graph index that spans nodes, edges, and covariates, which are then used during query time to generate partial responses and a final global answer.",
+      "method": "vector",
+      "retrieved_chunks": [
+        {
+          "chunk_id": "p01_c002",
+          "page": 1,
+          "text": "AG systems. To combine the strengths of these contrasting methods, we\npropose GraphRAG, a graph-based approach to question answering over private\ntext corpora that scales with both the generality of user questions and the quantity\nof source text. Our approach uses an LLM to build a graph index in two stages:\nfirst, to derive an entity knowledge graph from the source documents, then to pre-\ngenerate community summaries for all groups of closely related entities. Given a\nquestion, each community summary is used to generate a partial response, before\nall partial responses are again summarized in a final response to the user. For a\nclass of global sensemaking questions over datasets in the 1 million token range,\nwe show that GraphRAG leads to substantial improvements over a conventional\nRAG baseline for both the comprehensiveness and diversity of generated answers.\n1\nIntroduction\nRetrieval augmented generation (RAG) (Lewis et al., 2020) is an established approach to using\nLLMs to answer queries based on data that is too large to contain in a language model’s context\nwindow, meaning the maximum number of tokens (units of text) that can be processed by the LLM\nat once (Kuratov et al., 20",
+          "score": 0.5814
+        },
+        {
+          "chunk_id": "p02_c004",
+          "page": 2,
+          "text": "hen using\nGPT-4 as the LLM.\nGraphRAG is available as open-source software at https://github.com/microsoft/graphrag. In ad-\ndition, versions of the GraphRAG approach are also available as extensions to multiple open-\nsource libraries, including LangChain (LangChain, 2024), LlamaIndex (LlamaIndex, 2024), Nebu-\nlaGraph (NebulaGraph, 2024), and Neo4J (Neo4J, 2024).\n2\nBackground\n2.1\nRAG Approaches and Systems\nRAG generally refers to any system where a user query is used to retrieve relevant information from\nexternal data sources, whereupon this information is incorporated into the generation of a response\nto the query by an LLM (or other generative AI model, such as a multi-media model). The query and\nretrieved records populate a prompt template, which is then passed to the LLM (Ram et al., 2023).\nRAG is ideal when the total number of records in a data source is too large to include in a single\nprompt to the LLM, i.e. the amount of text in the data source exceeds the LLM’s context window.\nIn canonical RAG approaches, the retrieval process returns a set number of records that are seman-\ntically similar to the query and the generated answer uses only the information in those retrieved\nrec",
+          "score": 0.5529
+        },
+        {
+          "chunk_id": "p04_c001",
+          "page": 4,
+          "text": "Source Documents\nText Chunks\ntext extraction\nand chunking\nEntities & Relationships\ndomain-tailored\nsummarization\nKnowledge Graph\ndomain-tailored\nsummarization\nGraph Communities\ncommunity\ndetection\nCommunity Summaries\ndomain-tailored\nsummarization\nCommunity Answers\nquery-focused\nsummarization\nGlobal Answer\nquery-focused\nsummarization\nIndexing Time\nQuery Time\nPipeline Stage\nFigure 1: Graph RAG pipeline using an LLM-derived graph index of source document text. This\ngraph index spans nodes (e.g., entities), edges (e.g., relationships), and covariates (e.g., claims)\nthat have been detected, extracted, and summarized by LLM prompts tailored to the domain of the\ndataset. Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index\ninto groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel at both\nindexing time and query time. The “global answer” to a given query is produced using a final round\nof query-focused summarization over all community summaries reporting relevance to that query.\ngenerated texts such as “fluency” (Wang et al., 2023a) Some of these criteria are generic to vector\nRAG systems and not relevant to global sens",
+          "score": 0.549
+        },
+        {
+          "chunk_id": "p02_c003",
+          "page": 2,
+          "text": "lly, GraphRAG\nanswers queries through map-reduce processing of community summaries; in the map step, the\nsummaries are used to provide partial answers to the query independently and in parallel, then in the\nreduce step, the partial answers are combined and used to generate a final global answer.\nThe GraphRAG method and its ability to perform global sensemaking over an entire corpus form\nthe main contribution of this work. To demonstrate this ability, we developed a novel application\nof the LLM-as-a-judge technique (Zheng et al., 2024) suitable for questions targeting broad issues\nand themes where there is no ground-truth answer. This approach first uses one LLM to generate\na diverse set of global sensemaking questions based on corpus-specific use cases, before using a\nsecond LLM to judge the answers of two different RAG systems using predefined criteria (defined\nin Section 3.3). We use this approach to compare GraphRAG to vector RAG on two representative\nreal-world text datasets. Results show GraphRAG strongly outperforms vector RAG when using\nGPT-4 as the LLM.\nGraphRAG is available as open-source software at https://github.com/microsoft/graphrag. In ad-\ndition, versions of the Gra",
+          "score": 0.535
+        },
+        {
+          "chunk_id": "p18_c001",
+          "page": 18,
+          "text": "A\nEntity and Relationship Extraction Approach\nThe following prompts, designed for GPT-4, are used in the default GraphRAG initialization\npipeline:\n• Default Graph Extraction Prompt\n• Claim Extraction Prompt\nA.1\nEntity Extraction\nWe do this using a multipart LLM prompt that first identifies all entities in the text, including their\nname, type, and description, before identifying all relationships between clearly related entities,\nincluding the source and target entities and a description of their relationship. Both kinds of element\ninstance are output in a single list of delimited tuples.\nA.2\nSelf-Reflection\nThe choice of prompt engineering techniques has a strong impact on the quality of knowledge graph\nextraction (Zhu et al., 2024), and different techniques have different costs in terms of tokens con-\nsumed and generated by the model. Self-reflection is a prompt engineering technique where the\nLLM generates an answer, and is then prompted to evaluate its output for correctness, clarity, or\ncompleteness, then finally generate an improved response based on that evaluation (Huang et al.,\n2023; Madaan et al., 2024; Shinn et al., 2024; Wang et al., 2022). We leverage self-reflection in",
+          "score": 0.5332
+        },
+        {
+          "chunk_id": "p03_c001",
+          "page": 3,
+          "text": "GraphRAG builds upon prior work on advanced RAG strategies. GraphRAG leverages summaries\nover large sections of the data source as a form of ”self-memory” (described in Cheng et al. 2024),\nwhich are later used to answer queries as in Mao et al. 2020). These summaries are generated in\nparallel and iteratively aggregated into global summaries, similar to prior techniques (Feng et al.,\n2023; Gao et al., 2023; Khattab et al., 2022; Shao et al., 2023; Su et al., 2020; Trivedi et al., 2022;\nWang et al., 2024). In particular, GraphRAG is similar to other approaches that use hierarchical\nindexing to create summaries (similar to Kim et al. 2023; Sarthi et al. 2024). GraphRAG contrasts\nwith these approaches by generating a graph index from the source data, then applying graph-based\ncommunity detection to create a thematic partitioning of the data.\n2.2\nUsing Knowledge Graphs with LLMs and RAG\nApproaches to knowledge graph extraction from natural language text corpora include rule-\nmatching, statistical pattern recognition, clustering, and embeddings (Etzioni et al., 2004; Kim et al.,\n2016; Mooney and Bunescu, 2005; Yates et al., 2007). GraphRAG falls into a more recent body of\nresearch that u",
+          "score": 0.5317
+        },
+        {
+          "chunk_id": "p12_c002",
+          "page": 12,
+          "text": "eration before employing our map-reduce\nsummarization mechanisms. This “roll-up” approach could also be extended across multiple levels\nof the community hierarchy, as well as implemented as a more exploratory “drill down” mechanism\nthat follows the information scent contained in higher-level community summaries.\nBroader impacts. As a mechanism for question answering over large document collections, there\nare risks to downstream sensemaking and decision-making tasks if the generated answers do not\naccurately represent the source data. System use should be accompanied by clear disclosures of AI\nuse and the potential for errors in outputs. Compared to vector RAG, however, GraphRAG shows\npromise as a way to mitigate these downstream risks for questions of a global nature, which might\notherwise be answered by samples of retrieved facts falsely presented as global summaries.\n7\nConclusion\nWe have presented GraphRAG, a RAG approach that combines knowledge graph generation and\nquery-focused summarization (QFS) to support human sensemaking over entire text corpora. Initial\nevaluations show substantial improvements over a vector RAG baseline for both the comprehensive-\nness and diversity of a",
+          "score": 0.5262
+        }
+      ],
+      "retrieved_chunk_count": 7,
+      "context_characters": 8606,
+      "prompt_tokens": 2296,
+      "retrieval_seconds": 0.0084,
+      "generation_seconds": 4.6976,
+      "total_seconds": 4.706,
+      "metrics": {
+        "reference_pages": [
+          4
+        ],
+        "retrieved_pages": [
+          1,
+          2,
+          3,
+          4,
+          12,
+          18
+        ],
+        "reference_page_overlap": [
+          4
+        ],
+        "retrieval_page_recall": 1.0,
+        "retrieval_page_precision": 0.1667,
+        "reference_page_hit": true,
+        "matched_keywords": [
+          "source documents",
+          "entities",
+          "relationships",
+          "knowledge graph",
+          "summaries"
+        ],
+        "keyword_coverage": 0.7143,
+        "answer_citations": [],
+        "unsupported_citations": [],
+        "citation_valid": false,
+        "citation_precision": 0,
+        "citation_has_page_range": false
+      },
+      "retrieved_entities": [],
+      "retrieved_communities": [],
+      "graph_candidate_pages": []
+    }
+  ],
+  "summary": {
+    "completed_questions": 2,
+    "reference_page_hit_rate": 1.0,
+    "mean_retrieval_page_recall": 1.0,
+    "mean_retrieval_page_precision": 0.4167,
+    "mean_keyword_coverage": 0.6072,
+    "citation_valid_rate": 0.5,
+    "mean_citation_precision": 0.5,
+    "mean_retrieval_seconds": 0.0085,
+    "mean_generation_seconds": 5.0159,
+    "mean_prompt_tokens": 2165.0
+  }
+}

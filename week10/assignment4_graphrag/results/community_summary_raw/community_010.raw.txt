@@ -1,0 +1,8 @@
+{
+  "main_topic": "Claimify 方法",
+  "summary": "Claimify 是一種基於大語言模型（LLM）的方法，用於識別答案中包含事實性陳述的句子的句子，並將這些句子分解為簡單、自包含的事實陳述。",
+  "key_entities": ["Claimify"],
+  "key_relationships": [],
+  "source_pages": [9],
+  "limitations": "此社區僅包含單一實體，無法推斷其與其他方法或系統的內部關係或應用場景。"
+}

@@ -1,0 +1,15 @@
+{
+  "main_topic": "Community hierarchy levels in summary generation",
+  "summary": "The community consists of two concept entities: 'Higher-level communities' and 'Leaf-level communities'. Leaf-level communities represent the lowest level of the community hierarchy, where element summaries are prioritized and iteratively added to the LLM context window until the token limit is reached [6]. Higher-level communities exist above the leaf level; if all element summaries fit within the token limit of the context window, the process proceeds as for leaf-level communities to summarize all element summaries within the community [6]. Higher-level communities are derived from lower-level communities, where community summaries from lower-level communities are used to generate summaries for higher-level communities [6].",
+  "key_entities": [
+    "Higher-level communities",
+    "Leaf-level communities"
+  ],
+  "key_relationships": [
+    "Higher-level communities are derived from Leaf-level communities"
+  ],
+  "source_pages": [
+    6
+  ],
+  "limitations": "No information regarding specific token limit values or exact summarization algorithms is provided."
+}

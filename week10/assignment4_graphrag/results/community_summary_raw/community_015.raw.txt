@@ -1,0 +1,8 @@
+{
+  "main_topic": "Token limit as a context window constraint",
+  "summary": "The community defines 'Token limit' as a parameter that acts as a constraint on the context window size. This constraint determines the point at which element summaries must be replaced by sub-community summaries. The evidence indicates that this replacement occurs 'until the token limit is reached' [6].",
+  "key_entities": ["Token limit"],
+  "key_relationships": ["Token limit is a constraint on the context window size that determines when element summaries must be replaced by sub-community summaries."],
+  "source_pages": [6],
+  "limitations": "No internal or boundary relationships were identified for this single-entity community."
+}

@@ -1,0 +1,144 @@
+{
+  "page": 10,
+  "part": 1,
+  "source_characters": 3848,
+  "entities": [
+    {
+      "name": "Graph RAG",
+      "type": "Method",
+      "description": "A method utilizing community summaries (C0-C3) and text chunks (TS) for question answering.",
+      "evidence": "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."
+    },
+    {
+      "name": "na¨ıve RAG",
+      "type": "Method",
+      "description": "A baseline method used for comparison against Graph RAG.",
+      "evidence": "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."
+    },
+    {
+      "name": "vector RAG",
+      "type": "Method",
+      "description": "A comparison method against which Graph RAG retains advantages in comprehensiveness and diversity.",
+      "evidence": "retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG."
+    },
+    {
+      "name": "Podcast dataset",
+      "type": "Dataset",
+      "description": "A dataset used to evaluate Graph RAG conditions, showing improvements in comprehensiveness and diversity.",
+      "evidence": "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p<.001) and 64% (p<.001), respectively."
+    },
+    {
+      "name": "News dataset",
+      "type": "Dataset",
+      "description": "A dataset used to evaluate Graph RAG conditions, showing improvements in comprehensiveness and diversity.",
+      "evidence": "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p<.001) and 64% (p<.001), respectively."
+    },
+    {
+      "name": "C0",
+      "type": "Method",
+      "description": "Root-level community summaries requiring dramatically fewer tokens per query.",
+      "evidence": "Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x)."
+    },
+    {
+      "name": "C3",
+      "type": "Method",
+      "description": "Low-level community summaries requiring fewer context tokens compared to source text summarization.",
+      "evidence": "for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens"
+    },
+    {
+      "name": "TS",
+      "type": "Method",
+      "description": "Global text summarization without a graph index, serving as a baseline condition.",
+      "evidence": "Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index)."
+    },
+    {
+      "name": "Comprehensiveness",
+      "type": "Metric",
+      "description": "A metric used to evaluate the quality of answers across different conditions.",
+      "evidence": "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."
+    },
+    {
+      "name": "Diversity",
+      "type": "Metric",
+      "description": "A metric used to evaluate the quality of answers across different conditions.",
+      "evidence": "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."
+    },
+    {
+      "name": "sensemaking activity",
+      "type": "Concept",
+      "description": "The type of iterative question answering characterized by the use of root-level GraphRAG.",
+      "evidence": "root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity"
+    },
+    {
+      "name": "community summaries",
+      "type": "Concept",
+      "description": "Summaries generated at different levels (C0-C3) used within the Graph RAG method.",
+      "evidence": "Community summaries vs. source texts. When comparing community summaries to source texts using GraphRAG, community summaries generally provided a small but consistent improvement in answer comprehensiveness and diversity, except for root-level summaries."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Graph RAG",
+      "target": "na¨ıve RAG",
+      "type": "outperforms",
+      "description": "Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.",
+      "evidence": "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."
+    },
+    {
+      "source": "Graph RAG",
+      "target": "vector RAG",
+      "type": "outperforms",
+      "description": "Graph RAG retains advantages in comprehensiveness and diversity over vector RAG.",
+      "evidence": "retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG."
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Podcast dataset",
+      "type": "evaluates",
+      "description": "Graph RAG conditions were evaluated on the Podcast dataset, showing improvements in comprehensiveness and diversity.",
+      "evidence": "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p<.001) and 64% (p<.001), respectively."
+    },
+    {
+      "source": "Graph RAG",
+      "target": "News dataset",
+      "type": "evaluates",
+      "description": "Graph RAG conditions were evaluated on the News dataset, showing improvements in comprehensiveness and diversity.",
+      "evidence": "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p<.001) and 64% (p<.001), respectively."
+    },
+    {
+      "source": "C0",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "C0 represents root-level community summaries used within the Graph RAG method.",
+      "evidence": "Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x)."
+    },
+    {
+      "source": "C3",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "C3 represents low-level community summaries used within the Graph RAG method.",
+      "evidence": "for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens"
+    },
+    {
+      "source": "TS",
+      "target": "Graph RAG",
+      "type": "compared_to",
+      "description": "Graph RAG conditions C1-C3 showed slight improvements over TS (global text summarization without a graph index).",
+      "evidence": "Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index)."
+    },
+    {
+      "source": "Graph RAG",
+      "target": "sensemaking activity",
+      "type": "supports",
+      "description": "Root-level GraphRAG offers an efficient method for the iterative question answering that characterizes sensemaking activity.",
+      "evidence": "root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity"
+    },
+    {
+      "source": "community summaries",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "description": "Community summaries are compared to source texts when using Graph RAG.",
+      "evidence": "Community summaries vs. source texts. When comparing community summaries to source texts using GraphRAG, community summaries generally provided a small but consistent improvement in answer comprehensiveness and diversity, except for root-level summaries."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "GraphRAG",
+      "type": "Method",
+      "description": "A pipeline approach using an LLM-derived graph index of source document text.",
+      "evidence": "Graph RAG pipeline using an LLM-derived graph index of source document text."
+    },
+    {
+      "name": "Text Chunks",
+      "type": "Concept",
+      "description": "Source documents split into segments for downstream processing.",
+      "evidence": "the documents in the corpus are split into text chunks."
+    },
+    {
+      "name": "Entities",
+      "type": "Concept",
+      "description": "Instances of important entities extracted from text chunks.",
+      "evidence": "extract instances of important entities and the relationships between the entities from a given chunk."
+    },
+    {
+      "name": "Relationships",
+      "type": "Concept",
+      "description": "Connections between entities extracted from text chunks.",
+      "evidence": "extract instances of important entities and the relationships between the entities from a given chunk."
+    },
+    {
+      "name": "LLM",
+      "type": "Model",
+      "description": "Large Language Model used for extraction and summarization tasks.",
+      "evidence": "LLM prompts tailored to the domain of the dataset."
+    },
+    {
+      "name": "Community detection",
+      "type": "Method",
+      "description": "Technique used to partition the graph index into groups of elements.",
+      "evidence": "Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index"
+    },
+    {
+      "name": "Global Answer",
+      "type": "Concept",
+      "description": "The final output produced using query-focused summarization over community summaries.",
+      "evidence": "The \"global answer\" to a given query is produced using a final round of query-focused summarization"
+    },
+    {
+      "name": "Claims",
+      "type": "Concept",
+      "description": "Verifiable facts extracted by LLMs used to validate results.",
+      "evidence": "LLM-extracted statements of verifiable facts, or \"claims.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GraphRAG",
+      "target": "Text Chunks",
+      "type": "uses",
+      "description": "The GraphRAG pipeline uses source documents split into text chunks as input.",
+      "evidence": "Graph RAG pipeline using an LLM-derived graph index of source document text."
+    },
+    {
+      "source": "Text Chunks",
+      "target": "Entities",
+      "type": "proposes",
+      "description": "The LLM extracts instances of important entities from text chunks.",
+      "evidence": "extract instances of important entities and the relationships between the entities from a given chunk."
+    },
+    {
+      "source": "Text Chunks",
+      "target": "Relationships",
+      "type": "proposes",
+      "description": "The LLM extracts relationships between entities from text chunks.",
+      "evidence": "extract instances of important entities and the relationships between the entities from a given chunk."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "Community detection",
+      "type": "uses",
+      "description": "Community detection is used to partition the graph index within the GraphRAG approach.",
+      "evidence": "Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index"
+    },
+    {
+      "source": "Community detection",
+      "target": "Global Answer",
+      "type": "improves",
+      "description": "Community detection partitions elements that are summarized in parallel to produce the global answer.",
+      "evidence": "partition the graph index into groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "Claims",
+      "type": "evaluates",
+      "description": "Results are validated using statistics derived from LLM-extracted claims.",
+      "evidence": "We also validate results using statistics derived from LLM-extracted statements of verifiable facts, or \"claims.\""
+    }
+  ]
+}

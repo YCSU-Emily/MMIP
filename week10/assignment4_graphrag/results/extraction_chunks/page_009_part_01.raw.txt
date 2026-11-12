@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "fixed context window size of 8k tokens",
+      "type": "Method",
+      "description": "A fixed context window size used for generating community summaries, community answers, and global answers.",
+      "evidence": "We used a fixed context window size of 8k tokens for generating community summaries, community answers, and global answers"
+    },
+    {
+      "name": "Graph indexing",
+      "type": "Method",
+      "description": "A method using a 600 token window that took 281 minutes for the Podcast dataset.",
+      "evidence": "Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset"
+    },
+    {
+      "name": "gpt-4-turbo",
+      "type": "Model",
+      "description": "A public OpenAI endpoint used for graph indexing with 2M TPM and 10k RPM limits.",
+      "evidence": "using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM)"
+    },
+    {
+      "name": "Leiden community detection",
+      "type": "Method",
+      "description": "A method implemented using the graspologic library for community detection.",
+      "evidence": "We implemented Leiden community detection using the graspologic library (Chung et al., 2019)"
+    },
+    {
+      "name": "Claimify",
+      "type": "Method",
+      "description": "An LLM-based method that identifies sentences containing factual claims and decomposes them into simple claims.",
+      "evidence": "To extract factual claims, we used Claimify (Metropolitansky and Larson, 2025), an LLM-based method that identifies sentences in an answer containing at least one factual claim, then decomposes these sentences into simple, self-contained factual claims."
+    },
+    {
+      "name": "Comprehensiveness",
+      "type": "Metric",
+      "description": "A metric measured as the average number of claims extracted from answers generated under each condition.",
+      "evidence": "1. Comprehensiveness: Measured as the average number of claims extracted from the answers generated under each condition."
+    },
+    {
+      "name": "Diversity",
+      "type": "Metric",
+      "description": "A metric measured by clustering the claims for each answer and calculating the average number of clusters.",
+      "evidence": "2. Diversity: Measured by clustering the claims for each answer and calculating the average number of clusters."
+    },
+    {
+      "name": "agglomerative clustering",
+      "type": "Method",
+      "description": "A clustering approach implemented using Scikit-learn with complete linkage and 1-ROUGE-L distance metric.",
+      "evidence": "For clustering, we followed the approach described by Padmakumar and He (2024), which involved using Scikit-learn's implementation of agglomerative clustering (Pedregosa et al., 2011). Clusters were merged through \"complete\" linkage, meaning they were combined only if the maximum distance between their farthest points was less than or equal to a predefined distance threshold. The distance metric used was 1 -ROUGE-L."
+    },
+    {
+      "name": "global approaches",
+      "type": "Concept",
+      "description": "Approaches that significantly outperformed conventional vector RAG in comprehensiveness and diversity criteria.",
+      "evidence": "Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p<.001) for Podcast transcripts and 72-80% (p<.001) for News articles, while diversity win rates ranged from 75-82% (p<.001) and 62-71% (p<.01) respectively."
+    },
+    {
+      "name": "conventional vector RAG (SS)",
+      "type": "Concept",
+      "description": "A conventional approach that was outperformed by global approaches in comprehensiveness and diversity.",
+      "evidence": "global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "fixed context window size of 8k tokens",
+      "target": "generating community summaries, community answers, and global answers",
+      "type": "uses",
+      "description": "The fixed context window size of 8k tokens is used for generating community summaries, community answers, and global answers.",
+      "evidence": "We used a fixed context window size of 8k tokens for generating community summaries, community answers, and global answers"
+    },
+    {
+      "source": "Graph indexing",
+      "target": "Podcast dataset",
+      "type": "evaluates",
+      "description": "Graph indexing with a 600 token window took 281 minutes for the Podcast dataset.",
+      "evidence": "Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset"
+    },
+    {
+      "source": "gpt-4-turbo",
+      "target": "Graph indexing",
+      "type": "uses",
+      "description": "Graph indexing was performed using a public OpenAI endpoint for gpt-4-turbo.",
+      "evidence": "Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset, running on a virtual machine (16GB RAM, Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz) and using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM)."
+    },
+    {
+      "source": "Leiden community detection",
+      "target": "graspologic library",
+      "type": "uses",
+      "description": "Leiden community detection was implemented using the graspologic library.",
+      "evidence": "We implemented Leiden community detection using the graspologic library (Chung et al., 2019)."
+    },
+    {
+      "source": "Claimify",
+      "target": "factual claims",
+      "type": "extracts",
+      "description": "Claimify identifies sentences containing factual claims and decomposes them into simple, self-contained factual claims.",
+      "evidence": "To extract factual claims, we used Claimify (Metropolitansky and Larson, 2025), an LLM-based method that identifies sentences in an answer containing at least one factual claim, then decomposes these sentences into simple, self-contained factual claims."
+    },
+    {
+      "source": "Comprehensiveness",
+      "target": "answers generated under each condition",
+      "type": "measures",
+      "description": "Comprehensiveness is measured as the average number of claims extracted from the answers generated under each condition.",
+      "evidence": "1. Comprehensiveness: Measured as the average number of claims extracted from the answers generated under each condition."
+    },
+    {
+      "source": "Diversity",
+      "target": "claims for each answer",
+      "type": "measures",
+      "description": "Diversity is measured by clustering the claims for each answer and calculating the average number of clusters.",
+      "evidence": "2. Diversity: Measured by clustering the claims for each answer and calculating the average number of clusters."
+    },
+    {
+      "source": "agglomerative clustering",
+      "target": "Scikit-learn",
+      "type": "uses",
+      "description": "Agglomerative clustering was implemented using Scikit-learn's implementation.",
+      "evidence": "For clustering, we followed the approach described by Padmakumar and He (2024), which involved using Scikit-learn's implementation of agglomerative clustering (Pedregosa et al., 2011)."
+    },
+    {
+      "source": "global approaches",
+      "target": "conventional vector RAG (SS)",
+      "type": "outperforms",
+      "description": "Global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets.",
+      "evidence": "global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets."
+    },
+    {
+      "source": "global approaches",
+      "target": "comprehensiveness",
+      "type": "achieves",
+      "description": "Global approaches achieved comprehensiveness win rates between 72-83% for Podcast transcripts and 72-80% for News articles.",
+      "evidence": "Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p<.001) for Podcast transcripts and 72-80% (p<.001) for News articles"
+    }
+  ]
+}

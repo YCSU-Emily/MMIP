@@ -1,0 +1,19 @@
+{
+  "main_topic": "GraphRAG 處理流程中的實體與關係提取機制",
+  "summary": "此社群描述了 GraphRAG 系統中處理原始文檔的基礎流程。文檔首先被分割成「Text Chunks」（頁 4），這些片段作為輸入來源，透過提取重要實體與實體間的連結，產出「Entities」（頁 4）與「Relationships」（頁 4）。GraphRAG 系統使用這些 Text Chunks 來建立基於 LLM 導致的圖索引（頁 4）。",
+  "key_entities": [
+    "Text Chunks",
+    "Entities",
+    "Relationships",
+    "GraphRAG"
+  ],
+  "key_relationships": [
+    "Text Chunks yields Entities",
+    "Text Chunks yields Relationships",
+    "GraphRAG uses Text Chunks"
+  ],
+  "source_pages": [
+    4
+  ],
+  "limitations": "無法從現有社群資料中推斷實體與關係提取的具體算法細節、LLM 導致的圖索引的具體結構，或提取過程中的過濾與後處理步驟。"
+}

@@ -1,0 +1,8 @@
+{
+  "main_topic": "human sensemaking",
+  "summary": "The community identifies 'human sensemaking' as the primary goal supported by GraphRAG when processing entire text corpora. This concept is explicitly linked to the capability of GraphRAG to assist users in making sense of large-scale textual data.",
+  "key_entities": ["human sensemaking", "GraphRAG"],
+  "key_relationships": ["GraphRAG supports human sensemaking over entire text corpora"],
+  "source_pages": [12],
+  "limitations": "No internal relationships or additional contextual details are available within this single-entity community."
+}

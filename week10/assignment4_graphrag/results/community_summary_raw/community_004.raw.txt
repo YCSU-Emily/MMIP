@@ -1,0 +1,22 @@
+{
+  "main_topic": "Global Sensemaking Evaluation via Adaptive Benchmarking and Question Generation",
+  "summary": "This community focuses on evaluating RAG systems through 'global sensemaking,' which requires understanding the entirety of a corpus rather than specific details. The proposed approach involves 'adaptive benchmarking,' a process that dynamically generates evaluation queries tailored to specific domains. This method utilizes 'LLM-based persona generation' to create representative user queries and employs the 'GENERATEQUESTIONS' procedure to formulate high-level questions based on corpus descriptions and user personas. These generated questions target global understanding. The 'News Articles' dataset serves as a primary example for this evaluation, where questions are generated to assess global comprehension. The community also notes that 'Podcast Transcripts' are used for similar question generation targeting global sensemaking.",
+  "key_entities": [
+    "GENERATEQUESTIONS",
+    "LLM-based persona generation",
+    "News Articles",
+    "adaptive benchmarking",
+    "global sensemaking"
+  ],
+  "key_relationships": [
+    "GENERATEQUESTIONS generates questions requiring global understanding of the corpus.",
+    "News Articles is a dataset used to generate questions targeting global understanding.",
+    "adaptive benchmarking generates corpus-specific queries for global sensemaking evaluation.",
+    "adaptive benchmarking uses LLM-based persona generation to create representative user queries."
+  ],
+  "source_pages": [
+    3,
+    7
+  ],
+  "limitations": "The community data does not provide sufficient information to describe the internal relationships or specific mechanisms of 'LLM' usage beyond the boundary relationship, nor does it detail the specific performance metrics of the adaptive benchmarking approach other than referencing the win rates of News Articles in a broader context."
+}

@@ -1,0 +1,119 @@
+{
+  "page": 7,
+  "part": 1,
+  "source_characters": 3160,
+  "entities": [
+    {
+      "name": "GENERATEQUESTIONS",
+      "type": "Method",
+      "description": "A procedure to generate high-level questions for a dataset based on corpus description, user personas, and tasks.",
+      "evidence": "procedure GENERATEQUESTIONS"
+    },
+    {
+      "name": "LLM",
+      "type": "Model",
+      "description": "A Large Language Model used to prompt for user descriptions, task identification, and question generation.",
+      "evidence": "prompt the LLM to"
+    },
+    {
+      "name": "global sensemaking",
+      "type": "Concept",
+      "description": "The target of questions requiring understanding of the entire corpus without specific low-level facts.",
+      "evidence": "requiring global understanding of the corpus"
+    },
+    {
+      "name": "head-to-head comparison approach",
+      "type": "Method",
+      "description": "An evaluation strategy using an LLM evaluator to judge relative performance.",
+      "evidence": "adopt the head-to-head comparison approach using an LLM evaluator"
+    },
+    {
+      "name": "Comprehensiveness",
+      "type": "Metric",
+      "description": "A target criterion measuring how much detail an answer provides to cover all aspects of a question.",
+      "evidence": "How much detail does the answer provide to cover all aspects and details of the question?"
+    },
+    {
+      "name": "Diversity",
+      "type": "Metric",
+      "description": "A target criterion measuring the variety and richness of perspectives and insights in an answer.",
+      "evidence": "How varied and rich is the answer in providing different perspectives and insights on the question?"
+    },
+    {
+      "name": "Empowerment",
+      "type": "Metric",
+      "description": "A target criterion measuring how well an answer helps the reader understand and make informed judgments.",
+      "evidence": "How well does the answer help the reader understand and make informed judgments about the topic?"
+    },
+    {
+      "name": "Podcast transcripts",
+      "type": "Dataset",
+      "description": "A dataset example featuring a tech journalist user and questions about tech policy and regulation.",
+      "evidence": "Podcast transcripts"
+    },
+    {
+      "name": "News articles",
+      "type": "Dataset",
+      "description": "A dataset example featuring an educator user and questions about health and wellness.",
+      "evidence": "News articles"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENERATEQUESTIONS",
+      "target": "LLM",
+      "type": "uses",
+      "description": "The GENERATEQUESTIONS procedure prompts the LLM to describe personas, identify tasks, and generate questions.",
+      "evidence": "prompt the LLM to: 1. Describe personas of K potential users of the dataset."
+    },
+    {
+      "source": "GENERATEQUESTIONS",
+      "target": "global sensemaking",
+      "type": "evaluates",
+      "description": "The procedure generates questions that require global understanding of the corpus rather than specific low-level facts.",
+      "evidence": "generate M high-level questions that: • Require understanding of the entire corpus."
+    },
+    {
+      "source": "head-to-head comparison approach",
+      "target": "LLM",
+      "type": "uses",
+      "description": "The evaluation approach utilizes an LLM evaluator to judge relative performance.",
+      "evidence": "using an LLM evaluator that judges relative performance"
+    },
+    {
+      "source": "head-to-head comparison approach",
+      "target": "Comprehensiveness",
+      "type": "evaluates",
+      "description": "The approach judges performance according to the Comprehensiveness criterion.",
+      "evidence": "We designed three target criteria capturing qualities that are desirable for global sensemaking activities."
+    },
+    {
+      "source": "head-to-head comparison approach",
+      "target": "Diversity",
+      "type": "evaluates",
+      "description": "The approach judges performance according to the Diversity criterion.",
+      "evidence": "• Diversity. How varied and rich is the answer in providing different perspectives and insights on the question?"
+    },
+    {
+      "source": "head-to-head comparison approach",
+      "target": "Empowerment",
+      "type": "evaluates",
+      "description": "The approach judges performance according to the Empowerment criterion.",
+      "evidence": "• Empowerment. How well does the answer help the reader understand and make informed judgments about the topic?"
+    },
+    {
+      "source": "Podcast transcripts",
+      "target": "global sensemaking",
+      "type": "addresses",
+      "description": "The dataset example generates questions targeting global understanding rather than specific details.",
+      "evidence": "Questions target global understanding rather than specific details."
+    },
+    {
+      "source": "News articles",
+      "target": "global sensemaking",
+      "type": "addresses",
+      "description": "The dataset example generates questions targeting global understanding rather than specific details.",
+      "evidence": "Questions target global understanding rather than specific details."
+    }
+  ]
+}

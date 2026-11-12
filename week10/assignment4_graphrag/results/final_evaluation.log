@@ -1,0 +1,211 @@
+===== RAG EVALUATION =====
+Questions: 24
+Methods: ['graphrag', 'vector']
+GPU: NVIDIA GeForce RTX 5090
+
+[1] Loading GraphRAG retriever and BGE-M3...
+[GraphRAG] Loading graph and retrieval data...
+[GraphRAG] Loading BGE-M3...
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 57391.88it/s]
+[GraphRAG] Preparing retrieval embeddings...
+[GraphRAG] Ready.
+  Nodes: 75
+  Edges: 82
+  Communities: 20
+  Chunks: 95
+
+[2] Loading existing ChromaDB...
+Collection: graphrag_paper_chunks
+Vectors: 95
+
+[3] Loading Qwen...
+
+[Qwen] Loading local model...
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:   0%|          | 1/723 [00:00<01:51,  6.47it/s]Loading weights:   6%|▌         | 41/723 [00:00<00:03, 192.97it/s]Loading weights:  11%|█         | 79/723 [00:00<00:02, 268.31it/s]Loading weights:  16%|█▌        | 116/723 [00:00<00:02, 300.94it/s]Loading weights:  21%|██        | 152/723 [00:00<00:01, 314.12it/s]Loading weights:  27%|██▋       | 195/723 [00:00<00:01, 348.03it/s]Loading weights:  32%|███▏      | 234/723 [00:00<00:01, 353.41it/s]Loading weights:  37%|███▋      | 271/723 [00:00<00:01, 349.42it/s]Loading weights:  42%|████▏     | 307/723 [00:00<00:01, 346.91it/s]Loading weights:  48%|████▊     | 345/723 [00:01<00:01, 351.15it/s]Loading weights:  53%|█████▎    | 384/723 [00:01<00:00, 362.02it/s]Loading weights:  58%|█████▊    | 421/723 [00:01<00:00, 359.87it/s]Loading weights:  93%|█████████▎| 672/723 [00:01<00:00, 989.07it/s]Loading weights: 100%|██████████| 723/723 [00:01<00:00, 506.05it/s]
+[Qwen] Model ready.
+
+===== GRAPHRAG =====
+Already completed: 0
+
+[1/24] Q01: What limitation of conventional RAG motivates the GraphRAG approach?
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  retrieval=0.02s | generation=4.77s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[2/24] Q02: What are the major stages of the GraphRAG indexing pipeline?
+  retrieval=0.01s | generation=4.82s | page_recall=0.80 | keyword_coverage=1.00 | citation=PASS
+
+[3/24] Q03: What is the role of text chunking in GraphRAG?
+  retrieval=0.01s | generation=4.04s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[4/24] Q04: What information is represented by entities and relationships in the GraphRAG knowledge graph?
+  retrieval=0.01s | generation=11.52s | page_recall=0.00 | keyword_coverage=1.00 | citation=PASS
+
+[5/24] Q05: Why does GraphRAG identify communities in its knowledge graph?
+  retrieval=0.01s | generation=3.54s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[6/24] Q06: How are community summaries used in the GraphRAG indexing process?
+  retrieval=0.01s | generation=9.40s | page_recall=0.67 | keyword_coverage=0.75 | citation=PASS
+
+[7/24] Q07: Why are conventional question-answering benchmarks insufficient for evaluating global sensemaking?
+  retrieval=0.01s | generation=5.80s | page_recall=1.00 | keyword_coverage=0.80 | citation=PASS
+
+[8/24] Q08: What is the purpose of global search in GraphRAG?
+  retrieval=0.01s | generation=5.90s | page_recall=1.00 | keyword_coverage=1.00 | citation=PASS
+
+[9/24] Q09: What happens during the map step of GraphRAG global search?
+  retrieval=0.01s | generation=1.40s | page_recall=0.50 | keyword_coverage=0.50 | citation=PASS
+
+[10/24] Q10: What happens during the reduce step of GraphRAG global search?
+  retrieval=0.01s | generation=2.59s | page_recall=0.50 | keyword_coverage=0.75 | citation=FAIL
+
+[11/24] Q11: Why does the paper avoid generating evaluation questions directly from the corpus being evaluated?
+  retrieval=0.01s | generation=3.66s | page_recall=1.00 | keyword_coverage=0.40 | citation=PASS
+
+[12/24] Q12: What does the paper mean by describing community summaries as a form of self-memory?
+  retrieval=0.01s | generation=5.39s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[13/24] Q13: What role does an LLM play in constructing the GraphRAG index?
+  retrieval=0.01s | generation=5.68s | page_recall=0.33 | keyword_coverage=0.50 | citation=PASS
+
+[14/24] Q14: What is the purpose of the question-generation procedure described in the paper?
+  retrieval=0.01s | generation=5.94s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[15/24] Q15: What does comprehensiveness measure when evaluating generated answers?
+  retrieval=0.01s | generation=6.09s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[16/24] Q16: What does diversity measure in the paper's answer evaluation?
+  retrieval=0.01s | generation=4.45s | page_recall=0.00 | keyword_coverage=0.67 | citation=PASS
+
+[17/24] Q17: What does empowerment measure in the paper's evaluation framework?
+  retrieval=0.01s | generation=3.71s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[18/24] Q18: What is Directness intended to evaluate?
+  retrieval=0.01s | generation=2.70s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[19/24] Q19: What context window size did the authors use for generating community summaries, community answers, and global answers?
+  retrieval=0.01s | generation=1.47s | page_recall=1.00 | keyword_coverage=0.80 | citation=PASS
+
+[20/24] Q20: Which six experimental conditions are compared in the paper?
+  retrieval=0.01s | generation=6.28s | page_recall=1.00 | keyword_coverage=1.00 | citation=PASS
+
+[21/24] Q21: How does the paper compare the performance of different experimental conditions?
+  retrieval=0.01s | generation=10.54s | page_recall=0.50 | keyword_coverage=1.00 | citation=PASS
+
+[22/24] Q22: What does the paper analyze in its comparison of extracted claims?
+  retrieval=0.01s | generation=6.93s | page_recall=1.00 | keyword_coverage=1.00 | citation=FAIL
+
+[23/24] Q23: What does the paper investigate by comparing different clustering distance thresholds?
+  retrieval=0.01s | generation=4.72s | page_recall=1.00 | keyword_coverage=0.75 | citation=FAIL
+
+[24/24] Q24: What is the scope of the pairwise statistical comparisons reported in the paper?
+  retrieval=0.01s | generation=11.27s | page_recall=1.00 | keyword_coverage=0.80 | citation=PASS
+
+===== SUMMARY =====
+{
+  "completed_questions": 24,
+  "reference_page_hit_rate": 0.9167,
+  "mean_retrieval_page_recall": 0.8042,
+  "mean_retrieval_page_precision": 0.2565,
+  "mean_keyword_coverage": 0.6653,
+  "citation_valid_rate": 0.875,
+  "mean_citation_precision": 0.875,
+  "mean_retrieval_seconds": 0.0076,
+  "mean_generation_seconds": 5.5264,
+  "mean_prompt_tokens": 5149.54
+}
+Saved: /home/emily/MMIP/week10/assignment4_graphrag/results/evaluation_graphrag.json
+
+===== VECTOR =====
+Already completed: 0
+
+[1/24] Q01: What limitation of conventional RAG motivates the GraphRAG approach?
+  retrieval=0.01s | generation=3.68s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[2/24] Q02: What are the major stages of the GraphRAG indexing pipeline?
+  retrieval=0.01s | generation=4.18s | page_recall=0.60 | keyword_coverage=0.71 | citation=PASS
+
+[3/24] Q03: What is the role of text chunking in GraphRAG?
+  retrieval=0.01s | generation=4.65s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[4/24] Q04: What information is represented by entities and relationships in the GraphRAG knowledge graph?
+  retrieval=0.01s | generation=4.25s | page_recall=0.00 | keyword_coverage=0.75 | citation=PASS
+
+[5/24] Q05: Why does GraphRAG identify communities in its knowledge graph?
+  retrieval=0.01s | generation=4.34s | page_recall=1.00 | keyword_coverage=0.75 | citation=PASS
+
+[6/24] Q06: How are community summaries used in the GraphRAG indexing process?
+  retrieval=0.01s | generation=4.24s | page_recall=0.67 | keyword_coverage=0.25 | citation=PASS
+
+[7/24] Q07: Why are conventional question-answering benchmarks insufficient for evaluating global sensemaking?
+  retrieval=0.01s | generation=3.30s | page_recall=1.00 | keyword_coverage=0.40 | citation=PASS
+
+[8/24] Q08: What is the purpose of global search in GraphRAG?
+  retrieval=0.01s | generation=7.77s | page_recall=1.00 | keyword_coverage=1.00 | citation=PASS
+
+[9/24] Q09: What happens during the map step of GraphRAG global search?
+  retrieval=0.01s | generation=1.78s | page_recall=0.50 | keyword_coverage=0.50 | citation=PASS
+
+[10/24] Q10: What happens during the reduce step of GraphRAG global search?
+  retrieval=0.01s | generation=2.85s | page_recall=0.50 | keyword_coverage=0.75 | citation=FAIL
+
+[11/24] Q11: Why does the paper avoid generating evaluation questions directly from the corpus being evaluated?
+  retrieval=0.01s | generation=4.34s | page_recall=1.00 | keyword_coverage=0.40 | citation=PASS
+
+[12/24] Q12: What does the paper mean by describing community summaries as a form of self-memory?
+  retrieval=0.01s | generation=3.22s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[13/24] Q13: What role does an LLM play in constructing the GraphRAG index?
+  retrieval=0.01s | generation=4.90s | page_recall=0.33 | keyword_coverage=0.50 | citation=PASS
+
+[14/24] Q14: What is the purpose of the question-generation procedure described in the paper?
+  retrieval=0.01s | generation=4.12s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[15/24] Q15: What does comprehensiveness measure when evaluating generated answers?
+  retrieval=0.01s | generation=2.93s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[16/24] Q16: What does diversity measure in the paper's answer evaluation?
+  retrieval=0.01s | generation=4.83s | page_recall=0.00 | keyword_coverage=0.33 | citation=FAIL
+
+[17/24] Q17: What does empowerment measure in the paper's evaluation framework?
+  retrieval=0.01s | generation=3.69s | page_recall=1.00 | keyword_coverage=0.50 | citation=PASS
+
+[18/24] Q18: What is Directness intended to evaluate?
+  retrieval=0.01s | generation=2.37s | page_recall=1.00 | keyword_coverage=0.25 | citation=PASS
+
+[19/24] Q19: What context window size did the authors use for generating community summaries, community answers, and global answers?
+  retrieval=0.01s | generation=2.21s | page_recall=1.00 | keyword_coverage=1.00 | citation=FAIL
+
+[20/24] Q20: Which six experimental conditions are compared in the paper?
+  retrieval=0.01s | generation=4.86s | page_recall=1.00 | keyword_coverage=0.89 | citation=PASS
+
+[21/24] Q21: How does the paper compare the performance of different experimental conditions?
+  retrieval=0.01s | generation=9.90s | page_recall=0.50 | keyword_coverage=0.75 | citation=PASS
+
+[22/24] Q22: What does the paper analyze in its comparison of extracted claims?
+  retrieval=0.01s | generation=4.90s | page_recall=1.00 | keyword_coverage=1.00 | citation=PASS
+
+[23/24] Q23: What does the paper investigate by comparing different clustering distance thresholds?
+  retrieval=0.01s | generation=3.93s | page_recall=1.00 | keyword_coverage=0.75 | citation=FAIL
+
+[24/24] Q24: What is the scope of the pairwise statistical comparisons reported in the paper?
+  retrieval=0.01s | generation=10.93s | page_recall=1.00 | keyword_coverage=1.00 | citation=PASS
+
+===== SUMMARY =====
+{
+  "completed_questions": 24,
+  "reference_page_hit_rate": 0.9167,
+  "mean_retrieval_page_recall": 0.7958,
+  "mean_retrieval_page_precision": 0.2426,
+  "mean_keyword_coverage": 0.5828,
+  "citation_valid_rate": 0.8333,
+  "mean_citation_precision": 0.8333,
+  "mean_retrieval_seconds": 0.0083,
+  "mean_generation_seconds": 4.5074,
+  "mean_prompt_tokens": 2398.29
+}
+Saved: /home/emily/MMIP/week10/assignment4_graphrag/results/evaluation_vector.json
+
+Evaluation finished.

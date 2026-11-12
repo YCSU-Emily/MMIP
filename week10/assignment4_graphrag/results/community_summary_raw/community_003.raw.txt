@@ -1,0 +1,37 @@
+{
+  "main_topic": "Evaluation of Graph RAG using global approaches against naive RAG across four metrics",
+  "summary": "本研究社群聚焦於評估「Graph RAG」條件在四個目標指標（Comprehensiveness、Directness、Diversity、Empowerment）上的表現，並比較其與傳統向量 RAG（SS）的差異。研究採用「head-to-head comparison approach」，利用 LLM 評估器進行兩兩比較，並針對非正態分佈數據使用非參數統計方法（Wilcoxon signed-rank test），同時應用 Holm-Bonferroni correction 以處理多重比較問題。證據顯示，global approaches 在 Comprehensiveness 和 Diversity 上顯著優於 naive RAG，而 Directness 則與後兩者存在對立關係。",
+  "key_entities": [
+    "Comprehensiveness",
+    "Directness",
+    "Diversity",
+    "Empowerment",
+    "global approaches",
+    "na¨ıve RAG",
+    "head-to-head comparison approach",
+    "Wilcoxon signed-rank test",
+    "Shapiro-Wilk test",
+    "Holm-Bonferroni correction"
+  ],
+  "key_relationships": [
+    "Directness opposes Comprehensiveness",
+    "Directness opposes Diversity",
+    "Shapiro-Wilk test motivates use of Wilcoxon signed-rank test",
+    "Wilcoxon signed-rank test evaluates Comprehensiveness",
+    "Wilcoxon signed-rank test evaluates Directness",
+    "Wilcoxon signed-rank test evaluates Diversity",
+    "Wilcoxon signed-rank test evaluates Empowerment",
+    "Wilcoxon signed-rank test uses Holm-Bonferroni correction",
+    "global approaches achieves high win rates in Comprehensiveness and Diversity compared to naive RAG",
+    "head-to-head comparison approach evaluates Comprehensiveness, Diversity, and Empowerment"
+  ],
+  "source_pages": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    26
+  ],
+  "limitations": "社群資料未提供 Directness 指標在 global approaches 與 naive RAG 之間的具體比較結果或統計顯著性，僅說明兩者存在對立關係。此外，雖提及 global approaches 在 Podcast 和 News 數據集上的表現，但社群範圍未明確限定於此，故無法斷言所有數據集均呈現相同趨勢。"
+}

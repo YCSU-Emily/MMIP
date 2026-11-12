@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "Gemini",
+      "type": "Model",
+      "description": "A family of highly capable multimodal models.",
+      "evidence": "\"Gemini: a family of highly capable multimodal models.\""
+    },
+    {
+      "name": "Knowledge-augmented language model prompting",
+      "type": "Method",
+      "description": "A method for zero-shot knowledge graph question answering.",
+      "evidence": "\"Knowledge-augmented language model prompting for zero-shot knowledge graph question answering.\""
+    },
+    {
+      "name": "Large language models",
+      "type": "Model",
+      "description": "Models used for advanced causal discovery from data.",
+      "evidence": "\"Harnessing large language models for advanced causal discovery from data.\""
+    },
+    {
+      "name": "Neural networks",
+      "type": "Method",
+      "description": "Used for entity matching as surveyed in the literature.",
+      "evidence": "\"Neural networks for entity matching: A survey.\""
+    },
+    {
+      "name": "Query focused abstractive summarization",
+      "type": "Method",
+      "description": "A method incorporating query relevance and multi-document coverage into seq2seq models.",
+      "evidence": "\"Query focused abstractive summarization: Incorporating query relevance, multi-document coverage, and summary length constraints into seq2seq models.\""
+    },
+    {
+      "name": "Fast unfolding of communities",
+      "type": "Method",
+      "description": "A technique for detecting communities in large networks.",
+      "evidence": "\"Fast unfolding of communities in large networks.\""
+    },
+    {
+      "name": "Language models",
+      "type": "Model",
+      "description": "Models that are few-shot learners.",
+      "evidence": "\"Language models are few-shot learners.\""
+    },
+    {
+      "name": "Retrieval-augmented text generation",
+      "type": "Method",
+      "description": "A method utilizing self-memory for text generation.",
+      "evidence": "\"Retrieval-augmented text generation with self-memory.\""
+    },
+    {
+      "name": "Ragas",
+      "type": "Metric",
+      "description": "An automated evaluation tool for retrieval augmented generation.",
+      "evidence": "\"Ragas: Automated evaluation of retrieval augmented generation.\""
+    },
+    {
+      "name": "Web-scale information extraction",
+      "type": "Method",
+      "description": "A process for extracting information on a web scale.",
+      "evidence": "\"Web-scale information extraction in knowitall: (preliminary results).\""
+    },
+    {
+      "name": "Retrieval-generation synergy augmented large language models",
+      "type": "Model",
+      "description": "Large language models enhanced by retrieval-generation synergy.",
+      "evidence": "\"Retrieval-generation synergy augmented large language models.\""
+    },
+    {
+      "name": "Community detection",
+      "type": "Method",
+      "description": "A method for detecting communities in graphs.",
+      "evidence": "\"Community detection in graphs.\""
+    },
+    {
+      "name": "Retrieval-augmented generation",
+      "type": "Method",
+      "description": "A method for large language models surveyed in the literature.",
+      "evidence": "\"Retrieval-augmented generation for large language models: A survey.\""
+    },
+    {
+      "name": "G-retriever",
+      "type": "Model",
+      "description": "A model for retrieval-augmented generation for textual graph understanding and question answering.",
+      "evidence": "\"G-retriever: Retrieval-augmented generation for textual graph understanding and question answering.\""
+    },
+    {
+      "name": "Large language models",
+      "type": "Model",
+      "description": "Models that cannot self-correct reasoning yet.",
+      "evidence": "\"Large language models cannot self-correct reasoning yet.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Knowledge-augmented language model prompting",
+      "target": "zero-shot knowledge graph question answering",
+      "type": "proposes",
+      "description": "The method proposes a solution for the task.",
+      "evidence": "\"Knowledge-augmented language model prompting for zero-shot knowledge graph question answering.\""
+    },
+    {
+      "source": "Large language models",
+      "target": "advanced causal discovery from data",
+      "type": "addresses",
+      "description": "The models are used to address the task of causal discovery.",
+      "evidence": "\"Harnessing large language models for advanced causal discovery from data.\""
+    },
+    {
+      "source": "Neural networks",
+      "target": "entity matching",
+      "type": "consists_of",
+      "description": "Neural networks are the core technology for entity matching.",
+      "evidence": "\"Neural networks for entity matching: A survey.\""
+    },
+    {
+      "source": "Query focused abstractive summarization",
+      "target": "seq2seq models",
+      "type": "incorporates",
+      "description": "The method incorporates constraints into seq2seq models.",
+      "evidence": "\"Incorporating query relevance, multi-document coverage, and summary length constraints into seq2seq models.\""
+    },
+    {
+      "source": "Fast unfolding of communities",
+      "target": "large networks",
+      "type": "applies_to",
+      "description": "The method is applied to large networks for community detection.",
+      "evidence": "\"Fast unfolding of communities in large networks.\""
+    },
+    {
+      "source": "Language models",
+      "target": "few-shot learners",
+      "type": "are",
+      "description": "The models function as few-shot learners.",
+      "evidence": "\"Language models are few-shot learners.\""
+    },
+    {
+      "source": "Retrieval-augmented text generation",
+      "target": "self-memory",
+      "type": "utilizes",
+      "description": "The generation method utilizes self-memory.",
+      "evidence": "\"Retrieval-augmented text generation with self-memory.\""
+    },
+    {
+      "source": "Ragas",
+      "target": "retrieval augmented generation",
+      "type": "evaluates",
+      "description": "Ragas is used to evaluate the generation method.",
+      "evidence": "\"Ragas: Automated evaluation of retrieval augmented generation.\""
+    },
+    {
+      "source": "Web-scale information extraction",
+      "target": "knowitall",
+      "type": "performed_in",
+      "description": "The extraction was performed in the knowitall system.",
+      "evidence": "\"Web-scale information extraction in knowitall: (preliminary results).\""
+    },
+    {
+      "source": "Retrieval-generation synergy augmented large language models",
+      "target": "large language models",
+      "type": "augments",
+      "description": "The synergy augmented models augment standard large language models.",
+      "evidence": "\"Retrieval-generation synergy augmented large language models.\""
+    },
+    {
+      "source": "Community detection",
+      "target": "graphs",
+      "type": "applies_to",
+      "description": "The method applies to graphs for community detection.",
+      "evidence": "\"Community detection in graphs.\""
+    },
+    {
+      "source": "Retrieval-augmented generation",
+      "target": "large language models",
+      "type": "applies_to",
+      "description": "The method is applied to large language models.",
+      "evidence": "\"Retrieval-augmented generation for large language models: A survey.\""
+    },
+    {
+      "source": "G-retriever",
+      "target": "textual graph understanding and question answering",
+      "type": "addresses",
+      "description": "The model addresses tasks in textual graph understanding and question answering.",
+      "evidence": "\"G-retriever: Retrieval-augmented generation for textual graph understanding and question answering.\""
+    },
+    {
+      "source": "Large language models",
+      "target": "self-correct reasoning",
+      "type": "cannot",
+      "description": "The models are unable to self-correct reasoning.",
+      "evidence": "\"Large language models cannot self-correct reasoning yet.\""
+    }
+  ]
+}

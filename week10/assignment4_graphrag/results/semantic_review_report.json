@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "source_file": "week10/assignment4_graphrag/results/cleaned_knowledge.json",
+  "statistics": {
+    "original_entity_count": 85,
+    "semantic_entity_count": 75,
+    "original_relationship_count": 98,
+    "semantic_relationship_count": 82,
+    "removed_relationship_count": 11,
+    "entity_type_distribution": {
+      "Concept": 22,
+      "Dataset": 5,
+      "Experiment": 2,
+      "Experimental Condition": 6,
+      "Framework": 1,
+      "Method": 27,
+      "Metric": 4,
+      "Model": 4,
+      "Parameter": 3,
+      "Task": 1
+    }
+  },
+  "removed_relationships": [
+    {
+      "id": 29,
+      "reason": "Insufficient evidence for a direct GraphRAG-Claims relation."
+    },
+    {
+      "id": 30,
+      "reason": "Illustrative NeoChip example corpus."
+    },
+    {
+      "id": 31,
+      "reason": "Illustrative NeoChip example corpus."
+    },
+    {
+      "id": 32,
+      "reason": "Illustrative NeoChip example corpus."
+    },
+    {
+      "id": 36,
+      "reason": "Incorrectly represents duplicate-entity handling."
+    },
+    {
+      "id": 45,
+      "reason": "Semantically invalid Global Answer-Token limit relation."
+    },
+    {
+      "id": 75,
+      "reason": "Evidence does not support the consists_of relation."
+    },
+    {
+      "id": 81,
+      "reason": "Comprehensiveness and Diversity are independent metrics."
+    },
+    {
+      "id": 88,
+      "reason": "Evidence is from the bibliography rather than the main text."
+    },
+    {
+      "id": 95,
+      "reason": "Dataset is not a component of the Comprehensiveness metric."
+    },
+    {
+      "id": 96,
+      "reason": "Dataset is not a component of the Comprehensiveness metric."
+    }
+  ],
+  "merged_relationships": [
+    {
+      "source": "GraphRAG",
+      "type": "constructs",
+      "target": "Knowledge Graph",
+      "original_ids": [
+        3,
+        9
+      ],
+      "merged_record_count": 2
+    },
+    {
+      "source": "GraphRAG",
+      "type": "evaluated_on",
+      "target": "News Articles",
+      "original_ids": [
+        60,
+        70
+      ],
+      "merged_record_count": 2
+    },
+    {
+      "source": "GraphRAG",
+      "type": "evaluated_on",
+      "target": "Podcast Transcripts",
+      "original_ids": [
+        59,
+        69
+      ],
+      "merged_record_count": 2
+    },
+    {
+      "source": "GraphRAG",
+      "type": "generates",
+      "target": "Community Summaries",
+      "original_ids": [
+        4,
+        10,
+        38
+      ],
+      "merged_record_count": 3
+    }
+  ],
+  "validation": {
+    "entity_evidence_alignment_errors": 0,
+    "relationship_evidence_alignment_errors": 0,
+    "invalid_relationship_endpoints": 0,
+    "duplicate_relationship_keys": 0,
+    "passed": true
+  }
+}

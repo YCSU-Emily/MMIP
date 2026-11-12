@@ -1,0 +1,35 @@
+{
+  "main_topic": "GraphRAG 的社區檢測與摘要生成流程",
+  "summary": "本研究社區聚焦於 GraphRAG 架構中的核心處理流程，主要涉及利用 LLM 構建知識圖譜，並透過社區檢測（Community detection）將圖索引分組。具體而言，系統使用 Leiden 社區檢測演算法（Leiden community detection）以階層式方式將知識圖譜（Knowledge Graph）分割為互斥且完整的社區（Graph Communities）。隨後，系統針對這些社區生成社區摘要（Community Summaries），這些摘要包含各組緊密相關實體的報告式總結。在回答生成階段，社區摘要被用於產生中間社區答案（Community Answers），LLM 會根據目標問題為這些答案評分（scores_helpfulness_of）。最終，這些中間答案依有用性排序並逐步加入上下文視窗，以產生針對查詢的終極全球答案（Global Answer）。此外，研究還提及使用精確字串匹配（exact string matching）來重解同一實體的不同名稱，以及利用全球意義建構問題生成（Global Sensemaking Question Generation）來評估 RAG 系統的高層理解能力。",
+  "key_entities": [
+    "Community Answers",
+    "Community Summaries",
+    "Community detection",
+    "Global Answer",
+    "Global Sensemaking Question Generation",
+    "Graph Communities",
+    "Knowledge Graph",
+    "LLM",
+    "Leiden community detection",
+    "exact string matching"
+  ],
+  "key_relationships": [
+    "LLM 使用 Leiden 社區檢測將知識圖譜分割為社區",
+    "知識圖譜被分割為圖社區（Graph Communities）",
+    "圖社區生成社區摘要（Community Summaries）",
+    "社區摘要用於生成中間社區答案（Community Answers）",
+    "LLM 為中間社區答案評分以評估其有用性",
+    "中間社區答案貢獻於最終的全球答案（Global Answer）",
+    "知識圖譜使用精確字串匹配來重解實體名稱",
+    "全球意義建構問題生成使用 LLM 來評估 RAG 系統"
+  ],
+  "source_pages": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    9
+  ],
+  "limitations": "本社區數據未提供關於社區檢測演算法具體參數設定、不同社區大小分佈的統計數據，或社區摘要與原始文本在特定領域（如根層級摘要）之外的詳細效能比較細節。"
+}

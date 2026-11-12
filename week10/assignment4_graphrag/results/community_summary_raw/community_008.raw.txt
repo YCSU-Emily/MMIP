@@ -1,0 +1,15 @@
+{
+  "main_topic": "Graph indexing implementation using gpt-4-turbo",
+  "summary": "本研究社區探討了使用 gpt-4-turbo 端點進行圖索引的方法。該方法採用 600 token 的視窗大小，在處理 Podcast 數據集時耗時 281 分鐘。執行環境為虛擬機器，配備 16GB RAM 及 Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz。圖索引方法依賴於 gpt-4-turbo 的公共 OpenAI 端點，該端點具有 2M TPM 和 10k RPM 的速率限制 [9]。",
+  "key_entities": [
+    "Graph indexing",
+    "gpt-4-turbo"
+  ],
+  "key_relationships": [
+    "Graph indexing uses gpt-4-turbo"
+  ],
+  "source_pages": [
+    9
+  ],
+  "limitations": "無法從本社區數據推斷出該方法的具體優化策略、準確度評估結果或與其他方法的比較分析。"
+}

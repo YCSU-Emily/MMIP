@@ -1,0 +1,132 @@
+{
+  "page": 2,
+  "part": 1,
+  "source_characters": 4824,
+  "entities": [
+    {
+      "name": "vector RAG",
+      "type": "Method",
+      "description": "A conventional RAG approach using text embeddings to retrieve semantically similar records for query responses.",
+      "evidence": "This conventional approach, which we collectively call vector RAG, works well for queries that can be answered with information localized within a small set of records."
+    },
+    {
+      "name": "GraphRAG",
+      "type": "Method",
+      "description": "A graph-based RAG approach that enables sensemaking over the entirety of a large text corpus.",
+      "evidence": "In this paper, we present GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus."
+    },
+    {
+      "name": "sensemaking",
+      "type": "Concept",
+      "description": "Tasks requiring reasoning over connections among people, places, and events to anticipate trajectories.",
+      "evidence": "Sensemaking tasks require reasoning over \"connections (which can be among people, places, and events) in order to anticipate their trajectories and act effectively\" (Klein et al., 2006)."
+    },
+    {
+      "name": "knowledge graph",
+      "type": "Model",
+      "description": "A structure where nodes correspond to key entities in the corpus and edges represent relationships between those entities.",
+      "evidence": "GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities."
+    },
+    {
+      "name": "community-level summaries",
+      "type": "Concept",
+      "description": "Summaries generated in a bottom-up manner following the hierarchical structure of extracted communities.",
+      "evidence": "Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries."
+    },
+    {
+      "name": "map-reduce processing",
+      "type": "Method",
+      "description": "A technique where summaries are used to provide partial answers independently and in parallel, then combined to generate a final global answer.",
+      "evidence": "Finally, GraphRAG answers queries through map-reduce processing of community summaries; in the map step, the summaries are used to provide partial answers to the query independently and in parallel, then in the reduce step, the partial answers are combined and used to generate a final global answer."
+    },
+    {
+      "name": "LLM-as-a-judge",
+      "type": "Method",
+      "description": "A technique using one LLM to generate questions and a second LLM to judge answers of different RAG systems.",
+      "evidence": "we developed a novel application of the LLM-as-a-judge technique (Zheng et al., 2024) suitable for questions targeting broad issues and themes where there is no ground-truth answer."
+    },
+    {
+      "name": "GPT-4",
+      "type": "Model",
+      "description": "An LLM used in the evaluation where GraphRAG strongly outperformed vector RAG.",
+      "evidence": "Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM."
+    },
+    {
+      "name": "LangChain",
+      "type": "Organization",
+      "description": "An open-source library offering an extension of the GraphRAG approach.",
+      "evidence": "versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)"
+    },
+    {
+      "name": "RAG",
+      "type": "Concept",
+      "description": "A system where a user query retrieves relevant information from external data sources to be incorporated into a response by an LLM.",
+      "evidence": "RAG generally refers to any system where a user query is used to retrieve relevant information from external data sources, whereupon this information is incorporated into the generation of a response to the query by an LLM (or other generative AI model, such as a multi-media model)."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "vector RAG",
+      "target": "sensemaking",
+      "type": "addresses",
+      "description": "Vector RAG works well for queries with localized information but does not support sensemaking queries requiring global understanding.",
+      "evidence": "However, vector RAG approaches do not support sensemaking queries, meaning queries that require global understanding of the entire dataset"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "sensemaking",
+      "type": "enables",
+      "description": "GraphRAG enables sensemaking over the entirety of a large text corpus.",
+      "evidence": "GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "knowledge graph",
+      "type": "constructs",
+      "description": "GraphRAG uses an LLM to construct a knowledge graph where nodes are entities and edges are relationships.",
+      "evidence": "GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "community-level summaries",
+      "type": "generates",
+      "description": "GraphRAG generates community-level summaries in a bottom-up manner following the hierarchical structure of extracted communities.",
+      "evidence": "Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "map-reduce processing",
+      "type": "uses",
+      "description": "GraphRAG answers queries through map-reduce processing of community summaries.",
+      "evidence": "Finally, GraphRAG answers queries through map-reduce processing of community summaries"
+    },
+    {
+      "source": "LLM-as-a-judge",
+      "target": "GraphRAG",
+      "type": "evaluates",
+      "description": "The LLM-as-a-judge technique is used to judge the answers of GraphRAG and other RAG systems.",
+      "evidence": "before using a second LLM to judge the answers of two different RAG systems using predefined criteria"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "vector RAG",
+      "type": "compares",
+      "description": "GraphRAG is compared to vector RAG on real-world text datasets, showing GraphRAG outperforms vector RAG when using GPT-4.",
+      "evidence": "We use this approach to compare GraphRAG to vector RAG on two representative real-world text datasets. Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM."
+    },
+    {
+      "source": "GraphRAG",
+      "target": "LangChain",
+      "type": "extends",
+      "description": "GraphRAG is available as an extension to the LangChain open-source library.",
+      "evidence": "versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)"
+    },
+    {
+      "source": "RAG",
+      "target": "vector RAG",
+      "type": "consists_of",
+      "description": "Vector RAG is collectively referred to as the family of conventional RAG approaches.",
+      "evidence": "While some RAG approaches may use alternative retrieval mechanisms, we collectively refer to the family of conventional approaches as vector RAG."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "GraphRAG",
+      "type": "Method",
+      "description": "A method that builds upon prior RAG strategies by leveraging summaries over large data sections as self-memory and using graph-based community detection for thematic partitioning.",
+      "evidence": "GraphRAG builds upon prior work on advanced RAG strategies."
+    },
+    {
+      "name": "self-memory",
+      "type": "Concept",
+      "description": "Summaries over large sections of the data source used to answer queries.",
+      "evidence": "GraphRAG leverages summaries over large sections of the data source as a form of \"self-memory\""
+    },
+    {
+      "name": "hierarchical indexing",
+      "type": "Method",
+      "description": "A technique used to create summaries, similar to prior approaches referenced in the text.",
+      "evidence": "GraphRAG is similar to other approaches that use hierarchical indexing to create summaries"
+    },
+    {
+      "name": "graph-based community detection",
+      "type": "Method",
+      "description": "A technique applied to generate a graph index and create a thematic partitioning of the data.",
+      "evidence": "applying graph-based community detection to create a thematic partitioning of the data"
+    },
+    {
+      "name": "inherent modularity",
+      "type": "Concept",
+      "description": "A quality of graphs in the context of RAG that GraphRAG focuses on, referring to the ability to partition graphs into nested modular communities.",
+      "evidence": "focusing on a previously unexplored quality of graphs in this context: their inherent modularity"
+    },
+    {
+      "name": "global sensemaking",
+      "type": "Concept",
+      "description": "The process of evaluating how well an RAG system answers questions over the entirety of a corpus.",
+      "evidence": "evaluating global sensemaking over the entirety of the corpus"
+    },
+    {
+      "name": "adaptive benchmarking",
+      "type": "Method",
+      "description": "A process of dynamically generating evaluation benchmarks tailored to specific domains or use cases.",
+      "evidence": "Adaptive benchmarking refers to the process of dynamically generating evaluation benchmarks tailored to specific domains or use cases"
+    },
+    {
+      "name": "LLM-based persona generation",
+      "type": "Method",
+      "description": "A prior work approach where an LLM generates diverse and authentic sets of personas to guide query generation.",
+      "evidence": "Our approach builds on prior work in LLM-based persona generation, where the LLM is used to generate diverse and authentic sets of personas"
+    },
+    {
+      "name": "HotPotQA",
+      "type": "Dataset",
+      "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+      "evidence": "Many benchmark datasets for open-domain question answering exist, including HotPotQA"
+    },
+    {
+      "name": "MultiHop-RAG",
+      "type": "Dataset",
+      "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+      "evidence": "Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG"
+    },
+    {
+      "name": "MT-Bench",
+      "type": "Dataset",
+      "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+      "evidence": "Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG, and MT-Bench"
+    },
+    {
+      "name": "explicit fact retrieval",
+      "type": "Metric",
+      "description": "The type of performance evaluated by existing benchmark datasets like HotPotQA and MT-Bench.",
+      "evidence": "they evaluate performance on explicit fact retrieval"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GraphRAG",
+      "target": "self-memory",
+      "type": "uses",
+      "description": "GraphRAG uses summaries over large sections of data as a form of self-memory to answer queries.",
+      "evidence": "GraphRAG leverages summaries over large sections of the data source as a form of \"self-memory\" ... which are later used to answer queries"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "hierarchical indexing",
+      "type": "compares",
+      "description": "GraphRAG is compared to other approaches that use hierarchical indexing to create summaries.",
+      "evidence": "GraphRAG is similar to other approaches that use hierarchical indexing to create summaries"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "graph-based community detection",
+      "type": "uses",
+      "description": "GraphRAG uses graph-based community detection to create a thematic partitioning of the data.",
+      "evidence": "applying graph-based community detection to create a thematic partitioning of the data"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "inherent modularity",
+      "type": "focuses_on",
+      "description": "GraphRAG focuses on the inherent modularity of graphs, specifically the ability to partition them into nested modular communities.",
+      "evidence": "GraphRAG contrasts with these approaches by focusing on a previously unexplored quality of graphs in this context: their inherent modularity"
+    },
+    {
+      "source": "adaptive benchmarking",
+      "target": "global sensemaking",
+      "type": "evaluates",
+      "description": "The proposed adaptive benchmarking approach is used to generate queries for evaluating global sensemaking.",
+      "evidence": "In this work, we propose an adaptive benchmarking approach to generating global sensemaking queries for the LLM"
+    },
+    {
+      "source": "LLM-based persona generation",
+      "target": "adaptive benchmarking",
+      "type": "builds_on",
+      "description": "The adaptive benchmarking procedure uses persona generation to create queries representative of real-world RAG system usage.",
+      "evidence": "Our adaptive benchmarking procedure uses persona generation to create queries that are representative of real-world RAG system usage"
+    },
+    {
+      "source": "LLM",
+      "target": "global sensemaking",
+      "type": "evaluates",
+      "description": "The evaluation relies on the LLM to evaluate how well the RAG system answers the generated questions.",
+      "evidence": "Our evaluation relies on the LLM to evaluate how well the RAG system answers the generated questions"
+    },
+    {
+      "source": "HotPotQA",
+      "target": "explicit fact retrieval",
+      "type": "oriented_towards",
+      "description": "The HotPotQA benchmark is oriented towards evaluating performance on explicit fact retrieval.",
+      "evidence": "these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval"
+    },
+    {
+      "source": "MT-Bench",
+      "target": "explicit fact retrieval",
+      "type": "oriented_towards",
+      "description": "The MT-Bench benchmark is oriented towards evaluating performance on explicit fact retrieval.",
+      "evidence": "these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval"
+    }
+  ]
+}

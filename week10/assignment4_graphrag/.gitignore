@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Backup and intermediate versions
+*.bak*
+*.before*
+backups/
+
+# Intermediate evaluation logs
+/results/*.log
+!/results/final_evaluation.log
+
+# Intermediate benchmark versions
+/results/benchmark_before*.json
+/results/benchmark.before*.json

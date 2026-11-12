@@ -1,0 +1,116 @@
+{
+  "page": 21,
+  "part": 1,
+  "source_characters": 3307,
+  "entities": [
+    {
+      "name": "Element Instance Generation",
+      "type": "Method",
+      "description": "A process to identify entities and relationships from a text document given entity types.",
+      "evidence": "Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities."
+    },
+    {
+      "name": "Community Summary Generation",
+      "type": "Method",
+      "description": "An AI assistant role designed to help a human analyst perform general information discovery.",
+      "evidence": "You are an AI assistant that helps a human analyst to perform general information discovery."
+    },
+    {
+      "name": "Information discovery",
+      "type": "Concept",
+      "description": "The process of identifying and assessing relevant information associated with certain entities within a network.",
+      "evidence": "Information discovery is the process of identifying and assessing relevant information associated with certain entities (e.g., organizations and individuals) within a network."
+    },
+    {
+      "name": "entity name",
+      "type": "Concept",
+      "description": "The capitalized name of an entity extracted from the text.",
+      "evidence": "- entity name: Name of the entity, capitalized"
+    },
+    {
+      "name": "entity type",
+      "type": "Concept",
+      "description": "One of the following types provided as input to the generation process.",
+      "evidence": "- entity type: One of the following types: [{entity types}]"
+    },
+    {
+      "name": "entity description",
+      "type": "Concept",
+      "description": "A comprehensive description of the entity's attributes and activities.",
+      "evidence": "- entity description: Comprehensive description of the entity's attributes and activities"
+    },
+    {
+      "name": "relationship strength",
+      "type": "Metric",
+      "description": "A numeric score indicating the strength of the relationship between two entities.",
+      "evidence": "- relationship strength: a numeric score indicating strength of the relationship between the source entity and target entity"
+    },
+    {
+      "name": "ORGANIZATION",
+      "type": "Model",
+      "description": "An example entity type used in the provided examples.",
+      "evidence": "Entity types: ORGANIZATION,PERSON"
+    },
+    {
+      "name": "PERSON",
+      "type": "Model",
+      "description": "An example entity type used in the provided examples.",
+      "evidence": "Entity types: ORGANIZATION,PERSON"
+    },
+    {
+      "name": "FED",
+      "type": "Entity",
+      "description": "An example entity representing the Federal Reserve.",
+      "evidence": "The Fed is the Federal Reserve, which is setting interest rates on Tuesday and Wednesday"
+    },
+    {
+      "name": "JEROME POWELL",
+      "type": "Entity",
+      "description": "An example entity representing the chair of the Federal Reserve.",
+      "evidence": "Jerome Powell is the chair of the Federal Reserve"
+    },
+    {
+      "name": "FEDERAL OPEN MARKET COMMITTEE",
+      "type": "Entity",
+      "description": "An example entity representing the committee making key decisions about interest rates.",
+      "evidence": "The Federal Reserve committee makes key decisions about interest rates and the growth of the United States money supply"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Element Instance Generation",
+      "target": "Community Summary Generation",
+      "type": "compares",
+      "description": "The text presents two distinct methods for processing information, one for entity extraction and another for community summary generation.",
+      "evidence": "E.1 Element Instance Generation ... E.2 Community Summary Generation"
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "Information discovery",
+      "type": "evaluates",
+      "description": "The method identifies entities and relationships which are part of the broader process of information discovery.",
+      "evidence": "identify all entities of those types from the text and all relationships among the identified entities"
+    },
+    {
+      "source": "Community Summary Generation",
+      "target": "Information discovery",
+      "type": "proposes",
+      "description": "The role of the AI assistant is to help perform the process of information discovery.",
+      "evidence": "Information discovery is the process of identifying and assessing relevant information associated with certain entities"
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "entity name",
+      "type": "consists_of",
+      "description": "The method requires extracting the entity name as a specific piece of information for each identified entity.",
+      "evidence": "For each identified entity, extract the following information: - entity name: Name of the entity, capitalized"
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "relationship strength",
+      "type": "evaluates",
+      "description": "The method assigns a numeric score to indicate the strength of the relationship between entities.",
+      "evidence": "a numeric score indicating strength of the relationship between the source entity and target entity"
+    }
+  ]
+}

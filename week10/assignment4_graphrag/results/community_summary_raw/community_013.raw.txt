@@ -1,0 +1,8 @@
+{
+  "main_topic": "MultiHop-RAG 數據集",
+  "summary": "MultiHop-RAG 是一個針對向量 RAG（檢索增強生成）性能評估的開放領域問答 benchmark 數據集。",
+  "key_entities": ["MultiHop-RAG"],
+  "key_relationships": [],
+  "source_pages": [3],
+  "limitations": "此社區僅包含單一實體，無法推斷其與其他實體的內部關係或具體的技術細節（如數據規模、問答類型等）。"
+}

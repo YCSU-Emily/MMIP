@@ -1,0 +1,411 @@
+[
+  {
+    "id": "Q01",
+    "topic": "GraphRAG Motivation",
+    "difficulty": "easy",
+    "question": "What limitation of conventional RAG motivates the GraphRAG approach?",
+    "reference_answer": "Conventional RAG retrieves a limited number of relevant text passages for a query. This can work for specific questions but may fail to capture global themes and relationships across a large corpus. GraphRAG uses a knowledge graph and community summaries to support query-focused summarization at the corpus level.",
+    "reference_pages": [
+      1,
+      2
+    ],
+    "keywords": [
+      "conventional RAG",
+      "global themes",
+      "knowledge graph",
+      "community summaries"
+    ]
+  },
+  {
+    "id": "Q02",
+    "topic": "GraphRAG Architecture",
+    "difficulty": "easy",
+    "question": "What are the major stages of the GraphRAG indexing pipeline?",
+    "reference_answer": "The pipeline processes source documents into text chunks, extracts entities and relationships, builds a knowledge graph, detects graph communities, and generates community summaries. These indexed structures are then used during query processing.",
+    "reference_pages": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "keywords": [
+      "source documents",
+      "text chunks",
+      "entities",
+      "relationships",
+      "knowledge graph",
+      "communities",
+      "summaries"
+    ]
+  },
+  {
+    "id": "Q03",
+    "topic": "Knowledge Graph",
+    "difficulty": "easy",
+    "question": "What is the role of text chunking in GraphRAG?",
+    "reference_answer": "Text chunking divides source documents into manageable text units. These chunks provide input for entity and relationship extraction and preserve links between extracted knowledge and the original source material.",
+    "reference_pages": [
+      4
+    ],
+    "keywords": [
+      "text chunks",
+      "source documents",
+      "entity extraction",
+      "relationship extraction"
+    ]
+  },
+  {
+    "id": "Q04",
+    "topic": "Knowledge Graph",
+    "difficulty": "medium",
+    "question": "What information is represented by entities and relationships in the GraphRAG knowledge graph?",
+    "reference_answer": "Entities represent important items identified in the source text, while relationships represent connections between those entities. Together they form a structured knowledge graph that supports discovering related information and organizing the corpus.",
+    "reference_pages": [
+      4
+    ],
+    "keywords": [
+      "entities",
+      "relationships",
+      "connections",
+      "knowledge graph"
+    ]
+  },
+  {
+    "id": "Q05",
+    "topic": "Community Detection",
+    "difficulty": "medium",
+    "question": "Why does GraphRAG identify communities in its knowledge graph?",
+    "reference_answer": "Community detection groups related entities in the knowledge graph. These groups provide a hierarchical organization of the corpus and form the basis for generating summaries at different levels of abstraction.",
+    "reference_pages": [
+      4,
+      5
+    ],
+    "keywords": [
+      "community detection",
+      "related entities",
+      "hierarchical organization",
+      "summaries"
+    ]
+  },
+  {
+    "id": "Q06",
+    "topic": "Community Summarization",
+    "difficulty": "medium",
+    "question": "How are community summaries used in the GraphRAG indexing process?",
+    "reference_answer": "An LLM generates summaries for detected graph communities. The summaries describe the important information in each community and provide compact representations that can later be retrieved to answer questions about the broader corpus.",
+    "reference_pages": [
+      4,
+      5,
+      6
+    ],
+    "keywords": [
+      "LLM",
+      "community summaries",
+      "indexing",
+      "corpus"
+    ]
+  },
+  {
+    "id": "Q07",
+    "topic": "Adaptive Benchmarking Motivation",
+    "difficulty": "medium",
+    "question": "Why are conventional question-answering benchmarks insufficient for evaluating global sensemaking?",
+    "reference_answer": "Conventional question-answering benchmarks, such as HotPotQA and MultiHop-RAG, mainly evaluate explicit fact retrieval and are oriented toward vector RAG. They do not adequately evaluate questions requiring global understanding of an entire corpus. The paper therefore proposes adaptive benchmarking for global sensemaking.",
+    "reference_pages": [
+      3
+    ],
+    "keywords": [
+      "conventional benchmarks",
+      "vector RAG",
+      "explicit fact retrieval",
+      "global sensemaking",
+      "entire corpus"
+    ]
+  },
+  {
+    "id": "Q08",
+    "topic": "Global Search",
+    "difficulty": "easy",
+    "question": "What is the purpose of global search in GraphRAG?",
+    "reference_answer": "Global search is designed for query-focused summarization and questions that require understanding themes or information across a large portion of the source corpus, rather than retrieving only a few locally relevant passages.",
+    "reference_pages": [
+      1,
+      2
+    ],
+    "keywords": [
+      "global search",
+      "query-focused summarization",
+      "corpus",
+      "global questions"
+    ]
+  },
+  {
+    "id": "Q09",
+    "topic": "Map-Reduce",
+    "difficulty": "medium",
+    "question": "What happens during the map step of GraphRAG global search?",
+    "reference_answer": "In the map step, the system uses community-level information to independently generate partial answers to the query. These community answers can be produced across multiple communities.",
+    "reference_pages": [
+      2,
+      6
+    ],
+    "keywords": [
+      "map step",
+      "community answers",
+      "partial answers",
+      "communities"
+    ]
+  },
+  {
+    "id": "Q10",
+    "topic": "Map-Reduce",
+    "difficulty": "medium",
+    "question": "What happens during the reduce step of GraphRAG global search?",
+    "reference_answer": "In the reduce step, the partial answers generated during the map step are combined and summarized to produce a final response to the user's global question.",
+    "reference_pages": [
+      2,
+      6
+    ],
+    "keywords": [
+      "reduce step",
+      "partial answers",
+      "combine",
+      "final response"
+    ]
+  },
+  {
+    "id": "Q11",
+    "topic": "Benchmark Fairness",
+    "difficulty": "medium",
+    "question": "Why does the paper avoid generating evaluation questions directly from the corpus being evaluated?",
+    "reference_answer": "The paper avoids generating evaluation questions directly from the corpus to produce a fair evaluation. Instead, it uses a high-level corpus description to generate potential user personas, their tasks, and corpus-specific sensemaking questions. An alternative is to use a held-out subset of the corpus that is excluded from graph extraction and answer evaluation.",
+    "reference_pages": [
+      3
+    ],
+    "keywords": [
+      "fair evaluation",
+      "corpus description",
+      "personas",
+      "user tasks",
+      "held-out subset"
+    ]
+  },
+  {
+    "id": "Q12",
+    "topic": "GraphRAG Concept",
+    "difficulty": "medium",
+    "question": "What does the paper mean by describing community summaries as a form of self-memory?",
+    "reference_answer": "Community summaries act as precomputed, compact representations of information across sections of the source corpus. They provide reusable context for answering later questions, rather than requiring the system to reconstruct all global information from a small set of retrieved passages each time.",
+    "reference_pages": [
+      3
+    ],
+    "keywords": [
+      "self-memory",
+      "community summaries",
+      "precomputed",
+      "reusable context"
+    ]
+  },
+  {
+    "id": "Q13",
+    "topic": "Knowledge Graph Construction",
+    "difficulty": "medium",
+    "question": "What role does an LLM play in constructing the GraphRAG index?",
+    "reference_answer": "The LLM is used in the indexing pipeline to extract structured information such as entities and relationships from text and to generate summaries for graph communities. These outputs help transform unstructured source documents into a structured representation.",
+    "reference_pages": [
+      4,
+      5,
+      6
+    ],
+    "keywords": [
+      "LLM",
+      "entity extraction",
+      "relationship extraction",
+      "community summaries"
+    ]
+  },
+  {
+    "id": "Q14",
+    "topic": "Question Generation",
+    "difficulty": "medium",
+    "question": "What is the purpose of the question-generation procedure described in the paper?",
+    "reference_answer": "The procedure generates questions based on a corpus description and simulated user tasks. It helps create questions for evaluating how well different approaches answer information needs over the source datasets.",
+    "reference_pages": [
+      7
+    ],
+    "keywords": [
+      "question generation",
+      "corpus description",
+      "user tasks",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "Q15",
+    "topic": "Evaluation Metrics",
+    "difficulty": "medium",
+    "question": "What does comprehensiveness measure when evaluating generated answers?",
+    "reference_answer": "Comprehensiveness evaluates how well an answer covers the relevant aspects of the question, including whether important information needed for a complete response is included.",
+    "reference_pages": [
+      7
+    ],
+    "keywords": [
+      "comprehensiveness",
+      "coverage",
+      "relevant aspects",
+      "complete response"
+    ]
+  },
+  {
+    "id": "Q16",
+    "topic": "Evaluation Metrics",
+    "difficulty": "medium",
+    "question": "What does diversity measure in the paper's answer evaluation?",
+    "reference_answer": "Diversity evaluates whether an answer provides different relevant perspectives or aspects of the topic, rather than presenting a narrow or repetitive response.",
+    "reference_pages": [
+      7
+    ],
+    "keywords": [
+      "diversity",
+      "perspectives",
+      "relevant aspects"
+    ]
+  },
+  {
+    "id": "Q17",
+    "topic": "Evaluation Metrics",
+    "difficulty": "medium",
+    "question": "What does empowerment measure in the paper's evaluation framework?",
+    "reference_answer": "Empowerment evaluates how useful an answer is in helping the reader understand the topic and form their own understanding or judgment.",
+    "reference_pages": [
+      7
+    ],
+    "keywords": [
+      "empowerment",
+      "usefulness",
+      "understanding",
+      "judgment"
+    ]
+  },
+  {
+    "id": "Q18",
+    "topic": "Evaluation Metrics",
+    "difficulty": "easy",
+    "question": "What is Directness intended to evaluate?",
+    "reference_answer": "Directness evaluates how specifically and clearly an answer addresses the question. It measures whether the response stays focused on what was asked.",
+    "reference_pages": [
+      8
+    ],
+    "keywords": [
+      "directness",
+      "specificity",
+      "clarity",
+      "addresses the question"
+    ]
+  },
+  {
+    "id": "Q19",
+    "topic": "Experimental Configuration",
+    "difficulty": "medium",
+    "question": "What context window size did the authors use for generating community summaries, community answers, and global answers?",
+    "reference_answer": "The authors used a fixed context window size of 8,000 tokens for generating community summaries, community answers, and global answers.",
+    "reference_pages": [
+      9
+    ],
+    "keywords": [
+      "8k tokens",
+      "context window",
+      "community summaries",
+      "community answers",
+      "global answers"
+    ]
+  },
+  {
+    "id": "Q20",
+    "topic": "Experimental Design",
+    "difficulty": "hard",
+    "question": "Which six experimental conditions are compared in the paper?",
+    "reference_answer": "The paper compares six conditions: C0, C1, C2, C3, TS, and SS. C0 to C3 use community summaries at different hierarchical levels; TS applies map-reduce summarization directly to source texts; and SS is a vector RAG semantic search approach.",
+    "reference_pages": [
+      8
+    ],
+    "keywords": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "TS",
+      "SS",
+      "community summaries",
+      "map-reduce",
+      "vector RAG"
+    ]
+  },
+  {
+    "id": "Q21",
+    "topic": "Experimental Results",
+    "difficulty": "hard",
+    "question": "How does the paper compare the performance of different experimental conditions?",
+    "reference_answer": "The paper compares the conditions across datasets using answer-quality metrics, including comprehensiveness, diversity, empowerment, and directness. The results are presented by condition and dataset to examine differences in performance.",
+    "reference_pages": [
+      8,
+      10
+    ],
+    "keywords": [
+      "experimental conditions",
+      "datasets",
+      "four metrics",
+      "performance"
+    ]
+  },
+  {
+    "id": "Q22",
+    "topic": "Claims Analysis",
+    "difficulty": "medium",
+    "question": "What does the paper analyze in its comparison of extracted claims?",
+    "reference_answer": "The paper reports the average number of extracted claims by experimental condition and dataset type. This analysis provides another way to compare the information produced by the different approaches.",
+    "reference_pages": [
+      11
+    ],
+    "keywords": [
+      "extracted claims",
+      "average number",
+      "condition",
+      "dataset"
+    ]
+  },
+  {
+    "id": "Q23",
+    "topic": "Clustering Analysis",
+    "difficulty": "medium",
+    "question": "What does the paper investigate by comparing different clustering distance thresholds?",
+    "reference_answer": "The paper examines how different distance thresholds affect the average number of clusters produced across conditions and dataset types. This provides insight into how the clustering configuration changes the resulting grouping.",
+    "reference_pages": [
+      12
+    ],
+    "keywords": [
+      "distance thresholds",
+      "average number of clusters",
+      "clustering",
+      "dataset"
+    ]
+  },
+  {
+    "id": "Q24",
+    "topic": "Statistical Analysis",
+    "difficulty": "hard",
+    "question": "What is the scope of the pairwise statistical comparisons reported in the paper?",
+    "reference_answer": "The statistical analysis reports pairwise comparisons among six conditions across four evaluation metrics, using 125 questions and two datasets. The comparisons are used to assess differences between experimental conditions.",
+    "reference_pages": [
+      26
+    ],
+    "keywords": [
+      "pairwise comparisons",
+      "six conditions",
+      "four metrics",
+      "125 questions",
+      "two datasets"
+    ]
+  }
+]

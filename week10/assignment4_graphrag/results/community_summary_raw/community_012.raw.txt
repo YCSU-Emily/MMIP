@@ -1,0 +1,8 @@
+{
+  "main_topic": "GPT-4 在 GraphRAG 與向量 RAG 評估中的應用",
+  "summary": "本社群包含單一實體 GPT-4，其被描述為在評估中使用的語言模型（LLM），在此情境下 GraphRAG 表現優於向量 RAG。證據顯示，當使用 GPT-4 作為 LLM 時，GraphRAG 的結果顯示其顯著優於向量 RAG。",
+  "key_entities": ["GPT-4"],
+  "key_relationships": [],
+  "source_pages": [2, 12],
+  "limitations": "無法從本社群推導出 GPT-4 的其他功能、性能細節或與 GraphRAG/向量 RAG 的因果機制。"
+}

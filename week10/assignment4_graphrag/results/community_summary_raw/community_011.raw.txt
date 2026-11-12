@@ -1,0 +1,8 @@
+{
+  "main_topic": "Claims as verifiable facts extracted by LLMs",
+  "summary": "The community contains a single entity, 'Claims', defined as verifiable facts extracted by Large Language Models (LLMs) that are used to validate results. Evidence records describe these as 'LLM-extracted statements of verifiable facts, or 'claims.''",
+  "key_entities": ["Claims"],
+  "key_relationships": [],
+  "source_pages": [4],
+  "limitations": "No internal or boundary relationships exist within this community to provide additional context or connections."
+}

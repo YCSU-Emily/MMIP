@@ -1,0 +1,8 @@
+{
+  "main_topic": "SelfCheckGPT 方法",
+  "summary": "SelfCheckGPT 是一種用於比較製造率的方法 (Manakul et al., 2023)。",
+  "key_entities": ["SelfCheckGPT"],
+  "key_relationships": [],
+  "source_pages": [11],
+  "limitations": "此社群僅包含單一實體，無法推斷其內部關係或與其他實體的邊界關係。"
+}

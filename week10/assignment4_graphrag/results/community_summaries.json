@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "source_graph": "/home/emily/MMIP/week10/assignment4_graphrag/results/knowledge_graph.json",
+  "model": "Qwen3.5-4B",
+  "summarization_method": "Evidence-grounded community summarization",
+  "total_communities": 20,
+  "successful_summaries": 14,
+  "failed_summaries": 6,
+  "summaries": [
+    {
+      "community_id": 1,
+      "member_count": 10,
+      "members": [
+        "Community Answers",
+        "Community Summaries",
+        "Community detection",
+        "Global Answer",
+        "Global Sensemaking Question Generation",
+        "Graph Communities",
+        "Knowledge Graph",
+        "LLM",
+        "Leiden community detection",
+        "exact string matching"
+      ],
+      "internal_relationship_count": 10,
+      "boundary_relationship_count": 9,
+      "main_topic": "GraphRAG 的社區檢測與摘要生成流程",
+      "summary": "本研究社區聚焦於 GraphRAG 架構中的核心處理流程，主要涉及利用 LLM 構建知識圖譜，並透過社區檢測（Community detection）將圖索引分組。具體而言，系統使用 Leiden 社區檢測演算法（Leiden community detection）以階層式方式將知識圖譜（Knowledge Graph）分割為互斥且完整的社區（Graph Communities）。隨後，系統針對這些社區生成社區摘要（Community Summaries），這些摘要包含各組緊密相關實體的報告式總結。在回答生成階段，社區摘要被用於產生中間社區答案（Community Answers），LLM 會根據目標問題為這些答案評分（scores_helpfulness_of）。最終，這些中間答案依有用性排序並逐步加入上下文視窗，以產生針對查詢的終極全球答案（Global Answer）。此外，研究還提及使用精確字串匹配（exact string matching）來重解同一實體的不同名稱，以及利用全球意義建構問題生成（Global Sensemaking Question Generation）來評估 RAG 系統的高層理解能力。",
+      "key_entities": [
+        "Community Answers",
+        "Community Summaries",
+        "Community detection",
+        "Global Answer",
+        "Global Sensemaking Question Generation",
+        "Graph Communities",
+        "Knowledge Graph",
+        "LLM",
+        "Leiden community detection",
+        "exact string matching"
+      ],
+      "key_relationships": [
+        "LLM 使用 Leiden 社區檢測將知識圖譜分割為社區",
+        "知識圖譜被分割為圖社區（Graph Communities）",
+        "圖社區生成社區摘要（Community Summaries）",
+        "社區摘要用於生成中間社區答案（Community Answers）",
+        "LLM 為中間社區答案評分以評估其有用性",
+        "中間社區答案貢獻於最終的全球答案（Global Answer）",
+        "知識圖譜使用精確字串匹配來重解實體名稱",
+        "全球意義建構問題生成使用 LLM 來評估 RAG 系統"
+      ],
+      "source_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        9
+      ],
+      "limitations": "本社區數據未提供關於社區檢測演算法具體參數設定、不同社區大小分佈的統計數據，或社區摘要與原始文本在特定領域（如根層級摘要）之外的詳細效能比較細節。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 4,
+      "member_count": 5,
+      "members": [
+        "GENERATEQUESTIONS",
+        "LLM-based persona generation",
+        "News Articles",
+        "adaptive benchmarking",
+        "global sensemaking"
+      ],
+      "internal_relationship_count": 4,
+      "boundary_relationship_count": 3,
+      "main_topic": "Global Sensemaking Evaluation via Adaptive Benchmarking and Question Generation",
+      "summary": "This community focuses on evaluating RAG systems through 'global sensemaking,' which requires understanding the entirety of a corpus rather than specific details. The proposed approach involves 'adaptive benchmarking,' a process that dynamically generates evaluation queries tailored to specific domains. This method utilizes 'LLM-based persona generation' to create representative user queries and employs the 'GENERATEQUESTIONS' procedure to formulate high-level questions based on corpus descriptions and user personas. These generated questions target global understanding. The 'News Articles' dataset serves as a primary example for this evaluation, where questions are generated to assess global comprehension. The community also notes that 'Podcast Transcripts' are used for similar question generation targeting global sensemaking.",
+      "key_entities": [
+        "GENERATEQUESTIONS",
+        "LLM-based persona generation",
+        "News Articles",
+        "adaptive benchmarking",
+        "global sensemaking"
+      ],
+      "key_relationships": [
+        "GENERATEQUESTIONS generates questions requiring global understanding of the corpus.",
+        "News Articles is a dataset used to generate questions targeting global understanding.",
+        "adaptive benchmarking generates corpus-specific queries for global sensemaking evaluation.",
+        "adaptive benchmarking uses LLM-based persona generation to create representative user queries."
+      ],
+      "source_pages": [
+        3,
+        7
+      ],
+      "limitations": "The community data does not provide sufficient information to describe the internal relationships or specific mechanisms of 'LLM' usage beyond the boundary relationship, nor does it detail the specific performance metrics of the adaptive benchmarking approach other than referencing the win rates of News Articles in a broader context.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 6,
+      "member_count": 3,
+      "members": [
+        "HotPotQA",
+        "MT-Bench",
+        "explicit fact retrieval"
+      ],
+      "internal_relationship_count": 2,
+      "boundary_relationship_count": 0,
+      "main_topic": "Vector RAG 性能評估的基準數據集",
+      "summary": "本社群包含三個實體：HotPotQA、MT-Bench 以及 explicit fact retrieval。HotPotQA 和 MT-Bench 均被定義為面向向量 RAG 性能評估的開域問答基準數據集 (Dataset)。兩者皆被描述為「面向 explicit fact retrieval」，意指這些基準主要用於評估模型在檢索特定事實方面的表現，而非全球意義理解 (global sensemaking)。",
+      "key_entities": [
+        "HotPotQA",
+        "MT-Bench",
+        "explicit fact retrieval"
+      ],
+      "key_relationships": [
+        "HotPotQA 面向 explicit fact retrieval",
+        "MT-Bench 面向 explicit fact retrieval"
+      ],
+      "source_pages": [
+        3
+      ],
+      "limitations": "無法從本社群數據中推斷 HotPotQA 與 MT-Bench 之間的直接關係，亦無法得知它們與 global sensemaking 任務的具體對比細節。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 7,
+      "member_count": 2,
+      "members": [
+        "Higher-level communities",
+        "Leaf-level communities"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Community hierarchy levels in summary generation",
+      "summary": "The community consists of two concept entities: 'Higher-level communities' and 'Leaf-level communities'. Leaf-level communities represent the lowest level of the community hierarchy, where element summaries are prioritized and iteratively added to the LLM context window until the token limit is reached [6]. Higher-level communities exist above the leaf level; if all element summaries fit within the token limit of the context window, the process proceeds as for leaf-level communities to summarize all element summaries within the community [6]. Higher-level communities are derived from lower-level communities, where community summaries from lower-level communities are used to generate summaries for higher-level communities [6].",
+      "key_entities": [
+        "Higher-level communities",
+        "Leaf-level communities"
+      ],
+      "key_relationships": [
+        "Higher-level communities are derived from Leaf-level communities"
+      ],
+      "source_pages": [
+        6
+      ],
+      "limitations": "No information regarding specific token limit values or exact summarization algorithms is provided.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 8,
+      "member_count": 2,
+      "members": [
+        "Graph indexing",
+        "gpt-4-turbo"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Graph indexing implementation using gpt-4-turbo",
+      "summary": "本研究社區探討了使用 gpt-4-turbo 端點進行圖索引的方法。該方法採用 600 token 的視窗大小，在處理 Podcast 數據集時耗時 281 分鐘。執行環境為虛擬機器，配備 16GB RAM 及 Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz。圖索引方法依賴於 gpt-4-turbo 的公共 OpenAI 端點，該端點具有 2M TPM 和 10k RPM 的速率限制 [9]。",
+      "key_entities": [
+        "Graph indexing",
+        "gpt-4-turbo"
+      ],
+      "key_relationships": [
+        "Graph indexing uses gpt-4-turbo"
+      ],
+      "source_pages": [
+        9
+      ],
+      "limitations": "無法從本社區數據推斷出該方法的具體優化策略、準確度評估結果或與其他方法的比較分析。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 9,
+      "member_count": 2,
+      "members": [
+        "Experiment 1",
+        "Experiment 2"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Comparison of LLM-based win rates between Experiment 1 and Experiment 2",
+      "summary": "本研究包含兩個實驗：Experiment 1 為先前關於基於 LLM 的勝率（LLM-based win rates）的實驗，而 Experiment 2 則是當前評估主張提取（claim extraction）的實驗。根據證據記錄，Experiment 2 的發現與 Experiment 1 中基於 LLM 的勝率結果一致（aligns_with）。",
+      "key_entities": [
+        "Experiment 1",
+        "Experiment 2"
+      ],
+      "key_relationships": [
+        "Experiment 2 aligns_with Experiment 1: Findings in Experiment 2 align with LLM-based win rates from Experiment 1"
+      ],
+      "source_pages": [
+        11
+      ],
+      "limitations": "無法從現有資料推斷實驗 1 與實驗 2 之間是否存在因果關係，僅知發現結果一致。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 10,
+      "member_count": 1,
+      "members": [
+        "Claimify"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Claimify 方法",
+      "summary": "Claimify 是一種基於大語言模型（LLM）的方法，用於識別答案中包含事實性陳述的句子的句子，並將這些句子分解為簡單、自包含的事實陳述。",
+      "key_entities": [
+        "Claimify"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        9
+      ],
+      "limitations": "此社區僅包含單一實體，無法推斷其與其他方法或系統的內部關係或應用場景。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 11,
+      "member_count": 1,
+      "members": [
+        "Claims"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Claims as verifiable facts extracted by LLMs",
+      "summary": "The community contains a single entity, 'Claims', defined as verifiable facts extracted by Large Language Models (LLMs) that are used to validate results. Evidence records describe these as 'LLM-extracted statements of verifiable facts, or 'claims.''",
+      "key_entities": [
+        "Claims"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        4
+      ],
+      "limitations": "No internal or boundary relationships exist within this community to provide additional context or connections.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 12,
+      "member_count": 1,
+      "members": [
+        "GPT-4"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "GPT-4 在 GraphRAG 與向量 RAG 評估中的應用",
+      "summary": "本社群包含單一實體 GPT-4，其被描述為在評估中使用的語言模型（LLM），在此情境下 GraphRAG 表現優於向量 RAG。證據顯示，當使用 GPT-4 作為 LLM 時，GraphRAG 的結果顯示其顯著優於向量 RAG。",
+      "key_entities": [
+        "GPT-4"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        2,
+        12
+      ],
+      "limitations": "無法從本社群推導出 GPT-4 的其他功能、性能細節或與 GraphRAG/向量 RAG 的因果機制。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 13,
+      "member_count": 1,
+      "members": [
+        "MultiHop-RAG"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "MultiHop-RAG 數據集",
+      "summary": "MultiHop-RAG 是一個針對向量 RAG（檢索增強生成）性能評估的開放領域問答 benchmark 數據集。",
+      "key_entities": [
+        "MultiHop-RAG"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        3
+      ],
+      "limitations": "此社區僅包含單一實體，無法推斷其與其他實體的內部關係或具體的技術細節（如數據規模、問答類型等）。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 14,
+      "member_count": 1,
+      "members": [
+        "SelfCheckGPT"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "SelfCheckGPT 方法",
+      "summary": "SelfCheckGPT 是一種用於比較製造率的方法 (Manakul et al., 2023)。",
+      "key_entities": [
+        "SelfCheckGPT"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        11
+      ],
+      "limitations": "此社群僅包含單一實體，無法推斷其內部關係或與其他實體的邊界關係。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 15,
+      "member_count": 1,
+      "members": [
+        "Token limit"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Token limit as a context window constraint",
+      "summary": "The community defines 'Token limit' as a parameter that acts as a constraint on the context window size. This constraint determines the point at which element summaries must be replaced by sub-community summaries. The evidence indicates that this replacement occurs 'until the token limit is reached' [6].",
+      "key_entities": [
+        "Token limit"
+      ],
+      "key_relationships": [
+        "Token limit is a constraint on the context window size that determines when element summaries must be replaced by sub-community summaries."
+      ],
+      "source_pages": [
+        6
+      ],
+      "limitations": "No internal or boundary relationships were identified for this single-entity community.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 17,
+      "member_count": 1,
+      "members": [
+        "distance thresholds"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "distance thresholds",
+      "summary": "distance thresholds 是一個用於分析聚類結果的實驗參數。此參數在表 4 中以「Distance Threshold」作為欄位標題出現。",
+      "key_entities": [
+        "distance thresholds"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        12
+      ],
+      "limitations": "由於該社群僅包含單一實體且無內部關係，無法推斷其具體數值設定、對聚類結果的影響或與其他參數的互動方式。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 18,
+      "member_count": 1,
+      "members": [
+        "fixed context window size of 8k tokens"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "固定上下文窗口大小參數",
+      "summary": "本研究使用固定為 8,000 個 token 的上下文窗口大小（fixed context window size of 8k tokens）來生成社群摘要、社群回答以及全球回答。",
+      "key_entities": [
+        "fixed context window size of 8k tokens"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        9
+      ],
+      "limitations": "無足夠證據說明此參數對結果的影響或與其他參數的關聯。",
+      "review_status": "llm_generated_pending_review"
+    }
+  ],
+  "failures": [
+    {
+      "community_id": 0,
+      "error": "No valid JSON object found.",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_000.raw.txt"
+    },
+    {
+      "community_id": 2,
+      "error": "No valid JSON object found.",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_002.raw.txt"
+    },
+    {
+      "community_id": 3,
+      "error": "Unknown key entities: {'na¨ıve RAG'}",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_003.raw.txt"
+    },
+    {
+      "community_id": 5,
+      "error": "Unknown key entities: {'GraphRAG'}",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_005.raw.txt"
+    },
+    {
+      "community_id": 16,
+      "error": "Unknown key entities: {'complete linkage', 'Scikit-learn', '1-ROUGE-L'}",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_016.raw.txt"
+    },
+    {
+      "community_id": 19,
+      "error": "Unknown key entities: {'GraphRAG'}",
+      "raw_file": "/home/emily/MMIP/week10/assignment4_graphrag/results/community_summary_raw/community_019.raw.txt"
+    }
+  ]
+}

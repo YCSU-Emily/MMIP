@@ -1,0 +1,19 @@
+{
+  "main_topic": "Agglomerative Clustering Implementation",
+  "summary": "本研究使用 Scikit-learn 實現聚類方法，採用完全鏈接（complete linkage）與 1-ROUGE-L 距離指標。聚類過程遵循 Padmakumar 和 He (2024) 的說明，將簇合併僅當其最遠點之間的最大距離小於或等於預定義的距離閾值時進行 (Pedregosa et al., 2011)。",
+  "key_entities": [
+    "agglomerative clustering",
+    "Scikit-learn",
+    "complete linkage",
+    "1-ROUGE-L"
+  ],
+  "key_relationships": [
+    "agglomerative clustering 使用 Scikit-learn 實現",
+    "agglomerative clustering 採用 complete linkage 合併簇",
+    "agglomerative clustering 使用 1-ROUGE-L 作為距離指標"
+  ],
+  "source_pages": [
+    9
+  ],
+  "limitations": "此社區僅包含單一實體，無法推斷該方法與其他技術或數據集之間的內部關係。"
+}

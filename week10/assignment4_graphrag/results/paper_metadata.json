@@ -1,0 +1,34 @@
+{
+  "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+  "authors": [
+    "Darren Edge",
+    "Ha Trinh",
+    "Newman Cheng",
+    "Joshua Bradley",
+    "Alex Chao",
+    "Apurva Mody",
+    "Steven Truitt",
+    "Dasha Metropolitansky",
+    "Robert Osazuwa Ness",
+    "Jonathan Larson"
+  ],
+  "arxiv_id": "2404.16130",
+  "version": "v2",
+  "pdf_filename": "graphrag_paper.pdf",
+  "total_pages": 26,
+  "total_characters": 89858,
+  "extracted_at": "2026-11-12T08:03:35.371672+00:00",
+  "pdf_metadata": {
+    "format": "PDF 1.5",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with hyperref",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20250220013802Z",
+    "modDate": "D:20250220013802Z",
+    "trapped": "",
+    "encryption": null
+  }
+}

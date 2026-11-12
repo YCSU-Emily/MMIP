@@ -1,0 +1,17 @@
+{
+  "main_topic": "Vector RAG 性能評估的基準數據集",
+  "summary": "本社群包含三個實體：HotPotQA、MT-Bench 以及 explicit fact retrieval。HotPotQA 和 MT-Bench 均被定義為面向向量 RAG 性能評估的開域問答基準數據集 (Dataset)。兩者皆被描述為「面向 explicit fact retrieval」，意指這些基準主要用於評估模型在檢索特定事實方面的表現，而非全球意義理解 (global sensemaking)。",
+  "key_entities": [
+    "HotPotQA",
+    "MT-Bench",
+    "explicit fact retrieval"
+  ],
+  "key_relationships": [
+    "HotPotQA 面向 explicit fact retrieval",
+    "MT-Bench 面向 explicit fact retrieval"
+  ],
+  "source_pages": [
+    3
+  ],
+  "limitations": "無法從本社群數據中推斷 HotPotQA 與 MT-Bench 之間的直接關係，亦無法得知它們與 global sensemaking 任務的具體對比細節。"
+}

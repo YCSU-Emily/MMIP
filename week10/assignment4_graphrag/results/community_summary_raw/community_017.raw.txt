@@ -1,0 +1,8 @@
+{
+  "main_topic": "distance thresholds",
+  "summary": "distance thresholds 是一個用於分析聚類結果的實驗參數。此參數在表 4 中以「Distance Threshold」作為欄位標題出現。",
+  "key_entities": ["distance thresholds"],
+  "key_relationships": [],
+  "source_pages": [12],
+  "limitations": "由於該社群僅包含單一實體且無內部關係，無法推斷其具體數值設定、對聚類結果的影響或與其他參數的互動方式。"
+}

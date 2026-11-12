@@ -1,0 +1,12 @@
+{
+  "main_topic": "固定上下文窗口大小參數",
+  "summary": "本研究使用固定為 8,000 個 token 的上下文窗口大小（fixed context window size of 8k tokens）來生成社群摘要、社群回答以及全球回答。",
+  "key_entities": [
+    "fixed context window size of 8k tokens"
+  ],
+  "key_relationships": [],
+  "source_pages": [
+    9
+  ],
+  "limitations": "無足夠證據說明此參數對結果的影響或與其他參數的關聯。"
+}

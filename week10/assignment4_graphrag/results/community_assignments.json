@@ -1,0 +1,743 @@
+[
+  {
+    "entity": "C0",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Experimental condition using root-level community summaries.",
+    "source_pages": [
+      10,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "C1",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Experimental condition using a higher level of the GraphRAG community hierarchy.",
+    "source_pages": [
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "C2",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Experimental condition using an intermediate level of the GraphRAG community hierarchy.",
+    "source_pages": [
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "C3",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Experimental condition using low-level community summaries.",
+    "source_pages": [
+      10,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "Claimify",
+    "entity_type": "Method",
+    "community_id": 10,
+    "description": "An LLM-based method that identifies sentences containing factual claims and decomposes them into simple claims.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "Claims",
+    "entity_type": "Concept",
+    "community_id": 11,
+    "description": "Verifiable facts extracted by LLMs used to validate results.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Community Answers",
+    "entity_type": "Concept",
+    "community_id": 1,
+    "description": "Intermediate answers generated in parallel to address specific questions before reduction to a global answer.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Community Summaries",
+    "entity_type": "Concept",
+    "community_id": 1,
+    "description": "Pre-generated summaries for all groups of closely related entities used to generate partial responses.",
+    "source_pages": [
+      1,
+      2,
+      6,
+      10
+    ]
+  },
+  {
+    "entity": "Community detection",
+    "entity_type": "Method",
+    "community_id": 1,
+    "description": "Technique used to partition the graph index into groups of elements.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Comprehensiveness",
+    "entity_type": "Metric",
+    "community_id": 3,
+    "description": "A target criterion measuring how much detail an answer provides to cover all aspects of a question.",
+    "source_pages": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      26
+    ]
+  },
+  {
+    "entity": "Directness",
+    "entity_type": "Metric",
+    "community_id": 3,
+    "description": "A control criterion evaluating how specifically and clearly an answer addresses a question, focusing on concision.",
+    "source_pages": [
+      8,
+      26
+    ]
+  },
+  {
+    "entity": "Diversity",
+    "entity_type": "Metric",
+    "community_id": 3,
+    "description": "A target criterion measuring the variety and richness of perspectives and insights in an answer.",
+    "source_pages": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      26
+    ]
+  },
+  {
+    "entity": "Empowerment",
+    "entity_type": "Metric",
+    "community_id": 3,
+    "description": "A target criterion measuring how well an answer helps the reader understand and make informed judgments.",
+    "source_pages": [
+      7,
+      26
+    ]
+  },
+  {
+    "entity": "Entities",
+    "entity_type": "Concept",
+    "community_id": 5,
+    "description": "Instances of important entities extracted from text chunks.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Experiment 1",
+    "entity_type": "Experiment",
+    "community_id": 9,
+    "description": "A prior experiment involving LLM-based win rates",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "entity": "Experiment 2",
+    "entity_type": "Experiment",
+    "community_id": 9,
+    "description": "The current experiment evaluating claim extraction",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "entity": "GENERATEQUESTIONS",
+    "entity_type": "Method",
+    "community_id": 4,
+    "description": "A procedure to generate high-level questions for a dataset based on corpus description, user personas, and tasks.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "entity": "GPT-4",
+    "entity_type": "Model",
+    "community_id": 12,
+    "description": "An LLM used in the evaluation where GraphRAG strongly outperformed vector RAG.",
+    "source_pages": [
+      2,
+      12
+    ]
+  },
+  {
+    "entity": "Global Answer",
+    "entity_type": "Concept",
+    "community_id": 1,
+    "description": "The final output produced using query-focused summarization over community summaries.",
+    "source_pages": [
+      4,
+      6
+    ]
+  },
+  {
+    "entity": "Global Sensemaking Question Generation",
+    "entity_type": "Method",
+    "community_id": 1,
+    "description": "A process using an LLM to generate corpus-specific questions designed to assess high-level understanding without retrieving specific low-level facts.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Graph Communities",
+    "entity_type": "Concept",
+    "community_id": 1,
+    "description": "A hierarchy providing community partitions that cover graph nodes in a mutually exclusive, collectively exhaustive way.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Graph indexing",
+    "entity_type": "Method",
+    "community_id": 8,
+    "description": "A method using a 600 token window that took 281 minutes for the Podcast dataset.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "GraphRAG",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A graph-based approach to question answering over private text corpora that scales with the generality of user questions and the quantity of source text.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "entity": "Higher-level communities",
+    "entity_type": "Concept",
+    "community_id": 7,
+    "description": "Communities above the leaf level where sub-community summaries are substituted for element summaries if token limits are reached.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Holm-Bonferroni correction",
+    "entity_type": "Method",
+    "community_id": 3,
+    "description": "A correction applied to account for multiple pairwise comparisons.",
+    "source_pages": [
+      26
+    ]
+  },
+  {
+    "entity": "HotPotQA",
+    "entity_type": "Dataset",
+    "community_id": 6,
+    "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "Knowledge Graph",
+    "entity_type": "Model",
+    "community_id": 1,
+    "description": "A graph index derived from source documents in the first stage of GraphRAG's approach.",
+    "source_pages": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "entity": "LLM",
+    "entity_type": "Model",
+    "community_id": 1,
+    "description": "A large language model used to build a graph index and generate responses in the GraphRAG approach.",
+    "source_pages": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "entity": "LLM-as-a-judge",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A technique using one LLM to generate questions and a second LLM to judge answers of different RAG systems.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "entity": "LLM-based persona generation",
+    "entity_type": "Method",
+    "community_id": 4,
+    "description": "A prior work approach where an LLM generates diverse and authentic sets of personas to guide query generation.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "LangChain",
+    "entity_type": "Framework",
+    "community_id": 0,
+    "description": "Open-source framework that provides an extension integrating the GraphRAG approach.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "entity": "Leaf-level communities",
+    "entity_type": "Concept",
+    "community_id": 7,
+    "description": "The lowest level of the community hierarchy where element summaries are prioritized and added to the context window.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Leiden community detection",
+    "entity_type": "Method",
+    "community_id": 1,
+    "description": "A community detection algorithm used in a hierarchical manner to partition the graph into communities.",
+    "source_pages": [
+      5,
+      9
+    ]
+  },
+  {
+    "entity": "MT-Bench",
+    "entity_type": "Dataset",
+    "community_id": 6,
+    "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "MultiHop-RAG",
+    "entity_type": "Dataset",
+    "community_id": 13,
+    "description": "A benchmark dataset for open-domain question answering oriented towards vector RAG performance.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "Naive RAG",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A baseline method used for comparison against Graph RAG.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "entity": "News Articles",
+    "entity_type": "Dataset",
+    "community_id": 4,
+    "description": "A dataset example featuring an educator user and questions about health and wellness.",
+    "source_pages": [
+      7,
+      8,
+      10,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "Podcast Transcripts",
+    "entity_type": "Dataset",
+    "community_id": 0,
+    "description": "A dataset example featuring a tech journalist user and questions about tech policy and regulation.",
+    "source_pages": [
+      7,
+      8,
+      10,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "RAG baseline",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A conventional RAG system used as a comparison baseline for GraphRAG's performance on global sensemaking questions.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "entity": "Relationships",
+    "entity_type": "Concept",
+    "community_id": 5,
+    "description": "Connections between entities extracted from text chunks.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Retrieval-Augmented Generation (RAG)",
+    "entity_type": "Method",
+    "community_id": 2,
+    "description": "An approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window.",
+    "source_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "entity": "SS (Semantic Search / Vector RAG)",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Semantic Search baseline implementing vector RAG by retrieving text chunks into the context window.",
+    "source_pages": [
+      8,
+      9,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "SelfCheckGPT",
+    "entity_type": "Method",
+    "community_id": 14,
+    "description": "An approach for comparing fabrication rates",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "entity": "Shapiro-Wilk test",
+    "entity_type": "Method",
+    "community_id": 3,
+    "description": "A statistical test used to determine if data follows a normal distribution.",
+    "source_pages": [
+      26
+    ]
+  },
+  {
+    "entity": "TS",
+    "entity_type": "Experimental Condition",
+    "community_id": 2,
+    "description": "Text Summarization baseline applying map-reduce directly to source texts without a graph index.",
+    "source_pages": [
+      8,
+      10,
+      11,
+      12,
+      26
+    ]
+  },
+  {
+    "entity": "Text Chunks",
+    "entity_type": "Concept",
+    "community_id": 5,
+    "description": "Source documents split into segments for downstream processing.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "entity": "Token limit",
+    "entity_type": "Parameter",
+    "community_id": 15,
+    "description": "A constraint on the context window size that determines when element summaries must be replaced by sub-community summaries.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "entity": "Wilcoxon signed-rank test",
+    "entity_type": "Method",
+    "community_id": 3,
+    "description": "A non-parametric test employed to assess performance differences between pairs of conditions.",
+    "source_pages": [
+      26
+    ]
+  },
+  {
+    "entity": "adaptive benchmarking",
+    "entity_type": "Method",
+    "community_id": 4,
+    "description": "A process of dynamically generating evaluation benchmarks tailored to specific domains or use cases.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "agglomerative clustering",
+    "entity_type": "Method",
+    "community_id": 16,
+    "description": "A clustering approach implemented using Scikit-learn with complete linkage and 1-ROUGE-L distance metric.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "community hierarchy",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "A hierarchical structure supporting the GraphRAG approach, including root-level communities.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "context window",
+    "entity_type": "Concept",
+    "community_id": 2,
+    "description": "The maximum number of tokens that can be processed by an LLM at once, which limits the size of data retrieved in canonical RAG setups.",
+    "source_pages": [
+      1,
+      8
+    ]
+  },
+  {
+    "entity": "distance thresholds",
+    "entity_type": "Parameter",
+    "community_id": 17,
+    "description": "Experimental parameter used when analyzing clustering results.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "downstream sensemaking",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "Tasks that may be at risk if generated answers do not accurately represent source data.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "embedding-based matching",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A technique for matching user queries and graph annotations in local RAG approaches.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "exact string matching",
+    "entity_type": "Method",
+    "community_id": 1,
+    "description": "A method used for entity matching to reconcile different extracted names for the same entity.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "entity": "explicit fact retrieval",
+    "entity_type": "Task",
+    "community_id": 6,
+    "description": "A task focused on retrieving specific facts, contrasted with global sensemaking.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "fixed context window size of 8k tokens",
+    "entity_type": "Parameter",
+    "community_id": 18,
+    "description": "Experimental parameter specifying an 8,000-token context window.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "global approaches",
+    "entity_type": "Concept",
+    "community_id": 3,
+    "description": "Approaches that significantly outperformed conventional vector RAG in comprehensiveness and diversity criteria.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "global sensemaking",
+    "entity_type": "Concept",
+    "community_id": 4,
+    "description": "The process of evaluating how well an RAG system answers questions over the entirety of a corpus.",
+    "source_pages": [
+      3,
+      7
+    ]
+  },
+  {
+    "entity": "gpt-4-turbo",
+    "entity_type": "Model",
+    "community_id": 8,
+    "description": "A public OpenAI endpoint used for graph indexing with 2M TPM and 10k RPM limits.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "entity": "graph-based community detection",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A technique applied to generate a graph index and create a thematic partitioning of the data.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "head-to-head comparison approach",
+    "entity_type": "Method",
+    "community_id": 3,
+    "description": "An evaluation strategy using an LLM evaluator to judge relative performance.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "entity": "hierarchical indexing",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A technique used to create summaries, similar to prior approaches referenced in the text.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "human sensemaking",
+    "entity_type": "Concept",
+    "community_id": 19,
+    "description": "The goal supported by GraphRAG over entire text corpora.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "information scent",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "A mechanism used in exploratory drill-down following higher-level community summaries.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "inherent modularity",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "A quality of graphs in the context of RAG that GraphRAG focuses on, referring to the ability to partition graphs into nested modular communities.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "map-reduce approach",
+    "entity_type": "Method",
+    "community_id": 2,
+    "description": "A summarization technique used in the TS condition where source texts are shuffled and chunked.",
+    "source_pages": [
+      8
+    ]
+  },
+  {
+    "entity": "map-reduce processing",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A technique where summaries are used to provide partial answers independently and in parallel, then combined to generate a final global answer.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "entity": "map-reduce summarization",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A global but graph-free approach used for source text summarization.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "entity": "query-focused summarization",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "A task type where RAG fails on global questions directed at an entire text corpus, such as identifying main themes in a dataset.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "entity": "self-memory",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "Summaries over large sections of the data source used to answer queries.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "entity": "sensemaking",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "Tasks requiring reasoning over connections among people, places, and events to anticipate trajectories.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "entity": "sensemaking activity",
+    "entity_type": "Concept",
+    "community_id": 0,
+    "description": "The type of iterative question answering characterized by the use of root-level GraphRAG.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "entity": "vector RAG",
+    "entity_type": "Method",
+    "community_id": 0,
+    "description": "A conventional RAG approach using text embeddings to retrieve semantically similar records for query responses.",
+    "source_pages": [
+      2,
+      10,
+      12
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "page": 25,
+  "part": 1,
+  "source_characters": 3262,
+  "entities": [
+    {
+      "name": "Relative Assessment Prompt",
+      "type": "Method",
+      "description": "A prompt designed for grading two answers to a question provided by different people.",
+      "evidence": "You are a helpful assistant responsible for grading two answers to a question that are provided by two different people."
+    },
+    {
+      "name": "Relative Assessment Metrics",
+      "type": "Concept",
+      "description": "A set of criteria used to measure the quality of answers, including comprehensiveness, diversity, directness, and empowerment.",
+      "evidence": "CRITERIA = {\"comprehensiveness\": \"How much detail does the answer provide to cover all the aspects and details of the question?\"}"
+    },
+    {
+      "name": "comprehensiveness",
+      "type": "Metric",
+      "description": "A metric evaluating how thoroughly an answer covers all aspects and details of a question without redundancy or irrelevance.",
+      "evidence": "A comprehensive answer should be thorough and complete, without being redundant or irrelevant."
+    },
+    {
+      "name": "diversity",
+      "type": "Metric",
+      "description": "A metric evaluating the variety and richness of perspectives and insights provided in an answer.",
+      "evidence": "How varied and rich is the answer in providing different perspectives and insights on the question?"
+    },
+    {
+      "name": "directness",
+      "type": "Metric",
+      "description": "A metric evaluating how specifically and clearly an answer addresses a question.",
+      "evidence": "How specifically and clearly does the answer address the question?"
+    },
+    {
+      "name": "empowerment",
+      "type": "Metric",
+      "description": "A metric evaluating how well an answer helps the reader understand and make informed judgments without being misled.",
+      "evidence": "How well does the answer help the reader understand and make informed judgements about the topic without being misled or making fallacious assumptions."
+    },
+    {
+      "name": "Winner",
+      "type": "Concept",
+      "description": "The output field indicating which answer is better, labeled as 1, 2, or 0.",
+      "evidence": "\"winner\": <1, 2, or 0>,"
+    },
+    {
+      "name": "Reasoning",
+      "type": "Concept",
+      "description": "The output field providing a short explanation of why a winner was chosen.",
+      "evidence": "\"reasoning\": \"Answer 1 is better because <your reasoning>.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Relative Assessment Metrics",
+      "type": "uses",
+      "description": "The prompt uses the specified criteria to assess which answer is better.",
+      "evidence": "assess which answer is better according to the following measure: {criteria}"
+    },
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Winner",
+      "type": "proposes",
+      "description": "The prompt proposes a specific output format including a winner field.",
+      "evidence": "Your assessment should include two parts: - Winner:"
+    },
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Reasoning",
+      "type": "proposes",
+      "description": "The prompt proposes a specific output format including a reasoning field.",
+      "evidence": "- Reasoning: a short explanation of why you chose the winner with respect to the measure described above."
+    },
+    {
+      "source": "comprehensiveness",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "description": "Comprehensiveness is one of the metrics defined within the Relative Assessment Metrics.",
+      "evidence": "\"comprehensiveness\": \"How much detail does the answer provide to cover all the aspects and details of the question?\""
+    },
+    {
+      "source": "diversity",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "description": "Diversity is one of the metrics defined within the Relative Assessment Metrics.",
+      "evidence": "\"diversity\": \"How varied and rich is the answer in providing different perspectives and insights on the question?\""
+    },
+    {
+      "source": "directness",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "description": "Directness is one of the metrics defined within the Relative Assessment Metrics.",
+      "evidence": "\"directness\": \"How specifically and clearly does the answer address the question?\""
+    },
+    {
+      "source": "empowerment",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "description": "Empowerment is one of the metrics defined within the Relative Assessment Metrics.",
+      "evidence": "\"empowerment\": \"How well does the answer help the reader understand and make informed judgements about the topic without being misled or making fallacious assumptions.\""
+    }
+  ]
+}

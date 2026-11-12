@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "Causal graph discovery",
+      "type": "Method",
+      "description": "A method for discovering causal graphs using retrieval-augmented generation based large language models.",
+      "evidence": "Causal graph discovery with retrieval-augmented generation based large language models"
+    },
+    {
+      "name": "Retrieval-augmented generation",
+      "type": "Method",
+      "description": "A technique used in large language models to enhance capabilities.",
+      "evidence": "retrieval-augmented generation based large language models"
+    },
+    {
+      "name": "Large language models",
+      "type": "Model",
+      "description": "Models capable of causal graph discovery and knowledge graph construction.",
+      "evidence": "large language models"
+    },
+    {
+      "name": "Dynamic evaluation",
+      "type": "Method",
+      "description": "A method for evaluating large language models via adaptive reasoning graphs.",
+      "evidence": "Dynamic evaluation of large language models via adaptive reasoning graph"
+    },
+    {
+      "name": "Adaptive reasoning graph",
+      "type": "Concept",
+      "description": "A graph structure used in the dynamic evaluation of large language models.",
+      "evidence": "adaptive reasoning graph"
+    },
+    {
+      "name": "Llms for knowledge graph construction and reasoning",
+      "type": "Concept",
+      "description": "The capabilities and future opportunities of large language models in constructing and reasoning about knowledge graphs.",
+      "evidence": "Llms for knowledge graph construction and reasoning: Recent capabilities and future opportunities"
+    },
+    {
+      "name": "Knowledge graph",
+      "type": "Concept",
+      "description": "A structure that can be constructed and reasoned about using large language models.",
+      "evidence": "knowledge graph construction and reasoning"
+    },
+    {
+      "name": "Judging llm-as-a-judge",
+      "type": "Method",
+      "description": "A method for evaluating large language models using mt-bench and chatbot arena.",
+      "evidence": "Judging llm-as-a-judge with mt-bench and chatbot arena"
+    },
+    {
+      "name": "Mt-bench",
+      "type": "Metric",
+      "description": "A benchmark used for judging llm-as-a-judge.",
+      "evidence": "mt-bench"
+    },
+    {
+      "name": "Chatbot arena",
+      "type": "Dataset",
+      "description": "A dataset used for judging llm-as-a-judge.",
+      "evidence": "chatbot arena"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Causal graph discovery",
+      "target": "Retrieval-augmented generation",
+      "type": "uses",
+      "description": "Causal graph discovery uses retrieval-augmented generation based large language models.",
+      "evidence": "Causal graph discovery with retrieval-augmented generation based large language models"
+    },
+    {
+      "source": "Dynamic evaluation",
+      "target": "Adaptive reasoning graph",
+      "type": "uses",
+      "description": "Dynamic evaluation uses adaptive reasoning graph to evaluate large language models.",
+      "evidence": "Dynamic evaluation of large language models via adaptive reasoning graph"
+    },
+    {
+      "source": "Llms for knowledge graph construction and reasoning",
+      "target": "Knowledge graph",
+      "type": "addresses",
+      "description": "Llms for knowledge graph construction and reasoning addresses the construction and reasoning of knowledge graphs.",
+      "evidence": "Llms for knowledge graph construction and reasoning: Recent capabilities and future opportunities"
+    },
+    {
+      "source": "Judging llm-as-a-judge",
+      "target": "Mt-bench",
+      "type": "uses",
+      "description": "Judging llm-as-a-judge uses mt-bench.",
+      "evidence": "Judging llm-as-a-judge with mt-bench and chatbot arena"
+    },
+    {
+      "source": "Judging llm-as-a-judge",
+      "target": "Chatbot arena",
+      "type": "uses",
+      "description": "Judging llm-as-a-judge uses chatbot arena.",
+      "evidence": "Judging llm-as-a-judge with mt-bench and chatbot arena"
+    }
+  ]
+}

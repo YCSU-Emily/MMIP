@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "Forceatlas2",
+      "type": "Method",
+      "description": "A continuous graph layout algorithm designed for handy network visualization in the gephi software.",
+      "evidence": "Forceatlas2, a continuous graph layout algorithm for handy network visualization designed for the gephi software."
+    },
+    {
+      "name": "Openord",
+      "type": "Method",
+      "description": "An open-source toolbox for large graph layout.",
+      "evidence": "Openord: An open-source toolbox for large graph layout."
+    },
+    {
+      "name": "Knowledge graph-augmented language models",
+      "type": "Model",
+      "description": "Models used for knowledge-grounded dialogue generation.",
+      "evidence": "Knowledge graph-augmented language models for knowledge-grounded dialogue generation."
+    },
+    {
+      "name": "Demonstrate-search-predict",
+      "type": "Method",
+      "description": "A method for composing retrieval and language models for knowledge-intensive nlp.",
+      "evidence": "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive nlp."
+    },
+    {
+      "name": "Retrieval-augmented generation",
+      "type": "Method",
+      "description": "A technique for knowledge-intensive nlp tasks.",
+      "evidence": "Retrieval-augmented generation for knowledge-intensive nlp tasks."
+    },
+    {
+      "name": "Tree of clarifications",
+      "type": "Method",
+      "description": "A method for answering ambiguous questions with retrieval-augmented large language models.",
+      "evidence": "Tree of clarifications: Answering ambiguous questions with retrieval-augmented large language models."
+    },
+    {
+      "name": "Self-refine",
+      "type": "Method",
+      "description": "A method for iterative refinement with self-feedback.",
+      "evidence": "Self-refine: Iterative refinement with self-feedback."
+    },
+    {
+      "name": "Selfcheckgpt",
+      "type": "Method",
+      "description": "A zero-resource black-box hallucination detection method for generative large language models.",
+      "evidence": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models."
+    },
+    {
+      "name": "Query focused abstractive summarization",
+      "type": "Method",
+      "description": "A method incorporating query relevance and transfer learning with transformer models.",
+      "evidence": "Query focused abstractive summarization via incorporating query relevance and transfer learning with transformer models."
+    },
+    {
+      "name": "Generation-augmented retrieval",
+      "type": "Method",
+      "description": "A method for open-domain question answering.",
+      "evidence": "Generation-augmented retrieval for open-domain question answering."
+    },
+    {
+      "name": "Probabilistic knowledge graph construction",
+      "type": "Method",
+      "description": "Approaches that are compositional and incremental.",
+      "evidence": "Probabilistic knowledge graph construction: Compositional and incremental approaches."
+    },
+    {
+      "name": "Knowledge graph generation from text",
+      "type": "Method",
+      "description": "A process for generating knowledge graphs from text.",
+      "evidence": "Knowledge graph generation from text."
+    },
+    {
+      "name": "Lost in the middle",
+      "type": "Concept",
+      "description": "A concept describing how language models use long contexts.",
+      "evidence": "Lost in the middle: How language models use long contexts."
+    },
+    {
+      "name": "In search of needles in a 11m haystack",
+      "type": "Concept",
+      "description": "A concept regarding recurrent memory finding what llms miss.",
+      "evidence": "In search of needles in a 11m haystack: Recurrent memory finds what llms miss."
+    },
+    {
+      "name": "Evaluating large language models in theory of mind tasks",
+      "type": "Concept",
+      "description": "An evaluation of large language models in theory of mind tasks.",
+      "evidence": "Evaluating large language models in theory of mind tasks."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Forceatlas2",
+      "target": "gephi software",
+      "type": "designed_for",
+      "description": "Forceatlas2 is designed for use within the gephi software.",
+      "evidence": "Forceatlas2, a continuous graph layout algorithm for handy network visualization designed for the gephi software."
+    },
+    {
+      "source": "Knowledge graph-augmented language models",
+      "target": "knowledge-grounded dialogue generation",
+      "type": "addresses",
+      "description": "These models are used for knowledge-grounded dialogue generation.",
+      "evidence": "Knowledge graph-augmented language models for knowledge-grounded dialogue generation."
+    },
+    {
+      "source": "Demonstrate-search-predict",
+      "target": "knowledge-intensive nlp",
+      "type": "addresses",
+      "description": "This method composes retrieval and language models for knowledge-intensive nlp.",
+      "evidence": "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive nlp."
+    },
+    {
+      "source": "Retrieval-augmented generation",
+      "target": "knowledge-intensive nlp tasks",
+      "type": "addresses",
+      "description": "This technique is applied for knowledge-intensive nlp tasks.",
+      "evidence": "Retrieval-augmented generation for knowledge-intensive nlp tasks."
+    },
+    {
+      "source": "Tree of clarifications",
+      "target": "retrieval-augmented large language models",
+      "type": "uses",
+      "description": "This method answers ambiguous questions using retrieval-augmented large language models.",
+      "evidence": "Tree of clarifications: Answering ambiguous questions with retrieval-augmented large language models."
+    },
+    {
+      "source": "Self-refine",
+      "target": "iterative refinement",
+      "type": "proposes",
+      "description": "This method proposes iterative refinement with self-feedback.",
+      "evidence": "Self-refine: Iterative refinement with self-feedback."
+    },
+    {
+      "source": "Selfcheckgpt",
+      "target": "generative large language models",
+      "type": "evaluates",
+      "description": "This method detects hallucinations in generative large language models.",
+      "evidence": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models."
+    },
+    {
+      "source": "Query focused abstractive summarization",
+      "target": "transformer models",
+      "type": "uses",
+      "description": "This method incorporates query relevance and transfer learning with transformer models.",
+      "evidence": "Query focused abstractive summarization via incorporating query relevance and transfer learning with transformer models."
+    },
+    {
+      "source": "Generation-augmented retrieval",
+      "target": "open-domain question answering",
+      "type": "addresses",
+      "description": "This method is used for open-domain question answering.",
+      "evidence": "Generation-augmented retrieval for open-domain question answering."
+    },
+    {
+      "source": "Probabilistic knowledge graph construction",
+      "target": "compositional and incremental approaches",
+      "type": "consists_of",
+      "description": "This construction method includes compositional and incremental approaches.",
+      "evidence": "Probabilistic knowledge graph construction: Compositional and incremental approaches."
+    },
+    {
+      "source": "Lost in the middle",
+      "target": "language models",
+      "type": "describes",
+      "description": "This concept describes how language models use long contexts.",
+      "evidence": "Lost in the middle: How language models use long contexts."
+    },
+    {
+      "source": "In search of needles in a 11m haystack",
+      "target": "llms",
+      "type": "compares",
+      "description": "This concept finds what llms miss using recurrent memory.",
+      "evidence": "In search of needles in a 11m haystack: Recurrent memory finds what llms miss."
+    }
+  ]
+}

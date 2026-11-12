@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "GraphRAG",
+      "type": "Model",
+      "description": "A RAG approach that combines knowledge graph generation and query-focused summarization (QFS).",
+      "evidence": "\"We have presented GraphRAG, a RAG approach that combines knowledge graph generation and query-focused summarization (QFS) to support human sensemaking over entire text corpora.\""
+    },
+    {
+      "name": "vector RAG",
+      "type": "Model",
+      "description": "A baseline method compared against GraphRAG for question answering over large document collections.",
+      "evidence": "\"Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature...\""
+    },
+    {
+      "name": "map-reduce summarization",
+      "type": "Method",
+      "description": "A global but graph-free approach used for source text summarization.",
+      "evidence": "\"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization.\""
+    },
+    {
+      "name": "embedding-based matching",
+      "type": "Method",
+      "description": "A technique for matching user queries and graph annotations in local RAG approaches.",
+      "evidence": "\"This includes RAG approaches that operate in a more local manner, via embedding-based matching of user queries and graph annotations.\""
+    },
+    {
+      "name": "community hierarchy",
+      "type": "Concept",
+      "description": "A hierarchical structure supporting the GraphRAG approach, including root-level communities.",
+      "evidence": "\"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach...\""
+    },
+    {
+      "name": "News Articles",
+      "type": "Dataset",
+      "description": "A dataset type used to evaluate the average number of clusters across different distance thresholds.",
+      "evidence": "\"News Articles\" (listed under Dataset in Table 4)"
+    },
+    {
+      "name": "Podcast Transcripts",
+      "type": "Dataset",
+      "description": "A dataset type used to evaluate the average number of clusters across different distance thresholds.",
+      "evidence": "\"Podcast Transcripts\" (listed under Dataset in Table 4)"
+    },
+    {
+      "name": "distance thresholds",
+      "type": "Metric",
+      "description": "Parameters (0.5, 0.6, 0.7, 0.8) used to measure the average number of clusters.",
+      "evidence": "\"Distance Threshold\" (column header in Table 4)"
+    },
+    {
+      "name": "C0",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"C0\" (column header in Table 4)"
+    },
+    {
+      "name": "C1",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"C1\" (column header in Table 4)"
+    },
+    {
+      "name": "C2",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"C2\" (column header in Table 4)"
+    },
+    {
+      "name": "C3",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"C3\" (column header in Table 4)"
+    },
+    {
+      "name": "TS",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"TS\" (column header in Table 4)"
+    },
+    {
+      "name": "SS",
+      "type": "Metric",
+      "description": "A condition used to report the average number of clusters in Table 4.",
+      "evidence": "\"SS\" (column header in Table 4)"
+    },
+    {
+      "name": "human sensemaking",
+      "type": "Concept",
+      "description": "The goal supported by GraphRAG over entire text corpora.",
+      "evidence": "\"...to support human sensemaking over entire text corpora.\""
+    },
+    {
+      "name": "downstream sensemaking",
+      "type": "Concept",
+      "description": "Tasks that may be at risk if generated answers do not accurately represent source data.",
+      "evidence": "\"there are risks to downstream sensemaking and decision-making tasks if the generated answers do not accurately represent the source data.\""
+    },
+    {
+      "name": "information scent",
+      "type": "Concept",
+      "description": "A mechanism used in exploratory drill-down following higher-level community summaries.",
+      "evidence": "\"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries.\""
+    },
+    {
+      "name": "Gpt-4",
+      "type": "Model",
+      "description": "A model referenced in the technical report arXiv:2303.08774.",
+      "evidence": "\"Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F. L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., et al. (2023). Gpt-4 technical report. arXiv preprint arXiv:2303.08774.\""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GraphRAG",
+      "target": "vector RAG",
+      "type": "compares",
+      "description": "GraphRAG is compared to vector RAG, showing substantial improvements in comprehensiveness and diversity.",
+      "evidence": "\"Initial evaluations show substantial improvements over a vector RAG baseline for both the comprehensiveness and diversity of answers...\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "map-reduce summarization",
+      "type": "compares",
+      "description": "GraphRAG is compared to a global but graph-free approach using map-reduce source text summarization.",
+      "evidence": "\"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization.\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "community hierarchy",
+      "type": "consists_of",
+      "description": "The GraphRAG approach utilizes a hierarchical community structure.",
+      "evidence": "\"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach...\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "embedding-based matching",
+      "type": "proposes",
+      "description": "GraphRAG proposes hybrid RAG schemes combining embedding-based matching with community report generation.",
+      "evidence": "\"In particular, we see potential in hybrid RAG schemes that combine embedding-based matching with just-in-time community report generation...\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "downstream sensemaking",
+      "type": "addresses",
+      "description": "GraphRAG addresses risks to downstream sensemaking by mitigating errors in global nature questions.",
+      "evidence": "\"Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature...\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "News Articles",
+      "type": "evaluates",
+      "description": "GraphRAG is evaluated on the News Articles dataset across different distance thresholds.",
+      "evidence": "\"Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type.\" (with News Articles listed)"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "Podcast Transcripts",
+      "type": "evaluates",
+      "description": "GraphRAG is evaluated on the Podcast Transcripts dataset across different distance thresholds.",
+      "evidence": "\"Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type.\" (with Podcast Transcripts listed)"
+    },
+    {
+      "source": "GraphRAG",
+      "target": "information scent",
+      "type": "uses",
+      "description": "GraphRAG uses information scent in a drill-down mechanism following higher-level community summaries.",
+      "evidence": "\"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries.\""
+    },
+    {
+      "source": "GraphRAG",
+      "target": "Gpt-4",
+      "type": "compares",
+      "description": "GraphRAG is compared to Gpt-4 in the context of technical reports and evaluations.",
+      "evidence": "\"Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F. L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., et al. (2023). Gpt-4 technical report. arXiv preprint arXiv:2303.08774.\""
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "page": 15,
+  "part": 1,
+  "source_characters": 3261,
+  "entities": [
+    {
+      "name": "factual claims",
+      "type": "Concept",
+      "description": "Claims that require extraction and evaluation in the context of large language models.",
+      "evidence": "Towards effective extraction and evaluation of factual claims."
+    },
+    {
+      "name": "graph rag",
+      "type": "Method",
+      "description": "A retrieval-augmented generation approach based on knowledge graphs.",
+      "evidence": "Retrieval-augmented generation with llm based on knowledge graphs."
+    },
+    {
+      "name": "graphrag",
+      "type": "Method",
+      "description": "An ecosystem of tools for graph-based retrieval and generation.",
+      "evidence": "Get started with graphrag: Neo4j's ecosystem tools."
+    },
+    {
+      "name": "retrieval-augmented language models",
+      "type": "Model",
+      "description": "Language models enhanced with in-context retrieval mechanisms.",
+      "evidence": "In-context retrieval-augmented language models."
+    },
+    {
+      "name": "retrieval-augmented narrative construction",
+      "type": "Method",
+      "description": "A technique for intelligence report generation using retrieval augmentation.",
+      "evidence": "Intelligence report generation using retrieval-augmented narrative construction."
+    },
+    {
+      "name": "iterative retrieval-generation synergy",
+      "type": "Method",
+      "description": "A strategy to enhance retrieval-augmented large language models through iterative processes.",
+      "evidence": "Enhancing retrieval-augmented large language models with iterative retrieval-generation synergy."
+    },
+    {
+      "name": "recursive abstractive processing",
+      "type": "Method",
+      "description": "A processing method for tree-organized retrieval.",
+      "evidence": "Recursive abstractive processing for tree-organized retrieval."
+    },
+    {
+      "name": "language agents",
+      "type": "Model",
+      "description": "Agents utilizing verbal reinforcement learning for reflection.",
+      "evidence": "Language agents with verbal reinforcement learning."
+    },
+    {
+      "name": "personas",
+      "type": "Concept",
+      "description": "AI-generated descriptions or roles investigated in human-AI workflows.",
+      "evidence": "Deus ex machina and personas from large language models"
+    },
+    {
+      "name": "human-ai workflows",
+      "type": "Concept",
+      "description": "Processes involving the generation of personas through human and AI interaction.",
+      "evidence": "Understanding human-ai workflows for generating personas."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "graph rag",
+      "target": "retrieval-augmented language models",
+      "type": "uses",
+      "description": "Graph rag utilizes retrieval-augmented generation based on knowledge graphs.",
+      "evidence": "Retrieval-augmented generation with llm based on knowledge graphs."
+    },
+    {
+      "source": "graphrag",
+      "target": "retrieval-augmented language models",
+      "type": "uses",
+      "description": "Graphrag is an ecosystem tool designed for graph-based retrieval and generation.",
+      "evidence": "Get started with graphrag: Neo4j's ecosystem tools."
+    },
+    {
+      "source": "personas",
+      "target": "human-ai workflows",
+      "type": "consists_of",
+      "description": "Personas are generated within human-ai workflows.",
+      "evidence": "Understanding human-ai workflows for generating personas."
+    }
+  ]
+}

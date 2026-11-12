@@ -1,0 +1,1436 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d15" for="edge" attr.name="review_status" attr.type="string" />
+  <key id="d14" for="edge" attr.name="original_ids" attr.type="string" />
+  <key id="d13" for="edge" attr.name="evidence_records" attr.type="string" />
+  <key id="d12" for="edge" attr.name="source_pages" attr.type="string" />
+  <key id="d11" for="edge" attr.name="evidence" attr.type="string" />
+  <key id="d10" for="edge" attr.name="description" attr.type="string" />
+  <key id="d9" for="edge" attr.name="relation_type" attr.type="string" />
+  <key id="d8" for="node" attr.name="review_status" attr.type="string" />
+  <key id="d7" for="node" attr.name="evidence_records" attr.type="string" />
+  <key id="d6" for="node" attr.name="source_pages" attr.type="string" />
+  <key id="d5" for="node" attr.name="evidence" attr.type="string" />
+  <key id="d4" for="node" attr.name="description" attr.type="string" />
+  <key id="d3" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d2" for="node" attr.name="label" attr.type="string" />
+  <key id="d1" for="graph" attr.name="schema_version" attr.type="string" />
+  <key id="d0" for="graph" attr.name="name" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="C0">
+      <data key="d2">C0</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Experimental condition using root-level community summaries.</data>
+      <data key="d5">Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x). | all global search conditions (C0-C3) | "C0" (column header in Table 4) | C0 TS 50.24 49.76</data>
+      <data key="d6">[10, 11, 12, 26]</data>
+      <data key="d7">["Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x).", "all global search conditions (C0-C3)", "\"C0\" (column header in Table 4)", "C0 TS 50.24 49.76"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="C1">
+      <data key="d2">C1</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Experimental condition using a higher level of the GraphRAG community hierarchy.</data>
+      <data key="d5">all global search conditions (C0-C3) | "C1" (column header in Table 4) | C1 TS 51.92 48.08</data>
+      <data key="d6">[11, 12, 26]</data>
+      <data key="d7">["all global search conditions (C0-C3)", "\"C1\" (column header in Table 4)", "C1 TS 51.92 48.08"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="C2">
+      <data key="d2">C2</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Experimental condition using an intermediate level of the GraphRAG community hierarchy.</data>
+      <data key="d5">all global search conditions (C0-C3) | "C2" (column header in Table 4) | C2 TS 57.28 42.72</data>
+      <data key="d6">[11, 12, 26]</data>
+      <data key="d7">["all global search conditions (C0-C3)", "\"C2\" (column header in Table 4)", "C2 TS 57.28 42.72"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="C3">
+      <data key="d2">C3</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Experimental condition using low-level community summaries.</data>
+      <data key="d5">for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens | all global search conditions (C0-C3) | "C3" (column header in Table 4) | C3 TS 56.48 43.52</data>
+      <data key="d6">[10, 11, 12, 26]</data>
+      <data key="d7">["for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens", "all global search conditions (C0-C3)", "\"C3\" (column header in Table 4)", "C3 TS 56.48 43.52"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Claimify">
+      <data key="d2">Claimify</data>
+      <data key="d3">Method</data>
+      <data key="d4">An LLM-based method that identifies sentences containing factual claims and decomposes them into simple claims.</data>
+      <data key="d5">To extract factual claims, we used Claimify (Metropolitansky and Larson, 2025), an LLM-based method that identifies sentences in an answer containing at least one factual claim, then decomposes these sentences into simple, self-contained factual claims.</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["To extract factual claims, we used Claimify (Metropolitansky and Larson, 2025), an LLM-based method that identifies sentences in an answer containing at least one factual claim, then decomposes these sentences into simple, self-contained factual claims."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Claims">
+      <data key="d2">Claims</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Verifiable facts extracted by LLMs used to validate results.</data>
+      <data key="d5">LLM-extracted statements of verifiable facts, or "claims."</data>
+      <data key="d6">[4]</data>
+      <data key="d7">["LLM-extracted statements of verifiable facts, or \"claims.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Community Answers">
+      <data key="d2">Community Answers</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Intermediate answers generated in parallel to address specific questions before reduction to a global answer.</data>
+      <data key="d5">Given a user query, the community summaries generated in the previous step can be used to generate a final answer in a multi-stage process</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["Given a user query, the community summaries generated in the previous step can be used to generate a final answer in a multi-stage process"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Community Summaries">
+      <data key="d2">Community Summaries</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Pre-generated summaries for all groups of closely related entities used to generate partial responses.</data>
+      <data key="d5">then to pre-generate community summaries for all groups of closely related entities. | Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries. | The next step creates report-like summaries of each community in the community hierarchy, using a method designed to scale to very large datasets | Community summaries vs. source texts. When comparing community summaries to source texts using GraphRAG, community summaries generally provided a small but consistent improvement in answer comprehensiveness and diversity, except for root-level summaries.</data>
+      <data key="d6">[1, 2, 6, 10]</data>
+      <data key="d7">["then to pre-generate community summaries for all groups of closely related entities.", "Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries.", "The next step creates report-like summaries of each community in the community hierarchy, using a method designed to scale to very large datasets", "Community summaries vs. source texts. When comparing community summaries to source texts using GraphRAG, community summaries generally provided a small but consistent improvement in answer comprehensiveness and diversity, except for root-level summaries."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Community detection">
+      <data key="d2">Community detection</data>
+      <data key="d3">Method</data>
+      <data key="d4">Technique used to partition the graph index into groups of elements.</data>
+      <data key="d5">Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index</data>
+      <data key="d6">[4]</data>
+      <data key="d7">["Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Comprehensiveness">
+      <data key="d2">Comprehensiveness</data>
+      <data key="d3">Metric</data>
+      <data key="d4">A target criterion measuring how much detail an answer provides to cover all aspects of a question.</data>
+      <data key="d5">How much detail does the answer provide to cover all aspects and details of the question? | "Since directness is effectively in opposition to comprehensiveness and diversity..." | 1. Comprehensiveness: Measured as the average number of claims extracted from the answers generated under each condition. | All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity. | the claim-based measure of comprehensiveness | Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d6">[7, 8, 9, 10, 11, 26]</data>
+      <data key="d7">["How much detail does the answer provide to cover all aspects and details of the question?", "\"Since directness is effectively in opposition to comprehensiveness and diversity...\"", "1. Comprehensiveness: Measured as the average number of claims extracted from the answers generated under each condition.", "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.", "the claim-based measure of comprehensiveness", "Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Directness">
+      <data key="d2">Directness</data>
+      <data key="d3">Metric</data>
+      <data key="d4">A control criterion evaluating how specifically and clearly an answer addresses a question, focusing on concision.</data>
+      <data key="d5">"Directness that answers 'How specifically and clearly does the answer address the question?'" | Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d6">[8, 26]</data>
+      <data key="d7">["\"Directness that answers 'How specifically and clearly does the answer address the question?'\"", "Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Diversity">
+      <data key="d2">Diversity</data>
+      <data key="d3">Metric</data>
+      <data key="d4">A target criterion measuring the variety and richness of perspectives and insights in an answer.</data>
+      <data key="d5">How varied and rich is the answer in providing different perspectives and insights on the question? | "Since directness is effectively in opposition to comprehensiveness and diversity..." | 2. Diversity: Measured by clustering the claims for each answer and calculating the average number of clusters. | All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity. | the claim-based measure of diversity | Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d6">[7, 8, 9, 10, 11, 26]</data>
+      <data key="d7">["How varied and rich is the answer in providing different perspectives and insights on the question?", "\"Since directness is effectively in opposition to comprehensiveness and diversity...\"", "2. Diversity: Measured by clustering the claims for each answer and calculating the average number of clusters.", "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.", "the claim-based measure of diversity", "Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Empowerment">
+      <data key="d2">Empowerment</data>
+      <data key="d3">Metric</data>
+      <data key="d4">A target criterion measuring how well an answer helps the reader understand and make informed judgments.</data>
+      <data key="d5">How well does the answer help the reader understand and make informed judgments about the topic? | Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d6">[7, 26]</data>
+      <data key="d7">["How well does the answer help the reader understand and make informed judgments about the topic?", "Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Entities">
+      <data key="d2">Entities</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Instances of important entities extracted from text chunks.</data>
+      <data key="d5">extract instances of important entities and the relationships between the entities from a given chunk.</data>
+      <data key="d6">[4]</data>
+      <data key="d7">["extract instances of important entities and the relationships between the entities from a given chunk."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Experiment 1">
+      <data key="d2">Experiment 1</data>
+      <data key="d3">Experiment</data>
+      <data key="d4">A prior experiment involving LLM-based win rates</data>
+      <data key="d5">LLM-based win rates from Experiment 1</data>
+      <data key="d6">[11]</data>
+      <data key="d7">["LLM-based win rates from Experiment 1"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Experiment 2">
+      <data key="d2">Experiment 2</data>
+      <data key="d3">Experiment</data>
+      <data key="d4">The current experiment evaluating claim extraction</data>
+      <data key="d5">Experiment 2</data>
+      <data key="d6">[11]</data>
+      <data key="d7">["Experiment 2"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="GENERATEQUESTIONS">
+      <data key="d2">GENERATEQUESTIONS</data>
+      <data key="d3">Method</data>
+      <data key="d4">A procedure to generate high-level questions for a dataset based on corpus description, user personas, and tasks.</data>
+      <data key="d5">procedure GENERATEQUESTIONS</data>
+      <data key="d6">[7]</data>
+      <data key="d7">["procedure GENERATEQUESTIONS"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="GPT-4">
+      <data key="d2">GPT-4</data>
+      <data key="d3">Model</data>
+      <data key="d4">An LLM used in the evaluation where GraphRAG strongly outperformed vector RAG.</data>
+      <data key="d5">Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM. | "Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F. L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., et al. (2023). Gpt-4 technical report. arXiv preprint arXiv:2303.08774."</data>
+      <data key="d6">[2, 12]</data>
+      <data key="d7">["Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM.", "\"Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F. L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., et al. (2023). Gpt-4 technical report. arXiv preprint arXiv:2303.08774.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Global Answer">
+      <data key="d2">Global Answer</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The final output produced using query-focused summarization over community summaries.</data>
+      <data key="d5">The "global answer" to a given query is produced using a final round of query-focused summarization | This final context is used to generate the global answer returned to the user</data>
+      <data key="d6">[4, 6]</data>
+      <data key="d7">["The \"global answer\" to a given query is produced using a final round of query-focused summarization", "This final context is used to generate the global answer returned to the user"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Global Sensemaking Question Generation">
+      <data key="d2">Global Sensemaking Question Generation</data>
+      <data key="d3">Method</data>
+      <data key="d4">A process using an LLM to generate corpus-specific questions designed to assess high-level understanding without retrieving specific low-level facts.</data>
+      <data key="d5">To evaluate the effectiveness of RAG systems for global sensemaking tasks, we use an LLM to generate a set of corpus-specific questions designed to asses high-level understanding of a given corpus</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["To evaluate the effectiveness of RAG systems for global sensemaking tasks, we use an LLM to generate a set of corpus-specific questions designed to asses high-level understanding of a given corpus"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Graph Communities">
+      <data key="d2">Graph Communities</data>
+      <data key="d3">Concept</data>
+      <data key="d4">A hierarchy providing community partitions that cover graph nodes in a mutually exclusive, collectively exhaustive way.</data>
+      <data key="d5">Each level of this hierarchy provides a community partition that covers the nodes of the graph in a mutually exclusive, collectively exhaustive way</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["Each level of this hierarchy provides a community partition that covers the nodes of the graph in a mutually exclusive, collectively exhaustive way"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Graph indexing">
+      <data key="d2">Graph indexing</data>
+      <data key="d3">Method</data>
+      <data key="d4">A method using a 600 token window that took 281 minutes for the Podcast dataset.</data>
+      <data key="d5">Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="GraphRAG">
+      <data key="d2">GraphRAG</data>
+      <data key="d3">Method</data>
+      <data key="d4">A graph-based approach to question answering over private text corpora that scales with the generality of user questions and the quantity of source text.</data>
+      <data key="d5">we propose GraphRAG, a graph-based approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text. | In this paper, we present GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus. | GraphRAG builds upon prior work on advanced RAG strategies. | Graph RAG pipeline using an LLM-derived graph index of source document text. | Furthermore, GraphRAG is generally resilient to duplicate entities since duplicates are typically clustered together for summarization in subsequent steps. | GraphRAG generates community summaries by adding various element summaries (for nodes, edges, and related claims) to a community summary template | "We compared six conditions including GraphRAG at four different graph community levels (C0, C1, C2, C3)..." | All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity. | "We have presented GraphRAG, a RAG approach that combines knowledge graph generation and query-focused summarization (QFS) to support human sensemaking over entire text corpora."</data>
+      <data key="d6">[1, 2, 3, 4, 5, 6, 8, 10, 12]</data>
+      <data key="d7">["we propose GraphRAG, a graph-based approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text.", "In this paper, we present GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus.", "GraphRAG builds upon prior work on advanced RAG strategies.", "Graph RAG pipeline using an LLM-derived graph index of source document text.", "Furthermore, GraphRAG is generally resilient to duplicate entities since duplicates are typically clustered together for summarization in subsequent steps.", "GraphRAG generates community summaries by adding various element summaries (for nodes, edges, and related claims) to a community summary template", "\"We compared six conditions including GraphRAG at four different graph community levels (C0, C1, C2, C3)...\"", "All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.", "\"We have presented GraphRAG, a RAG approach that combines knowledge graph generation and query-focused summarization (QFS) to support human sensemaking over entire text corpora.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Higher-level communities">
+      <data key="d2">Higher-level communities</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Communities above the leaf level where sub-community summaries are substituted for element summaries if token limits are reached.</data>
+      <data key="d5">Higher-level communities. If all element summaries fit within the token limit of the context window, proceed as for leaf-level communities and summarize all element summaries within the community</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["Higher-level communities. If all element summaries fit within the token limit of the context window, proceed as for leaf-level communities and summarize all element summaries within the community"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Holm-Bonferroni correction">
+      <data key="d2">Holm-Bonferroni correction</data>
+      <data key="d3">Method</data>
+      <data key="d4">A correction applied to account for multiple pairwise comparisons.</data>
+      <data key="d5">with Holm-Bonferroni correction applied to account for multiple pairwise comparisons.</data>
+      <data key="d6">[26]</data>
+      <data key="d7">["with Holm-Bonferroni correction applied to account for multiple pairwise comparisons."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="HotPotQA">
+      <data key="d2">HotPotQA</data>
+      <data key="d3">Dataset</data>
+      <data key="d4">A benchmark dataset for open-domain question answering oriented towards vector RAG performance.</data>
+      <data key="d5">Many benchmark datasets for open-domain question answering exist, including HotPotQA</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["Many benchmark datasets for open-domain question answering exist, including HotPotQA"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Knowledge Graph">
+      <data key="d2">Knowledge Graph</data>
+      <data key="d3">Model</data>
+      <data key="d4">A graph index derived from source documents in the first stage of GraphRAG's approach.</data>
+      <data key="d5">first, to derive an entity knowledge graph from the source documents | GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities. | In the final step of the knowledge graph extraction process, these instances of entities and relationships become individual nodes and edges in the graph.</data>
+      <data key="d6">[1, 2, 5]</data>
+      <data key="d7">["first, to derive an entity knowledge graph from the source documents", "GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities.", "In the final step of the knowledge graph extraction process, these instances of entities and relationships become individual nodes and edges in the graph."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="LLM">
+      <data key="d2">LLM</data>
+      <data key="d3">Model</data>
+      <data key="d4">A large language model used to build a graph index and generate responses in the GraphRAG approach.</data>
+      <data key="d5">Our approach uses an LLM to build a graph index in two stages | LLM prompts tailored to the domain of the dataset. | The LLM is prompted such that it extracts the following: The entity NeoChip... | The LLM is also asked to generate a score between 0-100 indicating how helpful the generated answer is in answering the target question | prompt the LLM to | "In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers according to the criterion before giving a final judgment..."</data>
+      <data key="d6">[1, 4, 5, 6, 7, 8]</data>
+      <data key="d7">["Our approach uses an LLM to build a graph index in two stages", "LLM prompts tailored to the domain of the dataset.", "The LLM is prompted such that it extracts the following: The entity NeoChip...", "The LLM is also asked to generate a score between 0-100 indicating how helpful the generated answer is in answering the target question", "prompt the LLM to", "\"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers according to the criterion before giving a final judgment...\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="LLM-as-a-judge">
+      <data key="d2">LLM-as-a-judge</data>
+      <data key="d3">Method</data>
+      <data key="d4">A technique using one LLM to generate questions and a second LLM to judge answers of different RAG systems.</data>
+      <data key="d5">we developed a novel application of the LLM-as-a-judge technique (Zheng et al., 2024) suitable for questions targeting broad issues and themes where there is no ground-truth answer.</data>
+      <data key="d6">[2]</data>
+      <data key="d7">["we developed a novel application of the LLM-as-a-judge technique (Zheng et al., 2024) suitable for questions targeting broad issues and themes where there is no ground-truth answer."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="LLM-based persona generation">
+      <data key="d2">LLM-based persona generation</data>
+      <data key="d3">Method</data>
+      <data key="d4">A prior work approach where an LLM generates diverse and authentic sets of personas to guide query generation.</data>
+      <data key="d5">Our approach builds on prior work in LLM-based persona generation, where the LLM is used to generate diverse and authentic sets of personas</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["Our approach builds on prior work in LLM-based persona generation, where the LLM is used to generate diverse and authentic sets of personas"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="LangChain">
+      <data key="d2">LangChain</data>
+      <data key="d3">Framework</data>
+      <data key="d4">Open-source framework that provides an extension integrating the GraphRAG approach.</data>
+      <data key="d5">versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)</data>
+      <data key="d6">[2]</data>
+      <data key="d7">["versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Leaf-level communities">
+      <data key="d2">Leaf-level communities</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The lowest level of the community hierarchy where element summaries are prioritized and added to the context window.</data>
+      <data key="d5">Leaf-level communities. The element summaries of a leaf-level community are prioritized and then iteratively added to the LLM context window until the token limit is reached</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["Leaf-level communities. The element summaries of a leaf-level community are prioritized and then iteratively added to the LLM context window until the token limit is reached"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Leiden community detection">
+      <data key="d2">Leiden community detection</data>
+      <data key="d3">Method</data>
+      <data key="d4">A community detection algorithm used in a hierarchical manner to partition the graph into communities.</data>
+      <data key="d5">In our pipeline, we use Leiden community detection (Traag et al., 2019) in a hierarchical manner, recursively detecting sub-communities within each detected community until reaching leaf communities that can no longer be partitioned. | We implemented Leiden community detection using the graspologic library (Chung et al., 2019)</data>
+      <data key="d6">[5, 9]</data>
+      <data key="d7">["In our pipeline, we use Leiden community detection (Traag et al., 2019) in a hierarchical manner, recursively detecting sub-communities within each detected community until reaching leaf communities that can no longer be partitioned.", "We implemented Leiden community detection using the graspologic library (Chung et al., 2019)"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="MT-Bench">
+      <data key="d2">MT-Bench</data>
+      <data key="d3">Dataset</data>
+      <data key="d4">A benchmark dataset for open-domain question answering oriented towards vector RAG performance.</data>
+      <data key="d5">Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG, and MT-Bench</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG, and MT-Bench"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="MultiHop-RAG">
+      <data key="d2">MultiHop-RAG</data>
+      <data key="d3">Dataset</data>
+      <data key="d4">A benchmark dataset for open-domain question answering oriented towards vector RAG performance.</data>
+      <data key="d5">Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["Many benchmark datasets for open-domain question answering exist, including HotPotQA, MultiHop-RAG"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Naive RAG">
+      <data key="d2">Naive RAG</data>
+      <data key="d3">Method</data>
+      <data key="d4">A baseline method used for comparison against Graph RAG.</data>
+      <data key="d5">All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.</data>
+      <data key="d6">[10]</data>
+      <data key="d7">["All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="News Articles">
+      <data key="d2">News Articles</data>
+      <data key="d3">Dataset</data>
+      <data key="d4">A dataset example featuring an educator user and questions about health and wellness.</data>
+      <data key="d5">News articles | "News articles. A benchmark dataset comprised of news articles published from September 2013 to December 2023... The corpus is divided into 3197 x 600-token text chunks, with 100-token overlaps between chunks" | Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively. | two corpora each containing approximately 1 million tokens | "News Articles" (listed under Dataset in Table 4) | across 125 questions and two datasets. Podcast Transcripts</data>
+      <data key="d6">[7, 8, 10, 11, 12, 26]</data>
+      <data key="d7">["News articles", "\"News articles. A benchmark dataset comprised of news articles published from September 2013 to December 2023... The corpus is divided into 3197 x 600-token text chunks, with 100-token overlaps between chunks\"", "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively.", "two corpora each containing approximately 1 million tokens", "\"News Articles\" (listed under Dataset in Table 4)", "across 125 questions and two datasets. Podcast Transcripts"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Podcast Transcripts">
+      <data key="d2">Podcast Transcripts</data>
+      <data key="d3">Dataset</data>
+      <data key="d4">A dataset example featuring a tech journalist user and questions about tech policy and regulation.</data>
+      <data key="d5">Podcast transcripts | "Podcast transcripts. Public transcripts of Behind the Tech with Kevin Scott... This corpus was divided into 1669 x 600-token text chunks, with 100-token overlaps between chunks" | Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively. | two corpora each containing approximately 1 million tokens | "Podcast Transcripts" (listed under Dataset in Table 4) | across 125 questions and two datasets. Podcast Transcripts</data>
+      <data key="d6">[7, 8, 10, 11, 12, 26]</data>
+      <data key="d7">["Podcast transcripts", "\"Podcast transcripts. Public transcripts of Behind the Tech with Kevin Scott... This corpus was divided into 1669 x 600-token text chunks, with 100-token overlaps between chunks\"", "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively.", "two corpora each containing approximately 1 million tokens", "\"Podcast Transcripts\" (listed under Dataset in Table 4)", "across 125 questions and two datasets. Podcast Transcripts"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="RAG baseline">
+      <data key="d2">RAG baseline</data>
+      <data key="d3">Method</data>
+      <data key="d4">A conventional RAG system used as a comparison baseline for GraphRAG's performance on global sensemaking questions.</data>
+      <data key="d5">we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers.</data>
+      <data key="d6">[1]</data>
+      <data key="d7">["we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Relationships">
+      <data key="d2">Relationships</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Connections between entities extracted from text chunks.</data>
+      <data key="d5">extract instances of important entities and the relationships between the entities from a given chunk.</data>
+      <data key="d6">[4]</data>
+      <data key="d7">["extract instances of important entities and the relationships between the entities from a given chunk."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Retrieval-Augmented Generation (RAG)">
+      <data key="d2">Retrieval-Augmented Generation (RAG)</data>
+      <data key="d3">Method</data>
+      <data key="d4">An approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window.</data>
+      <data key="d5">Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window | RAG generally refers to any system where a user query is used to retrieve relevant information from external data sources, whereupon this information is incorporated into the generation of a response to the query by an LLM (or other generative AI model, such as a multi-media model).</data>
+      <data key="d6">[1, 2]</data>
+      <data key="d7">["Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window", "RAG generally refers to any system where a user query is used to retrieve relevant information from external data sources, whereupon this information is incorporated into the generation of a response to the query by an LLM (or other generative AI model, such as a multi-media model)."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="SS (Semantic Search / Vector RAG)">
+      <data key="d2">SS (Semantic Search / Vector RAG)</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Semantic Search baseline implementing vector RAG by retrieving text chunks into the context window.</data>
+      <data key="d5">"a vector RAG 'semantic search' approach (SS)... An implementation of vector RAG in which text chunks are retrieved and added to the available context window..." | global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets. | vector RAG (SS) | "SS" (column header in Table 4) | TS SS 83.12 16.88</data>
+      <data key="d6">[8, 9, 11, 12, 26]</data>
+      <data key="d7">["\"a vector RAG 'semantic search' approach (SS)... An implementation of vector RAG in which text chunks are retrieved and added to the available context window...\"", "global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets.", "vector RAG (SS)", "\"SS\" (column header in Table 4)", "TS SS 83.12 16.88"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="SelfCheckGPT">
+      <data key="d2">SelfCheckGPT</data>
+      <data key="d3">Method</data>
+      <data key="d4">An approach for comparing fabrication rates</data>
+      <data key="d5">approaches like SelfCheckGPT (Manakul et al., 2023)</data>
+      <data key="d6">[11]</data>
+      <data key="d7">["approaches like SelfCheckGPT (Manakul et al., 2023)"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Shapiro-Wilk test">
+      <data key="d2">Shapiro-Wilk test</data>
+      <data key="d3">Method</data>
+      <data key="d4">A statistical test used to determine if data follows a normal distribution.</data>
+      <data key="d5">Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution.</data>
+      <data key="d6">[26]</data>
+      <data key="d7">["Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="TS">
+      <data key="d2">TS</data>
+      <data key="d3">Experimental Condition</data>
+      <data key="d4">Text Summarization baseline applying map-reduce directly to source texts without a graph index.</data>
+      <data key="d5">"a text summarization method that applies our map-reduce approach directly to source texts (TS)..." | Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index). | source text summarization (TS) | "TS" (column header in Table 4) | TS SS 83.12 16.88</data>
+      <data key="d6">[8, 10, 11, 12, 26]</data>
+      <data key="d7">["\"a text summarization method that applies our map-reduce approach directly to source texts (TS)...\"", "Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index).", "source text summarization (TS)", "\"TS\" (column header in Table 4)", "TS SS 83.12 16.88"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Text Chunks">
+      <data key="d2">Text Chunks</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Source documents split into segments for downstream processing.</data>
+      <data key="d5">the documents in the corpus are split into text chunks.</data>
+      <data key="d6">[4]</data>
+      <data key="d7">["the documents in the corpus are split into text chunks."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Token limit">
+      <data key="d2">Token limit</data>
+      <data key="d3">Parameter</data>
+      <data key="d4">A constraint on the context window size that determines when element summaries must be replaced by sub-community summaries.</data>
+      <data key="d5">until the token limit is reached</data>
+      <data key="d6">[6]</data>
+      <data key="d7">["until the token limit is reached"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="Wilcoxon signed-rank test">
+      <data key="d2">Wilcoxon signed-rank test</data>
+      <data key="d3">Method</data>
+      <data key="d4">A non-parametric test employed to assess performance differences between pairs of conditions.</data>
+      <data key="d5">Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed to assess the performance differences between pairs of conditions</data>
+      <data key="d6">[26]</data>
+      <data key="d7">["Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed to assess the performance differences between pairs of conditions"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="adaptive benchmarking">
+      <data key="d2">adaptive benchmarking</data>
+      <data key="d3">Method</data>
+      <data key="d4">A process of dynamically generating evaluation benchmarks tailored to specific domains or use cases.</data>
+      <data key="d5">Adaptive benchmarking refers to the process of dynamically generating evaluation benchmarks tailored to specific domains or use cases</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["Adaptive benchmarking refers to the process of dynamically generating evaluation benchmarks tailored to specific domains or use cases"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="agglomerative clustering">
+      <data key="d2">agglomerative clustering</data>
+      <data key="d3">Method</data>
+      <data key="d4">A clustering approach implemented using Scikit-learn with complete linkage and 1-ROUGE-L distance metric.</data>
+      <data key="d5">For clustering, we followed the approach described by Padmakumar and He (2024), which involved using Scikit-learn's implementation of agglomerative clustering (Pedregosa et al., 2011). Clusters were merged through "complete" linkage, meaning they were combined only if the maximum distance between their farthest points was less than or equal to a predefined distance threshold. The distance metric used was 1 -ROUGE-L.</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["For clustering, we followed the approach described by Padmakumar and He (2024), which involved using Scikit-learn's implementation of agglomerative clustering (Pedregosa et al., 2011). Clusters were merged through \"complete\" linkage, meaning they were combined only if the maximum distance between their farthest points was less than or equal to a predefined distance threshold. The distance metric used was 1 -ROUGE-L."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="community hierarchy">
+      <data key="d2">community hierarchy</data>
+      <data key="d3">Concept</data>
+      <data key="d4">A hierarchical structure supporting the GraphRAG approach, including root-level communities.</data>
+      <data key="d5">"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach..."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach...\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="context window">
+      <data key="d2">context window</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The maximum number of tokens that can be processed by an LLM at once, which limits the size of data retrieved in canonical RAG setups.</data>
+      <data key="d5">meaning the maximum number of tokens (units of text) that can be processed by the LLM at once | "...text chunks are retrieved and added to the available context window until the specified token limit is reached."</data>
+      <data key="d6">[1, 8]</data>
+      <data key="d7">["meaning the maximum number of tokens (units of text) that can be processed by the LLM at once", "\"...text chunks are retrieved and added to the available context window until the specified token limit is reached.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="distance thresholds">
+      <data key="d2">distance thresholds</data>
+      <data key="d3">Parameter</data>
+      <data key="d4">Experimental parameter used when analyzing clustering results.</data>
+      <data key="d5">"Distance Threshold" (column header in Table 4)</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"Distance Threshold\" (column header in Table 4)"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="downstream sensemaking">
+      <data key="d2">downstream sensemaking</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Tasks that may be at risk if generated answers do not accurately represent source data.</data>
+      <data key="d5">"there are risks to downstream sensemaking and decision-making tasks if the generated answers do not accurately represent the source data."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"there are risks to downstream sensemaking and decision-making tasks if the generated answers do not accurately represent the source data.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="embedding-based matching">
+      <data key="d2">embedding-based matching</data>
+      <data key="d3">Method</data>
+      <data key="d4">A technique for matching user queries and graph annotations in local RAG approaches.</data>
+      <data key="d5">"This includes RAG approaches that operate in a more local manner, via embedding-based matching of user queries and graph annotations."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"This includes RAG approaches that operate in a more local manner, via embedding-based matching of user queries and graph annotations.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="exact string matching">
+      <data key="d2">exact string matching</data>
+      <data key="d3">Method</data>
+      <data key="d4">A method used for entity matching to reconcile different extracted names for the same entity.</data>
+      <data key="d5">In this manuscript, our analysis uses exact string matching for entity matching – the task of reconciling different extracted names for the same entity</data>
+      <data key="d6">[5]</data>
+      <data key="d7">["In this manuscript, our analysis uses exact string matching for entity matching – the task of reconciling different extracted names for the same entity"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="explicit fact retrieval">
+      <data key="d2">explicit fact retrieval</data>
+      <data key="d3">Task</data>
+      <data key="d4">A task focused on retrieving specific facts, contrasted with global sensemaking.</data>
+      <data key="d5">they evaluate performance on explicit fact retrieval</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["they evaluate performance on explicit fact retrieval"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="fixed context window size of 8k tokens">
+      <data key="d2">fixed context window size of 8k tokens</data>
+      <data key="d3">Parameter</data>
+      <data key="d4">Experimental parameter specifying an 8,000-token context window.</data>
+      <data key="d5">We used a fixed context window size of 8k tokens for generating community summaries, community answers, and global answers</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["We used a fixed context window size of 8k tokens for generating community summaries, community answers, and global answers"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="global approaches">
+      <data key="d2">global approaches</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Approaches that significantly outperformed conventional vector RAG in comprehensiveness and diversity criteria.</data>
+      <data key="d5">Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p&lt;.001) for Podcast transcripts and 72-80% (p&lt;.001) for News articles, while diversity win rates ranged from 75-82% (p&lt;.001) and 62-71% (p&lt;.01) respectively.</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p&lt;.001) for Podcast transcripts and 72-80% (p&lt;.001) for News articles, while diversity win rates ranged from 75-82% (p&lt;.001) and 62-71% (p&lt;.01) respectively."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="global sensemaking">
+      <data key="d2">global sensemaking</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The process of evaluating how well an RAG system answers questions over the entirety of a corpus.</data>
+      <data key="d5">evaluating global sensemaking over the entirety of the corpus | requiring global understanding of the corpus</data>
+      <data key="d6">[3, 7]</data>
+      <data key="d7">["evaluating global sensemaking over the entirety of the corpus", "requiring global understanding of the corpus"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="gpt-4-turbo">
+      <data key="d2">gpt-4-turbo</data>
+      <data key="d3">Model</data>
+      <data key="d4">A public OpenAI endpoint used for graph indexing with 2M TPM and 10k RPM limits.</data>
+      <data key="d5">using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM)</data>
+      <data key="d6">[9]</data>
+      <data key="d7">["using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM)"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="graph-based community detection">
+      <data key="d2">graph-based community detection</data>
+      <data key="d3">Method</data>
+      <data key="d4">A technique applied to generate a graph index and create a thematic partitioning of the data.</data>
+      <data key="d5">applying graph-based community detection to create a thematic partitioning of the data</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["applying graph-based community detection to create a thematic partitioning of the data"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="head-to-head comparison approach">
+      <data key="d2">head-to-head comparison approach</data>
+      <data key="d3">Method</data>
+      <data key="d4">An evaluation strategy using an LLM evaluator to judge relative performance.</data>
+      <data key="d5">adopt the head-to-head comparison approach using an LLM evaluator</data>
+      <data key="d6">[7]</data>
+      <data key="d7">["adopt the head-to-head comparison approach using an LLM evaluator"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="hierarchical indexing">
+      <data key="d2">hierarchical indexing</data>
+      <data key="d3">Method</data>
+      <data key="d4">A technique used to create summaries, similar to prior approaches referenced in the text.</data>
+      <data key="d5">GraphRAG is similar to other approaches that use hierarchical indexing to create summaries</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["GraphRAG is similar to other approaches that use hierarchical indexing to create summaries"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="human sensemaking">
+      <data key="d2">human sensemaking</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The goal supported by GraphRAG over entire text corpora.</data>
+      <data key="d5">"...to support human sensemaking over entire text corpora."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"...to support human sensemaking over entire text corpora.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="information scent">
+      <data key="d2">information scent</data>
+      <data key="d3">Concept</data>
+      <data key="d4">A mechanism used in exploratory drill-down following higher-level community summaries.</data>
+      <data key="d5">"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="inherent modularity">
+      <data key="d2">inherent modularity</data>
+      <data key="d3">Concept</data>
+      <data key="d4">A quality of graphs in the context of RAG that GraphRAG focuses on, referring to the ability to partition graphs into nested modular communities.</data>
+      <data key="d5">focusing on a previously unexplored quality of graphs in this context: their inherent modularity</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["focusing on a previously unexplored quality of graphs in this context: their inherent modularity"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="map-reduce approach">
+      <data key="d2">map-reduce approach</data>
+      <data key="d3">Method</data>
+      <data key="d4">A summarization technique used in the TS condition where source texts are shuffled and chunked.</data>
+      <data key="d5">"...except source texts (rather than community summaries) are shuffled and chunked for the map-reduce summarization stages."</data>
+      <data key="d6">[8]</data>
+      <data key="d7">["\"...except source texts (rather than community summaries) are shuffled and chunked for the map-reduce summarization stages.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="map-reduce processing">
+      <data key="d2">map-reduce processing</data>
+      <data key="d3">Method</data>
+      <data key="d4">A technique where summaries are used to provide partial answers independently and in parallel, then combined to generate a final global answer.</data>
+      <data key="d5">Finally, GraphRAG answers queries through map-reduce processing of community summaries; in the map step, the summaries are used to provide partial answers to the query independently and in parallel, then in the reduce step, the partial answers are combined and used to generate a final global answer.</data>
+      <data key="d6">[2]</data>
+      <data key="d7">["Finally, GraphRAG answers queries through map-reduce processing of community summaries; in the map step, the summaries are used to provide partial answers to the query independently and in parallel, then in the reduce step, the partial answers are combined and used to generate a final global answer."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="map-reduce summarization">
+      <data key="d2">map-reduce summarization</data>
+      <data key="d3">Method</data>
+      <data key="d4">A global but graph-free approach used for source text summarization.</data>
+      <data key="d5">"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization."</data>
+      <data key="d6">[12]</data>
+      <data key="d7">["\"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization.\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="query-focused summarization">
+      <data key="d2">query-focused summarization</data>
+      <data key="d3">Concept</data>
+      <data key="d4">A task type where RAG fails on global questions directed at an entire text corpus, such as identifying main themes in a dataset.</data>
+      <data key="d5">since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task.</data>
+      <data key="d6">[1]</data>
+      <data key="d7">["since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="self-memory">
+      <data key="d2">self-memory</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Summaries over large sections of the data source used to answer queries.</data>
+      <data key="d5">GraphRAG leverages summaries over large sections of the data source as a form of "self-memory"</data>
+      <data key="d6">[3]</data>
+      <data key="d7">["GraphRAG leverages summaries over large sections of the data source as a form of \"self-memory\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="sensemaking">
+      <data key="d2">sensemaking</data>
+      <data key="d3">Concept</data>
+      <data key="d4">Tasks requiring reasoning over connections among people, places, and events to anticipate trajectories.</data>
+      <data key="d5">Sensemaking tasks require reasoning over "connections (which can be among people, places, and events) in order to anticipate their trajectories and act effectively" (Klein et al., 2006).</data>
+      <data key="d6">[2]</data>
+      <data key="d7">["Sensemaking tasks require reasoning over \"connections (which can be among people, places, and events) in order to anticipate their trajectories and act effectively\" (Klein et al., 2006)."]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="sensemaking activity">
+      <data key="d2">sensemaking activity</data>
+      <data key="d3">Concept</data>
+      <data key="d4">The type of iterative question answering characterized by the use of root-level GraphRAG.</data>
+      <data key="d5">root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity</data>
+      <data key="d6">[10]</data>
+      <data key="d7">["root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity"]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <node id="vector RAG">
+      <data key="d2">vector RAG</data>
+      <data key="d3">Method</data>
+      <data key="d4">A conventional RAG approach using text embeddings to retrieve semantically similar records for query responses.</data>
+      <data key="d5">This conventional approach, which we collectively call vector RAG, works well for queries that can be answered with information localized within a small set of records. | retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG. | "Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature..."</data>
+      <data key="d6">[2, 10, 12]</data>
+      <data key="d7">["This conventional approach, which we collectively call vector RAG, works well for queries that can be answered with information localized within a small set of records.", "retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG.", "\"Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature...\""]</data>
+      <data key="d8">semantically_reviewed</data>
+    </node>
+    <edge source="C0" target="SS (Semantic Search / Vector RAG)" id="relation_001">
+      <data key="d9">compared_with</data>
+      <data key="d10">Condition C0 is compared against condition SS across all metrics.</data>
+      <data key="d11">C0 SS 71.92 28.08</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["C0 SS 71.92 28.08"]</data>
+      <data key="d14">[98]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C0" target="SS (Semantic Search / Vector RAG)" id="relation_004">
+      <data key="d9">outperforms_on_comprehensiveness</data>
+      <data key="d10">C0 has higher answer comprehensiveness than SS across the evaluated datasets.</data>
+      <data key="d11">For the News dataset, however, only C0 significantly outperformed SS across all distance thresholds | For the Podcast dataset, all global search conditions had significantly greater diversity than SS | all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)</data>
+      <data key="d12">[11, 11, 11]</data>
+      <data key="d13">["For the News dataset, however, only C0 significantly outperformed SS across all distance thresholds", "For the Podcast dataset, all global search conditions had significantly greater diversity than SS", "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"]</data>
+      <data key="d14">[76]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C0" target="TS" id="relation_002">
+      <data key="d9">compared_with</data>
+      <data key="d10">Condition C0 is compared against condition TS across all metrics.</data>
+      <data key="d11">C0 TS 50.24 49.76</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["C0 TS 50.24 49.76"]</data>
+      <data key="d14">[97]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C0" target="GraphRAG" id="relation_003">
+      <data key="d9">is_condition_of</data>
+      <data key="d10">C0 represents root-level community summaries used within the Graph RAG method.</data>
+      <data key="d11">Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x).</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["Root-level community summaries (C0) require dramatically fewer tokens per query (9x-43x)."]</data>
+      <data key="d14">[71]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C1" target="SS (Semantic Search / Vector RAG)" id="relation_005">
+      <data key="d9">outperforms_on_comprehensiveness</data>
+      <data key="d10">C1 has higher answer comprehensiveness than SS across the evaluated datasets.</data>
+      <data key="d11">While C1-C3 also achieved higher average cluster counts than SS | all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)</data>
+      <data key="d12">[11, 11]</data>
+      <data key="d13">["While C1-C3 also achieved higher average cluster counts than SS", "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"]</data>
+      <data key="d14">[77]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C2" target="SS (Semantic Search / Vector RAG)" id="relation_006">
+      <data key="d9">outperforms_on_comprehensiveness</data>
+      <data key="d10">C2 has higher answer comprehensiveness than SS across the evaluated datasets.</data>
+      <data key="d11">While C1-C3 also achieved higher average cluster counts than SS | all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)</data>
+      <data key="d12">[11, 11]</data>
+      <data key="d13">["While C1-C3 also achieved higher average cluster counts than SS", "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"]</data>
+      <data key="d14">[78]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C3" target="GraphRAG" id="relation_007">
+      <data key="d9">is_condition_of</data>
+      <data key="d10">C3 represents low-level community summaries used within the Graph RAG method.</data>
+      <data key="d11">for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["for low-level community summaries (C3), GraphRAG required 26-33% fewer context tokens"]</data>
+      <data key="d14">[72]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="C3" target="SS (Semantic Search / Vector RAG)" id="relation_008">
+      <data key="d9">outperforms_on_comprehensiveness</data>
+      <data key="d10">C3 has higher answer comprehensiveness than SS across the evaluated datasets.</data>
+      <data key="d11">While C1-C3 also achieved higher average cluster counts than SS | all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)</data>
+      <data key="d12">[11, 11]</data>
+      <data key="d13">["While C1-C3 also achieved higher average cluster counts than SS", "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"]</data>
+      <data key="d14">[79]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Community Answers" target="Global Answer" id="relation_009">
+      <data key="d9">contributes_to</data>
+      <data key="d10">Intermediate community answers contribute to the final global answer.</data>
+      <data key="d11">Intermediate community answers are sorted in descending order of helpfulness score and iteratively added into a new context window until the token limit is reached</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["Intermediate community answers are sorted in descending order of helpfulness score and iteratively added into a new context window until the token limit is reached"]</data>
+      <data key="d14">[40]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Community Summaries" target="Community Answers" id="relation_010">
+      <data key="d9">generates</data>
+      <data key="d10">Community summaries are used to generate intermediate community answers.</data>
+      <data key="d11">Given a user query, the community summaries generated in the previous step can be used to generate a final answer in a multi-stage process</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["Given a user query, the community summaries generated in the previous step can be used to generate a final answer in a multi-stage process"]</data>
+      <data key="d14">[39]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Community detection" target="Global Answer" id="relation_011">
+      <data key="d9">enables</data>
+      <data key="d10">Community detection enables parallel summarization that contributes to global answer generation.</data>
+      <data key="d11">partition the graph index into groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel</data>
+      <data key="d12">[4]</data>
+      <data key="d13">["partition the graph index into groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel"]</data>
+      <data key="d14">[28]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Directness" target="Comprehensiveness" id="relation_012">
+      <data key="d9">opposes</data>
+      <data key="d10">Directness is described as being in opposition to comprehensiveness.</data>
+      <data key="d11">"Since directness is effectively in opposition to comprehensiveness and diversity..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"Since directness is effectively in opposition to comprehensiveness and diversity...\""]</data>
+      <data key="d14">[54]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Directness" target="Diversity" id="relation_013">
+      <data key="d9">opposes</data>
+      <data key="d10">Directness is described as being in opposition to diversity.</data>
+      <data key="d11">"Since directness is effectively in opposition to comprehensiveness and diversity..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"Since directness is effectively in opposition to comprehensiveness and diversity...\""]</data>
+      <data key="d14">[55]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Experiment 1" target="Experiment 2" id="relation_014">
+      <data key="d9">aligns_with</data>
+      <data key="d10">Findings in Experiment 2 align with LLM-based win rates from Experiment 1</data>
+      <data key="d11">These findings align with the LLM-based win rates from Experiment 1</data>
+      <data key="d12">[11]</data>
+      <data key="d13">["These findings align with the LLM-based win rates from Experiment 1"]</data>
+      <data key="d14">[82]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GENERATEQUESTIONS" target="global sensemaking" id="relation_015">
+      <data key="d9">generates_questions_for</data>
+      <data key="d10">GENERATEQUESTIONS generates questions requiring global understanding of the corpus.</data>
+      <data key="d11">generate M high-level questions that: • Require understanding of the entire corpus.</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["generate M high-level questions that: • Require understanding of the entire corpus."]</data>
+      <data key="d14">[47]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GENERATEQUESTIONS" target="LLM" id="relation_016">
+      <data key="d9">uses</data>
+      <data key="d10">The GENERATEQUESTIONS procedure prompts the LLM to describe personas, identify tasks, and generate questions.</data>
+      <data key="d11">prompt the LLM to: 1. Describe personas of K potential users of the dataset.</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["prompt the LLM to: 1. Describe personas of K potential users of the dataset."]</data>
+      <data key="d14">[46]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Global Sensemaking Question Generation" target="LLM" id="relation_017">
+      <data key="d9">uses</data>
+      <data key="d10">An LLM is used to generate corpus-specific questions for evaluating RAG systems.</data>
+      <data key="d11">To evaluate the effectiveness of RAG systems for global sensemaking tasks, we use an LLM to generate a set of corpus-specific questions</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["To evaluate the effectiveness of RAG systems for global sensemaking tasks, we use an LLM to generate a set of corpus-specific questions"]</data>
+      <data key="d14">[43]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Graph Communities" target="Community Summaries" id="relation_018">
+      <data key="d9">generates</data>
+      <data key="d10">Graph communities are summarized to produce community summaries.</data>
+      <data key="d11">The next step creates report-like summaries of each community in the community hierarchy</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["The next step creates report-like summaries of each community in the community hierarchy"]</data>
+      <data key="d14">[37]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Graph indexing" target="gpt-4-turbo" id="relation_019">
+      <data key="d9">uses</data>
+      <data key="d10">Graph indexing uses the gpt-4-turbo endpoint.</data>
+      <data key="d11">Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset, running on a virtual machine (16GB RAM, Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz) and using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM).</data>
+      <data key="d12">[9]</data>
+      <data key="d13">["Graph indexing with a 600 token window (explained in Section A.2) took 281 minutes for the Podcast dataset, running on a virtual machine (16GB RAM, Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz) and using a public OpenAI endpoint for gpt-4-turbo (2M TPM, 10k RPM)."]</data>
+      <data key="d14">[64]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="query-focused summarization" id="relation_020">
+      <data key="d9">addresses</data>
+      <data key="d10">GraphRAG is proposed to address the limitations of RAG on global questions that are inherently query-focused summarization tasks.</data>
+      <data key="d11">since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task.</data>
+      <data key="d12">[1]</data>
+      <data key="d13">["since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task."]</data>
+      <data key="d14">[1]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="LangChain" id="relation_021">
+      <data key="d9">available_as_extension_to</data>
+      <data key="d10">GraphRAG is available as an extension to the LangChain open-source library.</data>
+      <data key="d11">versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["versions of the GraphRAG approach are also available as extensions to multiple open-source libraries, including LangChain (LangChain, 2024)"]</data>
+      <data key="d14">[14]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="map-reduce summarization" id="relation_022">
+      <data key="d9">compared_with</data>
+      <data key="d10">GraphRAG is compared to a global but graph-free approach using map-reduce source text summarization.</data>
+      <data key="d11">"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization."</data>
+      <data key="d12">[12]</data>
+      <data key="d13">["\"...favorable comparisons to a global but graph-free approach using map-reduce source text summarization.\""]</data>
+      <data key="d14">[83]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="RAG baseline" id="relation_023">
+      <data key="d9">compares</data>
+      <data key="d10">GraphRAG is compared with the conventional RAG baseline.</data>
+      <data key="d11">we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers.</data>
+      <data key="d12">[1]</data>
+      <data key="d13">["we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers."]</data>
+      <data key="d14">[2]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="vector RAG" id="relation_024">
+      <data key="d9">compares</data>
+      <data key="d10">GraphRAG is compared to vector RAG on real-world text datasets, showing GraphRAG outperforms vector RAG when using GPT-4.</data>
+      <data key="d11">We use this approach to compare GraphRAG to vector RAG on two representative real-world text datasets. Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM. | "Initial evaluations show substantial improvements over a vector RAG baseline for both the comprehensiveness and diversity of answers..."</data>
+      <data key="d12">[2, 12]</data>
+      <data key="d13">["We use this approach to compare GraphRAG to vector RAG on two representative real-world text datasets. Results show GraphRAG strongly outperforms vector RAG when using GPT-4 as the LLM.", "\"Initial evaluations show substantial improvements over a vector RAG baseline for both the comprehensiveness and diversity of answers...\""]</data>
+      <data key="d14">[13]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="vector RAG" id="relation_035">
+      <data key="d9">outperforms</data>
+      <data key="d10">Graph RAG retains advantages in comprehensiveness and diversity over vector RAG.</data>
+      <data key="d11">retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG.</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["retaining advantages in comprehensiveness (72% win rate) and diversity (62% win rate) over vector RAG."]</data>
+      <data key="d14">[68]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Knowledge Graph" id="relation_025">
+      <data key="d9">constructs</data>
+      <data key="d10">The GraphRAG approach uses an LLM to derive an entity knowledge graph from source documents as its first stage.</data>
+      <data key="d11">first, to derive an entity knowledge graph from the source documents | GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities.</data>
+      <data key="d12">[1, 2]</data>
+      <data key="d13">["first, to derive an entity knowledge graph from the source documents", "GraphRAG first uses an LLM to construct a knowledge graph, where nodes correspond to key entities in the corpus and edges represent relationships between those entities."]</data>
+      <data key="d14">[3, 9]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="sensemaking" id="relation_026">
+      <data key="d9">enables</data>
+      <data key="d10">GraphRAG enables sensemaking over the entirety of a large text corpus.</data>
+      <data key="d11">GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus.</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["GraphRAG – a graph-based RAG approach that enables sensemaking over the entirety of a large text corpus."]</data>
+      <data key="d14">[8]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="News Articles" id="relation_027">
+      <data key="d9">evaluated_on</data>
+      <data key="d10">GraphRAG is evaluated using News articles as one of the selected datasets.</data>
+      <data key="d11">"We selected two datasets... News articles... We compared six conditions including GraphRAG..." | Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively. | "Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type." (with News Articles listed)</data>
+      <data key="d12">[8, 10, 12]</data>
+      <data key="d13">["\"We selected two datasets... News articles... We compared six conditions including GraphRAG...\"", "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively.", "\"Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type.\" (with News Articles listed)"]</data>
+      <data key="d14">[60, 70]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Podcast Transcripts" id="relation_028">
+      <data key="d9">evaluated_on</data>
+      <data key="d10">GraphRAG is evaluated using Podcast transcripts as one of the selected datasets.</data>
+      <data key="d11">"We selected two datasets... Podcast transcripts... We compared six conditions including GraphRAG..." | Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively. | "Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type." (with Podcast Transcripts listed)</data>
+      <data key="d12">[8, 10, 12]</data>
+      <data key="d13">["\"We selected two datasets... Podcast transcripts... We compared six conditions including GraphRAG...\"", "Intermediate-level summaries in the Podcast dataset and low-level community summaries in the News dataset achieved comprehensiveness win rates of 57% (p&lt;.001) and 64% (p&lt;.001), respectively.", "\"Table 4: Average number of clusters across different distance thresholds, reported by condition and dataset type.\" (with Podcast Transcripts listed)"]</data>
+      <data key="d14">[59, 69]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Podcast Transcripts" id="relation_045">
+      <data key="d9">uses_domain_adapted_prompts_for</data>
+      <data key="d10">GraphRAG uses domain-adapted extraction prompts for the Podcast Transcripts dataset.</data>
+      <data key="d11">"The graph index supporting conditions C0-C3 was created using our generic prompts for entity and relationship extraction, with entity types and few-shot examples tailored to the domain of the data."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"The graph index supporting conditions C0-C3 was created using our generic prompts for entity and relationship extraction, with entity types and few-shot examples tailored to the domain of the data.\""]</data>
+      <data key="d14">[63]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="inherent modularity" id="relation_029">
+      <data key="d9">focuses_on</data>
+      <data key="d10">GraphRAG focuses on the inherent modularity of graphs, specifically the ability to partition them into nested modular communities.</data>
+      <data key="d11">GraphRAG contrasts with these approaches by focusing on a previously unexplored quality of graphs in this context: their inherent modularity</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["GraphRAG contrasts with these approaches by focusing on a previously unexplored quality of graphs in this context: their inherent modularity"]</data>
+      <data key="d14">[19]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Community Summaries" id="relation_030">
+      <data key="d9">generates</data>
+      <data key="d10">The GraphRAG approach pre-generates community summaries for groups of closely related entities as its second stage.</data>
+      <data key="d11">then to pre-generate community summaries for all groups of closely related entities. | Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries. | GraphRAG generates community summaries by adding various element summaries (for nodes, edges, and related claims) to a community summary template</data>
+      <data key="d12">[1, 2, 6]</data>
+      <data key="d13">["then to pre-generate community summaries for all groups of closely related entities.", "Next, it partitions the graph into a hierarchy of communities of closely related entities, before using an LLM to generate community-level summaries.", "GraphRAG generates community summaries by adding various element summaries (for nodes, edges, and related claims) to a community summary template"]</data>
+      <data key="d14">[4, 10, 38]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="hierarchical indexing" id="relation_031">
+      <data key="d9">is_similar_to</data>
+      <data key="d10">GraphRAG is compared to other approaches that use hierarchical indexing to create summaries.</data>
+      <data key="d11">GraphRAG is similar to other approaches that use hierarchical indexing to create summaries</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["GraphRAG is similar to other approaches that use hierarchical indexing to create summaries"]</data>
+      <data key="d14">[17]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="embedding-based matching" id="relation_032">
+      <data key="d9">may_combine_with</data>
+      <data key="d10">GraphRAG proposes hybrid RAG schemes combining embedding-based matching with community report generation.</data>
+      <data key="d11">"In particular, we see potential in hybrid RAG schemes that combine embedding-based matching with just-in-time community report generation..."</data>
+      <data key="d12">[12]</data>
+      <data key="d13">["\"In particular, we see potential in hybrid RAG schemes that combine embedding-based matching with just-in-time community report generation...\""]</data>
+      <data key="d14">[85]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="downstream sensemaking" id="relation_033">
+      <data key="d9">mitigates_risks_to</data>
+      <data key="d10">GraphRAG addresses risks to downstream sensemaking by mitigating errors in global nature questions.</data>
+      <data key="d11">"Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature..."</data>
+      <data key="d12">[12]</data>
+      <data key="d13">["\"Compared to vector RAG, however, GraphRAG shows promise as a way to mitigate these downstream risks for questions of a global nature...\""]</data>
+      <data key="d14">[86]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Naive RAG" id="relation_034">
+      <data key="d9">outperforms</data>
+      <data key="d10">Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.</data>
+      <data key="d11">All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity.</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["All Graph RAG conditions outperformed na¨ıve RAG on comprehensiveness and diversity."]</data>
+      <data key="d14">[67]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="sensemaking activity" id="relation_036">
+      <data key="d9">supports</data>
+      <data key="d10">Root-level GraphRAG offers an efficient method for the iterative question answering that characterizes sensemaking activity.</data>
+      <data key="d11">root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["root-level GraphRAG offers a highly efficient method for the iterative question answering that characterizes sensemaking activity"]</data>
+      <data key="d14">[74]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="information scent" id="relation_037">
+      <data key="d9">supports_exploration_guided_by</data>
+      <data key="d10">GraphRAG uses information scent in a drill-down mechanism following higher-level community summaries.</data>
+      <data key="d11">"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries."</data>
+      <data key="d12">[12]</data>
+      <data key="d13">["\"...implemented as a more exploratory 'drill down' mechanism that follows the information scent contained in higher-level community summaries.\""]</data>
+      <data key="d14">[87]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Community detection" id="relation_038">
+      <data key="d9">uses</data>
+      <data key="d10">Community detection is used to partition the graph index within the GraphRAG approach.</data>
+      <data key="d11">Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index</data>
+      <data key="d12">[4]</data>
+      <data key="d13">["Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index"]</data>
+      <data key="d14">[27]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="LLM" id="relation_039">
+      <data key="d9">uses</data>
+      <data key="d10">The GraphRAG approach uses an LLM to build a graph index and generate responses.</data>
+      <data key="d11">Our approach uses an LLM to build a graph index in two stages</data>
+      <data key="d12">[1]</data>
+      <data key="d13">["Our approach uses an LLM to build a graph index in two stages"]</data>
+      <data key="d14">[5]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="Text Chunks" id="relation_040">
+      <data key="d9">uses</data>
+      <data key="d10">The GraphRAG pipeline uses source documents split into text chunks as input.</data>
+      <data key="d11">Graph RAG pipeline using an LLM-derived graph index of source document text.</data>
+      <data key="d12">[4]</data>
+      <data key="d13">["Graph RAG pipeline using an LLM-derived graph index of source document text."]</data>
+      <data key="d14">[24]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="community hierarchy" id="relation_041">
+      <data key="d9">uses</data>
+      <data key="d10">The GraphRAG approach utilizes a hierarchical community structure.</data>
+      <data key="d11">"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach..."</data>
+      <data key="d12">[12]</data>
+      <data key="d13">["\"The graph index, rich text annotations, and hierarchical community structure supporting the current GraphRAG approach...\""]</data>
+      <data key="d14">[84]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="graph-based community detection" id="relation_042">
+      <data key="d9">uses</data>
+      <data key="d10">GraphRAG uses graph-based community detection to create a thematic partitioning of the data.</data>
+      <data key="d11">applying graph-based community detection to create a thematic partitioning of the data</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["applying graph-based community detection to create a thematic partitioning of the data"]</data>
+      <data key="d14">[18]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="map-reduce processing" id="relation_043">
+      <data key="d9">uses</data>
+      <data key="d10">GraphRAG answers queries through map-reduce processing of community summaries.</data>
+      <data key="d11">Finally, GraphRAG answers queries through map-reduce processing of community summaries</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["Finally, GraphRAG answers queries through map-reduce processing of community summaries"]</data>
+      <data key="d14">[11]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="GraphRAG" target="self-memory" id="relation_044">
+      <data key="d9">uses</data>
+      <data key="d10">GraphRAG uses summaries over large sections of data as a form of self-memory to answer queries.</data>
+      <data key="d11">GraphRAG leverages summaries over large sections of the data source as a form of "self-memory" ... which are later used to answer queries</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["GraphRAG leverages summaries over large sections of the data source as a form of \"self-memory\" ... which are later used to answer queries"]</data>
+      <data key="d14">[16]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Higher-level communities" target="Leaf-level communities" id="relation_046">
+      <data key="d9">derived_from</data>
+      <data key="d10">Higher-level communities are derived from lower-level communities.</data>
+      <data key="d11">Community summaries from lower-level communities are used to generate summaries for higher-level communities</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["Community summaries from lower-level communities are used to generate summaries for higher-level communities"]</data>
+      <data key="d14">[44]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="HotPotQA" target="explicit fact retrieval" id="relation_047">
+      <data key="d9">oriented_towards</data>
+      <data key="d10">The HotPotQA benchmark is oriented towards evaluating performance on explicit fact retrieval.</data>
+      <data key="d11">these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval"]</data>
+      <data key="d14">[22]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Knowledge Graph" target="Leiden community detection" id="relation_048">
+      <data key="d9">partitioned_by</data>
+      <data key="d10">Leiden community detection is used to partition the Knowledge Graph into communities.</data>
+      <data key="d11">Given the graph index created in the previous step, a variety of community detection algorithms may be used to partition the graph into communities...</data>
+      <data key="d12">[5]</data>
+      <data key="d13">["Given the graph index created in the previous step, a variety of community detection algorithms may be used to partition the graph into communities..."]</data>
+      <data key="d14">[34]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Knowledge Graph" target="exact string matching" id="relation_049">
+      <data key="d9">uses_for_entity_matching</data>
+      <data key="d10">The analysis uses exact string matching to reconcile different extracted names for entities in the Knowledge Graph.</data>
+      <data key="d11">In this manuscript, our analysis uses exact string matching for entity matching – the task of reconciling different extracted names for the same entity</data>
+      <data key="d12">[5]</data>
+      <data key="d13">["In this manuscript, our analysis uses exact string matching for entity matching – the task of reconciling different extracted names for the same entity"]</data>
+      <data key="d14">[35]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="Knowledge Graph" id="relation_050">
+      <data key="d9">creates</data>
+      <data key="d10">The LLM extraction process creates instances that become nodes and edges in the Knowledge Graph.</data>
+      <data key="d11">In the final step of the knowledge graph extraction process, these instances of entities and relationships become individual nodes and edges in the graph.</data>
+      <data key="d12">[5]</data>
+      <data key="d13">["In the final step of the knowledge graph extraction process, these instances of entities and relationships become individual nodes and edges in the graph."]</data>
+      <data key="d14">[33]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="GraphRAG" id="relation_051">
+      <data key="d9">judges_answers_from</data>
+      <data key="d10">The LLM is prompted to compare answers generated by GraphRAG against other systems.</data>
+      <data key="d11">"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers...\""]</data>
+      <data key="d14">[56]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="SS (Semantic Search / Vector RAG)" id="relation_052">
+      <data key="d9">judges_answers_from</data>
+      <data key="d10">The LLM is prompted to compare answers generated by the SS method against other systems.</data>
+      <data key="d11">"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers...\""]</data>
+      <data key="d14">[58]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="TS" id="relation_053">
+      <data key="d9">judges_answers_from</data>
+      <data key="d10">The LLM is prompted to compare answers generated by the TS method against other systems.</data>
+      <data key="d11">"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"In our evaluations, the LLM is provided with the question, the generated answers from two competing systems, and prompted to compare the two answers...\""]</data>
+      <data key="d14">[57]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="Community Answers" id="relation_054">
+      <data key="d9">scores_helpfulness_of</data>
+      <data key="d10">The LLM assigns helpfulness scores to intermediate community answers.</data>
+      <data key="d11">The LLM is also asked to generate a score between 0-100 indicating how helpful the generated answer is in answering the target question</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["The LLM is also asked to generate a score between 0-100 indicating how helpful the generated answer is in answering the target question"]</data>
+      <data key="d14">[42]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM" target="Community Summaries" id="relation_055">
+      <data key="d9">uses</data>
+      <data key="d10">The LLM is used to add element summaries to the context window for leaf-level communities.</data>
+      <data key="d11">The element summaries of a leaf-level community are prioritized and then iteratively added to the LLM context window until the token limit is reached</data>
+      <data key="d12">[6]</data>
+      <data key="d13">["The element summaries of a leaf-level community are prioritized and then iteratively added to the LLM context window until the token limit is reached"]</data>
+      <data key="d14">[41]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="LLM-as-a-judge" target="GraphRAG" id="relation_056">
+      <data key="d9">evaluates</data>
+      <data key="d10">The LLM-as-a-judge technique is used to judge the answers of GraphRAG and other RAG systems.</data>
+      <data key="d11">before using a second LLM to judge the answers of two different RAG systems using predefined criteria</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["before using a second LLM to judge the answers of two different RAG systems using predefined criteria"]</data>
+      <data key="d14">[12]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="MT-Bench" target="explicit fact retrieval" id="relation_057">
+      <data key="d9">oriented_towards</data>
+      <data key="d10">The MT-Bench benchmark is oriented towards evaluating performance on explicit fact retrieval.</data>
+      <data key="d11">these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["these benchmarks are oriented towards vector RAG performance, i.e., they evaluate performance on explicit fact retrieval"]</data>
+      <data key="d14">[23]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="News Articles" target="global sensemaking" id="relation_058">
+      <data key="d9">used_to_generate_questions_for</data>
+      <data key="d10">The dataset example generates questions targeting global understanding rather than specific details.</data>
+      <data key="d11">Questions target global understanding rather than specific details.</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["Questions target global understanding rather than specific details."]</data>
+      <data key="d14">[53]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Podcast Transcripts" target="global sensemaking" id="relation_059">
+      <data key="d9">used_to_generate_questions_for</data>
+      <data key="d10">The dataset example generates questions targeting global understanding rather than specific details.</data>
+      <data key="d11">Questions target global understanding rather than specific details.</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["Questions target global understanding rather than specific details."]</data>
+      <data key="d14">[52]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Retrieval-Augmented Generation (RAG)" target="vector RAG" id="relation_060">
+      <data key="d9">collectively_referred_to_as</data>
+      <data key="d10">Vector RAG is collectively referred to as the family of conventional RAG approaches.</data>
+      <data key="d11">While some RAG approaches may use alternative retrieval mechanisms, we collectively refer to the family of conventional approaches as vector RAG.</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["While some RAG approaches may use alternative retrieval mechanisms, we collectively refer to the family of conventional approaches as vector RAG."]</data>
+      <data key="d14">[15]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Retrieval-Augmented Generation (RAG)" target="context window" id="relation_061">
+      <data key="d9">overcomes_limitations_of</data>
+      <data key="d10">RAG retrieves a subset of records to handle data exceeding an LLM context window.</data>
+      <data key="d11">Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window</data>
+      <data key="d12">[1]</data>
+      <data key="d13">["Retrieval augmented generation (RAG) is an established approach to using LLMs to answer queries based on data that is too large to contain in a language model's context window"]</data>
+      <data key="d14">[6]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="SS (Semantic Search / Vector RAG)" target="context window" id="relation_062">
+      <data key="d9">uses</data>
+      <data key="d10">The SS method adds retrieved text chunks to the available context window.</data>
+      <data key="d11">"An implementation of vector RAG in which text chunks are retrieved and added to the available context window..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"An implementation of vector RAG in which text chunks are retrieved and added to the available context window...\""]</data>
+      <data key="d14">[62]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Shapiro-Wilk test" target="Wilcoxon signed-rank test" id="relation_063">
+      <data key="d9">motivates_use_of</data>
+      <data key="d10">The Shapiro-Wilk test indicated non-normality, motivating the use of the Wilcoxon signed-rank test.</data>
+      <data key="d11">Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution. Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["Results of Shapiro-Wilk tests indicated that the data did not follow a normal distribution. Thus, non-parametric tests (Wilcoxon signed-rank tests) were employed"]</data>
+      <data key="d14">[89]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="TS" target="GraphRAG" id="relation_064">
+      <data key="d9">compared_with</data>
+      <data key="d10">Graph RAG conditions C1-C3 showed slight improvements over TS (global text summarization without a graph index).</data>
+      <data key="d11">Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index).</data>
+      <data key="d12">[10]</data>
+      <data key="d13">["Conditions C1-C3 also showed slight improvements in answer comprehensiveness and diversity over TS (global text summarization without a graph index)."]</data>
+      <data key="d14">[73]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="TS" target="SS (Semantic Search / Vector RAG)" id="relation_065">
+      <data key="d9">outperforms_on_comprehensiveness</data>
+      <data key="d10">TS has higher answer comprehensiveness than SS across the evaluated datasets.</data>
+      <data key="d11">all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)</data>
+      <data key="d12">[11]</data>
+      <data key="d13">["all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"]</data>
+      <data key="d14">[80]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="TS" target="map-reduce approach" id="relation_066">
+      <data key="d9">uses</data>
+      <data key="d10">The TS method applies the map-reduce approach directly to source texts.</data>
+      <data key="d11">"a text summarization method that applies our map-reduce approach directly to source texts (TS)..."</data>
+      <data key="d12">[8]</data>
+      <data key="d13">["\"a text summarization method that applies our map-reduce approach directly to source texts (TS)...\""]</data>
+      <data key="d14">[61]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Text Chunks" target="Entities" id="relation_067">
+      <data key="d9">yields</data>
+      <data key="d10">Text chunks yield extracted entity instances.</data>
+      <data key="d11">extract instances of important entities and the relationships between the entities from a given chunk.</data>
+      <data key="d12">[4]</data>
+      <data key="d13">["extract instances of important entities and the relationships between the entities from a given chunk."]</data>
+      <data key="d14">[25]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Text Chunks" target="Relationships" id="relation_068">
+      <data key="d9">yields</data>
+      <data key="d10">Text chunks yield extracted relationships between entities.</data>
+      <data key="d11">extract instances of important entities and the relationships between the entities from a given chunk.</data>
+      <data key="d12">[4]</data>
+      <data key="d13">["extract instances of important entities and the relationships between the entities from a given chunk."]</data>
+      <data key="d14">[26]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Wilcoxon signed-rank test" target="Comprehensiveness" id="relation_069">
+      <data key="d9">evaluates</data>
+      <data key="d10">The Wilcoxon signed-rank test was used to evaluate differences in the Comprehensiveness metric.</data>
+      <data key="d11">Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d14">[91]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Wilcoxon signed-rank test" target="Directness" id="relation_070">
+      <data key="d9">evaluates</data>
+      <data key="d10">The Wilcoxon signed-rank test was used to evaluate differences in the Directness metric.</data>
+      <data key="d11">Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d14">[94]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Wilcoxon signed-rank test" target="Diversity" id="relation_071">
+      <data key="d9">evaluates</data>
+      <data key="d10">The Wilcoxon signed-rank test was used to evaluate differences in the Diversity metric.</data>
+      <data key="d11">Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d14">[92]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Wilcoxon signed-rank test" target="Empowerment" id="relation_072">
+      <data key="d9">evaluates</data>
+      <data key="d10">The Wilcoxon signed-rank test was used to evaluate differences in the Empowerment metric.</data>
+      <data key="d11">Pairwise comparisons of six conditions on four metrics</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["Pairwise comparisons of six conditions on four metrics"]</data>
+      <data key="d14">[93]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="Wilcoxon signed-rank test" target="Holm-Bonferroni correction" id="relation_073">
+      <data key="d9">uses</data>
+      <data key="d10">The Wilcoxon signed-rank test was used in conjunction with the Holm-Bonferroni correction.</data>
+      <data key="d11">with Holm-Bonferroni correction applied to account for multiple pairwise comparisons.</data>
+      <data key="d12">[26]</data>
+      <data key="d13">["with Holm-Bonferroni correction applied to account for multiple pairwise comparisons."]</data>
+      <data key="d14">[90]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="adaptive benchmarking" target="global sensemaking" id="relation_074">
+      <data key="d9">generates_queries_for</data>
+      <data key="d10">Adaptive benchmarking generates corpus-specific questions for global sensemaking evaluation.</data>
+      <data key="d11">In this work, we propose an adaptive benchmarking approach to generating global sensemaking queries for the LLM</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["In this work, we propose an adaptive benchmarking approach to generating global sensemaking queries for the LLM"]</data>
+      <data key="d14">[20]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="adaptive benchmarking" target="LLM-based persona generation" id="relation_075">
+      <data key="d9">uses</data>
+      <data key="d10">Adaptive benchmarking uses LLM-based persona generation to create representative user queries.</data>
+      <data key="d11">Our adaptive benchmarking procedure uses persona generation to create queries that are representative of real-world RAG system usage</data>
+      <data key="d12">[3]</data>
+      <data key="d13">["Our adaptive benchmarking procedure uses persona generation to create queries that are representative of real-world RAG system usage"]</data>
+      <data key="d14">[21]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="global approaches" target="Comprehensiveness" id="relation_076">
+      <data key="d9">achieves</data>
+      <data key="d10">Global approaches achieved comprehensiveness win rates between 72-83% for Podcast transcripts and 72-80% for News articles.</data>
+      <data key="d11">Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p&lt;.001) for Podcast transcripts and 72-80% (p&lt;.001) for News articles</data>
+      <data key="d12">[9]</data>
+      <data key="d13">["Specifically, global approaches achieved comprehensiveness win rates between 72-83% (p&lt;.001) for Podcast transcripts and 72-80% (p&lt;.001) for News articles"]</data>
+      <data key="d14">[66]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="global approaches" target="SS (Semantic Search / Vector RAG)" id="relation_077">
+      <data key="d9">outperforms</data>
+      <data key="d10">Global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets.</data>
+      <data key="d11">global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets.</data>
+      <data key="d12">[9]</data>
+      <data key="d13">["global approaches significantly outperformed conventional vector RAG (SS) in both comprehensiveness and diversity criteria across datasets."]</data>
+      <data key="d14">[65]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="head-to-head comparison approach" target="Comprehensiveness" id="relation_078">
+      <data key="d9">evaluates</data>
+      <data key="d10">The approach judges performance according to the Comprehensiveness criterion.</data>
+      <data key="d11">We designed three target criteria capturing qualities that are desirable for global sensemaking activities.</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["We designed three target criteria capturing qualities that are desirable for global sensemaking activities."]</data>
+      <data key="d14">[49]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="head-to-head comparison approach" target="Diversity" id="relation_079">
+      <data key="d9">evaluates</data>
+      <data key="d10">The approach judges performance according to the Diversity criterion.</data>
+      <data key="d11">• Diversity. How varied and rich is the answer in providing different perspectives and insights on the question?</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["• Diversity. How varied and rich is the answer in providing different perspectives and insights on the question?"]</data>
+      <data key="d14">[50]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="head-to-head comparison approach" target="Empowerment" id="relation_080">
+      <data key="d9">evaluates</data>
+      <data key="d10">The approach judges performance according to the Empowerment criterion.</data>
+      <data key="d11">• Empowerment. How well does the answer help the reader understand and make informed judgments about the topic?</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["• Empowerment. How well does the answer help the reader understand and make informed judgments about the topic?"]</data>
+      <data key="d14">[51]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="head-to-head comparison approach" target="LLM" id="relation_081">
+      <data key="d9">uses</data>
+      <data key="d10">The evaluation approach utilizes an LLM evaluator to judge relative performance.</data>
+      <data key="d11">using an LLM evaluator that judges relative performance</data>
+      <data key="d12">[7]</data>
+      <data key="d13">["using an LLM evaluator that judges relative performance"]</data>
+      <data key="d14">[48]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <edge source="vector RAG" target="sensemaking" id="relation_082">
+      <data key="d9">has_limitations_for</data>
+      <data key="d10">Vector RAG has limitations for sensemaking queries requiring global understanding.</data>
+      <data key="d11">However, vector RAG approaches do not support sensemaking queries, meaning queries that require global understanding of the entire dataset</data>
+      <data key="d12">[2]</data>
+      <data key="d13">["However, vector RAG approaches do not support sensemaking queries, meaning queries that require global understanding of the entire dataset"]</data>
+      <data key="d14">[7]</data>
+      <data key="d15">semantically_reviewed</data>
+    </edge>
+    <data key="d0">GraphRAG Paper Knowledge Graph</data>
+    <data key="d1">1.0</data>
+  </graph>
+</graphml>

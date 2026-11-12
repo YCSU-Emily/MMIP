@@ -1,0 +1,643 @@
+{
+  "schema_version": "1.0",
+  "source_graph": "/home/emily/MMIP/week10/assignment4_graphrag/results/knowledge_graph.json",
+  "model": "Qwen3.5-4B",
+  "summarization_method": "Evidence-grounded community summarization with failed-item repair",
+  "total_communities": 20,
+  "successful_summaries": 20,
+  "failed_summaries": 0,
+  "summaries": [
+    {
+      "community_id": 0,
+      "member_count": 20,
+      "members": [
+        "GraphRAG",
+        "LLM-as-a-judge",
+        "LangChain",
+        "Naive RAG",
+        "Podcast Transcripts",
+        "RAG baseline",
+        "community hierarchy",
+        "downstream sensemaking",
+        "embedding-based matching",
+        "graph-based community detection",
+        "hierarchical indexing",
+        "information scent",
+        "inherent modularity",
+        "map-reduce processing",
+        "map-reduce summarization",
+        "query-focused summarization",
+        "self-memory",
+        "sensemaking",
+        "sensemaking activity",
+        "vector RAG"
+      ],
+      "internal_relationship_count": 22,
+      "boundary_relationship_count": 12,
+      "main_topic": "GraphRAG: A Graph-Based Approach for Global Sensemaking over Text Corpora",
+      "summary": "本研究提出 GraphRAG，一種基於圖的檢索增強生成（RAG）方法，旨在解決傳統 RAG 在處理需要全局理解的大型文本語料庫時所面臨的「查詢聚焦摘要」（Query-Focused Summarization, QFS）任務上的局限性。GraphRAG 利用 LLM 構建知識圖譜，並通過圖基社區檢測（graph-based community detection）將數據分組為具有內在模組性（inherent modularity）的嵌套社區。系統採用分層索引（hierarchical indexing）和「自我記憶」（self-memory）機制，生成社區摘要作為中間層級知識。在回答查詢時，GraphRAG 通過 Map-Reduce 處理流程，先並行生成各社區的局部摘要，再綜合生成全局答案。研究在 Podcast Transcripts 和 News Articles 等數據集上評估了 GraphRAG 及其不同社區層級（C0-C3）的表現。結果顯示，GraphRAG 在全面性（comprehensiveness）和多樣性（diversity）方面顯著優於向量 RAG（vector RAG）、Naive RAG 以及傳統的 Map-Reduce 摘要方法。此外，GraphRAG 被證明能有效降低對下游感測（downstream sensemaking）任務的風險，並支持基於「信息嗅覺」（information scent）的探索性鑽取。研究還開發了 LLM-as-a-judge 技術來評估不同 RAG 系統的表現。GraphRAG 的實現可擴展至多個開源框架，包括 LangChain。",
+      "key_entities": [
+        "GraphRAG",
+        "vector RAG",
+        "Naive RAG",
+        "LangChain",
+        "Podcast Transcripts",
+        "sensemaking",
+        "query-focused summarization",
+        "inherent modularity",
+        "map-reduce processing",
+        "self-memory",
+        "information scent",
+        "LLM-as-a-judge"
+      ],
+      "key_relationships": [
+        "GraphRAG addresses query-focused summarization limitations of conventional RAG.",
+        "GraphRAG enables sensemaking over entire text corpora.",
+        "GraphRAG outperforms vector RAG, Naive RAG, and map-reduce summarization in comprehensiveness and diversity.",
+        "GraphRAG mitigates risks to downstream sensemaking tasks.",
+        "GraphRAG is available as an extension to LangChain.",
+        "GraphRAG uses map-reduce processing of community summaries to answer queries.",
+        "GraphRAG leverages self-memory via summaries of large data sections.",
+        "GraphRAG supports exploration guided by information scent.",
+        "GraphRAG is evaluated on Podcast Transcripts and News Articles datasets.",
+        "LLM-as-a-judge is used to evaluate GraphRAG and other RAG systems."
+      ],
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "limitations": "本研究未涵蓋所有可能的 RAG 變體或特定領域的應用場景；部分評估結果依賴於 GPT-4 作為 LLM，未明確說明在其他模型上的表現；社區層級（C0-C3）的具體邊界定義細節未完全闡述。",
+      "excluded_external_key_entities": [
+        "News Articles"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    },
+    {
+      "community_id": 1,
+      "member_count": 10,
+      "members": [
+        "Community Answers",
+        "Community Summaries",
+        "Community detection",
+        "Global Answer",
+        "Global Sensemaking Question Generation",
+        "Graph Communities",
+        "Knowledge Graph",
+        "LLM",
+        "Leiden community detection",
+        "exact string matching"
+      ],
+      "internal_relationship_count": 10,
+      "boundary_relationship_count": 9,
+      "main_topic": "GraphRAG 的社區檢測與摘要生成流程",
+      "summary": "本研究社區聚焦於 GraphRAG 架構中的核心處理流程，主要涉及利用 LLM 構建知識圖譜，並透過社區檢測（Community detection）將圖索引分組。具體而言，系統使用 Leiden 社區檢測演算法（Leiden community detection）以階層式方式將知識圖譜（Knowledge Graph）分割為互斥且完整的社區（Graph Communities）。隨後，系統針對這些社區生成社區摘要（Community Summaries），這些摘要包含各組緊密相關實體的報告式總結。在回答生成階段，社區摘要被用於產生中間社區答案（Community Answers），LLM 會根據目標問題為這些答案評分（scores_helpfulness_of）。最終，這些中間答案依有用性排序並逐步加入上下文視窗，以產生針對查詢的終極全球答案（Global Answer）。此外，研究還提及使用精確字串匹配（exact string matching）來重解同一實體的不同名稱，以及利用全球意義建構問題生成（Global Sensemaking Question Generation）來評估 RAG 系統的高層理解能力。",
+      "key_entities": [
+        "Community Answers",
+        "Community Summaries",
+        "Community detection",
+        "Global Answer",
+        "Global Sensemaking Question Generation",
+        "Graph Communities",
+        "Knowledge Graph",
+        "LLM",
+        "Leiden community detection",
+        "exact string matching"
+      ],
+      "key_relationships": [
+        "LLM 使用 Leiden 社區檢測將知識圖譜分割為社區",
+        "知識圖譜被分割為圖社區（Graph Communities）",
+        "圖社區生成社區摘要（Community Summaries）",
+        "社區摘要用於生成中間社區答案（Community Answers）",
+        "LLM 為中間社區答案評分以評估其有用性",
+        "中間社區答案貢獻於最終的全球答案（Global Answer）",
+        "知識圖譜使用精確字串匹配來重解實體名稱",
+        "全球意義建構問題生成使用 LLM 來評估 RAG 系統"
+      ],
+      "source_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        9
+      ],
+      "limitations": "本社區數據未提供關於社區檢測演算法具體參數設定、不同社區大小分佈的統計數據，或社區摘要與原始文本在特定領域（如根層級摘要）之外的詳細效能比較細節。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 2,
+      "member_count": 9,
+      "members": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "Retrieval-Augmented Generation (RAG)",
+        "SS (Semantic Search / Vector RAG)",
+        "TS",
+        "context window",
+        "map-reduce approach"
+      ],
+      "internal_relationship_count": 10,
+      "boundary_relationship_count": 7,
+      "main_topic": "Comparative Evaluation of GraphRAG Community Summaries (C0-C3) Against Baselines (SS, TS) in RAG Systems",
+      "summary": "This community evaluates four experimental conditions (C0, C1, C2, C3) representing different levels of GraphRAG community summaries against two baselines: SS (Semantic Search/Vector RAG) and TS (Text Summarization). C0 uses root-level summaries, C1 a higher hierarchy level, C2 an intermediate level, and C3 low-level summaries. All GraphRAG conditions (C0-C3) and the TS baseline outperform the SS baseline in answer comprehensiveness across datasets, with C0 showing significant improvement on the News dataset and all conditions showing greater diversity on the Podcast dataset. Regarding efficiency, C0 requires 9x-43x fewer tokens per query compared to root-level summaries, while C3 requires 26-33% fewer context tokens than standard GraphRAG. The TS baseline applies a map-reduce approach directly to source texts without a graph index. The evaluation framework uses an LLM to judge answers generated by these systems.",
+      "key_entities": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "SS (Semantic Search / Vector RAG)",
+        "TS",
+        "Retrieval-Augmented Generation (RAG)",
+        "context window",
+        "map-reduce approach"
+      ],
+      "key_relationships": [
+        "C0, C1, C2, and C3 outperform SS in answer comprehensiveness",
+        "C0, C1, C2, and C3 outperform SS in answer diversity (specifically on Podcast dataset)",
+        "C0 significantly outperforms SS in comprehensiveness on the News dataset",
+        "C0 requires 9x-43x fewer tokens per query than root-level summaries",
+        "C3 requires 26-33% fewer context tokens than standard GraphRAG",
+        "TS outperforms SS in answer comprehensiveness",
+        "TS uses the map-reduce approach on source texts",
+        "SS uses the context window to add retrieved text chunks",
+        "RAG overcomes limitations of the context window",
+        "LLM judges answers from SS and TS"
+      ],
+      "source_pages": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        26
+      ],
+      "limitations": "Specific quantitative performance metrics (e.g., exact scores) for C1, C2, and C3 compared to SS are not explicitly detailed in the provided evidence, though qualitative superiority is noted. The specific token reduction percentages for C0 and C3 are relative to other conditions or standard GraphRAG rather than absolute comparisons against SS or TS.",
+      "excluded_external_key_entities": [
+        "LLM"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    },
+    {
+      "community_id": 3,
+      "member_count": 9,
+      "members": [
+        "Comprehensiveness",
+        "Directness",
+        "Diversity",
+        "Empowerment",
+        "Holm-Bonferroni correction",
+        "Shapiro-Wilk test",
+        "Wilcoxon signed-rank test",
+        "global approaches",
+        "head-to-head comparison approach"
+      ],
+      "internal_relationship_count": 12,
+      "boundary_relationship_count": 2,
+      "main_topic": "Evaluation of Graph RAG using global approaches against naive RAG across four metrics",
+      "summary": "本研究社群聚焦於評估「Graph RAG」條件在四個目標指標（Comprehensiveness、Directness、Diversity、Empowerment）上的表現，並比較其與傳統向量 RAG（SS）的差異。研究採用「head-to-head comparison approach」，利用 LLM 評估器進行兩兩比較，並針對非正態分佈數據使用非參數統計方法（Wilcoxon signed-rank test），同時應用 Holm-Bonferroni correction 以處理多重比較問題。證據顯示，global approaches 在 Comprehensiveness 和 Diversity 上顯著優於 naive RAG，而 Directness 則與後兩者存在對立關係。",
+      "key_entities": [
+        "Comprehensiveness",
+        "Directness",
+        "Diversity",
+        "Empowerment",
+        "global approaches",
+        "head-to-head comparison approach",
+        "Wilcoxon signed-rank test",
+        "Shapiro-Wilk test",
+        "Holm-Bonferroni correction"
+      ],
+      "key_relationships": [
+        "Directness opposes Comprehensiveness",
+        "Directness opposes Diversity",
+        "Shapiro-Wilk test motivates use of Wilcoxon signed-rank test",
+        "Wilcoxon signed-rank test evaluates Comprehensiveness",
+        "Wilcoxon signed-rank test evaluates Directness",
+        "Wilcoxon signed-rank test evaluates Diversity",
+        "Wilcoxon signed-rank test evaluates Empowerment",
+        "Wilcoxon signed-rank test uses Holm-Bonferroni correction",
+        "global approaches achieves high win rates in Comprehensiveness and Diversity compared to naive RAG",
+        "head-to-head comparison approach evaluates Comprehensiveness, Diversity, and Empowerment"
+      ],
+      "source_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        26
+      ],
+      "limitations": "社群資料未提供 Directness 指標在 global approaches 與 naive RAG 之間的具體比較結果或統計顯著性，僅說明兩者存在對立關係。此外，雖提及 global approaches 在 Podcast 和 News 數據集上的表現，但社群範圍未明確限定於此，故無法斷言所有數據集均呈現相同趨勢。",
+      "excluded_external_key_entities": [
+        "na¨ıve RAG"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    },
+    {
+      "community_id": 4,
+      "member_count": 5,
+      "members": [
+        "GENERATEQUESTIONS",
+        "LLM-based persona generation",
+        "News Articles",
+        "adaptive benchmarking",
+        "global sensemaking"
+      ],
+      "internal_relationship_count": 4,
+      "boundary_relationship_count": 3,
+      "main_topic": "Global Sensemaking Evaluation via Adaptive Benchmarking and Question Generation",
+      "summary": "This community focuses on evaluating RAG systems through 'global sensemaking,' which requires understanding the entirety of a corpus rather than specific details. The proposed approach involves 'adaptive benchmarking,' a process that dynamically generates evaluation queries tailored to specific domains. This method utilizes 'LLM-based persona generation' to create representative user queries and employs the 'GENERATEQUESTIONS' procedure to formulate high-level questions based on corpus descriptions and user personas. These generated questions target global understanding. The 'News Articles' dataset serves as a primary example for this evaluation, where questions are generated to assess global comprehension. The community also notes that 'Podcast Transcripts' are used for similar question generation targeting global sensemaking.",
+      "key_entities": [
+        "GENERATEQUESTIONS",
+        "LLM-based persona generation",
+        "News Articles",
+        "adaptive benchmarking",
+        "global sensemaking"
+      ],
+      "key_relationships": [
+        "GENERATEQUESTIONS generates questions requiring global understanding of the corpus.",
+        "News Articles is a dataset used to generate questions targeting global understanding.",
+        "adaptive benchmarking generates corpus-specific queries for global sensemaking evaluation.",
+        "adaptive benchmarking uses LLM-based persona generation to create representative user queries."
+      ],
+      "source_pages": [
+        3,
+        7
+      ],
+      "limitations": "The community data does not provide sufficient information to describe the internal relationships or specific mechanisms of 'LLM' usage beyond the boundary relationship, nor does it detail the specific performance metrics of the adaptive benchmarking approach other than referencing the win rates of News Articles in a broader context.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 5,
+      "member_count": 3,
+      "members": [
+        "Entities",
+        "Relationships",
+        "Text Chunks"
+      ],
+      "internal_relationship_count": 2,
+      "boundary_relationship_count": 1,
+      "main_topic": "GraphRAG 處理流程中的實體與關係提取機制",
+      "summary": "此社群描述了 GraphRAG 系統中處理原始文檔的基礎流程。文檔首先被分割成「Text Chunks」（頁 4），這些片段作為輸入來源，透過提取重要實體與實體間的連結，產出「Entities」（頁 4）與「Relationships」（頁 4）。GraphRAG 系統使用這些 Text Chunks 來建立基於 LLM 導致的圖索引（頁 4）。",
+      "key_entities": [
+        "Text Chunks",
+        "Entities",
+        "Relationships"
+      ],
+      "key_relationships": [
+        "Text Chunks yields Entities",
+        "Text Chunks yields Relationships",
+        "GraphRAG uses Text Chunks"
+      ],
+      "source_pages": [
+        4
+      ],
+      "limitations": "無法從現有社群資料中推斷實體與關係提取的具體算法細節、LLM 導致的圖索引的具體結構，或提取過程中的過濾與後處理步驟。",
+      "excluded_external_key_entities": [
+        "GraphRAG"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    },
+    {
+      "community_id": 6,
+      "member_count": 3,
+      "members": [
+        "HotPotQA",
+        "MT-Bench",
+        "explicit fact retrieval"
+      ],
+      "internal_relationship_count": 2,
+      "boundary_relationship_count": 0,
+      "main_topic": "Vector RAG 性能評估的基準數據集",
+      "summary": "本社群包含三個實體：HotPotQA、MT-Bench 以及 explicit fact retrieval。HotPotQA 和 MT-Bench 均被定義為面向向量 RAG 性能評估的開域問答基準數據集 (Dataset)。兩者皆被描述為「面向 explicit fact retrieval」，意指這些基準主要用於評估模型在檢索特定事實方面的表現，而非全球意義理解 (global sensemaking)。",
+      "key_entities": [
+        "HotPotQA",
+        "MT-Bench",
+        "explicit fact retrieval"
+      ],
+      "key_relationships": [
+        "HotPotQA 面向 explicit fact retrieval",
+        "MT-Bench 面向 explicit fact retrieval"
+      ],
+      "source_pages": [
+        3
+      ],
+      "limitations": "無法從本社群數據中推斷 HotPotQA 與 MT-Bench 之間的直接關係，亦無法得知它們與 global sensemaking 任務的具體對比細節。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 7,
+      "member_count": 2,
+      "members": [
+        "Higher-level communities",
+        "Leaf-level communities"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Community hierarchy levels in summary generation",
+      "summary": "The community consists of two concept entities: 'Higher-level communities' and 'Leaf-level communities'. Leaf-level communities represent the lowest level of the community hierarchy, where element summaries are prioritized and iteratively added to the LLM context window until the token limit is reached [6]. Higher-level communities exist above the leaf level; if all element summaries fit within the token limit of the context window, the process proceeds as for leaf-level communities to summarize all element summaries within the community [6]. Higher-level communities are derived from lower-level communities, where community summaries from lower-level communities are used to generate summaries for higher-level communities [6].",
+      "key_entities": [
+        "Higher-level communities",
+        "Leaf-level communities"
+      ],
+      "key_relationships": [
+        "Higher-level communities are derived from Leaf-level communities"
+      ],
+      "source_pages": [
+        6
+      ],
+      "limitations": "No information regarding specific token limit values or exact summarization algorithms is provided.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 8,
+      "member_count": 2,
+      "members": [
+        "Graph indexing",
+        "gpt-4-turbo"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Graph indexing implementation using gpt-4-turbo",
+      "summary": "本研究社區探討了使用 gpt-4-turbo 端點進行圖索引的方法。該方法採用 600 token 的視窗大小，在處理 Podcast 數據集時耗時 281 分鐘。執行環境為虛擬機器，配備 16GB RAM 及 Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz。圖索引方法依賴於 gpt-4-turbo 的公共 OpenAI 端點，該端點具有 2M TPM 和 10k RPM 的速率限制 [9]。",
+      "key_entities": [
+        "Graph indexing",
+        "gpt-4-turbo"
+      ],
+      "key_relationships": [
+        "Graph indexing uses gpt-4-turbo"
+      ],
+      "source_pages": [
+        9
+      ],
+      "limitations": "無法從本社區數據推斷出該方法的具體優化策略、準確度評估結果或與其他方法的比較分析。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 9,
+      "member_count": 2,
+      "members": [
+        "Experiment 1",
+        "Experiment 2"
+      ],
+      "internal_relationship_count": 1,
+      "boundary_relationship_count": 0,
+      "main_topic": "Comparison of LLM-based win rates between Experiment 1 and Experiment 2",
+      "summary": "本研究包含兩個實驗：Experiment 1 為先前關於基於 LLM 的勝率（LLM-based win rates）的實驗，而 Experiment 2 則是當前評估主張提取（claim extraction）的實驗。根據證據記錄，Experiment 2 的發現與 Experiment 1 中基於 LLM 的勝率結果一致（aligns_with）。",
+      "key_entities": [
+        "Experiment 1",
+        "Experiment 2"
+      ],
+      "key_relationships": [
+        "Experiment 2 aligns_with Experiment 1: Findings in Experiment 2 align with LLM-based win rates from Experiment 1"
+      ],
+      "source_pages": [
+        11
+      ],
+      "limitations": "無法從現有資料推斷實驗 1 與實驗 2 之間是否存在因果關係，僅知發現結果一致。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 10,
+      "member_count": 1,
+      "members": [
+        "Claimify"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Claimify 方法",
+      "summary": "Claimify 是一種基於大語言模型（LLM）的方法，用於識別答案中包含事實性陳述的句子的句子，並將這些句子分解為簡單、自包含的事實陳述。",
+      "key_entities": [
+        "Claimify"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        9
+      ],
+      "limitations": "此社區僅包含單一實體，無法推斷其與其他方法或系統的內部關係或應用場景。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 11,
+      "member_count": 1,
+      "members": [
+        "Claims"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Claims as verifiable facts extracted by LLMs",
+      "summary": "The community contains a single entity, 'Claims', defined as verifiable facts extracted by Large Language Models (LLMs) that are used to validate results. Evidence records describe these as 'LLM-extracted statements of verifiable facts, or 'claims.''",
+      "key_entities": [
+        "Claims"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        4
+      ],
+      "limitations": "No internal or boundary relationships exist within this community to provide additional context or connections.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 12,
+      "member_count": 1,
+      "members": [
+        "GPT-4"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "GPT-4 在 GraphRAG 與向量 RAG 評估中的應用",
+      "summary": "本社群包含單一實體 GPT-4，其被描述為在評估中使用的語言模型（LLM），在此情境下 GraphRAG 表現優於向量 RAG。證據顯示，當使用 GPT-4 作為 LLM 時，GraphRAG 的結果顯示其顯著優於向量 RAG。",
+      "key_entities": [
+        "GPT-4"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        2,
+        12
+      ],
+      "limitations": "無法從本社群推導出 GPT-4 的其他功能、性能細節或與 GraphRAG/向量 RAG 的因果機制。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 13,
+      "member_count": 1,
+      "members": [
+        "MultiHop-RAG"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "MultiHop-RAG 數據集",
+      "summary": "MultiHop-RAG 是一個針對向量 RAG（檢索增強生成）性能評估的開放領域問答 benchmark 數據集。",
+      "key_entities": [
+        "MultiHop-RAG"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        3
+      ],
+      "limitations": "此社區僅包含單一實體，無法推斷其與其他實體的內部關係或具體的技術細節（如數據規模、問答類型等）。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 14,
+      "member_count": 1,
+      "members": [
+        "SelfCheckGPT"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "SelfCheckGPT 方法",
+      "summary": "SelfCheckGPT 是一種用於比較製造率的方法 (Manakul et al., 2023)。",
+      "key_entities": [
+        "SelfCheckGPT"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        11
+      ],
+      "limitations": "此社群僅包含單一實體，無法推斷其內部關係或與其他實體的邊界關係。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 15,
+      "member_count": 1,
+      "members": [
+        "Token limit"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Token limit as a context window constraint",
+      "summary": "The community defines 'Token limit' as a parameter that acts as a constraint on the context window size. This constraint determines the point at which element summaries must be replaced by sub-community summaries. The evidence indicates that this replacement occurs 'until the token limit is reached' [6].",
+      "key_entities": [
+        "Token limit"
+      ],
+      "key_relationships": [
+        "Token limit is a constraint on the context window size that determines when element summaries must be replaced by sub-community summaries."
+      ],
+      "source_pages": [
+        6
+      ],
+      "limitations": "No internal or boundary relationships were identified for this single-entity community.",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 16,
+      "member_count": 1,
+      "members": [
+        "agglomerative clustering"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "Agglomerative Clustering Implementation",
+      "summary": "本研究使用 Scikit-learn 實現聚類方法，採用完全鏈接（complete linkage）與 1-ROUGE-L 距離指標。聚類過程遵循 Padmakumar 和 He (2024) 的說明，將簇合併僅當其最遠點之間的最大距離小於或等於預定義的距離閾值時進行 (Pedregosa et al., 2011)。",
+      "key_entities": [
+        "agglomerative clustering"
+      ],
+      "key_relationships": [
+        "agglomerative clustering 使用 Scikit-learn 實現",
+        "agglomerative clustering 採用 complete linkage 合併簇",
+        "agglomerative clustering 使用 1-ROUGE-L 作為距離指標"
+      ],
+      "source_pages": [
+        9
+      ],
+      "limitations": "此社區僅包含單一實體，無法推斷該方法與其他技術或數據集之間的內部關係。",
+      "excluded_external_key_entities": [
+        "Scikit-learn",
+        "complete linkage",
+        "1-ROUGE-L"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    },
+    {
+      "community_id": 17,
+      "member_count": 1,
+      "members": [
+        "distance thresholds"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "distance thresholds",
+      "summary": "distance thresholds 是一個用於分析聚類結果的實驗參數。此參數在表 4 中以「Distance Threshold」作為欄位標題出現。",
+      "key_entities": [
+        "distance thresholds"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        12
+      ],
+      "limitations": "由於該社群僅包含單一實體且無內部關係，無法推斷其具體數值設定、對聚類結果的影響或與其他參數的互動方式。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 18,
+      "member_count": 1,
+      "members": [
+        "fixed context window size of 8k tokens"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "固定上下文窗口大小參數",
+      "summary": "本研究使用固定為 8,000 個 token 的上下文窗口大小（fixed context window size of 8k tokens）來生成社群摘要、社群回答以及全球回答。",
+      "key_entities": [
+        "fixed context window size of 8k tokens"
+      ],
+      "key_relationships": [],
+      "source_pages": [
+        9
+      ],
+      "limitations": "無足夠證據說明此參數對結果的影響或與其他參數的關聯。",
+      "review_status": "llm_generated_pending_review"
+    },
+    {
+      "community_id": 19,
+      "member_count": 1,
+      "members": [
+        "human sensemaking"
+      ],
+      "internal_relationship_count": 0,
+      "boundary_relationship_count": 0,
+      "main_topic": "human sensemaking",
+      "summary": "The community identifies 'human sensemaking' as the primary goal supported by GraphRAG when processing entire text corpora. This concept is explicitly linked to the capability of GraphRAG to assist users in making sense of large-scale textual data.",
+      "key_entities": [
+        "human sensemaking"
+      ],
+      "key_relationships": [
+        "GraphRAG supports human sensemaking over entire text corpora"
+      ],
+      "source_pages": [
+        12
+      ],
+      "limitations": "No internal relationships or additional contextual details are available within this single-entity community.",
+      "excluded_external_key_entities": [
+        "GraphRAG"
+      ],
+      "review_status": "llm_generated_pending_manual_review"
+    }
+  ],
+  "failures": [],
+  "repair": {
+    "repaired_community_ids": [
+      0,
+      2,
+      3,
+      5,
+      16,
+      19
+    ],
+    "failed_community_ids": [],
+    "max_new_tokens": 1800,
+    "preserved_original_successful_summaries": 14
+  }
+}

@@ -1,0 +1,1206 @@
+{
+  "included_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    26
+  ],
+  "excluded_pages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "statistics": {
+    "original_entities": 169,
+    "original_relationships": 156,
+    "cleaned_entities": 85,
+    "cleaned_relationships": 98,
+    "excluded_entities": 84,
+    "excluded_relationships": 58,
+    "removed_dangling_relationships": 0,
+    "missing_entity_chunk_evidence": 0,
+    "missing_relationship_chunk_evidence": 0,
+    "processed_chunks": 26,
+    "alignment_errors": 0
+  },
+  "entity_type_distribution": {
+    "Method": 35,
+    "Concept": 27,
+    "Model": 5,
+    "Organization": 4,
+    "Dataset": 7,
+    "Metric": 7
+  },
+  "relationship_type_distribution": {
+    "addresses": 6,
+    "compares": 8,
+    "consists_of": 11,
+    "uses": 17,
+    "enables": 1,
+    "constructs": 1,
+    "generates": 2,
+    "evaluates": 19,
+    "extends": 1,
+    "focuses_on": 1,
+    "builds_on": 1,
+    "oriented_towards": 2,
+    "proposes": 5,
+    "improves": 2,
+    "acquired_by": 1,
+    "traded_on": 1,
+    "extracts": 1,
+    "creates": 1,
+    "partitioned_by": 1,
+    "clustered_by": 1,
+    "reduces": 1,
+    "opposes": 2,
+    "outperforms": 8,
+    "achieves": 1,
+    "compared_to": 1,
+    "supports": 1,
+    "aligns_with": 1
+  },
+  "excluded_entities": [
+    {
+      "name": "Gemini",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Knowledge-augmented language model prompting",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Large language models",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13,
+        17
+      ]
+    },
+    {
+      "name": "Neural networks",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Query focused abstractive summarization",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "Fast unfolding of communities",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Language models",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Retrieval-augmented text generation",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Ragas",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Web-scale information extraction",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Retrieval-generation synergy augmented large language models",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "G-retriever",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "name": "Forceatlas2",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Openord",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14,
+        19
+      ]
+    },
+    {
+      "name": "Knowledge graph-augmented language models",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Demonstrate-search-predict",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Tree of clarifications",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Self-refine",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Generation-augmented retrieval",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Probabilistic knowledge graph construction",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Knowledge graph generation from text",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Lost in the middle",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "In search of needles in a 11m haystack",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "Evaluating large language models in theory of mind tasks",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        14
+      ]
+    },
+    {
+      "name": "factual claims",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "retrieval-augmented language models",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "retrieval-augmented narrative construction",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "iterative retrieval-generation synergy",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "recursive abstractive processing",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "language agents",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "personas",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "human-ai workflows",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "name": "Caire-covid",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "Llama 2",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "Graph-toolformer",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "TextRunner",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "S-eval",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "Chain of thought reasoning",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "name": "Causal graph discovery",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Dynamic evaluation",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Adaptive reasoning graph",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Llms for knowledge graph construction and reasoning",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Judging llm-as-a-judge",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Chatbot arena",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "name": "Self-Reflection",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "name": "Chunk Size",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "name": "Entity References",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "name": "Logit Bias",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "name": "Leiden algorithm",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "name": "context window size",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "name": "Force Atlas 2",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "name": "Naïve RAG",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "News article dataset",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "Taylor Swift",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "Britney Spears",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "Justin Timberlake",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "name": "Element Instance Generation",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "Community Summary Generation",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "Information discovery",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "entity name",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "entity type",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "entity description",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "relationship strength",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "ORGANIZATION",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "PERSON",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "FED",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "JEROME POWELL",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "FEDERAL OPEN MARKET COMMITTEE",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "name": "Goal",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "Report Structure",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "IMPACT SEVERITY RATING",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22,
+        23
+      ]
+    },
+    {
+      "name": "IMPACT",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "Grounding Rules",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "Data",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "Reports",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "name": "Verdant Oasis Plaza",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "name": "Unity March",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "name": "Harmony Assembly",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "name": "Tribune Spotlight",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "name": "Relative Assessment Prompt",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "name": "Relative Assessment Metrics",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "name": "Winner",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "name": "Reasoning",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    }
+  ],
+  "excluded_relationships": [
+    {
+      "source": "Retrieval-generation synergy augmented large language models",
+      "target": "large language models",
+      "type": "augments",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "source": "Retrieval-augmented generation",
+      "target": "large language models",
+      "type": "applies_to",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        13
+      ]
+    },
+    {
+      "source": "graph rag",
+      "target": "retrieval-augmented language models",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "source": "graphrag",
+      "target": "retrieval-augmented language models",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "source": "personas",
+      "target": "human-ai workflows",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        15
+      ]
+    },
+    {
+      "source": "MultiHop-RAG",
+      "target": "retrieval-augmented generation",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        16
+      ]
+    },
+    {
+      "source": "Causal graph discovery",
+      "target": "Retrieval-augmented generation",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "source": "Dynamic evaluation",
+      "target": "Adaptive reasoning graph",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "source": "Llms for knowledge graph construction and reasoning",
+      "target": "Knowledge graph",
+      "type": "addresses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "source": "Judging llm-as-a-judge",
+      "target": "Mt-bench",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "source": "Judging llm-as-a-judge",
+      "target": "Chatbot arena",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        17
+      ]
+    },
+    {
+      "source": "GraphRAG",
+      "target": "GPT-4",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "GPT-4",
+      "target": "HotPotQA",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "Chunk Size",
+      "target": "Entity References",
+      "type": "affects",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "Self-Reflection",
+      "target": "Chunk Size",
+      "type": "improves",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "Logit Bias",
+      "target": "Self-Reflection",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "Entity References",
+      "target": "Self-Reflection",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        18
+      ]
+    },
+    {
+      "source": "Leiden algorithm",
+      "target": "MultiHop-RAG",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "comprehensiveness",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "diversity",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "empowerment",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "SS",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "gpt-4-turbo",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "comprehensiveness",
+      "type": "improves",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "diversity",
+      "type": "improves",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "context window size",
+      "target": "empowerment",
+      "type": "improves",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        19
+      ]
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Comprehensiveness",
+      "type": "wins",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Diversity",
+      "type": "wins",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Graph RAG",
+      "target": "Empowerment",
+      "type": "wins",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Naïve RAG",
+      "target": "Directness",
+      "type": "wins",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Graph RAG",
+      "target": "News article dataset",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Taylor Swift",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Travis Kelce",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Britney Spears",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Justin Timberlake",
+      "target": "Graph RAG",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        20
+      ]
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "Community Summary Generation",
+      "type": "compares",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "Information discovery",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "source": "Community Summary Generation",
+      "target": "Information discovery",
+      "type": "proposes",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "entity name",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "source": "Element Instance Generation",
+      "target": "relationship strength",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        21
+      ]
+    },
+    {
+      "source": "Goal",
+      "target": "Report Structure",
+      "type": "proposes",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "IMPACT SEVERITY RATING",
+      "target": "IMPACT",
+      "type": "evaluates",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "IMPACT",
+      "target": "IMPACT SEVERITY RATING",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Reports",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Entities",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Relationships",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "Grounding Rules",
+      "target": "Claims",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        22
+      ]
+    },
+    {
+      "source": "Verdant Oasis Plaza",
+      "target": "Unity March",
+      "type": "hosts",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "source": "Harmony Assembly",
+      "target": "Verdant Oasis Plaza",
+      "type": "organizes",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "source": "Tribune Spotlight",
+      "target": "Unity March",
+      "type": "reports_on",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "source": "Verdant Oasis Plaza",
+      "target": "Harmony Assembly",
+      "type": "associated_with",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        23
+      ]
+    },
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Relative Assessment Metrics",
+      "type": "uses",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Winner",
+      "type": "proposes",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "Relative Assessment Prompt",
+      "target": "Reasoning",
+      "type": "proposes",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "comprehensiveness",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "diversity",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "directness",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    },
+    {
+      "source": "empowerment",
+      "target": "Relative Assessment Metrics",
+      "type": "consists_of",
+      "reason": "No evidence in selected pages",
+      "original_pages": [
+        25
+      ]
+    }
+  ],
+  "missing_entity_evidence": [],
+  "missing_relationship_evidence": [],
+  "removed_dangling_relationships": [],
+  "evidence_rebuilt_from_original_chunks": true,
+  "alignment_validation": "PASSED",
+  "semantic_review_required": true
+}

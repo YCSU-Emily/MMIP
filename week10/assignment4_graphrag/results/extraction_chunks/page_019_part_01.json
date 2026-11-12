@@ -1,0 +1,132 @@
+{
+  "page": 19,
+  "part": 1,
+  "source_characters": 1743,
+  "entities": [
+    {
+      "name": "Leiden algorithm",
+      "type": "Method",
+      "description": "An algorithm used to detect graph communities.",
+      "evidence": "Graph communities detected using the Leiden algorithm (Traag et al., 2019)"
+    },
+    {
+      "name": "MultiHop-RAG",
+      "type": "Dataset",
+      "description": "A dataset used for indexing and community detection.",
+      "evidence": "over the MultiHop-RAG (Tang and Yang, 2024) dataset as indexed"
+    },
+    {
+      "name": "gpt-4-turbo",
+      "type": "Model",
+      "description": "A model with a large context size of 128k tokens.",
+      "evidence": "models like gpt-4-turbo with a large context size of 128k tokens"
+    },
+    {
+      "name": "context window size",
+      "type": "Concept",
+      "description": "The size of the context window tested at 8k, 16k, 32k, and 64k tokens.",
+      "evidence": "we tested four context window sizes: 8k, 16k, 32k and 64k"
+    },
+    {
+      "name": "comprehensiveness",
+      "type": "Metric",
+      "description": "A metric where the smallest context window size achieved an average win rate of 58.1%.",
+      "evidence": "universally better for all comparisons on comprehensiveness (average win rate of 58.1%)"
+    },
+    {
+      "name": "diversity",
+      "type": "Metric",
+      "description": "A metric where the smallest context window size performed comparably with larger sizes (average win rate = 52.4%).",
+      "evidence": "performing comparably with larger context sizes on diversity (average win rate = 52.4%)"
+    },
+    {
+      "name": "empowerment",
+      "type": "Metric",
+      "description": "A metric where the smallest context window size achieved an average win rate of 51.3%.",
+      "evidence": "and empowerment (average win rate = 51.3%)"
+    },
+    {
+      "name": "SS",
+      "type": "Concept",
+      "description": "The baseline condition used to determine the optimum context size.",
+      "evidence": "our goal was to determine the optimum context size for our baseline condition (SS)"
+    },
+    {
+      "name": "OpenORD",
+      "type": "Method",
+      "description": "A method used for node layout.",
+      "evidence": "Node layout was performed via OpenORD (Martin et al., 2011)"
+    },
+    {
+      "name": "Force Atlas 2",
+      "type": "Method",
+      "description": "A method used for node layout.",
+      "evidence": "and Force Atlas 2 (Jacomy et al., 2014)"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Leiden algorithm",
+      "target": "MultiHop-RAG",
+      "type": "evaluates",
+      "description": "The Leiden algorithm is used to detect graph communities over the MultiHop-RAG dataset.",
+      "evidence": "Graph communities detected using the Leiden algorithm (Traag et al., 2019) over the MultiHop-RAG (Tang and Yang, 2024) dataset as indexed"
+    },
+    {
+      "source": "context window size",
+      "target": "comprehensiveness",
+      "type": "evaluates",
+      "description": "The context window size was tested to determine its effect on comprehensiveness.",
+      "evidence": "we wanted to explore the effects of varying the context window size for our combinations of datasets, questions, and metrics"
+    },
+    {
+      "source": "context window size",
+      "target": "diversity",
+      "type": "evaluates",
+      "description": "The context window size was tested to determine its effect on diversity.",
+      "evidence": "performing comparably with larger context sizes on diversity (average win rate = 52.4%)"
+    },
+    {
+      "source": "context window size",
+      "target": "empowerment",
+      "type": "evaluates",
+      "description": "The context window size was tested to determine its effect on empowerment.",
+      "evidence": "and empowerment (average win rate = 51.3%)"
+    },
+    {
+      "source": "context window size",
+      "target": "SS",
+      "type": "evaluates",
+      "description": "The context window size was tested to determine the optimum size for the baseline condition (SS).",
+      "evidence": "our goal was to determine the optimum context size for our baseline condition (SS)"
+    },
+    {
+      "source": "context window size",
+      "target": "gpt-4-turbo",
+      "type": "evaluates",
+      "description": "The effect of context window size is unclear for models like gpt-4-turbo.",
+      "evidence": "The effect of context window size on any particular task is unclear, especially for models like gpt-4-turbo"
+    },
+    {
+      "source": "context window size",
+      "target": "comprehensiveness",
+      "type": "improves",
+      "description": "The smallest context window size (8k) was universally better for comprehensiveness.",
+      "evidence": "the smallest context window size tested (8k) was universally better for all comparisons on comprehensiveness (average win rate of 58.1%)"
+    },
+    {
+      "source": "context window size",
+      "target": "diversity",
+      "type": "improves",
+      "description": "The smallest context window size performed comparably with larger sizes on diversity.",
+      "evidence": "performing comparably with larger context sizes on diversity (average win rate = 52.4%)"
+    },
+    {
+      "source": "context window size",
+      "target": "empowerment",
+      "type": "improves",
+      "description": "The smallest context window size performed comparably with larger sizes on empowerment.",
+      "evidence": "and empowerment (average win rate = 51.3%)"
+    }
+  ]
+}

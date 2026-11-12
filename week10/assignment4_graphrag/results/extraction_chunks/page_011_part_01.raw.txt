@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "C0",
+      "type": "Method",
+      "description": "A global search condition in Experiment 2",
+      "evidence": "all global search conditions (C0-C3)"
+    },
+    {
+      "name": "C1",
+      "type": "Method",
+      "description": "A global search condition in Experiment 2",
+      "evidence": "all global search conditions (C0-C3)"
+    },
+    {
+      "name": "C2",
+      "type": "Method",
+      "description": "A global search condition in Experiment 2",
+      "evidence": "all global search conditions (C0-C3)"
+    },
+    {
+      "name": "C3",
+      "type": "Method",
+      "description": "A global search condition in Experiment 2",
+      "evidence": "all global search conditions (C0-C3)"
+    },
+    {
+      "name": "TS",
+      "type": "Method",
+      "description": "Source text summarization condition",
+      "evidence": "source text summarization (TS)"
+    },
+    {
+      "name": "SS",
+      "type": "Method",
+      "description": "Vector RAG condition",
+      "evidence": "vector RAG (SS)"
+    },
+    {
+      "name": "News Articles",
+      "type": "Dataset",
+      "description": "A dataset containing approximately 1 million tokens",
+      "evidence": "two corpora each containing approximately 1 million tokens"
+    },
+    {
+      "name": "Podcast Transcripts",
+      "type": "Dataset",
+      "description": "A dataset containing approximately 1 million tokens",
+      "evidence": "two corpora each containing approximately 1 million tokens"
+    },
+    {
+      "name": "comprehensiveness",
+      "type": "Metric",
+      "description": "The claim-based measure of comprehensiveness",
+      "evidence": "the claim-based measure of comprehensiveness"
+    },
+    {
+      "name": "diversity",
+      "type": "Metric",
+      "description": "The claim-based measure of diversity",
+      "evidence": "the claim-based measure of diversity"
+    },
+    {
+      "name": "SelfCheckGPT",
+      "type": "Method",
+      "description": "An approach for comparing fabrication rates",
+      "evidence": "approaches like SelfCheckGPT (Manakul et al., 2023)"
+    },
+    {
+      "name": "Experiment 1",
+      "type": "Concept",
+      "description": "A prior experiment involving LLM-based win rates",
+      "evidence": "LLM-based win rates from Experiment 1"
+    },
+    {
+      "name": "Experiment 2",
+      "type": "Concept",
+      "description": "The current experiment evaluating claim extraction",
+      "evidence": "Experiment 2"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "C0",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C0 had greater comprehensiveness than SS for both datasets",
+      "evidence": "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"
+    },
+    {
+      "source": "C1",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C1 had greater comprehensiveness than SS for both datasets",
+      "evidence": "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"
+    },
+    {
+      "source": "C2",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C2 had greater comprehensiveness than SS for both datasets",
+      "evidence": "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"
+    },
+    {
+      "source": "C3",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C3 had greater comprehensiveness than SS for both datasets",
+      "evidence": "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"
+    },
+    {
+      "source": "TS",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "TS had greater comprehensiveness than SS for both datasets",
+      "evidence": "all global search conditions (C0-C3) and source text summarization (TS) had greater comprehensiveness than vector RAG (SS)"
+    },
+    {
+      "source": "C0",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C0 had significantly greater diversity than SS for the Podcast dataset",
+      "evidence": "For the Podcast dataset, all global search conditions had significantly greater diversity than SS"
+    },
+    {
+      "source": "C0",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C0 significantly outperformed SS for the News dataset across all distance thresholds",
+      "evidence": "For the News dataset, however, only C0 significantly outperformed SS across all distance thresholds"
+    },
+    {
+      "source": "C1",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C1 achieved higher average cluster counts than SS for the News dataset",
+      "evidence": "While C1-C3 also achieved higher average cluster counts than SS"
+    },
+    {
+      "source": "C2",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C2 achieved higher average cluster counts than SS for the News dataset",
+      "evidence": "While C1-C3 also achieved higher average cluster counts than SS"
+    },
+    {
+      "source": "C3",
+      "target": "SS",
+      "type": "outperforms",
+      "description": "C3 achieved higher average cluster counts than SS for the News dataset",
+      "evidence": "While C1-C3 also achieved higher average cluster counts than SS"
+    },
+    {
+      "source": "comprehensiveness",
+      "target": "diversity",
+      "type": "compares",
+      "description": "Both metrics were evaluated across global search conditions and TS",
+      "evidence": "For both comprehensiveness and diversity, across both datasets, there were no statistically significant differences observed among the global search conditions or between global search and TS"
+    },
+    {
+      "source": "Experiment 1",
+      "target": "Experiment 2",
+      "type": "aligns_with",
+      "description": "Findings in Experiment 2 align with LLM-based win rates from Experiment 1",
+      "evidence": "These findings align with the LLM-based win rates from Experiment 1"
+    },
+    {
+      "source": "SelfCheckGPT",
+      "target": "fabrication rates",
+      "type": "compares",
+      "description": "SelfCheckGPT is used to compare fabrication rates",
+      "evidence": "Comparison of fabrication rates, e.g., using approaches like SelfCheckGPT"
+    }
+  ]
+}
