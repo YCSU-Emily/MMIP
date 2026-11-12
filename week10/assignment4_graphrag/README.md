@@ -372,4 +372,4 @@ results/final_evaluation.log
 實驗結果顯示，GraphRAG 在本次 Benchmark 的多項檢索及回答代理指標上略優於 Vector RAG；Vector RAG 則具有較低的生成時間與 Token 使用量。
 
 本專案展示了如何利用 Knowledge Graph 與 Community Summarization，補足單純向量檢索在跨主題資訊整合上的不足，也提供了後續改善檢索品質、引用可靠性及語意評估的基礎。
-# Week 10 Assignment 4 — GraphRAG
+
